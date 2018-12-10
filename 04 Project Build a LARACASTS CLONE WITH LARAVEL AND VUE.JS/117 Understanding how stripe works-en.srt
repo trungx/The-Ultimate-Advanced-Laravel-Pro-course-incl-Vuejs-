@@ -1,0 +1,296 @@
+1
+00:00:00,580 --> 00:00:06,540
+Having a subscription based application with a cashier it's really easy level cashier takes care of
+
+2
+00:00:06,730 --> 00:00:08,820
+most of the work behind the scenes.
+
+3
+00:00:08,950 --> 00:00:14,910
+So for example let's go ahead and look and look at how we can subscribe a user to a new subscription.
+
+4
+00:00:14,920 --> 00:00:21,030
+All we need to do like in the documentation like your is find a user and then on the user we call the
+
+5
+00:00:21,040 --> 00:00:27,100
+new subscription mid-thought we pass in the name of the subscription and then we also pass in the name
+
+6
+00:00:27,100 --> 00:00:32,590
+of the subscription on our stripe dashboard and then we call that creates mid-thought and we pass in
+
+7
+00:00:32,680 --> 00:00:33,830
+the token.
+
+8
+00:00:33,970 --> 00:00:37,750
+That's all we need to create a subscription but then look at this talken right here.
+
+9
+00:00:37,870 --> 00:00:39,370
+Where is it coming from.
+
+10
+00:00:39,400 --> 00:00:40,990
+What is that token.
+
+11
+00:00:41,020 --> 00:00:43,990
+This brings us to understanding how strike works.
+
+12
+00:00:44,050 --> 00:00:48,810
+And this is what they're going to be covering in this lesson to understand how Strype works.
+
+13
+00:00:48,820 --> 00:00:51,570
+We're going to start by checking out our dashboard.
+
+14
+00:00:51,700 --> 00:00:56,510
+And before we are able to use subscriptions you need to come to your subscription stop.
+
+15
+00:00:56,620 --> 00:00:59,770
+And then we need to go to our plans and then you need to create some plans.
+
+16
+00:00:59,800 --> 00:01:00,360
+OK.
+
+17
+00:01:00,490 --> 00:01:06,940
+So when you quit discipline's that's when you'll be able to call or pass these ID right here all the
+
+18
+00:01:06,940 --> 00:01:12,720
+identifier of the plan and then automatically subscribe to use or to that plan.
+
+19
+00:01:12,790 --> 00:01:13,150
+OK.
+
+20
+00:01:13,180 --> 00:01:16,570
+So do you plan or you just need today's Can-Can plan right here.
+
+21
+00:01:16,570 --> 00:01:18,060
+And then you put in the GITTOES.
+
+22
+00:01:18,070 --> 00:01:21,220
+So for example right you have a new plan that they call monthly.
+
+23
+00:01:21,220 --> 00:01:22,830
+So the idea is monthly.
+
+24
+00:01:22,830 --> 00:01:28,510
+The name is just monthly what I want to see on my dashboard and I said the price to nine dollars and
+
+25
+00:01:28,510 --> 00:01:29,980
+there's no trial period.
+
+26
+00:01:30,070 --> 00:01:34,580
+I also have a yearly if you check out the yearly I have an ID.
+
+27
+00:01:34,710 --> 00:01:39,410
+I have a name on there and I have the price for $99 year.
+
+28
+00:01:39,520 --> 00:01:40,080
+OK.
+
+29
+00:01:40,120 --> 00:01:46,420
+So that said once you set up the plans what happens is Strype needs to take in the user credentials
+
+30
+00:01:46,720 --> 00:01:53,130
+charge the card and then automatically it's going to set up a recruitment payment charge on that card.
+
+31
+00:01:53,230 --> 00:01:53,570
+OK.
+
+32
+00:01:53,590 --> 00:01:59,770
+So if you passing a card and you told Strype subscribe the card to this monthly plan every month is
+
+33
+00:01:59,770 --> 00:02:02,110
+going to charge you use are mindless.
+
+34
+00:02:02,170 --> 00:02:06,760
+But then if you subscribe to the yearly every year you subscribe to ninety nine dollars.
+
+35
+00:02:06,790 --> 00:02:07,350
+OK.
+
+36
+00:02:07,420 --> 00:02:14,510
+So the question that still remains is how the reports in the Strype took in the strike took them so
+
+37
+00:02:14,530 --> 00:02:16,840
+representation of the use us.
+
+38
+00:02:17,000 --> 00:02:24,910
+Remember our data base is not going to contain any credit card numbers or any expiry dates for us credit
+
+39
+00:02:24,910 --> 00:02:26,030
+card numbers.
+
+40
+00:02:26,050 --> 00:02:32,260
+But it's going to contain an identifier for that particular use in our data in our database.
+
+41
+00:02:32,260 --> 00:02:32,630
+OK.
+
+42
+00:02:32,710 --> 00:02:40,540
+We're going to be looking at it but what happens is we pass the credit card information to Strype by
+
+43
+00:02:40,990 --> 00:02:47,350
+an API call and then Strype is going to return to us a striped token when we get a striped token passing
+
+44
+00:02:47,510 --> 00:02:54,190
+into this method and then Lovelle cashier is when you make another API calls the Strype to coo yeards
+
+45
+00:02:54,280 --> 00:02:56,040
+that subscription.
+
+46
+00:02:56,080 --> 00:02:56,520
+OK.
+
+47
+00:02:56,620 --> 00:03:02,140
+So how do we get the use of credit cards or Strypes with us Tricon returns was destroyed took in less
+
+48
+00:03:02,150 --> 00:03:04,470
+checkout Strype documentation.
+
+49
+00:03:05,380 --> 00:03:06,770
+So remember the procedure.
+
+50
+00:03:06,910 --> 00:03:10,020
+First we take our users credit card.
+
+51
+00:03:10,120 --> 00:03:11,440
+We send it to stripe.
+
+52
+00:03:11,450 --> 00:03:17,060
+She's going to convert this credit card encryption and all of that stuff into a token.
+
+53
+00:03:17,110 --> 00:03:21,980
+So a string so a string representation of the credit card so that it's very secure.
+
+54
+00:03:22,060 --> 00:03:23,670
+It's going to give us about that stream.
+
+55
+00:03:23,750 --> 00:03:30,190
+It would give the street level cashier level cashier would pass in the string back to Strype and then
+
+56
+00:03:30,190 --> 00:03:34,900
+it's going to pass in the name of the plan and make sure the name of the plan is also a plan that you
+
+57
+00:03:34,900 --> 00:03:35,980
+created right here.
+
+58
+00:03:35,980 --> 00:03:40,290
+And then third is going to subscribe to the plan and then charge the user.
+
+59
+00:03:40,390 --> 00:03:40,920
+OK.
+
+60
+00:03:41,080 --> 00:03:44,750
+So how do we get the credit card and then send it to right.
+
+61
+00:03:44,800 --> 00:03:46,480
+We need to use checkout.
+
+62
+00:03:46,480 --> 00:03:52,500
+So in your novel and your Strype Doc's visit payments and then visit checkout and then you can go to
+
+63
+00:03:52,510 --> 00:03:58,300
+reference and what reference when you do it's going to teach us how to integrate this tripe checkout.
+
+64
+00:03:58,450 --> 00:04:04,240
+So if I visit for example this link right here and I click on the page with card you see we have this
+
+65
+00:04:04,240 --> 00:04:05,410
+region that pops up.
+
+66
+00:04:05,470 --> 00:04:10,980
+We can put in the use ID then the credit card is the most important why are we passing the credit cards.
+
+67
+00:04:11,080 --> 00:04:13,310
+And they would say pay 20 dollars.
+
+68
+00:04:13,450 --> 00:04:15,670
+This is going to create.
+
+69
+00:04:15,980 --> 00:04:19,760
+So can this token right here and then it's going to return it to us.
+
+70
+00:04:19,840 --> 00:04:25,780
+And then once that is returned to us we can now send it to level cashier and allow lot cash is going
+
+71
+00:04:25,780 --> 00:04:31,670
+to subscribe that you are using that token which is a representation of these credit card details.
+
+72
+00:04:31,720 --> 00:04:32,230
+OK.
+
+73
+00:04:32,290 --> 00:04:39,540
+So now would be to get this functionality on our phones and to make it work.
+
+74
+00:04:39,820 --> 00:04:42,690
+That's right some of us in the very next episode.
+

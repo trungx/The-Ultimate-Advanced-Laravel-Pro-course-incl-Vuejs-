@@ -1,0 +1,144 @@
+1
+00:00:00,620 --> 00:00:06,610
+OK let's talk about you before we move on we want to make sure that we know which lesson we are watching
+
+2
+00:00:06,610 --> 00:00:07,330
+presently.
+
+3
+00:00:07,360 --> 00:00:11,240
+And we also want to make sure we know which lessons have been completed or not.
+
+4
+00:00:11,260 --> 00:00:14,390
+So let's take of that in I watch that later the.
+
+5
+00:00:15,310 --> 00:00:18,400
+And what we are going to do is actually work in this for each loop.
+
+6
+00:00:18,460 --> 00:00:22,950
+First of all we want to attach a class of active on the active lesson.
+
+7
+00:00:23,020 --> 00:00:28,540
+So in this for each loop we have the lesson the current lesson stored in a variable.
+
+8
+00:00:28,630 --> 00:00:35,730
+And on this ph file we have the lesson that has been passed on to this view in the Vaibhav lesson.
+
+9
+00:00:35,740 --> 00:00:41,430
+So what are we going to do is right here we're going to please an estate man.
+
+10
+00:00:41,740 --> 00:00:48,670
+So doing the loop if no ID is required to lessen ID.
+
+11
+00:00:49,720 --> 00:00:53,510
+And if then we are simply going to quote aktif.
+
+12
+00:00:53,700 --> 00:00:55,740
+So right here I'm just going to see actually.
+
+13
+00:00:55,900 --> 00:00:56,320
+OK.
+
+14
+00:00:56,350 --> 00:01:01,870
+So this is only going to be generated if the lesson in the current loop is because the lesson that was
+
+15
+00:01:01,870 --> 00:01:03,320
+fastened to this fire.
+
+16
+00:01:03,490 --> 00:01:09,230
+Next I want to display maybe an icon to show that this lesson has been completed.
+
+17
+00:01:09,250 --> 00:01:11,260
+Maybe a check or something like that.
+
+18
+00:01:11,350 --> 00:01:13,560
+But now we're going to start simply.
+
+19
+00:01:13,600 --> 00:01:22,270
+So if our user has completed lesson and will pass in L into that method and then we're going to see
+
+20
+00:01:22,300 --> 00:01:28,480
+and if right here so we can do a couple of things we can have a tick tick box or whatever I can we want
+
+21
+00:01:28,480 --> 00:01:28,830
+to have.
+
+22
+00:01:28,840 --> 00:01:34,650
+But for now just to keep things simple I'm just going to say we should have a small text that says completer.
+
+23
+00:01:34,850 --> 00:01:37,530
+OK then you can modify this however you want.
+
+24
+00:01:37,540 --> 00:01:41,100
+So we check if the authenticated user has completed this lesson.
+
+25
+00:01:41,110 --> 00:01:47,830
+Now we're going to decide in future if we want the user to be able to watch a lesson without being authenticated
+
+26
+00:01:47,860 --> 00:01:48,940
+but that will come later.
+
+27
+00:01:49,030 --> 00:01:54,190
+And in case we want to use that to watch us with our been authenticated we're going to have to wrap
+
+28
+00:01:54,190 --> 00:01:57,310
+this to check if there is any authenticated user.
+
+29
+00:01:57,370 --> 00:02:01,670
+OK because if there is no authenticated use or we don't want to do this it's going to break down.
+
+30
+00:02:01,810 --> 00:02:04,120
+But now we're sure that the user is authenticated.
+
+31
+00:02:04,210 --> 00:02:05,900
+So let's just hope with this for now.
+
+32
+00:02:06,010 --> 00:02:06,490
+OK.
+
+33
+00:02:06,550 --> 00:02:08,700
+Let's refresh and there we go.
+
+34
+00:02:08,700 --> 00:02:13,680
+One of them has been selected as such but then none of them have been completed.
+
+35
+00:02:13,690 --> 00:02:21,130
+Therefore we don't see this block let's walk on for having that Ajax request for us to actually complete
+
+36
+00:02:21,210 --> 00:02:21,920
+a lesson.
+

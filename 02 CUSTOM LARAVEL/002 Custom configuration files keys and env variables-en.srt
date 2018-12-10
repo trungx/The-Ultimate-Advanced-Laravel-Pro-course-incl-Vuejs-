@@ -1,0 +1,448 @@
+1
+00:00:00,270 --> 00:00:04,810
+The first customization trick we want to talk about is how to define your own costume configuration
+
+2
+00:00:04,830 --> 00:00:05,470
+keys.
+
+3
+00:00:05,490 --> 00:00:11,070
+For example if we had autoconfig them a tree they will provide us with a lot of default configuration
+
+4
+00:00:11,070 --> 00:00:11,630
+files.
+
+5
+00:00:11,760 --> 00:00:14,970
+And in each of these configuration files we have cause configuration keys.
+
+6
+00:00:14,970 --> 00:00:18,460
+Now how do you define yours if you want to use them in your application.
+
+7
+00:00:18,480 --> 00:00:23,670
+So let's say for example you're building an application and you actually want to set a key to define
+
+8
+00:00:23,700 --> 00:00:26,340
+the developers that actually develop that application.
+
+9
+00:00:26,340 --> 00:00:31,200
+A good place to place start is going to be in your Abdur ph be where we have the name of the application
+
+10
+00:00:31,200 --> 00:00:33,690
+time zone you are all of that.
+
+11
+00:00:33,690 --> 00:00:39,210
+Therefore right down at the bottom you might want to actually have a key that says Here are the developers
+
+12
+00:00:39,210 --> 00:00:40,200
+of this application.
+
+13
+00:00:40,200 --> 00:00:41,510
+This is just in our way.
+
+14
+00:00:41,640 --> 00:00:44,990
+And what you can do is actually define your own specific key.
+
+15
+00:00:45,030 --> 00:00:49,360
+Therefore write down before we have our way of life will provide us.
+
+16
+00:00:49,400 --> 00:00:54,560
+I'm going to put in a key immediately after loff level and this key is going to be developers.
+
+17
+00:00:54,570 --> 00:00:55,950
+And like I said this is an array.
+
+18
+00:00:55,950 --> 00:01:01,260
+Therefore you can actually have a nested in here or you can have a string whatever you want to have
+
+19
+00:01:01,510 --> 00:01:02,040
+in this case.
+
+20
+00:01:02,040 --> 00:01:06,930
+I'm going to have an extra avi and this and I said are we going to be an array of developers therefore
+
+21
+00:01:06,930 --> 00:01:11,920
+we can have front of cats that come with just like the email of one of the developers.
+
+22
+00:01:12,030 --> 00:01:13,530
+And you can have multiple developers.
+
+23
+00:01:13,530 --> 00:01:17,460
+Now let's say in a part of your application you actually want to display the developers that develop
+
+24
+00:01:17,460 --> 00:01:18,330
+the application.
+
+25
+00:01:18,330 --> 00:01:23,400
+I'm going to head over to my weather THP and we're going to see how this works just like any other configuration
+
+26
+00:01:23,400 --> 00:01:24,840
+that level provides for us.
+
+27
+00:01:24,900 --> 00:01:31,740
+You can go ahead and reference that key in the can fix and automatically going it gets it for you.
+
+28
+00:01:31,740 --> 00:01:36,470
+So I'm going to define a new routes and I'm going to pass in a closure here and disclosure.
+
+29
+00:01:36,510 --> 00:01:37,640
+We are going to simply die.
+
+30
+00:01:37,670 --> 00:01:41,650
+Don't confuse value using the config helper that writes for us.
+
+31
+00:01:41,700 --> 00:01:47,340
+We can reference the fire which is automatically referenced from the config directory and we can see
+
+32
+00:01:47,390 --> 00:01:53,250
+in this conflict which would get me the app the PH B which would reference this and then for us to get
+
+33
+00:01:53,340 --> 00:02:00,750
+this what's key we simply need to differentiate using a period so that developers and lovely's are going
+
+34
+00:02:00,750 --> 00:02:03,270
+to return to us this way.
+
+35
+00:02:03,300 --> 00:02:05,790
+So let's go ahead and visit that and see what we get.
+
+36
+00:02:05,800 --> 00:02:07,310
+Vista custom route.
+
+37
+00:02:07,350 --> 00:02:12,180
+And sure enough we have that our radar level returns to us therefore everyway in the application where
+
+38
+00:02:12,180 --> 00:02:16,080
+you need to a friends house while you can use Lovaas helper method.
+
+39
+00:02:16,260 --> 00:02:20,250
+And you want to talk about Satterlee having personal configuration files.
+
+40
+00:02:20,250 --> 00:02:24,840
+For example if you're working on a project you might want to have everything that concerns Kauf Grecians
+
+41
+00:02:24,840 --> 00:02:28,030
+for that project in a particular configuration file.
+
+42
+00:02:28,020 --> 00:02:29,130
+Now how do you do this.
+
+43
+00:02:29,130 --> 00:02:33,500
+Most people actually result in saving these values or settings into the database.
+
+44
+00:02:33,510 --> 00:02:36,450
+Meanwhile a simple custom configuration file will do the trick.
+
+45
+00:02:36,480 --> 00:02:38,120
+That's quite hard on see how this works.
+
+46
+00:02:38,130 --> 00:02:40,640
+I'm going to create a new file in the config directory.
+
+47
+00:02:40,680 --> 00:02:42,150
+And let's say we're building a block.
+
+48
+00:02:42,180 --> 00:02:44,780
+So I'm going to call this a block b.
+
+49
+00:02:44,820 --> 00:02:46,370
+And here we have this file member.
+
+50
+00:02:46,500 --> 00:02:49,100
+It's just appear to be file that returns an array.
+
+51
+00:02:49,170 --> 00:02:50,830
+So return an array.
+
+52
+00:02:50,870 --> 00:02:57,030
+Now automatically if you want to fetch this file need to get the config help helper the block and then
+
+53
+00:02:57,030 --> 00:03:00,470
+we can pass in whatever keys we want to save here.
+
+54
+00:03:00,540 --> 00:03:05,670
+So for example this is something that I do in most of my projects if I have a project that needs just
+
+55
+00:03:05,670 --> 00:03:10,770
+one or just two administrators then I'm going to have a configuration file called some configuration
+
+56
+00:03:10,770 --> 00:03:14,850
+file for that project and I'm going to have a key there that says administrators.
+
+57
+00:03:14,880 --> 00:03:19,830
+And then I'm going to pass in an array for the e-mails for those administrators and then those on the
+
+58
+00:03:19,830 --> 00:03:22,930
+street are just going to have accounts in my database.
+
+59
+00:03:22,940 --> 00:03:30,290
+Therefore let's say I can see that column to be an administrator and maybe I was friends at that Karl
+
+60
+00:03:30,300 --> 00:03:32,170
+Moso to be an administrator.
+
+61
+00:03:32,280 --> 00:03:34,550
+Let's just say different emos for different uses.
+
+62
+00:03:34,590 --> 00:03:36,160
+What I'm going to do now is good.
+
+63
+00:03:36,180 --> 00:03:42,300
+Any parts of my application and then reference this custom configuration file and this custom configuration
+
+64
+00:03:42,300 --> 00:03:45,560
+key and I can get this right.
+
+65
+00:03:45,600 --> 00:03:52,170
+So this is mostly useful if you want to have maybe an administration middleware but you don't necessarily
+
+66
+00:03:52,170 --> 00:03:56,400
+want to have an administrator stable that knows who is administrator or not.
+
+67
+00:03:56,400 --> 00:04:00,430
+So let's head over back to what can figure out and see if we can get this value.
+
+68
+00:04:00,440 --> 00:04:06,360
+Remember we need to go to the file which is block and we need to get that particular key which was administrators.
+
+69
+00:04:06,360 --> 00:04:06,730
+OK.
+
+70
+00:04:06,750 --> 00:04:09,860
+So let's see if level is going to give this to us refresh.
+
+71
+00:04:09,900 --> 00:04:10,760
+And there we go.
+
+72
+00:04:10,770 --> 00:04:13,320
+Level gives us that exact same rate.
+
+73
+00:04:13,350 --> 00:04:17,960
+So now we see the amount of legs reaching that level gives us with our configurations.
+
+74
+00:04:17,970 --> 00:04:21,160
+Now let's talk about our default done in the fall.
+
+75
+00:04:21,180 --> 00:04:23,210
+Most people are scale of actually starting this fall.
+
+76
+00:04:23,220 --> 00:04:26,110
+But level simply gets this volume in the conflagrations.
+
+77
+00:04:26,130 --> 00:04:32,400
+Therefore you can actually define your own custom conflagrations in this debate in the fall.
+
+78
+00:04:32,400 --> 00:04:34,300
+Now let's go ahead and see an example.
+
+79
+00:04:34,350 --> 00:04:39,840
+Let's say we want to actually define create all or up create all for this application and I'm going
+
+80
+00:04:39,840 --> 00:04:40,940
+to said that to me.
+
+81
+00:04:40,980 --> 00:04:46,180
+So I'm going to see friends made that come to me the e-mail of the creator of the application.
+
+82
+00:04:46,200 --> 00:04:51,530
+Now when I do find this constant anywhere in my application I can actually get it.
+
+83
+00:04:51,600 --> 00:04:55,860
+For example for head to my web the HP I pull out this kind of fake help.
+
+84
+00:04:55,890 --> 00:05:02,610
+And I referenced NVI I can get up create all of this mid-thought is simply going to get that configuration
+
+85
+00:05:02,760 --> 00:05:04,380
+environment variable.
+
+86
+00:05:04,380 --> 00:05:09,270
+So if I to my boss a quick refresh there it gives me that exact string.
+
+87
+00:05:09,270 --> 00:05:12,230
+Bert Lovelle does something behind the scenes for us.
+
+88
+00:05:12,240 --> 00:05:18,980
+It has a cache for the conflagrations therefore referencing EMV is actually skipping Lovell's configuration.
+
+89
+00:05:19,020 --> 00:05:25,810
+You don't want to do this in your project for example using NVI interviews or NVI in your Rauch's file
+
+90
+00:05:25,810 --> 00:05:26,560
+or control us.
+
+91
+00:05:26,580 --> 00:05:31,170
+It's really going to slow down your application because all the time it's going to go into the environment
+
+92
+00:05:31,200 --> 00:05:32,730
+and try to get this value.
+
+93
+00:05:32,850 --> 00:05:37,710
+OK what you want to do rather is to have a custom configuration key.
+
+94
+00:05:37,710 --> 00:05:41,660
+Now that we have a block that BHB we can have another key that says Create all.
+
+95
+00:05:41,700 --> 00:05:46,850
+And we can call it in the method and with reference to our Creator or key.
+
+96
+00:05:46,890 --> 00:05:47,380
+OK.
+
+97
+00:05:47,460 --> 00:05:52,460
+And what happens is since it's in a configuration file level is automatically going to cache this value
+
+98
+00:05:52,470 --> 00:05:57,360
+so every time you need it you just referenced the config mid-thought and it's going to get it from cache
+
+99
+00:05:57,390 --> 00:05:58,450
+if it exists.
+
+100
+00:05:58,470 --> 00:06:06,420
+Ok so now rather than referencing envy we want to reference config for the config block file dot creator
+
+101
+00:06:06,430 --> 00:06:07,450
+or key.
+
+102
+00:06:07,600 --> 00:06:08,030
+OK.
+
+103
+00:06:08,040 --> 00:06:09,790
+Quick refresh to see what we have.
+
+104
+00:06:11,800 --> 00:06:17,680
+And we have the exact same thing but now the advantage is this value has been crushed and our obligation
+
+105
+00:06:17,680 --> 00:06:19,550
+is really going to give us that faster.
+
+106
+00:06:19,600 --> 00:06:23,270
+As you can see so we've gone through four major conflagrations.
+
+107
+00:06:23,290 --> 00:06:29,760
+First we should be able to define our own custom keys in any of the configuration files that we have.
+
+108
+00:06:29,770 --> 00:06:35,910
+Second we should also be able to create our own custom configuration files in applications.
+
+109
+00:06:35,920 --> 00:06:41,740
+Third we should also be able to create our own custom EMV keys which we can reference from any of the
+
+110
+00:06:41,740 --> 00:06:48,220
+configuration files and most importantly we remember never to use the envy file in our applications
+
+111
+00:06:48,220 --> 00:06:49,010
+directly.
+
+112
+00:06:49,060 --> 00:06:53,470
+But you should actually reference lava's conflagration which is going to do the caching for us.
+

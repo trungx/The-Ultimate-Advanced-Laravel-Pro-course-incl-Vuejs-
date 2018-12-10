@@ -1,0 +1,220 @@
+1
+00:00:00,250 --> 00:00:02,880
+Research getting an error response on my server.
+
+2
+00:00:02,910 --> 00:00:07,720
+But one thing we can do in the catch block to make sure we actually get some feedback so we use our
+
+3
+00:00:07,960 --> 00:00:11,110
+ears to set up some errors in our form.
+
+4
+00:00:11,160 --> 00:00:15,840
+So what we're going to be doing is having an air force object and this object is simply going to be
+
+5
+00:00:15,840 --> 00:00:17,760
+just plain arrows in our phone.
+
+6
+00:00:17,760 --> 00:00:22,400
+Once we get that error or from our database we could actually check the status of the error.
+
+7
+00:00:22,520 --> 00:00:29,130
+OK so we can see if error or not response and naturally forced to get the on line response in the exhaust
+
+8
+00:00:29,300 --> 00:00:35,660
+area we need to get that response and we can get the stutterers and we can see if the status is 4:22.
+
+9
+00:00:35,670 --> 00:00:41,280
+That really means this you did not provide us with the correct logging details and we're simply going
+
+10
+00:00:41,280 --> 00:00:43,550
+to push to the object.
+
+11
+00:00:43,560 --> 00:00:52,250
+This is the process that Bush and we have a message like we couldn't verify your account details.
+
+12
+00:00:52,550 --> 00:00:53,010
+OK.
+
+13
+00:00:53,040 --> 00:00:57,780
+So that's good enough for us to do this let's just instantiate this find way.
+
+14
+00:00:57,840 --> 00:00:58,650
+OK.
+
+15
+00:00:58,950 --> 00:01:05,540
+Then once we push that aerosol he automatically let's make sure we actually displayed in templates.
+
+16
+00:01:05,590 --> 00:01:11,160
+Barrett if this is a 1:56 it means everything went well on our site but the users credentials were not
+
+17
+00:01:11,160 --> 00:01:11,800
+correct.
+
+18
+00:01:11,940 --> 00:01:15,880
+But we cannot actually check if it was 9:42 maybe it's 500.
+
+19
+00:01:15,900 --> 00:01:20,290
+Now we could actually push through the airport and seen something went wrong.
+
+20
+00:01:20,390 --> 00:01:21,840
+Refresh and try again.
+
+21
+00:01:21,970 --> 00:01:22,320
+OK.
+
+22
+00:01:22,350 --> 00:01:23,450
+So that's what we have.
+
+23
+00:01:23,490 --> 00:01:25,060
+Let's take care of that in our template.
+
+24
+00:01:25,110 --> 00:01:31,110
+So right after we have a farm let's set up a default on alerts that are alerts of danger.
+
+25
+00:01:31,170 --> 00:01:34,070
+And this is simply going to be displayed Eve.
+
+26
+00:01:34,140 --> 00:01:39,240
+So evasion of the if condition are right here for us but that's greater than zero.
+
+27
+00:01:39,240 --> 00:01:40,570
+So if the arrows.
+
+28
+00:01:40,620 --> 00:01:45,350
+We actually it has more than one element that we're going to display this block.
+
+29
+00:01:45,480 --> 00:01:51,870
+And are you afraid we may actually want this to just lead us so on at least and then we can actually
+
+30
+00:01:51,960 --> 00:01:59,370
+add a class of let's go up here and inside that or at least we can have this go up items.
+
+31
+00:01:59,610 --> 00:02:05,440
+Then we wrapped it in a V for our inheritance and simply Eckard error.
+
+32
+00:02:05,460 --> 00:02:06,820
+Now we have this ever seen.
+
+33
+00:02:06,850 --> 00:02:11,820
+It would be preferable for us to bind to a key which we might not really need to do but just to shut
+
+34
+00:02:11,830 --> 00:02:12,910
+all these errors.
+
+35
+00:02:12,960 --> 00:02:18,330
+Let's just go ahead and buying this to a key and see that index of error.
+
+36
+00:02:18,390 --> 00:02:19,040
+OK.
+
+37
+00:02:19,170 --> 00:02:20,480
+So that's just me.
+
+38
+00:02:20,520 --> 00:02:21,300
+Just shut up.
+
+39
+00:02:21,300 --> 00:02:26,940
+So now for each other that we have no where else are we we are simply going to actually output this.
+
+40
+00:02:27,000 --> 00:02:27,550
+OK.
+
+41
+00:02:27,600 --> 00:02:33,270
+So another thing we want to do is make sure that if the user clicks on the attempts log in Marsan which
+
+42
+00:02:33,270 --> 00:02:38,120
+simply said this that error has to be called to an empty array again.
+
+43
+00:02:38,190 --> 00:02:40,850
+And by Thing that should do it for our validation.
+
+44
+00:02:40,890 --> 00:02:42,210
+Let's go ahead and try this out.
+
+45
+00:02:42,210 --> 00:02:45,350
+Open up our logon window and paste in our email.
+
+46
+00:02:45,400 --> 00:02:47,330
+Putting the wrong password.
+
+47
+00:02:47,400 --> 00:02:52,700
+Try to logging and sure enough we have that error all right even though it looks really really bad.
+
+48
+00:02:52,830 --> 00:02:54,350
+But then we have it right.
+
+49
+00:02:54,360 --> 00:02:56,570
+So now let's make a little change.
+
+50
+00:02:56,640 --> 00:02:58,250
+Try to log in again.
+
+51
+00:02:58,260 --> 00:03:01,920
+And the error goes away before coming back all over again.
+
+52
+00:03:02,030 --> 00:03:02,560
+Right.
+
+53
+00:03:02,580 --> 00:03:05,540
+So looks like authentication is working.
+
+54
+00:03:05,580 --> 00:03:08,720
+I'm going to take care of this really bad for my team behind the scenes.
+
+55
+00:03:08,820 --> 00:03:12,290
+But I think over 80 years of integration works perfectly.
+

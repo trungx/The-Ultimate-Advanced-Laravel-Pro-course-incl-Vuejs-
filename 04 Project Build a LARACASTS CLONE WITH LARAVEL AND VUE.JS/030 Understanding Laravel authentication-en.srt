@@ -1,0 +1,420 @@
+1
+00:00:00,490 --> 00:00:05,360
+A blank install or flower or 5.5 for IKEA and I'm just going to go straight to the point the first thing
+
+2
+00:00:05,420 --> 00:00:09,480
+we're going to be doing is such really taking care of our authentication system by default level provides
+
+3
+00:00:09,480 --> 00:00:13,340
+us with the components logging components for registration.
+
+4
+00:00:13,350 --> 00:00:18,060
+So what we're going to be doing in this video is editing the system to fit our needs.
+
+5
+00:00:18,060 --> 00:00:24,190
+So like US uses an Ajax request or something like that authentication system so you just need to put
+
+6
+00:00:24,190 --> 00:00:27,810
+in your data in a model and then logging and it's automatically done.
+
+7
+00:00:27,810 --> 00:00:30,510
+So what we're going to be doing is trying to replicate that system.
+
+8
+00:00:30,660 --> 00:00:35,160
+So before we actually do that we need to understand the defaults that level provides for us right.
+
+9
+00:00:35,190 --> 00:00:40,740
+So I'm going ahead of what my Abdur a tree S2P controllers of the tree and we're going to be taking
+
+10
+00:00:40,740 --> 00:00:43,990
+care of the logging controller seen my logging controller.
+
+11
+00:00:44,190 --> 00:00:46,760
+Yeah it doesn't really look like it has a lot.
+
+12
+00:00:46,890 --> 00:00:50,250
+But then what we're going to do is run ph be re-assign make off.
+
+13
+00:00:50,370 --> 00:00:52,700
+So I just show you what that Kommandos for us.
+
+14
+00:00:52,800 --> 00:00:56,360
+And it's simply going to register some rounds quite some views for us.
+
+15
+00:00:56,370 --> 00:01:00,980
+So now I'm going to run ph be areason roadless to show you what we have.
+
+16
+00:01:01,080 --> 00:01:06,460
+Now we see we have a couple of logging or restriction routes for authentication that are being registered.
+
+17
+00:01:06,500 --> 00:01:12,600
+Now you look at this it points to the log in control but we don't really see this method in our class.
+
+18
+00:01:12,600 --> 00:01:16,060
+It also points to a log in method for the post method.
+
+19
+00:01:16,170 --> 00:01:17,870
+But we still don't see it right.
+
+20
+00:01:17,910 --> 00:01:21,810
+So let's go ahead and dig in and see where all of this is going for now.
+
+21
+00:01:21,810 --> 00:01:27,570
+Love is this idea of single responsibility traits and this trait actually that it uses right here.
+
+22
+00:01:27,590 --> 00:01:28,810
+Authenticates use us.
+
+23
+00:01:28,920 --> 00:01:34,100
+It's in charge of our truly the logging controller functionality behind the scenes.
+
+24
+00:01:34,170 --> 00:01:36,640
+So let's dig into that and see what we have.
+
+25
+00:01:36,690 --> 00:01:39,190
+So that saturates the authenticates users.
+
+26
+00:01:39,200 --> 00:01:44,660
+It actually uses the redirects users and Tartaros plugins but when not going to look into into that.
+
+27
+00:01:44,670 --> 00:01:50,600
+So this is our show looking for some method that is registar here for our get real help for the log
+
+28
+00:01:50,600 --> 00:01:51,560
+in page.
+
+29
+00:01:51,870 --> 00:01:58,080
+So this method simply returns to view of the logging that was generated with our Ph.D. We Assan make
+
+30
+00:01:58,080 --> 00:01:59,120
+off commands.
+
+31
+00:01:59,120 --> 00:02:04,320
+So if we go right here into our resources there a tree views or a tree in or off there a tree sure enough
+
+32
+00:02:04,320 --> 00:02:07,100
+we have the log in the ph ph be OK.
+
+33
+00:02:07,140 --> 00:02:08,610
+So that's what the method does.
+
+34
+00:02:08,610 --> 00:02:10,030
+It simply returns that view.
+
+35
+00:02:10,110 --> 00:02:14,340
+And if we are truly trying to visit that page we're going to see this view then we have a log in mid-thought
+
+36
+00:02:14,580 --> 00:02:17,170
+which takes care of our authentication.
+
+37
+00:02:17,280 --> 00:02:22,860
+So if we check that out first of all we have a valid log in my thought on this class or on this street
+
+38
+00:02:23,040 --> 00:02:25,470
+right here which simply validates the data.
+
+39
+00:02:25,500 --> 00:02:32,020
+Make sure that we have the correct validation for to use only and that we use to validate the user and
+
+40
+00:02:32,020 --> 00:02:32,650
+the password.
+
+41
+00:02:32,680 --> 00:02:33,020
+Right.
+
+42
+00:02:33,120 --> 00:02:38,820
+So this use of the method is simply a best way for Lavoe to give us to customize the functionality.
+
+43
+00:02:38,820 --> 00:02:44,310
+So for example let's say you wanted to switch your functionality to a username based functionality.
+
+44
+00:02:44,310 --> 00:02:47,770
+Or rather maybe a former baseball analogy.
+
+45
+00:02:47,820 --> 00:02:53,610
+All you need to do is actually change this name or this field and everything is just going to walk as
+
+46
+00:02:53,700 --> 00:02:54,540
+expected.
+
+47
+00:02:54,540 --> 00:02:54,870
+Right.
+
+48
+00:02:54,900 --> 00:03:00,120
+So Messy you want to use for a number and you have a field in your database table for us.
+
+49
+00:03:00,240 --> 00:03:02,440
+Then you just get a feeling for number right here.
+
+50
+00:03:02,610 --> 00:03:05,430
+OK so let's continue with our deadlocking method.
+
+51
+00:03:05,490 --> 00:03:11,220
+So the value for this Court invalidates the username fuel that we passed in and obviously we can customize
+
+52
+00:03:11,220 --> 00:03:13,020
+this if we wish.
+
+53
+00:03:13,020 --> 00:03:19,610
+Then once our logging method posses logging method continues now to check if the user has too many logging
+
+54
+00:03:19,860 --> 00:03:26,130
+attempts on this obviously is accompanied or accomplished by the Trotter's logging method.
+
+55
+00:03:26,190 --> 00:03:31,440
+If these others not have too many logging items obviously this is going to be skipped and then we're
+
+56
+00:03:31,440 --> 00:03:34,890
+going to call the attempt to log in on this try to game.
+
+57
+00:03:34,950 --> 00:03:39,660
+So right down the bottom we have an attempt to log in and it's simply going to call on them mid-thought
+
+58
+00:03:39,660 --> 00:03:41,900
+on the prison guard that we're using.
+
+59
+00:03:42,000 --> 00:03:47,670
+And this is and we're going to call the credentials from the request get the credentials and right here
+
+60
+00:03:47,670 --> 00:03:53,010
+we have the credentials for that gets requests only this username meaning if you specified e-mail is
+
+61
+00:03:53,010 --> 00:03:56,940
+going to get the e-mail and if he spits frightful nobody's going to get phone number.
+
+62
+00:03:57,090 --> 00:03:58,950
+And then he gets also the password.
+
+63
+00:03:58,950 --> 00:04:05,470
+Now it passes that into the offense metod and also passes this house remember bullion right here.
+
+64
+00:04:05,490 --> 00:04:10,520
+So in case they use clicks on the Remember Me button and it's also going to pass it to the FNMA.
+
+65
+00:04:10,720 --> 00:04:13,860
+No offense phone is simply going to return a boolean.
+
+66
+00:04:13,950 --> 00:04:14,830
+True or false.
+
+67
+00:04:14,850 --> 00:04:18,260
+Was the use of successfully authenticated or Motz.
+
+68
+00:04:18,300 --> 00:04:24,550
+So right here if they use those authenticated successfully we're simply going to return this send log
+
+69
+00:04:24,550 --> 00:04:25,580
+in response.
+
+70
+00:04:25,620 --> 00:04:32,190
+So the send log in response method on this tread again takes care of what happens as soon as the user
+
+71
+00:04:32,190 --> 00:04:33,250
+is authenticated.
+
+72
+00:04:33,360 --> 00:04:37,700
+So first of all we have a session generated for the user.
+
+73
+00:04:37,840 --> 00:04:42,830
+We collect the log in our terms and then we return this authenticated.
+
+74
+00:04:42,900 --> 00:04:46,340
+So now this authenticates an mid-thought on this trip.
+
+75
+00:04:46,380 --> 00:04:47,960
+It's like a hook that we could use.
+
+76
+00:04:47,970 --> 00:04:53,060
+So as soon as you use something to get it will generate a session logging attempts and call this method.
+
+77
+00:04:53,160 --> 00:04:59,560
+So Lavoe is calling this method behind the scenes or it's simply redirecting the user to the Internet.
+
+78
+00:04:59,590 --> 00:05:00,050
+But.
+
+79
+00:05:00,200 --> 00:05:00,530
+Right.
+
+80
+00:05:00,560 --> 00:05:08,510
+So if this method is not reach it is right now by default since it's known Lavallee simply cannot be
+
+81
+00:05:08,510 --> 00:05:10,080
+done with the use of the Internet.
+
+82
+00:05:10,310 --> 00:05:12,690
+But now what if we want to do something else.
+
+83
+00:05:12,740 --> 00:05:16,520
+If the user was actually successfully locked in.
+
+84
+00:05:16,520 --> 00:05:22,340
+So what we can do is simply take care of our authenticated method and level is going to call it once
+
+85
+00:05:22,340 --> 00:05:24,880
+the user is successfully locked in.
+
+86
+00:05:24,890 --> 00:05:29,500
+Now another thing that happens is what if the user was not successfully launching.
+
+87
+00:05:29,510 --> 00:05:31,240
+It means this is going to be skipped.
+
+88
+00:05:31,400 --> 00:05:33,940
+And this is what is going to have happened here.
+
+89
+00:05:34,010 --> 00:05:36,530
+So incremental logging items is going to be caught.
+
+90
+00:05:36,540 --> 00:05:37,690
+We just simply cannot see.
+
+91
+00:05:37,730 --> 00:05:40,400
+OK this user has failed to catch on.
+
+92
+00:05:40,400 --> 00:05:46,400
+One more time increase that and then somebody's gonna send field log in response to the user.
+
+93
+00:05:46,410 --> 00:05:50,970
+So this Sinfield log in response is a metaphor on this lost again.
+
+94
+00:05:50,980 --> 00:05:57,940
+So if you go ahead and try to find that method here it is simply true validation exception with messages.
+
+95
+00:05:58,070 --> 00:06:03,780
+This username and it would call our translation and pass in the off the field flag.
+
+96
+00:06:03,830 --> 00:06:09,620
+If the user was not successful we you start going to call the send field log in response to a validation
+
+97
+00:06:09,620 --> 00:06:13,470
+exception and pass in this message to the user.
+
+98
+00:06:13,520 --> 00:06:13,910
+Right.
+
+99
+00:06:13,910 --> 00:06:20,810
+So for us to customize this method of this system only thing we actually need to do is to overwrite
+
+100
+00:06:20,990 --> 00:06:26,640
+or is to provide this authenticated method to Lovelle Lavo to know what to do.
+
+101
+00:06:26,750 --> 00:06:28,040
+That's just it.
+
+102
+00:06:28,100 --> 00:06:33,800
+Right so once you actually get the hang of how this Treach works you know how loved those behind the
+
+103
+00:06:33,800 --> 00:06:34,370
+scenes.
+
+104
+00:06:34,370 --> 00:06:36,490
+It's very very easy to overwrite.
+
+105
+00:06:36,590 --> 00:06:41,600
+So in the next video let's take care of overwriting it and actually making it work with Ajax requests.
+

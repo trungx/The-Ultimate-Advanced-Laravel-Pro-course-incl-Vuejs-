@@ -1,0 +1,268 @@
+1
+00:00:00,370 --> 00:00:04,430
+Let's get moving as you can see I completely changed the template that we're going to be using.
+
+2
+00:00:04,430 --> 00:00:08,370
+We're going to be using the default level templates because I think we could do better.
+
+3
+00:00:08,370 --> 00:00:12,110
+So what we're going to be doing is using a theme called the SAS.
+
+4
+00:00:12,150 --> 00:00:18,000
+And you can find it on theme for no affiliates or anything but I've used the template I bought and used
+
+5
+00:00:18,000 --> 00:00:19,630
+it and I think it's really awesome.
+
+6
+00:00:19,650 --> 00:00:20,630
+Very lightweight.
+
+7
+00:00:20,730 --> 00:00:24,310
+So if you want to use it in any production applications make sure you get the license.
+
+8
+00:00:24,330 --> 00:00:27,700
+But if not you could just use my copy for development purposes.
+
+9
+00:00:27,980 --> 00:00:33,030
+What I did was just to create an app that bleed that page and putting the theme.
+
+10
+00:00:33,090 --> 00:00:39,630
+Just install three simple siestas for hours and try off in the cold for these lesing you'd actually
+
+11
+00:00:39,630 --> 00:00:44,520
+have this theme food that contains all the files that you need for the theme.
+
+12
+00:00:44,520 --> 00:00:51,210
+So I just took that in have a ZF of idea of app for viewers navigation right here home plug in.
+
+13
+00:00:51,240 --> 00:00:55,850
+Dan I have a used header and used content then I have my work on the blade.
+
+14
+00:00:56,010 --> 00:01:02,170
+That simply extends that lay out your header and then use the content.
+
+15
+00:01:02,190 --> 00:01:03,350
+Very simple stuff.
+
+16
+00:01:03,390 --> 00:01:08,130
+I don't want to bore you with all of this because that has little or no real learning in it.
+
+17
+00:01:08,200 --> 00:01:09,500
+OK so what do we want.
+
+18
+00:01:09,510 --> 00:01:13,450
+We want to click on this loggin button and actually see a luggin form.
+
+19
+00:01:13,470 --> 00:01:13,940
+Right.
+
+20
+00:01:13,950 --> 00:01:18,650
+And then if we successful logging the page simply refreshes just like Jeffrey does it.
+
+21
+00:01:18,750 --> 00:01:20,470
+So let's go ahead and dive straight into it.
+
+22
+00:01:20,490 --> 00:01:26,310
+Now in the duck component of the Stillmore you can actually see this component which is a model and
+
+23
+00:01:26,310 --> 00:01:27,930
+I'm just going to go ahead and use it.
+
+24
+00:01:27,960 --> 00:01:31,590
+So I'll head over to my dock components and we have this model.
+
+25
+00:01:31,620 --> 00:01:36,690
+I'm going to copy it and then had to run my example to you which is the default lawn that comes with
+
+26
+00:01:36,690 --> 00:01:38,970
+Lavoe paste in that template.
+
+27
+00:01:39,010 --> 00:01:40,720
+And sure enough I you to rename that.
+
+28
+00:01:40,770 --> 00:01:44,530
+I'm going to rename that to plugging the view head over to my iPod.
+
+29
+00:01:44,580 --> 00:01:47,110
+Abda just so I can change how that is when you start.
+
+30
+00:01:47,130 --> 00:01:52,680
+So I need to change this to luggin the view and I'm going to change this to view plug in.
+
+31
+00:01:52,710 --> 00:01:54,960
+This is a component we can use in our view.
+
+32
+00:01:55,020 --> 00:01:58,270
+You can also see I have Flavell makes already running as a watcher.
+
+33
+00:01:58,320 --> 00:02:02,090
+OK so now that they have that the first thing was to put in that same plate.
+
+34
+00:02:02,130 --> 00:02:02,980
+I've done that.
+
+35
+00:02:03,210 --> 00:02:07,540
+But this template is going to be a model and it has to be triggered so I'm just going to change this
+
+36
+00:02:07,540 --> 00:02:09,140
+to logging mode on.
+
+37
+00:02:09,180 --> 00:02:12,850
+Which is going to be the I.D. I'm going to have to watch my Abda blade.
+
+38
+00:02:13,050 --> 00:02:18,540
+And one of the navigation components on navigation is there were still luggin so I'm going to make sure
+
+39
+00:02:18,540 --> 00:02:21,920
+these dates are Togo equals Modahl.
+
+40
+00:02:21,980 --> 00:02:28,350
+This is simply put structure and data are Touggourt is sequel to the lemon with IGY logging on.
+
+41
+00:02:28,380 --> 00:02:32,290
+So when you click on this it's going to trigger the mood on with this ID.
+
+42
+00:02:32,340 --> 00:02:36,030
+So now we need to actually Mullins This component in our view.
+
+43
+00:02:36,030 --> 00:02:41,880
+Therefore in my obdurately ph we just write down some way after all the fruits are on the for the future.
+
+44
+00:02:42,030 --> 00:02:47,300
+I'm just going to mount you luggin and that will make this template available in our view.
+
+45
+00:02:47,330 --> 00:02:47,720
+OK.
+
+46
+00:02:47,730 --> 00:02:54,630
+So nothing complicated we just start a new components and it's a more dump and contains the template
+
+47
+00:02:54,630 --> 00:03:01,020
+for that with all we have a link in our layout file which is the luggin and this simply triggers that
+
+48
+00:03:01,030 --> 00:03:01,740
+and we don't.
+
+49
+00:03:01,890 --> 00:03:04,750
+And we have we just start that component as villagey.
+
+50
+00:03:04,920 --> 00:03:09,900
+Therefore in our template We've mounted it as you logging right here.
+
+51
+00:03:10,170 --> 00:03:10,670
+OK.
+
+52
+00:03:10,710 --> 00:03:13,090
+So let's go ahead and see how this works.
+
+53
+00:03:13,090 --> 00:03:14,040
+A quick refresh.
+
+54
+00:03:14,100 --> 00:03:15,180
+And when I click on that.
+
+55
+00:03:15,210 --> 00:03:17,240
+Sure enough I see my model.
+
+56
+00:03:17,340 --> 00:03:19,770
+So let's go ahead and do a little edits to that model.
+
+57
+00:03:19,860 --> 00:03:25,490
+And what I'm going to do is actually simply paste in a luggin registar template right here just so why
+
+58
+00:03:25,490 --> 00:03:30,130
+don't waste your time trying to design stuff that will not even help us in this lesson.
+
+59
+00:03:30,130 --> 00:03:30,730
+All right.
+
+60
+00:03:30,780 --> 00:03:31,550
+Done.
+
+61
+00:03:31,560 --> 00:03:33,290
+So let's check out what we have now.
+
+62
+00:03:33,300 --> 00:03:38,800
+We simply have this loggin form and this is exactly the log in form from the template I just copied
+
+63
+00:03:39,120 --> 00:03:41,800
+and socket straight into the model dialog.
+
+64
+00:03:41,820 --> 00:03:44,400
+Dave So what do we want to happen.
+
+65
+00:03:44,400 --> 00:03:47,820
+We want the user to fill in his details into this form.
+
+66
+00:03:47,850 --> 00:03:51,640
+He does select remember me or not and then click on the login button.
+
+67
+00:03:51,690 --> 00:03:53,680
+Let's take care of that in the next video.
+

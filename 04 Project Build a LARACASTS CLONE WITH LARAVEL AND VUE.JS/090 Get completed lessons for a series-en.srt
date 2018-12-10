@@ -1,0 +1,828 @@
+1
+00:00:00,460 --> 00:00:01,460
+OK welcome back.
+
+2
+00:00:01,500 --> 00:00:02,500
+Let's proceed.
+
+3
+00:00:02,700 --> 00:00:08,190
+The next method I want to implement it not a learning tool is a get completed lessons method.
+
+4
+00:00:08,280 --> 00:00:08,810
+OK.
+
+5
+00:00:08,880 --> 00:00:14,920
+So this mid-thought is going to help us get all the completed lessons for our series.
+
+6
+00:00:15,060 --> 00:00:20,550
+So that particular way this kid that we used to store we can get that are we of ideas and then we're
+
+7
+00:00:20,550 --> 00:00:25,330
+going to use our database to get the lessons that much use IDs and then return to us.
+
+8
+00:00:25,350 --> 00:00:30,960
+OK this might be really helpful in some cases when we want to show the use of the lessons that he's
+
+9
+00:00:30,960 --> 00:00:31,940
+already completed.
+
+10
+00:00:32,070 --> 00:00:33,750
+OK so let's go ahead and do this.
+
+11
+00:00:33,780 --> 00:00:35,160
+I think it's going to be fun.
+
+12
+00:00:35,160 --> 00:00:44,570
+So use our tests and we're going to create a new test so asked can get computer lessons for a series.
+
+13
+00:00:44,760 --> 00:00:46,650
+OK so how is this that's going to know.
+
+14
+00:00:46,790 --> 00:00:55,440
+We have a user up and we have a series and the user completes some lessons in the US and then we call
+
+15
+00:00:55,470 --> 00:01:07,320
+our get completed lessons thought then we assert that the lessons completed are a return value OK something
+
+16
+00:01:07,320 --> 00:01:07,710
+like that.
+
+17
+00:01:07,710 --> 00:01:13,170
+So we're going to run a bunch of assertions and we can actually learn a lot about Lavoe collection.
+
+18
+00:01:13,170 --> 00:01:14,510
+So let's get to it.
+
+19
+00:01:14,700 --> 00:01:18,130
+First we need a user and we need a series we need some lessons.
+
+20
+00:01:18,150 --> 00:01:19,480
+So I'm going to copy this.
+
+21
+00:01:19,700 --> 00:01:20,450
+OK.
+
+22
+00:01:20,550 --> 00:01:27,030
+So paste right here we flush Rhenish create a user create a new lesson which is actually going to create
+
+23
+00:01:27,060 --> 00:01:27,940
+a series.
+
+24
+00:01:28,020 --> 00:01:32,540
+Then we actually create another lesson in that same series.
+
+25
+00:01:32,730 --> 00:01:33,270
+OK.
+
+26
+00:01:33,360 --> 00:01:38,350
+And then I'm going to create a third lesson in the same series.
+
+27
+00:01:38,430 --> 00:01:46,150
+So we have three lessons in the same series serious one right then I'm going to complete lesson one.
+
+28
+00:01:46,410 --> 00:01:53,190
+So complete lesson and then use our complete lesson two.
+
+29
+00:01:53,550 --> 00:01:55,570
+And then we've not completed lesson three.
+
+30
+00:01:55,620 --> 00:01:56,200
+OK.
+
+31
+00:01:56,340 --> 00:01:59,270
+So get completer lessons mid-thought.
+
+32
+00:01:59,310 --> 00:02:10,860
+We're going to see set lessons a course use or get completer lesson and pass in the series so we can
+
+33
+00:02:10,860 --> 00:02:16,480
+get the series from any of the lessons by saying lesson series reference in the relationship.
+
+34
+00:02:16,510 --> 00:02:19,530
+Then we need to run a bunch of assertions.
+
+35
+00:02:19,530 --> 00:02:25,480
+Now remember when you're testing the more assertions you have the better are your tests OK because it
+
+36
+00:02:25,480 --> 00:02:30,120
+can actually increase your test coverage and you're going to make sure that every single point of your
+
+37
+00:02:30,120 --> 00:02:32,260
+application works I suspect it to work.
+
+38
+00:02:32,370 --> 00:02:32,890
+OK.
+
+39
+00:02:32,970 --> 00:02:35,810
+So first of all we want this to be a collection.
+
+40
+00:02:35,940 --> 00:02:38,560
+So I assert in stands off.
+
+41
+00:02:38,640 --> 00:02:45,330
+So this is a helpful method that that can help us check if a return or a resort is a particular instance
+
+42
+00:02:45,330 --> 00:02:46,420
+of a particular class.
+
+43
+00:02:46,500 --> 00:02:47,050
+OK.
+
+44
+00:02:47,220 --> 00:02:53,470
+So we want to check if the return that we have here is an instance of Lovell's collection class.
+
+45
+00:02:53,490 --> 00:03:02,270
+So I would say it supports Kollection class and we'll pass in complete license.
+
+46
+00:03:02,270 --> 00:03:02,690
+OK.
+
+47
+00:03:02,720 --> 00:03:07,510
+So we want to make sure that what ever this method returns to us it must be a collection.
+
+48
+00:03:07,520 --> 00:03:09,570
+So it must be an instance of this class.
+
+49
+00:03:09,590 --> 00:03:18,320
+The next thing we want to do is see a server instance off because we don't want a collection of series
+
+50
+00:03:18,320 --> 00:03:21,750
+or collection of users we want a collection of the lesson class.
+
+51
+00:03:21,890 --> 00:03:27,230
+So we're going to assert that anything that is inside there should be on stands and anything that is
+
+52
+00:03:27,230 --> 00:03:30,830
+inside this collection should be an instance of the lesson class.
+
+53
+00:03:30,860 --> 00:03:37,010
+So we'll get completer lessons and we'll just get a new one item from the collection and assert that
+
+54
+00:03:37,010 --> 00:03:39,190
+it's an instance of lesson class.
+
+55
+00:03:39,290 --> 00:03:39,860
+OK.
+
+56
+00:03:40,070 --> 00:03:47,620
+Then we can now assert true that this collection that we received which is completed license court day
+
+57
+00:03:47,640 --> 00:03:49,610
+in its lesson.
+
+58
+00:03:49,940 --> 00:03:50,590
+OK.
+
+59
+00:03:50,660 --> 00:03:57,800
+And since you also completed lesson 2 we should also assert to that completed lessons contains lesson
+
+60
+00:03:57,800 --> 00:03:58,370
+2.
+
+61
+00:03:58,580 --> 00:03:59,220
+OK.
+
+62
+00:03:59,330 --> 00:04:07,240
+And then we'll also assert false completed lessons contains Lesson 3.
+
+63
+00:04:07,430 --> 00:04:12,620
+Ok so I know this is a whole bunch of assertions but what we have is actually doing this.
+
+64
+00:04:12,740 --> 00:04:14,900
+We have three lessons in that series.
+
+65
+00:04:14,990 --> 00:04:18,950
+We completed two and then we caught our eye get completed lessons.
+
+66
+00:04:18,980 --> 00:04:25,220
+I thought this method returns to loss of value and we assert that that value must be an instance of
+
+67
+00:04:25,220 --> 00:04:30,080
+law was collection class therefore a collection and that we are so that everything in that collection
+
+68
+00:04:30,080 --> 00:04:36,050
+must be on the stands of lesson class and then we make sure that that collection actually contains the
+
+69
+00:04:36,050 --> 00:04:42,650
+lesson that was completed which one this one and then it also contains this one which was also completed
+
+70
+00:04:42,830 --> 00:04:48,400
+and we also said that it doesn't contain this one which is not a completed lesson.
+
+71
+00:04:48,470 --> 00:04:49,060
+OK.
+
+72
+00:04:49,070 --> 00:04:56,270
+So we're going to come back to this point because I think this is going to actually I think this is
+
+73
+00:04:56,270 --> 00:04:59,570
+not the best way to test this but I'm going to show you why in a moment.
+
+74
+00:04:59,600 --> 00:05:03,190
+So just keep an eye for this particular point of our test.
+
+75
+00:05:03,200 --> 00:05:03,650
+OK.
+
+76
+00:05:03,680 --> 00:05:05,000
+So let's run this test.
+
+77
+00:05:05,000 --> 00:05:10,170
+So you next few are pasting up this name.
+
+78
+00:05:10,370 --> 00:05:13,270
+OK so caught on the find method get complete lessons.
+
+79
+00:05:13,340 --> 00:05:22,850
+So we'll head over to name and cittie and we're going to create a function which is get completed lessons.
+
+80
+00:05:23,030 --> 00:05:27,040
+And it's expecting us to send in the series.
+
+81
+00:05:27,470 --> 00:05:28,170
+OK.
+
+82
+00:05:28,280 --> 00:05:29,870
+So let's run that sayst.
+
+83
+00:05:30,020 --> 00:05:34,870
+So filled are such and all is an instance of eliminate support collection.
+
+84
+00:05:34,880 --> 00:05:39,200
+Right now we want to get the computer lessons for us.
+
+85
+00:05:39,200 --> 00:05:40,820
+How do we do that.
+
+86
+00:05:40,820 --> 00:05:45,770
+Remember we have this key that we're using for a particular series on a particular user.
+
+87
+00:05:45,920 --> 00:05:53,480
+So what we're doing here we are actually getting the complete license in an array by using this particular
+
+88
+00:05:53,480 --> 00:05:54,570
+statement right here.
+
+89
+00:05:54,680 --> 00:06:01,250
+So what I'm going to do just right here I'm going to see public function get complete lessons for us
+
+90
+00:06:01,250 --> 00:06:02,060
+series.
+
+91
+00:06:02,180 --> 00:06:04,780
+And we're getting the series right here.
+
+92
+00:06:05,030 --> 00:06:11,670
+And what this is going to return is this segment right here so cut it out and I'll paste that in.
+
+93
+00:06:12,440 --> 00:06:21,330
+And right here this is going to reference the get completer lessons for our series.
+
+94
+00:06:21,920 --> 00:06:23,770
+I will pass in the series.
+
+95
+00:06:23,900 --> 00:06:24,420
+OK.
+
+96
+00:06:24,470 --> 00:06:29,550
+And this simply gives us the possibility of using this method wherever we want to.
+
+97
+00:06:29,720 --> 00:06:30,260
+OK.
+
+98
+00:06:30,350 --> 00:06:37,580
+Therefore Lagat that we have done meathook what we can do is get complete organisms you'll be called
+
+99
+00:06:37,580 --> 00:06:46,420
+to this get completed lessons for seeress I will pass in the series.
+
+100
+00:06:46,660 --> 00:06:51,240
+So now we have an array of maybe one two three.
+
+101
+00:06:51,610 --> 00:06:52,100
+OK.
+
+102
+00:06:52,210 --> 00:06:58,190
+And these three elements are the ideas of the lessons that have been completed for these series.
+
+103
+00:06:58,300 --> 00:07:01,470
+So what we can do is we need a collection right.
+
+104
+00:07:01,600 --> 00:07:08,770
+So I would say return collects and we'll collect completer lessons and now that we have a collection
+
+105
+00:07:08,830 --> 00:07:11,240
+it's simply going to be a collection of items.
+
+106
+00:07:11,270 --> 00:07:13,400
+This idea is one to four.
+
+107
+00:07:13,480 --> 00:07:13,920
+OK.
+
+108
+00:07:14,020 --> 00:07:16,360
+But now we don't want a collection of the ideas.
+
+109
+00:07:16,360 --> 00:07:20,870
+We want a collection of the lessons to whom these ideas belong to.
+
+110
+00:07:20,890 --> 00:07:26,050
+Therefore we're going to use our map function to look through each and every one of these elements and
+
+111
+00:07:26,050 --> 00:07:28,270
+transform them in some way.
+
+112
+00:07:28,270 --> 00:07:30,120
+That's what I remember from teaching DOS.
+
+113
+00:07:30,220 --> 00:07:36,400
+So we're passing the clues show which is going to look to each and every one of these elements and for
+
+114
+00:07:36,430 --> 00:07:40,320
+each of the lessons we have available lesson right here.
+
+115
+00:07:40,330 --> 00:07:45,080
+So I would say return lesson find lesson.
+
+116
+00:07:45,250 --> 00:07:45,710
+OK.
+
+117
+00:07:45,730 --> 00:07:48,630
+All we can fairly call this lesson idea.
+
+118
+00:07:48,910 --> 00:07:50,380
+So what's happening here.
+
+119
+00:07:50,380 --> 00:07:55,370
+First we have a collection that we just created but this is a collection of ideas.
+
+120
+00:07:55,450 --> 00:07:57,540
+But what we want is a collection of lessons.
+
+121
+00:07:57,640 --> 00:07:59,550
+But we have the ideas of the lessons.
+
+122
+00:07:59,620 --> 00:08:02,320
+So how do we transform these ideas into lessons.
+
+123
+00:08:02,320 --> 00:08:08,860
+We use a map method and this method is available on Lavoe collections and this map mid-thought would
+
+124
+00:08:08,860 --> 00:08:15,650
+help us go through each and every one of the collection items and transform them in any way we want.
+
+125
+00:08:15,700 --> 00:08:22,120
+So for example in this case we are going to each and every idea element and then we are finding the
+
+126
+00:08:22,120 --> 00:08:25,130
+lesson that matches that Id elements.
+
+127
+00:08:25,210 --> 00:08:32,300
+OK so before we run that let's just use and other top use but cost lesson.
+
+128
+00:08:32,550 --> 00:08:33,270
+OK.
+
+129
+00:08:33,280 --> 00:08:35,570
+So let's run our tests one more time.
+
+130
+00:08:35,820 --> 00:08:36,050
+OK.
+
+131
+00:08:36,070 --> 00:08:39,310
+So Field asserting that false is true.
+
+132
+00:08:39,340 --> 00:08:41,960
+Check out our test and look at what is happening.
+
+133
+00:08:41,960 --> 00:08:50,110
+We with this assertion meaning we return a collection that was successful and we asserted that any one
+
+134
+00:08:50,110 --> 00:08:55,500
+dumb lesson elements from that collection should be an instance of lesson class.
+
+135
+00:08:55,600 --> 00:08:57,040
+So that was successful.
+
+136
+00:08:57,040 --> 00:09:04,210
+And then when we reach this point where it's checking if the completed lessons contains this lesson
+
+137
+00:09:04,210 --> 00:09:05,560
+right here it failed.
+
+138
+00:09:05,560 --> 00:09:08,360
+And also this one also filled with apparently.
+
+139
+00:09:08,470 --> 00:09:14,560
+So I'm going to show you something right here we're going to date them completed lessons and I'm going
+
+140
+00:09:14,560 --> 00:09:16,000
+to show you what we have.
+
+141
+00:09:16,330 --> 00:09:16,630
+OK.
+
+142
+00:09:16,630 --> 00:09:17,650
+So look at this.
+
+143
+00:09:17,680 --> 00:09:21,840
+If we had them completed lessons we have an eye on items.
+
+144
+00:09:21,840 --> 00:09:23,360
+Army of Two.
+
+145
+00:09:23,410 --> 00:09:28,050
+The first is an intensive lesson obviously and which is I.D. one.
+
+146
+00:09:28,150 --> 00:09:31,290
+And the second is an instance of lesson.
+
+147
+00:09:31,310 --> 00:09:32,840
+Also on Friday too.
+
+148
+00:09:32,860 --> 00:09:33,280
+Right.
+
+149
+00:09:33,280 --> 00:09:38,710
+So we actually have the correct values but then this contains mid-thought is written into as follows.
+
+150
+00:09:38,740 --> 00:09:39,180
+OK.
+
+151
+00:09:39,310 --> 00:09:41,560
+So there's a simple reason for this.
+
+152
+00:09:41,650 --> 00:09:44,440
+The contains my thought is checking for exact values.
+
+153
+00:09:44,500 --> 00:09:51,730
+So we might not have exactly the same lesson like we have right here because we got one from our database
+
+154
+00:09:51,730 --> 00:09:55,440
+and got one from our factory and it might be a little bit different.
+
+155
+00:09:55,450 --> 00:09:58,550
+So the code things my thought my return follows.
+
+156
+00:09:58,660 --> 00:10:03,300
+So what we can to do is we're not going to run these Ossetians using collections.
+
+157
+00:10:03,460 --> 00:10:07,630
+What I want to do is I'm going to see computer lessons.
+
+158
+00:10:07,800 --> 00:10:16,510
+I this is going to be called a completed license or Plock called the IDs so we can use this method to
+
+159
+00:10:16,510 --> 00:10:23,830
+get only the IDs of these items in the collection and we can code all mid-thought to transform the collection
+
+160
+00:10:23,980 --> 00:10:25,220
+into an array.
+
+161
+00:10:25,240 --> 00:10:30,760
+So now that they have an array of the computer lessons which I'm getting from this computer lessons
+
+162
+00:10:30,760 --> 00:10:37,910
+that I got from this method then I can change my assertion so I search true and I'm going to call in
+
+163
+00:10:37,940 --> 00:10:39,360
+are we.
+
+164
+00:10:40,270 --> 00:10:48,220
+And the way we are using these computer license IDs and I'm going to see check for Lesson one so Lesson
+
+165
+00:10:48,310 --> 00:10:49,450
+1 easy.
+
+166
+00:10:49,630 --> 00:10:53,760
+And then I'm going to run exactly the same assertion.
+
+167
+00:10:53,890 --> 00:10:55,450
+For this lesson.
+
+168
+00:10:55,510 --> 00:10:58,480
+So we're going to check for lesson two.
+
+169
+00:10:58,560 --> 00:11:02,130
+So I assert that the idea of Lesson two is in this computer lessons.
+
+170
+00:11:02,170 --> 00:11:10,960
+IDs are ready and then a suit falls in ari for a lesson to be OK because we didn't complete lesson three
+
+171
+00:11:11,080 --> 00:11:12,660
+computer lesson one and two.
+
+172
+00:11:12,700 --> 00:11:16,340
+Therefore this should be returning false toss.
+
+173
+00:11:16,450 --> 00:11:17,060
+OK.
+
+174
+00:11:17,140 --> 00:11:19,210
+So let's run that again.
+
+175
+00:11:19,630 --> 00:11:20,100
+OK.
+
+176
+00:11:20,120 --> 00:11:23,600
+In our ear expects from attitude to be an integer given block.
+
+177
+00:11:23,740 --> 00:11:28,780
+OK I'm sorry about that so we should be parsing this as the second problem it's our not the other way
+
+178
+00:11:28,780 --> 00:11:29,160
+around.
+
+179
+00:11:29,200 --> 00:11:31,320
+So I'm just going to change that to be in a sense.
+
+180
+00:11:31,480 --> 00:11:33,460
+Ok so I'm done switching the position.
+
+181
+00:11:33,460 --> 00:11:40,390
+So in a way that takes a Nido and Haystack like that OK run the tests one more time and grade.
+
+182
+00:11:40,390 --> 00:11:42,550
+We have a successful test finally.
+
+183
+00:11:42,640 --> 00:11:44,050
+So what's happening.
+
+184
+00:11:44,080 --> 00:11:49,490
+I'm just going to go through this mid-thought step by step so we understand what was going on.
+
+185
+00:11:49,510 --> 00:11:54,480
+So we want to test that we can get the completer lessons for our series.
+
+186
+00:11:54,540 --> 00:12:02,650
+So we create other user lessons and these three lessons belong to series with ID one then we completed
+
+187
+00:12:02,650 --> 00:12:07,340
+lesson 1 and we completed lesson 2 but we did not complete lesson 3.
+
+188
+00:12:07,390 --> 00:12:14,350
+So the computer lessons mid-thought we got a collection of all the lessons for that series that we have
+
+189
+00:12:14,350 --> 00:12:15,120
+completed.
+
+190
+00:12:15,220 --> 00:12:21,610
+So we called use our get computer lessons and then we passed in the east and we got a collection of
+
+191
+00:12:21,700 --> 00:12:28,780
+all the lessons completed in that civics so that our sessions we where checking the return value was
+
+192
+00:12:28,780 --> 00:12:30,800
+actually a collection which it was.
+
+193
+00:12:30,880 --> 00:12:36,640
+And then we also checked if every member of the collection is a lesson which it was.
+
+194
+00:12:36,790 --> 00:12:44,320
+And then we got the IDs from the computer lessons collection and we did this because our contentment
+
+195
+00:12:44,370 --> 00:12:48,780
+thought was not really comparing like we wanted it to.
+
+196
+00:12:48,850 --> 00:12:54,890
+And this was a simple but easy work around for us which we might come back to later but not now.
+
+197
+00:12:54,910 --> 00:13:00,390
+Then we checked if the IDs of the computer lessons were actually in the completer lessons.
+
+198
+00:13:00,400 --> 00:13:02,090
+IDS our way.
+
+199
+00:13:02,170 --> 00:13:02,740
+OK.
+
+200
+00:13:02,860 --> 00:13:10,150
+So if you check out our computer lesson my thought what it does is it gets the computer lessons for
+
+201
+00:13:10,150 --> 00:13:14,590
+a series which returns to us on our way right here.
+
+202
+00:13:14,590 --> 00:13:20,820
+And then we change that array to our collection we map to each and every one of those elements.
+
+203
+00:13:20,920 --> 00:13:25,560
+We get the lesson with that idea and we return it as a collection.
+
+204
+00:13:25,650 --> 00:13:26,120
+OK.
+
+205
+00:13:26,140 --> 00:13:29,100
+So if you haven't done a stoolie just go through again.
+
+206
+00:13:29,110 --> 00:13:31,950
+It's not that difficult but thank you so much for watching.
+
+207
+00:13:32,050 --> 00:13:35,660
+Let's continue our having some fun in the next episode.
+

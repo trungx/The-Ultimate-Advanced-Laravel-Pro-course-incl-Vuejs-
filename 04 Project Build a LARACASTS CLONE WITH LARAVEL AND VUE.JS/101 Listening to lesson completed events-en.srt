@@ -1,0 +1,300 @@
+1
+00:00:00,680 --> 00:00:02,710
+OK guys let's do some javascript.
+
+2
+00:00:02,750 --> 00:00:09,830
+We have our API we have our suites our love which we saw just to have some useful notifications.
+
+3
+00:00:09,830 --> 00:00:15,500
+And we have our player now when they use a finishes just watch a video we want to alert something to
+
+4
+00:00:15,500 --> 00:00:20,870
+they use or like a notification message and then maybe we'd like to use to the next lesson or something
+
+5
+00:00:20,870 --> 00:00:21,460
+like that.
+
+6
+00:00:21,620 --> 00:00:23,980
+So let's go ahead and take off that in this.
+
+7
+00:00:24,110 --> 00:00:28,850
+If you haven't installed tweak alert just go ahead and put that in the sausage.
+
+8
+00:00:29,150 --> 00:00:35,920
+And then for our video player we need to listen when the video completes or when the video is and then
+
+9
+00:00:36,300 --> 00:00:39,450
+and we check all the events we have on that event right there.
+
+10
+00:00:39,500 --> 00:00:52,390
+Therefore we had to clear that view and said look we are going to see play that on and then call a method
+
+11
+00:00:52,550 --> 00:01:00,210
+which is going to be does not display video and then I launch.
+
+12
+00:01:00,640 --> 00:01:01,400
+OK.
+
+13
+00:01:01,520 --> 00:01:03,450
+So therefore we need to create that mid-thought.
+
+14
+00:01:03,470 --> 00:01:10,590
+So I'm going to create my methods object right here and I need a display region in that search.
+
+15
+00:01:10,730 --> 00:01:12,830
+Now how would this be.
+
+16
+00:01:12,830 --> 00:01:15,980
+We need to display an alert therefore let's fill in the street.
+
+17
+00:01:15,980 --> 00:01:18,160
+And that might be that we just installed.
+
+18
+00:01:18,260 --> 00:01:23,910
+So in Port street alert from each I lurch.
+
+19
+00:01:24,070 --> 00:01:37,460
+Ok then here we can see sweet alerts and we're going to see Yea you completed this video or this lesson
+
+20
+00:01:37,700 --> 00:01:38,310
+or whatever.
+
+21
+00:01:38,460 --> 00:01:48,230
+Ok then we can listen to what happens as soon as the user clicks on the confirm button and once that
+
+22
+00:01:48,230 --> 00:01:54,120
+happens we're going to see window that location across the whole page for now.
+
+23
+00:01:54,260 --> 00:01:54,740
+OK.
+
+24
+00:01:54,950 --> 00:02:01,020
+So what is happening is when we have this confirmation you need to check out on that documentation is
+
+25
+00:02:01,040 --> 00:02:01,800
+really easy.
+
+26
+00:02:01,850 --> 00:02:02,200
+OK.
+
+27
+00:02:02,210 --> 00:02:07,560
+For example using pharmacy's we can keep track of how the U.S. are actually done.
+
+28
+00:02:07,610 --> 00:02:09,610
+So click on each other button.
+
+29
+00:02:09,740 --> 00:02:14,610
+Although if you click on these Cobar you scored right here.
+
+30
+00:02:14,690 --> 00:02:18,390
+So that's what we are doing when the user clicks on the confirm.
+
+31
+00:02:18,480 --> 00:02:24,190
+We're simply going to redirect that user to the next lesson.
+
+32
+00:02:24,190 --> 00:02:25,640
+Now we don't have the next lesson.
+
+33
+00:02:25,690 --> 00:02:26,780
+So let's get to it.
+
+34
+00:02:26,950 --> 00:02:29,460
+And the easiest way is to get it from our program.
+
+35
+00:02:29,620 --> 00:02:32,230
+So next lesson you're out.
+
+36
+00:02:32,620 --> 00:02:33,430
+OK.
+
+37
+00:02:39,100 --> 00:02:41,510
+Then in our What's that let that be.
+
+38
+00:02:41,590 --> 00:02:43,550
+Let's pass this pop in.
+
+39
+00:02:43,690 --> 00:02:49,140
+So here we need next mess your all and it's going to be Buju.
+
+40
+00:02:49,210 --> 00:02:52,640
+We already have the Roxmouth thought that you are soliciting.
+
+41
+00:02:52,780 --> 00:02:55,110
+So I'll just copy it.
+
+42
+00:02:55,150 --> 00:02:58,690
+So for the next lesson and then I'm going to paste it right here.
+
+43
+00:02:58,930 --> 00:02:59,440
+OK.
+
+44
+00:02:59,440 --> 00:03:00,430
+So don't worry.
+
+45
+00:03:00,430 --> 00:03:05,020
+I know we have a lot of queries going on right here but regular facts are to move all of those.
+
+46
+00:03:05,020 --> 00:03:07,630
+But for now let's just make this work.
+
+47
+00:03:08,200 --> 00:03:08,760
+OK.
+
+48
+00:03:08,800 --> 00:03:11,590
+So to make sure everything is working.
+
+49
+00:03:11,650 --> 00:03:16,660
+So to make sure everything works as aspects that Windows that location is supposed to be equal to this
+
+50
+00:03:16,660 --> 00:03:19,440
+dot next lesson.
+
+51
+00:03:19,540 --> 00:03:20,650
+Oh OK.
+
+52
+00:03:20,740 --> 00:03:25,510
+So automatically when we click on that button it's going to rediagnosed the next lesson.
+
+53
+00:03:25,690 --> 00:03:29,940
+OK so let's go ahead and see if everything works as expected.
+
+54
+00:03:31,040 --> 00:03:34,480
+Let's inspect the refresh right now.
+
+55
+00:03:35,400 --> 00:03:42,080
+And then let's see you play to see if we have the next lesson on how we do.
+
+56
+00:03:42,230 --> 00:03:47,870
+So I'm going to play this video and then I'm going to ask for it a little to the end.
+
+57
+00:03:50,080 --> 00:03:58,490
+So instead we see that notification and ones that we just completed our play are automatically files
+
+58
+00:03:58,500 --> 00:04:01,180
+that events and we just play honestly.
+
+59
+00:04:01,280 --> 00:04:05,080
+Let's now click on this button and everything works perfectly.
+
+60
+00:04:05,160 --> 00:04:09,500
+This speech should be refresh to the next lesson grades.
+
+61
+00:04:09,510 --> 00:04:16,950
+It's refreshed but we have a problem right because in our pop the way a right here we are trying to
+
+62
+00:04:17,400 --> 00:04:19,190
+say and get the next lesson.
+
+63
+00:04:19,230 --> 00:04:21,760
+But this is actually the last lesson of the series.
+
+64
+00:04:21,870 --> 00:04:22,540
+OK.
+
+65
+00:04:22,740 --> 00:04:26,450
+And remember we didn't have that error earlier because we rabbits.
+
+66
+00:04:26,490 --> 00:04:29,030
+In an if statement.
+
+67
+00:04:29,030 --> 00:04:33,960
+So if lessons get this lesson on if lesson get next lesson.
+
+68
+00:04:34,140 --> 00:04:37,710
+So but at least we're redirecting to the next lesson successfully.
+
+69
+00:04:37,710 --> 00:04:44,490
+Now what we need to do is only call this last thought if we have a next lesson.
+
+70
+00:04:44,580 --> 00:04:45,040
+OK.
+
+71
+00:04:45,150 --> 00:04:48,490
+So we're going to be solving a lot in the very next video.
+
+72
+00:04:48,500 --> 00:04:51,800
+Clean up a lot of these and avoiding such errors.
+
+73
+00:04:51,900 --> 00:04:52,410
+OK.
+
+74
+00:04:52,530 --> 00:04:54,090
+Thanks so much for watching.
+
+75
+00:04:54,090 --> 00:04:55,940
+See you in the very next video.
+

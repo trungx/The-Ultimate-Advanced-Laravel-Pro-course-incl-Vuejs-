@@ -1,0 +1,404 @@
+1
+00:00:00,780 --> 00:00:06,300
+I want to automatically update that as soon as we receive a response from our server.
+
+2
+00:00:06,420 --> 00:00:11,240
+Therefore what we are going to be doing is meeting on events to the parents just like we did when we
+
+3
+00:00:11,240 --> 00:00:16,260
+were creating the lesson and our parents will automatically take care of the rest.
+
+4
+00:00:16,260 --> 00:00:24,360
+So before we do that let's close this model and immediate events the name of this event is going to
+
+5
+00:00:24,360 --> 00:00:30,150
+be lesson updated on the pillow that we're going to be sending to our parents.
+
+6
+00:00:30,170 --> 00:00:38,490
+The screen should be response to data then in our lessons that view which is the parents we can listen
+
+7
+00:00:38,490 --> 00:00:46,350
+to that event by subscribing to it and we can receive the payload in here in a verbal lesson.
+
+8
+00:00:46,350 --> 00:00:53,250
+And when we received this we want to find that lesson using its I.D. in this lessons are eight.
+
+9
+00:00:54,090 --> 00:00:58,200
+And then we to automatically replace it with this response that we got from the server.
+
+10
+00:00:58,410 --> 00:01:02,410
+So let's get the next and we'll be searching the lessons.
+
+11
+00:01:02,410 --> 00:01:10,470
+Ari on this parents will be using javascript's fine index method and if you don't know about this method
+
+12
+00:01:10,710 --> 00:01:15,900
+this is a simple method that Joske provide to us and what is going to do is it takes in a closed shop
+
+13
+00:01:15,990 --> 00:01:22,050
+and it's going to try to find an element in the current rate that matches the condition that is placed
+
+14
+00:01:22,050 --> 00:01:22,890
+in that closure.
+
+15
+00:01:22,920 --> 00:01:26,040
+And if he doesn't find any then he's going to return negative one.
+
+16
+00:01:26,040 --> 00:01:29,090
+But if he finds he's going to return to the index of that element.
+
+17
+00:01:29,290 --> 00:01:36,370
+So would look to all of them and we have the current object in that array in this variable area.
+
+18
+00:01:36,450 --> 00:01:41,040
+So return less than that ID equals all that ID.
+
+19
+00:01:41,040 --> 00:01:44,120
+So we are looking for a lesson where the IDs match.
+
+20
+00:01:44,220 --> 00:01:44,790
+OK.
+
+21
+00:01:44,880 --> 00:01:50,340
+Now if you get that index what are going to do is we're going to replace this lesson with the one that
+
+22
+00:01:50,340 --> 00:01:57,650
+we have in the lessons are we this that license dot splice and the splice method.
+
+23
+00:01:57,860 --> 00:02:03,930
+Checking the index the number of elements we want to move and what replaced at that position.
+
+24
+00:02:03,930 --> 00:02:06,690
+So the lesson OK that should do the trick.
+
+25
+00:02:06,690 --> 00:02:09,780
+Let's go ahead and see how this works in our Vasa.
+
+26
+00:02:10,230 --> 00:02:15,960
+And we simply cannot do said at the end of the title so we know it's actually added that safe lesson.
+
+27
+00:02:15,960 --> 00:02:16,580
+It's closed.
+
+28
+00:02:16,590 --> 00:02:17,650
+And there we go.
+
+29
+00:02:17,670 --> 00:02:18,830
+We have just that right there.
+
+30
+00:02:18,840 --> 00:02:22,790
+So it means it's correct defined in that lesson and replacing it.
+
+31
+00:02:22,800 --> 00:02:29,640
+Now just for a tip if you're trying to update your lesson by simply saying that lessons and parsing
+
+32
+00:02:29,640 --> 00:02:33,600
+in the lesson index and replacing it with the lesson.
+
+33
+00:02:33,810 --> 00:02:35,530
+This is not going to work very well.
+
+34
+00:02:35,760 --> 00:02:36,660
+Yes.
+
+35
+00:02:36,660 --> 00:02:40,430
+And the recommended way to do that is using the splice method.
+
+36
+00:02:40,530 --> 00:02:41,150
+OK.
+
+37
+00:02:41,220 --> 00:02:44,670
+So that's a little gotcha that you might be struggling with but that doesn't work out here.
+
+38
+00:02:44,790 --> 00:02:46,110
+Yes.
+
+39
+00:02:46,110 --> 00:02:51,810
+Now let us notice something when we click on the new lesson Butson Yeah we still have these dates are
+
+40
+00:02:51,840 --> 00:02:57,090
+in our model and we actually have a safe lesson watching here rather than the button we specified in
+
+41
+00:02:57,090 --> 00:02:57,710
+our code.
+
+42
+00:02:57,780 --> 00:02:59,280
+So let's handle that.
+
+43
+00:02:59,280 --> 00:03:05,220
+The reason is we are not telling the model that we are resetting editing to false.
+
+44
+00:03:05,310 --> 00:03:10,410
+Therefore what we're going to do when we listen to that lesson we're going to set this that editing
+
+45
+00:03:11,210 --> 00:03:14,550
+to false and we have to clear this data.
+
+46
+00:03:14,760 --> 00:03:19,820
+So I don't want to go through the cycle of this that scription equals empty string.
+
+47
+00:03:19,890 --> 00:03:22,110
+Let's start with your idea those days.
+
+48
+00:03:22,170 --> 00:03:27,470
+Therefore I'm going to take this as an opportunity to simply refactor this into a class.
+
+49
+00:03:27,600 --> 00:03:28,080
+OK.
+
+50
+00:03:28,200 --> 00:03:34,080
+So what I'm going to be doing is defining a lesson class and this lesson class is going to take in a
+
+51
+00:03:34,080 --> 00:03:38,550
+lesson and it's going to set properties on this class that match that lesson.
+
+52
+00:03:38,550 --> 00:03:46,050
+For example this title equals lesson the title and if no less than the title exists we are going to
+
+53
+00:03:46,200 --> 00:03:48,080
+assign it to an empty string.
+
+54
+00:03:48,230 --> 00:03:49,730
+Say that description.
+
+55
+00:03:49,800 --> 00:03:54,140
+Cost less than the description or empty string.
+
+56
+00:03:54,150 --> 00:04:01,020
+This dog Id cause less than the video ID or an empty string.
+
+57
+00:04:01,020 --> 00:04:09,310
+And finally this is of course lesson that of number or an empty string.
+
+58
+00:04:09,450 --> 00:04:13,140
+And that's a simple lesson class that will help us refactor our code.
+
+59
+00:04:13,140 --> 00:04:17,510
+Now how do I want to use this when I listen to a Creedon you less than event.
+
+60
+00:04:17,610 --> 00:04:19,480
+I'm going to set this.
+
+61
+00:04:19,510 --> 00:04:22,870
+That lesson equals new lesson.
+
+62
+00:04:23,250 --> 00:04:23,800
+OK.
+
+63
+00:04:24,030 --> 00:04:26,990
+And it means I need a lesson property or this class.
+
+64
+00:04:27,140 --> 00:04:33,130
+And lesson for potty is all of this title description episode and video ID.
+
+65
+00:04:33,240 --> 00:04:36,120
+Therefore I'm going to replace all of this lesson.
+
+66
+00:04:36,540 --> 00:04:37,080
+OK.
+
+67
+00:04:37,140 --> 00:04:42,020
+So when we listen to quit new this that lesson is going to be a new lesson.
+
+68
+00:04:42,150 --> 00:04:43,670
+Therefore it's going to be empty.
+
+69
+00:04:43,710 --> 00:04:45,980
+And we should actually pass on empty object right there.
+
+70
+00:04:46,140 --> 00:04:46,530
+OK.
+
+71
+00:04:46,530 --> 00:04:52,130
+So it's going to be empty with all of these empty strings then right here where I have title description
+
+72
+00:04:52,140 --> 00:04:55,200
+video ID.
+
+73
+00:04:55,390 --> 00:04:57,980
+I'm going to replace all of this with this.
+
+74
+00:04:58,000 --> 00:05:04,040
+That lesson equals new lesson and would pass in the lesson into the constructor.
+
+75
+00:05:04,150 --> 00:05:04,670
+OK.
+
+76
+00:05:04,720 --> 00:05:10,840
+And they also need to move the episode ID them with the series ID and lets them ID on this class.
+
+77
+00:05:10,960 --> 00:05:18,090
+Also when we are making a post request to quit a lesson we can now move all of this and pass in that
+
+78
+00:05:18,100 --> 00:05:18,930
+lesson.
+
+79
+00:05:19,090 --> 00:05:25,610
+And also when we are making that pooch request you can now replace all of this with this dog lesson.
+
+80
+00:05:25,850 --> 00:05:30,850
+OK so the only way to know if we've actually broken anything is to try it out right.
+
+81
+00:05:30,850 --> 00:05:32,430
+So let's go ahead and try.
+
+82
+00:05:32,710 --> 00:05:32,980
+Yeah.
+
+83
+00:05:32,980 --> 00:05:39,220
+And looks like we already have a bunch of Aristotle defined on that in science and that would be because
+
+84
+00:05:39,790 --> 00:05:47,470
+we have the model tied to the model vidual ID and all of that so we want to replace the lesson title
+
+85
+00:05:47,620 --> 00:05:55,630
+lesson that video ID lesson that episode number and finally lesson that description safe dog refresh
+
+86
+00:05:55,640 --> 00:05:57,450
+again and that clears up.
+
+87
+00:05:57,540 --> 00:06:02,440
+Let's check out of your tools and we have an empty lesson object right here right.
+
+88
+00:06:02,440 --> 00:06:07,420
+So let's click on average it populates that object with the data.
+
+89
+00:06:07,600 --> 00:06:11,070
+Let's get a lesson by adding a detat right here.
+
+90
+00:06:11,440 --> 00:06:18,230
+And reducing the description safe lesson and look at that nothing was broken.
+
+91
+00:06:18,230 --> 00:06:24,410
+So we actually had a successful refracts or not we were going to create new lesson Butson everything
+
+92
+00:06:24,410 --> 00:06:26,950
+is initialised back to an empty string.
+
+93
+00:06:26,960 --> 00:06:31,000
+So I think that actually works strangely perfectly.
+
+94
+00:06:31,010 --> 00:06:34,830
+Let's go ahead and create a lesson to make sure nothing is broken.
+
+95
+00:06:34,840 --> 00:06:35,900
+Great lesson.
+
+96
+00:06:37,720 --> 00:06:38,330
+OK.
+
+97
+00:06:38,350 --> 00:06:39,080
+So there we go.
+
+98
+00:06:39,080 --> 00:06:45,800
+We have a lesson here on the edge and we have the data and if you also hit on the Edit button it automatically
+
+99
+00:06:45,800 --> 00:06:47,330
+is parsed awesome.
+
+100
+00:06:47,330 --> 00:06:50,830
+So that looks like it's working perfectly.
+
+101
+00:06:50,870 --> 00:06:55,320
+I'm going to hit pause for a second and we're going to continue in the very next video.
+

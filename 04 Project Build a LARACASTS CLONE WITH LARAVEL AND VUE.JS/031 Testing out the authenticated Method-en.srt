@@ -1,0 +1,108 @@
+1
+00:00:00,210 --> 00:00:06,120
+Like grabbing the last video when we have a luggin response which is positive Ravell is going to generate
+
+2
+00:00:06,120 --> 00:00:11,700
+a session all the log in attempts and call authenticated method on this trait.
+
+3
+00:00:11,700 --> 00:00:15,920
+So what are we going to be doing is actually creating these authenticated method in the controller.
+
+4
+00:00:16,020 --> 00:00:21,210
+So I'm just going to copy the templates that we have and for the purpose of this video I read said a
+
+5
+00:00:21,210 --> 00:00:25,800
+test user that we could use larger ships in with issues use of factory that we could use.
+
+6
+00:00:25,800 --> 00:00:30,190
+So I just use this for each region of the news using Peachtree or San Diego.
+
+7
+00:00:30,300 --> 00:00:33,830
+So I'm going to copy the templates that we have here.
+
+8
+00:00:33,840 --> 00:00:35,210
+There we go.
+
+9
+00:00:35,220 --> 00:00:36,340
+I'm going to cut it out.
+
+10
+00:00:36,360 --> 00:00:38,140
+Truly sort of a writer.
+
+11
+00:00:38,190 --> 00:00:44,430
+So in my log in control I'll paste that in and sure enough I need to import the request class right.
+
+12
+00:00:44,430 --> 00:00:48,250
+So I'm just going to copy this path and make sure I use it at the top.
+
+13
+00:00:48,270 --> 00:00:53,810
+Use eliminate S2P request and automatically inject the request for us.
+
+14
+00:00:53,910 --> 00:00:55,470
+So what do we want to do.
+
+15
+00:00:55,470 --> 00:01:02,150
+We want to test to see or make sure that level is going to call this method once the logging is successful.
+
+16
+00:01:02,160 --> 00:01:04,620
+So let's just start by returning a string.
+
+17
+00:01:04,710 --> 00:01:09,780
+So when the result is successful we're lovers of article you can call these authenticated thoughts and
+
+18
+00:01:09,780 --> 00:01:10,610
+know what to do.
+
+19
+00:01:10,680 --> 00:01:16,510
+So we should expect a loggin successful response when we visit a browser.
+
+20
+00:01:16,620 --> 00:01:17,430
+Let's check this out.
+
+21
+00:01:17,430 --> 00:01:23,430
+Go to our logon page and are putting the e-mail of the user I created under password is secret by default
+
+22
+00:01:23,430 --> 00:01:24,120
+for Lavo.
+
+23
+00:01:24,120 --> 00:01:28,470
+Now click on mugging and sure enough we have this logging successful response that we gets from all
+
+24
+00:01:28,470 --> 00:01:29,950
+authenticated MATHO.
+
+25
+00:01:30,060 --> 00:01:37,800
+So you see just by writing one single method we can actually completely switch form a view based logging
+
+26
+00:01:37,800 --> 00:01:40,560
+system to an AJAX based system.
+
+27
+00:01:40,560 --> 00:01:44,450
+So let's just jump street and try to make this walk from the front end.
+

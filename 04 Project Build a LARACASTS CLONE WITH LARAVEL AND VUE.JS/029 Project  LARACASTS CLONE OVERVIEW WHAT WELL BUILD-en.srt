@@ -1,0 +1,332 @@
+1
+00:00:00,570 --> 00:00:05,880
+OK guys let's talk about aggregation we're going to be Buellton and we're going to build this from scratch
+
+2
+00:00:06,030 --> 00:00:09,790
+with a test driven development that poured right into us for everything.
+
+3
+00:00:09,870 --> 00:00:11,110
+And it's going to be real fun.
+
+4
+00:00:11,130 --> 00:00:15,830
+So if you want a true introduction yourself it leaves an immediate bad cast that come.
+
+5
+00:00:15,940 --> 00:00:17,960
+OK so what's this application.
+
+6
+00:00:17,970 --> 00:00:19,470
+It's a SAS application.
+
+7
+00:00:19,470 --> 00:00:25,830
+Like when you actually have in real life and it has courses and these courses are video lessons that
+
+8
+00:00:26,040 --> 00:00:28,150
+the subscribers on the platform can use.
+
+9
+00:00:28,230 --> 00:00:29,250
+Some of them are free.
+
+10
+00:00:29,250 --> 00:00:30,480
+Some of them are not.
+
+11
+00:00:30,660 --> 00:00:35,460
+And for the ones that are not free to use actually has to have a subscription which means you're going
+
+12
+00:00:35,460 --> 00:00:38,830
+to have a lot of cache and stripe in this project.
+
+13
+00:00:38,910 --> 00:00:43,850
+And this is going to create a subscription for the user giving him permission to watch any sort of lesson
+
+14
+00:00:43,920 --> 00:00:45,170
+on the proper form.
+
+15
+00:00:45,290 --> 00:00:45,590
+OK.
+
+16
+00:00:45,600 --> 00:00:51,480
+So if you go ahead and visit one of the courses right here which is actually created set by one of the
+
+17
+00:00:51,480 --> 00:00:57,510
+students here and this costs you can actually see that we have fortunately right here that detects if
+
+18
+00:00:57,510 --> 00:01:03,030
+you stay locked in use or has already started this course and they use and readies for that and we're
+
+19
+00:01:03,030 --> 00:01:04,860
+going to also write tests for that.
+
+20
+00:01:05,010 --> 00:01:13,940
+And if we continue learning right here then it kicks us to the page where we have the title of the series.
+
+21
+00:01:13,980 --> 00:01:16,460
+And we also have the title of the lesson.
+
+22
+00:01:16,560 --> 00:01:17,180
+OK.
+
+23
+00:01:17,280 --> 00:01:24,420
+And we actually have the play right here which loads videos for this but plan a lesson from the meal
+
+24
+00:01:24,660 --> 00:01:30,870
+and then we also have next and previous lesson Bateson's and notice how it redirected us to the second
+
+25
+00:01:30,870 --> 00:01:35,150
+lesson because this is where we left off the last time we started the series.
+
+26
+00:01:35,250 --> 00:01:35,650
+OK.
+
+27
+00:01:35,730 --> 00:01:38,470
+So we also have tracking right here with Reddy's.
+
+28
+00:01:38,580 --> 00:01:42,840
+We also have next lesson the previous lesson for Chanology right here.
+
+29
+00:01:42,880 --> 00:01:44,300
+Go to the next one.
+
+30
+00:01:44,310 --> 00:01:47,130
+We also have complete lessons functionality.
+
+31
+00:01:47,130 --> 00:01:56,680
+So for example if I forward this video today and right here automatically you see right here it fires
+
+32
+00:01:56,690 --> 00:02:02,740
+up on events that tells us hey you completed the series but then if not the last lesson of the series
+
+33
+00:02:02,950 --> 00:02:06,230
+then it's going to redirect us to the next automatically.
+
+34
+00:02:06,300 --> 00:02:06,840
+OK.
+
+35
+00:02:06,980 --> 00:02:11,710
+Another functionals I want to show you is to create Sui's functionality where you can literally create
+
+36
+00:02:11,710 --> 00:02:14,260
+your own series as an administrator.
+
+37
+00:02:14,290 --> 00:02:18,130
+So if you have an administrator account you can create your own series upload images.
+
+38
+00:02:18,150 --> 00:02:23,920
+I'm going to be teaching you how to upload images to storage and how to test these laws to make sure
+
+39
+00:02:23,920 --> 00:02:29,020
+everything is fine and we are also going to be able to edit and deletes erase all of the functionality
+
+40
+00:02:29,320 --> 00:02:32,000
+and right here if we check out all the see.
+
+41
+00:02:32,130 --> 00:02:34,680
+This is for the users that are not administrators.
+
+42
+00:02:34,690 --> 00:02:35,880
+They can see other series.
+
+43
+00:02:35,920 --> 00:02:40,750
+But as administrator we can also visit all the service right here and we can see all the crates that
+
+44
+00:02:40,750 --> 00:02:48,260
+series if I click into this one then it takes us to the content area where we manage this series.
+
+45
+00:02:48,310 --> 00:02:48,740
+OK.
+
+46
+00:02:48,790 --> 00:02:54,650
+So we have this functionality right here and this dashboard is completely created in view G-S.
+
+47
+00:02:54,760 --> 00:03:00,930
+OK so if we want to delete this last one right here we can go ahead and delete right there.
+
+48
+00:03:01,420 --> 00:03:07,540
+And it gives us an alert and if we say OK then we have lessons with that successfully and we can actually
+
+49
+00:03:07,540 --> 00:03:13,780
+go ahead and create another son in case we want and this is simply going to add another lesson to the
+
+50
+00:03:13,780 --> 00:03:14,530
+dashboard.
+
+51
+00:03:14,530 --> 00:03:17,320
+We can also choose if a lesson is going to be premium.
+
+52
+00:03:17,440 --> 00:03:18,700
+And by default it's false.
+
+53
+00:03:18,720 --> 00:03:23,820
+But we want it to be true then means only subscribers will be able to watch that lesson.
+
+54
+00:03:23,950 --> 00:03:24,340
+OK.
+
+55
+00:03:24,430 --> 00:03:28,100
+So that's unfortunately we have quit with our day to day view.
+
+56
+00:03:28,110 --> 00:03:33,280
+Yes this is the most part where we're going to be using VHS and it's going to be real fun because that's
+
+57
+00:03:33,280 --> 00:03:34,920
+a lot going on right here.
+
+58
+00:03:34,990 --> 00:03:38,360
+Craig added late updates communicate with Sarratt and stuff like that.
+
+59
+00:03:38,380 --> 00:03:43,160
+So I'm just going to edit this lesson and I'm going to make it premium right here.
+
+60
+00:03:43,320 --> 00:03:43,820
+OK.
+
+61
+00:03:43,840 --> 00:03:51,850
+So if I saved this lesson then I visit the home page visit that particular course and then continue
+
+62
+00:03:51,850 --> 00:03:52,810
+learning.
+
+63
+00:03:53,020 --> 00:04:00,700
+I can actually watch it because I have an active subscription because if I visit my profile then check
+
+64
+00:04:00,700 --> 00:04:02,410
+out my payments on subscription.
+
+65
+00:04:02,440 --> 00:04:05,870
+You can see that my current plan is yearly right here.
+
+66
+00:04:05,980 --> 00:04:06,490
+OK.
+
+67
+00:04:06,490 --> 00:04:10,720
+And that can actually change my plan so we have change plan for you right here.
+
+68
+00:04:10,780 --> 00:04:16,820
+And if I want to change my card details I can also do that so I can update cards Ito's which parcel
+
+69
+00:04:16,900 --> 00:04:20,950
+this pretty Strype subscription form I can put in my details.
+
+70
+00:04:21,070 --> 00:04:26,330
+Basically every single thing you want to do in a stripe sarce live application.
+
+71
+00:04:26,350 --> 00:04:28,280
+We have that functionality right here.
+
+72
+00:04:28,390 --> 00:04:28,830
+OK.
+
+73
+00:04:28,930 --> 00:04:34,690
+So I'm not going to be showing you to everything because there is a lot but that's the basic idea of
+
+74
+00:04:34,690 --> 00:04:35,550
+the application.
+
+75
+00:04:35,620 --> 00:04:41,980
+And this actually has a lot going on behind the scenes tracking stuff with Reddy's making sure that
+
+76
+00:04:42,040 --> 00:04:47,740
+we write tests for everything so that everything once successfully hosting this application and deploying
+
+77
+00:04:47,740 --> 00:04:48,410
+it live.
+
+78
+00:04:48,520 --> 00:04:53,680
+It's going to actually take a lot of work and I'm going to be walking you to each and every one of that.
+
+79
+00:04:53,770 --> 00:04:54,290
+OK.
+
+80
+00:04:54,310 --> 00:05:02,020
+So thank you so much and I hope to see you in the course where we actually start building this awesome
+
+81
+00:05:02,140 --> 00:05:03,010
+stuff.
+
+82
+00:05:03,040 --> 00:05:03,730
+Thank you.
+
+83
+00:05:03,770 --> 00:05:04,700
+And see you then.
+

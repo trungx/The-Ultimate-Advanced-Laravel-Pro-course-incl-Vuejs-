@@ -1,0 +1,376 @@
+1
+00:00:00,570 --> 00:00:02,130
+OK guys Soie come back.
+
+2
+00:00:02,220 --> 00:00:09,350
+So in the last week you were able to set up our ship and we know it's Walk-In but now I want to do one
+
+3
+00:00:09,420 --> 00:00:14,220
+little bit of subscriptions test because we're going to be introducing the concept of premium lessons
+
+4
+00:00:14,220 --> 00:00:15,120
+in our application.
+
+5
+00:00:15,180 --> 00:00:15,540
+Okay.
+
+6
+00:00:15,540 --> 00:00:18,150
+That's the whole point of having subscriptions right.
+
+7
+00:00:18,180 --> 00:00:22,220
+So I have a simple subscription sized class right here.
+
+8
+00:00:22,440 --> 00:00:26,490
+And I recently created that in my future so I have a new subscriptions.
+
+9
+00:00:26,880 --> 00:00:31,520
+And what are you going to do when he's running in a couple of test and before ads really start wanting
+
+10
+00:00:31,520 --> 00:00:33,730
+to us like us to talk about something.
+
+11
+00:00:33,960 --> 00:00:36,790
+First of all we want to have some premium lessons.
+
+12
+00:00:36,870 --> 00:00:42,530
+So if a lesson is premium then the user should not be able to watch it if he does not have a subscription.
+
+13
+00:00:42,650 --> 00:00:43,020
+OK.
+
+14
+00:00:43,080 --> 00:00:44,060
+That's the first thing.
+
+15
+00:00:44,070 --> 00:00:51,900
+The second thing is we want to run tests meaning we would have to subscribe or use and stripe or cashier
+
+16
+00:00:51,990 --> 00:00:58,570
+what it does is that it takes the users information then it makes an API call to stripe and then subsequently
+
+17
+00:00:58,620 --> 00:01:00,720
+use our plan and then it comes back.
+
+18
+00:01:00,720 --> 00:01:05,900
+And if anything more successful than in our subscribers to use or to plan on our database.
+
+19
+00:01:05,940 --> 00:01:06,300
+Okay.
+
+20
+00:01:06,330 --> 00:01:12,420
+So Strype knows he subscribed and then our database also knows the use of subscribers birds when we
+
+21
+00:01:12,420 --> 00:01:17,540
+get sustained what we want to do is we don't want to make an API call we do on level because we have
+
+22
+00:01:17,540 --> 00:01:19,230
+to communicate with our database.
+
+23
+00:01:19,290 --> 00:01:25,050
+So suply I want us to talk about how to fake the stripe subscription in the future.
+
+24
+00:01:25,170 --> 00:01:25,660
+Okay.
+
+25
+00:01:25,800 --> 00:01:30,590
+So for that I'm going to be switching my thought on this last called feek subscription.
+
+26
+00:01:30,750 --> 00:01:31,190
+Okay.
+
+27
+00:01:31,290 --> 00:01:32,470
+All fixups quite.
+
+28
+00:01:32,640 --> 00:01:37,810
+And what is Smethurst going to do is it's going to get the authenticated use user or any use other we
+
+29
+00:01:37,820 --> 00:01:42,310
+pass in right here and then it's going to subscribe that user to our plan.
+
+30
+00:01:42,410 --> 00:01:47,410
+Okay but remember when it's scrunchies that we're playing on the strypes of I'm talking about level
+
+31
+00:01:47,430 --> 00:01:54,570
+Kashin when cashier subscribes on a user to a plan on the stripes of rock it will now see that the tools
+
+32
+00:01:54,780 --> 00:01:58,890
+that you use are on the plan for that user on our database.
+
+33
+00:01:59,010 --> 00:02:05,910
+So we have this subscriptions class and the user has a subscription relationship with the subscriptions
+
+34
+00:02:06,180 --> 00:02:07,720
+class or the model.
+
+35
+00:02:08,010 --> 00:02:14,280
+And when we want to create a subscription for Yousaf we could use that so we can see use our subscription
+
+36
+00:02:15,000 --> 00:02:19,230
+subscriptions and we can call the create method.
+
+37
+00:02:19,450 --> 00:02:20,030
+OK.
+
+38
+00:02:20,040 --> 00:02:26,640
+So remember I understand this because in our billable trades right here which I will use our classes
+
+39
+00:02:26,640 --> 00:02:30,460
+using we can search for subscription.
+
+40
+00:02:30,480 --> 00:02:36,770
+This has many subscription class so it has to be sufficient therefore to create a new subscription for
+
+41
+00:02:36,770 --> 00:02:37,350
+a user.
+
+42
+00:02:37,410 --> 00:02:42,360
+We just need to call these subscriptions creators and then we can pass in the details for that subscription
+
+43
+00:02:42,660 --> 00:02:51,740
+like the name which could be yearly and maybe the stripe Id know for us to know exactly what happens.
+
+44
+00:02:51,750 --> 00:02:52,830
+I would just open up.
+
+45
+00:02:52,910 --> 00:02:54,010
+Was on Team.
+
+46
+00:02:54,100 --> 00:03:02,410
+We have one user with a subscription so just get the user or just pack use for us.
+
+47
+00:03:03,090 --> 00:03:04,820
+And this first user has a subscription.
+
+48
+00:03:04,860 --> 00:03:05,230
+OK.
+
+49
+00:03:05,250 --> 00:03:12,010
+Because we subscribe to a subscription in the last week or saw just get on subscriptions.
+
+50
+00:03:12,630 --> 00:03:15,190
+So we should be using you.
+
+51
+00:03:15,360 --> 00:03:15,940
+OK.
+
+52
+00:03:16,040 --> 00:03:19,470
+And now if you out his subscription it has a name.
+
+53
+00:03:19,590 --> 00:03:21,020
+It has a stripe ID.
+
+54
+00:03:21,120 --> 00:03:24,260
+So right here we need to pass in a fake stripe ID.
+
+55
+00:03:24,540 --> 00:03:27,750
+So lets just see fake straight Reiji remember its just a string.
+
+56
+00:03:28,140 --> 00:03:30,900
+And then we need to pass in the straight line.
+
+57
+00:03:31,380 --> 00:03:38,940
+So remember we are just fixing this so that we dont need to communicate with our stripes or some striped
+
+58
+00:03:38,940 --> 00:03:39,630
+lawn.
+
+59
+00:03:39,750 --> 00:03:41,850
+And this is going to be the year plan.
+
+60
+00:03:42,300 --> 00:03:42,800
+Okay.
+
+61
+00:03:42,840 --> 00:03:45,810
+And then the quantity would be one.
+
+62
+00:03:45,820 --> 00:03:47,290
+And I think thats all we need.
+
+63
+00:03:47,620 --> 00:03:54,660
+OK so now let's create a basic test and this test is going to be for example public function and its
+
+64
+00:03:55,510 --> 00:04:04,100
+use without a plan can watch free lessons walking for example.
+
+65
+00:04:04,170 --> 00:04:12,600
+But what I want us to do here is together use on and we do this by saying factually creates and will
+
+66
+00:04:12,600 --> 00:04:23,110
+create for use of class and right here we just see this fake socks wipe and we pass in they use all.
+
+67
+00:04:23,280 --> 00:04:32,730
+So right here we are going to date them use our subscribed and the prompter here would be yearly.
+
+68
+00:04:33,090 --> 00:04:33,690
+OK.
+
+69
+00:04:33,690 --> 00:04:36,980
+So what they are doing is we are creating a new user.
+
+70
+00:04:37,170 --> 00:04:38,790
+This is our testing environment.
+
+71
+00:04:38,850 --> 00:04:44,070
+And then what software they use lots of these fake plan and then we are going to call the use or subscribe
+
+72
+00:04:44,070 --> 00:04:49,110
+to mid-thought and passing the little plan and this method will simply check the use I subscribe to
+
+73
+00:04:49,110 --> 00:04:49,640
+this plan.
+
+74
+00:04:49,730 --> 00:04:50,250
+OK.
+
+75
+00:04:50,370 --> 00:04:53,450
+So we get to exit's incorrect here.
+
+76
+00:04:53,640 --> 00:04:57,940
+B you need fuel to do this test.
+
+77
+00:04:58,290 --> 00:04:58,700
+Okay.
+
+78
+00:04:58,770 --> 00:05:02,030
+So let's run that and now we see true.
+
+79
+00:05:02,120 --> 00:05:02,460
+OK.
+
+80
+00:05:02,490 --> 00:05:08,120
+So Lavoe cashier is checking to see if they use I subscribe to the plan and it stays true.
+
+81
+00:05:08,240 --> 00:05:08,760
+OK.
+
+82
+00:05:08,820 --> 00:05:15,100
+So in our test we can now use this method to subscribe to use a terrific plan and then run our tests
+
+83
+00:05:15,100 --> 00:05:20,710
+to make sure that if you subscribe to can watch a video or he subscribed he can watch a video.
+
+84
+00:05:20,730 --> 00:05:22,410
+So that's what points again.
+
+85
+00:05:22,430 --> 00:05:28,320
+First we have to fake subscriptions so that we don't have to call Strype all the time.
+
+86
+00:05:28,470 --> 00:05:34,350
+So we have a fixed drive method fake subscriber method and this method takes in the user and then it
+
+87
+00:05:34,350 --> 00:05:37,190
+creates a subscription for the user.
+
+88
+00:05:37,230 --> 00:05:40,500
+And this is exactly what Lavoe cache does behind the scenes.
+
+89
+00:05:40,590 --> 00:05:44,310
+But first level caching is when you communicate with Strype which you don't want.
+
+90
+00:05:44,310 --> 00:05:49,690
+So not just in the moment we do want to get restrung So we have a fixups quite meathook and its subscribers
+
+91
+00:05:49,690 --> 00:05:54,180
+are used to a fixed line and we can now warn our test.
+
+92
+00:05:54,240 --> 00:05:54,670
+OK.
+
+93
+00:05:54,750 --> 00:05:55,960
+So thanks so much.
+
+94
+00:05:55,980 --> 00:06:01,860
+Let's it one some stats concerning fake and free lessons in the very next episode.
+

@@ -1,0 +1,400 @@
+1
+00:00:00,270 --> 00:00:05,190
+This once in our project Lycos is that thinking about how we want to manage administrators and locks
+
+2
+00:00:05,210 --> 00:00:06,120
+and use us.
+
+3
+00:00:06,120 --> 00:00:11,520
+So before we jump students anything we got a quick acustom the weather this week to make sure that only
+
+4
+00:00:11,790 --> 00:00:17,700
+authenticated at ministry just can create a series visit the pages to view August.
+
+5
+00:00:17,700 --> 00:00:24,420
+The reason the backhand and Sanch stuff so let's go ahead and Jean who eats or work which we sent make
+
+6
+00:00:24,430 --> 00:00:28,670
+middleware at Main Street so you can call these whatever he wants or you want it.
+
+7
+00:00:28,770 --> 00:00:30,070
+OK that's what's up for us.
+
+8
+00:00:30,070 --> 00:00:33,380
+Buttons are cool if you head over to our administrates or class.
+
+9
+00:00:33,430 --> 00:00:35,570
+It's easy to sum up me to where we have.
+
+10
+00:00:35,580 --> 00:00:42,210
+So let's head over to our current on the beat which is for the SGP and we're going to reinstall a new
+
+11
+00:00:42,210 --> 00:00:42,840
+middleware.
+
+12
+00:00:42,890 --> 00:00:48,940
+So right on the bottom I'm going to save this as a green class and it's going to be in the broadcast
+
+13
+00:00:49,170 --> 00:00:54,830
+HTP media where the retreat and it's going to be up in streets of glass.
+
+14
+00:00:54,930 --> 00:00:59,190
+So that's when we just stop let's sit and watch over me to wait and see how we want to walk.
+
+15
+00:00:59,190 --> 00:01:03,980
+First of all I would like to create a cost from conflict for our for our project.
+
+16
+00:01:04,020 --> 00:01:08,590
+And this is the last talk project based conflagrations and we're going to do this now.
+
+17
+00:01:08,670 --> 00:01:13,280
+I don't want to create an administrator or team or unsafe or mistreat dozens in a day.
+
+18
+00:01:13,380 --> 00:01:16,980
+Therefore I think saving and us in that way will do.
+
+19
+00:01:16,980 --> 00:01:20,020
+And it's going to solve the policies for this lesson.
+
+20
+00:01:20,040 --> 00:01:20,560
+Right.
+
+21
+00:01:20,580 --> 00:01:24,450
+So we're going to save our administrators and an army and then this may be the way it is going to check
+
+22
+00:01:24,480 --> 00:01:29,870
+if the authenticated use or the calling of integrated user is actually in that way.
+
+23
+00:01:29,880 --> 00:01:30,310
+Right.
+
+24
+00:01:30,310 --> 00:01:34,370
+So let's go ahead and do this now for us to quit a conflagration fire.
+
+25
+00:01:34,370 --> 00:01:39,940
+We just need to call into our config directory and create us right config backcross.
+
+26
+00:01:40,220 --> 00:01:42,430
+But that's the name on the front.
+
+27
+00:01:42,620 --> 00:01:42,930
+OK.
+
+28
+00:01:42,930 --> 00:01:44,220
+So there it is.
+
+29
+00:01:44,220 --> 00:01:51,300
+So we just need to create the screens and return an array just like any of the other configurations.
+
+30
+00:01:51,300 --> 00:01:53,110
+Be a superscript of each scenario.
+
+31
+00:01:53,290 --> 00:01:53,550
+OK.
+
+32
+00:01:53,580 --> 00:02:00,390
+So this email is going to contain key administrates us and it's going to contain e-mails of administrators.
+
+33
+00:02:00,390 --> 00:02:06,590
+For example if I want Cutty for islands of calm to be in the streets or then I'm going to Puchi into
+
+34
+00:02:06,590 --> 00:02:07,170
+this key.
+
+35
+00:02:07,270 --> 00:02:08,640
+Ok then.
+
+36
+00:02:08,680 --> 00:02:13,230
+Anyway project we can actually access this using Loblaws can help our method.
+
+37
+00:02:13,440 --> 00:02:18,170
+Therefore right here what we want to do is first of all check if these sites authenticated.
+
+38
+00:02:18,270 --> 00:02:21,040
+Then we're going to check if they use Eyssen and Mean Streets.
+
+39
+00:02:21,240 --> 00:02:26,080
+If not then we're going to redirect these on to some beach or somewhere would start by saying if just
+
+40
+00:02:26,090 --> 00:02:29,190
+check that in either the use Eisin in the streets or.
+
+41
+00:02:29,310 --> 00:02:33,110
+So let's rephrase this Mithal on the use A-Class.
+
+42
+00:02:33,150 --> 00:02:35,090
+So we get the authenticated user.
+
+43
+00:02:35,100 --> 00:02:40,830
+In this case we call he's admin and this mythical tell us if they use such Yulian on this region.
+
+44
+00:02:40,950 --> 00:02:46,590
+So if he's an administrates or then suply then a return next request soon would allow the user to go
+
+45
+00:02:46,590 --> 00:02:51,230
+to the next stage of the application right or continue to where he was actually heading to.
+
+46
+00:02:51,330 --> 00:02:57,200
+Then if the user was not permitted then reason to return redirect to the home page.
+
+47
+00:02:57,210 --> 00:02:57,760
+OK.
+
+48
+00:02:57,870 --> 00:03:02,370
+And also in this case we also want to direct these parts to the beach.
+
+49
+00:03:02,400 --> 00:03:05,520
+You never want to allow your middleware hanging.
+
+50
+00:03:05,520 --> 00:03:05,910
+Right.
+
+51
+00:03:06,000 --> 00:03:11,070
+So if this clinician feels it should actually have something to run if not your meter is going to be
+
+52
+00:03:11,070 --> 00:03:12,750
+hanging really bad case.
+
+53
+00:03:12,900 --> 00:03:13,420
+OK.
+
+54
+00:03:13,530 --> 00:03:19,600
+So if they use a authenticates that you go back to the home page if the user is authenticated is not
+
+55
+00:03:19,610 --> 00:03:22,320
+in the streets or you are Sukumar homepage.
+
+56
+00:03:22,410 --> 00:03:27,930
+But if the user isn't on the streets then he's going to pass the state of the onion and go to the next.
+
+57
+00:03:27,930 --> 00:03:28,190
+OK.
+
+58
+00:03:28,200 --> 00:03:31,310
+So that's Chris that mid-thought use of Ph.
+
+59
+00:03:31,470 --> 00:03:33,850
+That's great and it's East administrates on it.
+
+60
+00:03:34,080 --> 00:03:36,680
+And this will simply return Inari.
+
+61
+00:03:36,720 --> 00:03:40,540
+And this in a real mess don't appear to be mid-thought and takes in and you don't.
+
+62
+00:03:40,560 --> 00:03:45,280
+And we're going to pass in this e-mail and the haystack is the army itself.
+
+63
+00:03:45,300 --> 00:03:52,390
+So we pass in the email and we pass him can feek back us up a ministry just acida Peyster.
+
+64
+00:03:52,500 --> 00:03:52,850
+Right.
+
+65
+00:03:52,890 --> 00:03:58,770
+So we have an army of a ministry to us which is right here in the broadcast configuration we have an
+
+66
+00:03:58,770 --> 00:04:05,380
+administrator key and it contains an army of all it contains the emails of all administrators.
+
+67
+00:04:05,460 --> 00:04:11,900
+Then in a Yusof class we have this it's a minimum thought simply checks if the common use are actually
+
+68
+00:04:11,970 --> 00:04:13,140
+useful in the army.
+
+69
+00:04:13,140 --> 00:04:16,420
+So if it's not on this Army this means it's going to return false.
+
+70
+00:04:16,500 --> 00:04:17,140
+OK.
+
+71
+00:04:17,370 --> 00:04:24,610
+So looks like our middleware was just fine checks if the uses then it just allows the user to go through.
+
+72
+00:04:24,660 --> 00:04:26,730
+If not then you choose the user.
+
+73
+00:04:26,850 --> 00:04:27,250
+OK.
+
+74
+00:04:27,260 --> 00:04:30,890
+So let's go ahead and implement this middleware in our Vauxhall.
+
+75
+00:04:31,030 --> 00:04:37,650
+So right here we have a group of I mean what we want to do is attach a middleware to this group and
+
+76
+00:04:37,650 --> 00:04:40,030
+this is going to be the admin made aware.
+
+77
+00:04:40,050 --> 00:04:44,800
+So this is coming from our cannot appear to be just like the registry.
+
+78
+00:04:44,870 --> 00:04:45,200
+OK.
+
+79
+00:04:45,210 --> 00:04:51,370
+So this was caught me but cost nothing exactly what with infringing on CROSSFIRE.
+
+80
+00:04:51,420 --> 00:04:52,960
+So not like that.
+
+81
+00:04:53,130 --> 00:04:55,600
+This is the route that comes from that route.
+
+82
+00:04:55,710 --> 00:04:59,650
+So who headbutts where this is when you stop in Iraq.
+
+83
+00:04:59,910 --> 00:05:04,580
+Try to refresh up each night and see where that's speech because the use us non-acting.
+
+84
+00:05:04,750 --> 00:05:07,450
+So quick refresh and we were directed it's the homepage.
+
+85
+00:05:07,540 --> 00:05:10,850
+But if you log in right now we don't have any use of Socky.
+
+86
+00:05:10,870 --> 00:05:12,180
+I'm just going to read just still want.
+
+87
+00:05:12,210 --> 00:05:13,650
+So my name is Cotty.
+
+88
+00:05:13,690 --> 00:05:21,310
+Emily Scace of the friends column and the post-war response to stock are direct That's a home and it
+
+89
+00:05:21,310 --> 00:05:24,350
+actually took a while because I think it's actually sending the e-mail.
+
+90
+00:05:24,370 --> 00:05:25,890
+We asked it to send.
+
+91
+00:05:25,890 --> 00:05:31,850
+Now let's try to recede at Mitsui secret beach and we actually visited the beach right.
+
+92
+00:05:31,870 --> 00:05:38,040
+Men who come to our broadcast configuration and actually pulled out the issues us email from the administrators
+
+93
+00:05:38,040 --> 00:05:41,250
+at least and tried to refresh the beach particularly with Democrats.
+
+94
+00:05:41,300 --> 00:05:45,310
+The home beach Minn. D'Souza Hasan mossies administrator privileges.
+
+95
+00:05:45,310 --> 00:05:50,380
+So I think for a project where we don't have our means the gist of many rules of administration.
+
+96
+00:05:50,380 --> 00:05:51,990
+This was just perfectly.
+
+97
+00:05:52,120 --> 00:05:55,040
+So now that up wouldn't that use a park as an industry.
+
+98
+00:05:55,390 --> 00:05:58,380
+I'm going to try Visi that vault again and sure enough I have.
+
+99
+00:05:58,490 --> 00:06:00,900
+So I mean a way it's working perfectly.
+
+100
+00:06:00,970 --> 00:06:04,500
+Why don't you write some tests for me the way in the next lesson.
+

@@ -1,0 +1,420 @@
+1
+00:00:00,990 --> 00:00:04,380
+Before you round up with what Shuey speech I want to stick two things.
+
+2
+00:00:04,380 --> 00:00:09,200
+First of all remember that we need to fire the air jocks requests wants to use a completely what piece
+
+3
+00:00:09,200 --> 00:00:09,900
+of video.
+
+4
+00:00:10,050 --> 00:00:12,890
+And next we want to display a watching.
+
+5
+00:00:12,900 --> 00:00:16,420
+I can work here to make sure that we know that this is the lesson we are watching.
+
+6
+00:00:16,530 --> 00:00:23,670
+And finally I want us to hootz a teacher right here or check to show that this user has watched the
+
+7
+00:00:23,670 --> 00:00:29,090
+series or not and forced to do that when the user completely watches the series we need to find just
+
+8
+00:00:29,090 --> 00:00:29,960
+a request to us.
+
+9
+00:00:29,960 --> 00:00:33,100
+Are you opposed to quest to complete the series.
+
+10
+00:00:33,240 --> 00:00:38,750
+No we don't yet have a test for the feature but we already have a test for the units.
+
+11
+00:00:38,760 --> 00:00:39,110
+OK.
+
+12
+00:00:39,120 --> 00:00:44,650
+Because in our unit test we are testing the user can complete a series which is successful.
+
+13
+00:00:44,690 --> 00:00:50,580
+Bert we need to create a feature to us so that we test how the Ajax requests are fire or something.
+
+14
+00:00:50,700 --> 00:00:53,440
+OK so let's quit Anyuta us.
+
+15
+00:00:54,420 --> 00:01:00,950
+PH We areason make tests and this is going to be what shoosh to us.
+
+16
+00:01:01,040 --> 00:01:01,620
+We are great.
+
+17
+00:01:01,620 --> 00:01:08,240
+This is a feature Cockey so we head over to what suits us and the first issue with when you are writing
+
+18
+00:01:08,240 --> 00:01:08,750
+these tests.
+
+19
+00:01:08,760 --> 00:01:13,760
+A user complete series just use or can complete a series.
+
+20
+00:01:14,100 --> 00:01:15,900
+OK so how do we want this to work.
+
+21
+00:01:15,900 --> 00:01:24,110
+We need a user right and then we need a suits and that's the you have like maybe 2 lessons I suppose.
+
+22
+00:01:24,240 --> 00:01:30,110
+And then we're going to fire a post request for a server to complete the lesson.
+
+23
+00:01:30,360 --> 00:01:31,910
+OK maybe the first lesson.
+
+24
+00:01:32,040 --> 00:01:38,330
+OK then we reach Rumson assertions may asserted that the lesson has been complete.
+
+25
+00:01:38,750 --> 00:01:45,270
+Read this and then maybe assert that we have a possible response from our server and then maybe assert
+
+26
+00:01:45,280 --> 00:01:46,790
+the status of the response.
+
+27
+00:01:46,830 --> 00:01:51,560
+OK so let's start with our use or use our equals.
+
+28
+00:01:51,670 --> 00:01:53,830
+Create a user with our treat.
+
+29
+00:01:54,160 --> 00:01:56,580
+So use aquanauts code.
+
+30
+00:01:56,590 --> 00:01:58,300
+Create my thoughts of post-Easter.
+
+31
+00:01:58,360 --> 00:02:00,710
+Next we need a series on two lessons.
+
+32
+00:02:00,820 --> 00:02:10,450
+So create a lesson persist that will create another lesson which will be listened to for the lesson
+
+33
+00:02:10,450 --> 00:02:12,430
+Clauss.
+
+34
+00:02:12,490 --> 00:02:17,400
+I will make sure that be precise that the series ideally should be one.
+
+35
+00:02:17,420 --> 00:02:20,160
+OK so it belongs to the first series.
+
+36
+00:02:20,230 --> 00:02:29,330
+Ok now we need to make the post request a push request is going to be this post and we have to decide
+
+37
+00:02:29,330 --> 00:02:30,210
+the end points.
+
+38
+00:02:30,250 --> 00:02:34,930
+So can I say let's go through a series complete lesson and point.
+
+39
+00:02:35,080 --> 00:02:40,780
+I want you to keep the identifier for the lesson which will be less than ideal.
+
+40
+00:02:41,140 --> 00:02:46,870
+So in this case you are completing this lesson so passing its ID in this string.
+
+41
+00:02:47,050 --> 00:02:51,660
+OK and then we are not going to be passing any data to the server.
+
+42
+00:02:51,670 --> 00:02:54,640
+We just want to complete this lesson and that's all we need.
+
+43
+00:02:54,740 --> 00:03:00,530
+OK and we will have the authenticated use of we can get the Sui's with this lesson in the controller.
+
+44
+00:03:00,640 --> 00:03:06,210
+OK then what we want to do is first of all run our assertions.
+
+45
+00:03:06,220 --> 00:03:11,590
+Naturally if you don't love running your assertions in line as such and you want to keep the order all
+
+46
+00:03:11,800 --> 00:03:22,510
+the way we planned out you can save this in a variable so response it causes and then assert that the
+
+47
+00:03:22,590 --> 00:03:25,000
+use was two 200.
+
+48
+00:03:25,450 --> 00:03:33,430
+And then you can also assert Jason to assert that we see a possible structure of response from a server
+
+49
+00:03:33,850 --> 00:03:36,740
+and would see the stutterers should be ok.
+
+50
+00:03:37,510 --> 00:03:42,400
+And then finally make sure that this lesson has received saw the stall.
+
+51
+00:03:42,430 --> 00:03:50,180
+So why don't we do this this a search and then call a user.
+
+52
+00:03:50,280 --> 00:03:58,600
+I will call a has completed methodic has completed lesson method which takes the lesson and we are going
+
+53
+00:03:58,600 --> 00:03:59,660
+to check if it's true.
+
+54
+00:03:59,770 --> 00:04:01,380
+And then for security.
+
+55
+00:04:01,480 --> 00:04:07,880
+Let's call exactly the same or false to assert that it's false.
+
+56
+00:04:07,990 --> 00:04:11,060
+OK so everything was like we think it does.
+
+57
+00:04:11,120 --> 00:04:17,380
+OK so we've called a complete lesson for the first lesson but the second lesson is not complete.
+
+58
+00:04:17,430 --> 00:04:18,810
+So I said that is false.
+
+59
+00:04:18,910 --> 00:04:20,520
+Now we don't top this math.
+
+60
+00:04:20,650 --> 00:04:24,840
+But don't worry we're going to go step by step and actually make that happen at the end.
+
+61
+00:04:24,910 --> 00:04:27,440
+OK now let's run this test.
+
+62
+00:04:27,460 --> 00:04:35,710
+First of all before I want the let me use the use class and find the lead lesson and actually flush
+
+63
+00:04:35,730 --> 00:04:41,040
+Rhenish because we interviewed and read this and finally use my refresh on the streets.
+
+64
+00:04:41,290 --> 00:04:42,380
+OK let's go.
+
+65
+00:04:42,460 --> 00:04:49,590
+Let me run that P-H you need no filter on to this test cookie.
+
+66
+00:04:49,600 --> 00:04:50,510
+That's a first.
+
+67
+00:04:50,550 --> 00:04:55,750
+So it's a 200 but received or fall for unhopeful means this you are or does not exist right.
+
+68
+00:04:55,900 --> 00:05:00,730
+So let's head over to the Web the BHB and create new routes with several routes.
+
+69
+00:05:00,820 --> 00:05:08,730
+And remember we want to be a published and we want it to be series computer lessons and we wanted to
+
+70
+00:05:08,730 --> 00:05:14,470
+keep identify our lesson right here and we use them because automatically lovely's we inject the lesson
+
+71
+00:05:14,470 --> 00:05:16,250
+class into a controller right.
+
+72
+00:05:16,330 --> 00:05:19,700
+Then we match this to what suits control.
+
+73
+00:05:20,100 --> 00:05:21,710
+That's completely awesome.
+
+74
+00:05:21,940 --> 00:05:24,800
+OK that's one that has to be OK.
+
+75
+00:05:24,850 --> 00:05:26,100
+You see the 500.
+
+76
+00:05:26,170 --> 00:05:33,250
+If you want to see what the error is your test you just need to disable exception handling so this without
+
+77
+00:05:33,760 --> 00:05:37,240
+exception handling.
+
+78
+00:05:37,240 --> 00:05:38,390
+Run it again.
+
+79
+00:05:38,680 --> 00:05:45,500
+Now we have clean the error method complete lesson does not exist the whole good service to his country.
+
+80
+00:05:45,780 --> 00:05:48,270
+And we're going to create a complete lesson metho.
+
+81
+00:05:48,540 --> 00:05:54,260
+So a public function compeer lesson and we are taking a lesson right here.
+
+82
+00:05:54,510 --> 00:06:00,670
+OK so let's run days one more time and we have invalid Jason was written from the OP because we know
+
+83
+00:06:00,670 --> 00:06:01,880
+each any anything.
+
+84
+00:06:01,940 --> 00:06:02,690
+Not so much.
+
+85
+00:06:02,710 --> 00:06:04,640
+Actually this was a successful response.
+
+86
+00:06:04,710 --> 00:06:05,470
+Why this was skipped.
+
+87
+00:06:05,490 --> 00:06:11,520
+OK so what do we want to do we all want to complete the lesson so we'll just call authenticated user
+
+88
+00:06:12,010 --> 00:06:19,840
+on we'll call the complete lesson methode on posts in lesson and we will study some thought using our
+
+89
+00:06:19,840 --> 00:06:20,250
+units.
+
+90
+00:06:20,250 --> 00:06:21,780
+US too we know it works.
+
+91
+00:06:21,930 --> 00:06:30,770
+So for us to pass the test we need to return a response with a J sign and we need to pass in a particular
+
+92
+00:06:30,950 --> 00:06:34,450
+reason which is such use OK.
+
+93
+00:06:35,100 --> 00:06:37,610
+Right that's all I'm going to do.
+
+94
+00:06:37,960 --> 00:06:40,000
+Let's run that one more time.
+
+95
+00:06:40,270 --> 00:06:44,020
+And now we haven't we're talking a complete lesson on model.
+
+96
+00:06:44,190 --> 00:06:49,980
+So of course member complete lesson on all which means we authenticated user.
+
+97
+00:06:49,990 --> 00:06:50,470
+Right.
+
+98
+00:06:50,560 --> 00:06:58,180
+So what we should do is make sure that we logging this user and we do that by calling this thing us
+
+99
+00:06:58,540 --> 00:06:59,260
+user.
+
+100
+00:06:59,450 --> 00:07:01,320
+OK Rhonda.
+
+101
+00:07:01,510 --> 00:07:04,760
+And we have called on the find method has completed the lesson.
+
+102
+00:07:04,770 --> 00:07:10,570
+Now this is the part of our application that is breaking because this successful this was successful
+
+103
+00:07:10,750 --> 00:07:15,000
+and now we're using a Hoskuld Peter unless we use some method which is not different.
+
+104
+00:07:15,040 --> 00:07:16,750
+Let's pause for a moment.
+
+105
+00:07:16,790 --> 00:07:19,380
+Scale this error in the very next.
+

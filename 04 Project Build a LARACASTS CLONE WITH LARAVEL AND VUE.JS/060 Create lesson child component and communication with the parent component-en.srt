@@ -1,0 +1,264 @@
+1
+00:00:00,200 --> 00:00:03,600
+What I want to achieve in this video it's a way for us to quit lessons.
+
+2
+00:00:03,600 --> 00:00:07,900
+Therefore I'm going to have a button here that when the user clicks on it it's going to pop up.
+
+3
+00:00:07,920 --> 00:00:10,060
+And that creates a lesson.
+
+4
+00:00:10,080 --> 00:00:12,600
+Now let's get straight into it right at the top.
+
+5
+00:00:12,600 --> 00:00:18,590
+Why don't we will have an actual tech center and indeed we're going to embed a button that says Create
+
+6
+00:00:18,590 --> 00:00:19,620
+a new lesson.
+
+7
+00:00:19,680 --> 00:00:20,110
+OK.
+
+8
+00:00:20,130 --> 00:00:21,540
+So that looks great for me.
+
+9
+00:00:21,570 --> 00:00:26,290
+And we're going to eventually now which is going to simply call create new lesson my thought.
+
+10
+00:00:26,310 --> 00:00:27,450
+We need to create that math.
+
+11
+00:00:27,480 --> 00:00:29,770
+So we'll have my thoughts property on that.
+
+12
+00:00:29,770 --> 00:00:32,480
+We're going to have to create new Laursen method.
+
+13
+00:00:32,490 --> 00:00:36,270
+And now we have to think about how we want to create lessons.
+
+14
+00:00:36,270 --> 00:00:42,090
+This is a component that is going to be in charge of managing the lessons and they don't want to really
+
+15
+00:00:42,090 --> 00:00:45,080
+put in the functionality of quitting lessons right here.
+
+16
+00:00:45,210 --> 00:00:45,630
+OK.
+
+17
+00:00:45,690 --> 00:00:50,760
+What I want to do is actually create a chat component that is going to create lessons and it's actually
+
+18
+00:00:50,760 --> 00:00:56,290
+going to give us a great learning opportunity to see how to manage child components and parent communication
+
+19
+00:00:56,310 --> 00:01:00,310
+if you just components so let's go ahead and create that in the same directory.
+
+20
+00:01:00,360 --> 00:01:07,250
+I'm going to New up a new component and then I'm going to have children a tree created lesson that view.
+
+21
+00:01:07,260 --> 00:01:07,890
+There we go.
+
+22
+00:01:07,890 --> 00:01:12,880
+And this quick lesson that is going to be a child of the templates that we had before.
+
+23
+00:01:13,080 --> 00:01:18,100
+So we're just going to have an edge one that says Create lesson just for understanding purposes.
+
+24
+00:01:18,200 --> 00:01:26,070
+Squit export default empty object and we need to register these components either in our objects which
+
+25
+00:01:26,070 --> 00:01:31,710
+will already slide globally we view just instance or with our lessons that view which is simply going
+
+26
+00:01:31,710 --> 00:01:35,940
+to be just with this particular component which is actually a view in stone.
+
+27
+00:01:35,970 --> 00:01:41,190
+But it's going to be local only to this component so it's only available for some test component.
+
+28
+00:01:41,200 --> 00:01:43,430
+Therefore we have a component's property.
+
+29
+00:01:43,500 --> 00:01:50,540
+And what we you study is create a lesson and this is going to require from the directory to create a
+
+30
+00:01:50,550 --> 00:01:51,990
+lesson that you follow.
+
+31
+00:01:52,020 --> 00:01:58,680
+Now what we could do is actually meet an event this that Emmets events which you just provide to us
+
+32
+00:01:58,750 --> 00:02:04,410
+and the name of that event is going to be creating new lesson events and we could actually pass an optional
+
+33
+00:02:04,540 --> 00:02:04,990
+law.
+
+34
+00:02:05,010 --> 00:02:08,980
+But now we don't have any Pido So we're just emet you meet that event.
+
+35
+00:02:08,980 --> 00:02:10,960
+Therefore you know what component.
+
+36
+00:02:11,100 --> 00:02:16,830
+What we can do is have a mount up property and we're going to subscribe to the events coming from our
+
+37
+00:02:16,890 --> 00:02:22,620
+parent so we can see this that parents dot on Creedon your lesson events do something.
+
+38
+00:02:22,650 --> 00:02:27,750
+So right here we can actually receive any permits us to the past into this event but now we don't have
+
+39
+00:02:27,750 --> 00:02:30,310
+any so we're simply going to console that clock.
+
+40
+00:02:30,330 --> 00:02:31,240
+Hello parents.
+
+41
+00:02:31,260 --> 00:02:33,680
+We are creating the lesson OK.
+
+42
+00:02:33,690 --> 00:02:34,460
+We saved up.
+
+43
+00:02:34,470 --> 00:02:38,800
+Now what we need to do is actually mount this component somewhere right.
+
+44
+00:02:38,940 --> 00:02:43,390
+So for starters let's try to just mounted in the template for this component.
+
+45
+00:02:43,440 --> 00:02:46,250
+So create lesson and I think that's a good place to start.
+
+46
+00:02:46,260 --> 00:02:48,810
+Quick refresh and then let's click on that button.
+
+47
+00:02:48,810 --> 00:02:51,740
+Check out the console and right do we have help parents.
+
+48
+00:02:51,840 --> 00:02:53,490
+We actually in that lesson.
+
+49
+00:02:53,490 --> 00:02:58,470
+So it means a watch I can put any such Are you listening to events successfully from its parent.
+
+50
+00:02:58,470 --> 00:02:58,760
+OK.
+
+51
+00:02:58,770 --> 00:03:00,640
+So how do we want essentially to look.
+
+52
+00:03:00,690 --> 00:03:05,580
+I'm just going to head over to Doug component here I'm all beaches at the same place.
+
+53
+00:03:05,790 --> 00:03:10,480
+And I've got a copy or moved on from there to my Create lesson on page study.
+
+54
+00:03:10,620 --> 00:03:13,210
+And let's just change a little bit of defaults.
+
+55
+00:03:13,330 --> 00:03:15,360
+It's going to be create new lsen.
+
+56
+00:03:15,480 --> 00:03:18,590
+Nobody is going to have a couple of fun elements.
+
+57
+00:03:18,630 --> 00:03:22,100
+What we now need to do is actually trigger the opening of this model.
+
+58
+00:03:22,110 --> 00:03:28,610
+So I'm just going to change this idea to create lesson ID and we can actually use bootstrap with Jake
+
+59
+00:03:28,610 --> 00:03:32,990
+Querrey to open this so we can find that element using your course finder.
+
+60
+00:03:33,020 --> 00:03:37,740
+And the idea is create lesson and then we can call them with all my thought on this element because
+
+61
+00:03:37,740 --> 00:03:38,270
+it's a model.
+
+62
+00:03:38,310 --> 00:03:39,620
+OK so let's try this out.
+
+63
+00:03:39,630 --> 00:03:44,120
+Quick refresh check out the console click on that and we have this console the clock.
+
+64
+00:03:44,130 --> 00:03:46,380
+And then we also have our model open.
+
+65
+00:03:46,380 --> 00:03:46,940
+Great jump.
+
+66
+00:03:47,030 --> 00:03:49,240
+Let's start working on this in the next lesson.
+

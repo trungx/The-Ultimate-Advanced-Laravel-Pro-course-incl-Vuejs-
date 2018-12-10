@@ -1,0 +1,696 @@
+1
+00:00:00,300 --> 00:00:06,030
+Let's talk about middleway groups like Chrisette middleware groups are simply middleway that run on
+
+2
+00:00:06,050 --> 00:00:07,980
+a particular set of routes.
+
+3
+00:00:08,050 --> 00:00:14,460
+OK so you can define a route and you can make sure that vote belongs to a group of other routes and
+
+4
+00:00:14,460 --> 00:00:18,780
+then you can one particular middleware on all of that group of wealths.
+
+5
+00:00:18,810 --> 00:00:25,770
+For example if I take it your web Dogpatch be you can register a route group in a close vote and inside
+
+6
+00:00:25,830 --> 00:00:31,890
+this group you can go ahead and define routes of particular similarity and dissimilarity can be a prefix
+
+7
+00:00:31,890 --> 00:00:38,880
+that you want to put in and you can use the Lovell's prefix mid-thought or you can once attach a middleware
+
+8
+00:00:39,150 --> 00:00:45,030
+to all of these routes and you can also use the Lavoe me to when my thought love gives us this extensibility
+
+9
+00:00:45,360 --> 00:00:49,550
+therefore you can create your own Castano middleware groups that we are going to be talking about in
+
+10
+00:00:49,560 --> 00:00:55,710
+this video loveall ships in which to do for me to wear groups and in our Kanada ph we we can see those
+
+11
+00:00:55,710 --> 00:00:56,270
+groups.
+
+12
+00:00:56,280 --> 00:01:02,670
+The first is the Web Globe and The second is the API group the web middleware is applied to all vowels
+
+13
+00:01:02,700 --> 00:01:07,830
+in the group called weap which are the routes that are registered in the web that should be and the
+
+14
+00:01:07,830 --> 00:01:13,330
+API group is applied to all routes in a group called API which are those in the API that Ph be.
+
+15
+00:01:13,410 --> 00:01:17,700
+And I'm going to show you how this happens if you head over to our World Service Provider.
+
+16
+00:01:17,880 --> 00:01:24,460
+We discover that we have a map mid-thought And this map mid-thought registrars some routes for us because
+
+17
+00:01:24,480 --> 00:01:29,610
+the map API WILESMITH thought and the map where Prout's method and recheck the map worthwhile.
+
+18
+00:01:29,650 --> 00:01:36,570
+I thought what it does is it registers some routes and what precisely and it imports all of the worlds
+
+19
+00:01:36,570 --> 00:01:43,290
+from web that we register them and make sure that it applies a namespace of this namespace which is
+
+20
+00:01:43,290 --> 00:01:43,780
+here.
+
+21
+00:01:43,800 --> 00:01:45,560
+So up S2P control us.
+
+22
+00:01:45,690 --> 00:01:50,650
+And also it wraps all of those routes in Amida where weap.
+
+23
+00:01:50,880 --> 00:01:51,460
+OK.
+
+24
+00:01:51,480 --> 00:01:57,510
+So the middleware group is called WEP and it wraps all of the routes in the web the PH BE WITH THIS
+
+25
+00:01:57,510 --> 00:01:58,350
+middleware.
+
+26
+00:01:58,380 --> 00:02:00,690
+Same thing with the API Roths.
+
+27
+00:02:00,750 --> 00:02:07,590
+It really starts a group force in all of the valves from API ph sets a namespace which is this namespace
+
+28
+00:02:07,800 --> 00:02:11,220
+and applies the middleware API group on that group of routes.
+
+29
+00:02:11,220 --> 00:02:11,630
+OK.
+
+30
+00:02:11,640 --> 00:02:13,880
+And it also prefixes API right.
+
+31
+00:02:13,920 --> 00:02:16,790
+So if you actually want that to customize what is the prefix right here.
+
+32
+00:02:16,800 --> 00:02:18,740
+You can change it to whatever you want.
+
+33
+00:02:18,800 --> 00:02:23,600
+OK so maybe API version one or to whatever you want.
+
+34
+00:02:23,720 --> 00:02:28,490
+OK then you can also customize the namespace of all your API calls.
+
+35
+00:02:28,500 --> 00:02:34,700
+For example if you want that every single vote that is in the API that we talk to automatically get
+
+36
+00:02:34,820 --> 00:02:36,780
+control us from an API directory.
+
+37
+00:02:36,780 --> 00:02:43,350
+All you need to do is apply slash API right here and rather than at SGP control as it's going to go
+
+38
+00:02:43,650 --> 00:02:46,540
+up it's to be control us API directory.
+
+39
+00:02:46,680 --> 00:02:53,310
+OK how cool is that level gives us a very large possibility to customize even at this level.
+
+40
+00:02:53,310 --> 00:02:55,160
+Now let's talk about something fun.
+
+41
+00:02:55,170 --> 00:02:57,060
+How do we create our own group.
+
+42
+00:02:57,070 --> 00:03:01,200
+We just start with our own middleware and how do we change everything together.
+
+43
+00:03:01,290 --> 00:03:02,900
+Let's do that access right now.
+
+44
+00:03:03,000 --> 00:03:09,180
+Say you have a group of administrators in your application and you want administrators to see a particular
+
+45
+00:03:09,480 --> 00:03:15,350
+page or a particular action button and you don't want no administrators to be able to see this.
+
+46
+00:03:15,360 --> 00:03:16,520
+How do you change that up.
+
+47
+00:03:16,530 --> 00:03:22,440
+Let's quit accustom me to where for this khichri arson make me aware administrates up and this is a
+
+48
+00:03:22,440 --> 00:03:25,660
+functionality that you might have in almost all of your applications.
+
+49
+00:03:25,710 --> 00:03:31,080
+So let's go ahead and build it I'll head over to the administrator of the Ph.D. and now in this middleware
+
+50
+00:03:31,080 --> 00:03:37,080
+what we're going to be doing is checking if the current user is an administrator so if not we'll do
+
+51
+00:03:37,080 --> 00:03:37,580
+something.
+
+52
+00:03:37,590 --> 00:03:40,460
+And if they use an administrator we'll do something else.
+
+53
+00:03:40,490 --> 00:03:41,860
+OK so.
+
+54
+00:03:41,970 --> 00:03:48,510
+So looks like we need a user base of education system would make this fast with Peachtree or sun make
+
+55
+00:03:48,510 --> 00:03:49,020
+us.
+
+56
+00:03:49,170 --> 00:03:49,830
+And that's it.
+
+57
+00:03:49,950 --> 00:03:52,350
+You have an indication system for us.
+
+58
+00:03:52,440 --> 00:03:54,930
+Now what are we going to be doing this me the way.
+
+59
+00:03:54,960 --> 00:04:00,390
+Like we discussed in the previous videos we can't actually create with an administrator or table or
+
+60
+00:04:00,450 --> 00:04:05,780
+an admin Boullion field in our users table to deploy I mean if they use Eisenman is.
+
+61
+00:04:05,910 --> 00:04:11,880
+But if you have a very simple application where you have only one or two administrators the best way
+
+62
+00:04:11,880 --> 00:04:16,890
+to go is to civil administrator e-mails in and away in your configuration file.
+
+63
+00:04:16,920 --> 00:04:17,850
+Very easy.
+
+64
+00:04:17,850 --> 00:04:22,420
+And then in your middle where you just need to check if the current user is an administrator.
+
+65
+00:04:22,530 --> 00:04:28,980
+I will show you how I do this in my Abdur ph be able to find a custom rakli which is going to be for
+
+66
+00:04:28,980 --> 00:04:31,070
+the administrators of this application.
+
+67
+00:04:31,140 --> 00:04:34,920
+And what I'm simply going to be doing is actually saving the emails.
+
+68
+00:04:34,980 --> 00:04:42,170
+So right here I'm going to see administrators and all this to an array and or pictures in country at
+
+69
+00:04:42,180 --> 00:04:45,800
+France the comb as the only administrator.
+
+70
+00:04:45,930 --> 00:04:46,280
+OK.
+
+71
+00:04:46,290 --> 00:04:50,210
+So any administrators in your location will be registered on that is key.
+
+72
+00:04:50,220 --> 00:04:58,500
+Then in my administration aware what I'm suddenly going to do is check if in a way of user email and
+
+73
+00:04:58,500 --> 00:05:04,430
+we're checking if it's in the of config mid-thought and we'll get the app that administrators.
+
+74
+00:05:04,560 --> 00:05:05,020
+OK.
+
+75
+00:05:05,070 --> 00:05:09,580
+So if it's in that RV then let's just for the moment die down.
+
+76
+00:05:09,750 --> 00:05:12,300
+You are an administrator.
+
+77
+00:05:12,390 --> 00:05:12,970
+OK.
+
+78
+00:05:13,050 --> 00:05:16,800
+Then if the user is not an administrator then would down.
+
+79
+00:05:16,890 --> 00:05:18,440
+You do not have access.
+
+80
+00:05:18,450 --> 00:05:18,810
+OK.
+
+81
+00:05:18,810 --> 00:05:23,640
+So that's what I mean the where does it checks if the Korean user is an administrator or by checking
+
+82
+00:05:23,670 --> 00:05:28,340
+if his email is among the ones that are registered in our config Abdur administrators.
+
+83
+00:05:28,450 --> 00:05:35,430
+OK then what we could do right here is make sure that the user is authenticated by saying if Jack then
+
+84
+00:05:35,460 --> 00:05:38,530
+run days and else would date them slogan.
+
+85
+00:05:38,580 --> 00:05:39,160
+OK.
+
+86
+00:05:39,210 --> 00:05:41,540
+So check if they use this authenticator.
+
+87
+00:05:41,640 --> 00:05:43,560
+If not they don't place logging.
+
+88
+00:05:43,590 --> 00:05:49,670
+But if they use ice authenticates a check if his email is in the config array of administrators.
+
+89
+00:05:49,800 --> 00:05:52,870
+And if that is the case Didymos you're an administrator.
+
+90
+00:05:52,980 --> 00:05:54,300
+If not then they don't.
+
+91
+00:05:54,360 --> 00:05:56,060
+You do not have access.
+
+92
+00:05:56,100 --> 00:05:58,410
+Now whether we register our middle.
+
+93
+00:05:58,470 --> 00:06:03,750
+Let's head over to Iraq in order Ph we like we said we want to quit our own middleware group that is
+
+94
+00:06:03,750 --> 00:06:09,300
+going to have all the valves really start for administrators therefore let's go ahead and take care
+
+95
+00:06:09,330 --> 00:06:15,110
+of this right in this group we are going to create our own group and I'll call that mean for now and
+
+96
+00:06:15,150 --> 00:06:21,420
+in here we need to really stop all the middleware that are going to be wrong for this group of words.
+
+97
+00:06:21,420 --> 00:06:24,950
+First of all I would like to pulling all the Middle Way to start.
+
+98
+00:06:24,950 --> 00:06:30,990
+On the other where because we are going to be using cookies starting the slash checking the CSR if token
+
+99
+00:06:31,050 --> 00:06:33,610
+sharing arose from session and all of that good stuff.
+
+100
+00:06:33,720 --> 00:06:34,220
+OK.
+
+101
+00:06:34,320 --> 00:06:37,840
+And then we want to also really start what costs are made aware right here.
+
+102
+00:06:37,890 --> 00:06:43,110
+So up at TGP middleware and that will be administrates our class.
+
+103
+00:06:43,110 --> 00:06:43,770
+That's it.
+
+104
+00:06:43,770 --> 00:06:49,250
+So we start a new admin middleware group and uses all the middleware groups in Web.
+
+105
+00:06:49,260 --> 00:06:52,490
+And it also has a custom administrates all the way.
+
+106
+00:06:52,510 --> 00:06:56,400
+Now if we head over to our Web page be we can do something like this.
+
+107
+00:06:56,650 --> 00:07:03,420
+It's a group and everything inside here is going to be for the administrators and we can map middleware
+
+108
+00:07:03,600 --> 00:07:07,920
+and we'll pass in Middleware group right here which is going to be at me that we just we just start
+
+109
+00:07:07,920 --> 00:07:14,420
+right now and we can also add a prefix of maybe at mean and let's just try this out.
+
+110
+00:07:14,430 --> 00:07:20,340
+Let's really start a route which is going to be a get and I'll just register the home route and right
+
+111
+00:07:20,340 --> 00:07:21,270
+here we're just going to die.
+
+112
+00:07:21,310 --> 00:07:22,990
+Don't what was reached.
+
+113
+00:07:23,160 --> 00:07:24,360
+OK so.
+
+114
+00:07:24,480 --> 00:07:29,880
+So we have a router middleware group called admin or we just read you start and we are applying it to
+
+115
+00:07:29,970 --> 00:07:31,480
+this world group right here.
+
+116
+00:07:31,590 --> 00:07:36,960
+And we've prefixed all routes on that at vulgo using our admin key right here.
+
+117
+00:07:37,080 --> 00:07:41,030
+And therefore we have SLAs are being registered me to where right now.
+
+118
+00:07:41,130 --> 00:07:44,060
+And let's go ahead and try to visit it if we visit.
+
+119
+00:07:44,070 --> 00:07:48,380
+I mean yeah we have police log in let's visit luggin.
+
+120
+00:07:48,490 --> 00:07:48,990
+All right.
+
+121
+00:07:48,990 --> 00:07:53,220
+Registar so with when you start and you use up and by the way behind the scenes are ready to kind of
+
+122
+00:07:53,220 --> 00:07:55,430
+setting up my database and stuff like that.
+
+123
+00:07:55,440 --> 00:07:55,900
+OK.
+
+124
+00:07:55,950 --> 00:07:59,270
+And registering with the email that I specified as an administrator.
+
+125
+00:07:59,370 --> 00:08:00,570
+And yeah I'm locked in.
+
+126
+00:08:00,630 --> 00:08:01,490
+So let's reset.
+
+127
+00:08:01,500 --> 00:08:02,380
+Admin right now.
+
+128
+00:08:02,520 --> 00:08:05,020
+And it says you are an administrator.
+
+129
+00:08:05,100 --> 00:08:11,460
+OK if I head over to my config and I change this e-mail in some way such that this user is no longer
+
+130
+00:08:11,630 --> 00:08:16,000
+on the streets so sure enough we have the correct message that says you do not have access.
+
+131
+00:08:16,260 --> 00:08:20,700
+But if you look at say that terrorists or with that be you can see it.
+
+132
+00:08:20,700 --> 00:08:22,310
+It looks a little bit messy.
+
+133
+00:08:22,380 --> 00:08:27,980
+And if you have a thousand of hundred votes that are for the admin middleware group and stockinette
+
+134
+00:08:28,000 --> 00:08:31,060
+in Sika is really going to make your far too messy.
+
+135
+00:08:31,140 --> 00:08:32,060
+But we can do better.
+
+136
+00:08:32,060 --> 00:08:32,460
+Right.
+
+137
+00:08:32,460 --> 00:08:34,640
+Level has taught us how to customize.
+
+138
+00:08:34,650 --> 00:08:35,780
+So let's go ahead.
+
+139
+00:08:35,840 --> 00:08:41,250
+Lots of people write up and we are going to define our own routes group.
+
+140
+00:08:41,370 --> 00:08:44,270
+And this is going to be this map.
+
+141
+00:08:44,310 --> 00:08:45,970
+I mean WILESMITH.
+
+142
+00:08:46,170 --> 00:08:48,160
+OK let's just use the convention.
+
+143
+00:08:48,270 --> 00:08:50,220
+Now we need to create that method.
+
+144
+00:08:50,310 --> 00:08:51,460
+So protect it.
+
+145
+00:08:51,540 --> 00:08:56,240
+So how is this going to be with registar prefix just like we're doing right now.
+
+146
+00:08:56,670 --> 00:09:02,690
+And that refix would be admin and the middleware is going to be the mean middleware and the namespace.
+
+147
+00:09:02,700 --> 00:09:08,580
+Let's see if we want to control us to be in the admin directory so would concatenate this namespace
+
+148
+00:09:08,580 --> 00:09:15,480
+which is the default namespace to administrates us namespace and the group that we're going to specify
+
+149
+00:09:15,780 --> 00:09:16,460
+is from.
+
+150
+00:09:16,470 --> 00:09:21,070
+I mean that PH BE therefore in our route's directory slosh.
+
+151
+00:09:21,290 --> 00:09:22,690
+I mean that Peachtree.
+
+152
+00:09:22,850 --> 00:09:26,090
+OK so let's create the file routes.
+
+153
+00:09:26,320 --> 00:09:28,930
+Slash I mean that should be OK.
+
+154
+00:09:28,950 --> 00:09:32,790
+So right here this is where we are going to define all of our routes.
+
+155
+00:09:32,970 --> 00:09:38,830
+Therefore this route that we have right here I'm going to pull it out and now it's going to be in our
+
+156
+00:09:38,830 --> 00:09:41,200
+administrates or the Peachtree farm.
+
+157
+00:09:41,410 --> 00:09:41,910
+OK.
+
+158
+00:09:41,910 --> 00:09:46,930
+Now we have a very clean space to really start all routes that have to do with administrators.
+
+159
+00:09:47,070 --> 00:09:49,650
+And if we were fresh We should have the same results.
+
+160
+00:09:50,470 --> 00:09:58,150
+We do therefore let's go ahead and make sure this user is an administrator or safe run that request.
+
+161
+00:09:58,300 --> 00:10:00,440
+And we still have exactly the same results.
+
+162
+00:10:00,520 --> 00:10:00,870
+OK.
+
+163
+00:10:00,880 --> 00:10:02,740
+So that's perfectly great.
+
+164
+00:10:02,740 --> 00:10:10,150
+We've learned how we can create our own custom middleware groups or our own custom routes fairs where
+
+165
+00:10:10,150 --> 00:10:13,230
+we can have king which start vaulting application.
+
+166
+00:10:13,240 --> 00:10:21,310
+So just a week up in Canada Ph.D. you start a new admin middleware group and we are registering all
+
+167
+00:10:21,310 --> 00:10:27,980
+of the middleware on the Web plus our own plus our own custom administrates or middleware.
+
+168
+00:10:28,090 --> 00:10:34,090
+Ponder this middleware group and in our overall service provider we have a new set of what's called
+
+169
+00:10:34,150 --> 00:10:37,290
+admin and we're going to place them in the Admin the pitch.
+
+170
+00:10:37,360 --> 00:10:41,030
+And we are applying that me to where to all of those routes in that group.
+
+171
+00:10:41,050 --> 00:10:43,610
+So hopefully you understood what we did in this lesson.
+
+172
+00:10:43,660 --> 00:10:47,820
+I hope it goes a long way to mega-projects to look clean and professional.
+
+173
+00:10:47,830 --> 00:10:51,600
+I'm going to catch you in the next video where we talk about something more fun.
+
+174
+00:10:51,970 --> 00:10:52,620
+Thank you.
+

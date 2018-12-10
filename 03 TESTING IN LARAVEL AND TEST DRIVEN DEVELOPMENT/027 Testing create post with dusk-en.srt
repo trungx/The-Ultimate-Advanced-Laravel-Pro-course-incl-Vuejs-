@@ -1,0 +1,360 @@
+1
+00:00:00,450 --> 00:00:07,020
+Let's use the US to actually test drive the ph that we're going to use to create a post by the authenticated
+
+2
+00:00:07,030 --> 00:00:07,380
+user.
+
+3
+00:00:07,410 --> 00:00:10,470
+So let's go ahead and create a new dust test yet.
+
+4
+00:00:10,590 --> 00:00:13,650
+Our son does make
+
+5
+00:00:16,350 --> 00:00:20,480
+create post-test awesome that's been created for us.
+
+6
+00:00:20,520 --> 00:00:22,620
+So we have our quick post-test right here.
+
+7
+00:00:22,620 --> 00:00:31,700
+Let's clean up this and we're going to see public function test off the user can create post.
+
+8
+00:00:31,770 --> 00:00:40,920
+So what's the first thing let's just use or abuse or right here then generate a user with our factory
+
+9
+00:00:41,510 --> 00:00:42,880
+and the next thing.
+
+10
+00:00:43,410 --> 00:00:49,470
+We just need to call the browser I thought restricts in a callback.
+
+11
+00:00:49,710 --> 00:00:54,880
+And in that callback we have available and an instance of Vasa.
+
+12
+00:00:55,050 --> 00:01:00,330
+And let's just use I use our table right here.
+
+13
+00:01:00,330 --> 00:01:00,840
+Awesome.
+
+14
+00:01:00,900 --> 00:01:02,970
+So we have access to that user.
+
+15
+00:01:03,120 --> 00:01:07,060
+So what are we going to be doing to test if a user can create a post.
+
+16
+00:01:07,080 --> 00:01:09,790
+First of all we want to use that to be authenticated right.
+
+17
+00:01:09,900 --> 00:01:15,870
+So we're going to call browser luggin ours which is a very helpful method that does provide us with
+
+18
+00:01:15,870 --> 00:01:18,350
+passing the user that we want to authenticate.
+
+19
+00:01:18,510 --> 00:01:24,020
+And then the next thing we just need to visit the page that we want to use to create a post right.
+
+20
+00:01:24,120 --> 00:01:29,990
+So viscid to create speech and then what do we want to do we want to type in the pipe the title type
+
+21
+00:01:29,990 --> 00:01:33,350
+in the body and then click on the Create post button right.
+
+22
+00:01:33,510 --> 00:01:39,810
+So we're going to see type and I'm just going to see the name of that future title and I'm just going
+
+23
+00:01:39,810 --> 00:01:42,260
+to type in a new post.
+
+24
+00:01:42,960 --> 00:01:50,380
+And I'm also going to type in into the body and this should be my new body.
+
+25
+00:01:51,300 --> 00:01:59,850
+And I'm just going to see assert and I'm just going to say I also press a button on the text and this
+
+26
+00:01:59,850 --> 00:02:02,260
+button is going to be safe post.
+
+27
+00:02:02,370 --> 00:02:08,300
+And first of all for the assertions we're going to make sure that the US-CERT path yse slash post.
+
+28
+00:02:08,460 --> 00:02:14,350
+So when a user commits or successfully make sure that he's redirected to the post route and then we
+
+29
+00:02:14,350 --> 00:02:19,020
+are going to assert that we see the new post that we just created.
+
+30
+00:02:19,020 --> 00:02:29,940
+So I said that we see new post on that page and also assert that we see the new body aasan so viscid
+
+31
+00:02:29,940 --> 00:02:31,690
+to create each type.
+
+32
+00:02:31,700 --> 00:02:38,640
+This type does press this button so that when we get to that page make sure you see this text and see
+
+33
+00:02:38,700 --> 00:02:40,680
+this text as simple as that.
+
+34
+00:02:40,690 --> 00:02:42,480
+What is a very readable.
+
+35
+00:02:42,480 --> 00:02:45,790
+So let's go ahead and give this test group so we can run it.
+
+36
+00:02:45,960 --> 00:02:55,770
+So group and this is just going to be create Post had a sermon on ph we are saying ask with a group
+
+37
+00:02:55,770 --> 00:02:59,490
+called create post based above your not found this.
+
+38
+00:02:59,520 --> 00:03:07,130
+Obviously that's because we haven't used the trait so let's just go ahead and use it as a game.
+
+39
+00:03:17,750 --> 00:03:18,170
+Awesome.
+
+40
+00:03:18,170 --> 00:03:19,520
+So now we have an embassy.
+
+41
+00:03:19,520 --> 00:03:25,720
+We don't have that page right because we saw a peach for for display to us.
+
+42
+00:03:25,760 --> 00:03:31,010
+Now we're going on first of all fix this and then make sure that our sessions pass.
+
+43
+00:03:31,010 --> 00:03:37,850
+So how do we fix the visit what's our weather picture be and make sure the registar gets routes and
+
+44
+00:03:37,850 --> 00:03:45,290
+this is going to be gets and it's going to be create post and it's going to go to the Create post route
+
+45
+00:03:45,380 --> 00:03:48,740
+which is going to display the view where we can actually create a post.
+
+46
+00:03:49,080 --> 00:03:50,850
+Let's check out that test.
+
+47
+00:03:50,870 --> 00:03:53,450
+So it's the creators we fixed this.
+
+48
+00:03:53,570 --> 00:03:59,170
+The next thing is to make sure that we have this create Bosma thought in our controller right.
+
+49
+00:03:59,190 --> 00:04:09,460
+Boesch controller public function Crit. post and it's simply going to return a view create post right
+
+50
+00:04:09,930 --> 00:04:11,880
+head of a test.
+
+51
+00:04:12,050 --> 00:04:16,340
+This viewer should have a title field and you should also have a body Phew.
+
+52
+00:04:16,400 --> 00:04:24,290
+So let's head over to our views directory and we're going to have to create a new file.
+
+53
+00:04:24,860 --> 00:04:27,400
+So resources views.
+
+54
+00:04:27,530 --> 00:04:32,480
+And we're going to create create post that blade PH BE AWESOME.
+
+55
+00:04:32,540 --> 00:04:38,440
+So we said from our test that we should have a title field a buddy field and a safe post button.
+
+56
+00:04:38,440 --> 00:04:38,890
+Right.
+
+57
+00:04:39,050 --> 00:04:40,270
+So let's take care of that.
+
+58
+00:04:40,280 --> 00:04:44,890
+We need to have a form and an input which is of name title.
+
+59
+00:04:45,200 --> 00:04:54,310
+And let's just make a text area of name body and all of this is not necessary.
+
+60
+00:04:54,320 --> 00:05:00,830
+And finally we need a button and the text in that button should be safe post.
+
+61
+00:05:00,860 --> 00:05:01,220
+Right.
+
+62
+00:05:01,280 --> 00:05:09,290
+So this and this and these assets what else we have to make sure that after the post is saved we redirect
+
+63
+00:05:09,290 --> 00:05:10,570
+to this path.
+
+64
+00:05:10,580 --> 00:05:15,110
+Now remember we've already driven the process of starting a post.
+
+65
+00:05:15,200 --> 00:05:22,190
+So we just need to do is submit that form to this endpoint and it's going to create a post for us.
+
+66
+00:05:22,190 --> 00:05:24,760
+So we already have this method right here.
+
+67
+00:05:24,800 --> 00:05:28,410
+The stop loss method of quitting a post for us.
+
+68
+00:05:28,550 --> 00:05:36,510
+So let's head over to the cripple's and make sure that we direct this form to this end point.
+
+69
+00:05:36,560 --> 00:05:38,470
+As simple as that.
+
+70
+00:05:38,570 --> 00:05:43,020
+Now hopefully hopefully everything should work as aspects.
+
+71
+00:05:43,330 --> 00:05:45,840
+But now it brings us to the point.
+
+72
+00:05:46,040 --> 00:05:48,680
+Hopefully everything should work as expected.
+
+73
+00:05:48,860 --> 00:05:54,530
+But if we check out our stock plus my thought once the post is created we are not redirecting the user
+
+74
+00:05:54,530 --> 00:05:55,480
+anywhere right.
+
+75
+00:05:55,490 --> 00:06:05,240
+So let's just return redirect to the slash posts route so that we can fix this session and then on the
+
+76
+00:06:05,240 --> 00:06:11,280
+slush route we've already made sure and written tests that we're going to see all the posts.
+
+77
+00:06:11,300 --> 00:06:14,320
+So we're going to see the spores and also see this body.
+
+78
+00:06:14,440 --> 00:06:14,940
+Awesome.
+
+79
+00:06:14,960 --> 00:06:17,990
+So let's go ahead and run that test and see what we get.
+
+80
+00:06:28,750 --> 00:06:29,450
+OK.
+
+81
+00:06:29,450 --> 00:06:34,640
+We received a method not allowed exception and let me check out what we have right there.
+
+82
+00:06:34,680 --> 00:06:41,870
+What do we have in our quick post and if we need to specify that this should be a Metro posts.
+
+83
+00:06:42,060 --> 00:06:42,540
+Awesome.
+
+84
+00:06:42,560 --> 00:06:43,760
+That's one that says again
+
+85
+00:06:55,290 --> 00:06:56,650
+mismatch a separation.
+
+86
+00:06:56,700 --> 00:06:57,390
+OK.
+
+87
+00:06:57,510 --> 00:07:00,280
+Now to a crowd there who can.
+
+88
+00:07:00,310 --> 00:07:07,920
+So let's head over and echoed C-s RF field right here.
+
+89
+00:07:08,160 --> 00:07:09,440
+One that a staggering
+
+90
+00:07:20,040 --> 00:07:25,370
+also so now we have a successful test can finally create a post.
+

@@ -1,0 +1,300 @@
+1
+00:00:00,210 --> 00:00:05,760
+Welcome guys to test in Lavo this is a beginner's guide to test our applications and see how we can
+
+2
+00:00:05,760 --> 00:00:11,880
+use techniques like Stevensville Ogmund to make our workflow better have a fresh install of level and
+
+3
+00:00:11,880 --> 00:00:15,030
+I'm going to be walking you through how all of this works.
+
+4
+00:00:15,030 --> 00:00:18,220
+So first of all let's start by defining what testing is.
+
+5
+00:00:18,240 --> 00:00:24,120
+We obviously have a in and writing obligations and novel writing code and seeing those code break in
+
+6
+00:00:24,120 --> 00:00:28,640
+production and receiving very Arjun requests on fix this feature.
+
+7
+00:00:28,650 --> 00:00:30,470
+Make sure this is working on all of that.
+
+8
+00:00:30,480 --> 00:00:36,870
+Now Destin is going to give us a very very huge advantage when building web applications.
+
+9
+00:00:36,870 --> 00:00:42,120
+And one of those advantages is actually reducing the amount of box or issues that we have on that particular
+
+10
+00:00:42,120 --> 00:00:43,010
+application.
+
+11
+00:00:43,020 --> 00:00:49,170
+So imagine that pitch that you broke by maybe moving a controller or changing the name of something
+
+12
+00:00:49,230 --> 00:00:55,050
+and then realize that by moving this feature you broke another feature and you push your code to production
+
+13
+00:00:55,140 --> 00:00:59,730
+and when it gets to production you have all sorts of complains that this is broken.
+
+14
+00:00:59,730 --> 00:01:02,020
+Whoops there's something going on on this page.
+
+15
+00:01:02,040 --> 00:01:08,730
+But then what if you had a suit that you could run every time to actually test every single feature
+
+16
+00:01:08,760 --> 00:01:13,770
+every single method in an application before you actually push it to production such that if you have
+
+17
+00:01:13,770 --> 00:01:18,690
+a built in system and you change something in the billing system and it affects the use of striation
+
+18
+00:01:18,720 --> 00:01:23,190
+on something like that you can be able to point it out or figure it out before you push your code to
+
+19
+00:01:23,190 --> 00:01:23,770
+production.
+
+20
+00:01:23,770 --> 00:01:26,090
+That's what testing is going to do for you.
+
+21
+00:01:26,090 --> 00:01:31,260
+You create an application and for every single thing or feature that that application does you write
+
+22
+00:01:31,260 --> 00:01:32,160
+a test for that.
+
+23
+00:01:32,160 --> 00:01:37,740
+And before you put to production you make sure that all your tests pass I'm going to show you an example
+
+24
+00:01:37,740 --> 00:01:38,480
+of a test.
+
+25
+00:01:38,520 --> 00:01:42,070
+And obviously by default lavish gifts ph be in it as a testing framework.
+
+26
+00:01:42,150 --> 00:01:46,440
+So in a test directory We have a unique entry and we have a feature directory.
+
+27
+00:01:46,440 --> 00:01:49,800
+So what is the difference between a feature test and the unit test.
+
+28
+00:01:49,800 --> 00:01:55,710
+Now let's take for example we are testing the use of the PH B class and we simply want to filter the
+
+29
+00:01:55,710 --> 00:01:58,210
+name of the user in an array of users right.
+
+30
+00:01:58,260 --> 00:02:03,150
+So we're going to create a method and this method will take a name and is going to be of words they
+
+31
+00:02:03,150 --> 00:02:05,560
+use are ones that names like that.
+
+32
+00:02:05,610 --> 00:02:05,930
+Right.
+
+33
+00:02:06,000 --> 00:02:10,950
+So we're going to call that a unit test because we want to make sure that that method actually works
+
+34
+00:02:10,950 --> 00:02:12,450
+the way we want it to work.
+
+35
+00:02:12,540 --> 00:02:19,080
+But then let's imagine we want to make sure that our applications log in and registration system as
+
+36
+00:02:19,080 --> 00:02:23,950
+a whole which comprises of a lot of classes and a lot of my thoughts walks together.
+
+37
+00:02:24,030 --> 00:02:28,050
+Then we're going to create some feature test and in the feature test what we're doing is actually making
+
+38
+00:02:28,050 --> 00:02:33,540
+some posts request to that end points that is in charge of authentication to make sure that it returns
+
+39
+00:02:33,540 --> 00:02:35,710
+to us or displays the correct result.
+
+40
+00:02:35,760 --> 00:02:41,370
+But for units as we're going to be making requests to my thoughts all classes to make sure that the
+
+41
+00:02:41,370 --> 00:02:45,330
+attributes and the thing are the thing that they are supposed to do right.
+
+42
+00:02:45,330 --> 00:02:51,060
+So we have a bunch of classes right here in our testing directory and we're going to just walk through
+
+43
+00:02:51,060 --> 00:02:53,580
+each and every one of those for you to understand what's happening.
+
+44
+00:02:53,610 --> 00:02:56,820
+So first of all we have this test case the PH p.
+
+45
+00:02:56,910 --> 00:02:57,720
+And what does this do.
+
+46
+00:02:57,720 --> 00:02:59,950
+It uses creates application as a.
+
+47
+00:03:00,180 --> 00:03:04,920
+And then it's an abstract class and we extend the base test case.
+
+48
+00:03:04,920 --> 00:03:10,620
+So if we try ahead what's the best test case we see it's in the vendor level frameworks source eliminate
+
+49
+00:03:10,620 --> 00:03:13,280
+Fondation testing task is the piece.
+
+50
+00:03:13,280 --> 00:03:19,740
+So let's head over there and we see the test case that we are extending actually extends based case
+
+51
+00:03:19,800 --> 00:03:22,880
+right here which is PH You need framework test case.
+
+52
+00:03:22,890 --> 00:03:23,290
+Right.
+
+53
+00:03:23,340 --> 00:03:31,140
+So what you see lover doing is simply creating a little wrapper or wrong the default ph B unit framework
+
+54
+00:03:31,230 --> 00:03:34,680
+and you're going to see how helpful and wonderful that is.
+
+55
+00:03:34,680 --> 00:03:40,030
+So obviously it has a lot of concerns for example concerns that is to be request.
+
+56
+00:03:40,050 --> 00:03:45,410
+For example if you want to learn the API in Lavoe testing framework that takes care of asked questioning
+
+57
+00:03:45,430 --> 00:03:50,610
+you can just head over to that file and we head over to that treat you see that in my office my thoughts
+
+58
+00:03:50,910 --> 00:03:54,370
+like with Vagos without middleware.
+
+59
+00:03:54,480 --> 00:04:00,360
+Again I thought if we want to make get requests to an end point and get Jason want to make that an adjacent
+
+60
+00:04:00,360 --> 00:04:02,600
+request post and all of that.
+
+61
+00:04:02,670 --> 00:04:07,930
+OK we can see we also have to watch with authentication if there are three data base on all of that
+
+62
+00:04:07,950 --> 00:04:09,280
+we're going to be working through this.
+
+63
+00:04:09,340 --> 00:04:15,270
+Yeah but then what I want you concerned to be focused on now is this it extends a business case and
+
+64
+00:04:15,270 --> 00:04:19,410
+this business case extends PH BE unit framework.
+
+65
+00:04:19,410 --> 00:04:24,380
+So what I'm doing is creating a Simbu up to our own PSP in unit.
+
+66
+00:04:24,390 --> 00:04:30,120
+So by default you should be able to understand be in it before you actually write us to love our case.
+
+67
+00:04:30,150 --> 00:04:32,580
+So it uses creates application.
+
+68
+00:04:32,700 --> 00:04:36,680
+And what those creates application do is but the application right.
+
+69
+00:04:36,810 --> 00:04:42,720
+So before you're actually able to run a test cation you need to boot up the application.
+
+70
+00:04:42,720 --> 00:04:45,220
+So this is exactly the level of the application.
+
+71
+00:04:45,220 --> 00:04:47,990
+Anytime we make a request or try to visit a page.
+
+72
+00:04:48,150 --> 00:04:54,480
+OK so now that we have that clip we won't actually be needing to touch these two files novels taking
+
+73
+00:04:54,480 --> 00:04:55,710
+care of that for us.
+
+74
+00:04:55,710 --> 00:05:02,150
+The main things are going to be focused on are the features directory directory and how to actually
+
+75
+00:05:02,160 --> 00:05:03,390
+set up a test.
+

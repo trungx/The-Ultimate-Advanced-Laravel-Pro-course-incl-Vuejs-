@@ -1,0 +1,32 @@
+<html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>010 Section introduction</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><p>In this section, we are going to have a thorough introduction to testing laravel applications. The section was recorded using Laravel 5.4, but this does not hinder you from using the latest version of the framework. If you prefer to use Laravel 5.5 for this section, keep in mind the two changes I mention below (these can totally be ignored, but It would help to know that the framework has some new features we can use.):</p>
+
+<p><br></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ol><li>In Laravel, all exceptions thrown are handled by the <code>App\Exceptions\Handler.php</code>  file. This file takes in the exception, and renders it into a view, and then returns that view to us as the laravel error page. During testing, in versions of Laravel less than <strong>5.5</strong>, we manually add   <code>throw $exception</code>  in the <code>render</code>  method of the <code>App\Exceptions\Handler.php</code>  file, so as to prevent Laravel from rendering our exceptions into a view, just like it normally does. This helps make testing a lot easier, and we can see what sort of exception we are dealing with. If you are using Laravel 5.5, Laravel provides an inline method to do this, called <code>withoutExceptionHandling()</code> , which you can directly use in your test files.</li><li>In Laravel 5.5, the <code>DatabaseMigrations </code> trait has been replaced with the <code>RefreshDatabase </code> trait.</li></ol><p>If you have no idea what these two points above are about, not to worry. When you see me use <code>throw $exception</code> or <code>DatabaseMigrations</code> in the screencasts, you will understand better, and if you don't, you can always come back to this article to read through again.<br></p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>

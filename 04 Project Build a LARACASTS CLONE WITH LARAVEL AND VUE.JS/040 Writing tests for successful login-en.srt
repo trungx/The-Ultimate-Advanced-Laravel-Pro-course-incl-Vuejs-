@@ -1,0 +1,156 @@
+1
+00:00:00,110 --> 00:00:05,480
+I mean for writing test for one logging functionality is because we've actually added that the default
+
+2
+00:00:05,480 --> 00:00:06,870
+state law will provide for us.
+
+3
+00:00:06,960 --> 00:00:11,680
+So every single place where we actually admit that something that level provides by default we're going
+
+4
+00:00:11,680 --> 00:00:13,230
+to write a little test for that.
+
+5
+00:00:13,230 --> 00:00:18,320
+For example if we had a waterlogging controller and check out what I think kids at mid-thought we're
+
+6
+00:00:18,330 --> 00:00:19,590
+actually doing some things.
+
+7
+00:00:19,710 --> 00:00:22,590
+So let's go ahead and write a little test to care of this.
+
+8
+00:00:22,590 --> 00:00:28,520
+So we're going to see public function test correct response after use our lost in.
+
+9
+00:00:28,530 --> 00:00:28,890
+Right.
+
+10
+00:00:28,920 --> 00:00:33,010
+So we are making sure that the response that we get is actually what we need right.
+
+11
+00:00:33,060 --> 00:00:35,550
+So first of all we're just going to use user.
+
+12
+00:00:35,640 --> 00:00:41,040
+And secondly we're going to make that post request and that is always going to look exactly like the
+
+13
+00:00:41,040 --> 00:00:42,020
+one we just wrote.
+
+14
+00:00:42,030 --> 00:00:45,290
+Now we want to actually pass in the correct password here.
+
+15
+00:00:45,360 --> 00:00:48,780
+So we make sure that the user is actually authenticated.
+
+16
+00:00:48,840 --> 00:00:52,860
+And then we assert that the status is a 200 meaning successful response.
+
+17
+00:00:52,890 --> 00:00:57,370
+We are certain that we have this are we as part of the sun in the response.
+
+18
+00:00:57,360 --> 00:00:58,370
+So statues.
+
+19
+00:00:58,400 --> 00:00:58,940
+OK.
+
+20
+00:00:58,980 --> 00:01:01,030
+So that's the response recently from this.
+
+21
+00:01:01,200 --> 00:01:06,840
+And the last thing we want to answer utterly absurd is that the session has a particular key.
+
+22
+00:01:06,840 --> 00:01:09,000
+Now this key is going to be success.
+
+23
+00:01:09,000 --> 00:01:15,780
+Now we have two options like your of what's test response that ph B which is actually in our level call
+
+24
+00:01:15,900 --> 00:01:22,680
+human foundation testing and research for that METAR assert session has just discover that it takes
+
+25
+00:01:22,680 --> 00:01:28,570
+in a key and it takes in an optional value so that key is what we just passed in here which is session.
+
+26
+00:01:28,680 --> 00:01:34,270
+And then we could actually make sure that the value of that is specified right.
+
+27
+00:01:34,290 --> 00:01:40,550
+So right here we could say okay we want to make sure that the success message is specifically you are
+
+28
+00:01:40,560 --> 00:01:44,040
+successfully lofting just like we having a logging controller or not.
+
+29
+00:01:44,160 --> 00:01:49,200
+So in this case I'm just going to help to my logging controller and I'm going to copy the message that
+
+30
+00:01:49,200 --> 00:01:55,120
+we have in the session and I'm going to make sure that are logging tests I truly checks for it.
+
+31
+00:01:55,140 --> 00:01:57,000
+So I think that's going to work perfectly.
+
+32
+00:01:57,000 --> 00:02:00,120
+Let's go ahead and win a test and see the results that we get.
+
+33
+00:02:00,120 --> 00:02:05,400
+So for us to run the specific tests let's just use BHB unit and we're going to filter out to this particular
+
+34
+00:02:05,400 --> 00:02:05,980
+test.
+
+35
+00:02:06,030 --> 00:02:06,510
+OK.
+
+36
+00:02:06,540 --> 00:02:09,960
+We run it and sure enough we have a successful response.
+
+37
+00:02:09,960 --> 00:02:12,110
+So it means our session was set.
+
+38
+00:02:12,170 --> 00:02:17,660
+Our starters here was you know a decent response and the status of the response was 200.
+
+39
+00:02:17,790 --> 00:02:24,680
+So we had successfully overturned the defaults for Lavo and our test of told us that everything is OK.
+

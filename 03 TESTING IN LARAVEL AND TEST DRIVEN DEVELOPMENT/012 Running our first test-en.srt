@@ -1,0 +1,308 @@
+1
+00:00:00,180 --> 00:00:05,520
+Let's look at an example test that will provide for us project in the feature directory we check out
+
+2
+00:00:05,520 --> 00:00:05,940
+the test.
+
+3
+00:00:05,970 --> 00:00:11,220
+And like we defined the feature tests are going to test particular features an application for example
+
+4
+00:00:11,220 --> 00:00:12,270
+authentication.
+
+5
+00:00:12,270 --> 00:00:16,740
+And in this case if we look at the first is no need to worry about all of this boilerplate.
+
+6
+00:00:16,740 --> 00:00:24,110
+What we have here is making a GET request to this endpoint and the notice that we are using get and
+
+7
+00:00:24,180 --> 00:00:29,270
+actually ph does not provide us with this method but because we are using levelness a wrapper Lavoe
+
+8
+00:00:29,270 --> 00:00:33,340
+has this helpful method that can help us make a GET request to an endpoint.
+
+9
+00:00:33,390 --> 00:00:39,090
+So we have this GET request to this end point and then we are making sure that when we make a request
+
+10
+00:00:39,090 --> 00:00:41,760
+to that end point we have a status of 200.
+
+11
+00:00:41,790 --> 00:00:42,130
+OK.
+
+12
+00:00:42,150 --> 00:00:48,420
+So this is a feature that's destined that visiting this point actually returns a 200.
+
+13
+00:00:48,420 --> 00:00:51,380
+So this method does not care about controllers.
+
+14
+00:00:51,480 --> 00:00:55,930
+It does not care about methods that take care of returning a view and all of that.
+
+15
+00:00:55,950 --> 00:01:01,020
+All he cares about is making sure that the future of visiting this page works right.
+
+16
+00:01:01,110 --> 00:01:02,490
+So that's a feature test.
+
+17
+00:01:02,490 --> 00:01:05,110
+What about a unit test a unit test.
+
+18
+00:01:05,130 --> 00:01:10,100
+It's going to look a little bit different and obviously right here it's not testing any method or any
+
+19
+00:01:10,110 --> 00:01:16,380
+class but it's not visiting any endpoint and it's not making sure that a particular status code or particular
+
+20
+00:01:16,380 --> 00:01:17,590
+session is set right.
+
+21
+00:01:17,610 --> 00:01:20,300
+So we are just searching true of true.
+
+22
+00:01:20,370 --> 00:01:27,000
+And this may be true of maybe the users locked in when we call a particular method or something like
+
+23
+00:01:27,000 --> 00:01:27,320
+that.
+
+24
+00:01:27,360 --> 00:01:27,860
+OK.
+
+25
+00:01:27,960 --> 00:01:30,570
+So how do we want to test.
+
+26
+00:01:30,570 --> 00:01:32,790
+Obviously like I said using ph be unique.
+
+27
+00:01:32,790 --> 00:01:38,940
+So for head over to my vendor bin directory you see that we have ph B unit in this directory and this
+
+28
+00:01:38,940 --> 00:01:40,220
+is an executable.
+
+29
+00:01:40,290 --> 00:01:44,640
+And once we execute that command is going to actually run all the tests in application.
+
+30
+00:01:44,700 --> 00:01:48,020
+Let's try the vendor bean ph B unit.
+
+31
+00:01:48,060 --> 00:01:54,360
+So you see we have to test that was successful and two assertions so let's go ahead and try to break
+
+32
+00:01:54,360 --> 00:01:56,170
+something in our future test.
+
+33
+00:01:56,250 --> 00:01:58,520
+What we're going to do is try to break this test.
+
+34
+00:01:58,540 --> 00:02:04,290
+So now when you try to visit this end point just like in the browser you have a successful response
+
+35
+00:02:04,350 --> 00:02:07,440
+because that is actually written in your view which is a 200.
+
+36
+00:02:07,440 --> 00:02:09,180
+Now how do we pick this test.
+
+37
+00:02:09,210 --> 00:02:11,000
+That's what or what that Ph be.
+
+38
+00:02:11,010 --> 00:02:15,230
+And right here we see that by default Lavoe gives us a route.
+
+39
+00:02:15,330 --> 00:02:18,020
+And when we visit this route it returns this view.
+
+40
+00:02:18,090 --> 00:02:18,480
+Right.
+
+41
+00:02:18,480 --> 00:02:23,930
+So let's go ahead and change this by actually making sure this end point does not exist.
+
+42
+00:02:23,970 --> 00:02:24,370
+Right.
+
+43
+00:02:24,420 --> 00:02:28,980
+Which means novel is going to an error which is a 500 instead of a 200.
+
+44
+00:02:28,980 --> 00:02:35,100
+So I'm just going to see nothing right here on the slash end point does not exist.
+
+45
+00:02:35,220 --> 00:02:37,580
+That's one that says the game to see what we get.
+
+46
+00:02:37,590 --> 00:02:41,610
+Vendor BHB in it and you see we have a phileo.
+
+47
+00:02:41,610 --> 00:02:46,680
+There was one phileo expect a status code of 200 but received 4 or 4.
+
+48
+00:02:46,710 --> 00:02:52,390
+Which means that endpoint does not exist and filled asserting that false is true.
+
+49
+00:02:52,530 --> 00:02:58,830
+Because right here we are searching in the example feature test that status of 200 is equal to 4 or
+
+50
+00:02:58,830 --> 00:03:01,750
+4 which is what we returned right.
+
+51
+00:03:01,770 --> 00:03:05,090
+So this is a feature that is not work in an application.
+
+52
+00:03:05,270 --> 00:03:07,180
+And a lot of things might happen.
+
+53
+00:03:07,200 --> 00:03:07,450
+Ms.
+
+54
+00:03:07,500 --> 00:03:13,950
+Let's say you're working on a team and accidentally team member actually leads the slash route and it's
+
+55
+00:03:13,950 --> 00:03:15,080
+no longer working.
+
+56
+00:03:15,150 --> 00:03:16,350
+Now you're not going to know.
+
+57
+00:03:16,360 --> 00:03:22,100
+But before this portal production you're going to run your tests to make sure that all your test as
+
+58
+00:03:22,220 --> 00:03:24,920
+you are passing and in case does not pass.
+
+59
+00:03:25,010 --> 00:03:27,640
+Dannion how to fix it before you push it to production.
+
+60
+00:03:27,660 --> 00:03:28,210
+Right.
+
+61
+00:03:28,230 --> 00:03:32,200
+So that's one of the greatest advantages of actually testing your code.
+
+62
+00:03:32,220 --> 00:03:36,280
+I'm going to fix that back run test and get back to green.
+
+63
+00:03:36,300 --> 00:03:37,780
+So everything is awesome.
+
+64
+00:03:37,860 --> 00:03:40,710
+So let's head over to our one unit test and try to break it.
+
+65
+00:03:40,800 --> 00:03:42,350
+So we are asserting true.
+
+66
+00:03:42,450 --> 00:03:45,440
+While if we assert false right.
+
+67
+00:03:45,450 --> 00:03:47,920
+So we are asserting that something returns true.
+
+68
+00:03:47,970 --> 00:03:50,420
+But then it's actually returning false.
+
+69
+00:03:50,520 --> 00:03:55,290
+That's one that Venda been BHB it and now we have a failure.
+
+70
+00:03:55,380 --> 00:03:59,320
+And this is the second test failing failed asserting that false is true.
+
+71
+00:03:59,430 --> 00:04:00,690
+As simple as that.
+
+72
+00:04:00,690 --> 00:04:04,860
+So that is exactly what we are going to be doing to create a test.
+
+73
+00:04:04,860 --> 00:04:10,460
+Do some stuff and assert assert innocently saying I wanted to behave in this way.
+
+74
+00:04:10,470 --> 00:04:13,220
+Make sure it isn't that way if not an error.
+
+75
+00:04:13,280 --> 00:04:14,970
+And that's the wrong way sitting right here.
+
+76
+00:04:14,970 --> 00:04:19,470
+So those are very busy examples of our feature and unit test.
+
+77
+00:04:19,560 --> 00:04:25,130
+But how do we actually create this test and naturally use them to test our application.
+

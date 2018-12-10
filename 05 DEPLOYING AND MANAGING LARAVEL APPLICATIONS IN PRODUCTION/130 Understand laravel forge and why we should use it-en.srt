@@ -1,0 +1,356 @@
+1
+00:00:00,410 --> 00:00:01,360
+You're welcome back.
+
+2
+00:00:01,410 --> 00:00:04,370
+Let's talk about supply an application to our cloud.
+
+3
+00:00:04,540 --> 00:00:08,700
+Now I want to take some time to talk about why we're going to be using love to forge where we are going
+
+4
+00:00:08,700 --> 00:00:14,400
+to be using the task that we are using and why not just deploy to distortion ocean without force.
+
+5
+00:00:14,570 --> 00:00:15,060
+OK.
+
+6
+00:00:15,090 --> 00:00:17,930
+So 4G is simply a service manager OK.
+
+7
+00:00:17,970 --> 00:00:19,710
+It's just going to help us money to survive.
+
+8
+00:00:19,710 --> 00:00:23,820
+There are some staff that are really really hard to do on the server.
+
+9
+00:00:23,940 --> 00:00:24,810
+By our own.
+
+10
+00:00:24,920 --> 00:00:25,520
+OK.
+
+11
+00:00:25,650 --> 00:00:31,590
+For example if we want to deploy it or for server or a server that is money for all we need to do is
+
+12
+00:00:31,590 --> 00:00:38,130
+push call to get help but then setting this up in the server it's not unnecessarily complicated but
+
+13
+00:00:38,280 --> 00:00:41,390
+there is a ton of work that you have to take out.
+
+14
+00:00:41,460 --> 00:00:47,820
+For example you have to set up another get remote on your server and then every time you listen to are
+
+15
+00:00:47,820 --> 00:00:52,040
+pushed to your guitar then you automatically pull from guitar.
+
+16
+00:00:52,050 --> 00:00:53,270
+That's what actually does.
+
+17
+00:00:53,270 --> 00:00:55,620
+But then it promotes that process for us.
+
+18
+00:00:55,620 --> 00:01:01,230
+The second reason why we want to use for is because management stuff like cron jobs management stuff
+
+19
+00:01:01,230 --> 00:01:08,110
+like deployment failures management stuff like queues and database instances in a production server
+
+20
+00:01:08,250 --> 00:01:11,360
+are really really time consuming really really hard to do.
+
+21
+00:01:11,370 --> 00:01:13,440
+But each automatically does this for us.
+
+22
+00:01:13,440 --> 00:01:13,910
+OK.
+
+23
+00:01:13,990 --> 00:01:16,010
+So low aflat a fort or something.
+
+24
+00:01:16,010 --> 00:01:20,970
+It's a great service I use it day to day and I really really recommend that you use it.
+
+25
+00:01:21,180 --> 00:01:21,630
+OK.
+
+26
+00:01:21,750 --> 00:01:23,250
+So for me it's not free.
+
+27
+00:01:23,250 --> 00:01:24,430
+It has a plan.
+
+28
+00:01:24,510 --> 00:01:29,190
+But then for the purpose of learning for it and learning how to deploy before she can go ahead and sign
+
+29
+00:01:29,190 --> 00:01:30,410
+up for the future.
+
+30
+00:01:30,510 --> 00:01:32,930
+And I think you can try it for about 10 days or so.
+
+31
+00:01:33,060 --> 00:01:36,890
+So you can actually practice how to deploy an application with fotch.
+
+32
+00:01:37,200 --> 00:01:44,710
+OK so let's get into it which gives you the possibility of setting up a server with distortion leafnode
+
+33
+00:01:45,050 --> 00:01:47,230
+zone services that's another.
+
+34
+00:01:47,250 --> 00:01:49,470
+So you'll need a server provider.
+
+35
+00:01:49,500 --> 00:01:51,270
+So option is the one they go with.
+
+36
+00:01:51,270 --> 00:01:53,660
+It has the cheapest Blands is very easy to set up.
+
+37
+00:01:53,670 --> 00:01:56,530
+The other ones are great but it just depends on your choice.
+
+38
+00:01:56,550 --> 00:01:57,050
+OK.
+
+39
+00:01:57,150 --> 00:02:03,180
+So go ahead and set up additional ocean accounts and then on the social accounts you just need to come
+
+40
+00:02:03,180 --> 00:02:06,010
+to your accounts right here on forward.
+
+41
+00:02:06,030 --> 00:02:07,840
+And then add distortion.
+
+42
+00:02:07,950 --> 00:02:08,410
+OK.
+
+43
+00:02:08,550 --> 00:02:14,270
+So for example if I come to my service providers You see I have a portion of that right there.
+
+44
+00:02:14,330 --> 00:02:14,880
+OK.
+
+45
+00:02:14,940 --> 00:02:18,870
+So you can also add the note of vulture.
+
+46
+00:02:19,060 --> 00:02:19,570
+Okay.
+
+47
+00:02:19,590 --> 00:02:22,780
+So for example if you want to add distortion.
+
+48
+00:02:22,830 --> 00:02:23,940
+This is what you're going to need.
+
+49
+00:02:23,940 --> 00:02:27,780
+You're going to put in your plan right here and then it's going to redirect you to additional options
+
+50
+00:02:27,780 --> 00:02:32,160
+to authenticate for Vulture you just need to add your API credentials and it's going to take care of
+
+51
+00:02:32,160 --> 00:02:32,700
+that.
+
+52
+00:02:32,700 --> 00:02:33,570
+Same for Amazon.
+
+53
+00:02:33,570 --> 00:02:37,750
+So you just need an account with one of these many and you're going to be paying for the service all
+
+54
+00:02:37,910 --> 00:02:41,810
+over and you're going to be paying on for just to manage the service.
+
+55
+00:02:41,880 --> 00:02:42,410
+OK.
+
+56
+00:02:42,540 --> 00:02:49,190
+So I'll head over to the home page and to actually create a new application.
+
+57
+00:02:49,470 --> 00:02:51,180
+We need to understand the terminology.
+
+58
+00:02:51,180 --> 00:02:55,340
+So for each simply has the technology of surveillance and sites.
+
+59
+00:02:55,410 --> 00:02:57,850
+So on that server we can have multiple sites.
+
+60
+00:02:58,080 --> 00:03:03,450
+So for example if I deploy a news server to the ocean it's going to ask me for the credentials the name
+
+61
+00:03:03,450 --> 00:03:09,840
+of the server or what size of the way where to deploy it and all of this is going to create a news server
+
+62
+00:03:10,170 --> 00:03:11,650
+on the ocean.
+
+63
+00:03:11,700 --> 00:03:15,960
+Then it's going to install everything we need to deploy another application.
+
+64
+00:03:15,960 --> 00:03:21,070
+So this is what makes it easier when we deploy a lot of application readouts for each.
+
+65
+00:03:21,090 --> 00:03:26,400
+It becomes very complicated to install everything the level needs but then force does this behind the
+
+66
+00:03:26,400 --> 00:03:27,330
+scenes for us.
+
+67
+00:03:27,330 --> 00:03:31,010
+So once you create your server you can see a server listed right here.
+
+68
+00:03:31,050 --> 00:03:33,770
+So if you get into one of those service.
+
+69
+00:03:33,870 --> 00:03:39,560
+So for example you have a server for cost and it has all of the sites that contain costs.
+
+70
+00:03:39,570 --> 00:03:44,370
+So in the server you can see all the sites for that particular server.
+
+71
+00:03:44,460 --> 00:03:46,150
+So you can create a new site.
+
+72
+00:03:46,200 --> 00:03:48,550
+So think of a server as well.
+
+73
+00:03:48,630 --> 00:03:53,930
+What does the ocean provide for you a server and then a new site is simply you know a site.
+
+74
+00:03:54,030 --> 00:03:57,840
+So if I wanted to deploy different instances of level I can do that.
+
+75
+00:03:57,840 --> 00:04:03,550
+So in this case we want to deploy maybe you don't need that but cast's dot com.
+
+76
+00:04:03,660 --> 00:04:04,080
+OK.
+
+77
+00:04:04,110 --> 00:04:07,150
+Because remember we are actually having a server right here.
+
+78
+00:04:07,170 --> 00:04:12,110
+You need to go to maybe the ocean to configure the domain name to match the server.
+
+79
+00:04:12,230 --> 00:04:12,640
+OK.
+
+80
+00:04:12,660 --> 00:04:18,190
+And then on the ocean you need to set up configurations that would allow subdomain routing like this.
+
+81
+00:04:18,240 --> 00:04:22,070
+We need to choose the domain which means we'll be this site.
+
+82
+00:04:22,080 --> 00:04:28,670
+This particular site will be available see the cost to come and then the project type is a novel project
+
+83
+00:04:29,160 --> 00:04:33,660
+and the web directory is public so we can go ahead on the site.
+
+84
+00:04:33,660 --> 00:04:38,920
+So right here we have the site provisioning and that's it automatically we have a brand new site with
+
+85
+00:04:39,040 --> 00:04:39,690
+Lovelle.
+
+86
+00:04:39,790 --> 00:04:45,530
+OK so if we head over of that site we need to decide how we want to install the site.
+
+87
+00:04:45,570 --> 00:04:45,890
+OK.
+
+88
+00:04:45,900 --> 00:04:50,630
+So for example we can pool from guitar or we can create or run your wordpress site.
+
+89
+00:04:50,670 --> 00:04:51,800
+In this case from.
+

@@ -1,0 +1,448 @@
+1
+00:00:00,630 --> 00:00:01,290
+OK guys.
+
+2
+00:00:01,290 --> 00:00:02,220
+Welcome back.
+
+3
+00:00:02,250 --> 00:00:04,780
+So in the last video it looks like all of our tests were filling.
+
+4
+00:00:04,890 --> 00:00:07,280
+So it looks like we are not sending that e-mail.
+
+5
+00:00:07,320 --> 00:00:11,900
+And it also looks like we are not receiving the correct response when the user logs in.
+
+6
+00:00:11,940 --> 00:00:12,490
+OK.
+
+7
+00:00:12,600 --> 00:00:14,480
+So to work on this.
+
+8
+00:00:14,530 --> 00:00:21,930
+OK so I'm just going to copy the first name right here and I'm going to run pH unit futile So this test
+
+9
+00:00:22,270 --> 00:00:23,700
+with one that individually.
+
+10
+00:00:23,820 --> 00:00:24,240
+OK.
+
+11
+00:00:24,240 --> 00:00:29,820
+So we look at the error it seems rather than presuming or 200 it receives or three or two.
+
+12
+00:00:29,940 --> 00:00:34,260
+So I'm going to head over to that test and right here look up what we are searching we are searching
+
+13
+00:00:34,260 --> 00:00:35,710
+that we receive are 200.
+
+14
+00:00:35,850 --> 00:00:42,690
+But if we head over to our logging controller we exit that a little by saying if the request is on Ajax
+
+15
+00:00:42,810 --> 00:00:45,620
+then we should respond with a status of 200.
+
+16
+00:00:45,630 --> 00:00:47,130
+And stutters OK message.
+
+17
+00:00:47,200 --> 00:00:53,730
+OK but then how do we actually test if this is an AJAX because you know what controller we're just making
+
+18
+00:00:53,770 --> 00:00:55,510
+a Jason post request.
+
+19
+00:00:55,530 --> 00:00:58,020
+But Lavoe doesn't recognize this as an AJAX.
+
+20
+00:00:58,020 --> 00:00:59,460
+That's why test is family.
+
+21
+00:00:59,550 --> 00:01:01,110
+So whatever works or what test.
+
+22
+00:01:01,290 --> 00:01:03,220
+And I'm just going to open this up.
+
+23
+00:01:03,250 --> 00:01:08,800
+I thought the law will provide for us and determine if the request is the result of an AJAX call.
+
+24
+00:01:09,000 --> 00:01:14,640
+And what this method does is it simply returns is as simple as to request meaning maybe coming from
+
+25
+00:01:14,640 --> 00:01:16,010
+Valsalva stuff like that.
+
+26
+00:01:16,150 --> 00:01:19,830
+So I'm going to this is my thought and you are going to check out what it does.
+
+27
+00:01:19,980 --> 00:01:25,520
+So what it does is that it simply checks if this header is set to this value.
+
+28
+00:01:25,680 --> 00:01:26,180
+That's it.
+
+29
+00:01:26,250 --> 00:01:29,440
+So we can actually manually set up this header.
+
+30
+00:01:29,610 --> 00:01:33,120
+So that's what simulates an Ajax request.
+
+31
+00:01:33,120 --> 00:01:38,250
+So how do we set up headers in our test our head or what my logging tasks and right here the permits
+
+32
+00:01:38,250 --> 00:01:39,390
+are that we can actually pass.
+
+33
+00:01:39,390 --> 00:01:45,620
+In today's Post Jason My thought is the header that we want to set so we can set an array.
+
+34
+00:01:45,810 --> 00:01:51,470
+And the key for that array is going to be this because this is the key we want.
+
+35
+00:01:51,570 --> 00:01:56,560
+And then the value is going to be this because it's simply checking if this key is equal to this value
+
+36
+00:01:56,720 --> 00:01:57,350
+makes sense.
+
+37
+00:01:57,480 --> 00:02:01,770
+So we're going to see more of this key to this value and proceed as a header.
+
+38
+00:02:01,900 --> 00:02:02,370
+OK.
+
+39
+00:02:02,400 --> 00:02:03,680
+So that's all we're going to do.
+
+40
+00:02:03,690 --> 00:02:08,850
+Now let's run this test again and see if Lovewell is going to recognize it as an Ajax request.
+
+41
+00:02:08,850 --> 00:02:09,320
+Great.
+
+42
+00:02:09,330 --> 00:02:10,500
+And the test in our process.
+
+43
+00:02:10,500 --> 00:02:10,900
+Okay.
+
+44
+00:02:10,920 --> 00:02:15,870
+So all we need to do is set up the header so that we know that these two requests which amortised is
+
+45
+00:02:15,870 --> 00:02:17,330
+actually an Ajax request.
+
+46
+00:02:17,340 --> 00:02:17,610
+OK.
+
+47
+00:02:17,620 --> 00:02:22,530
+So let's run all the tests again and pick out the last one we just fill in and then do with it.
+
+48
+00:02:22,530 --> 00:02:22,930
+Okay.
+
+49
+00:02:22,980 --> 00:02:26,920
+So our next step is that this feeling is compelled to confirm your email to us.
+
+50
+00:02:26,940 --> 00:02:31,770
+So I'm just going to VCDs the registrations test.
+
+51
+00:02:32,220 --> 00:02:33,530
+And let's look at what is happening.
+
+52
+00:02:33,540 --> 00:02:37,870
+We are searching that the e-mail was sent and it's now giving us a figure.
+
+53
+00:02:37,980 --> 00:02:43,450
+So let's reset our registration control law and looks like we are actually sending up the e-mail right.
+
+54
+00:02:43,560 --> 00:02:45,920
+But let's visit this e-mail to see what's happening.
+
+55
+00:02:45,940 --> 00:02:51,090
+We are implementing should Q And we made these edits together at Q store application.
+
+56
+00:02:51,090 --> 00:02:55,460
+So it means we actually clean this Malibu and it's not sending at all.
+
+57
+00:02:55,470 --> 00:03:01,080
+So what we can do is we're actually going to test that it is cued rather than test in that sense because
+
+58
+00:03:01,080 --> 00:03:02,150
+it's no longer sense.
+
+59
+00:03:02,280 --> 00:03:02,710
+Right.
+
+60
+00:03:02,850 --> 00:03:10,230
+So I'll head over to my registar test and right here Lovelle provides us with an assert cuman thought
+
+61
+00:03:10,590 --> 00:03:14,620
+which can help us to test that the millibar was cute and not that it was sent.
+
+62
+00:03:14,700 --> 00:03:15,300
+OK.
+
+63
+00:03:15,300 --> 00:03:22,530
+So right now we're going to run these tests one more time and see what we get towards this particular
+
+64
+00:03:22,530 --> 00:03:23,310
+test.
+
+65
+00:03:24,590 --> 00:03:26,060
+Find me I thought I said.
+
+66
+00:03:26,060 --> 00:03:29,560
+Q It should be assert Kuder with a D at the end.
+
+67
+00:03:29,720 --> 00:03:31,220
+Let's run that again.
+
+68
+00:03:31,490 --> 00:03:32,990
+And now we have a successful test.
+
+69
+00:03:33,050 --> 00:03:33,350
+OK.
+
+70
+00:03:33,350 --> 00:03:34,250
+So makes sense.
+
+71
+00:03:34,250 --> 00:03:40,280
+So this one was failing because we changed implementation form sent into queing and logging test was
+
+72
+00:03:40,280 --> 00:03:45,770
+failing because we changed the implementation from the turning of a tree or two if the request was not
+
+73
+00:03:45,800 --> 00:03:46,530
+an AJAX.
+
+74
+00:03:46,580 --> 00:03:52,550
+OK so now that all tests are passing that's just one that we have a confirmation that a lot of us are
+
+75
+00:03:52,550 --> 00:03:53,020
+passing.
+
+76
+00:03:53,060 --> 00:03:56,350
+Which means this code is kind of safe to push into production.
+
+77
+00:03:56,390 --> 00:04:06,140
+Ok so I'm going to add everything and comments MSH that saves all day tests for confirm email and Ajax
+
+78
+00:04:06,140 --> 00:04:06,770
+logging.
+
+79
+00:04:07,060 --> 00:04:07,460
+OK.
+
+80
+00:04:07,490 --> 00:04:12,470
+So right now you have a choice if you're working on a team you need to push the code to the server and
+
+81
+00:04:12,470 --> 00:04:15,520
+then create a pool questions you must start which is going to be reviewed.
+
+82
+00:04:15,620 --> 00:04:16,570
+Something like that.
+
+83
+00:04:16,760 --> 00:04:23,350
+But then now we are working locally and we are truly one person working on these projects there's no
+
+84
+00:04:23,390 --> 00:04:28,000
+really need to push get top that make a request before the court is reviewed and stuff like that.
+
+85
+00:04:28,070 --> 00:04:31,100
+We are shocked that our branch is clean and safe.
+
+86
+00:04:31,250 --> 00:04:38,390
+So what we can do is simply check out my stuff and then we can merge all the changes from developed
+
+87
+00:04:38,420 --> 00:04:39,590
+into my.
+
+88
+00:04:39,930 --> 00:04:40,440
+OK.
+
+89
+00:04:40,460 --> 00:04:41,870
+So it successfully merged.
+
+90
+00:04:41,990 --> 00:04:48,110
+And right now if we want to update our server we just had to watch who the website by cure if we visit
+
+91
+00:04:48,110 --> 00:04:54,130
+the particular Web sites where our application is hosting is hosted the configuration automatically
+
+92
+00:04:54,130 --> 00:04:56,850
+is listening to pushes form to master.
+
+93
+00:04:56,960 --> 00:05:03,590
+So if we want to deploy our are all we need to do is see get push or region which means to get up and
+
+94
+00:05:03,590 --> 00:05:05,100
+with one master.
+
+95
+00:05:05,350 --> 00:05:05,770
+OK.
+
+96
+00:05:05,810 --> 00:05:07,630
+So it's pushed to the top.
+
+97
+00:05:07,640 --> 00:05:10,050
+Now let's look up our fortune server.
+
+98
+00:05:10,100 --> 00:05:15,920
+You can see automatically in new deployment has started and it's deploying the application right now.
+
+99
+00:05:16,040 --> 00:05:23,150
+So that's a complete set of view that we can now see that are your settings are automatically set right
+
+100
+00:05:23,150 --> 00:05:23,520
+here.
+
+101
+00:05:23,520 --> 00:05:24,860
+So look at the ASIO's settings.
+
+102
+00:05:24,930 --> 00:05:25,300
+OK.
+
+103
+00:05:25,330 --> 00:05:25,850
+So great.
+
+104
+00:05:25,850 --> 00:05:29,850
+Looks like an update from our core has been pushed to production.
+
+105
+00:05:29,930 --> 00:05:36,950
+If you check out the premier unlock it automatically you know poor form this your all that we specified
+
+106
+00:05:37,220 --> 00:05:41,910
+and then it also put from master and then it discovered the newly installed package because of a composite
+
+107
+00:05:42,040 --> 00:05:43,400
+based on those updates.
+
+108
+00:05:43,550 --> 00:05:44,830
+And then there was nothing to my quick.
+
+109
+00:05:44,900 --> 00:05:45,310
+OK.
+
+110
+00:05:45,410 --> 00:05:50,600
+So basically that's how you maybe set up new features in your app and then deploy it into production.
+
+111
+00:05:50,600 --> 00:05:51,790
+Thank you so much for watching.
+
+112
+00:05:51,890 --> 00:05:54,180
+And let's continue in the very next video.
+

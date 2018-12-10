@@ -1,0 +1,136 @@
+1
+00:00:00,210 --> 00:00:05,580
+Access to this person successfully but it's not really application friendly it's not going to kill well.
+
+2
+00:00:05,580 --> 00:00:11,670
+When we start building and adding more features for example in the web the HP we have closer's right
+
+3
+00:00:11,670 --> 00:00:11,880
+here.
+
+4
+00:00:11,880 --> 00:00:17,160
+And what if we had to perform like 15 auctions before actually returning a view what were we going to
+
+5
+00:00:17,160 --> 00:00:18,190
+do in that case.
+
+6
+00:00:18,250 --> 00:00:21,600
+So what are going to be doing is simply refactoring this code to a controller.
+
+7
+00:00:21,670 --> 00:00:27,210
+And remember our refactoring says we're just going to refactor all sets and make sure that we still
+
+8
+00:00:27,210 --> 00:00:28,890
+get green at the end of everything.
+
+9
+00:00:28,890 --> 00:00:29,300
+All right.
+
+10
+00:00:29,460 --> 00:00:34,070
+So I'm going to stretch this out with a pulse Quantrell on that.
+
+11
+00:00:34,080 --> 00:00:39,900
+I wan to exist which doesn't exist yet and this is going to be the index method which is going to take
+
+12
+00:00:39,900 --> 00:00:42,240
+care of returning a post to us.
+
+13
+00:00:42,240 --> 00:00:42,560
+Right.
+
+14
+00:00:42,630 --> 00:00:45,640
+So let's run our test now and see what we get.
+
+15
+00:00:45,660 --> 00:00:48,500
+And we have an error post control that does not exist.
+
+16
+00:00:48,630 --> 00:00:55,090
+Let's create a controller BHP Arsen mic control control controller created.
+
+17
+00:00:55,160 --> 00:00:56,450
+Let's run not just again.
+
+18
+00:00:56,490 --> 00:00:59,950
+And then we haven't ever seen the method index does not exist.
+
+19
+00:00:59,980 --> 00:01:03,840
+That's how the rods or to create the index method.
+
+20
+00:01:03,940 --> 00:01:08,580
+Not test again and then we have filled such in an empty string contains a symbol to Ardo.
+
+21
+00:01:08,700 --> 00:01:11,020
+We've gone to this level and we know how to fix it.
+
+22
+00:01:11,040 --> 00:01:14,130
+We just need to find the post and return the view with the data.
+
+23
+00:01:14,130 --> 00:01:14,560
+Right.
+
+24
+00:01:14,670 --> 00:01:21,810
+So I'm just going to use the post class right here and then right here I can just return a view and
+
+25
+00:01:21,810 --> 00:01:23,180
+this view is opposed.
+
+26
+00:01:23,310 --> 00:01:30,690
+And this is with post and I'm going to find a post in here using the ID that was passed on the vision
+
+27
+00:01:30,690 --> 00:01:32,920
+we need to receive that ID right.
+
+28
+00:01:33,160 --> 00:01:33,530
+OK.
+
+29
+00:01:33,540 --> 00:01:36,970
+So find a post which have you read that post data.
+
+30
+00:01:37,140 --> 00:01:38,290
+That's one test.
+
+31
+00:01:38,300 --> 00:01:40,330
+Now we're done with our refactoring.
+
+32
+00:01:40,530 --> 00:01:45,580
+Hopefully everything works perfectly as it used to do before we started refactor.
+
+33
+00:01:45,670 --> 00:01:46,560
+OK perfect.
+
+34
+00:01:46,590 --> 00:01:48,810
+Everything works good enough.
+

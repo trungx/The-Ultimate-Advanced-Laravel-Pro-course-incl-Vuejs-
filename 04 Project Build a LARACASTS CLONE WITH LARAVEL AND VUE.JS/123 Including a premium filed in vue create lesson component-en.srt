@@ -1,0 +1,192 @@
+1
+00:00:00,650 --> 00:00:06,290
+Next step we've included a Boolean field into this table so it only makes sense structurally updates
+
+2
+00:00:06,340 --> 00:00:11,250
+are a form for creating the lessons and updating lessons so that we can actually change a particular
+
+3
+00:00:11,250 --> 00:00:13,420
+lesson from free to premium.
+
+4
+00:00:13,500 --> 00:00:14,000
+OK.
+
+5
+00:00:14,130 --> 00:00:21,620
+So first of all head over to my lessons class and right here I'm going to set this to be called that
+
+6
+00:00:21,810 --> 00:00:26,170
+you are false because we want our lesson to be by default.
+
+7
+00:00:26,190 --> 00:00:27,810
+In case we don't want it to be a premium.
+
+8
+00:00:27,950 --> 00:00:28,350
+OK.
+
+9
+00:00:28,380 --> 00:00:33,920
+So next step looks like in our data we need premium we such a force by default.
+
+10
+00:00:33,980 --> 00:00:34,390
+OK.
+
+11
+00:00:34,440 --> 00:00:40,140
+We need a checkbox field so I'm going to head over to or from and have consistently duplicate this form
+
+12
+00:00:40,160 --> 00:00:41,670
+go pull this out.
+
+13
+00:00:41,670 --> 00:00:48,110
+And for now we're going to do with a simple checkbox I will bind the model to be of course to premium.
+
+14
+00:00:48,180 --> 00:00:48,640
+OK.
+
+15
+00:00:48,690 --> 00:00:55,690
+So automatically once you said that it's going to send the data to form which means an eye level site
+
+16
+00:00:55,710 --> 00:01:00,590
+would also be receiving that in this right here because we are in the complete lesson object.
+
+17
+00:01:00,690 --> 00:01:04,730
+OK so let's save that to a browser refresh.
+
+18
+00:01:04,860 --> 00:01:08,180
+Click on the Edit button and there we have our checkbox right there.
+
+19
+00:01:08,250 --> 00:01:08,750
+OK.
+
+20
+00:01:08,850 --> 00:01:15,370
+So we're going to actually set up a label right here and this is going to see premium and we'll call
+
+21
+00:01:15,390 --> 00:01:18,940
+it lesson that freemium right here.
+
+22
+00:01:18,990 --> 00:01:19,490
+OK.
+
+23
+00:01:19,590 --> 00:01:23,130
+So refresh click on click and edit lesson.
+
+24
+00:01:23,130 --> 00:01:25,360
+And when you click on these we have premium.
+
+25
+00:01:25,440 --> 00:01:29,360
+And automatically it's going to go that field in our database.
+
+26
+00:01:29,400 --> 00:01:29,860
+OK.
+
+27
+00:01:29,940 --> 00:01:33,570
+So this is what we want close this kid a new lesson.
+
+28
+00:01:33,660 --> 00:01:35,660
+Automatically such a premium for us.
+
+29
+00:01:35,730 --> 00:01:36,120
+OK.
+
+30
+00:01:36,120 --> 00:01:38,960
+So this looks like it works as expected.
+
+31
+00:01:38,970 --> 00:01:46,260
+The Shikata request when we make that Ajax request to create a lesson it's to past the lesson objects
+
+32
+00:01:46,260 --> 00:01:49,000
+which means nobody is receiving that field.
+
+33
+00:01:49,010 --> 00:01:51,560
+Also a good lesson does the same thing.
+
+34
+00:01:51,600 --> 00:01:52,740
+So we could go.
+
+35
+00:01:52,860 --> 00:01:59,360
+So next day is to checkout our lessons controller and look at what we have.
+
+36
+00:01:59,460 --> 00:02:02,420
+So let's head over to or create lesson.
+
+37
+00:02:02,550 --> 00:02:08,430
+So it's so surprising request all meaning it's going to persist that they are paid less.
+
+38
+00:02:08,470 --> 00:02:11,450
+And he's also passing in requests all OK.
+
+39
+00:02:11,520 --> 00:02:12,310
+Looks great.
+
+40
+00:02:12,390 --> 00:02:18,010
+Some lesson as a premium lesson and then see what we get because I have all of this see that top and
+
+41
+00:02:18,300 --> 00:02:21,640
+automatically offset the premium to false.
+
+42
+00:02:21,690 --> 00:02:22,170
+OK.
+
+43
+00:02:22,320 --> 00:02:23,510
+So I added this.
+
+44
+00:02:23,520 --> 00:02:24,490
+So this is true.
+
+45
+00:02:24,540 --> 00:02:25,510
+Cephalexin.
+
+46
+00:02:25,530 --> 00:02:27,280
+And then click on that.
+
+47
+00:02:27,540 --> 00:02:32,550
+And once we get the response from the server we see that is systematically set premium to 1.
+
+48
+00:02:32,630 --> 00:02:35,040
+Ok means this is a premium lesson.
+

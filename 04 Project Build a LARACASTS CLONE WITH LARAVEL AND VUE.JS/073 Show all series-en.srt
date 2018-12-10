@@ -1,0 +1,212 @@
+1
+00:00:00,880 --> 00:00:02,290
+A project is coming along good.
+
+2
+00:00:02,310 --> 00:00:05,900
+But let's just do some cleanup just to make sure everything is in place.
+
+3
+00:00:05,910 --> 00:00:10,190
+I'm going to start by creating a page where we can actually see all of our series.
+
+4
+00:00:10,260 --> 00:00:10,800
+OK.
+
+5
+00:00:10,830 --> 00:00:17,270
+Head over to my project my series control are you going to visit my index routes and I'm going to return
+
+6
+00:00:17,270 --> 00:00:19,310
+a view and I'm just going to college.
+
+7
+00:00:19,330 --> 00:00:27,120
+I mean that's series that are great that I mean there are trees series and create and all that blade
+
+8
+00:00:27,480 --> 00:00:28,390
+the pitch.
+
+9
+00:00:28,530 --> 00:00:32,870
+OK so I'm just going to copy the template Baystate as it.
+
+10
+00:00:33,110 --> 00:00:37,150
+And it's all serious then for the content section.
+
+11
+00:00:37,440 --> 00:00:44,040
+We're not going to have a form that would have something like a table which would have a class of table
+
+12
+00:00:45,570 --> 00:00:48,050
+that in which we can have a table had.
+
+13
+00:00:48,390 --> 00:00:51,480
+And now we can decide what we want to see on the table.
+
+14
+00:00:51,480 --> 00:00:57,120
+So what about the title and an edit button and a delete button.
+
+15
+00:00:57,470 --> 00:00:57,960
+OK.
+
+16
+00:00:57,990 --> 00:00:59,540
+Just follow them.
+
+17
+00:00:59,610 --> 00:01:02,830
+We need a table body which would have table was.
+
+18
+00:01:02,850 --> 00:01:08,820
+So looks like we're going to be looking through the table was to have all the civis display therefore
+
+19
+00:01:08,880 --> 00:01:12,670
+right here we should actually be passing the series.
+
+20
+00:01:12,720 --> 00:01:15,970
+So which series will pass and the switch variable.
+
+21
+00:01:15,990 --> 00:01:22,020
+Therefore we need to get all the series and pass it along so we can actually in line these just to make
+
+22
+00:01:22,020 --> 00:01:26,480
+sure that we stay in line as archaic weights.
+
+23
+00:01:27,240 --> 00:01:33,320
+Now in our view we have access to that therefore we can say for each.
+
+24
+00:01:33,560 --> 00:01:38,250
+Or we can actually use a 4 or else that will provide for us.
+
+25
+00:01:38,580 --> 00:01:50,030
+So for ours series as available as then we'd have our empty block and the and for hours.
+
+26
+00:01:50,520 --> 00:01:58,410
+BLOCK OK so if we have some serious loop through each of those and spits out a table but if we don't
+
+27
+00:01:58,450 --> 00:02:04,670
+we'll just have a tech center that says no series yet.
+
+28
+00:02:04,930 --> 00:02:13,490
+Then for this table would have table each hour that echoes all the series title that would of table
+
+29
+00:02:13,540 --> 00:02:14,090
+data.
+
+30
+00:02:14,100 --> 00:02:18,880
+Also with a Butson to the series and it's just going to say added.
+
+31
+00:02:19,210 --> 00:02:22,930
+So we'll have one for the elites and we'll talk about that later.
+
+32
+00:02:23,310 --> 00:02:30,510
+OK for us to see what we have to watch or what lay out fire and naturally creates a link so we can see
+
+33
+00:02:30,630 --> 00:02:31,470
+that.
+
+34
+00:02:31,470 --> 00:02:40,020
+So right here in the block let's add a link for weaving all the series and this we just see all series.
+
+35
+00:02:40,380 --> 00:02:45,480
+And if you want to know the exact route that actually leads to the Sui's control or index My thought
+
+36
+00:02:45,780 --> 00:02:48,470
+you can run ph we are somewhere at least.
+
+37
+00:02:48,840 --> 00:02:53,490
+And that will give us a list of routes and where we have.
+
+38
+00:02:53,490 --> 00:02:57,730
+I mean seriously it goes to series that index the index method.
+
+39
+00:02:57,840 --> 00:02:58,160
+OK.
+
+40
+00:02:58,170 --> 00:03:07,780
+So in our view of the blade ph we this should point to serious doubt index to view or series.
+
+41
+00:03:07,940 --> 00:03:09,970
+OK so let's try this out.
+
+42
+00:03:10,120 --> 00:03:12,270
+We're fresh.
+
+43
+00:03:12,270 --> 00:03:14,910
+We have to also reach spots on that.
+
+44
+00:03:15,050 --> 00:03:15,460
+Yeah.
+
+45
+00:03:15,540 --> 00:03:18,180
+So we have our switch right here.
+
+46
+00:03:18,180 --> 00:03:21,280
+The title edit button delete button.
+
+47
+00:03:21,330 --> 00:03:29,190
+So I should change this a little to something more visible which will be maybe a Butson info.
+
+48
+00:03:30,210 --> 00:03:30,410
+Yeah.
+
+49
+00:03:30,410 --> 00:03:30,740
+Great.
+
+50
+00:03:30,750 --> 00:03:31,890
+That looks better.
+
+51
+00:03:31,890 --> 00:03:36,580
+Now let's talk a little bit about editing and deleting our series.
+
+52
+00:03:36,750 --> 00:03:43,080
+And in the meantime we should start thinking about if we want some series to be published or not published.
+
+53
+00:03:43,230 --> 00:03:45,600
+And we're going to see how we'll manage that.
+

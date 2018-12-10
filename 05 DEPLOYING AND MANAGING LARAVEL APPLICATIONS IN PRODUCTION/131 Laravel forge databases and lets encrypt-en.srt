@@ -1,0 +1,276 @@
+1
+00:00:00,880 --> 00:00:03,560
+Come back let's talk about the quick reply button.
+
+2
+00:00:03,780 --> 00:00:10,080
+This would allow us to deploy our code from top to LA forte just by pushing to get home.
+
+3
+00:00:10,200 --> 00:00:14,720
+We don't need to maybe come here and get poor because automatically it's going to do that.
+
+4
+00:00:14,820 --> 00:00:20,670
+So I'm going to put on pre-deploy I every time I push to the muster branch I wanted to deploy my app
+
+5
+00:00:20,670 --> 00:00:21,470
+to production.
+
+6
+00:00:21,540 --> 00:00:22,030
+OK.
+
+7
+00:00:22,200 --> 00:00:23,640
+So this is the dupr script.
+
+8
+00:00:23,670 --> 00:00:26,810
+This is what happens every time we deploy the application.
+
+9
+00:00:26,820 --> 00:00:31,830
+For example if I click on this button it's going to execute the script and what it simply does is it's
+
+10
+00:00:31,830 --> 00:00:38,460
+Sidus into that directory where that project is pooled and then it pulls from all region my start which
+
+11
+00:00:38,460 --> 00:00:44,970
+means support from top and then it installs all composed dependencies in case there was a new dependency
+
+12
+00:00:44,970 --> 00:00:49,200
+that they installed and then it runs Peachtree we Arrison migrate.
+
+13
+00:00:49,310 --> 00:00:53,680
+OK so in case there's all my questions that I need to run it's going to run that makes sense.
+
+14
+00:00:53,700 --> 00:00:58,290
+So you can edit the script to me to fix your needs or feature what you need.
+
+15
+00:00:58,410 --> 00:01:00,940
+So this is the script and.
+
+16
+00:01:00,990 --> 00:01:06,770
+You are just in case you need to hook up Lovelle force in Georgia ploughmen workflow for example if
+
+17
+00:01:06,770 --> 00:01:13,020
+you're using Trabi CII to run your test before deployment then you can simply tell Trevisa to automatically
+
+18
+00:01:13,020 --> 00:01:15,040
+make a post request to this endpoints.
+
+19
+00:01:15,180 --> 00:01:16,630
+And he's going to deploy your app.
+
+20
+00:01:16,680 --> 00:01:22,680
+Ok so you no longer need to deploy automatically once it's pushed but it's going to deploy metrically
+
+21
+00:01:22,820 --> 00:01:24,700
+once your tests pass on Travis.
+
+22
+00:01:24,800 --> 00:01:25,380
+OK.
+
+23
+00:01:25,380 --> 00:01:29,300
+And then the branch that is supposed to be listened to.
+
+24
+00:01:29,340 --> 00:01:32,260
+For example we want to always deploy from the master.
+
+25
+00:01:32,280 --> 00:01:34,240
+So we set up my Starbright.
+
+26
+00:01:34,360 --> 00:01:34,900
+OK.
+
+27
+00:01:34,980 --> 00:01:37,740
+So that's basically all we need to actually know.
+
+28
+00:01:37,740 --> 00:01:42,950
+So the next thing we need to talk about is notifications if you want to receive sluffed deployment integrations
+
+29
+00:01:43,050 --> 00:01:48,130
+to a particular channel you can enable slow interrogations and Vollmann is very important.
+
+30
+00:01:48,240 --> 00:01:52,310
+And this is and this is where your environment variables are truly stored.
+
+31
+00:01:52,320 --> 00:01:56,000
+For example if you want to put in your stripe key everything is going to be here.
+
+32
+00:01:56,070 --> 00:01:56,570
+OK.
+
+33
+00:01:56,610 --> 00:02:00,690
+So this is private and also your database credentials are going to be here.
+
+34
+00:02:00,720 --> 00:02:02,490
+So I'll head over to my.
+
+35
+00:02:02,500 --> 00:02:05,280
+But cost which means the server itself.
+
+36
+00:02:05,440 --> 00:02:10,590
+And I'm going to show you the panel that we have right here so we can set up as a search key to S-sh
+
+37
+00:02:10,740 --> 00:02:15,780
+we can search all my skilled databases for example for this new site that I just created and it creates
+
+38
+00:02:15,810 --> 00:02:20,040
+a new database and I'm going to call it you then me back cost.
+
+39
+00:02:20,250 --> 00:02:20,860
+OK.
+
+40
+00:02:21,030 --> 00:02:25,770
+And then I'm going to add that database it's automatically going to create a new secure database for
+
+41
+00:02:25,770 --> 00:02:31,590
+me right here and I'll head over back to the particular sites that we are working with which is you
+
+42
+00:02:31,590 --> 00:02:34,050
+Demetre but cost and the main elements.
+
+43
+00:02:34,050 --> 00:02:39,660
+All I need to do is add this environment and put in my database name and it's automatically going to
+
+44
+00:02:39,660 --> 00:02:41,450
+collect that database.
+
+45
+00:02:41,490 --> 00:02:41,950
+OK.
+
+46
+00:02:42,060 --> 00:02:46,860
+So also we can set up the queue which we're going to be talking about in a second but we can also set
+
+47
+00:02:46,860 --> 00:02:48,030
+up SSL.
+
+48
+00:02:48,030 --> 00:02:53,460
+For example if you want to install encrypt which is free SSL you can select and create and it's going
+
+49
+00:02:53,460 --> 00:02:55,730
+to install for you Demetre.
+
+50
+00:02:55,740 --> 00:03:00,120
+But costs are going to pull out this one right here because we just want for this subdomain.
+
+51
+00:03:00,180 --> 00:03:00,580
+OK.
+
+52
+00:03:00,710 --> 00:03:05,580
+So I'm going to opt in a certificate and this would actually not work if you've not set up a domain.
+
+53
+00:03:05,670 --> 00:03:12,390
+So Mitry sets up a domain in your ocean because the ocean is the one that is managing the domains for
+
+54
+00:03:12,390 --> 00:03:13,150
+the server.
+
+55
+00:03:13,260 --> 00:03:15,500
+Ok so I'm going to activate it right there.
+
+56
+00:03:15,600 --> 00:03:15,940
+OK.
+
+57
+00:03:15,960 --> 00:03:20,990
+So it's active if I visit the app right now it gets me secure right here.
+
+58
+00:03:21,180 --> 00:03:21,670
+OK.
+
+59
+00:03:21,750 --> 00:03:26,200
+So looks like we can visit our our freely and just in a couple of seconds.
+
+60
+00:03:26,220 --> 00:03:28,950
+Our application is life just like that.
+
+61
+00:03:29,040 --> 00:03:29,520
+OK.
+
+62
+00:03:29,610 --> 00:03:32,850
+So in just a few seconds we're about to deploy our application.
+
+63
+00:03:32,850 --> 00:03:35,510
+We're able to install SSL just by one click.
+
+64
+00:03:35,580 --> 00:03:41,100
+We're able to connect it or get hoby poetry meaning every time we push it's automatic updates on our
+
+65
+00:03:41,100 --> 00:03:42,040
+site.
+
+66
+00:03:42,060 --> 00:03:45,680
+Just in a few seconds so this is why we're using law with fotch.
+
+67
+00:03:45,820 --> 00:03:49,650
+OK so we're going to continue talking about deployment in the very next video.
+
+68
+00:03:49,650 --> 00:03:52,130
+For now I'm going to hit pause on this video right now.
+
+69
+00:03:52,140 --> 00:03:54,640
+So thanks so much and see you in the very next one.
+

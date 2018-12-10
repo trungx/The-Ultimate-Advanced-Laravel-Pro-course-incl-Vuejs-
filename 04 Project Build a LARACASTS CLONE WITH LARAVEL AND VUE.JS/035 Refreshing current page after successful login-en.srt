@@ -1,0 +1,324 @@
+1
+00:00:00,180 --> 00:00:03,330
+Your last reader ended up receiving the home page as a response.
+
+2
+00:00:03,330 --> 00:00:08,180
+Once we successfully locked in but wasted Actually we were already locked in.
+
+3
+00:00:08,190 --> 00:00:09,520
+I'm sorry about that.
+
+4
+00:00:09,570 --> 00:00:12,990
+And there's really no problem our system works as expected.
+
+5
+00:00:12,990 --> 00:00:18,690
+So just to make sure that we are always locked out in my web Ph.D. I set up this whole form I thought
+
+6
+00:00:18,780 --> 00:00:22,410
+all this hopeful about reaching out and you know authenticated users.
+
+7
+00:00:22,410 --> 00:00:23,570
+When we visited.
+
+8
+00:00:23,640 --> 00:00:24,090
+OK.
+
+9
+00:00:24,120 --> 00:00:31,440
+So before we actually test out our log in a game I'm going to log out in case I was locked in and then
+
+10
+00:00:31,440 --> 00:00:36,500
+I'm going to visit the home page and I'm going to open my logging modem pasting that e-mail address
+
+11
+00:00:36,510 --> 00:00:42,900
+typing secrets for a user and then keep logging on and off we have these loggin successful response
+
+12
+00:00:42,900 --> 00:00:44,560
+that is coming from our controller.
+
+13
+00:00:44,580 --> 00:00:49,060
+So the next step is actually determining what we want to return to our user.
+
+14
+00:00:49,140 --> 00:00:54,090
+Once he successfully logs in let's head over to a high level part of the application which is in our
+
+15
+00:00:54,090 --> 00:00:59,490
+logging controller and once we authenticated what we want to do first of all I'm going to be using our
+
+16
+00:00:59,490 --> 00:01:00,540
+session to flash.
+
+17
+00:01:00,540 --> 00:01:05,390
+So when the page loads we're going to check if there's any notifications in the session.
+
+18
+00:01:05,460 --> 00:01:10,760
+And we're going to display using the components or maybe an investigation service that we want to use.
+
+19
+00:01:10,790 --> 00:01:16,080
+So session flash and he's going to be success message and this is simply going to see.
+
+20
+00:01:16,110 --> 00:01:19,430
+And this is simply cannot be successfully locked in.
+
+21
+00:01:19,450 --> 00:01:19,880
+Right.
+
+22
+00:01:19,920 --> 00:01:24,140
+So we flushed the session and we return logging successfully.
+
+23
+00:01:24,150 --> 00:01:29,050
+Now this is actually where we have to decide what sort of response is we want to give back to Will front
+
+24
+00:01:29,070 --> 00:01:29,690
+and right.
+
+25
+00:01:29,700 --> 00:01:34,440
+Because we need to actually have a stand up because there are a lot of standards are there to actually
+
+26
+00:01:34,540 --> 00:01:36,520
+written responses to our front end.
+
+27
+00:01:36,570 --> 00:01:36,920
+OK.
+
+28
+00:01:36,930 --> 00:01:45,060
+So when an attribute any price I have a helpful method which I call maybe does send success response
+
+29
+00:01:45,150 --> 00:01:51,750
+and this Mithal is always in my control or that BHB So that is available to all of my control us and
+
+30
+00:01:51,870 --> 00:01:57,380
+the method it actually takes in the stutterers code and the data that I need to pass through the front
+
+31
+00:01:57,390 --> 00:02:02,460
+end and formats it in a particular response format as a response.
+
+32
+00:02:02,460 --> 00:02:08,640
+Now in this case with communicating with our love our petition directly so I think we could actually
+
+33
+00:02:08,640 --> 00:02:11,640
+take care of responses directly in the methods.
+
+34
+00:02:11,640 --> 00:02:11,910
+Right.
+
+35
+00:02:11,910 --> 00:02:14,840
+So we can just say we don't response Gee son.
+
+36
+00:02:14,880 --> 00:02:21,670
+And another thing is you can actually decide to use Lovell's responsible responsible interface to what
+
+37
+00:02:21,710 --> 00:02:22,440
+your response is.
+
+38
+00:02:22,440 --> 00:02:27,420
+But in this case we just need to confirm to viewers that the user is Loftin.
+
+39
+00:02:27,420 --> 00:02:27,800
+Right.
+
+40
+00:02:27,900 --> 00:02:30,060
+So I'm just going to see such use of.
+
+41
+00:02:30,060 --> 00:02:30,630
+OK.
+
+42
+00:02:30,690 --> 00:02:36,260
+So VGX once it sees a status of OK in those issues or was successfully Loftin.
+
+43
+00:02:36,360 --> 00:02:42,030
+Now back in some of your components if the response was successful we cannot really check from the status
+
+44
+00:02:42,030 --> 00:02:42,750
+code right here.
+
+45
+00:02:42,750 --> 00:02:46,240
+We can actually check for the data to see the statistical it was.
+
+46
+00:02:46,320 --> 00:02:51,870
+But if everything were successful meaning we success we lost our user in will just refresh the current
+
+47
+00:02:51,870 --> 00:02:52,440
+page.
+
+48
+00:02:52,440 --> 00:02:59,250
+Now we can simply use javascript's default API by saying location reload and it will take care of that
+
+49
+00:02:59,400 --> 00:02:59,990
+number.
+
+50
+00:03:00,000 --> 00:03:01,650
+What's the advantage of doing this.
+
+51
+00:03:01,650 --> 00:03:03,050
+You Abdur blade ph.
+
+52
+00:03:03,080 --> 00:03:08,140
+B Now we can actually make sure that that our template is rendered in the correct way.
+
+53
+00:03:08,190 --> 00:03:13,140
+So right down the bottom where we have this log in we can actually wrap this in an east edition and
+
+54
+00:03:13,140 --> 00:03:18,990
+see if or check else and if so if the user has not authenticated we'd have that link.
+
+55
+00:03:18,990 --> 00:03:23,370
+But then if the user really have indicated why don't we go up his name.
+
+56
+00:03:23,370 --> 00:03:26,000
+So we're just going to see us use our name.
+
+57
+00:03:26,040 --> 00:03:26,570
+OK.
+
+58
+00:03:26,610 --> 00:03:29,300
+So we can just say hey our user name.
+
+59
+00:03:29,340 --> 00:03:29,730
+OK.
+
+60
+00:03:29,760 --> 00:03:36,300
+So once our request to the server is successful an address receives a success response.
+
+61
+00:03:36,390 --> 00:03:41,670
+It's simply going to reload the current page and once it reloads that page sure enough what template
+
+62
+00:03:41,700 --> 00:03:45,140
+is going to re render and we should see the users name.
+
+63
+00:03:45,180 --> 00:03:47,670
+And we should not see the logging button.
+
+64
+00:03:47,850 --> 00:03:48,370
+Right.
+
+65
+00:03:48,390 --> 00:03:53,340
+Another thing we want to do is make sure that this is not mounted if we authenticated.
+
+66
+00:03:53,400 --> 00:03:53,780
+OK.
+
+67
+00:03:53,790 --> 00:03:56,970
+So no need to have extra SJM or templates.
+
+68
+00:03:56,970 --> 00:04:00,680
+So if I Sitrick and naturally we want the Motz.
+
+69
+00:04:00,750 --> 00:04:01,400
+Right.
+
+70
+00:04:01,500 --> 00:04:07,310
+So if it's not a check and if we're simply going to actually mount the components now model provides
+
+71
+00:04:07,310 --> 00:04:10,830
+us with some custom made directories that we are actually going to be switching.
+
+72
+00:04:10,830 --> 00:04:16,830
+I'll bring the refactoring but for now let's go ahead and just see this walk or creek or lockout and
+
+73
+00:04:16,830 --> 00:04:17,650
+point.
+
+74
+00:04:17,970 --> 00:04:20,190
+So we make sure we are truly locked out.
+
+75
+00:04:20,190 --> 00:04:26,500
+Visit our home page and let's try logging our personal e-mail type in the password.
+
+76
+00:04:26,520 --> 00:04:29,610
+Click on logging on automatically will piece it's refreshed.
+
+77
+00:04:29,610 --> 00:04:34,380
+And here we have our no ports or code or whatever.
+
+78
+00:04:34,380 --> 00:04:36,550
+And that is actually the use we have here.
+
+79
+00:04:36,570 --> 00:04:40,230
+So I will luggin by Ajax is successfully walking.
+
+80
+00:04:40,290 --> 00:04:45,380
+But what about validation checks or actually aerostat that we see from our server.
+
+81
+00:04:45,390 --> 00:04:47,410
+Let's think of that in the next video.
+

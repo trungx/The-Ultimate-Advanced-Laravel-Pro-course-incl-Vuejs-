@@ -1,0 +1,628 @@
+1
+00:00:00,550 --> 00:00:03,440
+It like we said we're going to some kind of procedures.
+
+2
+00:00:03,480 --> 00:00:09,680
+So I want to tackle this when the use of the speech if he's not locked in he can be asked to log in
+
+3
+00:00:09,690 --> 00:00:12,320
+and if he doesn't have an account he can be asked to sign up.
+
+4
+00:00:12,390 --> 00:00:14,850
+Then if the user is already locked in.
+
+5
+00:00:14,850 --> 00:00:20,370
+Remember we talked about redirecting him to the CBC wash so that he can just continue but he hasn't
+
+6
+00:00:20,370 --> 00:00:22,840
+yet started the series then he can start from the beginning.
+
+7
+00:00:22,920 --> 00:00:23,410
+OK.
+
+8
+00:00:23,520 --> 00:00:26,830
+So what are we going to be doing is writing a little test.
+
+9
+00:00:27,050 --> 00:00:33,020
+So head towards or use that test and this test is simply going to help us to get the next lesson that
+
+10
+00:00:33,070 --> 00:00:35,030
+he's supposed to be watching.
+
+11
+00:00:35,160 --> 00:00:35,640
+OK.
+
+12
+00:00:35,760 --> 00:00:42,830
+So for example if in a particular series you use us finished use or wants you as one for example and
+
+13
+00:00:42,840 --> 00:00:43,500
+we have.
+
+14
+00:00:43,600 --> 00:00:53,330
+And we want to do the naturally that series has four lessons of life as such when the user clicks on
+
+15
+00:00:53,330 --> 00:00:59,430
+to concentrate on the bottle which ones will be used to lesson for another lesson one because it really
+
+16
+00:00:59,430 --> 00:01:00,560
+wants to Lesson one.
+
+17
+00:01:00,690 --> 00:01:01,110
+OK.
+
+18
+00:01:01,230 --> 00:01:06,290
+So you couldn't and method that we actually get the lead test which is this one.
+
+19
+00:01:06,420 --> 00:01:11,240
+And then it's going to get the next lesson in the database which is this one.
+
+20
+00:01:11,250 --> 00:01:13,530
+And then we use our two dots one.
+
+21
+00:01:13,620 --> 00:01:14,140
+OK.
+
+22
+00:01:14,310 --> 00:01:15,580
+So let's just go with this.
+
+23
+00:01:15,710 --> 00:01:19,690
+SAS can get next to each lesson.
+
+24
+00:01:19,920 --> 00:01:22,840
+So we watched by use on talking.
+
+25
+00:01:23,040 --> 00:01:24,510
+So what do we need.
+
+26
+00:01:24,720 --> 00:01:28,450
+Let's just say we need all of this sets up and we need just one sees.
+
+27
+00:01:28,470 --> 00:01:29,750
+I think in this case.
+
+28
+00:01:29,950 --> 00:01:35,420
+So we have to flush these Then we have Yousaf and then we have a new lesson.
+
+29
+00:01:35,430 --> 00:01:38,350
+We have another lesson that same series.
+
+30
+00:01:38,520 --> 00:01:42,250
+Why don't we create a third lesson in this series.
+
+31
+00:01:43,010 --> 00:01:48,180
+Ok then what are we going to do is we're complete let's move one and two.
+
+32
+00:01:48,370 --> 00:01:53,900
+And I would assert that when we try to visit the watch Seuss rug where we don't get to listen.
+
+33
+00:01:54,050 --> 00:01:54,560
+OK.
+
+34
+00:01:54,690 --> 00:02:02,290
+So we use our complete lesson or commit lesson on complete lesson two.
+
+35
+00:02:02,570 --> 00:02:03,260
+OK.
+
+36
+00:02:03,320 --> 00:02:05,820
+So actually this is a unit test.
+
+37
+00:02:05,850 --> 00:02:10,740
+So let's just test that the method works and that would create a future test to test the redirect.
+
+38
+00:02:10,740 --> 00:02:11,220
+OK.
+
+39
+00:02:11,280 --> 00:02:18,810
+So right now what you want to do is see next to last lesson because you all get.
+
+40
+00:02:18,810 --> 00:02:22,850
+Next lesson to watch for a series.
+
+41
+00:02:22,860 --> 00:02:24,930
+So we're passing this idea.
+
+42
+00:02:25,530 --> 00:02:26,050
+OK.
+
+43
+00:02:26,220 --> 00:02:32,080
+So get next lesson to watch is the method that we want to create and this is called taking the series.
+
+44
+00:02:32,160 --> 00:02:37,580
+Such are all of these deals are these the values or the lessons that have been completed and then screen
+
+45
+00:02:37,590 --> 00:02:40,160
+to get the next lesson or are these I suppose we are watching.
+
+46
+00:02:40,290 --> 00:02:40,830
+OK.
+
+47
+00:02:40,980 --> 00:02:44,080
+So you just assert equal holes.
+
+48
+00:02:44,280 --> 00:02:47,460
+And what we can do is compare the ID.
+
+49
+00:02:47,460 --> 00:02:51,250
+So we want this is less than one lesson to listen to me.
+
+50
+00:02:51,300 --> 00:02:57,220
+So we once listened to the ID should be called to the next lesson.
+
+51
+00:02:57,450 --> 00:03:02,520
+And this is something we have to think about because remember we haven't yet told our lessons.
+
+52
+00:03:02,520 --> 00:03:04,200
+What are they playing.
+
+53
+00:03:04,200 --> 00:03:06,570
+So let's go ahead and make sure we do that.
+
+54
+00:03:06,570 --> 00:03:10,950
+We want to be right the factory settings.
+
+55
+00:03:11,040 --> 00:03:16,180
+So in all the lesson actually we just check it out.
+
+56
+00:03:16,540 --> 00:03:20,160
+What they are doing is we're simply assigning the opposite much 100.
+
+57
+00:03:20,160 --> 00:03:26,750
+But in this case we want to make sure that we order all these episodes in the correct order.
+
+58
+00:03:26,820 --> 00:03:35,460
+So that's one should be 100 listened to would be to do it.
+
+59
+00:03:35,560 --> 00:03:38,000
+Lesson we would be very it.
+
+60
+00:03:38,210 --> 00:03:38,590
+OK.
+
+61
+00:03:38,610 --> 00:03:43,860
+So they're going to play in that or that such that when we complete lesson 1 and 2 the next to be less
+
+62
+00:03:43,870 --> 00:03:44,610
+than three.
+
+63
+00:03:44,920 --> 00:03:45,350
+OK.
+
+64
+00:03:45,370 --> 00:03:47,540
+So I certainly caused this.
+
+65
+00:03:47,580 --> 00:03:52,790
+I think I think this is one session we need to warn.
+
+66
+00:03:52,830 --> 00:04:06,520
+How about creating a fourth lesson on how exactly this bandish would be for the fourth.
+
+67
+00:04:06,540 --> 00:04:14,280
+And then what we can do to solidify sessions is to complete lesson write right here after we've run
+
+68
+00:04:14,280 --> 00:04:19,230
+the first assertion and then would call our session again.
+
+69
+00:04:19,260 --> 00:04:19,820
+OK.
+
+70
+00:04:19,920 --> 00:04:21,570
+So we remember more sessions.
+
+71
+00:04:21,570 --> 00:04:28,500
+You have the more difficult it is for your test oil assertions to be deceptive.
+
+72
+00:04:28,570 --> 00:04:29,100
+OK.
+
+73
+00:04:29,220 --> 00:04:34,340
+So we have our next lesson when we assert that it equals days.
+
+74
+00:04:34,410 --> 00:04:43,510
+What we'll do is call this method a game and you see a certain equals less for I will get the idea right.
+
+75
+00:04:43,660 --> 00:04:44,130
+OK.
+
+76
+00:04:44,260 --> 00:04:47,830
+So after searching listen to me is the next one to play.
+
+77
+00:04:47,910 --> 00:04:49,660
+What complete lesson to me.
+
+78
+00:04:49,690 --> 00:04:53,350
+And then I that lesson for the next one to play.
+
+79
+00:04:53,380 --> 00:05:00,140
+So I think that says this sets let's go ahead and run it at uni.
+
+80
+00:05:00,190 --> 00:05:02,810
+So we got this.
+
+81
+00:05:03,310 --> 00:05:05,960
+OK so we need to create the next lesson.
+
+82
+00:05:05,990 --> 00:05:13,570
+Watch it all the way to my learning the PH B and all that.
+
+83
+00:05:14,950 --> 00:05:24,680
+And the station the suit he's run that again and trying to get hoppity an object as expected.
+
+84
+00:05:25,210 --> 00:05:30,310
+OK so when do we want do we want to get all the lessons completed for that series and then we want to
+
+85
+00:05:30,310 --> 00:05:31,700
+just return the last one.
+
+86
+00:05:31,840 --> 00:05:33,370
+That's what we want to do right.
+
+87
+00:05:33,400 --> 00:05:39,020
+So we should have a method right here that returns to us all the lessons.
+
+88
+00:05:39,310 --> 00:05:43,300
+So getting them of completed lessons completed lessons for charades.
+
+89
+00:05:43,330 --> 00:05:43,760
+OK.
+
+90
+00:05:43,780 --> 00:05:53,920
+So all we can do is you can see less than ideal because and this would play Baichu methodology was the
+
+91
+00:05:53,920 --> 00:06:04,840
+last element of an array and we call this good complete lessons for a series of possible series.
+
+92
+00:06:04,840 --> 00:06:05,380
+OK.
+
+93
+00:06:05,530 --> 00:06:10,450
+So let's actually check out that method to make sure we are doing the correct thing.
+
+94
+00:06:10,450 --> 00:06:15,210
+We said get our way of computer lesson IDs for Shirish and this is helpful.
+
+95
+00:06:15,280 --> 00:06:20,680
+We can actually use blocks because right now I'm trying to verify this my fault at all times when I
+
+96
+00:06:20,680 --> 00:06:23,160
+want you to return and we can check all the.
+
+97
+00:06:23,290 --> 00:06:27,540
+Returns an array and the palm anti-SUV series of type by Cassy's.
+
+98
+00:06:27,550 --> 00:06:28,990
+And this is what it does.
+
+99
+00:06:29,020 --> 00:06:29,420
+Great.
+
+100
+00:06:29,440 --> 00:06:30,390
+So we can use it.
+
+101
+00:06:30,510 --> 00:06:30,980
+OK.
+
+102
+00:06:31,060 --> 00:06:39,070
+So once we get that idea all we want to do is we turn less and find a pass less than ideal.
+
+103
+00:06:39,220 --> 00:06:46,600
+So we can actually in laying this by not having to create this variable so we can cut this out and pasted
+
+104
+00:06:46,610 --> 00:06:47,190
+right here.
+
+105
+00:06:47,250 --> 00:06:55,030
+OK so next lesson to watch we squint to get the last element in the Get lesson get completed lessons
+
+106
+00:06:55,120 --> 00:06:58,650
+for CBS Arri and then he's going to use that to find the lesson.
+
+107
+00:06:58,780 --> 00:06:59,260
+OK.
+
+108
+00:06:59,410 --> 00:07:05,750
+So let's one that says one more time and you see only eboshi pass by reference.
+
+109
+00:07:05,820 --> 00:07:06,270
+OK.
+
+110
+00:07:06,310 --> 00:07:11,660
+This is something that should be us we can't call my thoughts in my thoughts in my thoughts.
+
+111
+00:07:11,680 --> 00:07:13,300
+Too many times and as such.
+
+112
+00:07:13,300 --> 00:07:16,060
+So let's just stick with the variable.
+
+113
+00:07:16,090 --> 00:07:23,630
+So lesson like the core to this Boston lesson.
+
+114
+00:07:23,890 --> 00:07:24,580
+OK.
+
+115
+00:07:24,940 --> 00:07:27,800
+Just so BHB doesn't worry us anymore.
+
+116
+00:07:28,180 --> 00:07:28,690
+OK.
+
+117
+00:07:28,690 --> 00:07:32,530
+So that's one that and it's still arcane.
+
+118
+00:07:32,590 --> 00:07:36,880
+So I'm going to do this I'm going to say lesson ID equals.
+
+119
+00:07:36,940 --> 00:07:43,770
+And assume it's ease and rather than getting the right here I'm going to see less of.
+
+120
+00:07:43,810 --> 00:07:44,300
+That's it.
+
+121
+00:07:44,300 --> 00:07:48,630
+So it's telling us only the table should be passed by reference that's a catch we think.
+
+122
+00:07:48,670 --> 00:07:49,000
+OK.
+
+123
+00:07:49,030 --> 00:07:57,370
+So we can actually pass a math thought into this metho so that it takes in available and stuff like
+
+124
+00:07:57,370 --> 00:07:58,690
+that too much in testing.
+
+125
+00:07:58,750 --> 00:08:03,050
+So I think it should be fine by now that's one other game.
+
+126
+00:08:03,250 --> 00:08:08,670
+OK so Phil asserting that too much is expected to read.
+
+127
+00:08:08,770 --> 00:08:09,870
+OK so let's check on that.
+
+128
+00:08:09,880 --> 00:08:10,420
+Yes.
+
+129
+00:08:10,480 --> 00:08:16,410
+Remember we want the next to lesson that we use I should be watching and not the last lesson these are
+
+130
+00:08:16,450 --> 00:08:17,070
+watched.
+
+131
+00:08:17,080 --> 00:08:17,570
+OK.
+
+132
+00:08:17,710 --> 00:08:24,240
+So what we should do is we want to find that lesson we should get the next lesson in the series that
+
+133
+00:08:24,330 --> 00:08:25,380
+you use or should watch.
+
+134
+00:08:25,480 --> 00:08:25,900
+OK.
+
+135
+00:08:26,050 --> 00:08:28,900
+Remember we have get the next lesson.
+
+136
+00:08:28,900 --> 00:08:35,090
+If you had one lesson that Ph.D. we get next lesson in the Sui's in the play list right.
+
+137
+00:08:35,170 --> 00:08:39,940
+So we can call this method up on this lesson.
+
+138
+00:08:40,180 --> 00:08:40,700
+OK.
+
+139
+00:08:40,810 --> 00:08:43,490
+And the thing that should give us the correct result.
+
+140
+00:08:43,540 --> 00:08:46,500
+OK so far less than expected type object.
+
+141
+00:08:46,540 --> 00:08:53,610
+Let's check out our tests 1 6 5 set a course lesson for greats who should actually be checking listen
+
+142
+00:08:53,650 --> 00:08:55,500
+for ID right.
+
+143
+00:08:55,510 --> 00:08:58,330
+So let's run that one more time.
+
+144
+00:08:58,340 --> 00:08:58,660
+Great.
+
+145
+00:08:58,660 --> 00:09:01,810
+We have a success with us finally.
+
+146
+00:09:01,810 --> 00:09:08,620
+So all we did was get all the lessons that this is are completed and then we get the idea of the last
+
+147
+00:09:08,620 --> 00:09:14,080
+one which means that's the leaders that these are completed and then we get that lesson and then we
+
+148
+00:09:14,080 --> 00:09:15,980
+get the next lesson in the play list.
+
+149
+00:09:16,000 --> 00:09:16,520
+OK.
+
+150
+00:09:16,630 --> 00:09:23,800
+So what we can do is actually write a little test to protect our souls because remember we are doing
+
+151
+00:09:23,830 --> 00:09:28,950
+a lot of assumptions like here in case there is no next lessons watch.
+
+152
+00:09:28,970 --> 00:09:30,110
+Are we possible into this.
+
+153
+00:09:30,100 --> 00:09:35,490
+My thought it's going to break for example you can break right here because this is Guinta we know and
+
+154
+00:09:35,480 --> 00:09:38,290
+then we're calling a method on all.
+
+155
+00:09:38,790 --> 00:09:44,750
+That's going to really be a big deal but I'm going to handle it in a couple of lessons for now I think
+
+156
+00:09:44,810 --> 00:09:47,090
+this is going to really help us in a few.
+
+157
+00:09:47,120 --> 00:09:50,540
+So let's work on this in the very next lesson.
+

@@ -1,0 +1,212 @@
+1
+00:00:00,630 --> 00:00:03,280
+OK let's do a little bit of free FoxxHole.
+
+2
+00:00:03,300 --> 00:00:07,570
+Like I said I'm not comfortable with having this duplicate method.
+
+3
+00:00:07,610 --> 00:00:09,730
+It's not just cool.
+
+4
+00:00:09,770 --> 00:00:10,120
+OK.
+
+5
+00:00:10,130 --> 00:00:17,510
+So what I'm going to do is create a serious request and then the update service requests and the create
+
+6
+00:00:17,530 --> 00:00:21,350
+serious requests can inherits from this request.
+
+7
+00:00:21,500 --> 00:00:23,350
+OK so I'll see what I mean.
+
+8
+00:00:23,390 --> 00:00:24,700
+Let me create a request.
+
+9
+00:00:24,760 --> 00:00:32,260
+PH We sign make request and this is going to be serious request
+
+10
+00:00:34,920 --> 00:00:35,630
+OK.
+
+11
+00:00:35,700 --> 00:00:37,680
+So you know a serious request.
+
+12
+00:00:37,680 --> 00:00:39,470
+We have a blank credit right here.
+
+13
+00:00:39,630 --> 00:00:46,580
+But what happens is that if you want to make sure everything was in my test so that the Rifat saw stage
+
+14
+00:00:46,590 --> 00:00:54,310
+is when you actually make sure we didn't break anything like Saw the test run well no I would make sure
+
+15
+00:00:54,520 --> 00:00:58,930
+that there are these serious requests and the Christmas request inherit from this loss.
+
+16
+00:00:58,960 --> 00:01:01,750
+So I had a lot of dead serious request.
+
+17
+00:01:02,010 --> 00:01:05,820
+Now pulao this mid-thought cuts it out completely.
+
+18
+00:01:05,820 --> 00:01:09,840
+This seat my service request and pasted in.
+
+19
+00:01:10,230 --> 00:01:10,670
+OK.
+
+20
+00:01:10,690 --> 00:01:12,940
+So we have this mid-thought of the label.
+
+21
+00:01:13,120 --> 00:01:20,440
+Then in my obituaries requests are no longer winsby extending form requests from Larkhall but I'll be
+
+22
+00:01:20,440 --> 00:01:25,400
+extending series request so I know it is animal.
+
+23
+00:01:25,790 --> 00:01:26,160
+OK.
+
+24
+00:01:26,170 --> 00:01:32,770
+So our series of quest is not going to have an authorization Mithal because I want to take care of these
+
+25
+00:01:32,990 --> 00:01:39,370
+and the trout glossies and those are going to have Smith thought it's just going to have this method
+
+26
+00:01:39,370 --> 00:01:41,130
+that is common to both classes.
+
+27
+00:01:41,140 --> 00:01:51,570
+So which means in our quit serious requests we can also pre-loved this method completely and then it's
+
+28
+00:01:51,570 --> 00:01:58,960
+no longer going to extend for request but it's going to extend serious request not block this use.
+
+29
+00:01:59,220 --> 00:02:06,020
+And now everything should work as expected because this method now is common to both classes.
+
+30
+00:02:06,040 --> 00:02:09,160
+So let's run our tests again and see if we book anything.
+
+31
+00:02:10,560 --> 00:02:11,400
+Okay great.
+
+32
+00:02:11,400 --> 00:02:12,640
+We didn't break anything right.
+
+33
+00:02:12,660 --> 00:02:18,710
+But then we removed that to placation by also extending cost on request classes.
+
+34
+00:02:18,720 --> 00:02:24,320
+Now I'll have a watch through my series controller and I'll try to clean up these audio series.
+
+35
+00:02:24,480 --> 00:02:31,980
+So if Sourcefire we are overloading the series for a start let's just cut this out and just move it
+
+36
+00:02:32,310 --> 00:02:35,060
+into our service requests.
+
+37
+00:02:35,190 --> 00:02:38,910
+So I'm just going to call request of this series.
+
+38
+00:02:39,100 --> 00:02:42,850
+Okay then would I know what's in the update request.
+
+39
+00:02:43,020 --> 00:02:49,320
+Paste that then creates that mid-thought which was a serious case study.
+
+40
+00:02:49,440 --> 00:02:54,250
+So if request hausfrau will no longer be dealing with requests we'll be dealing with this.
+
+41
+00:02:54,390 --> 00:03:02,930
+So if this hausfrau updates us let's pause in the series into this method as a parameter or from our
+
+42
+00:03:03,020 --> 00:03:04,640
+current series
+
+43
+00:03:07,120 --> 00:03:19,920
+then this load suits you may get the file name and get this title get this description.
+
+44
+00:03:19,950 --> 00:03:24,290
+And finally also get this title then safe.
+
+45
+00:03:24,570 --> 00:03:25,100
+OK.
+
+46
+00:03:25,170 --> 00:03:30,390
+So right here we are data series plus the session with the user to the vault.
+
+47
+00:03:30,480 --> 00:03:36,670
+So if everything goes well we actually haven't broken anything and we can easily check that we are to
+
+48
+00:03:36,670 --> 00:03:37,810
+search.
+
+49
+00:03:37,950 --> 00:03:38,380
+Great.
+
+50
+00:03:38,400 --> 00:03:44,230
+We haven't broken anything but I think our controller looks cleaner when you come to our control or
+
+51
+00:03:44,220 --> 00:03:52,020
+you can we request updates serious and then you can visit Chris loss to see what series that is.
+
+52
+00:03:52,020 --> 00:03:52,720
+Great.
+
+53
+00:03:52,800 --> 00:03:53,510
+Great job.
+

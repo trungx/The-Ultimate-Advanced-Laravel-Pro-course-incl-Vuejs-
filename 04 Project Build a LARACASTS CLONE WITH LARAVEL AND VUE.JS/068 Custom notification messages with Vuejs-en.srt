@@ -1,0 +1,344 @@
+1
+00:00:00,440 --> 00:00:01,800
+Let's that go for updates.
+
+2
+00:00:01,800 --> 00:00:09,020
+My thought for lessons now we're going to need to get the series the lesson that we try not dates and
+
+3
+00:00:09,020 --> 00:00:14,330
+also the request so we don't need the ID in this case quite so large that one article can undo what
+
+4
+00:00:14,330 --> 00:00:15,700
+you inject.
+
+5
+00:00:15,830 --> 00:00:22,400
+Then how do we want to update this lesson lesson updates request.
+
+6
+00:00:22,700 --> 00:00:30,550
+I think this will do then what we can do is return lesson fresh OK because naturally we just lost a
+
+7
+00:00:30,550 --> 00:00:31,520
+billion.
+
+8
+00:00:31,550 --> 00:00:36,430
+Then we researched a fresh copy of that response to our to our friends.
+
+9
+00:00:36,450 --> 00:00:43,550
+And so we can actually inject a custom request right here so we can define our addition horse all we
+
+10
+00:00:43,550 --> 00:00:47,150
+can actually also define the Venetian host in the control right here.
+
+11
+00:00:47,240 --> 00:00:51,470
+So let me just read and it's less than request.
+
+12
+00:00:51,470 --> 00:01:00,380
+So we are sent make requests updates lesson requests if I had about sort of dead lesson requests I'd
+
+13
+00:01:00,380 --> 00:01:07,640
+change the street to room to make sure we have access then I'll head over to my quit on request and
+
+14
+00:01:07,640 --> 00:01:13,880
+make sure I also have exactly the same validation what was a good lesson should actually have exactly
+
+15
+00:01:13,880 --> 00:01:17,830
+the same by the rules and that will give us a little bit of protection.
+
+16
+00:01:17,890 --> 00:01:18,750
+OK.
+
+17
+00:01:18,830 --> 00:01:22,640
+Then we need to all aval to inject rather than the default request.
+
+18
+00:01:22,640 --> 00:01:23,130
+OK.
+
+19
+00:01:23,180 --> 00:01:25,430
+So we need a bit less room.
+
+20
+00:01:25,430 --> 00:01:28,280
+QUEST I would use that at the top.
+
+21
+00:01:28,280 --> 00:01:34,700
+So all of the reasonable questions of dogma and then return a fresh copy of the lesson to our front
+
+22
+00:01:34,700 --> 00:01:35,050
+end.
+
+23
+00:01:35,100 --> 00:01:35,740
+OK.
+
+24
+00:01:35,770 --> 00:01:45,380
+So let's head over back to our So these are lessons that you know we have this added button right here
+
+25
+00:01:45,440 --> 00:01:46,880
+which is used to update.
+
+26
+00:01:46,880 --> 00:01:49,370
+And what we're going to do is add a click event.
+
+27
+00:01:49,970 --> 00:01:56,790
+And this is going to call added lesson and this is simply going to pass or taking the lesson that we
+
+28
+00:01:56,790 --> 00:01:57,700
+get into it.
+
+29
+00:01:57,830 --> 00:01:59,450
+OK so let's quit that method.
+
+30
+00:01:59,550 --> 00:02:03,250
+Added lesson we are taking the lesson now.
+
+31
+00:02:03,440 --> 00:02:04,640
+We have no choice here.
+
+32
+00:02:04,640 --> 00:02:09,800
+We can actually handle the editing of the lesson or we could pass it down to the child component which
+
+33
+00:02:10,300 --> 00:02:12,630
+has a form that we could use to edit the lesson.
+
+34
+00:02:12,680 --> 00:02:13,210
+OK.
+
+35
+00:02:13,340 --> 00:02:20,200
+So I'm just going to say this that image added less an event and the data was going to pass.
+
+36
+00:02:20,220 --> 00:02:22,400
+So payload is the lesson that we just received.
+
+37
+00:02:22,450 --> 00:02:23,100
+OK.
+
+38
+00:02:23,150 --> 00:02:29,420
+Then in our component we can actually listen to this show create lesson that you might actually think
+
+39
+00:02:29,420 --> 00:02:38,150
+of renaming this now that has two functionalities but it's OK by me based on parents not on the adolescent
+
+40
+00:02:38,210 --> 00:02:40,520
+request then begin to do something.
+
+41
+00:02:40,550 --> 00:02:46,600
+First of all that's received a lot which is the lesson that we are trying to educate and what do we
+
+42
+00:02:46,600 --> 00:02:52,270
+want to do now that art form actually has two functionalities what we want to do is actually manage
+
+43
+00:02:52,270 --> 00:02:59,440
+the state of the forms so we need to know if the form is actually in editing mode or in creation mode.
+
+44
+00:02:59,440 --> 00:03:03,450
+So let's just see editing and by default the form is going to be false.
+
+45
+00:03:03,670 --> 00:03:09,010
+Which means it's in question mode then what we want to do is as soon as we listen to this event we want
+
+46
+00:03:09,010 --> 00:03:11,170
+to make sure editing is true.
+
+47
+00:03:11,350 --> 00:03:16,210
+And we're going to do a little changes in our template that are going to help us know that the form
+
+48
+00:03:16,210 --> 00:03:22,120
+is editing and it's not creating yet our case so once we do that what we want to do we want to make
+
+49
+00:03:22,120 --> 00:03:26,220
+sure that the title is set to less than the title.
+
+50
+00:03:26,290 --> 00:03:27,010
+OK.
+
+51
+00:03:27,280 --> 00:03:30,910
+The description also is said to lessen that description.
+
+52
+00:03:30,910 --> 00:03:38,650
+Same thing with all the other attributes we have video ideation sets but UAD episode number 2 should
+
+53
+00:03:38,650 --> 00:03:40,580
+be set to a number.
+
+54
+00:03:40,680 --> 00:03:44,590
+So this piece of namah.
+
+55
+00:03:44,590 --> 00:03:45,140
+Great.
+
+56
+00:03:45,260 --> 00:03:47,300
+So another form is editing.
+
+57
+00:03:47,350 --> 00:03:53,890
+The first thing we can do is actually change the law for this matter so we can say if this film is editing
+
+58
+00:03:53,950 --> 00:03:56,460
+show us safe less on Butson.
+
+59
+00:03:56,500 --> 00:04:00,070
+But then if it's in creation mode we're going to change it to create Lassan.
+
+60
+00:04:00,130 --> 00:04:00,700
+OK.
+
+61
+00:04:00,790 --> 00:04:02,710
+So we can attach and VIF here.
+
+62
+00:04:02,800 --> 00:04:12,040
+So if he was not editing or we could actually attach the arrows just to we don't have to use or not.
+
+63
+00:04:12,480 --> 00:04:17,540
+And what are we going to do is duplicate this button and right here this is going to have the video.
+
+64
+00:04:17,800 --> 00:04:24,370
+So if it was editing and we're going to have to save less than what's on display to us and the most
+
+65
+00:04:24,370 --> 00:04:27,070
+important part we are going to call an update.
+
+66
+00:04:27,150 --> 00:04:30,090
+Lesson mid-thought on click.
+
+67
+00:04:30,210 --> 00:04:30,870
+Right.
+
+68
+00:04:30,910 --> 00:04:37,080
+So we have a bottleful gridlocks on one for a big lesson and it all depends on the state of our form.
+
+69
+00:04:37,090 --> 00:04:41,060
+So if the form is in editing mode then it's going to show the object lesson button.
+
+70
+00:04:41,200 --> 00:04:41,650
+Awesome.
+
+71
+00:04:41,650 --> 00:04:48,960
+So let's go ahead and quit that mid-thought lesson and for now let's simply say console that lock of
+
+72
+00:04:49,020 --> 00:04:49,700
+data.
+
+73
+00:04:49,860 --> 00:04:50,610
+OK.
+
+74
+00:04:50,830 --> 00:04:58,120
+So we listen to an event which is a good lesson and then we transform the form into an editing form
+
+75
+00:04:58,570 --> 00:05:04,990
+by setting this property editing and then we set the attributes of form should be equal to the lesson
+
+76
+00:05:05,080 --> 00:05:07,180
+attributes that we just got from our parents.
+
+77
+00:05:07,200 --> 00:05:07,620
+OK.
+
+78
+00:05:07,660 --> 00:05:09,600
+Which is going to proceed as a pillow.
+
+79
+00:05:09,730 --> 00:05:17,210
+So let's go ahead and try this out in the Parsa for quick refresh and then click on edit button.
+
+80
+00:05:17,210 --> 00:05:22,760
+Check out our CRID form which you score that it's automatically populated with the Ditto's for this
+
+81
+00:05:22,880 --> 00:05:23,990
+lesson right.
+
+82
+00:05:24,080 --> 00:05:26,660
+So what we want to do is actually open up the model right.
+
+83
+00:05:26,750 --> 00:05:31,360
+So let's head back to our quick lesson and we'll call this quick lesson.
+
+84
+00:05:31,370 --> 00:05:33,090
+Open wound up OK.
+
+85
+00:05:33,170 --> 00:05:40,970
+So refresh click on that and sure enough we have a model with the description ID title and everything.
+
+86
+00:05:41,150 --> 00:05:44,840
+So that's the care of the Ajax request in the next session.
+

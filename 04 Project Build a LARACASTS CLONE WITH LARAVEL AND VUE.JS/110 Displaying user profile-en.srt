@@ -1,0 +1,320 @@
+1
+00:00:00,240 --> 00:00:02,670
+OK let's officially quit the speech.
+
+2
+00:00:02,790 --> 00:00:04,130
+How do we want this to function.
+
+3
+00:00:04,140 --> 00:00:08,810
+We want somebody who doesn't own the profile or will be able to see it.
+
+4
+00:00:08,850 --> 00:00:09,180
+OK.
+
+5
+00:00:09,180 --> 00:00:14,810
+For example you can see other users are therefore we have to maybe pass some way to identify the user.
+
+6
+00:00:15,000 --> 00:00:15,710
+You are out.
+
+7
+00:00:15,810 --> 00:00:21,360
+So we're going to be using the SLOC field for the user which saved us a username in our users table.
+
+8
+00:00:21,360 --> 00:00:27,720
+So let's just go ahead and set up a route in our web that it would be the profile and we can create
+
+9
+00:00:27,780 --> 00:00:35,660
+a profile on the Arts Index and we want this far out to actually accept a parameter.
+
+10
+00:00:35,780 --> 00:00:42,400
+OK so I'm going to call this varments I use art because I want to use Lovell's Rob model by name and.
+
+11
+00:00:42,780 --> 00:00:46,930
+And I need to create this Consolo saw created here.
+
+12
+00:00:47,160 --> 00:00:52,850
+Our son may control the first controller in our control.
+
+13
+00:00:53,010 --> 00:00:59,930
+We need an index and I thought and we are requesting that level automatically injects to use our swords
+
+14
+00:00:59,950 --> 00:01:03,660
+to use but curses are here.
+
+15
+00:01:03,960 --> 00:01:06,530
+And if love will just automatically inject the user.
+
+16
+00:01:06,780 --> 00:01:14,130
+It's going to try to inject the user by the ID of the user but then he wants Lavo to use their use on
+
+17
+00:01:14,130 --> 00:01:15,720
+the field on this class.
+
+18
+00:01:15,780 --> 00:01:22,950
+So we are told Lavoe get Keenum and would return use our name.
+
+19
+00:01:23,570 --> 00:01:28,810
+OK so lovingly squit you try to find the user are using the User Name column in the database.
+
+20
+00:01:28,970 --> 00:01:29,580
+OK.
+
+21
+00:01:29,670 --> 00:01:40,410
+So for now let's just return a view and would also pass in refusal which is the use of the record from
+
+22
+00:01:40,410 --> 00:01:41,980
+the wrong model binding.
+
+23
+00:01:42,210 --> 00:01:45,200
+OK so we know my username.
+
+24
+00:01:45,210 --> 00:01:48,290
+Let's just copy that and try to get this right.
+
+25
+00:01:48,840 --> 00:01:58,950
+We have a form for me to call up our database we can go and we'll just get all the users but CAS use
+
+26
+00:01:59,040 --> 00:02:01,790
+all and the user name is cutie.
+
+27
+00:02:01,940 --> 00:02:02,880
+OK great.
+
+28
+00:02:02,880 --> 00:02:06,960
+So we should actually pull that out fresh.
+
+29
+00:02:06,960 --> 00:02:07,610
+There we go.
+
+30
+00:02:07,680 --> 00:02:09,550
+We have to use a speech right there.
+
+31
+00:02:09,720 --> 00:02:15,480
+So what do we want to do we want to air quotes the number of completed lessons on the series being watched.
+
+32
+00:02:15,700 --> 00:02:16,460
+OK.
+
+33
+00:02:16,470 --> 00:02:26,060
+So I over to the profile view and right here the number of lessons is going to be user get.
+
+34
+00:02:26,120 --> 00:02:34,230
+So total number of lessons completed which is the methodology actually created in the last video OK.
+
+35
+00:02:34,410 --> 00:02:38,250
+So it's actually get total number of complete adolescence.
+
+36
+00:02:38,460 --> 00:02:39,870
+So we're going to replace that.
+
+37
+00:02:39,990 --> 00:02:43,280
+And that's what we have then for the series being watch.
+
+38
+00:02:43,350 --> 00:02:45,200
+Let's just make sure we haven't this one.
+
+39
+00:02:45,330 --> 00:02:51,780
+So we have to rewrite now because the series that we have in our database right now we actually completed
+
+40
+00:02:51,840 --> 00:02:53,710
+all of them in our watch beach.
+
+41
+00:02:53,760 --> 00:02:54,330
+OK.
+
+42
+00:02:54,330 --> 00:03:02,590
+So three lessons completed and series being watched what we can do is pass new series from our control.
+
+43
+00:03:02,830 --> 00:03:05,420
+So I'm going to get serious right here.
+
+44
+00:03:05,550 --> 00:03:08,840
+So with a series and it be user.
+
+45
+00:03:09,090 --> 00:03:10,920
+Get serious.
+
+46
+00:03:11,370 --> 00:03:11,860
+OK.
+
+47
+00:03:11,940 --> 00:03:17,340
+And this method is also coming from right here because we test that and we know it's working.
+
+48
+00:03:17,460 --> 00:03:18,030
+OK.
+
+49
+00:03:18,180 --> 00:03:25,830
+So therefore in our profile the blade ph B where we have been watched we can just Cluj or Welkom the
+
+50
+00:03:25,880 --> 00:03:33,900
+lead the PH P and recopied is the exact same four hours loop and in our profile we just be studying
+
+51
+00:03:34,020 --> 00:03:39,840
+for now safe refresh trends to get property of an object.
+
+52
+00:03:39,840 --> 00:03:48,830
+OK let's go to our recopied to see what we have we have for each series which we passed in the title
+
+53
+00:03:49,110 --> 00:03:52,030
+description or read more.
+
+54
+00:03:52,080 --> 00:03:54,980
+So where could the Arrow be coming from.
+
+55
+00:03:54,990 --> 00:03:59,340
+So when we died or in our control to see what we actually have.
+
+56
+00:03:59,340 --> 00:04:05,990
+So we use our series being watched or just died and fresh.
+
+57
+00:04:06,000 --> 00:04:07,550
+So we have an array.
+
+58
+00:04:07,980 --> 00:04:10,920
+And one of the elements is such Really.
+
+59
+00:04:11,370 --> 00:04:12,910
+That's why we're having some errors.
+
+60
+00:04:12,930 --> 00:04:14,900
+So this is not much of a big deal.
+
+61
+00:04:14,910 --> 00:04:19,800
+I think it's because we have a really messy database so values here and there and we actually don't
+
+62
+00:04:19,800 --> 00:04:25,770
+have the appropriate Ready's connection because we've been testing Whitted and we're using it now in
+
+63
+00:04:25,770 --> 00:04:26,310
+our view.
+
+64
+00:04:26,310 --> 00:04:33,610
+So that's why it took confusions but then for us to protect ourselves we can head over to what learning
+
+65
+00:04:33,670 --> 00:04:40,710
+that BHB and right here when we are mapping which we can fuel to eat to make sure that all know values
+
+66
+00:04:40,770 --> 00:04:41,820
+are rejected.
+
+67
+00:04:42,260 --> 00:04:44,920
+And we do that basically calling the full time method.
+
+68
+00:04:45,210 --> 00:04:48,790
+So the collection is going to move on and force values.
+
+69
+00:04:48,930 --> 00:04:54,300
+So let's refresh an artichoke or date them and now we have just one element in the tree which is the
+
+70
+00:04:54,300 --> 00:04:56,790
+one that was successfully found in the database.
+
+71
+00:04:56,790 --> 00:04:57,260
+OK.
+
+72
+00:04:57,270 --> 00:04:59,180
+So that should fix that.
+
+73
+00:04:59,320 --> 00:05:05,920
+Oh controller that died that we have refresh OK we're back.
+
+74
+00:05:06,300 --> 00:05:09,190
+So we have a list of series being watched by the user.
+
+75
+00:05:09,360 --> 00:05:14,200
+And then we have a list of lessons that the user has completed.
+
+76
+00:05:14,280 --> 00:05:19,920
+Now something I'd like us to talk about is how we want things to happen if the user is authenticated
+
+77
+00:05:20,130 --> 00:05:22,470
+or not and effectually locked out.
+
+78
+00:05:22,470 --> 00:05:27,600
+Right now I believe we're going to have a lot of errors everywhere because we've not been thinking about
+
+79
+00:05:27,600 --> 00:05:27,900
+that.
+
+80
+00:05:28,050 --> 00:05:30,430
+But we'll take that into very next video.
+

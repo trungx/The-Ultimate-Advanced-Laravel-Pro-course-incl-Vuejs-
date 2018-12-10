@@ -1,0 +1,540 @@
+1
+00:00:00,750 --> 00:00:06,540
+Before we move on I'd like to make a very big and important Rifat so and it's going to give us a really
+
+2
+00:00:06,540 --> 00:00:08,360
+great opportunity to learn some stuff.
+
+3
+00:00:08,550 --> 00:00:15,900
+OK I'll head over to my web ph Ph.D. and you're going to notice that in most applications that you would
+
+4
+00:00:15,940 --> 00:00:19,700
+build your thoughts for is always going to be very very crowded.
+
+5
+00:00:19,800 --> 00:00:25,210
+And you don't want that because in future you want your outside to be clean so you can understand.
+
+6
+00:00:25,260 --> 00:00:27,420
+And that's kind of the main focus in this series.
+
+7
+00:00:27,510 --> 00:00:33,050
+We want every single file that we're dealing with to be as clean and understandable as possible.
+
+8
+00:00:33,210 --> 00:00:38,100
+So Lavoe provides us obviously with the possibility of creating our own Watchfire.
+
+9
+00:00:38,230 --> 00:00:43,910
+OK so we have with the Ph.D. and this is for routes that are in the web middleware group.
+
+10
+00:00:44,040 --> 00:00:46,050
+And we also have API Ph be.
+
+11
+00:00:46,080 --> 00:00:50,030
+And this is for a start and the API middleware group.
+
+12
+00:00:50,100 --> 00:00:53,270
+I'll see what I mean I can all the Ph be.
+
+13
+00:00:53,790 --> 00:00:55,830
+We have two middleware groups.
+
+14
+00:00:56,040 --> 00:00:59,610
+We have the web and we have the API and the web.
+
+15
+00:00:59,660 --> 00:01:08,670
+We just asked me the way that it uses like the cookies the session the very feisty SRF token Shehroz
+
+16
+00:01:08,670 --> 00:01:10,490
+from session and all that.
+
+17
+00:01:10,500 --> 00:01:17,110
+Now the API simply registers middleware that it uses like the bindings throttle.
+
+18
+00:01:17,310 --> 00:01:24,420
+And now since we have an administrator group like we see in our web PH BE we can have our own custom
+
+19
+00:01:24,420 --> 00:01:28,280
+middleware group and every single route that concerns administrators.
+
+20
+00:01:28,290 --> 00:01:33,130
+We go there and we would have really really caring about fires.
+
+21
+00:01:33,240 --> 00:01:36,540
+I'll show you how to do this to create a custom made aware group.
+
+22
+00:01:36,600 --> 00:01:43,770
+All we need to do is append this array so we can create an admin middleware group and like we said in
+
+23
+00:01:43,770 --> 00:01:48,870
+the middle weight group you just need to put in the middle where that are going to run for that particular
+
+24
+00:01:48,870 --> 00:01:50,070
+group of routes.
+
+25
+00:01:50,100 --> 00:01:56,880
+In this case I want all the middleware in this web to Ron because our users are assessing the application
+
+26
+00:01:56,880 --> 00:02:03,630
+using the web and therefore our simply see web here and he's going to register all the media we're in
+
+27
+00:02:03,630 --> 00:02:04,730
+this web group.
+
+28
+00:02:05,010 --> 00:02:10,940
+And also I want a customer the way that we critter's together which is the admin middleware to run.
+
+29
+00:02:10,980 --> 00:02:18,400
+Therefore I will cut this out and move it to my custom middleware group.
+
+30
+00:02:18,450 --> 00:02:19,020
+OK.
+
+31
+00:02:19,080 --> 00:02:26,160
+So this is for specific routes where we can reference avouch name the group name the middleware name
+
+32
+00:02:26,370 --> 00:02:29,230
+and actually use them on one route or many routes.
+
+33
+00:02:29,340 --> 00:02:33,300
+Meanwhile this is a completely grouped set of routes.
+
+34
+00:02:33,330 --> 00:02:33,690
+OK.
+
+35
+00:02:33,690 --> 00:02:38,870
+Just like we're seeing here now how do we use this group of robots if we want everything now.
+
+36
+00:02:38,880 --> 00:02:44,070
+It's going to work perfectly because Lovelle automatically understands if we're referencing a group
+
+37
+00:02:44,070 --> 00:02:46,580
+right here or a specific middleware.
+
+38
+00:02:46,740 --> 00:02:53,340
+OK but what we want to do is remove the need for this prefix and this automatically put everything in
+
+39
+00:02:53,400 --> 00:02:55,710
+an admin we found.
+
+40
+00:02:55,830 --> 00:02:57,140
+So let's quit that file.
+
+41
+00:02:57,390 --> 00:03:07,350
+I mean that should be and we can actually just move these files these routes like this to and place
+
+42
+00:03:07,350 --> 00:03:12,920
+them in that admin that we found and then we can clean up our CROSSFIRE.
+
+43
+00:03:13,440 --> 00:03:17,400
+But obviously obviously this is going to break the law.
+
+44
+00:03:17,520 --> 00:03:20,550
+We need to talk about the admin that Ph be.
+
+45
+00:03:20,580 --> 00:03:22,580
+And we need to register those laws.
+
+46
+00:03:22,590 --> 00:03:23,660
+How do we do this.
+
+47
+00:03:23,670 --> 00:03:27,710
+That's what's also ISKHANDAR and see how that stays for us.
+
+48
+00:03:27,720 --> 00:03:34,790
+First of all Lavoe actually really starts the web and API in the world service provider.
+
+49
+00:03:34,800 --> 00:03:40,080
+So for example it calls the map API routes and map out my thoughts right here.
+
+50
+00:03:40,230 --> 00:03:47,340
+And if you check out the map web WILESMITH thought it wraps all of the routes in the web the PH BE IN
+
+51
+00:03:47,330 --> 00:03:48,140
+of our group.
+
+52
+00:03:48,150 --> 00:03:48,510
+Right.
+
+53
+00:03:48,600 --> 00:03:54,510
+So first of all to me the way I thought and it's going to automatically come and pick up the middleware
+
+54
+00:03:54,870 --> 00:03:56,790
+web right here.
+
+55
+00:03:56,790 --> 00:04:01,760
+So all of the vaults in the web the Peachtree are wrapped in this middleware web group.
+
+56
+00:04:01,920 --> 00:04:07,130
+And then because the namespace method to set the namespace for control control stuff we want to use
+
+57
+00:04:07,230 --> 00:04:11,770
+this group and by default it's in the control directory just like we've been using.
+
+58
+00:04:11,820 --> 00:04:18,980
+And then it wraps them in a group from the web that we found right now for the API routes it prefixes
+
+59
+00:04:19,080 --> 00:04:26,580
+every single route there with an API stream and then it uses the Midwest API group just like in our
+
+60
+00:04:26,580 --> 00:04:28,800
+Canada the PH be this one.
+
+61
+00:04:28,980 --> 00:04:36,760
+And then it sets the namespace to the same namespace and then sets the path to API.
+
+62
+00:04:36,950 --> 00:04:40,610
+OK so we can actually create our own.
+
+63
+00:04:40,770 --> 00:04:42,350
+So we are going to call our own.
+
+64
+00:04:42,360 --> 00:04:49,650
+This map of main routes and then we're going to create that thought.
+
+65
+00:04:50,010 --> 00:04:56,430
+And in this method what we would do is call me to where I thought I would certainly that the middleware
+
+66
+00:04:56,490 --> 00:05:03,580
+group for this set of routes is the admin group like we created and then we're told that OK we won every
+
+67
+00:05:03,580 --> 00:05:11,370
+vouch for the administrators to be fixed with admin and then we also want to use a particular namespace.
+
+68
+00:05:11,440 --> 00:05:13,280
+This namespace.
+
+69
+00:05:13,360 --> 00:05:16,000
+And finally we want to group all of the routes together.
+
+70
+00:05:16,060 --> 00:05:22,700
+So I would say based path and we'll get them from routes slash.
+
+71
+00:05:23,150 --> 00:05:26,460
+I mean that be just like we created.
+
+72
+00:05:27,400 --> 00:05:28,050
+OK.
+
+73
+00:05:28,090 --> 00:05:35,410
+So everything should work as expected because we've really start all of the routes in admin the PSAP
+
+74
+00:05:35,410 --> 00:05:37,510
+with Lavoe using this method.
+
+75
+00:05:37,630 --> 00:05:40,510
+So we prefix all of them with admin just like we've been doing.
+
+76
+00:05:40,560 --> 00:05:46,410
+We protect all of them with the admin middleware and all of them are still in the controllers directory.
+
+77
+00:05:46,540 --> 00:05:51,850
+So if we head back to our application give this version of refresh we still have that we can visit our
+
+78
+00:05:51,850 --> 00:05:55,750
+series we can create series all of those vials us to register.
+
+79
+00:05:55,950 --> 00:05:56,670
+All right.
+
+80
+00:05:56,800 --> 00:06:02,920
+So now what I want to show you is what if we actually wanted to place all of this in an admin directory
+
+81
+00:06:03,030 --> 00:06:08,140
+all of the control that's the concern on the street is all we need to do is prefix the suite at me.
+
+82
+00:06:08,250 --> 00:06:08,720
+OK.
+
+83
+00:06:08,740 --> 00:06:13,720
+Because this namespace is actually a string that sits in a namespace that we want to save or control
+
+84
+00:06:13,720 --> 00:06:14,340
+us in.
+
+85
+00:06:14,500 --> 00:06:20,160
+So we have backups S2P control us and by default we've been just saving everything in the control as
+
+86
+00:06:20,160 --> 00:06:20,800
+directory.
+
+87
+00:06:20,860 --> 00:06:25,740
+But now that we have this method we can actually see them in the admin directory.
+
+88
+00:06:25,870 --> 00:06:30,150
+OK that's just going to make things a little bit clearer.
+
+89
+00:06:30,340 --> 00:06:38,240
+OK so if I refresh now sure enough it fails because it cannot find the Seuss controller in the admin
+
+90
+00:06:38,240 --> 00:06:38,880
+directory.
+
+91
+00:06:39,020 --> 00:06:43,640
+But what we are going to do is we're going to come to our controllers directory.
+
+92
+00:06:43,870 --> 00:06:50,150
+We're gonna create a new director called admin and then we're going to move the series controller into
+
+93
+00:06:50,150 --> 00:06:57,170
+that directory and things our admin the HP also has the lessons controller we are going to use also
+
+94
+00:06:57,170 --> 00:07:00,300
+move the lessons controller into that directory.
+
+95
+00:07:00,350 --> 00:07:04,820
+But now things are going to change when we are extending Cordula we need to import the controller.
+
+96
+00:07:04,820 --> 00:07:05,210
+Right.
+
+97
+00:07:05,390 --> 00:07:16,030
+So we're going to use but cost a.p control loss controller.
+
+98
+00:07:16,410 --> 00:07:16,880
+OK.
+
+99
+00:07:16,910 --> 00:07:23,340
+So referencing this fire right here and every single controller in sight should also imparts the controller.
+
+100
+00:07:23,500 --> 00:07:23,910
+OK.
+
+101
+00:07:23,930 --> 00:07:26,400
+Last thing is to update the namespace.
+
+102
+00:07:26,450 --> 00:07:29,830
+So we have to see we're in the admin namespace.
+
+103
+00:07:30,020 --> 00:07:34,410
+And finally here we also have to reference the admin namespace.
+
+104
+00:07:34,500 --> 00:07:36,970
+OK so let's try again refresh.
+
+105
+00:07:37,550 --> 00:07:41,220
+And there we are we are back to successful.
+
+106
+00:07:41,240 --> 00:07:47,840
+So all of those walls have been registar and we've successfully refactored into our admin directory
+
+107
+00:07:47,840 --> 00:07:51,910
+which makes things a little bit cleaner and understandable for us.
+
+108
+00:07:52,080 --> 00:07:56,210
+Okay so one last explanation of what we've been doing.
+
+109
+00:07:56,210 --> 00:08:03,540
+We have a web ph P for how we also have an API that ph be provided by default for us.
+
+110
+00:08:03,590 --> 00:08:09,530
+And what does Lavoe do in the World Service Provider Lovelle has methods that we just pass the routes
+
+111
+00:08:09,590 --> 00:08:10,700
+in these fires.
+
+112
+00:08:10,700 --> 00:08:19,460
+So for example the weap routes in the web the PSP have been namespace to the control us down a tree
+
+113
+00:08:19,730 --> 00:08:25,100
+and they have also been rapt with all the middleware in the middle where weap group.
+
+114
+00:08:25,190 --> 00:08:29,590
+Ok this group right here and we can find this group in our Canada Ph be.
+
+115
+00:08:29,630 --> 00:08:34,660
+So all of this middleware applied to all of the routes in the web that Ph be.
+
+116
+00:08:34,700 --> 00:08:42,890
+Now if we also check out the API group it also wraps all of the middleware in that fire which is the
+
+117
+00:08:42,890 --> 00:08:48,820
+API that should be in Middleware from the middleware group called API.
+
+118
+00:08:48,920 --> 00:08:56,240
+It also prefixes all of those boucherie API and then it also places them in a namespace by default with
+
+119
+00:08:56,240 --> 00:08:57,580
+use control us.
+
+120
+00:08:57,590 --> 00:09:02,660
+Now we can also create our own custom middleware group by simply append introduce our read like we did
+
+121
+00:09:02,660 --> 00:09:03,570
+right here.
+
+122
+00:09:03,580 --> 00:09:08,750
+Apply all of the away from the weather PSAP and also apply our custom administration me to whether we
+
+123
+00:09:08,750 --> 00:09:11,540
+create as a check if the user is an administrator or.
+
+124
+00:09:11,720 --> 00:09:14,350
+And finally we prefix all of those watching.
+
+125
+00:09:14,390 --> 00:09:19,680
+I mean and then we also live up to them in that me that were custom that we created.
+
+126
+00:09:19,850 --> 00:09:26,850
+And we were friends that far as admin the pitch we changed the namespace to admin namespace and that
+
+127
+00:09:26,850 --> 00:09:29,170
+said we've customized our system.
+
+128
+00:09:29,330 --> 00:09:35,210
+Every single one of our control our science and ministry of choice in this admin directory and also
+
+129
+00:09:35,390 --> 00:09:37,080
+I think everything looks cleaner.
+
+130
+00:09:37,210 --> 00:09:37,710
+OK.
+
+131
+00:09:37,800 --> 00:09:41,050
+So what we found was no longer going to be crowded.
+
+132
+00:09:41,060 --> 00:09:46,050
+We have only the assertion about essential was the concern what the Ph be.
+
+133
+00:09:46,130 --> 00:09:52,270
+And if we want to register watch for our administrator or we can do that in the admin ph be pretty cool
+
+134
+00:09:52,280 --> 00:09:52,790
+right.
+
+135
+00:09:52,970 --> 00:09:56,060
+OK so thank you see you in the next lesson.
+

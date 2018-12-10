@@ -1,0 +1,308 @@
+1
+00:00:00,340 --> 00:00:03,870
+You want to verify that before creating a lesson we must actually passing a title.
+
+2
+00:00:03,870 --> 00:00:07,080
+So let's go ahead and create a test for that public option.
+
+3
+00:00:07,200 --> 00:00:10,830
+So first title is required.
+
+4
+00:00:10,900 --> 00:00:12,570
+Jacqui it's a lesson.
+
+5
+00:00:12,720 --> 00:00:15,010
+OK so how do we do this.
+
+6
+00:00:15,030 --> 00:00:18,780
+We need a series a lesson and we need to make that point requests.
+
+7
+00:00:18,840 --> 00:00:23,640
+OK so I'm just going to copy on the face and paste right here and I'm going to note the title from the
+
+8
+00:00:23,640 --> 00:00:30,150
+lesson so we don't need to parsing that title but we need to make an assertion that the title was required.
+
+9
+00:00:30,330 --> 00:00:37,490
+So right here Atsushi we're going to be making is simply a that the session has errors and this should
+
+10
+00:00:37,490 --> 00:00:40,520
+be validation for the title field.
+
+11
+00:00:40,740 --> 00:00:42,180
+OK so fair enough.
+
+12
+00:00:42,360 --> 00:00:47,910
+Longinus on Main Street or we might not need this would see through our test and then we Criddle series
+
+13
+00:00:48,210 --> 00:00:51,220
+in the series and then I said that the session has some errors.
+
+14
+00:00:51,330 --> 00:00:53,400
+So let's discuss specifically
+
+15
+00:00:56,260 --> 00:00:56,670
+Yeah.
+
+16
+00:00:56,700 --> 00:00:59,670
+And sure enough we have field as such and that force is true.
+
+17
+00:00:59,790 --> 00:01:02,720
+Now we need to make sure we have some validation right.
+
+18
+00:01:02,880 --> 00:01:05,170
+So head over to my lessons controller.
+
+19
+00:01:05,700 --> 00:01:09,230
+And I think this one line controllers are really the best.
+
+20
+00:01:09,240 --> 00:01:15,120
+Therefore I'm going to create a on request for this just so I don't have to include additional lines
+
+21
+00:01:15,150 --> 00:01:15,660
+like you.
+
+22
+00:01:15,760 --> 00:01:18,520
+So I'm not with this customer request.
+
+23
+00:01:18,720 --> 00:01:22,780
+Be sun make request quick lesson requests.
+
+24
+00:01:22,920 --> 00:01:23,980
+Hierarchy that's created.
+
+25
+00:01:24,030 --> 00:01:27,790
+Therefore we need to create the lesson request right here.
+
+26
+00:01:28,830 --> 00:01:33,840
+So Lavallee squinch you actually inject this one you need to encode that.
+
+27
+00:01:34,260 --> 00:01:40,990
+So use vodcast it's to be requests quick lesson request.
+
+28
+00:01:41,110 --> 00:01:42,280
+Let's head what's that class
+
+29
+00:01:45,470 --> 00:01:50,840
+OK so let's just say this is true and we're going to see how this applies meathook walks later on.
+
+30
+00:01:51,050 --> 00:01:56,960
+So we'll said that's true just really teach all egressed then for our test to Basri must make sure that
+
+31
+00:01:56,960 --> 00:01:59,510
+the title is required.
+
+32
+00:02:00,850 --> 00:02:04,420
+It's one that says one more time and we still get this error.
+
+33
+00:02:04,510 --> 00:02:06,510
+Now this is what I wanted to show you.
+
+34
+00:02:06,530 --> 00:02:07,910
+It still fails.
+
+35
+00:02:07,910 --> 00:02:08,330
+Why.
+
+36
+00:02:08,330 --> 00:02:10,490
+Because we're using the Jason method.
+
+37
+00:02:10,640 --> 00:02:15,930
+Now this post Jason mid-thought creates an environment and this environment is for testing.
+
+38
+00:02:15,960 --> 00:02:19,300
+Jason AP staff are nothing like sessions actually exist.
+
+39
+00:02:19,460 --> 00:02:22,410
+Therefore when we checked the session to conceive in the session.
+
+40
+00:02:22,600 --> 00:02:28,010
+But if we search this out actually to check the status of the response that we got would actually see
+
+41
+00:02:28,010 --> 00:02:29,510
+that it's a 4:22.
+
+42
+00:02:29,600 --> 00:02:30,420
+That's just the song.
+
+43
+00:02:30,700 --> 00:02:30,980
+Yeah.
+
+44
+00:02:31,070 --> 00:02:31,860
+On the process.
+
+45
+00:02:31,910 --> 00:02:32,350
+OK.
+
+46
+00:02:32,420 --> 00:02:39,350
+So we have a successful response as a 1:46 because Lavoe understands that this is a Jasen API in Vollmann
+
+47
+00:02:39,380 --> 00:02:40,310
+for the testing.
+
+48
+00:02:40,430 --> 00:02:42,590
+But let's switch this all back to session.
+
+49
+00:02:42,770 --> 00:02:43,750
+Was.
+
+50
+00:02:43,820 --> 00:02:50,150
+Jason right here and love is going to make and or did not read on normal post request including sessions
+
+51
+00:02:50,150 --> 00:02:53,410
+and all that then let's run this yeah.
+
+52
+00:02:53,460 --> 00:02:54,330
+And now posse's.
+
+53
+00:02:54,360 --> 00:02:54,790
+OK.
+
+54
+00:02:54,870 --> 00:03:00,220
+So you have to know when to use the post Jason or when you use to post depending on your situation.
+
+55
+00:03:00,270 --> 00:03:02,740
+In this case the post was just OK.
+
+56
+00:03:02,960 --> 00:03:05,810
+Now we need to also test that for the description.
+
+57
+00:03:05,880 --> 00:03:15,930
+Let's just get this math on test or title or test or description is required quick a quick lesson for
+
+58
+00:03:15,960 --> 00:03:20,330
+when lessons are really is going to be read about that description.
+
+59
+00:03:20,410 --> 00:03:21,050
+Right.
+
+60
+00:03:21,430 --> 00:03:24,660
+So be studying and pull all the description here.
+
+61
+00:03:24,910 --> 00:03:27,890
+So I assert that it was for description.
+
+62
+00:03:27,940 --> 00:03:34,630
+So let's run this specific test to make sure it fills in DOS box or quit lessons requests.
+
+63
+00:03:34,810 --> 00:03:40,290
+Or we could just add one additional move for the description to see each required one that tests one
+
+64
+00:03:40,290 --> 00:03:42,570
+more time and everything should be OK.
+
+65
+00:03:42,870 --> 00:03:49,070
+I'll give you this not one more test for the episode number and then B do ID and I'll test the discussion
+
+66
+00:03:49,070 --> 00:03:50,910
+is quite quick on this.
+
+67
+00:03:51,380 --> 00:03:55,990
+So test and it says of number is required to create a lesson.
+
+68
+00:03:56,230 --> 00:03:58,720
+So rather than these We're going to parse description.
+
+69
+00:03:58,950 --> 00:03:59,310
+OK.
+
+70
+00:03:59,320 --> 00:04:02,880
+So I assert that we have arrows for a bizarre number.
+
+71
+00:04:03,100 --> 00:04:04,550
+Let's run that again.
+
+72
+00:04:05,070 --> 00:04:05,540
+OK.
+
+73
+00:04:05,590 --> 00:04:07,110
+It fails.
+
+74
+00:04:07,160 --> 00:04:10,540
+This jackpot of addition will make sure it's required.
+
+75
+00:04:13,590 --> 00:04:17,410
+And it says Now I'm going to pause for a second for this video.
+
+76
+00:04:17,430 --> 00:04:20,110
+I'm going to call it a D and see you in the next one.
+
+77
+00:04:20,190 --> 00:04:20,550
+Thank you.
+

@@ -1,0 +1,224 @@
+1
+00:00:00,520 --> 00:00:05,530
+The next clean up exercise we're going to Javie subtly cleaning up the way we send to confront emotively
+
+2
+00:00:05,590 --> 00:00:06,060
+use.
+
+3
+00:00:06,200 --> 00:00:11,830
+For now what happens is when they use a wrench registar it's going to send the email at the moment but
+
+4
+00:00:11,830 --> 00:00:15,550
+we want to switch out the source knowledge to use Lovell's queuing system.
+
+5
+00:00:15,550 --> 00:00:15,910
+OK.
+
+6
+00:00:15,940 --> 00:00:17,840
+So that this email is actually sent.
+
+7
+00:00:17,950 --> 00:00:22,660
+Behind the scenes and the user can navigate the Web site normally.
+
+8
+00:00:22,690 --> 00:00:26,400
+Have a great user experience rather than waiting for an email to be sent.
+
+9
+00:00:26,600 --> 00:00:34,840
+So head over to confirm your email which is on the label and the only thing we need to do to cure this
+
+10
+00:00:34,900 --> 00:00:42,670
+is to implemented the shoe Q interface so increments should queue and automatically every job that implements
+
+11
+00:00:42,670 --> 00:00:48,280
+this interface is going to be added to the queue by Lavoe But first we also need to go into all of that
+
+12
+00:00:48,340 --> 00:00:51,310
+in the file and updates the queue settings.
+
+13
+00:00:51,310 --> 00:00:56,240
+So for example now our queue drag racing which means it's going to process the queue in real time.
+
+14
+00:00:56,320 --> 00:01:01,870
+Boy you want to do is set up database as the queue driver and in case you want to know all the drivers
+
+15
+00:01:01,870 --> 00:01:06,510
+we have in a queue that BHB we have seen which is the default.
+
+16
+00:01:06,520 --> 00:01:10,410
+We have database beanstalks which are going to be using on our server.
+
+17
+00:01:10,630 --> 00:01:12,120
+We have obscurus ready.
+
+18
+00:01:12,130 --> 00:01:15,120
+And we also know which means you're just put off the queue.
+
+19
+00:01:15,190 --> 00:01:20,180
+OK so we set that up and the last thing we need to do such and it sets off a huge table.
+
+20
+00:01:20,200 --> 00:01:20,670
+Right.
+
+21
+00:01:20,680 --> 00:01:22,580
+So we resign.
+
+22
+00:01:22,680 --> 00:01:24,730
+Q table.
+
+23
+00:01:24,820 --> 00:01:29,830
+And what this will do is that it's just going to create a migration and this migration is going to create
+
+24
+00:01:30,160 --> 00:01:31,420
+a table called jobs.
+
+25
+00:01:31,420 --> 00:01:38,410
+So if you had to create jobs table which is the newly created migration it would simply put information
+
+26
+00:01:38,410 --> 00:01:42,790
+about the cube such that every time we put something to a queue it's going to save your job.
+
+27
+00:01:42,790 --> 00:01:44,430
+And then we can process it in real time.
+
+28
+00:01:44,490 --> 00:01:45,000
+OK.
+
+29
+00:01:45,130 --> 00:01:54,720
+So for now since we've already queued that email Let's go ahead and try to register a new user so slash
+
+30
+00:01:54,750 --> 00:02:07,870
+registar and then placing some dummy data dummy data that come in the password when you click on registar.
+
+31
+00:02:08,260 --> 00:02:11,500
+We have this error that sees this too of you know phone hacking.
+
+32
+00:02:11,530 --> 00:02:16,870
+So that's because we didn't migrate all our database so that we have the QS table right there but actually
+
+33
+00:02:16,870 --> 00:02:22,110
+it shows us that we are actually trying to put in something into the database rather than sending that
+
+34
+00:02:22,110 --> 00:02:22,630
+e-mail.
+
+35
+00:02:22,690 --> 00:02:32,780
+OK so I'm just going to go back to my told me no one ph be other than my great squinch my great chups
+
+36
+00:02:32,810 --> 00:02:33,590
+stable.
+
+37
+00:02:33,760 --> 00:02:38,120
+And then I'm going to log out and then I'm going to try to register a new user.
+
+38
+00:02:38,230 --> 00:02:38,770
+OK.
+
+39
+00:02:38,800 --> 00:02:46,630
+So I'm just going to see fake user fake user that comb passing a password.
+
+40
+00:02:46,660 --> 00:02:52,040
+Click on registar and we see in a second less than the second we received a response.
+
+41
+00:02:52,060 --> 00:02:53,050
+Welcome to dashboard.
+
+42
+00:02:53,110 --> 00:02:53,550
+OK.
+
+43
+00:02:53,680 --> 00:02:54,920
+So that's what we want.
+
+44
+00:02:54,970 --> 00:02:56,740
+But that email has not been sent.
+
+45
+00:02:56,800 --> 00:02:57,250
+Right.
+
+46
+00:02:57,400 --> 00:03:00,660
+So what you want to do right now is starts Ah-Q Walker.
+
+47
+00:03:00,700 --> 00:03:08,180
+So if I say get our son Q Walk it's not way to process every single job that is in our jobs table.
+
+48
+00:03:08,230 --> 00:03:08,600
+OK.
+
+49
+00:03:08,620 --> 00:03:13,300
+So right here you see it has processed and sent the Confirm your e-mail.
+
+50
+00:03:13,420 --> 00:03:17,430
+So we check out Milorad right now we can actually see that that e-mail was sent.
+
+51
+00:03:17,590 --> 00:03:25,590
+But as I said the moment M. Trop is down for maintenance but I promise you that Amy's husband said.
+
+52
+00:03:26,230 --> 00:03:30,920
+And by the time you're trying this out Shirley milksop will be out of Minturn's.
+
+53
+00:03:31,050 --> 00:03:31,480
+OK.
+
+54
+00:03:31,480 --> 00:03:37,270
+So that's how we can actually use QS in our application every single process that is going to take a
+
+55
+00:03:37,270 --> 00:03:43,460
+while before completing it can just implement should queue and automatically it's going to cure that
+
+56
+00:03:43,460 --> 00:03:44,320
+to the dieter is.
+

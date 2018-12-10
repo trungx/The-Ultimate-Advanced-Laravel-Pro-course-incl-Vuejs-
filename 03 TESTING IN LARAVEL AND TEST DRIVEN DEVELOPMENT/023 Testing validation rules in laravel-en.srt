@@ -1,0 +1,228 @@
+1
+00:00:00,950 --> 00:00:06,280
+We don't want any use that should be able to create post but only authenticated use us.
+
+2
+00:00:06,410 --> 00:00:11,570
+But before we write test for that what are we going to do is actually write some validation test for
+
+3
+00:00:11,570 --> 00:00:17,600
+creating Borst So we are going to be writing tests to make sure that a title must be required to create
+
+4
+00:00:17,600 --> 00:00:20,000
+a post on a body must also be required.
+
+5
+00:00:20,150 --> 00:00:23,470
+So let's go ahead and create that public function test.
+
+6
+00:00:23,500 --> 00:00:26,560
+Title is required to create most.
+
+7
+00:00:26,720 --> 00:00:28,160
+So how are we going to do this.
+
+8
+00:00:28,160 --> 00:00:33,240
+We are going to send a request to that and point but we're not going to pass in a title so we're going
+
+9
+00:00:33,240 --> 00:00:39,470
+to said the title to no and then we are going to assert that the session has arrows.
+
+10
+00:00:39,530 --> 00:00:41,910
+And one of those arrows is going to be title.
+
+11
+00:00:41,990 --> 00:00:42,500
+Right.
+
+12
+00:00:42,500 --> 00:00:50,600
+So in our test response that BHB we have these asserts session has errors because remember we feel a
+
+13
+00:00:50,610 --> 00:00:55,820
+validation feel in Lovelle it's going to redirect the use of block or thematically and it's going to
+
+14
+00:00:55,820 --> 00:00:59,690
+set some sesshin keys containing the rendition areas that we have.
+
+15
+00:00:59,750 --> 00:01:02,080
+So let's go ahead and assert this.
+
+16
+00:01:02,120 --> 00:01:09,860
+So we're going to see response asserts session has errors and we're going to pass in the title as a
+
+17
+00:01:09,860 --> 00:01:10,510
+key.
+
+18
+00:01:10,640 --> 00:01:11,220
+OK.
+
+19
+00:01:11,420 --> 00:01:18,310
+So if you make a request to that end point without the title it should give us an error in the session.
+
+20
+00:01:18,350 --> 00:01:26,900
+So let's run this test independently by giving it a go and is going to be title we quiet is the name
+
+21
+00:01:26,900 --> 00:01:27,740
+of our group.
+
+22
+00:01:27,890 --> 00:01:36,980
+That's how the term you know one that we title we quiet as a group and we haven't seen in take constrained
+
+23
+00:01:36,980 --> 00:01:40,430
+volition not no constraint field on post title.
+
+24
+00:01:40,500 --> 00:01:40,970
+OK.
+
+25
+00:01:41,000 --> 00:01:46,720
+So this is coming from our database saying that the first is not supposed to be null.
+
+26
+00:01:46,820 --> 00:01:48,260
+But then we give you all.
+
+27
+00:01:48,380 --> 00:01:54,110
+So what we're going to do is actually mirror that error a little bit by going to a clipboard stable
+
+28
+00:01:54,620 --> 00:01:58,380
+and then we're going to meet that error by making this an off label.
+
+29
+00:01:58,610 --> 00:02:01,780
+And this is just going to help us actually drive our validation.
+
+30
+00:02:01,790 --> 00:02:03,240
+So let's run that again.
+
+31
+00:02:03,550 --> 00:02:09,980
+And then we have session is missing expected key areas because if we had the words on what test response
+
+32
+00:02:10,280 --> 00:02:16,550
+first of all our role for them are checks if there's a key for cross and then it starts checking if
+
+33
+00:02:16,970 --> 00:02:19,130
+the error has the title key right.
+
+34
+00:02:19,150 --> 00:02:22,160
+And so that's because we don't even have any validation at all.
+
+35
+00:02:22,160 --> 00:02:28,660
+So let's head over to our controller and here again to validate the data that is being passed in.
+
+36
+00:02:28,700 --> 00:02:35,740
+So this validates we're going to take in the session and we're going to pass in an array of our nation
+
+37
+00:02:35,860 --> 00:02:36,670
+laws.
+
+38
+00:02:36,830 --> 00:02:43,280
+So first of all I'm just going to create available here for a session and then our request radiation
+
+39
+00:02:43,330 --> 00:02:46,140
+was sayto must be required.
+
+40
+00:02:46,390 --> 00:02:51,540
+OK so now that we have this validation rule for what it's all let's run that test again.
+
+41
+00:02:51,680 --> 00:02:57,440
+And really we have a validation exception that is foreign and that Videsh an exception is thrown because
+
+42
+00:02:57,950 --> 00:03:02,210
+in our handler we are twinn the exception that's uncommented a little bit.
+
+43
+00:03:02,330 --> 00:03:06,380
+And check out that and obviously we have a successful test.
+
+44
+00:03:06,400 --> 00:03:11,770
+Now let's wait exactly the same test for our body in our quick post-test.
+
+45
+00:03:11,810 --> 00:03:14,030
+So I'm just going to duplicate all of this.
+
+46
+00:03:14,270 --> 00:03:17,790
+And here is going to be body required for a good name.
+
+47
+00:03:17,990 --> 00:03:19,710
+And I'm just going to quit this too.
+
+48
+00:03:19,770 --> 00:03:22,350
+Body is required to quit posting.
+
+49
+00:03:22,470 --> 00:03:30,090
+And here we're going to have new post-Idol and this time around the body is going to be normal and we
+
+50
+00:03:30,100 --> 00:03:35,230
+are going to assert that assertion has the body aasan.
+
+51
+00:03:35,370 --> 00:03:36,820
+So let's run that test.
+
+52
+00:03:36,840 --> 00:03:45,440
+And this is going to be body quiet for a surgeon that has key areas because the radiation is just passing.
+
+53
+00:03:45,600 --> 00:03:50,000
+So we said that body required run that again.
+
+54
+00:03:50,040 --> 00:03:56,910
+And we have a successful test but let's not forget in our create stable we want to move this low level
+
+55
+00:03:56,910 --> 00:04:01,880
+flight that we used to test to make sure that the test give us expected.
+
+56
+00:04:02,370 --> 00:04:04,440
+So everything works perfectly.
+
+57
+00:04:04,560 --> 00:04:09,860
+Let's run everything in a suit and we have all successful responses.
+

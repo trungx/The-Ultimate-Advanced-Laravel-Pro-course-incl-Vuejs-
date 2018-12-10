@@ -1,0 +1,196 @@
+1
+00:00:00,360 --> 00:00:06,210
+As a result of our little math or change in the last episode we have a little problem and we are just
+
+2
+00:00:06,210 --> 00:00:07,700
+in the last lesson right here.
+
+3
+00:00:07,710 --> 00:00:10,110
+As you can see but then you have the next button.
+
+4
+00:00:10,140 --> 00:00:10,920
+Why is this.
+
+5
+00:00:11,040 --> 00:00:11,700
+That's.
+
+6
+00:00:11,740 --> 00:00:13,650
+I watched Blade BHB.
+
+7
+00:00:13,770 --> 00:00:14,780
+And check this out.
+
+8
+00:00:14,790 --> 00:00:21,150
+Remember the way we know if it's the last series is simply by checking if the next lesson is null and
+
+9
+00:00:21,150 --> 00:00:22,870
+the same thing with the previous lesson.
+
+10
+00:00:22,890 --> 00:00:24,380
+We're just checking if it's not.
+
+11
+00:00:24,510 --> 00:00:26,740
+But this time on we refer refactored our methods.
+
+12
+00:00:26,760 --> 00:00:28,530
+And they would never return.
+
+13
+00:00:28,680 --> 00:00:34,530
+Therefore this method would always show the next buttons no matter the lesson that we are viewing.
+
+14
+00:00:34,530 --> 00:00:40,680
+So let's simply change this for us to know if this is truly the last lesson.
+
+15
+00:00:40,710 --> 00:00:46,540
+Remember when it's the last lesson we would return the exact same lesson we are seeing right now.
+
+16
+00:00:46,620 --> 00:00:47,130
+OK.
+
+17
+00:00:47,220 --> 00:00:52,960
+So what we are going to be doing is checking if the next lesson is not equal to lesson ID.
+
+18
+00:00:53,070 --> 00:00:53,720
+OK.
+
+19
+00:00:53,730 --> 00:00:57,810
+So if it's equal it means that this is not really the last lesson.
+
+20
+00:00:57,810 --> 00:00:59,150
+Same thing with the previous.
+
+21
+00:00:59,190 --> 00:01:05,350
+If it's equal it means this is the first lesson because remember if it's the last lesson where turn
+
+22
+00:01:05,370 --> 00:01:10,190
+in the same lesson and if it's the first lesson we're returning the same lesson which is the first.
+
+23
+00:01:10,320 --> 00:01:10,750
+OK.
+
+24
+00:01:10,920 --> 00:01:12,500
+So who refresh now.
+
+25
+00:01:12,780 --> 00:01:14,050
+And it's not going away.
+
+26
+00:01:14,070 --> 00:01:14,400
+OK.
+
+27
+00:01:14,400 --> 00:01:17,760
+So we should be comparing ID right.
+
+28
+00:01:17,820 --> 00:01:20,890
+So we should compare IDs.
+
+29
+00:01:21,060 --> 00:01:25,580
+We should also implement that right here and they should also see ID.
+
+30
+00:01:25,660 --> 00:01:26,180
+OK.
+
+31
+00:01:26,250 --> 00:01:28,040
+Refresh.
+
+32
+00:01:28,040 --> 00:01:28,920
+Very go.
+
+33
+00:01:28,920 --> 00:01:30,170
+Looks like it's back to normal.
+
+34
+00:01:30,180 --> 00:01:31,320
+We don't have that bottle.
+
+35
+00:01:31,450 --> 00:01:34,730
+If I visit the first we also don't have the button.
+
+36
+00:01:34,740 --> 00:01:40,560
+Now I've taken the liberty of doing a little bit of cleanup for an application like the all series we
+
+37
+00:01:40,560 --> 00:01:42,390
+have an awesome speech right now.
+
+38
+00:01:42,450 --> 00:01:44,880
+And recently display was all of the series.
+
+39
+00:01:44,880 --> 00:01:45,450
+OK.
+
+40
+00:01:45,450 --> 00:01:51,900
+So just a page where you can see all the series that are in the application and then for the video lessons.
+
+41
+00:01:51,900 --> 00:01:59,880
+Actually if you check out our whole series and we visit this series and we check out by starting we
+
+42
+00:01:59,880 --> 00:02:02,190
+actually have all the lessons displayed here.
+
+43
+00:02:02,190 --> 00:02:07,990
+So if you want to take this region it's naturally included on the page for the single series.
+
+44
+00:02:08,070 --> 00:02:09,230
+Feel free to do it.
+
+45
+00:02:09,330 --> 00:02:10,930
+It's all up to you.
+
+46
+00:02:11,070 --> 00:02:14,550
+But I want us to actually dive straight into our payments.
+
+47
+00:02:14,640 --> 00:02:15,900
+Doing stuff with money.
+
+48
+00:02:15,960 --> 00:02:18,800
+The very very next lesson.
+
+49
+00:02:19,050 --> 00:02:21,000
+Thank you so much and see you there.
+

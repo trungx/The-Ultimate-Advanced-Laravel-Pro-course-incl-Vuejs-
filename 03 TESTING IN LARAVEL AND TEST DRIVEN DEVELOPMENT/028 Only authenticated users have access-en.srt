@@ -1,0 +1,120 @@
+1
+00:00:00,270 --> 00:00:06,210
+Why don't we write another lab or dusk test to make sure that only an authenticated user can naturally
+
+2
+00:00:06,210 --> 00:00:07,100
+create a pause.
+
+3
+00:00:07,110 --> 00:00:07,410
+Right.
+
+4
+00:00:07,410 --> 00:00:12,170
+So if I use a trice viscid this endpoint he's redirect that's the logging page.
+
+5
+00:00:12,180 --> 00:00:13,350
+So let's think of that.
+
+6
+00:00:13,380 --> 00:00:17,970
+I'll just copy every single thing in this test just to save some time.
+
+7
+00:00:17,970 --> 00:00:19,230
+Paste this right here.
+
+8
+00:00:19,340 --> 00:00:22,700
+Says the user can create post.
+
+9
+00:00:22,800 --> 00:00:27,610
+No need to create a user because we want to make sure the user is not authenticated.
+
+10
+00:00:27,680 --> 00:00:32,490
+We're not going to be logging the user in then we're going to visit this route and we're not going to
+
+11
+00:00:32,490 --> 00:00:35,290
+be asserting any of this.
+
+12
+00:00:35,400 --> 00:00:41,020
+We're going to simply see a certain path IISS slash logging.
+
+13
+00:00:41,130 --> 00:00:41,600
+Right.
+
+14
+00:00:41,640 --> 00:00:46,210
+So I'm just going to pull this off and we have what's asked.
+
+15
+00:00:46,230 --> 00:00:47,230
+Revisit that page.
+
+16
+00:00:47,270 --> 00:00:50,560
+I said that it is slash logging simple.
+
+17
+00:00:50,610 --> 00:01:00,690
+So let's create a group so we can run this stairs individually and we'll see create host of whatever
+
+18
+00:01:00,690 --> 00:01:02,310
+name you want to give right.
+
+19
+00:01:02,310 --> 00:01:07,090
+So that's one quick post off the group Yikes.
+
+20
+00:01:07,130 --> 00:01:12,870
+And we have a figure saying filled searching that's two strings are equal because the use of words to
+
+21
+00:01:13,470 --> 00:01:17,350
+redirect that to this page and he actually quit the post-white.
+
+22
+00:01:17,370 --> 00:01:24,600
+So let's head over to our Web PH BE and see how we could fix this so we could simply attach a middleware
+
+23
+00:01:26,460 --> 00:01:33,180
+of auth to this route to make sure that only the authenticated user can visit this and point.
+
+24
+00:01:33,210 --> 00:01:33,650
+Right.
+
+25
+00:01:33,810 --> 00:01:36,900
+So let's go ahead and run this again.
+
+26
+00:01:44,800 --> 00:01:45,210
+Awesome.
+
+27
+00:01:45,220 --> 00:01:47,360
+We have a successful test.
+
+28
+00:01:47,410 --> 00:01:52,970
+So any person trying to visit this route must be authenticated on why we're here.
+
+29
+00:01:52,980 --> 00:01:58,330
+We could really just protect the post side of the road to make sure that only authenticated users are
+
+30
+00:01:58,330 --> 00:02:00,530
+truly make a request to this end point.
+

@@ -1,0 +1,188 @@
+1
+00:00:00,780 --> 00:00:06,490
+One little thing I want to talk about is the database we are using right now we are using my skill for
+
+2
+00:00:06,490 --> 00:00:07,050
+our test.
+
+3
+00:00:07,080 --> 00:00:14,160
+And that's not the best choice for our test because it takes some time for us structurally safe a record
+
+4
+00:00:14,400 --> 00:00:17,540
+to our database which is on the hard disk.
+
+5
+00:00:17,730 --> 00:00:20,770
+And then we try that data before our test is completed.
+
+6
+00:00:20,970 --> 00:00:29,130
+So if I run a test shoot right now everything we can see it takes almost six seconds to run.
+
+7
+00:00:29,280 --> 00:00:34,650
+But then what I'm going to do is actually switch up switch to a data base that we are using for a test
+
+8
+00:00:34,680 --> 00:00:36,870
+and I'm going to use my skill light.
+
+9
+00:00:36,870 --> 00:00:42,980
+So first of all let me just create a Maskil like database and I'm just going to college testing that.
+
+10
+00:00:43,000 --> 00:00:44,220
+Q All right.
+
+11
+00:00:44,610 --> 00:00:48,160
+And I'm going to see it in my database directory.
+
+12
+00:00:48,240 --> 00:00:51,280
+So touch database slash Destino that's going right.
+
+13
+00:00:51,480 --> 00:00:53,850
+And sure enough in the what is the real tree.
+
+14
+00:00:54,540 --> 00:00:57,530
+We should have testing that skill like created for us.
+
+15
+00:00:57,540 --> 00:01:04,830
+Now how do we tol'able to use unless it's a beast which is much lighter much faster than my skill because
+
+16
+00:01:04,890 --> 00:01:09,060
+it works in memory rather than using the default that it's using.
+
+17
+00:01:09,180 --> 00:01:15,150
+So how do we tell Lavoe to actually use a secure light which is much faster and better for testing rather
+
+18
+00:01:15,150 --> 00:01:16,720
+than using my skill.
+
+19
+00:01:16,880 --> 00:01:22,500
+Let's head over to our database the Ph.D. and right here let's check out our connections.
+
+20
+00:01:22,500 --> 00:01:28,930
+We have the Escola connection which is database or that's called like we change the connection to testing
+
+21
+00:01:29,120 --> 00:01:33,470
+that's light and the mice go connection is already set.
+
+22
+00:01:33,480 --> 00:01:40,110
+So we're going to be telling the HP unit in particular to use this database connection rather than using
+
+23
+00:01:40,320 --> 00:01:41,100
+this one.
+
+24
+00:01:41,100 --> 00:01:44,780
+So let's go to HP unit ex-MIL.
+
+25
+00:01:44,940 --> 00:01:51,480
+And what are we going to do right here is create a new environment variable and this file is simply
+
+26
+00:01:51,630 --> 00:01:54,310
+a configuration for PH P unit.
+
+27
+00:01:54,390 --> 00:01:58,530
+So a lot of boilerplate is putting right here for us by Lavo.
+
+28
+00:01:58,550 --> 00:02:00,550
+But let's not really care about that.
+
+29
+00:02:00,660 --> 00:02:07,320
+Let's just go ahead and create an environment variable that is going to set the database to use so G-B
+
+30
+00:02:08,430 --> 00:02:12,700
+connection like we said we want to use a secure line for testing.
+
+31
+00:02:13,050 --> 00:02:21,570
+And the last thing we need to pass it is D-B database and we're going to see the database should be
+
+32
+00:02:21,960 --> 00:02:23,510
+in memory.
+
+33
+00:02:23,730 --> 00:02:25,830
+So that's it for configuration.
+
+34
+00:02:25,830 --> 00:02:33,390
+Let's try now to run our test and we can see the amount of speed that we gain just by changing our database
+
+35
+00:02:33,600 --> 00:02:34,380
+driver.
+
+36
+00:02:34,380 --> 00:02:44,160
+So first of all we were using my skill connection if I change this to my skill and cut this out we can
+
+37
+00:02:44,160 --> 00:02:47,070
+see that it took almost four seconds.
+
+38
+00:02:47,070 --> 00:02:50,400
+It took more than four seconds to actually run our test.
+
+39
+00:02:50,400 --> 00:02:57,270
+But if I change this much as light and use an in-memory database we can see the amount of time that
+
+40
+00:02:57,270 --> 00:02:58,040
+is saved.
+
+41
+00:02:58,050 --> 00:03:00,020
+So it's really really fast.
+
+42
+00:03:00,030 --> 00:03:01,790
+The difference is outstanding.
+
+43
+00:03:01,830 --> 00:03:07,890
+And by the time you're writing applications that have about 100 to 200 test this is going to really
+
+44
+00:03:07,890 --> 00:03:14,100
+be very helpful because you don't want to send your code to a developer and he takes hours upon hours
+
+45
+00:03:14,100 --> 00:03:14,900
+to test your code.
+
+46
+00:03:14,940 --> 00:03:15,270
+OK.
+
+47
+00:03:15,300 --> 00:03:21,050
+So this is as it's not even after half a second and it's perfect for testing.
+

@@ -1,0 +1,288 @@
+1
+00:00:00,310 --> 00:00:04,560
+Now let's do some clean up and finally test our system my own test.
+
+2
+00:00:04,570 --> 00:00:10,430
+I want to include one assertion and that's the assertion to make sure that we have a session.
+
+3
+00:00:10,430 --> 00:00:17,930
+So a set session costs success and this success should actually say your email has been confirmed.
+
+4
+00:00:18,000 --> 00:00:18,460
+OK.
+
+5
+00:00:18,570 --> 00:00:23,480
+So let's work on that test and sure enough we don't have that session said.
+
+6
+00:00:23,650 --> 00:00:28,720
+But let's head over a confirmed email control and set up this session session.
+
+7
+00:00:28,860 --> 00:00:35,810
+Flash success and the value for the key should be this string like your kids.
+
+8
+00:00:36,000 --> 00:00:38,130
+So let's run that one more time.
+
+9
+00:00:38,670 --> 00:00:39,880
+And we're back to green.
+
+10
+00:00:40,140 --> 00:00:46,760
+OK so waiting we write a test for when things go wrong test or use all these redirector.
+
+11
+00:00:46,920 --> 00:00:48,830
+If so can be is wrong.
+
+12
+00:00:48,990 --> 00:00:55,180
+So we'll just do exactly the same thing create or use or make a request to that end point.
+
+13
+00:00:55,290 --> 00:01:01,010
+But this time on whether that person in the right tool can read just cannot pass in wrong token and
+
+14
+00:01:01,010 --> 00:01:05,930
+we're going to run some assertions so assert redirects to hold.
+
+15
+00:01:06,540 --> 00:01:14,400
+And we also assert session horse and error key and that he sees for mation.
+
+16
+00:01:14,430 --> 00:01:15,540
+So can mark.
+
+17
+00:01:15,560 --> 00:01:16,520
+We cognized.
+
+18
+00:01:16,560 --> 00:01:16,990
+OK.
+
+19
+00:01:17,010 --> 00:01:20,130
+So that's what happens when the talking is not correct.
+
+20
+00:01:20,130 --> 00:01:25,860
+Let's go ahead and one that says already and sure enough we have a feeling because we 22:00.
+
+21
+00:01:25,860 --> 00:01:32,250
+Now let's head over to our controller and then you know what else block is simply going to see session
+
+22
+00:01:32,310 --> 00:01:33,900
+flash Iraki.
+
+23
+00:01:34,140 --> 00:01:37,230
+And that message is going to be exactly what we have here.
+
+24
+00:01:37,260 --> 00:01:42,380
+Conformations who can not be customized and return redirects to the home page.
+
+25
+00:01:44,490 --> 00:01:46,440
+Arkie we have a successful test.
+
+26
+00:01:46,500 --> 00:01:47,560
+Final step.
+
+27
+00:01:47,580 --> 00:01:51,530
+Let's go ahead and make sure or confirm your email Matsen.
+
+28
+00:01:51,550 --> 00:01:53,500
+I tried the leads to that approach.
+
+29
+00:01:53,520 --> 00:01:53,930
+Right.
+
+30
+00:01:54,060 --> 00:01:58,350
+So we can actually simply use avouch name that sees confirm email.
+
+31
+00:01:58,470 --> 00:02:02,960
+And then in a way that we we just need to give these routes a name right.
+
+32
+00:02:03,090 --> 00:02:06,830
+So name confirm email and we should be good to go.
+
+33
+00:02:06,900 --> 00:02:08,360
+So for us it is this.
+
+34
+00:02:08,370 --> 00:02:11,080
+Let's go ahead and tweak it sets r.p.m. drop us.
+
+35
+00:02:11,140 --> 00:02:16,900
+That's a track to receive our emails copied and used only right here in my anyhow.
+
+36
+00:02:17,310 --> 00:02:21,540
+I'm going to be studying the mail truck usernames is going to be here.
+
+37
+00:02:21,540 --> 00:02:24,380
+Copy the password and I'm going to put it here.
+
+38
+00:02:24,480 --> 00:02:28,200
+OK so that's basically all I need to send e-mails.
+
+39
+00:02:28,190 --> 00:02:33,810
+And now if I tried this out in the Masayoshi that it truly truly got via e-mails I think I left out
+
+40
+00:02:33,810 --> 00:02:38,820
+something and that's in our template we need to actually pass in the token Trudy's you know what we
+
+41
+00:02:38,820 --> 00:02:46,230
+could do here is just concatenate this to where a token equals and still concatenate these to use or
+
+42
+00:02:46,230 --> 00:02:47,380
+confirm token.
+
+43
+00:02:47,430 --> 00:02:53,270
+So we actually in of Heartbeat token to that Motson for us to actually have access to the user.
+
+44
+00:02:53,430 --> 00:02:58,830
+We need to head the virtual Me level and actually receive it right because the properties that are existent
+
+45
+00:02:58,860 --> 00:03:03,810
+on these Magdalens simply are the public properties of this class.
+
+46
+00:03:03,960 --> 00:03:09,400
+Therefore we need to set up a public use our property and we see it in here.
+
+47
+00:03:09,570 --> 00:03:15,200
+So use and this user because user I'm just going to be generic right here.
+
+48
+00:03:15,210 --> 00:03:19,020
+But of course you can take into to make sure you've not seen any subtle beats.
+
+49
+00:03:19,240 --> 00:03:24,270
+Then we need to go to whoever is sending this mail which is in all registar control.
+
+50
+00:03:24,930 --> 00:03:28,400
+You know we just stopped mid-thought and we need to pass in the user.
+
+51
+00:03:28,560 --> 00:03:29,020
+OK.
+
+52
+00:03:29,100 --> 00:03:31,850
+So confirm your email and will post in the news.
+
+53
+00:03:31,870 --> 00:03:36,590
+So we have access to that user who will confirm your email the bleep that it should be.
+
+54
+00:03:36,930 --> 00:03:37,600
+OK.
+
+55
+00:03:37,620 --> 00:03:42,160
+So let's make this walk or visit maybe just about rigid state test.
+
+56
+00:03:42,270 --> 00:03:44,820
+And that takes the whole means no loss.
+
+57
+00:03:44,850 --> 00:03:51,030
+Let's check out that Chanoff we have an e-mail to test our test at converso but cost one more step before
+
+58
+00:03:51,030 --> 00:03:53,550
+joining us from your e-mail.
+
+59
+00:03:53,580 --> 00:03:57,750
+And right now we discovered that this e-mail actually is Fosi need to talk and right.
+
+60
+00:03:57,750 --> 00:04:01,070
+So let's click on it takes us to that end point.
+
+61
+00:04:01,200 --> 00:04:02,980
+And he says an error.
+
+62
+00:04:03,330 --> 00:04:05,060
+I commenced to function this.
+
+63
+00:04:05,150 --> 00:04:05,720
+OK.
+
+64
+00:04:05,730 --> 00:04:12,360
+So this is simply because remember we switched out this route just to test out confirm your e-mail functionality.
+
+65
+00:04:12,420 --> 00:04:12,780
+OK.
+
+66
+00:04:12,790 --> 00:04:13,840
+But everything's OK.
+
+67
+00:04:13,920 --> 00:04:14,420
+Perfect.
+
+68
+00:04:14,520 --> 00:04:15,120
+OK.
+
+69
+00:04:15,330 --> 00:04:19,190
+So when you clicked on from your e-mail you got to really get that done.
+
+70
+00:04:19,470 --> 00:04:28,360
+Now let's just check out our database to make sure that the news is confirmed so our users get on off.
+
+71
+00:04:28,380 --> 00:04:34,110
+And so it's not options but cost run that and we see the conference or can you not.
+
+72
+00:04:34,140 --> 00:04:37,720
+So it means we have one confirmed use in our system.
+

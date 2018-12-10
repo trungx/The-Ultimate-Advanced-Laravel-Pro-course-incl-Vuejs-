@@ -1,0 +1,708 @@
+1
+00:00:00,240 --> 00:00:04,830
+OK we almost went crazy in the last video when we actually try to find the show log in my thought and
+
+2
+00:00:04,830 --> 00:00:07,680
+the log in method and we couldn't find it.
+
+3
+00:00:07,680 --> 00:00:10,520
+So let's dive and see what it is doing for us.
+
+4
+00:00:10,560 --> 00:00:16,940
+Again behind the scenes we have a logging controller and labo uses this concept of Single Responsibility
+
+5
+00:00:17,010 --> 00:00:20,970
+traits which means defining traits and let me just have one responsibility.
+
+6
+00:00:21,000 --> 00:00:23,340
+You see this everywhere around Lavo.
+
+7
+00:00:23,370 --> 00:00:29,160
+So in this case level defiance and authenticates you use US traits and these traits is coming from the
+
+8
+00:00:29,160 --> 00:00:31,130
+foundation of authenticates years.
+
+9
+00:00:31,350 --> 00:00:37,630
+So it's coming from a vendor directory and we can actually go ahead and see what this Treach looks like.
+
+10
+00:00:37,710 --> 00:00:43,590
+So head over to the definition and if we try to check out our show log in for mid-thought.
+
+11
+00:00:43,590 --> 00:00:44,580
+There we have it.
+
+12
+00:00:44,670 --> 00:00:46,290
+And I will log in my thought.
+
+13
+00:00:46,290 --> 00:00:48,300
+We actually have it right here also.
+
+14
+00:00:48,420 --> 00:00:54,600
+So our show logging method simply returns to the view of that logging just like we like spec right.
+
+15
+00:00:54,600 --> 00:01:00,570
+Therefore if you want to overrides which you view is that when a user visits the logging route all you
+
+16
+00:01:00,570 --> 00:01:05,750
+can do is actually copy this my thought Head over to your logging controller base that mid-thought in
+
+17
+00:01:05,910 --> 00:01:07,890
+and override what you want.
+
+18
+00:01:07,890 --> 00:01:14,630
+Therefore if I want to actually return the string I can have return logging page as easy as that for
+
+19
+00:01:14,640 --> 00:01:18,530
+head of about my boss or try to visit the log in page.
+
+20
+00:01:18,540 --> 00:01:22,230
+Now I have log in page because I just overrode that method.
+
+21
+00:01:22,230 --> 00:01:25,070
+This is the power of customization that I will give to us.
+
+22
+00:01:25,080 --> 00:01:27,680
+So that's how we can actually change the view.
+
+23
+00:01:27,690 --> 00:01:30,070
+What about the logging process completely.
+
+24
+00:01:30,090 --> 00:01:36,180
+Let's go to it in authenticates use our let's find a log in my thought and Hatchet handle and log in
+
+25
+00:01:36,180 --> 00:01:37,710
+requests to the application.
+
+26
+00:01:37,770 --> 00:01:42,870
+Looks like we're calling a validates data log in my thought and you need to notice something.
+
+27
+00:01:42,960 --> 00:01:49,770
+Level is always going to be referencing math thoughts or our Kadhim hooks where we can actually completely
+
+28
+00:01:49,770 --> 00:01:53,340
+customize the functionality of our application.
+
+29
+00:01:53,340 --> 00:01:58,630
+So here we have logging and it's calling a valid data logging method on the streets.
+
+30
+00:01:58,710 --> 00:02:03,720
+Therefore let's find that validate lock in my thought and this validate logging method is actually in
+
+31
+00:02:03,720 --> 00:02:08,180
+charge of validating the data we receive from our front end.
+
+32
+00:02:08,310 --> 00:02:14,850
+And if you want to completely override the validate log in for your logging process maybe making sure
+
+33
+00:02:14,850 --> 00:02:20,820
+that the use of all writes the e-mail and the password two times or the e-mail and his name or whatever
+
+34
+00:02:20,820 --> 00:02:23,580
+you want to do during the logging process validation.
+
+35
+00:02:23,580 --> 00:02:26,400
+This is where you go to a game.
+
+36
+00:02:26,420 --> 00:02:33,750
+Another thing we need to notice is the value data logging method is calling this username method again
+
+37
+00:02:34,050 --> 00:02:34,930
+on the street.
+
+38
+00:02:34,950 --> 00:02:41,170
+So let's get to the username method and what this simply Dorsets returns a string.
+
+39
+00:02:41,250 --> 00:02:41,850
+Right.
+
+40
+00:02:41,850 --> 00:02:44,960
+So get the logging username to be used by the controller.
+
+41
+00:02:45,000 --> 00:02:49,920
+You might find yourself in situations where you want to actually log into use I use in the form or the
+
+42
+00:02:49,970 --> 00:02:55,680
+user name rather than the email therefore may be in your phone and you're receiving the name of the
+
+43
+00:02:55,680 --> 00:02:58,130
+user not necessarily the e-mail.
+
+44
+00:02:58,230 --> 00:03:04,000
+What do you do you need to do is override this username mid-thought and that's it you're done.
+
+45
+00:03:04,030 --> 00:03:08,180
+Love is going to automatically take care of every other thing.
+
+46
+00:03:08,220 --> 00:03:14,130
+That's why I and see this in action if I capitis had to watch my logging controller based that in and
+
+47
+00:03:14,130 --> 00:03:20,550
+let's say we want to actually log in the user using the user's name in the database would come here
+
+48
+00:03:20,580 --> 00:03:25,500
+and would return the name of that field and that its name in case it was foun then you're going to put
+
+49
+00:03:25,500 --> 00:03:28,560
+in phone when Casey was username you're going to put in username.
+
+50
+00:03:28,590 --> 00:03:32,450
+So laureate's every level to authenticate the user using the name.
+
+51
+00:03:32,460 --> 00:03:38,280
+So we need to pass in the name field from our front and I'll head over to my log in the late and right
+
+52
+00:03:38,280 --> 00:03:39,860
+down here where we have e-mail.
+
+53
+00:03:39,870 --> 00:03:41,690
+I'm going to change days to name.
+
+54
+00:03:41,760 --> 00:03:43,590
+So the type is going to be text.
+
+55
+00:03:43,590 --> 00:03:49,830
+The idea is going to be name name is going to be name and this is very important because if you check
+
+56
+00:03:49,890 --> 00:03:55,640
+out you authenticated users validate log in my thought it's passing in the username right here as the
+
+57
+00:03:55,650 --> 00:03:56,400
+validation.
+
+58
+00:03:56,430 --> 00:04:00,030
+Therefore it wants the name key and it should be a required stream.
+
+59
+00:04:00,120 --> 00:04:00,680
+Right.
+
+60
+00:04:00,690 --> 00:04:04,800
+In the case where was written in e-mail it was actually and that right here.
+
+61
+00:04:04,890 --> 00:04:07,900
+So we want to make sure we pass in the name.
+
+62
+00:04:07,920 --> 00:04:14,360
+And we also want to display validation for the name and name also also the name and all of that.
+
+63
+00:04:14,410 --> 00:04:19,890
+And and I think that sets up OK so we are passing the name and the password to loveall and we still
+
+64
+00:04:19,890 --> 00:04:21,750
+love all the user name to use.
+
+65
+00:04:21,750 --> 00:04:25,700
+It's not the email but the name field in the database.
+
+66
+00:04:25,710 --> 00:04:30,550
+So if you're not comfortable with it you can just go ahead and set up a name name also.
+
+67
+00:04:30,570 --> 00:04:34,030
+And finally your name right here.
+
+68
+00:04:34,050 --> 00:04:34,520
+OK.
+
+69
+00:04:34,620 --> 00:04:36,870
+So let's go ahead and try this out in a.
+
+70
+00:04:36,920 --> 00:04:37,740
+So your name.
+
+71
+00:04:37,740 --> 00:04:44,700
+I'm going to put in the username and password and click on the luggin button and we redirect that to
+
+72
+00:04:44,700 --> 00:04:47,820
+our home page it just walks as easy as that.
+
+73
+00:04:47,820 --> 00:04:53,790
+So in less than a few seconds we've been able to change our authentication system for email based to
+
+74
+00:04:53,790 --> 00:05:00,100
+name based just by overwriting one single method one single method.
+
+75
+00:05:00,300 --> 00:05:01,500
+And that is the method.
+
+76
+00:05:01,560 --> 00:05:01,980
+OK.
+
+77
+00:05:02,010 --> 00:05:04,170
+So username name we change that name.
+
+78
+00:05:04,170 --> 00:05:04,620
+That's it.
+
+79
+00:05:04,620 --> 00:05:05,760
+How cool is this.
+
+80
+00:05:05,770 --> 00:05:12,810
+Lovell gives us an extensive customization possibility once we know how everything works behind the
+
+81
+00:05:12,810 --> 00:05:13,500
+scenes.
+
+82
+00:05:13,500 --> 00:05:16,440
+OK so let's continue with our luggin method.
+
+83
+00:05:16,440 --> 00:05:22,760
+There is still a lot of customization that level provides for us in our authenticators our streets.
+
+84
+00:05:22,770 --> 00:05:27,090
+We have the validation for that username and this is going to validate our day.
+
+85
+00:05:27,090 --> 00:05:31,640
+Up next we have Lavoe trying to take care of too many logging attempts.
+
+86
+00:05:31,650 --> 00:05:37,110
+So if the password was wrong or the email was wrong more than three times or four times depending on
+
+87
+00:05:37,110 --> 00:05:42,460
+how you configure the loveliest automatically going to lock out the user and say oh no you can't log
+
+88
+00:05:42,460 --> 00:05:45,320
+in to you or maybe past AP or of one to two minutes.
+
+89
+00:05:45,330 --> 00:05:48,600
+Then where does the logging process actually happen.
+
+90
+00:05:48,600 --> 00:05:52,150
+Right here if this attempt to log in then send logging.
+
+91
+00:05:52,170 --> 00:05:52,910
+Response.
+
+92
+00:05:53,010 --> 00:05:53,560
+OK.
+
+93
+00:05:53,700 --> 00:05:56,130
+So attempt to log in is a method on the streets.
+
+94
+00:05:56,150 --> 00:05:57,010
+What does it do.
+
+95
+00:05:57,030 --> 00:06:02,690
+It cost the gov't which means you can actually customize the guard because we are referencing a method.
+
+96
+00:06:02,820 --> 00:06:09,420
+So right down here we have got the guts to be used to record indication levels to gives us the possibility
+
+97
+00:06:09,480 --> 00:06:16,920
+of overwriting this and it attempts to authenticate the user passing in these credentials and a boolean
+
+98
+00:06:16,980 --> 00:06:19,700
+whether they remember field was in the request or not.
+
+99
+00:06:19,770 --> 00:06:20,200
+OK.
+
+100
+00:06:20,280 --> 00:06:23,120
+So this credentials is another method.
+
+101
+00:06:23,310 --> 00:06:25,650
+And what it does is it gets the username.
+
+102
+00:06:25,650 --> 00:06:28,340
+So in case you were using an e-mail we get the e-mail.
+
+103
+00:06:28,380 --> 00:06:33,420
+And in case you are using a name field like we are doing now it's going to get the name field and then
+
+104
+00:06:33,420 --> 00:06:34,770
+it gets the password.
+
+105
+00:06:34,770 --> 00:06:38,520
+Now we tried to authenticate the user returns or true or false.
+
+106
+00:06:38,670 --> 00:06:44,250
+And then when log in my thought it checks if that operation was successful if we're successful we have
+
+107
+00:06:44,250 --> 00:06:50,720
+a send log in response Meffert that takes care of responding to this situation.
+
+108
+00:06:50,750 --> 00:06:53,440
+That's had a watch or send log in response.
+
+109
+00:06:53,460 --> 00:06:54,910
+And what does this do.
+
+110
+00:06:55,020 --> 00:07:00,540
+Generates a session for the user class or the log in or times in case they use or try to authenticate
+
+111
+00:07:00,540 --> 00:07:07,670
+himself more than once and then it calls and authenticated method or process requests and process and
+
+112
+00:07:07,670 --> 00:07:16,740
+authenticate a user or it redirects the user to the In turn the page or redirect the user to the redirect
+
+113
+00:07:16,740 --> 00:07:17,950
+path method.
+
+114
+00:07:18,000 --> 00:07:24,990
+So lovely simply calling methods on these traits and it's giving us an extensive possibility of cost
+
+115
+00:07:24,990 --> 00:07:26,340
+or my xine.
+
+116
+00:07:26,340 --> 00:07:31,510
+Now what if you want to maybe redirect the user to the welcome page after logging.
+
+117
+00:07:31,530 --> 00:07:34,340
+This is a method that level just calling and this is the method.
+
+118
+00:07:34,380 --> 00:07:36,090
+It's simply empty right here.
+
+119
+00:07:36,090 --> 00:07:39,620
+It means we can put in whatever we want to put in right there.
+
+120
+00:07:39,630 --> 00:07:42,460
+So let's copy this and try to rewrite it.
+
+121
+00:07:42,540 --> 00:07:43,350
+So what do we want.
+
+122
+00:07:43,350 --> 00:07:45,720
+Once you redirect the user to the home page right.
+
+123
+00:07:45,720 --> 00:07:48,300
+So return a redirect to the home page.
+
+124
+00:07:48,330 --> 00:07:53,460
+So rather than slash home we are going to redirect the user to to the main page of the Web site after
+
+125
+00:07:53,460 --> 00:07:54,800
+the user is locked in.
+
+126
+00:07:54,870 --> 00:07:55,380
+OK.
+
+127
+00:07:55,530 --> 00:07:57,530
+Now this is simply how we can customize.
+
+128
+00:07:57,600 --> 00:08:05,180
+In case you had an AJAX logging then Reicher you be returning and Ajax response in case you want to
+
+129
+00:08:05,490 --> 00:08:07,710
+fry the user or send an email.
+
+130
+00:08:07,710 --> 00:08:11,320
+This is where you're going to be doing it in this authenticates method.
+
+131
+00:08:11,460 --> 00:08:14,690
+And what happens in authenticates use ostrich.
+
+132
+00:08:14,820 --> 00:08:19,550
+I will send log in response is when to check if this method is null.
+
+133
+00:08:19,620 --> 00:08:24,680
+If it's not all it means you've actually customized didn't put something in it then it's going to code
+
+134
+00:08:24,690 --> 00:08:30,490
+and methods or if it's not it's simply going to return a reader to that and turn the page.
+
+135
+00:08:30,520 --> 00:08:35,490
+Ok so maybe you whether use I was going to before he was locked out and sent to the authentication page
+
+136
+00:08:35,820 --> 00:08:42,210
+all it's going to code is redirect part method and this way the record method actually gives us the
+
+137
+00:08:42,210 --> 00:08:46,620
+possibility of customizing what happens when the user is locked in.
+
+138
+00:08:46,620 --> 00:08:49,540
+So if you don't want to use this you can actually configure this.
+
+139
+00:08:49,560 --> 00:08:55,200
+So let's go ahead and see how this authenticated method operates in a logging controller.
+
+140
+00:08:55,260 --> 00:09:01,440
+We need to put in that request so let's go ahead and make sure nothing breaks by using the request at
+
+141
+00:09:01,440 --> 00:09:06,630
+the top and we expect that when we successfully log in we are redirect to the home page.
+
+142
+00:09:06,660 --> 00:09:07,210
+Right.
+
+143
+00:09:07,380 --> 00:09:09,660
+Let's go ahead and try to sort our lug out.
+
+144
+00:09:09,660 --> 00:09:14,640
+Go to the log in page and now we are no longer logging in with e-mail because we have our word that
+
+145
+00:09:14,640 --> 00:09:18,470
+mid-thought And now we are logging in with our name and the password.
+
+146
+00:09:18,540 --> 00:09:20,860
+So luggin There we go.
+
+147
+00:09:20,880 --> 00:09:24,270
+We'll redirect that to the home route rather than the home page.
+
+148
+00:09:24,270 --> 00:09:24,610
+OK.
+
+149
+00:09:24,630 --> 00:09:31,680
+So to the front of our website rather than the home page that's how easy it is to customize.
+
+150
+00:09:31,680 --> 00:09:35,140
+What happens when the user is locked in.
+
+151
+00:09:35,190 --> 00:09:37,250
+So this is the send log in response.
+
+152
+00:09:37,260 --> 00:09:40,760
+This is what happens when the user successfully locks in.
+
+153
+00:09:40,830 --> 00:09:44,890
+We can customize that by simply writing the authenticated method.
+
+154
+00:09:44,940 --> 00:09:50,420
+Now finally before we hit pause on this video are we close for the day.
+
+155
+00:09:50,520 --> 00:09:54,890
+Let's check out what happens when the user fails to authenticate himself.
+
+156
+00:09:54,900 --> 00:09:59,700
+It's going through incremental logging that terms that if this if statement feels right so that again
+
+157
+00:09:59,710 --> 00:10:03,380
+returned a boolean which is false it's going to incremental logging items.
+
+158
+00:10:03,390 --> 00:10:09,540
+And of course they're testing care by Lovaas Troxel floggings APHC which is also a trait that level
+
+159
+00:10:09,660 --> 00:10:17,040
+this by default and it's going to return what ever is in the Sinfield log in response method.
+
+160
+00:10:17,190 --> 00:10:25,800
+Let's visit the Sinfield logging response mid-thought and we can customize this method if we want to.
+
+161
+00:10:25,920 --> 00:10:32,610
+So if I want to control what happens when the user feels to log in I can simply override this mid-thought
+
+162
+00:10:33,000 --> 00:10:39,780
+in my Consuela the for my logging controller or paystub in and when the user fails to log in I'm going
+
+163
+00:10:39,780 --> 00:10:47,670
+to return a stream that says logging field let me log out and head to my log in page 14 the credentials
+
+164
+00:10:47,700 --> 00:10:49,480
+and I'm going to put in the fake password.
+
+165
+00:10:49,530 --> 00:10:51,240
+Click on the luggin button.
+
+166
+00:10:51,630 --> 00:10:52,020
+Yeah.
+
+167
+00:10:52,050 --> 00:10:55,190
+And there we go we have log in field as easy as that.
+
+168
+00:10:55,230 --> 00:11:00,270
+Just one Meffert lover gives us the possibility of overwriting the whole system.
+
+169
+00:11:00,300 --> 00:11:03,930
+Therefore anything you want to do you cannot do.
+
+170
+00:11:04,050 --> 00:11:09,120
+In case you want to control what happens when there's a field log in response you can simply define
+
+171
+00:11:09,360 --> 00:11:15,170
+a method in your logging controller in case you want to control what happens when you use ice authenticator.
+
+172
+00:11:15,330 --> 00:11:22,110
+You can also use a method in case you want to change what system or what database you want to use to
+
+173
+00:11:22,110 --> 00:11:23,580
+authenticate the user.
+
+174
+00:11:23,580 --> 00:11:24,880
+You can also do that.
+
+175
+00:11:24,960 --> 00:11:31,660
+So Lavoe gives us the possibility of completely customizing our system in whatever way we want.
+
+176
+00:11:31,650 --> 00:11:35,450
+OK so this must have been the longest video in the series.
+
+177
+00:11:35,460 --> 00:11:39,300
+We're going to hit pause for a moment and consignor and the very next video.
+

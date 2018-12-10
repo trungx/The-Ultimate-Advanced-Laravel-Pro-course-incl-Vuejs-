@@ -1,0 +1,456 @@
+1
+00:00:00,300 --> 00:00:05,400
+Let's think of what we need to update our series for example your credit series you want to edit the
+
+2
+00:00:05,400 --> 00:00:10,200
+title where you want to edit the image that was a blow that I think this is going to give us a little
+
+3
+00:00:10,200 --> 00:00:12,530
+bit of opportunity to learn something new.
+
+4
+00:00:12,690 --> 00:00:14,060
+So let's dive straight into it.
+
+5
+00:00:14,160 --> 00:00:16,640
+So obviously we're going to need a viewer for the edits.
+
+6
+00:00:16,770 --> 00:00:23,730
+So I'm going to create a new view in my scripts directory that I'm going to call edits that made me
+
+7
+00:00:25,290 --> 00:00:30,200
+and it's going to look exactly like the Crusades except that we're not going to be creating.
+
+8
+00:00:30,210 --> 00:00:33,020
+But we're going to be editing an existing series.
+
+9
+00:00:33,070 --> 00:00:38,790
+So looks are we going to be passing that series in to this view.
+
+10
+00:00:38,870 --> 00:00:41,400
+So it would just acquire the series.
+
+11
+00:00:41,440 --> 00:00:51,410
+Sayto So we know what we are doing then and the templates we're going to redirect this into puts requests.
+
+12
+00:00:51,580 --> 00:00:57,620
+Leave the CSR field and for us to actually make pooch's request we need to tell Lavoe that the methought
+
+13
+00:00:57,620 --> 00:00:59,010
+field is a portal.
+
+14
+00:00:59,150 --> 00:01:06,270
+So right here we are going to echo Methley field and Puss in Boots.
+
+15
+00:01:06,380 --> 00:01:15,590
+Then we have our title so we can assign the value of this title to be equal to the series title that
+
+16
+00:01:15,590 --> 00:01:22,110
+was passed into this view and we have our EMH and we have a description.
+
+17
+00:01:22,160 --> 00:01:25,790
+So let's call the correct description right here.
+
+18
+00:01:25,790 --> 00:01:32,790
+And the basic idea is when we submit this form it's going to update the title and the description.
+
+19
+00:01:32,930 --> 00:01:37,170
+But then if there is no fire fuel then it's not going to update that field.
+
+20
+00:01:37,310 --> 00:01:37,770
+OK.
+
+21
+00:01:37,970 --> 00:01:43,350
+So we need to direct this to the correct routes and pass the correct parameters.
+
+22
+00:01:43,430 --> 00:01:50,180
+If we check out our route list to update a series we put our patch request we submit that series pass
+
+23
+00:01:50,180 --> 00:01:56,120
+in the identifier and we are using our SLOC in this case and he has the point to see just the updates
+
+24
+00:01:56,270 --> 00:01:57,920
+and the screen to the update method.
+
+25
+00:01:57,950 --> 00:01:58,430
+Right.
+
+26
+00:01:58,520 --> 00:02:01,280
+So serious the updates is what we need.
+
+27
+00:02:01,280 --> 00:02:04,900
+We need to pass in the series log as a parameter.
+
+28
+00:02:04,970 --> 00:02:09,020
+So our automatic round model binding can take health.
+
+29
+00:02:09,380 --> 00:02:12,800
+And I think that's all we need to do in our funds.
+
+30
+00:02:12,830 --> 00:02:18,460
+Then we'll head over to our service controller and first will attack ads added my thought which should
+
+31
+00:02:18,470 --> 00:02:19,760
+we turn that view.
+
+32
+00:02:19,940 --> 00:02:28,850
+I mean serious as it is and it has to go with the series and we can automatically type in series right
+
+33
+00:02:28,850 --> 00:02:30,940
+here for a lot of water injected.
+
+34
+00:02:30,950 --> 00:02:31,540
+Great.
+
+35
+00:02:31,670 --> 00:02:39,330
+Then the update method which we're going to be taking care of that later that's just died down requests.
+
+36
+00:02:40,560 --> 00:02:41,290
+Okay.
+
+37
+00:02:41,660 --> 00:02:48,260
+So last off in our order blade the Peachtree where we have this table we need to pass in the correct
+
+38
+00:02:48,390 --> 00:02:49,570
+permits us.
+
+39
+00:02:49,610 --> 00:02:55,380
+So this should go to our routes which should be series that added.
+
+40
+00:02:55,490 --> 00:02:57,030
+And I think that's what we have.
+
+41
+00:02:57,200 --> 00:03:04,050
+That's what we have and U.K. as a parameter we should be a series SLOC.
+
+42
+00:03:04,150 --> 00:03:04,780
+Okay.
+
+43
+00:03:04,820 --> 00:03:07,720
+So let's try to sound refresh this page.
+
+44
+00:03:08,670 --> 00:03:16,140
+We have if we click on it it takes us to edit this series and then it gives us the title the field where
+
+45
+00:03:16,140 --> 00:03:22,460
+we can change everything and the update button and clicking on that makes a get request.
+
+46
+00:03:22,470 --> 00:03:26,220
+I think I know why that's because it's supposed to be a post request.
+
+47
+00:03:26,220 --> 00:03:31,590
+There's no such thing as a put request lovely automatically going to recognize it by the method field
+
+48
+00:03:31,590 --> 00:03:32,290
+right here.
+
+49
+00:03:32,490 --> 00:03:33,020
+OK.
+
+50
+00:03:33,060 --> 00:03:36,770
+So go back and then click on the updates.
+
+51
+00:03:36,780 --> 00:03:37,690
+There we go.
+
+52
+00:03:37,710 --> 00:03:39,850
+We have the data from our phones.
+
+53
+00:03:39,920 --> 00:03:40,360
+OK.
+
+54
+00:03:40,530 --> 00:03:46,050
+If we're actually to do or download or see a picture they're going to have an instance of upload that
+
+55
+00:03:46,050 --> 00:03:47,120
+fire right there.
+
+56
+00:03:47,190 --> 00:03:47,570
+OK.
+
+57
+00:03:47,580 --> 00:03:49,340
+So let's recap for updates.
+
+58
+00:03:49,380 --> 00:03:54,570
+First of all anti-Hindu is forced to have the series.
+
+59
+00:03:54,900 --> 00:03:56,560
+Now that we have the series.
+
+60
+00:03:56,730 --> 00:03:58,890
+We can update its properties now.
+
+61
+00:03:58,920 --> 00:04:03,960
+I would like to create a custom update service request where we can actually customize or take care
+
+62
+00:04:03,960 --> 00:04:08,050
+of everything in the background and validation and all of that stuff.
+
+63
+00:04:08,100 --> 00:04:09,660
+So I'll create a request.
+
+64
+00:04:09,660 --> 00:04:14,320
+He had to be sign make request or date Sui's request.
+
+65
+00:04:14,400 --> 00:04:14,750
+OK.
+
+66
+00:04:14,760 --> 00:04:20,610
+So if you had a Ratso update series request authorize or said that true.
+
+67
+00:04:20,710 --> 00:04:29,380
+Now the rules should have a title which must be required and a description which must also be required.
+
+68
+00:04:29,490 --> 00:04:34,980
+So we are not required to actually upload an email when we are dating but the title and the description
+
+69
+00:04:34,980 --> 00:04:37,250
+fields must be passed in the request.
+
+70
+00:04:37,260 --> 00:04:41,550
+Now I'd like to show you something we have some request right here.
+
+71
+00:04:41,550 --> 00:04:46,580
+We have our update series request and we have a quick request.
+
+72
+00:04:46,830 --> 00:04:49,170
+And if you check out our Queechy Richard Quest.
+
+73
+00:04:49,290 --> 00:04:51,620
+It has this long series.
+
+74
+00:04:51,670 --> 00:04:55,470
+MH mid-thought and what is this image mid-thought.
+
+75
+00:04:55,470 --> 00:05:01,890
+Is it loads the series on Sawston the name in this file named property on this class.
+
+76
+00:05:02,030 --> 00:05:08,400
+Now I want to use this exact same mid-thought so I'm going to copy it but I'm going to be all in the
+
+77
+00:05:08,400 --> 00:05:10,590
+new hour so I'm going to show you what I'm doing.
+
+78
+00:05:10,620 --> 00:05:16,180
+First of all copy this method to my update series and I'll paste in that thought.
+
+79
+00:05:16,200 --> 00:05:20,070
+So it's going to blow the series if we have image of that.
+
+80
+00:05:20,070 --> 00:05:29,670
+So in my control or what I can do is check each request house fire then would call request or bloats
+
+81
+00:05:29,710 --> 00:05:30,960
+series EMH.
+
+82
+00:05:31,160 --> 00:05:31,740
+OK.
+
+83
+00:05:31,800 --> 00:05:36,280
+So we have this image on the updates was the PH B.
+
+84
+00:05:36,330 --> 00:05:38,200
+So what are below the EMH.
+
+85
+00:05:38,370 --> 00:05:45,270
+And then once the image is below that we'll have this filename set and we could automatically do this
+
+86
+00:05:45,640 --> 00:05:47,090
+series.
+
+87
+00:05:47,520 --> 00:05:51,890
+MH You are all equals requests of us.
+
+88
+00:05:51,900 --> 00:05:54,850
+Imagine then will get the foreign name.
+
+89
+00:05:54,930 --> 00:05:55,330
+OK.
+
+90
+00:05:55,350 --> 00:06:00,510
+Because we actually set in defining property on this instance.
+
+91
+00:06:00,590 --> 00:06:07,220
+OK then we'll have to set the title because we know the title would be in the request.
+
+92
+00:06:07,680 --> 00:06:10,140
+I would also have to set the description.
+
+93
+00:06:10,170 --> 00:06:15,010
+And finally we need to update the series SLOC field.
+
+94
+00:06:15,570 --> 00:06:24,240
+So I would call the string SLUB method or we'll pass in the request Sithole and we'll just call series
+
+95
+00:06:24,330 --> 00:06:27,310
+Safe finally to posses that data.
+
+96
+00:06:27,330 --> 00:06:34,710
+And finally after we successfully see if the series will just return redirect to a route series that
+
+97
+00:06:34,740 --> 00:06:35,840
+index.
+
+98
+00:06:36,260 --> 00:06:43,380
+OK so first we check if there's an image if there is an image ablate the image you are fueled and we
+
+99
+00:06:43,380 --> 00:06:49,920
+are below the MH and then we update the title description slogs safe with the use up to the page where
+
+100
+00:06:49,920 --> 00:06:51,370
+he can view all the series.
+
+101
+00:06:51,490 --> 00:06:51,870
+OK.
+
+102
+00:06:51,900 --> 00:07:00,240
+So here we have all our series and I'm going to edit this one so I'm going to edit that title to maybe
+
+103
+00:07:00,630 --> 00:07:02,570
+best novel cost.
+
+104
+00:07:02,790 --> 00:07:10,560
+Change the description to maybe description of best novel cost and then upload a new series.
+
+105
+00:07:11,010 --> 00:07:20,130
+Maybe this one and then curricle ablate series and comments can be debated here we can see already that
+
+106
+00:07:20,250 --> 00:07:23,120
+this was at the top of the title.
+
+107
+00:07:23,130 --> 00:07:28,800
+So what do you want to check is if your image was actually as.
+
+108
+00:07:28,920 --> 00:07:36,190
+So I'm going to get all the secrets and if we cecal this one we have the slug of data or title of data
+
+109
+00:07:36,510 --> 00:07:41,450
+the image you are all also points to best level Casta PMG.
+
+110
+00:07:41,710 --> 00:07:47,060
+You check out the email in our story page there we have it.
+
+111
+00:07:47,060 --> 00:07:51,470
+So looks like everything is working as expected.
+
+112
+00:07:51,740 --> 00:07:56,840
+But in the very next video what I want us to do is go through this exact same process but when we go
+
+113
+00:07:56,840 --> 00:07:58,830
+into it using our test.
+
+114
+00:07:58,850 --> 00:08:03,380
+So we want to make sure that everything is walking like we wanted to work.
+

@@ -1,0 +1,344 @@
+1
+00:00:00,670 --> 00:00:02,740
+OK access to the queen.
+
+2
+00:00:02,830 --> 00:00:08,190
+Now what do we want to do is test a little bit more my thoughts that we're going to be using for our
+
+3
+00:00:08,200 --> 00:00:11,070
+learning process and then we're going to go to the next step.
+
+4
+00:00:11,080 --> 00:00:16,870
+Now the first thought I want to test is a thought that I'm going to start that series and this method
+
+5
+00:00:16,870 --> 00:00:23,110
+is going to help us know if you actually clicked on that starts with Martin and is actually watching
+
+6
+00:00:23,110 --> 00:00:23,700
+the series.
+
+7
+00:00:23,790 --> 00:00:24,400
+OK.
+
+8
+00:00:24,520 --> 00:00:27,480
+So this is going to be a unique test like this.
+
+9
+00:00:27,580 --> 00:00:34,510
+So you know I use that as we're going to create a new test so public function science can know if a
+
+10
+00:00:34,510 --> 00:00:37,150
+user has started a series.
+
+11
+00:00:37,210 --> 00:00:37,900
+OK.
+
+12
+00:00:37,960 --> 00:00:40,010
+So how do we want this test to work.
+
+13
+00:00:40,020 --> 00:00:48,160
+First we need a user right and then we need maybe to see race and then they use our watches or completes
+
+14
+00:00:48,580 --> 00:00:51,330
+a lesson in the first series.
+
+15
+00:00:51,520 --> 00:00:54,150
+And he does know which one in the second series.
+
+16
+00:00:54,210 --> 00:01:05,700
+Ok then we asserts that we turn into four has started a series for the first series and then has set
+
+17
+00:01:05,700 --> 00:01:09,690
+that series for the second series does not return true it returns false.
+
+18
+00:01:09,770 --> 00:01:12,790
+OK so let's go ahead and do it you'll understand more.
+
+19
+00:01:12,890 --> 00:01:16,450
+So first of all since we had to live with Reddy's we're going to flush with this.
+
+20
+00:01:16,640 --> 00:01:24,320
+So flush Reddy's will get to use our Krikalev son also create some from them lessons just like we're
+
+21
+00:01:24,320 --> 00:01:25,620
+doing here.
+
+22
+00:01:25,880 --> 00:01:27,700
+And I think we're going to need all of this.
+
+23
+00:01:27,890 --> 00:01:35,480
+So I'm going to copy that come right here to my instep and pasted it so use up and then we have a lesson
+
+24
+00:01:35,900 --> 00:01:38,590
+and we have two one on lessons right here.
+
+25
+00:01:38,600 --> 00:01:44,530
+So what I'm going to do is the son and this and two should belong to one series.
+
+26
+00:01:44,800 --> 00:01:51,290
+So two series one just like it is now and then I'm going to create lesson to see which should belong
+
+27
+00:01:51,290 --> 00:01:53,120
+to and not the series.
+
+28
+00:01:53,120 --> 00:01:55,780
+Therefore I'm going to remove this customizing right here.
+
+29
+00:01:55,940 --> 00:01:58,220
+So we have two lessons that belong to series one.
+
+30
+00:01:58,220 --> 00:02:02,510
+And then we have one lesson that belongs to Sui's 2 which is going to automatically be created by this
+
+31
+00:02:02,600 --> 00:02:03,060
+tree.
+
+32
+00:02:03,140 --> 00:02:03,730
+OK.
+
+33
+00:02:03,800 --> 00:02:08,990
+Now we want to complete a lesson in serious one.
+
+34
+00:02:09,080 --> 00:02:16,980
+So I would say use our complete lesson and let's say he completes Lesson 2 for example.
+
+35
+00:02:17,080 --> 00:02:19,660
+Ok then we can run our sessions.
+
+36
+00:02:19,670 --> 00:02:21,820
+We're going to see this.
+
+37
+00:02:22,200 --> 00:02:31,520
+I search through that use hostile and will pass in series one as a human right here.
+
+38
+00:02:31,520 --> 00:02:31,900
+OK.
+
+39
+00:02:31,940 --> 00:02:36,170
+So we get the lesson in this lesson right here and we'll get it serious.
+
+40
+00:02:36,220 --> 00:02:36,560
+OK.
+
+41
+00:02:36,590 --> 00:02:46,850
+Which is the same as Lesson two serious dent ones are so false that you are has starts at series for
+
+42
+00:02:47,230 --> 00:02:48,530
+less than three.
+
+43
+00:02:48,620 --> 00:02:53,810
+OK so over a haystack that she was mid-thought when we pass in series one into this methodic should
+
+44
+00:02:53,810 --> 00:02:59,750
+return true because we actually completed a lesson in that series meaning we started learning that series
+
+45
+00:03:00,080 --> 00:03:05,300
+and should return false because we have not completed and service for less than 3 Savi so we should
+
+46
+00:03:05,300 --> 00:03:06,750
+be checking for less than three right here.
+
+47
+00:03:06,860 --> 00:03:07,290
+OK.
+
+48
+00:03:07,310 --> 00:03:15,810
+Because we haven't completed any series in the series to which is from this series because this is really
+
+49
+00:03:15,920 --> 00:03:17,860
+going to generate a new series.
+
+50
+00:03:17,880 --> 00:03:23,420
+Then be some false but then this would be true because we have seen this one right here and we completed
+
+51
+00:03:23,450 --> 00:03:25,030
+our lesson and see which one.
+
+52
+00:03:25,130 --> 00:03:25,720
+OK.
+
+53
+00:03:25,760 --> 00:03:28,190
+So let's run this test.
+
+54
+00:03:28,240 --> 00:03:34,410
+The unit FUTA should this test great.
+
+55
+00:03:34,410 --> 00:03:37,410
+So we don't have that mid-thought he started serious.
+
+56
+00:03:37,460 --> 00:03:39,930
+Now we're just head of what are we learning.
+
+57
+00:03:39,950 --> 00:03:42,270
+PH be right on the bottom.
+
+58
+00:03:42,300 --> 00:03:43,490
+We can quit that method.
+
+59
+00:03:43,650 --> 00:03:44,010
+OK.
+
+60
+00:03:44,010 --> 00:03:51,750
+So this mathematics in a serious class one that again so feel asserting that no is true but they should
+
+61
+00:03:51,750 --> 00:03:53,960
+actually return a boolean right.
+
+62
+00:03:54,150 --> 00:04:00,240
+So what we're going to do is we're going to get the specific key for that use on that series.
+
+63
+00:04:00,350 --> 00:04:00,880
+Okay.
+
+64
+00:04:00,930 --> 00:04:06,820
+And then we can check if the number of elements in that army is greater than zero.
+
+65
+00:04:06,870 --> 00:04:11,580
+If it's greater than zero it means to use naturally completer one lesson in that series.
+
+66
+00:04:11,580 --> 00:04:14,720
+But then if it's zero it means the use or not complete anything.
+
+67
+00:04:14,730 --> 00:04:15,130
+Right.
+
+68
+00:04:15,240 --> 00:04:23,880
+So we have a good number of computer lessons for seeress so we can return this get number of completed
+
+69
+00:04:23,890 --> 00:04:28,740
+the lessons for a series we'll pass in the series right here.
+
+70
+00:04:28,800 --> 00:04:34,050
+So we have now a number which is the number of lessons that the user has completed for this particular
+
+71
+00:04:34,050 --> 00:04:34,620
+series.
+
+72
+00:04:34,710 --> 00:04:36,460
+Then we can compare to zero.
+
+73
+00:04:36,540 --> 00:04:42,100
+And if it's greater than zero it means the user has completed at least one of the lessons in this series
+
+74
+00:04:42,300 --> 00:04:44,430
+which means the user has started the series.
+
+75
+00:04:44,430 --> 00:04:49,710
+But then if it's not greater than zero zero it means the user has not yet started this series.
+
+76
+00:04:50,440 --> 00:04:53,350
+And our video store does not have any record of it.
+
+77
+00:04:53,430 --> 00:04:53,870
+OK.
+
+78
+00:04:54,030 --> 00:04:58,520
+So let's run our test one more time great.
+
+79
+00:04:58,550 --> 00:05:00,080
+And we have a successful test.
+
+80
+00:05:00,140 --> 00:05:00,610
+OK.
+
+81
+00:05:00,650 --> 00:05:08,110
+So we can now use that series in our views wherever we want to check if the user has started series.
+
+82
+00:05:08,120 --> 00:05:14,300
+So for example on the land each way for a series we can check has the user started the series or started
+
+83
+00:05:14,300 --> 00:05:19,240
+the series then rather than just plain starts reset button display a continuous series.
+
+84
+00:05:19,320 --> 00:05:20,290
+MARTIN OK.
+
+85
+00:05:20,360 --> 00:05:21,940
+So thank you so much for watching.
+
+86
+00:05:21,950 --> 00:05:25,160
+Let's continue with some fun thoughts in the next lesson.
+

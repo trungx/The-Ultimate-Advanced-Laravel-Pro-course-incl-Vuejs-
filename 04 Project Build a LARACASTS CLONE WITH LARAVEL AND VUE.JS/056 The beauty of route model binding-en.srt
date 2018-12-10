@@ -1,0 +1,276 @@
+1
+00:00:00,100 --> 00:00:04,890
+Let's stop talking and actually viewing the speech where we can see a series and all the details for
+
+2
+00:00:04,890 --> 00:00:05,820
+that series.
+
+3
+00:00:05,850 --> 00:00:11,250
+Now I want to change the redirect that happens or that we get when we create a series.
+
+4
+00:00:11,280 --> 00:00:17,730
+So I'm just going to redirect two routes and this is going to be series that show and this is because
+
+5
+00:00:17,730 --> 00:00:22,830
+if we check out at least we discover that we have this it gets serious and serious.
+
+6
+00:00:22,830 --> 00:00:25,360
+I don't have cable which maps to see the statue.
+
+7
+00:00:25,440 --> 00:00:26,030
+OK.
+
+8
+00:00:26,070 --> 00:00:29,410
+So suits that show and it's going to call this method.
+
+9
+00:00:29,430 --> 00:00:35,680
+So for us let's just take them a serious find ID to create a series.
+
+10
+00:00:35,720 --> 00:00:37,570
+We then we direct to this mid-thought.
+
+11
+00:00:37,620 --> 00:00:42,660
+And sure enough we need to pass in a parameter so the barometer that we're going to be crossing is the
+
+12
+00:00:42,660 --> 00:00:45,600
+ID of the series that we just created.
+
+13
+00:00:45,900 --> 00:00:49,180
+OK so looks like we don't have access to that idea right here.
+
+14
+00:00:49,230 --> 00:00:52,200
+OK because we did everything in our request.
+
+15
+00:00:52,200 --> 00:00:58,320
+Yeah we could continue doing everything in our request so maybe we would want to return this and then
+
+16
+00:00:58,320 --> 00:01:01,710
+move this functionality into our request last.
+
+17
+00:01:02,070 --> 00:01:09,590
+So if we had a lot of create serious requests that where we were in the series we would want to do this.
+
+18
+00:01:09,660 --> 00:01:16,980
+So we set our session here and will save our series and then return direct routes to series ID.
+
+19
+00:01:17,070 --> 00:01:24,440
+So our controller Simplicius return request are glossaries to return requests of lawsuits On-Star series.
+
+20
+00:01:24,510 --> 00:01:27,890
+Then we just take care of flushing to the session.
+
+21
+00:01:27,990 --> 00:01:29,970
+Redirecting about right here.
+
+22
+00:01:30,160 --> 00:01:36,840
+OK so once we get a serious redirect to this page and then we died on the Sui's detour Let's go ahead
+
+23
+00:01:36,840 --> 00:01:37,730
+and try this out.
+
+24
+00:01:37,950 --> 00:01:44,910
+So our new title series will be maybe view Jirus course Ruggiero's course description and then we could
+
+25
+00:01:44,940 --> 00:01:50,670
+upload an image for that creates serious and sure enough redirect to this page and we can actually see
+
+26
+00:01:50,670 --> 00:01:56,000
+the series data your id Software with their numbers and all of that.
+
+27
+00:01:56,040 --> 00:02:00,630
+But then one of the main reasons or one of the main purposes of this course is to use the best out of
+
+28
+00:02:00,650 --> 00:02:01,400
+love right.
+
+29
+00:02:01,560 --> 00:02:08,480
+So what I'm going to do is actually search out and use roud model binding in this case so far out modelled
+
+30
+00:02:08,490 --> 00:02:08,980
+by any.
+
+31
+00:02:09,010 --> 00:02:16,230
+We just need to type a series class right here and Labu automatically inject the series that has that
+
+32
+00:02:16,230 --> 00:02:17,920
+particular identification.
+
+33
+00:02:17,970 --> 00:02:18,270
+Right.
+
+34
+00:02:18,270 --> 00:02:20,530
+So we need to find a series.
+
+35
+00:02:20,670 --> 00:02:26,290
+We just need to date on the series and say we need to import the Swiss last and thats done so lovable
+
+36
+00:02:26,370 --> 00:02:30,830
+traumatically find the series with the ID that most passed this.
+
+37
+00:02:30,990 --> 00:02:32,900
+And then its going to die on that civies.
+
+38
+00:02:33,030 --> 00:02:36,020
+So lets stretch refresh passing in six right here.
+
+39
+00:02:36,870 --> 00:02:39,830
+And we see how exactly that at some level magic.
+
+40
+00:02:39,830 --> 00:02:43,400
+Now I dont want to have numbers in my bar.
+
+41
+00:02:43,580 --> 00:02:44,800
+I want to have the small.
+
+42
+00:02:44,810 --> 00:02:46,760
+Because we have a slot for Sui's right.
+
+43
+00:02:46,790 --> 00:02:49,440
+So what can we do in this case.
+
+44
+00:02:49,490 --> 00:02:55,620
+Now take each of my CV Kamado and you actually see that extends the database up.
+
+45
+00:02:55,670 --> 00:02:59,130
+So lets try to model the pitch be from Lavo.
+
+46
+00:02:59,180 --> 00:03:04,370
+So database an equivalent of a PH B and check out what we have.
+
+47
+00:03:04,550 --> 00:03:12,050
+We should have a get well Keenum thought so get outs key gets the value of the Modell's of our key and
+
+48
+00:03:12,050 --> 00:03:15,850
+get vault key name gets the key for the model.
+
+49
+00:03:15,860 --> 00:03:21,440
+So by default if you check out get key name it returns the primary key.
+
+50
+00:03:21,620 --> 00:03:26,570
+And this very key by default obviously as we know is the ID which is working now.
+
+51
+00:03:26,570 --> 00:03:28,190
+Therefore what do we need to do.
+
+52
+00:03:28,190 --> 00:03:33,850
+We just need to overwrite the get route key name thought ain't our motto.
+
+53
+00:03:33,860 --> 00:03:38,990
+So I'm just going to copy this head over to my sister PSP and paste this in.
+
+54
+00:03:39,050 --> 00:03:42,490
+So get mark key for the model and rather than we can indeed.
+
+55
+00:03:42,540 --> 00:03:44,250
+I'm going to return SLOC.
+
+56
+00:03:44,290 --> 00:03:44,680
+OK.
+
+57
+00:03:44,690 --> 00:03:48,190
+So I want you to use the slot to find the series.
+
+58
+00:03:48,210 --> 00:03:52,660
+Yeah but then if he says this now it's going to break right because we are passing in the ID and we
+
+59
+00:03:52,660 --> 00:03:54,190
+can and you find that right.
+
+60
+00:03:54,200 --> 00:04:00,110
+So I would head over to our series and right here rather than passing the ID we would parse the slot
+
+61
+00:04:00,170 --> 00:04:03,660
+because we know that's what level is which you use to find this model.
+
+62
+00:04:03,740 --> 00:04:05,290
+Let's go back refresh.
+
+63
+00:04:05,390 --> 00:04:07,030
+Create a new course.
+
+64
+00:04:07,040 --> 00:04:10,330
+So luggin costs a lot.
+
+65
+00:04:10,340 --> 00:04:17,510
+MH in at the top of that description Critch series and automatically we have that injector for us.
+
+66
+00:04:17,570 --> 00:04:24,770
+So see how we passed in the lock and levels still found that slot for us and injected into our show
+
+67
+00:04:24,890 --> 00:04:25,430
+method.
+
+68
+00:04:25,640 --> 00:04:26,600
+Pretty cool right.
+
+69
+00:04:26,600 --> 00:04:27,180
+Great job.
+

@@ -1,0 +1,152 @@
+1
+00:00:00,280 --> 00:00:03,950
+I think be good for the coffee just of authentication.
+
+2
+00:00:04,110 --> 00:00:09,950
+Why don't we go into something much fun each actually has to deal with serious lessons of loading juice
+
+3
+00:00:09,970 --> 00:00:10,760
+on all of that.
+
+4
+00:00:10,830 --> 00:00:11,320
+OK.
+
+5
+00:00:11,340 --> 00:00:12,220
+Let's get started.
+
+6
+00:00:12,330 --> 00:00:19,560
+So looks like we're going to need a serious model for our series which are sun make models TVs and they
+
+7
+00:00:19,560 --> 00:00:20,850
+need a migration for that.
+
+8
+00:00:20,850 --> 00:00:22,050
+Not that's generator.
+
+9
+00:00:22,050 --> 00:00:25,040
+Let's go ahead on my question and see what we are going to be having.
+
+10
+00:00:25,110 --> 00:00:28,460
+OK so I want the series to have a title.
+
+11
+00:00:28,560 --> 00:00:34,060
+I also wanted to have a SLOC and I wanted to have an image field.
+
+12
+00:00:34,200 --> 00:00:37,760
+So I'm actually going to be storing the image for all four paragraphs.
+
+13
+00:00:37,920 --> 00:00:41,970
+I want to have a short description and I think that's going to do it for now.
+
+14
+00:00:41,970 --> 00:00:48,510
+So we have a title SLOC and this is simply kind of like a a presentation of the title than the image
+
+15
+00:00:48,600 --> 00:00:50,000
+or a description.
+
+16
+00:00:50,070 --> 00:00:55,830
+I'm going to head over to my series model and I'm simply going to make sure that I remove my Simon protection
+
+17
+00:00:55,920 --> 00:01:01,820
+so protect that guarded because MTOE then I'm going to generate a factory for this series.
+
+18
+00:01:01,830 --> 00:01:06,570
+I think there are some common the commissary 5:25 for this.
+
+19
+00:01:06,600 --> 00:01:08,550
+So P-H be Arsen me factory.
+
+20
+00:01:08,580 --> 00:01:09,310
+There we go.
+
+21
+00:01:09,480 --> 00:01:12,590
+So he would be our sun make for tree.
+
+22
+00:01:12,660 --> 00:01:15,620
+And this is just going to be serious factory Asaf.
+
+23
+00:01:15,630 --> 00:01:19,260
+So let's head over to see restruck free and what do we want.
+
+24
+00:01:19,260 --> 00:01:25,110
+We want the title and this is going to be focused intense we can pass in a number of words into this
+
+25
+00:01:25,110 --> 00:01:25,750
+my thought.
+
+26
+00:01:25,770 --> 00:01:32,580
+We can also pass in the SLOC and what we could do is actually save the focus and then into a variable
+
+27
+00:01:32,790 --> 00:01:39,150
+such that Pasquin a title here and then we the title to be watchful focus sentence and we just need
+
+28
+00:01:39,150 --> 00:01:41,100
+to reference same variable right here.
+
+29
+00:01:41,190 --> 00:01:47,250
+Then for one image you are all we can use this Ficarra image you are on I thought and we can pass in
+
+30
+00:01:47,310 --> 00:01:51,280
+the dimensions of the image or just make it for us.
+
+31
+00:01:51,330 --> 00:01:53,250
+And finally we need a description.
+
+32
+00:01:53,250 --> 00:01:55,900
+So Flaker Bargo are a record on method.
+
+33
+00:01:56,030 --> 00:01:56,290
+OK.
+
+34
+00:01:56,310 --> 00:01:57,510
+So that's a treat.
+
+35
+00:01:57,510 --> 00:02:01,500
+We can now generate fake Sui's to be able to use both.
+
+36
+00:02:01,550 --> 00:02:03,080
+And yeah we need to update this right.
+
+37
+00:02:03,150 --> 00:02:05,530
+So but cause serious loss.
+
+38
+00:02:05,580 --> 00:02:10,450
+Now the next video let's go ahead and see how we could do accrete beat bit of Britain's elite four series.
+

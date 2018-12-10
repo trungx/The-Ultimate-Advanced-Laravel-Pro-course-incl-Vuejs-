@@ -1,0 +1,560 @@
+1
+00:00:00,800 --> 00:00:02,410
+Let's stop having some of your fun.
+
+2
+00:00:02,570 --> 00:00:06,010
+So we've already talked about how we're going to be using this now.
+
+3
+00:00:06,060 --> 00:00:11,030
+Well I want to do is create a couple of units that are going to help us drive all the functionality
+
+4
+00:00:11,030 --> 00:00:14,070
+that we want to have in our learning management system.
+
+5
+00:00:14,090 --> 00:00:18,410
+So we wanted a user to be able to complete a lesson.
+
+6
+00:00:18,410 --> 00:00:24,800
+We also want to use to be able to complete a series and we want to start a track record of the series
+
+7
+00:00:24,800 --> 00:00:29,660
+that the user has completed a number of lessons completed by the user and all of that.
+
+8
+00:00:29,660 --> 00:00:35,260
+So we're going to be using uniters because we want to test specific methods on the use of class that
+
+9
+00:00:35,270 --> 00:00:38,940
+stored the records of progress for our user.
+
+10
+00:00:39,140 --> 00:00:41,720
+So I'll start by creating a unit test.
+
+11
+00:00:41,920 --> 00:00:47,470
+Are sand makes us and our Codys use access on our specify that each unit.
+
+12
+00:00:47,660 --> 00:00:53,960
+So every single test I one to test the concerns the use of class we're going to put it in the issues
+
+13
+00:00:53,960 --> 00:00:54,540
+or tests.
+
+14
+00:00:54,680 --> 00:00:55,370
+OK.
+
+15
+00:00:55,370 --> 00:00:58,040
+So the first test I'm running is test.
+
+16
+00:00:58,070 --> 00:01:00,560
+A user can complete a lesson.
+
+17
+00:01:00,770 --> 00:01:01,420
+OK.
+
+18
+00:01:01,460 --> 00:01:03,550
+So what does this test really mean.
+
+19
+00:01:03,680 --> 00:01:10,280
+I want to have a user in my system and I want this use to click on the start series button which is
+
+20
+00:01:10,280 --> 00:01:16,250
+going to take him to the page where he can watch the episodes or lessons in this series.
+
+21
+00:01:16,460 --> 00:01:24,770
+And once he finishes to watch a lesson it should automatically save the ID of the lesson in the wretch's
+
+22
+00:01:24,830 --> 00:01:28,350
+database to tell us that this user has really watched this lesson.
+
+23
+00:01:28,460 --> 00:01:31,790
+OK so maybe we're going to have a key like use are.
+
+24
+00:01:32,090 --> 00:01:38,330
+And then passing they use us I.D. and then we're going to have series for that particular series I.D.
+
+25
+00:01:38,560 --> 00:01:45,350
+and then we're going to map this to an array that stores the IDs of all the lessons that the user has
+
+26
+00:01:45,350 --> 00:01:47,620
+watched in this particular series.
+
+27
+00:01:47,780 --> 00:01:48,370
+OK.
+
+28
+00:01:48,470 --> 00:01:56,180
+So instead we would have you use are you create a new use or create a new series then would perform
+
+29
+00:01:56,180 --> 00:02:01,430
+an action and we might call a complete lesson.
+
+30
+00:02:01,560 --> 00:02:03,320
+My thought on I use.
+
+31
+00:02:03,620 --> 00:02:11,630
+And and finally we can make some assertions we can assert that our Ready's database has a key user with
+
+32
+00:02:11,630 --> 00:02:18,950
+the ID of the user then the ID of the series and then assert that he actually has an array that concerns
+
+33
+00:02:19,220 --> 00:02:22,540
+that contains the ID of that lesson that the user completa.
+
+34
+00:02:22,640 --> 00:02:24,490
+OK so let's try this out.
+
+35
+00:02:24,590 --> 00:02:30,760
+So my question I use I use are equal Sfar tree creates.
+
+36
+00:02:32,090 --> 00:02:35,590
+And we're going to specify that we want for the use of class.
+
+37
+00:02:36,080 --> 00:02:42,320
+So we'll create a series also and will specify a sou'west class.
+
+38
+00:02:43,340 --> 00:02:47,330
+And if we want to complete a lesson we need to also create a lesson.
+
+39
+00:02:47,390 --> 00:02:55,900
+So I would say lesson factory and I would see for the lesson class and would create and for testing
+
+40
+00:02:55,980 --> 00:02:56,530
+purposes.
+
+41
+00:02:56,540 --> 00:03:02,870
+Let's make sure that this lesson actually belongs to the series by overwriting the series ID field from
+
+42
+00:03:02,870 --> 00:03:10,220
+our factory and making sure that we put in our own ID which would be the suicide we just created right
+
+43
+00:03:10,220 --> 00:03:10,720
+here.
+
+44
+00:03:10,940 --> 00:03:11,750
+OK.
+
+45
+00:03:11,890 --> 00:03:18,890
+Then would call or use our complete lesson mid-thought and for us for our session would say this our
+
+46
+00:03:19,070 --> 00:03:28,370
+search equals Radice and would use as members because we want to see it in a set.
+
+47
+00:03:28,370 --> 00:03:31,880
+Remember we use in a sense because we don't want duplicate values.
+
+48
+00:03:31,880 --> 00:03:37,890
+It's just like a list but it's not going to allow us to store duplicate values into that list.
+
+49
+00:03:37,970 --> 00:03:38,710
+Or are we.
+
+50
+00:03:38,810 --> 00:03:39,380
+OK.
+
+51
+00:03:39,500 --> 00:03:46,750
+So we want to assert that when we call Ready's to get a key which is user and the idea of that user
+
+52
+00:03:46,750 --> 00:03:50,310
+actually one and the series idea should be one.
+
+53
+00:03:50,390 --> 00:03:56,630
+This exact key should march and array which has ID 1.
+
+54
+00:03:56,830 --> 00:03:57,470
+OK.
+
+55
+00:03:57,530 --> 00:04:06,350
+So when we complete lesson one it should create this key which is for the series that this lesson belongs
+
+56
+00:04:06,350 --> 00:04:06,890
+to.
+
+57
+00:04:06,890 --> 00:04:11,450
+And we fully specify that it belongs to series one because remember we're going to be using a fresh
+
+58
+00:04:11,450 --> 00:04:12,390
+database right.
+
+59
+00:04:12,410 --> 00:04:17,620
+So this use all the idea of one series idea of one lesson of one also.
+
+60
+00:04:17,780 --> 00:04:23,150
+And we're trying to make sure that this key will exist in our ready store and it would automatically
+
+61
+00:04:23,150 --> 00:04:26,380
+be equal to the radius ID of one.
+
+62
+00:04:26,540 --> 00:04:27,620
+OK.
+
+63
+00:04:27,620 --> 00:04:36,410
+Now before we want this test I'll do a little creek of imports one for broadcast used for the lesson
+
+64
+00:04:37,150 --> 00:04:38,190
+and the sooks.
+
+65
+00:04:38,350 --> 00:04:38,720
+OK.
+
+66
+00:04:38,740 --> 00:04:41,370
+Let's run these tests individually.
+
+67
+00:04:41,690 --> 00:04:42,740
+One hit.
+
+68
+00:04:42,740 --> 00:04:46,630
+We have a culture on the find mid-thought complete lesson.
+
+69
+00:04:46,910 --> 00:04:50,630
+So ahead of us who may use our class and our credit my thought
+
+70
+00:04:53,970 --> 00:04:56,140
+OK run again.
+
+71
+00:04:56,900 --> 00:04:59,190
+And then we can find this.
+
+72
+00:04:59,310 --> 00:05:07,330
+So my test and our use ready to proceed run again expected that we had nothing.
+
+73
+00:05:07,380 --> 00:05:09,460
+But after all we're supposed to be an array.
+
+74
+00:05:09,560 --> 00:05:10,070
+OK.
+
+75
+00:05:10,190 --> 00:05:12,790
+So we want to walk in our complete lesson method.
+
+76
+00:05:13,010 --> 00:05:17,310
+Now looks like we really need to know the particular lesson that we are completing.
+
+77
+00:05:17,320 --> 00:05:20,870
+So this my thought let's pass in the lesson that we have here.
+
+78
+00:05:21,020 --> 00:05:21,560
+OK.
+
+79
+00:05:21,650 --> 00:05:29,990
+So we're going to accept that lesson into this thought and what we want to do here is save this and
+
+80
+00:05:29,990 --> 00:05:32,750
+we'll see as that is the method we want to call.
+
+81
+00:05:32,750 --> 00:05:37,430
+So it's adding to a set and the set has to be of a particular pattern.
+
+82
+00:05:37,490 --> 00:05:38,060
+Right.
+
+83
+00:05:38,060 --> 00:05:42,550
+Remember we said we need to use our car loan they use our ID.
+
+84
+00:05:42,620 --> 00:05:52,340
+So we going to call this I.D. and then we need the Sui's I.D. So we will cause serious car loan and
+
+85
+00:05:52,340 --> 00:06:00,790
+then we'll call the lesson I will get a serious relationship I will get the I.D. from there and the
+
+86
+00:06:00,790 --> 00:06:04,770
+value that we're going to be adding is the lesson ID.
+
+87
+00:06:04,940 --> 00:06:05,570
+OK.
+
+88
+00:06:05,580 --> 00:06:06,240
+Understand.
+
+89
+00:06:06,350 --> 00:06:11,100
+So for us to achieve this key we need the use of ID which is one right here.
+
+90
+00:06:11,150 --> 00:06:18,980
+We need a serious I.D. which is this one and then we need to put in the lesson I.D. which is this key
+
+91
+00:06:19,070 --> 00:06:19,550
+right here.
+
+92
+00:06:19,630 --> 00:06:19,970
+OK.
+
+93
+00:06:19,970 --> 00:06:26,060
+So we are actually building a unique key so that it would be unique for every Yousaf which takes a particular
+
+94
+00:06:26,120 --> 00:06:30,920
+series OK so let's run this test and see what we get.
+
+95
+00:06:30,940 --> 00:06:33,170
+Hope everything does not blow up.
+
+96
+00:06:33,450 --> 00:06:34,090
+OK.
+
+97
+00:06:34,200 --> 00:06:35,350
+But gas really is not fun.
+
+98
+00:06:35,340 --> 00:06:37,020
+We just need to import.
+
+99
+00:06:37,080 --> 00:06:38,540
+So use ready Swazey
+
+100
+00:06:41,180 --> 00:06:45,490
+one that again tried to get property of known object.
+
+101
+00:06:45,600 --> 00:06:52,480
+And I think that should be common because we don't have our relationship or lesson for lesson.
+
+102
+00:06:52,500 --> 00:06:53,110
+I'm serious.
+
+103
+00:06:53,130 --> 00:06:53,520
+OK.
+
+104
+00:06:53,550 --> 00:07:02,520
+So what are the what are lessons lost I will create a relationship for that so return this belongs to
+
+105
+00:07:03,100 --> 00:07:04,500
+the series class.
+
+106
+00:07:04,850 --> 00:07:05,360
+OK.
+
+107
+00:07:05,430 --> 00:07:06,900
+So let's run that.
+
+108
+00:07:07,230 --> 00:07:09,940
+And we still get a failure.
+
+109
+00:07:10,470 --> 00:07:16,650
+So why don't we do this with headbutts or I use OUR And I'm gonna copy the stream right here and I'm
+
+110
+00:07:16,650 --> 00:07:23,430
+going to use a day dump just to know the result of that stream operation right there just to make sure
+
+111
+00:07:23,430 --> 00:07:26,850
+we are truly saving the correct string to the database right.
+
+112
+00:07:27,120 --> 00:07:29,280
+So let's run that test.
+
+113
+00:07:29,340 --> 00:07:32,120
+We have use our 12 series 13.
+
+114
+00:07:32,130 --> 00:07:38,160
+So we actually are not refreshing our database which means we are not getting fresh data.
+
+115
+00:07:38,250 --> 00:07:41,130
+So let's use Refresh database traits right here.
+
+116
+00:07:41,250 --> 00:07:41,780
+OK.
+
+117
+00:07:41,880 --> 00:07:44,270
+So this is what I do most of the time.
+
+118
+00:07:44,370 --> 00:07:49,050
+If I don't understand why something is happening it's just like unsoldered locking javascript.
+
+119
+00:07:49,050 --> 00:07:53,720
+You can write them anywhere you projec to see what's going on at that particular point.
+
+120
+00:07:53,880 --> 00:07:55,650
+OK so let's run this.
+
+121
+00:07:56,280 --> 00:07:57,250
+And great.
+
+122
+00:07:57,270 --> 00:07:59,880
+We have a successful test.
+
+123
+00:07:59,960 --> 00:08:00,560
+OK.
+
+124
+00:08:00,720 --> 00:08:04,030
+So that's how we can actually complete a series.
+
+125
+00:08:04,140 --> 00:08:09,950
+And then later in our project we can get the series or lessons that a particular user has completed
+
+126
+00:08:09,960 --> 00:08:11,220
+by getting this key.
+
+127
+00:08:11,290 --> 00:08:12,100
+OK.
+
+128
+00:08:12,330 --> 00:08:17,740
+So for now let's Rifat So this lieto we have a user.
+
+129
+00:08:18,120 --> 00:08:20,800
+We don't need to create a series right here.
+
+130
+00:08:20,790 --> 00:08:22,520
+We're not using the series variable.
+
+131
+00:08:22,620 --> 00:08:25,760
+What we're going to do is simply place it as such.
+
+132
+00:08:25,940 --> 00:08:26,490
+OK.
+
+133
+00:08:26,550 --> 00:08:32,720
+Because this lesson automatically is going to generate a new series and we can use that series here.
+
+134
+00:08:32,790 --> 00:08:33,400
+OK.
+
+135
+00:08:33,450 --> 00:08:36,770
+So this is necessary complete the lesson.
+
+136
+00:08:36,930 --> 00:08:44,030
+And I said that what the array that the Ready's as members mid-thought returns to us is exactly this.
+
+137
+00:08:44,200 --> 00:08:44,760
+OK.
+
+138
+00:08:44,870 --> 00:08:46,230
+One that says one more time.
+
+139
+00:08:46,230 --> 00:08:48,300
+Michel we've not broken anything.
+
+140
+00:08:48,420 --> 00:08:49,730
+Great Red Green.
+

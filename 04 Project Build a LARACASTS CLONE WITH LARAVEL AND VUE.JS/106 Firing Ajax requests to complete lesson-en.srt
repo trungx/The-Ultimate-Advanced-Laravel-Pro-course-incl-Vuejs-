@@ -1,0 +1,240 @@
+1
+00:00:01,530 --> 00:00:07,110
+This father we have four components that are components and alerts to the user that he's finished watching
+
+2
+00:00:07,110 --> 00:00:07,750
+the video.
+
+3
+00:00:07,860 --> 00:00:13,410
+But before that's what we want to do is actually make an Ajax request to complete that NSN for the user
+
+4
+00:00:13,590 --> 00:00:14,760
+for that series.
+
+5
+00:00:14,940 --> 00:00:18,350
+And then we display this message to the user.
+
+6
+00:00:18,450 --> 00:00:24,960
+OK so that's quite a method called complete lesson on these components and this method is going to use
+
+7
+00:00:25,080 --> 00:00:27,390
+examples to fire that request.
+
+8
+00:00:27,390 --> 00:00:28,930
+So let's import exudes.
+
+9
+00:00:29,210 --> 00:00:29,730
+OK.
+
+10
+00:00:29,760 --> 00:00:31,850
+So just to review what the.
+
+11
+00:00:31,860 --> 00:00:34,850
+PH BE we have that post requests.
+
+12
+00:00:34,950 --> 00:00:38,700
+That completes the lesson and we need to pass in the lesson ID.
+
+13
+00:00:38,700 --> 00:00:41,090
+We already tested this so we know it's working.
+
+14
+00:00:41,280 --> 00:00:47,570
+So right here all we need to do is say XOs the post in the correct year.
+
+15
+00:00:47,580 --> 00:00:55,440
+I see this completely Assen and looks like we need to pass the lesson IDs so I'm going to change this
+
+16
+00:00:55,440 --> 00:01:02,130
+to back 6 so we can concatenate the lesson ID and then right here.
+
+17
+00:01:02,940 --> 00:01:05,250
+I'll just quote this.
+
+18
+00:01:05,340 --> 00:01:07,580
+That lesson that ID.
+
+19
+00:01:07,680 --> 00:01:08,190
+OK.
+
+20
+00:01:08,220 --> 00:01:09,720
+So that's the you know.
+
+21
+00:01:09,870 --> 00:01:16,320
+And then when you pass in the data for the spoors requests which is an empty object and Dan would say
+
+22
+00:01:16,320 --> 00:01:16,550
+that.
+
+23
+00:01:16,560 --> 00:01:21,060
+Then we receive a successful response from us.
+
+24
+00:01:21,270 --> 00:01:26,160
+What we want to do is now call our display video alert method.
+
+25
+00:01:26,280 --> 00:01:26,800
+OK.
+
+26
+00:01:26,850 --> 00:01:32,280
+So right here we're going to see this dot display video.
+
+27
+00:01:32,480 --> 00:01:33,260
+OK.
+
+28
+00:01:33,300 --> 00:01:41,160
+And then at the top in the wall mounted hook at the bottom when the player listens to and rather than
+
+29
+00:01:41,160 --> 00:01:45,640
+calling me already it's going to call this dot complete lesson.
+
+30
+00:01:45,750 --> 00:01:46,330
+OK.
+
+31
+00:01:46,410 --> 00:01:49,520
+So we listen to that event when the lesson is completed.
+
+32
+00:01:49,770 --> 00:01:55,040
+And once we hear that event we call a complete lesson mid-thought the complete lesson method as an Ajax
+
+33
+00:01:55,040 --> 00:01:59,620
+request to this point which is going to complete that lesson for I use.
+
+34
+00:01:59,760 --> 00:02:04,180
+And once that request is successful we call the display we do a lot more thought.
+
+35
+00:02:04,200 --> 00:02:08,250
+We just go into all the user you just completed the lesson or the Sui's.
+
+36
+00:02:08,340 --> 00:02:08,990
+OK.
+
+37
+00:02:09,120 --> 00:02:12,050
+So let's check this out in the browser.
+
+38
+00:02:12,060 --> 00:02:13,910
+I'm just going inspect right there.
+
+39
+00:02:13,960 --> 00:02:15,050
+Hard refresh.
+
+40
+00:02:15,240 --> 00:02:23,130
+And right now we haven't completed this lesson so I'm going to plate and phosphor that it's there and
+
+41
+00:02:23,130 --> 00:02:29,860
+so naturally fires that request and magically we see we have here you have completed this series.
+
+42
+00:02:29,880 --> 00:02:34,990
+So I click on OK and let's check out our network to see if any request was fire.
+
+43
+00:02:35,040 --> 00:02:38,650
+And right here we just call that the request was actually fired.
+
+44
+00:02:38,760 --> 00:02:40,980
+So I'm just going to expand this a little.
+
+45
+00:02:40,980 --> 00:02:46,180
+We have that request to the complete lesson for listen to and preview.
+
+46
+00:02:46,200 --> 00:02:47,520
+We have the status OK.
+
+47
+00:02:47,520 --> 00:02:50,040
+That was Sir responded to us.
+
+48
+00:02:50,040 --> 00:02:50,510
+OK.
+
+49
+00:02:50,640 --> 00:02:56,660
+So now I'm going to refresh this page and if you check out we have the complete set message right here
+
+50
+00:02:56,670 --> 00:02:58,670
+which means this lesson was completed.
+
+51
+00:02:58,800 --> 00:02:59,280
+OK.
+
+52
+00:02:59,400 --> 00:03:02,060
+So let's go ahead and also try to complete this video.
+
+53
+00:03:02,160 --> 00:03:02,620
+OK.
+
+54
+00:03:02,670 --> 00:03:09,660
+I'm going to play it fast for that and you see here we completed this lesson because he just of course
+
+55
+00:03:09,660 --> 00:03:10,370
+was fired.
+
+56
+00:03:10,380 --> 00:03:16,240
+That's the response if I click on OK it refreshes goes to the next.
+
+57
+00:03:16,260 --> 00:03:18,670
+But now all three have been completed.
+
+58
+00:03:18,750 --> 00:03:19,160
+OK.
+
+59
+00:03:19,170 --> 00:03:23,160
+So the completion starters for this series is 100 percent.
+
+60
+00:03:23,280 --> 00:03:24,120
+Great job.
+

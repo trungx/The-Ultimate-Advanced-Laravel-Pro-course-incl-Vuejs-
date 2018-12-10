@@ -1,0 +1,616 @@
+1
+00:00:01,090 --> 00:00:07,240
+Not want a lot of console that locks all about application and there that's not really going to be a
+
+2
+00:00:07,240 --> 00:00:09,600
+very helpful notification system in production.
+
+3
+00:00:09,700 --> 00:00:11,330
+So what are they going to be doing in this video.
+
+4
+00:00:11,330 --> 00:00:16,540
+It's actually creating our own custom detection system as you know just to be using notifications all
+
+5
+00:00:16,540 --> 00:00:19,040
+around application of different components.
+
+6
+00:00:19,120 --> 00:00:25,750
+And the best way to go about it is actually registering an events bus on in the object so we can access
+
+7
+00:00:25,750 --> 00:00:27,480
+it from anywhere at any time.
+
+8
+00:00:27,480 --> 00:00:28,440
+I'll show what I mean.
+
+9
+00:00:28,570 --> 00:00:34,930
+I'll head over to view and in my app the Jets right here we have the window objects and we can actually
+
+10
+00:00:35,020 --> 00:00:37,370
+registar different properties on this object.
+
+11
+00:00:37,420 --> 00:00:42,130
+And I'm just going to start with a naughty property which is going to be a function that takes in a
+
+12
+00:00:42,130 --> 00:00:45,460
+notification and let's just see if we start when you call this mid-thought.
+
+13
+00:00:45,460 --> 00:00:49,580
+It's simply a console that locks notification not message.
+
+14
+00:00:49,630 --> 00:00:55,360
+OK so because I'm thinking and this question should be made up of a message and a type so maybe it's
+
+15
+00:00:55,360 --> 00:01:00,650
+a success or a danger type or warning type we're just going to make that cost.
+
+16
+00:01:00,820 --> 00:01:01,300
+OK.
+
+17
+00:01:01,450 --> 00:01:06,280
+Now if you call this method anywhere we should actually see notification that message.
+
+18
+00:01:06,460 --> 00:01:12,780
+OK let's try this with head of what's our consul would call the new team effort and it's like setting
+
+19
+00:01:12,780 --> 00:01:19,220
+an object on one of those reports issued by mistake so I would say this is a new message.
+
+20
+00:01:19,230 --> 00:01:23,130
+It went up and there we go we have this is a new message on the console.
+
+21
+00:01:23,140 --> 00:01:26,400
+So it's actually picking up that message logging into the console.
+
+22
+00:01:26,410 --> 00:01:28,310
+Now this is not what we want to do right.
+
+23
+00:01:28,330 --> 00:01:33,320
+We want to actually meet an event and then we listen to that event from anywhere in application.
+
+24
+00:01:33,330 --> 00:01:36,230
+Now if you haven't noticed Yes it's so.
+
+25
+00:01:36,340 --> 00:01:42,460
+Actually an event bus which means we can admit events we view the view in stunts and actually also listen
+
+26
+00:01:42,460 --> 00:01:43,050
+to this event.
+
+27
+00:01:43,060 --> 00:01:44,140
+I'll show you what I mean.
+
+28
+00:01:44,140 --> 00:01:46,880
+So notice we have a window view right here.
+
+29
+00:01:47,020 --> 00:01:52,040
+Let's head over to our console and what we're going to do is see view should be close to new view.
+
+30
+00:01:52,120 --> 00:01:57,680
+So we have a new instance of view and what we're going to do is view that on Naughty fight.
+
+31
+00:01:57,690 --> 00:02:03,610
+So again a message and simply console that lock message and for us to know it's actually coming from
+
+32
+00:02:03,610 --> 00:02:03,850
+here.
+
+33
+00:02:03,850 --> 00:02:08,080
+That's concatenates from custom event boss.
+
+34
+00:02:08,140 --> 00:02:15,250
+And now we got an event listener on of your instance then what we could do is using View Available that
+
+35
+00:02:15,250 --> 00:02:21,850
+we start we could meet that event and that event is going to be notified and we'll pass in the payload
+
+36
+00:02:21,850 --> 00:02:27,450
+which is the message and we're going to see a custom message to events or bus he'd enter.
+
+37
+00:02:27,550 --> 00:02:31,270
+And we see it's actually lots of console custom message to even boss.
+
+38
+00:02:31,360 --> 00:02:37,980
+And then it's concatenated string from custom event bus so viewers can naturally artist custom even
+
+39
+00:02:37,980 --> 00:02:38,770
+box itself.
+
+40
+00:02:38,860 --> 00:02:45,610
+So rather than doing this in the console let's do it in our court so we could say window that events
+
+41
+00:02:46,830 --> 00:02:54,090
+for example is going to be called to new view instance then we can restart our global events.
+
+42
+00:02:54,090 --> 00:02:54,810
+Listen up.
+
+43
+00:02:54,810 --> 00:02:59,130
+But on notification checking the notification.
+
+44
+00:02:59,130 --> 00:03:02,030
+And for now just console that lock litigation.
+
+45
+00:03:02,190 --> 00:03:02,880
+Received.
+
+46
+00:03:03,030 --> 00:03:03,590
+OK.
+
+47
+00:03:03,720 --> 00:03:09,890
+So we have this event box just like we did in our console and it can actually listen to events.
+
+48
+00:03:09,900 --> 00:03:14,870
+So now that we've registered this event now we can actually Emmets that events from quantity function.
+
+49
+00:03:14,880 --> 00:03:21,690
+So we did have that clean window events and would emit notification and we can pass in a payload for
+
+50
+00:03:21,690 --> 00:03:23,270
+example new message.
+
+51
+00:03:23,450 --> 00:03:23,830
+OK.
+
+52
+00:03:23,850 --> 00:03:29,250
+So let's have a watch or a console call noti and we have notification received locked right here.
+
+53
+00:03:29,370 --> 00:03:35,390
+OK so why don't we actually wrap this in a custom component so that we can use it in any part of our
+
+54
+00:03:35,390 --> 00:03:36,190
+application.
+
+55
+00:03:36,240 --> 00:03:39,720
+I'm going to create a custom file and this is going to be naughty that view.
+
+56
+00:03:39,780 --> 00:03:42,570
+And we're going to have templates.
+
+57
+00:03:42,900 --> 00:03:46,560
+My scripts would export by default an empty object.
+
+58
+00:03:46,710 --> 00:03:47,910
+Let's just start this with.
+
+59
+00:03:47,950 --> 00:03:48,700
+Yes.
+
+60
+00:03:48,750 --> 00:04:01,160
+So the component and would use view naughty as Jim or template then quite an component's naughty that
+
+61
+00:04:01,170 --> 00:04:01,700
+view.
+
+62
+00:04:01,890 --> 00:04:04,850
+Not what I want to do is it may not see that view.
+
+63
+00:04:05,040 --> 00:04:14,310
+When we compare and is created it I'm going to see a window not events not on much kasian because that's
+
+64
+00:04:14,310 --> 00:04:16,110
+the event that we are broadcasting.
+
+65
+00:04:16,410 --> 00:04:18,290
+We're taking the payload.
+
+66
+00:04:18,600 --> 00:04:23,990
+And for now let's just say console that lock the notification received.
+
+67
+00:04:24,300 --> 00:04:24,760
+OK.
+
+68
+00:04:24,810 --> 00:04:30,600
+So in my of the Jest I'm no longer going to listen to this but I'm listening to it in the components.
+
+69
+00:04:30,660 --> 00:04:34,440
+So when they're called Norty it's going to emit that notification.
+
+70
+00:04:34,440 --> 00:04:37,840
+And if everything works well we actually see in the console.
+
+71
+00:04:37,890 --> 00:04:41,790
+There's not one last step we need to make sure we mnze this.
+
+72
+00:04:41,910 --> 00:04:46,370
+So maybe at the bottom we could mnze view naughty.
+
+73
+00:04:46,500 --> 00:04:47,610
+And I think that should walk.
+
+74
+00:04:47,650 --> 00:04:51,720
+Let's try it out how to refresh and would call Nuzzi again.
+
+75
+00:04:51,840 --> 00:04:52,070
+Yeah.
+
+76
+00:04:52,080 --> 00:04:53,730
+And we do have the education received.
+
+77
+00:04:53,730 --> 00:04:57,360
+Therefore we are truly listening to that event from our custom components.
+
+78
+00:04:57,360 --> 00:05:01,090
+Let's head over to our components now and actually try to make this work.
+
+79
+00:05:01,120 --> 00:05:08,130
+And first of all going to set up a data top in here I'm going to have notification such by default and
+
+80
+00:05:08,130 --> 00:05:14,370
+then right here when I receive that event or I listen to it I'm going to say this the notification equals
+
+81
+00:05:14,880 --> 00:05:15,500
+payload.
+
+82
+00:05:15,570 --> 00:05:21,220
+Then in my template I can see if we show a cause notification.
+
+83
+00:05:21,380 --> 00:05:21,760
+OK.
+
+84
+00:05:21,780 --> 00:05:25,130
+So it means if notification is not we are not going to see that template.
+
+85
+00:05:25,200 --> 00:05:27,640
+But if it's not no then we're going to see it in our template.
+
+86
+00:05:27,660 --> 00:05:35,190
+We may want to echo the notification message so we might have notification that MSH right up and we
+
+87
+00:05:35,190 --> 00:05:37,620
+should have a little bit styling for this.
+
+88
+00:05:37,620 --> 00:05:41,770
+So class of alerts maybe are less successful now.
+
+89
+00:05:42,030 --> 00:05:43,910
+And what about the positioning.
+
+90
+00:05:43,940 --> 00:05:45,210
+Where do we want to see it.
+
+91
+00:05:45,240 --> 00:05:52,270
+Let's just give this a class of Nazi lurch or naughty and what we're going to do is define our custom
+
+92
+00:05:52,370 --> 00:05:57,300
+sidewalks just what these components would define alert naughty class.
+
+93
+00:05:57,510 --> 00:06:01,480
+And let's just give this position of fixed.
+
+94
+00:06:01,650 --> 00:06:06,170
+And if you want it at the bottom right corner or at the bottom sense depending on what you want.
+
+95
+00:06:06,330 --> 00:06:11,570
+We can give it a right of 20 pleasaunce arm for pigs pixels maybe.
+
+96
+00:06:11,910 --> 00:06:17,390
+And just to make sure it's floating with give it that index of 1 and that would do it for the styling.
+
+97
+00:06:17,400 --> 00:06:18,300
+Pretty basic.
+
+98
+00:06:18,360 --> 00:06:24,420
+So we listen to that event and if the notification is not more then we are going to receive that message.
+
+99
+00:06:24,420 --> 00:06:27,000
+So that's just rubbish in the tech center.
+
+100
+00:06:27,000 --> 00:06:29,370
+So how do we trigger a notification event.
+
+101
+00:06:29,370 --> 00:06:32,390
+We do that by calling or Nuzzi function.
+
+102
+00:06:32,700 --> 00:06:38,130
+So our function is going to meet that event for us and we taking the notification rather than passing
+
+103
+00:06:38,210 --> 00:06:40,810
+a new message here we should pass the notification.
+
+104
+00:06:40,890 --> 00:06:48,640
+OK therefore let's head over to what lessons that you are gay and right here we're listening to.
+
+105
+00:06:48,780 --> 00:06:53,770
+When the lesson is created what we could do is see window the naughty.
+
+106
+00:06:53,870 --> 00:06:55,340
+I will pass in the notification.
+
+107
+00:06:55,350 --> 00:07:01,080
+We want to notify the users so we're passing the message like great great and this message is going
+
+108
+00:07:01,080 --> 00:07:06,240
+to be less than create it successfully and get passed in a type of success.
+
+109
+00:07:06,240 --> 00:07:06,600
+Right.
+
+110
+00:07:06,690 --> 00:07:08,920
+So we are calling Wiersma thought.
+
+111
+00:07:09,030 --> 00:07:14,040
+And when we call that mid-thought this method is going to taking the notification that we passed in
+
+112
+00:07:14,280 --> 00:07:19,850
+and admits that events and no one not see that view component we are listening to that event.
+
+113
+00:07:19,890 --> 00:07:25,080
+And we are going to automatically assign that event to one notification property or kink.
+
+114
+00:07:25,080 --> 00:07:26,120
+That makes sense.
+
+115
+00:07:26,130 --> 00:07:27,610
+Let's try this out.
+
+116
+00:07:27,720 --> 00:07:38,060
+Create lesson lesson sayto ID number description and click on a quick lesson button.
+
+117
+00:07:38,250 --> 00:07:41,510
+And here we have our mistakes lesson created successfully.
+
+118
+00:07:41,760 --> 00:07:48,170
+Bad looks like the message does not go off even after all we've fight saw what we can do is actually
+
+119
+00:07:48,170 --> 00:07:51,230
+have a time out for this to show.
+
+120
+00:07:51,230 --> 00:07:55,240
+So what we can do is this the notification equals payload.
+
+121
+00:07:55,460 --> 00:08:01,340
+And after that we can set a timeout which is going to take in a function and in this function we want
+
+122
+00:08:01,340 --> 00:08:08,720
+to set notification to be quote you know my game and we have to specify the amount of time.
+
+123
+00:08:08,720 --> 00:08:11,900
+So let's just see 2.5 seconds she's going to do.
+
+124
+00:08:12,200 --> 00:08:18,110
+So set the notification to be called the payload and after 2.5 seconds make showed an indication he
+
+125
+00:08:18,110 --> 00:08:19,240
+said but no.
+
+126
+00:08:19,370 --> 00:08:19,740
+OK.
+
+127
+00:08:19,760 --> 00:08:21,510
+So let's try this out one more time.
+
+128
+00:08:21,560 --> 00:08:27,990
+Quick new lesson new lesson number description.
+
+129
+00:08:28,010 --> 00:08:31,440
+OK we have that notification and after some time it goes away.
+
+130
+00:08:31,460 --> 00:08:35,230
+So the positioning is really off but I'm going to take that behind the scenes.
+
+131
+00:08:35,250 --> 00:08:38,600
+What I want to do right now is truly make this message dynamic.
+
+132
+00:08:38,600 --> 00:08:44,040
+So rather than having these alerts says I want this class to be dynamic.
+
+133
+00:08:44,040 --> 00:08:51,020
+Therefore what I'm gonna do is bind this class to be called to a computer property or a computer property
+
+134
+00:08:51,020 --> 00:08:54,450
+is going to is going to get the type of the notification.
+
+135
+00:08:54,470 --> 00:09:00,750
+So we need a computer property right here so we're going to see it and we have the type computer property
+
+136
+00:09:01,010 --> 00:09:03,530
+and this is simply going to return the class name that we want.
+
+137
+00:09:03,530 --> 00:09:09,320
+For example if we have success then we should have a lot success if we have a danger then we should
+
+138
+00:09:09,320 --> 00:09:10,490
+have that danger.
+
+139
+00:09:10,640 --> 00:09:12,000
+Same thing with a warning.
+
+140
+00:09:12,170 --> 00:09:15,450
+So would return the template string.
+
+141
+00:09:15,690 --> 00:09:21,190
+Words then concatenate that to this litigation type.
+
+142
+00:09:21,510 --> 00:09:22,050
+OK.
+
+143
+00:09:22,220 --> 00:09:28,520
+So if we ever have an interrogation by industry on the property type and this type is going to simply
+
+144
+00:09:28,520 --> 00:09:32,400
+return to us class name that matches the notification type.
+
+145
+00:09:32,510 --> 00:09:32,990
+OK.
+
+146
+00:09:33,080 --> 00:09:36,330
+So what we can do is would help reduce or lessen the view.
+
+147
+00:09:36,380 --> 00:09:39,910
+And just for demonstration purposes would change these to danger.
+
+148
+00:09:40,060 --> 00:09:40,440
+OK.
+
+149
+00:09:40,460 --> 00:09:45,980
+So when the user creates a new lesson make sure that what is I mean that is a danger and we should automatically
+
+150
+00:09:45,980 --> 00:09:49,420
+have a class of alert danger attached to this.
+
+151
+00:09:49,520 --> 00:09:57,480
+If so let's try that out and you lessen the number description OK.
+
+152
+00:09:57,500 --> 00:10:02,450
+So we see right here automatically we have a dean Jopp type of notification.
+
+153
+00:10:02,480 --> 00:10:03,590
+So that's great.
+
+154
+00:10:03,600 --> 00:10:04,130
+Aspected.
+

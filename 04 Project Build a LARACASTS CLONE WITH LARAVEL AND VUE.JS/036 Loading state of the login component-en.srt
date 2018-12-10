@@ -1,0 +1,184 @@
+1
+00:00:00,240 --> 00:00:04,740
+I don't like seeing Albertson active when we are truly making an Ajax request So let's take care of
+
+2
+00:00:04,740 --> 00:00:05,340
+that.
+
+3
+00:00:05,340 --> 00:00:08,490
+I'm going to introduce a new field and this is going to be a lot in-field.
+
+4
+00:00:08,520 --> 00:00:11,970
+So your clothing should be set to fall by default.
+
+5
+00:00:12,000 --> 00:00:12,340
+OK.
+
+6
+00:00:12,360 --> 00:00:18,850
+So there's no current Ajax request Dan in my computer property that checks if the form is valid.
+
+7
+00:00:18,930 --> 00:00:22,880
+I'm also going to see check and make sure that it's not loading.
+
+8
+00:00:22,960 --> 00:00:23,360
+OK.
+
+9
+00:00:23,430 --> 00:00:29,880
+So if it's actually loading then this is going to activate the phone right because this is true this
+
+10
+00:00:29,880 --> 00:00:31,340
+is true but this is going to be false.
+
+11
+00:00:31,380 --> 00:00:36,870
+So if this is actually loading or if there's actually call INS agents request then this is going to
+
+12
+00:00:37,080 --> 00:00:38,420
+disable the button right.
+
+13
+00:00:38,460 --> 00:00:39,980
+So because this is going to be true.
+
+14
+00:00:39,980 --> 00:00:42,640
+True but it's going to be false making the whole thing false.
+
+15
+00:00:42,780 --> 00:00:43,060
+OK.
+
+16
+00:00:43,080 --> 00:00:45,630
+So when we are attempting to logging.
+
+17
+00:00:45,660 --> 00:00:49,150
+We just need to set this to the loading Sutro.
+
+18
+00:00:49,590 --> 00:00:55,260
+And if we have an error meaning we are still going to be on the phone we just need to see that loading
+
+19
+00:00:55,440 --> 00:00:56,750
+was false.
+
+20
+00:00:56,790 --> 00:00:57,860
+So no need to do that.
+
+21
+00:00:57,870 --> 00:00:59,590
+If we have a successful response.
+
+22
+00:00:59,610 --> 00:01:01,200
+OK so let's check that out.
+
+23
+00:01:01,220 --> 00:01:07,620
+Now lugging if I put in an e-mail on a password of secrets or let's just say I put in a password that
+
+24
+00:01:07,620 --> 00:01:09,720
+doesn't match when I click on the button.
+
+25
+00:01:09,720 --> 00:01:10,930
+You see just a mode.
+
+26
+00:01:10,950 --> 00:01:13,860
+And then we have a 4:22 from our server.
+
+27
+00:01:14,110 --> 00:01:20,030
+And if I change my correct password it's still going to be just a mode to we have a successful refresh.
+
+28
+00:01:20,140 --> 00:01:21,640
+OK that's what I said.
+
+29
+00:01:21,660 --> 00:01:26,890
+Now let's think about how we can actually handle responses from our server.
+
+30
+00:01:26,940 --> 00:01:32,040
+So for example when we have to put you in the wrong password just now we actually received a 4:22 which
+
+31
+00:01:32,040 --> 00:01:34,870
+means a fill in validation error.
+
+32
+00:01:34,980 --> 00:01:41,580
+And if we actually head over to authenticates use our strengths that is coming from the field logging
+
+33
+00:01:41,670 --> 00:01:48,690
+response method because the string of validation exception we the off that filled message.
+
+34
+00:01:48,690 --> 00:01:49,100
+Right.
+
+35
+00:01:49,110 --> 00:01:54,000
+So if we actually received Videsh in exceptions for email or password or stuff like that it's going
+
+36
+00:01:54,000 --> 00:01:55,420
+to be taken care of.
+
+37
+00:01:55,620 --> 00:01:58,190
+Right at the top of our logging method right here.
+
+38
+00:01:58,200 --> 00:02:03,720
+But then since we are already receiving this because they use those e-mails in on March 1 in our database
+
+39
+00:02:03,720 --> 00:02:05,370
+or the password was not correct.
+
+40
+00:02:05,370 --> 00:02:08,490
+This is of addition exception that begin to receive.
+
+41
+00:02:08,630 --> 00:02:08,960
+OK.
+
+42
+00:02:08,970 --> 00:02:13,650
+So what happens when we actually receive this validation exception.
+
+43
+00:02:13,650 --> 00:02:15,530
+So what did this exception actually do.
+
+44
+00:02:15,540 --> 00:02:21,450
+If we head over to that class and check out the messages methode all it does is actually populates the
+
+45
+00:02:21,470 --> 00:02:27,210
+area back and then and then it would redirect the use of back with the validation errors.
+
+46
+00:02:27,210 --> 00:02:32,080
+So in the very next video we can actually customize this functionality to suit our needs.
+

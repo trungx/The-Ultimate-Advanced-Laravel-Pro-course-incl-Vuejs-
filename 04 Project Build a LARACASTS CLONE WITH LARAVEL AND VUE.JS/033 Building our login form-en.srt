@@ -1,0 +1,300 @@
+1
+00:00:00,120 --> 00:00:04,170
+Regular sunbaking Ajax request to go backhand so we can log in to user.
+
+2
+00:00:04,260 --> 00:00:07,570
+But before we actually start doing that let's just take care of this.
+
+3
+00:00:07,680 --> 00:00:11,650
+And this is naturally coming up form after G-S check that out.
+
+4
+00:00:11,670 --> 00:00:13,810
+Or rather of a bootstrap the jest.
+
+5
+00:00:13,910 --> 00:00:19,710
+And what happened in this novel would automatically try to register the six hours as a common header
+
+6
+00:00:19,740 --> 00:00:24,520
+with XOs so that all are going to be requests automatically have it attached.
+
+7
+00:00:24,540 --> 00:00:27,210
+But then how does it do this.
+
+8
+00:00:27,210 --> 00:00:34,670
+It simply gets a Mets are called CSIR tooken from the head of the document.
+
+9
+00:00:34,770 --> 00:00:38,380
+And if it doesn't find that it can so that locks the error that we find here.
+
+10
+00:00:38,460 --> 00:00:41,590
+And since I changed my template that's why we don't have that.
+
+11
+00:00:41,700 --> 00:00:43,620
+So let's go ahead and stick that in.
+
+12
+00:00:43,710 --> 00:00:44,750
+So we have a mess.
+
+13
+00:00:44,970 --> 00:00:51,540
+And the name is going to be quote you see as our token and the content you because you don't we just
+
+14
+00:00:51,540 --> 00:00:54,520
+need to call osseous our token method.
+
+15
+00:00:54,600 --> 00:00:55,210
+OK.
+
+16
+00:00:55,230 --> 00:01:01,470
+So we refresh and now that error is going we review a patron or three or four seats or a token injected
+
+17
+00:01:01,470 --> 00:01:06,720
+into the page also so we can now make Ajax request to a server using XOs.
+
+18
+00:01:06,720 --> 00:01:10,290
+And yes let's go ahead and take care of this in our luggin view.
+
+19
+00:01:10,300 --> 00:01:12,530
+We need to start doing some work right.
+
+20
+00:01:12,600 --> 00:01:17,700
+So I know I'm going to be sending the e-mail password and remember talk and feel to the server.
+
+21
+00:01:17,730 --> 00:01:23,550
+Therefore why on I just said that are going to change the placeholder to email and the model is going
+
+22
+00:01:23,550 --> 00:01:28,400
+to be called to email going to change to the model password.
+
+23
+00:01:28,440 --> 00:01:35,460
+And for REMEMBER ME field I just need to see the model because remember are some so let's define these
+
+24
+00:01:35,460 --> 00:01:37,380
+properties on our model.
+
+25
+00:01:37,410 --> 00:01:43,050
+So we have our DTMF thought which returns an object and we'll have our e-mail initialized to an empty
+
+26
+00:01:43,050 --> 00:01:46,550
+string or password initialized to an empty string also.
+
+27
+00:01:46,610 --> 00:01:49,030
+And I remember initialized to true.
+
+28
+00:01:49,140 --> 00:01:49,530
+OK.
+
+29
+00:01:49,620 --> 00:01:52,110
+So I had just tried to take a look.
+
+30
+00:01:52,110 --> 00:01:56,880
+Sure enough this is automatically checked for us and we check out our view tools we have our view logging
+
+31
+00:01:57,120 --> 00:01:59,550
+which has all that data are from us.
+
+32
+00:01:59,640 --> 00:02:06,990
+So if we actually try to change days using VM Zobel that member equals false then we see automatically
+
+33
+00:02:07,070 --> 00:02:09,400
+it naturally deactivates the checkbox.
+
+34
+00:02:09,420 --> 00:02:12,550
+So it means we actually successfully binding to this fall.
+
+35
+00:02:12,690 --> 00:02:19,030
+Let's consignor now we want this button to be activated when the user data is not actually correct.
+
+36
+00:02:19,040 --> 00:02:19,410
+Right.
+
+37
+00:02:19,470 --> 00:02:24,420
+So what we're going to be doing is actually creating a computer property to take care of validation
+
+38
+00:02:24,420 --> 00:02:25,170
+for us.
+
+39
+00:02:25,170 --> 00:02:31,890
+So let's just go ahead and say computer it and we're going to have an ECE Varley logging form thought
+
+40
+00:02:32,180 --> 00:02:35,940
+or computer property and this is simply going to return true or false.
+
+41
+00:02:35,940 --> 00:02:41,880
+Now we are going to be checking if the e-mail is a valid email and if the password is a valid password.
+
+42
+00:02:41,880 --> 00:02:42,280
+Right.
+
+43
+00:02:42,330 --> 00:02:49,500
+So let's just start simply by saying return this that e-mail and days that pass word when we want to
+
+44
+00:02:49,500 --> 00:02:52,050
+submit the form we're going to check for that property.
+
+45
+00:02:52,050 --> 00:02:59,340
+So right here where we have a luggin button here we're going to see buying that this property is valid
+
+46
+00:02:59,430 --> 00:03:00,530
+logging from.
+
+47
+00:03:00,540 --> 00:03:02,690
+So obviously we need not.
+
+48
+00:03:02,750 --> 00:03:03,350
+Right.
+
+49
+00:03:03,390 --> 00:03:07,310
+So if it's in value then we're going to have a mode set to true.
+
+50
+00:03:07,410 --> 00:03:08,700
+Let's check this out.
+
+51
+00:03:08,940 --> 00:03:12,750
+So if open or logging sure enough we have this button disabled.
+
+52
+00:03:12,840 --> 00:03:16,930
+But if you put in something here and something here it's automatically enabled.
+
+53
+00:03:17,010 --> 00:03:20,860
+So why don't we have a method that actually checks if the e-mail is a valid e-mail.
+
+54
+00:03:20,880 --> 00:03:27,660
+So let's just see just grebes check valid email and this is simply going to be using regular expressions
+
+55
+00:03:27,660 --> 00:03:28,470
+to check for that.
+
+56
+00:03:28,470 --> 00:03:33,100
+But since I don't want to actually get deep into that is simply going to copy the Meffert So he has
+
+57
+00:03:33,110 --> 00:03:35,780
+a method for that to check valid email.
+
+58
+00:03:35,850 --> 00:03:43,200
+So I'm going to come into this complaint right here and I can create my thoughts property and this is
+
+59
+00:03:43,350 --> 00:03:44,790
+going to be our first method.
+
+60
+00:03:44,850 --> 00:03:46,400
+So validate email.
+
+61
+00:03:46,440 --> 00:03:46,800
+Right.
+
+62
+00:03:46,860 --> 00:03:52,650
+So let's from this on each of validate e-mail or let's just change this to e-mail is valid and what
+
+63
+00:03:52,650 --> 00:03:57,220
+it does is it uses this regular expression to test of value that this past week.
+
+64
+00:03:57,240 --> 00:03:59,360
+Therefore let's just pass this the e-mail.
+
+65
+00:03:59,400 --> 00:04:06,370
+So if this that e-mail passes this test return TRUE else let's just return false.
+
+66
+00:04:06,420 --> 00:04:12,090
+So this mythology is simply going to validate an e-mail for us then what we could do is actually call
+
+67
+00:04:12,120 --> 00:04:14,600
+this methode return this.
+
+68
+00:04:14,600 --> 00:04:18,160
+That e-mail is valid and this is the cross-wired.
+
+69
+00:04:18,210 --> 00:04:19,440
+So let's try that out.
+
+70
+00:04:19,440 --> 00:04:22,410
+We have a log in form we put in Grish.
+
+71
+00:04:22,440 --> 00:04:28,960
+It's not activated but we simply tried to put in a valid e-mail and automatically a button is activated.
+
+72
+00:04:29,110 --> 00:04:30,220
+Wow that works right.
+
+73
+00:04:30,300 --> 00:04:35,120
+So our e-mail method is called Every time the e-mail property changes.
+
+74
+00:04:35,340 --> 00:04:35,670
+OK.
+
+75
+00:04:35,670 --> 00:04:37,710
+So let's continue it enough for the next.
+

@@ -1,0 +1,432 @@
+1
+00:00:00,150 --> 00:00:05,900
+Something very important we have to think about is giving these are a possibility to cut teachers.
+
+2
+00:00:06,050 --> 00:00:06,620
+Right.
+
+3
+00:00:06,660 --> 00:00:08,620
+So we're going to take care of that in this lesson.
+
+4
+00:00:08,790 --> 00:00:12,550
+I'm going to head over to my Poffo to bleed the ATP and then the last.
+
+5
+00:00:12,600 --> 00:00:20,110
+I'm going to create a D so just to display the user are his current card.
+
+6
+00:00:20,250 --> 00:00:23,090
+Maybe the card brand and the last four digits.
+
+7
+00:00:23,100 --> 00:00:28,620
+Because that's what a cashier saves into a database when we subscribe to use to our plan.
+
+8
+00:00:28,690 --> 00:00:29,420
+OK.
+
+9
+00:00:29,460 --> 00:00:40,470
+So right here we just have an the tech sensor which is going to say your current card and it's going
+
+10
+00:00:40,470 --> 00:00:44,490
+to escort us to use our card brand.
+
+11
+00:00:44,610 --> 00:00:47,870
+And we also want to run for the car to last for.
+
+12
+00:00:48,030 --> 00:00:52,150
+So could have caught last fall.
+
+13
+00:00:52,320 --> 00:00:52,660
+Here.
+
+14
+00:00:52,770 --> 00:00:53,180
+OK.
+
+15
+00:00:53,250 --> 00:00:55,810
+It's just going to give us the last four digits of the cart.
+
+16
+00:00:56,060 --> 00:01:03,470
+Because separate this with a car loan and you could wrap all of this in a batch so spun that batch that
+
+17
+00:01:03,810 --> 00:01:05,860
+batch primary.
+
+18
+00:01:05,990 --> 00:01:06,340
+OK.
+
+19
+00:01:06,360 --> 00:01:14,010
+So that's what we have try to visit the profile page and refresh and check all the settings we have.
+
+20
+00:01:14,040 --> 00:01:16,600
+MasterCard 44 44 right here.
+
+21
+00:01:16,710 --> 00:01:17,240
+OK.
+
+22
+00:01:17,430 --> 00:01:21,850
+So I me change the settings to cut the tolls.
+
+23
+00:01:21,960 --> 00:01:25,310
+And we know what we want to have is such a view component.
+
+24
+00:01:25,310 --> 00:01:30,060
+Is just going to pop open a model for us to update to use our Skadi tools.
+
+25
+00:01:30,060 --> 00:01:36,160
+And basically the use cards those models is exactly what we use to collect the critical details.
+
+26
+00:01:36,180 --> 00:01:40,560
+And we're going to simply duplicate it and then edited to fit our needs.
+
+27
+00:01:40,560 --> 00:01:47,760
+So in our components we're going to open the Strype view component copy everything in it and then we're
+
+28
+00:01:47,760 --> 00:01:53,990
+going to create a new component that we're going to call up the card that few and I'm going to pay study
+
+29
+00:01:53,990 --> 00:01:59,320
+and then in my apt Yes I'm going to register new components.
+
+30
+00:01:59,700 --> 00:02:09,750
+And this is going to use the TAC view update card and require in the newly created components or date
+
+31
+00:02:09,750 --> 00:02:11,450
+card that view.
+
+32
+00:02:11,800 --> 00:02:12,330
+OK.
+
+33
+00:02:12,360 --> 00:02:19,900
+So in our profile the blade BHB we're going to mnze the component right here.
+
+34
+00:02:20,710 --> 00:02:33,120
+Maybe in the tech center we could have the view of the card and with a view of the card.
+
+35
+00:02:34,520 --> 00:02:37,910
+And also we want this to take in the image of the user.
+
+36
+00:02:38,090 --> 00:02:46,150
+So would pass in this program which simply echoes the authenticated users email.
+
+37
+00:02:46,480 --> 00:02:47,150
+OK.
+
+38
+00:02:47,180 --> 00:02:52,010
+And then one last thing in ablate head which I subscribe that bleed and I'm going to copy the script
+
+39
+00:02:52,130 --> 00:02:56,410
+right here because we're going to be using this exact same model.
+
+40
+00:02:56,450 --> 00:02:58,390
+So we're going to need Strype check out.
+
+41
+00:02:58,550 --> 00:03:05,300
+And then in the newly created component I'm going to pull out one of the buttons because we just need
+
+42
+00:03:05,300 --> 00:03:06,190
+one.
+
+43
+00:03:06,680 --> 00:03:12,080
+And the one we're going to be using is simply an A C or D the tools.
+
+44
+00:03:12,230 --> 00:03:12,770
+OK.
+
+45
+00:03:12,920 --> 00:03:16,910
+And this is no longer going to be a subscriber and I thought I'm going to create a new method called
+
+46
+00:03:16,940 --> 00:03:17,780
+updates.
+
+47
+00:03:17,900 --> 00:03:21,160
+So when the user clicks on that button it's going to call updates.
+
+48
+00:03:21,230 --> 00:03:27,390
+Then right here for a wall mounted PP-ASEL a public key local auto.
+
+49
+00:03:27,470 --> 00:03:31,100
+And we can actually change what we are doing like you're so right here.
+
+50
+00:03:31,360 --> 00:03:35,410
+Call is not going to be subscribing is going to be caught up that something like that.
+
+51
+00:03:35,450 --> 00:03:35,890
+OK.
+
+52
+00:03:35,960 --> 00:03:38,350
+So incrementally let's change this.
+
+53
+00:03:38,390 --> 00:03:43,490
+So here we have our pop e-mail which we are really passing in and wait on it.
+
+54
+00:03:43,490 --> 00:03:46,940
+But we no longer need mnze on a plan.
+
+55
+00:03:46,970 --> 00:03:49,920
+We also do not need the subscribed metho.
+
+56
+00:03:50,150 --> 00:03:55,850
+So all we need is an update to my thoughts so I'll change this to a page and I'll pull out the plan
+
+57
+00:03:56,580 --> 00:03:59,140
+and I'm going to remove all of these statements right here.
+
+58
+00:03:59,150 --> 00:03:59,600
+OK.
+
+59
+00:03:59,660 --> 00:04:01,190
+We no longer do no plans.
+
+60
+00:04:01,190 --> 00:04:04,160
+So does the candidate open.
+
+61
+00:04:04,160 --> 00:04:10,320
+We don't need to pass in the amounts and we can literally change the Pono label.
+
+62
+00:04:10,400 --> 00:04:10,790
+OK.
+
+63
+00:04:10,820 --> 00:04:12,980
+So what is displayed in the panel.
+
+64
+00:04:13,190 --> 00:04:17,980
+And this is going to be a date card GITTOES.
+
+65
+00:04:18,460 --> 00:04:18,900
+OK.
+
+66
+00:04:18,920 --> 00:04:23,620
+So for now let's just check out what we have in the question and then we're going to move on.
+
+67
+00:04:23,720 --> 00:04:25,450
+So I'll refresh this page.
+
+68
+00:04:25,550 --> 00:04:29,930
+This is the use of our page Vicent according to stop and there we have it.
+
+69
+00:04:29,930 --> 00:04:32,450
+We have MasterCard.
+
+70
+00:04:32,850 --> 00:04:37,310
+And we can click on the card details and it automatically opens.
+
+71
+00:04:37,310 --> 00:04:38,280
+These are all.
+
+72
+00:04:38,360 --> 00:04:41,530
+And you see the Pango info right here is on the cards.
+
+73
+00:04:41,600 --> 00:04:42,250
+OK.
+
+74
+00:04:42,260 --> 00:04:51,390
+So we can also turn off allow Remember me to force bypassing the allow remember me.
+
+75
+00:04:51,740 --> 00:04:56,330
+How can such a false and refresh update cards Ito's.
+
+76
+00:04:56,390 --> 00:05:02,540
+And we have just the form exacts form the to update these cards to make sense right.
+
+77
+00:05:02,540 --> 00:05:09,920
+So let's work on what happens when we get a token from Strype our post to be to card of the 8 which
+
+78
+00:05:09,910 --> 00:05:10,940
+we're going to create.
+
+79
+00:05:11,060 --> 00:05:12,710
+We don't need no plan.
+
+80
+00:05:13,310 --> 00:05:19,220
+So we just passing this tried to control my Lovell's server with the token and then we are going to
+
+81
+00:05:19,220 --> 00:05:26,680
+change this text to please read where we update you on your card details.
+
+82
+00:05:26,960 --> 00:05:27,610
+OK.
+
+83
+00:05:27,830 --> 00:05:33,080
+And then right here we're going to see success really update at card details.
+
+84
+00:05:33,260 --> 00:05:33,800
+OK.
+
+85
+00:05:34,010 --> 00:05:40,580
+So in our levels what we need to quit this end point so head over to my web ph be and I'm going to create
+
+86
+00:05:40,580 --> 00:05:46,900
+the endpoint just right here so round balls and it's going to be caught on the edge.
+
+87
+00:05:46,940 --> 00:05:53,100
+And for now I'm just going to put this in a close up for simplicity and what it's going to do is is
+
+88
+00:05:53,120 --> 00:05:54,080
+going to get that too.
+
+89
+00:05:54,070 --> 00:06:01,460
+Can we just request token or actually striped or can because this is what we are passing in from our
+
+90
+00:06:01,460 --> 00:06:02,170
+form.
+
+91
+00:06:02,180 --> 00:06:09,250
+So strato can and we get it and who just get the user which is the authenticated user.
+
+92
+00:06:09,410 --> 00:06:18,090
+Then some people writes us with an update card misthought which takes in the tokenized card from.
+
+93
+00:06:18,440 --> 00:06:19,090
+OK.
+
+94
+00:06:19,280 --> 00:06:27,710
+And once that's done we can return response which could be a J CRN and I can just say OK and automatically
+
+95
+00:06:27,710 --> 00:06:28,930
+there will be 200.
+
+96
+00:06:29,120 --> 00:06:30,410
+Which means successful.
+
+97
+00:06:30,410 --> 00:06:30,940
+OK.
+
+98
+00:06:31,010 --> 00:06:34,650
+So you know what component if it's successful they said see this message.
+
+99
+00:06:34,790 --> 00:06:39,210
+And I think everything is wired up to work as expected.
+
+100
+00:06:39,320 --> 00:06:40,540
+So let's try it out.
+
+101
+00:06:40,590 --> 00:06:46,940
+Head over to my form refresh cards details click on that up the model and I'm going to change these
+
+102
+00:06:46,940 --> 00:06:47,580
+two.
+
+103
+00:06:47,750 --> 00:06:51,670
+These are PESCHARDT and I'll click on ID cards Ito's.
+
+104
+00:06:51,800 --> 00:06:58,710
+OK so we have our updates message and successfully updates the card we have successfully updated card
+
+105
+00:06:58,750 --> 00:07:01,330
+details in a model that is displayed to us.
+
+106
+00:07:01,460 --> 00:07:04,290
+So if you click on OK it's going to refresh this page.
+
+107
+00:07:04,370 --> 00:07:11,030
+And if you check out our cards it shows it has been changed to Visa off 242 and that's exactly the same
+
+108
+00:07:11,030 --> 00:07:13,370
+thing that happened on our stripe dashboard.
+

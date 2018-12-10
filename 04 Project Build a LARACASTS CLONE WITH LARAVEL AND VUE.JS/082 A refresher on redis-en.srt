@@ -1,0 +1,700 @@
+1
+00:00:00,510 --> 00:00:06,120
+Let's take applications to the next level I want to start building or learning management system so
+
+2
+00:00:06,120 --> 00:00:09,010
+that we know which user and wardens will cost.
+
+3
+00:00:09,130 --> 00:00:10,790
+I've started watching a series.
+
+4
+00:00:10,860 --> 00:00:14,280
+We know what lessons a particular user has watched.
+
+5
+00:00:14,340 --> 00:00:19,760
+We know what the juice is washed and we can tell him OK you finish this lesson.
+
+6
+00:00:19,800 --> 00:00:21,250
+You haven't finished this one.
+
+7
+00:00:21,270 --> 00:00:22,670
+This one has been updated.
+
+8
+00:00:22,680 --> 00:00:24,410
+And none of that stat. OK.
+
+9
+00:00:24,450 --> 00:00:27,120
+So for that we are going to be using redis.
+
+10
+00:00:27,290 --> 00:00:27,900
+OK.
+
+11
+00:00:27,930 --> 00:00:34,000
+We want to store the ID for example of a series that the user is watching.
+
+12
+00:00:34,170 --> 00:00:40,080
+And then we also start the lessons for that particular series that the user is watching and we want
+
+13
+00:00:40,080 --> 00:00:42,560
+this to be for every individual user.
+
+14
+00:00:42,660 --> 00:00:48,150
+So redis is actually a very good place to start because we're going to be starting these in key value
+
+15
+00:00:48,190 --> 00:00:53,790
+pass and then for the use of it just going to get that key and where this is going to make this really
+
+16
+00:00:53,850 --> 00:00:54,780
+really fast.
+
+17
+00:00:54,780 --> 00:00:56,420
+We want to make API calls.
+
+18
+00:00:56,520 --> 00:01:02,190
+We want to check this and we're going to making hundreds of requests and Ready's is going to actually
+
+19
+00:01:02,280 --> 00:01:05,170
+make this fast enough for our needs.
+
+20
+00:01:05,190 --> 00:01:10,800
+We can use a database like Maskil but it's going to really be slow so we're going to use this database
+
+21
+00:01:10,950 --> 00:01:11,650
+server.
+
+22
+00:01:11,790 --> 00:01:18,210
+OK so before we actually dive into redis let's just have a quick refresh on what where this is how it
+
+23
+00:01:18,210 --> 00:01:18,760
+works.
+
+24
+00:01:18,870 --> 00:01:22,280
+So that will be able to start building the elements in the next video.
+
+25
+00:01:22,420 --> 00:01:22,740
+OK.
+
+26
+00:01:22,770 --> 00:01:29,760
+So if you haven't heard about where this race is simply a key value store but it's really advanced because
+
+27
+00:01:29,790 --> 00:01:31,290
+it exists in memory.
+
+28
+00:01:31,380 --> 00:01:35,850
+Therefore it's not storing It's information on the local harddrive but it's going to be married.
+
+29
+00:01:35,910 --> 00:01:37,680
+Then you can get it really fast.
+
+30
+00:01:37,680 --> 00:01:38,190
+OK.
+
+31
+00:01:38,250 --> 00:01:45,420
+Now before we use Reddy's in our vote we required pulling the Reddy's package so spearheads is it's
+
+32
+00:01:45,420 --> 00:01:49,790
+like the Holy Mother of Kuwaiti's in the Peachtree community.
+
+33
+00:01:49,800 --> 00:01:51,920
+So go ahead and put that in.
+
+34
+00:01:51,930 --> 00:01:58,740
+And once you put this in your set you use Reddy's for lovers so are required Pirelli spearheads should
+
+35
+00:01:58,740 --> 00:01:59,560
+get you that.
+
+36
+00:01:59,780 --> 00:02:02,820
+OK so now how do we communicate with redis.
+
+37
+00:02:02,820 --> 00:02:09,090
+First of all I'm going to show you a database that PSAP you should have Reddy's installed in your computer.
+
+38
+00:02:09,210 --> 00:02:15,520
+So if you have these installed then these are the configurations to connect to your various local server.
+
+39
+00:02:15,620 --> 00:02:21,780
+Now I'm using logging on my Windows computer therefore I automatically have this up and running and
+
+40
+00:02:21,780 --> 00:02:25,740
+I can connect to the localhost with mine with these credentials.
+
+41
+00:02:25,800 --> 00:02:27,440
+And this port and this password.
+
+42
+00:02:27,450 --> 00:02:30,340
+And I'm going to use by default the zero database.
+
+43
+00:02:30,360 --> 00:02:35,330
+OK so automatically I'm connected to when he's been if you're using a Mac then you can download various
+
+44
+00:02:35,430 --> 00:02:41,940
+and install really easy maybe with homebrew or something like that and you're already going to be up
+
+45
+00:02:41,970 --> 00:02:44,560
+and running once you install the package that we talked of.
+
+46
+00:02:44,660 --> 00:02:45,100
+OK.
+
+47
+00:02:45,150 --> 00:02:46,390
+So let's go straight to it.
+
+48
+00:02:46,410 --> 00:02:48,160
+How are we going to be using redis.
+
+49
+00:02:48,180 --> 00:02:52,020
+We're going to be studying keys and those keys we're going to keep values and then we're going to be
+
+50
+00:02:52,020 --> 00:02:56,600
+getting it later to maybe make some analogies or something like that.
+
+51
+00:02:56,670 --> 00:03:02,180
+I'm going to create a dummy route here which is a Getz and we're going to be walking with the browser
+
+52
+00:03:02,520 --> 00:03:04,220
+to see this in action.
+
+53
+00:03:04,470 --> 00:03:05,020
+OK.
+
+54
+00:03:05,130 --> 00:03:08,970
+So create a wildcard for this and I'm going to create my first video.
+
+55
+00:03:08,970 --> 00:03:10,850
+Come on before we go into that.
+
+56
+00:03:10,860 --> 00:03:17,190
+I'm going to show you the kind of these are types that we have for greatest the most basic the very
+
+57
+00:03:17,190 --> 00:03:23,330
+basic is a key and a value and this value ease of data type string.
+
+58
+00:03:23,510 --> 00:03:24,090
+OK.
+
+59
+00:03:24,230 --> 00:03:31,120
+The next we have is obviously key value but the value now will be of the least.
+
+60
+00:03:31,360 --> 00:03:37,520
+And the last we'll be talking about is key value pair and this will be of data type set.
+
+61
+00:03:37,560 --> 00:03:40,920
+There are about three or four more but we're going to talk about this ones.
+
+62
+00:03:40,980 --> 00:03:41,500
+OK.
+
+63
+00:03:41,670 --> 00:03:45,520
+Now let's start by testing out a key value for a string.
+
+64
+00:03:45,550 --> 00:03:52,660
+We'll call our Ready's fancied and the ready Seracini has a search command which actually gives us some
+
+65
+00:03:52,660 --> 00:03:55,190
+more thought and we can set a key.
+
+66
+00:03:55,290 --> 00:04:02,160
+And for example I'll give Diski friend and our set the value to him or whatever.
+
+67
+00:04:02,220 --> 00:04:02,580
+OK.
+
+68
+00:04:02,610 --> 00:04:04,890
+So it's the Reddy's Saudi ski.
+
+69
+00:04:04,890 --> 00:04:07,540
+And whenever we need the ski give us this value.
+
+70
+00:04:07,650 --> 00:04:08,080
+OK.
+
+71
+00:04:08,160 --> 00:04:10,140
+So this is what is going to be stored right here.
+
+72
+00:04:10,140 --> 00:04:14,040
+So it's kind of like objects in javascript or Jason if you want to see that.
+
+73
+00:04:14,310 --> 00:04:14,900
+OK.
+
+74
+00:04:14,940 --> 00:04:19,320
+So when we call these routes it's going to store that into our redis.
+
+75
+00:04:19,320 --> 00:04:20,070
+So.
+
+76
+00:04:20,190 --> 00:04:21,210
+So let's reset.
+
+77
+00:04:21,250 --> 00:04:28,460
+So this is read this ah that box is going to be my ready store for my locale so I'll just change it
+
+78
+00:04:28,460 --> 00:04:35,690
+up to the whole route command this one out then so that and this is the home route.
+
+79
+00:04:35,880 --> 00:04:41,250
+Now we have a blank page because we said this now to prove that we actually said that our command is
+
+80
+00:04:41,250 --> 00:04:46,560
+out and then we're going to learn how to get keys from redis.
+
+81
+00:04:46,620 --> 00:04:47,040
+OK.
+
+82
+00:04:47,070 --> 00:04:54,610
+So I'll call my accommodate them and see Ready's who gets mid-thought and we'll get the friend key.
+
+83
+00:04:54,630 --> 00:04:57,830
+So it's a level that we set in the last request.
+
+84
+00:04:57,960 --> 00:04:59,590
+Give it to us.
+
+85
+00:04:59,740 --> 00:05:01,640
+OK refresh.
+
+86
+00:05:01,780 --> 00:05:02,610
+There we go.
+
+87
+00:05:02,620 --> 00:05:04,470
+That's the key reset right here.
+
+88
+00:05:04,540 --> 00:05:09,950
+So we can saw a string in a key and we can get it using this method.
+
+89
+00:05:10,090 --> 00:05:13,180
+Now if you had a lot to try that where is that.
+
+90
+00:05:13,180 --> 00:05:18,580
+I know you're going to learn using this interactive console command how to use redis.
+
+91
+00:05:18,610 --> 00:05:24,310
+Now you're going to learn a lot of these commands and novel gives us and Lovelle gives us a really easy
+
+92
+00:05:24,310 --> 00:05:29,880
+way to use these commands by automatically getting the method that you are trying to call and Castanea
+
+93
+00:05:29,920 --> 00:05:30,800
+to read events command.
+
+94
+00:05:30,820 --> 00:05:31,120
+OK.
+
+95
+00:05:31,150 --> 00:05:35,480
+So if you want to use maybe an hour range command has a method for our range.
+
+96
+00:05:35,530 --> 00:05:36,270
+OK.
+
+97
+00:05:36,290 --> 00:05:44,440
+Now let's talk about our next data type and the data type we're going to be talking about is the least
+
+98
+00:05:44,740 --> 00:05:47,650
+not a strange simplest source a string right.
+
+99
+00:05:47,750 --> 00:05:51,840
+But this is going to give us the possibility of starting a list of values.
+
+100
+00:05:51,850 --> 00:05:53,910
+Let's just think of it as an array.
+
+101
+00:05:54,010 --> 00:05:54,480
+OK.
+
+102
+00:05:54,580 --> 00:06:02,410
+So if we see Reddy's we can call the elbow's command which is simply going to push a list item into
+
+103
+00:06:02,410 --> 00:06:02,870
+a list.
+
+104
+00:06:02,920 --> 00:06:08,920
+Think of it as pushing an item into an array and you have to pass in the name of the weights or we're
+
+105
+00:06:08,920 --> 00:06:16,210
+just going to maybe see teachers or framework's and we can pass in an array of values.
+
+106
+00:06:16,270 --> 00:06:24,700
+We can see the huge ass Lavoe and this command is going to check into this database.
+
+107
+00:06:24,700 --> 00:06:29,560
+Is there a key called framework's if there is none it's going to create a new one and then it's going
+
+108
+00:06:29,560 --> 00:06:34,270
+to take all of these values right here and it's going to push into that key.
+
+109
+00:06:34,270 --> 00:06:43,530
+So let's refresh that's a set that would commend this out and would learn how to get the least when
+
+110
+00:06:43,530 --> 00:06:48,610
+we saved them into the database so we're called a dummy again so we can see the value.
+
+111
+00:06:48,750 --> 00:06:53,440
+So we would call Reddy's and commom begin to call is the Elwin.
+
+112
+00:06:53,540 --> 00:06:54,110
+Come on.
+
+113
+00:06:54,210 --> 00:06:58,500
+And this command first of all takes in the least WCM.
+
+114
+00:06:58,650 --> 00:07:00,340
+We want to get.
+
+115
+00:07:01,290 --> 00:07:04,200
+And then it's going to take into more commands.
+
+116
+00:07:04,200 --> 00:07:06,420
+So this are range specifically for this.
+
+117
+00:07:06,420 --> 00:07:06,960
+All right.
+
+118
+00:07:07,020 --> 00:07:12,720
+So when we pushed our lease and we want to get the least we can pass in the name of the list and this
+
+119
+00:07:12,720 --> 00:07:14,380
+compartments are easy to offset.
+
+120
+00:07:14,400 --> 00:07:15,240
+We want to start.
+
+121
+00:07:15,240 --> 00:07:16,580
+Think of it as an RV.
+
+122
+00:07:16,710 --> 00:07:21,990
+So if once you start from offset zero to offset five then we can specify like this.
+
+123
+00:07:22,110 --> 00:07:27,420
+But if we want to get everything from said zero to the end of the list or our rate if you want to think
+
+124
+00:07:27,420 --> 00:07:30,030
+of it that way then we can possibly get one right here.
+
+125
+00:07:30,180 --> 00:07:30,570
+Okay.
+
+126
+00:07:30,600 --> 00:07:32,970
+So we died on the resort from this command mine.
+
+127
+00:07:33,070 --> 00:07:35,660
+Refresh There we go.
+
+128
+00:07:35,670 --> 00:07:42,500
+So we have Lavoe and we just in that list which reach into us us and we so our own comment this common.
+
+129
+00:07:42,600 --> 00:07:44,480
+And I'm going to refresh.
+
+130
+00:07:44,680 --> 00:07:51,180
+And now you see automatically the push is pushing to the frameworks list and we can see the results
+
+131
+00:07:51,180 --> 00:07:56,340
+by calling this method and not just how really fast redis is doing this for us.
+
+132
+00:07:56,340 --> 00:07:57,050
+OK.
+
+133
+00:07:57,150 --> 00:08:04,190
+So we've sort of at least we've talked about about strings but let's talk about sex.
+
+134
+00:08:04,290 --> 00:08:10,410
+Sex is simply a list but the difference between a set and a list is that a set is not going to let you
+
+135
+00:08:10,480 --> 00:08:12,440
+put in duplicate values.
+
+136
+00:08:12,510 --> 00:08:12,950
+OK.
+
+137
+00:08:13,080 --> 00:08:17,550
+So let's create Ready's ask.
+
+138
+00:08:17,950 --> 00:08:27,250
+We're going to be creating a set called France and frameworks and we're going to add some values so
+
+139
+00:08:27,250 --> 00:08:29,890
+maybe England are a member.
+
+140
+00:08:30,370 --> 00:08:31,030
+OK.
+
+141
+00:08:31,090 --> 00:08:36,760
+So if one of these women should quit a such court for infant walks which is just think of it as a list
+
+142
+00:08:37,090 --> 00:08:45,390
+and then saw Angola and Imber into its run the come on OK which shows nothing then of commend this out.
+
+143
+00:08:45,700 --> 00:08:49,640
+And then I'm going to use a Reddy's command to get that set.
+
+144
+00:08:49,780 --> 00:08:56,120
+So are they done Reddy's members is the commander we could be using.
+
+145
+00:08:56,240 --> 00:09:00,210
+I will post in the name of the key.
+
+146
+00:09:00,430 --> 00:09:03,970
+So the name of the key right there was front and Filmworks.
+
+147
+00:09:04,030 --> 00:09:04,570
+OK.
+
+148
+00:09:04,660 --> 00:09:06,090
+So let's run the command.
+
+149
+00:09:07,210 --> 00:09:09,990
+OK so we have Imber and and love right there.
+
+150
+00:09:10,030 --> 00:09:11,880
+It just looks exactly like a least.
+
+151
+00:09:12,010 --> 00:09:17,370
+But if we are calling this out and try to run that command multiple times we discover that the list
+
+152
+00:09:17,370 --> 00:09:20,260
+does not change no matter how many times we run it.
+
+153
+00:09:20,420 --> 00:09:20,790
+OK.
+
+154
+00:09:20,820 --> 00:09:26,930
+So it's a really good data structure that we can use to store unique values.
+
+155
+00:09:26,940 --> 00:09:34,080
+So for example if you want to count the number of visitors to our Web site you can store the IP addresses
+
+156
+00:09:34,350 --> 00:09:41,260
+of the visitors and we extol these values in a list so that if a V-Star visits twice the IP address
+
+157
+00:09:41,260 --> 00:09:45,720
+is automatically going to be rejected by Reddy's it's not going to save the IP address twice if you're
+
+158
+00:09:45,720 --> 00:09:46,670
+seven you know this.
+
+159
+00:09:46,760 --> 00:09:47,300
+OK.
+
+160
+00:09:47,310 --> 00:09:49,990
+So that's basically what we want to do with redis.
+
+161
+00:09:50,040 --> 00:09:58,980
+We want to maybe have a key that is called you and then we pass the ID of the user and then we also
+
+162
+00:09:58,980 --> 00:10:04,810
+pass the ID of the series so we can say use our 121 series to me.
+
+163
+00:10:04,920 --> 00:10:07,540
+And then this will be much to an array.
+
+164
+00:10:07,620 --> 00:10:14,460
+And this is going to contain the IDs of all the lessons that these use are hos was for this particular
+
+165
+00:10:14,550 --> 00:10:16,550
+series something like that.
+
+166
+00:10:16,590 --> 00:10:17,090
+OK.
+
+167
+00:10:17,220 --> 00:10:20,490
+So that's the idea I have We're going to talk about it.
+
+168
+00:10:20,520 --> 00:10:28,050
+Molly Barrett If you need a greater refresh of Ready's make sure you try out the race teacher right
+
+169
+00:10:28,050 --> 00:10:28,410
+here.
+
+170
+00:10:28,410 --> 00:10:29,460
+It's really easy.
+
+171
+00:10:29,460 --> 00:10:31,100
+Can be done it in five minutes.
+
+172
+00:10:31,110 --> 00:10:34,170
+And you're going to know pretty much all the Reddy's Comanche need to know.
+
+173
+00:10:34,230 --> 00:10:34,740
+OK.
+
+174
+00:10:34,770 --> 00:10:36,230
+So thank you so much for watching.
+
+175
+00:10:36,300 --> 00:10:37,930
+Let's see it in the next video.
+

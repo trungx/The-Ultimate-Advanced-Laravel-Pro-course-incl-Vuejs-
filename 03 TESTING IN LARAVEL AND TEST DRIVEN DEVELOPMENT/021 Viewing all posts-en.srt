@@ -1,0 +1,376 @@
+1
+00:00:01,890 --> 00:00:08,060
+More than six or seven episodes ago we are able to actually complete the view a blog post test birth
+
+2
+00:00:08,100 --> 00:00:12,960
+we've been doing a little bit of Refractories making our test bed time making our controllers and doing
+
+3
+00:00:12,990 --> 00:00:18,300
+all of that stuff and we haven't created a new feature so we're going to create a new feature and move
+
+4
+00:00:18,300 --> 00:00:23,970
+on with application next feature we're going to be taking care of is viewing our blog post for application.
+
+5
+00:00:23,970 --> 00:00:32,460
+So actually our son makes us view our blog post test so we have a feature test.
+
+6
+00:00:32,580 --> 00:00:35,180
+Clean up the boilerplate.
+
+7
+00:00:35,950 --> 00:00:45,880
+A As public function test can view our blog posts and we have a little bit of steps to take care of.
+
+8
+00:00:45,900 --> 00:00:51,850
+So first of all I arranged our action and then assert.
+
+9
+00:00:51,870 --> 00:00:54,130
+So what are we going to be doing instead.
+
+10
+00:00:54,420 --> 00:00:57,280
+We're going to be imposed and will quit more than one.
+
+11
+00:00:57,350 --> 00:01:04,680
+And for action step we're going to be visiting a particular route and we'll make sure you know search
+
+12
+00:01:04,720 --> 00:01:09,890
+step that we view all of those posts on that page.
+
+13
+00:01:09,930 --> 00:01:10,320
+OK.
+
+14
+00:01:10,350 --> 00:01:12,720
+The rats that we visit in are action stuff.
+
+15
+00:01:12,810 --> 00:01:14,870
+So first of all let's create some post.
+
+16
+00:01:14,910 --> 00:01:21,090
+Post one is going to be factually and create my thought on the post class.
+
+17
+00:01:21,150 --> 00:01:27,980
+Sure enough we need to import this as just import it use up post right here.
+
+18
+00:01:28,200 --> 00:01:28,510
+OK.
+
+19
+00:01:28,530 --> 00:01:29,930
+So that's our range.
+
+20
+00:01:30,010 --> 00:01:31,470
+But we said we want to quit.
+
+21
+00:01:31,470 --> 00:01:35,600
+All right so let's just create a second post.
+
+22
+00:01:36,280 --> 00:01:39,430
+And sure enough the fracture my thought i truly dig in the name of Paul.
+
+23
+00:01:39,430 --> 00:01:40,600
+We want to generate.
+
+24
+00:01:40,720 --> 00:01:43,960
+But then we want also assert using this data.
+
+25
+00:01:43,960 --> 00:01:46,810
+So we are going to separate them into two separate post.
+
+26
+00:01:47,020 --> 00:01:56,300
+So on the X10 we're just going to see response equals this gets lost.
+
+27
+00:01:56,660 --> 00:02:01,010
+And this is the end point where we are going to be displaying all the post or user and then for our
+
+28
+00:02:01,010 --> 00:02:05,280
+search to assert that the response was actually successful.
+
+29
+00:02:05,390 --> 00:02:18,320
+So I search stutterers of 200 and then I searched also that we see that data on the page so our search
+
+30
+00:02:18,320 --> 00:02:21,070
+see and what we're going to be seeing.
+
+31
+00:02:21,110 --> 00:02:26,790
+We're going to be seeing post one title and a push to title.
+
+32
+00:02:26,850 --> 00:02:30,120
+So what about the content of the post.
+
+33
+00:02:30,140 --> 00:02:36,540
+We're going to be asserting that we actually have part of the content of the post on the page.
+
+34
+00:02:36,590 --> 00:02:44,890
+So we're going to be seen as Surtsey string limits which is a novel method and we're going to be passing
+
+35
+00:02:44,900 --> 00:02:47,450
+the post buddy rider.
+
+36
+00:02:47,530 --> 00:02:48,170
+OK.
+
+37
+00:02:48,200 --> 00:02:54,640
+So we're going to be also doing that too because we don't want to display all the post data on the page
+
+38
+00:02:54,650 --> 00:02:54,920
+right.
+
+39
+00:02:54,920 --> 00:03:01,040
+So we just wanted to assert that the user can see the first 100 US which is the default value for this
+
+40
+00:03:01,040 --> 00:03:03,420
+method on the page.
+
+41
+00:03:03,470 --> 00:03:05,650
+So I said that this was 200.
+
+42
+00:03:05,670 --> 00:03:11,720
+I said we see the title I said we see the title of the second post I said that we see part of the body
+
+43
+00:03:11,720 --> 00:03:16,720
+of the first part of the body of the second and we can also assert that we see the data.
+
+44
+00:03:16,730 --> 00:03:18,690
+But we're just going to skip on that.
+
+45
+00:03:18,890 --> 00:03:20,720
+OK so we have our test set.
+
+46
+00:03:20,840 --> 00:03:22,240
+Let's give it a go.
+
+47
+00:03:22,250 --> 00:03:29,140
+So a group is going to be Bowse that's one that is not you know from the past in a group of posts.
+
+48
+00:03:29,720 --> 00:03:34,770
+And we have this or no such table post let's just go ahead and use that is migration street Magwitch
+
+49
+00:03:34,790 --> 00:03:44,540
+our database for us run our test again and we have expected to receive four or four remember in our
+
+50
+00:03:44,540 --> 00:03:48,740
+hndler we just about the exception.
+
+51
+00:03:48,740 --> 00:03:51,080
+But then it's OK now we know what this means.
+
+52
+00:03:51,080 --> 00:03:52,160
+It's not finished.
+
+53
+00:03:52,160 --> 00:03:52,970
+Exception.
+
+54
+00:03:53,120 --> 00:04:02,490
+So let's head over to our Web BHB and create the endpoints show route slash posts and rather than passing
+
+55
+00:04:02,490 --> 00:04:03,250
+in occlusal.
+
+56
+00:04:03,260 --> 00:04:08,960
+I'm just going to pass in the controller that we want to use art dimethyl that we want to use for sure
+
+57
+00:04:08,960 --> 00:04:11,860
+our post is the that I want to use.
+
+58
+00:04:12,110 --> 00:04:15,460
+That's one that and received 500.
+
+59
+00:04:15,520 --> 00:04:16,340
+Okay.
+
+60
+00:04:16,550 --> 00:04:22,730
+Actually walking without the exception is not really helpful because we just received in the S2P response
+
+61
+00:04:22,730 --> 00:04:24,830
+that level provided in the rendah method.
+
+62
+00:04:24,860 --> 00:04:26,870
+So I moved it.
+
+63
+00:04:26,930 --> 00:04:29,360
+Now I have the exception it's been fun for us.
+
+64
+00:04:29,570 --> 00:04:34,120
+That's one that now we have a more helpful method method showboats does not exist.
+
+65
+00:04:34,310 --> 00:04:39,140
+Let's head over to our post Consuela and created my thought public function.
+
+66
+00:04:39,140 --> 00:04:44,370
+Sure all polls run tests again.
+
+67
+00:04:44,560 --> 00:04:49,070
+I sat in on an empty string contains the title right here.
+
+68
+00:04:49,670 --> 00:04:51,890
+So we just need to return something right.
+
+69
+00:04:51,920 --> 00:04:54,970
+So we are trying to return the post from our database.
+
+70
+00:04:54,980 --> 00:05:02,270
+So let's simply return a view which is to post the data.
+
+71
+00:05:02,270 --> 00:05:04,880
+PH We and with post.
+
+72
+00:05:05,030 --> 00:05:14,660
+And we'll just say post or let's run that and we have this ever seen the view post that's not been found.
+
+73
+00:05:14,670 --> 00:05:23,070
+Let's head over to our resources directory views and create a new post that lead the pitch be run the
+
+74
+00:05:23,070 --> 00:05:27,990
+test again and we have fill in that empty contains this.
+
+75
+00:05:27,990 --> 00:05:31,370
+So we still have nothing in this view.
+
+76
+00:05:31,380 --> 00:05:34,830
+Now we want to display all of the post right.
+
+77
+00:05:34,830 --> 00:05:42,250
+So we're going to use an A for each loop and we're going to see for each post I suppose.
+
+78
+00:05:42,720 --> 00:05:47,570
+And for each we just echoed the post-Idol.
+
+79
+00:05:47,700 --> 00:05:49,190
+Let's run again.
+
+80
+00:05:49,560 --> 00:05:54,840
+And then we have fruit asserting that this contains this.
+
+81
+00:05:54,840 --> 00:06:01,140
+And this tweet datcha actually tell us that that's the Lovell's limit function that is working which
+
+82
+00:06:01,140 --> 00:06:03,410
+means we have to Al-Quada content.
+
+83
+00:06:03,630 --> 00:06:04,030
+Right.
+
+84
+00:06:04,080 --> 00:06:11,100
+So we're just going to say post buddy and we're going to rub this in a string limit function.
+
+85
+00:06:11,340 --> 00:06:12,450
+Let's run that again.
+
+86
+00:06:12,810 --> 00:06:15,890
+And right now we have a successful test.
+
+87
+00:06:15,930 --> 00:06:21,590
+Now we can actually display all the polls that we have in our databased view.
+
+88
+00:06:21,790 --> 00:06:26,190
+You can obviously go ahead and actually did this so we have something prettier.
+
+89
+00:06:26,310 --> 00:06:30,960
+But I'm just going to leave this on to you and make sure if you're refractory into a more beautiful
+
+90
+00:06:30,960 --> 00:06:37,180
+view just like we did in the about a bid that PH BE YOU make sure everything in your suit passes.
+
+91
+00:06:37,350 --> 00:06:42,660
+So finally let's want everything in a test to make sure everything is working and we have this same
+
+92
+00:06:42,660 --> 00:06:46,160
+basic not found in the test veers off of our page when push is not found.
+
+93
+00:06:46,290 --> 00:06:50,550
+And obviously that's because in our handler we still have this on.
+
+94
+00:06:50,730 --> 00:06:54,770
+Let's run the test again and we have a successful search.
+

@@ -1,0 +1,196 @@
+1
+00:00:00,420 --> 00:00:06,210
+OK guys let's talk about a walker remember we have already queued mail so it's not going to automatically
+
+2
+00:00:06,210 --> 00:00:08,160
+send but it's going to send behind the scenes.
+
+3
+00:00:08,160 --> 00:00:10,050
+So how do we set that up for each.
+
+4
+00:00:10,150 --> 00:00:16,140
+Now if I take you to our Q The PH B which is our config you just got are a lot of configurations right
+
+5
+00:00:16,140 --> 00:00:19,510
+here and the ones you use in production is beanstalk.
+
+6
+00:00:19,550 --> 00:00:19,870
+OK.
+
+7
+00:00:19,890 --> 00:00:25,530
+Just think of it as a walk car that really works well on Linux and it's going to actually run our queue
+
+8
+00:00:25,770 --> 00:00:28,580
+rather than us doing P and Q was stuff like that.
+
+9
+00:00:28,620 --> 00:00:34,710
+OK so we're going to change our configuration and production to make sure that uses being stalked.
+
+10
+00:00:34,770 --> 00:00:39,430
+OK so in the envy for what you want to do is set up the queue.
+
+11
+00:00:39,480 --> 00:00:44,130
+So if I take you to my dad in the fall you have a Q drive right here.
+
+12
+00:00:44,140 --> 00:00:49,980
+You're going to change that to your beanstalk and lovely so keep your cute life and when stalking is
+
+13
+00:00:49,980 --> 00:00:52,780
+going to process your q jobs behind the scenes.
+
+14
+00:00:52,820 --> 00:00:53,290
+OK.
+
+15
+00:00:53,400 --> 00:00:58,800
+So for you to set up install all you need to do is come here look at the conflagrations set or whatever
+
+16
+00:00:58,800 --> 00:01:01,320
+you want and you can run it as Diamante.
+
+17
+00:01:01,320 --> 00:01:03,050
+That's always going to be running behind the scenes.
+
+18
+00:01:03,060 --> 00:01:04,940
+And then you can start the walk out on the server.
+
+19
+00:01:05,010 --> 00:01:05,870
+That's it.
+
+20
+00:01:05,940 --> 00:01:07,560
+That's all we need to do.
+
+21
+00:01:07,560 --> 00:01:12,670
+So that it is starting to kill Walker and then we need to configure what applications you use Bernstorff
+
+22
+00:01:12,870 --> 00:01:14,280
+so we can leave this one for now.
+
+23
+00:01:14,280 --> 00:01:19,310
+But in your environment right here for production you need to change it to being stalked.
+
+24
+00:01:19,500 --> 00:01:19,980
+Okay.
+
+25
+00:01:20,070 --> 00:01:24,310
+And then finally you need to install the package for ph.
+
+26
+00:01:24,480 --> 00:01:25,620
+So companies are required.
+
+27
+00:01:25,620 --> 00:01:31,980
+This is going to install this package and it's going to automatically register page in your composer
+
+28
+00:01:32,230 --> 00:01:33,380
+Jason.
+
+29
+00:01:33,480 --> 00:01:37,410
+And when you're deploying to production it's automatically going to install that package.
+
+30
+00:01:37,470 --> 00:01:37,870
+OK.
+
+31
+00:01:37,890 --> 00:01:39,940
+So there we go right there.
+
+32
+00:01:40,100 --> 00:01:40,520
+OK.
+
+33
+00:01:40,560 --> 00:01:46,230
+So once you said that all being Vollmann to use penstock you automatically you install this and you
+
+34
+00:01:46,230 --> 00:01:47,850
+start your q Walker.
+
+35
+00:01:47,940 --> 00:01:49,380
+That's all you need to do.
+
+36
+00:01:49,470 --> 00:01:54,520
+If you had a million queues that are going to be processed by the rescue worker and you can even start
+
+37
+00:01:54,520 --> 00:01:57,120
+as many workers as you wish depending on your workload.
+
+38
+00:01:57,220 --> 00:01:57,690
+OK.
+
+39
+00:01:57,720 --> 00:02:02,340
+So that's basically all you need to do if you once you actually change just now all you need to do is
+
+40
+00:02:02,340 --> 00:02:12,500
+get at everything Gates comments say maybe install being stalked by H and just push to master and level
+
+41
+00:02:12,500 --> 00:02:17,880
+4 is going to install the newly included package in the car that adjacency if you check out the app
+
+42
+00:02:18,130 --> 00:02:19,940
+view the deployment log.
+
+43
+00:02:20,130 --> 00:02:23,150
+We can see that it installed Fahnestock right here.
+
+44
+00:02:23,220 --> 00:02:23,670
+OK.
+
+45
+00:02:23,730 --> 00:02:28,870
+So once we set up our queue drive level is automatically going to level 40 is automatically going to
+
+46
+00:02:28,900 --> 00:02:30,090
+take that behind the scenes.
+
+47
+00:02:30,090 --> 00:02:32,050
+We don't need to worry about it any more.
+
+48
+00:02:32,130 --> 00:02:32,520
+OK.
+
+49
+00:02:32,520 --> 00:02:36,370
+So thank you so much for watching and see you in the very next video.
+

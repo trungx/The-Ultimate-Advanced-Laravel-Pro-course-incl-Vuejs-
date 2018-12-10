@@ -1,0 +1,320 @@
+1
+00:00:00,820 --> 00:00:04,180
+Let's give the user a possibility to create a post.
+
+2
+00:00:04,270 --> 00:00:09,240
+So we're going to be creating a new feature and this feature is going to be create post test.
+
+3
+00:00:09,310 --> 00:00:14,230
+So it's all a test feature directory and sure enough we have to create post-Castro either.
+
+4
+00:00:14,330 --> 00:00:21,130
+In other words a page create a function public function test can create portes.
+
+5
+00:00:21,190 --> 00:00:22,250
+OK.
+
+6
+00:00:22,390 --> 00:00:27,720
+Now how do we test that a user can create opposed to first of all Instead it's not really going to have
+
+7
+00:00:27,720 --> 00:00:30,890
+a lot to do but we're going to have an actual start.
+
+8
+00:00:31,020 --> 00:00:38,710
+Assert obviously now our actions step Regnum making a post request to our application to a particular
+
+9
+00:00:38,740 --> 00:00:44,580
+endpoint with some data and we're going to assert that the database has based data.
+
+10
+00:00:44,650 --> 00:00:48,450
+Are we going to be asserting that that post actually exists that contains that data.
+
+11
+00:00:48,610 --> 00:00:57,000
+Ok so first of all we need to make a post request right so response equals this post to an endpoint.
+
+12
+00:00:57,040 --> 00:01:03,410
+So let's just see it goes to the store post and point and then we're going to pass in as data for the
+
+13
+00:01:03,410 --> 00:01:03,820
+crest.
+
+14
+00:01:03,820 --> 00:01:10,990
+We're going to pass in its title which is going to be noon post title and we're going to pass in a body
+
+15
+00:01:10,990 --> 00:01:14,480
+also which is going to be noon post buddy.
+
+16
+00:01:14,590 --> 00:01:14,980
+OK.
+
+17
+00:01:14,980 --> 00:01:22,570
+So how do we assert that the database contains something we simply called this I said database hahs
+
+18
+00:01:22,720 --> 00:01:25,570
+which is a re use for my father level pro-rights force.
+
+19
+00:01:25,690 --> 00:01:33,670
+So for us to see this method as you said who interacts with database which is in our foundation testing
+
+20
+00:01:33,670 --> 00:01:40,270
+concerns directly and we can see the assert database Highsmith and why do checks in the table the table
+
+21
+00:01:40,270 --> 00:01:41,320
+we are trying to check.
+
+22
+00:01:41,500 --> 00:01:46,560
+Fixing the real data breach on the check that exists in that table and then you'd reach Astro falls
+
+23
+00:01:46,570 --> 00:01:48,850
+depending on what the result of that check is.
+
+24
+00:01:49,060 --> 00:01:55,420
+So right here we're going to be checking into a stable and we're going to proceed in exactly the same
+
+25
+00:01:55,570 --> 00:01:57,810
+way that we passed in right here.
+
+26
+00:01:57,820 --> 00:02:01,940
+So we are making sure that these data actually exist in the database.
+
+27
+00:02:01,990 --> 00:02:02,510
+OK.
+
+28
+00:02:02,620 --> 00:02:07,700
+Now this test might be enough but then there's another extra step that we can go right.
+
+29
+00:02:07,840 --> 00:02:14,140
+So what we can do is find the first post in our database with ID of one because remember our database
+
+30
+00:02:14,140 --> 00:02:18,700
+is going to be cleaned and this is going to be the very first post that is created for this test.
+
+31
+00:02:18,850 --> 00:02:26,200
+And then we're going to assert equals new title right here should be equal to the post title that we
+
+32
+00:02:26,290 --> 00:02:26,920
+got.
+
+33
+00:02:26,980 --> 00:02:29,080
+Obviously it is supposed to be equal to you.
+
+34
+00:02:29,380 --> 00:02:33,000
+And then we're also going to assert that the body's also equal.
+
+35
+00:02:33,040 --> 00:02:33,600
+OK.
+
+36
+00:02:33,880 --> 00:02:38,770
+So new posts buddy should be close to the post buddy.
+
+37
+00:02:39,190 --> 00:02:39,580
+Awesome.
+
+38
+00:02:39,580 --> 00:02:45,770
+So we have a number of assertions just a little bit of security for our database to make sure that this
+
+39
+00:02:46,010 --> 00:02:48,590
+is actually doing what we wanted to do.
+
+40
+00:02:48,810 --> 00:02:49,110
+OK.
+
+41
+00:02:49,120 --> 00:02:51,400
+So let's run this test credit.
+
+42
+00:02:51,610 --> 00:02:54,640
+And this is just going to be Crit. Boston Globe.
+
+43
+00:02:54,850 --> 00:03:00,100
+Let's run that test and it's going to give us a nasty Aeros saying we should use this database migration
+
+44
+00:03:00,100 --> 00:03:00,730
+straight.
+
+45
+00:03:00,760 --> 00:03:02,050
+So let's just use it.
+
+46
+00:03:02,140 --> 00:03:02,730
+Awesome.
+
+47
+00:03:02,860 --> 00:03:10,270
+Let's run that test and passing a group create post and we have filled a search in a row in the table
+
+48
+00:03:10,310 --> 00:03:13,050
+matches the attributes this and this.
+
+49
+00:03:13,050 --> 00:03:14,220
+The table is empty.
+
+50
+00:03:14,230 --> 00:03:18,790
+We're making progress to that end point and we've not done anything to assert that it contains the data.
+
+51
+00:03:18,790 --> 00:03:24,650
+Now I not even a more helpful metaphor to tell us that this does not exist because no handler when it's
+
+52
+00:03:24,700 --> 00:03:29,440
+just temporarily for the exception so we can have useful data.
+
+53
+00:03:29,440 --> 00:03:32,410
+Now we have not finished the exception better.
+
+54
+00:03:32,440 --> 00:03:37,480
+So let's head over to our Web BHB and create that exception.
+
+55
+00:03:37,490 --> 00:03:40,140
+So I'm just going to see routes get.
+
+56
+00:03:40,150 --> 00:03:43,080
+And this is just going to be to the slushed topples route.
+
+57
+00:03:43,300 --> 00:03:49,570
+Just like we defined right here and also we need to decide what controller we are going to be using
+
+58
+00:03:49,780 --> 00:03:50,890
+for this right.
+
+59
+00:03:50,920 --> 00:03:56,150
+So I'm just going to stick with a pulse controller for now and I'm just going to say use the soap post
+
+60
+00:03:56,440 --> 00:03:57,380
+method.
+
+61
+00:03:57,820 --> 00:03:58,390
+Awesome.
+
+62
+00:03:58,390 --> 00:04:03,610
+Let's run as a game where you have a non-menthol not allow the exception.
+
+63
+00:04:03,610 --> 00:04:06,990
+That's my fault because this is supposed to be a post request.
+
+64
+00:04:07,000 --> 00:04:07,960
+Sorry about that.
+
+65
+00:04:07,960 --> 00:04:09,220
+Let's run again.
+
+66
+00:04:09,550 --> 00:04:15,460
+We have this ever seen the methods of of the Sun exists that's said What's or post control are and create
+
+67
+00:04:15,460 --> 00:04:16,460
+that method.
+
+68
+00:04:16,520 --> 00:04:17,640
+Run the test again.
+
+69
+00:04:17,770 --> 00:04:22,170
+And now we have failed asserting that it contains that data in the database.
+
+70
+00:04:22,180 --> 00:04:25,300
+So what do we need to do we just need to create the data right.
+
+71
+00:04:25,480 --> 00:04:36,680
+So we're just going to see post equals post creates when we're passing a title which is request title
+
+72
+00:04:37,560 --> 00:04:42,770
+and we can get the request from the request from I thought that level pro-rights and we'll get it title
+
+73
+00:04:43,130 --> 00:04:46,040
+and half body which is going to be requests.
+
+74
+00:04:46,160 --> 00:04:47,950
+Get the body safe.
+
+75
+00:04:48,050 --> 00:04:52,000
+Run the test again and then class Test future not found.
+
+76
+00:04:52,070 --> 00:04:53,720
+Let's check out our test.
+
+77
+00:04:53,900 --> 00:04:59,400
+And it means this passed and then it reached this point where we have to find the person in it and find.
+
+78
+00:04:59,420 --> 00:05:07,220
+So let's use our post as one final time and sure enough we have a successful test.
+
+79
+00:05:07,280 --> 00:05:14,980
+So we are now able to create test in our database but don't let any user create a post in our application
+
+80
+00:05:15,120 --> 00:05:17,470
+to take care of that in the next episode.
+

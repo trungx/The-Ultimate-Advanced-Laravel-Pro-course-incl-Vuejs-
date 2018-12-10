@@ -1,0 +1,252 @@
+1
+00:00:00,300 --> 00:00:05,150
+We ended up having to deal with these aerostat wars as soon as we applied our admin middleware.
+
+2
+00:00:05,250 --> 00:00:07,710
+So let's go ahead and handle it in this video.
+
+3
+00:00:07,710 --> 00:00:13,290
+And it seems like all of our tests that have to do with our building on CBS are failing because we need
+
+4
+00:00:13,290 --> 00:00:17,150
+to actually log in and treat all before doing this right.
+
+5
+00:00:17,310 --> 00:00:23,140
+So why don't we actually log in the administrator right away before doing the test for us.
+
+6
+00:00:23,250 --> 00:00:30,390
+We need a user right so far we generate a warning for the use of force and would that second we need
+
+7
+00:00:30,390 --> 00:00:36,900
+this user to be an administrator but then we have that config array that actually does this so how can
+
+8
+00:00:36,900 --> 00:00:39,870
+we tell of all these years I should be an administrator.
+
+9
+00:00:40,050 --> 00:00:46,610
+Let's head over to our config class provided by Lovell to see if we can find a way to do this.
+
+10
+00:00:46,650 --> 00:00:49,060
+So it was a treat that Ph be.
+
+11
+00:00:49,080 --> 00:00:54,300
+And actually if you bought it office you know in the luminal configuration we would have this repository
+
+12
+00:00:54,300 --> 00:00:59,080
+that ph be where the config class itself exists.
+
+13
+00:00:59,130 --> 00:00:59,600
+OK.
+
+14
+00:00:59,640 --> 00:01:02,520
+So that class that implements the contract.
+
+15
+00:01:02,670 --> 00:01:04,950
+So let's browse the methods that we have here.
+
+16
+00:01:04,980 --> 00:01:07,570
+We have a husky or Hussman thought.
+
+17
+00:01:07,650 --> 00:01:12,680
+Get my folks get M.F. up a sudden thought a pre-planned method.
+
+18
+00:01:12,720 --> 00:01:15,360
+And I think what we are looking for is actually this method.
+
+19
+00:01:15,390 --> 00:01:21,540
+So push a value on one way configuration value and actually if you go through the Java documentation
+
+20
+00:01:21,540 --> 00:01:27,330
+you notice that it's highly recommended to actually push to the config or set to the config at runtime
+
+21
+00:01:27,570 --> 00:01:30,100
+rather than mocking the config class.
+
+22
+00:01:30,220 --> 00:01:32,280
+OK so let's go ahead and do this.
+
+23
+00:01:32,400 --> 00:01:40,460
+So we have our config Fasi and we can get to the push mid-thought and we're pushing to but cost that
+
+24
+00:01:40,660 --> 00:01:41,900
+ministry to us.
+
+25
+00:01:41,910 --> 00:01:45,190
+That's the reason we have you know buy cars of BHB.
+
+26
+00:01:45,360 --> 00:01:50,850
+Then we are pushing a value and that value should be the use that we just created.
+
+27
+00:01:50,910 --> 00:01:52,320
+And he's email right.
+
+28
+00:01:52,470 --> 00:01:58,750
+So creative use of course they use us email to the administrators are we.
+
+29
+00:01:58,770 --> 00:02:02,020
+And then finally what we want to do is allow the user or eat right.
+
+30
+00:02:02,160 --> 00:02:08,580
+So this acting us use on so before one is there let's just make sure we import our use config at the
+
+31
+00:02:08,580 --> 00:02:10,990
+top then let's run out the test.
+
+32
+00:02:11,100 --> 00:02:13,290
+Or you can add redounds for filling tests.
+
+33
+00:02:13,290 --> 00:02:17,250
+OK so this last one is actually succeeding because we are an administrator.
+
+34
+00:02:17,280 --> 00:02:19,410
+And we have the right to do this.
+
+35
+00:02:19,440 --> 00:02:25,860
+So we didn't duplicate in this solution every single place we want to on the streets or why don't we
+
+36
+00:02:25,860 --> 00:02:26,720
+create a cross.
+
+37
+00:02:26,720 --> 00:02:32,200
+Tom administrates all men thought that is going to help us logging in an administrator.
+
+38
+00:02:32,280 --> 00:02:34,520
+What I want to do is actually we're friends.
+
+39
+00:02:34,650 --> 00:02:42,410
+This logging I mean my thought and this is going to join with an administrator and lucky me.
+
+40
+00:02:42,520 --> 00:02:43,060
+OK.
+
+41
+00:02:43,140 --> 00:02:44,880
+So I'm just going to cut this out.
+
+42
+00:02:44,940 --> 00:02:46,580
+So where do we put this.
+
+43
+00:02:46,590 --> 00:02:53,460
+We have a case that BHB if we check out this extents desk or we can use test case and test cases and
+
+44
+00:02:53,460 --> 00:02:54,660
+or a test or a tree.
+
+45
+00:02:54,720 --> 00:03:01,500
+So let's head over to that directory test that case the Ph.D. and we can put that in a public function
+
+46
+00:03:01,690 --> 00:03:05,700
+plugging at mine and paste that functionality right there.
+
+47
+00:03:05,780 --> 00:03:06,140
+OK.
+
+48
+00:03:06,150 --> 00:03:13,540
+So we have a factory therefore we need to port our use our class so used by us use our then use config.
+
+49
+00:03:13,770 --> 00:03:15,200
+And I think that should do it.
+
+50
+00:03:15,260 --> 00:03:15,770
+All right.
+
+51
+00:03:15,910 --> 00:03:23,310
+So they use OUR make sure they use are created as an administrator and then not to use are in.
+
+52
+00:03:23,400 --> 00:03:23,650
+OK.
+
+53
+00:03:23,650 --> 00:03:27,210
+So that's what our logging admin thought does.
+
+54
+00:03:27,290 --> 00:03:32,880
+That's one that's a loan to make sure that it still passes and it does pass.
+
+55
+00:03:32,880 --> 00:03:37,980
+Therefore we just need to duplicate this solution to all our tests that we're feeling like this one
+
+56
+00:03:38,070 --> 00:03:41,460
+we need to be Latina's I mean streets before it works.
+
+57
+00:03:41,460 --> 00:03:44,880
+Same here same here same here.
+
+58
+00:03:44,970 --> 00:03:47,090
+And this one doesn't require that.
+
+59
+00:03:47,310 --> 00:03:47,930
+OK.
+
+60
+00:03:47,970 --> 00:03:52,560
+So let's run all our tests right now to see if we actually have a difference.
+
+61
+00:03:52,560 --> 00:03:53,180
+Great.
+
+62
+00:03:53,190 --> 00:03:55,950
+Looks like I should be successfully running.
+
+63
+00:03:56,070 --> 00:03:58,350
+And we finally fixed all errors.
+

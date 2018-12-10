@@ -1,0 +1,268 @@
+1
+00:00:00,330 --> 00:00:01,590
+Self-love five point five.
+
+2
+00:00:01,580 --> 00:00:06,780
+We actually have the possibility of it in our own cost time extension exceptions and so that we will
+
+3
+00:00:06,780 --> 00:00:12,240
+have complete control over what happens when we throw this exception that squarehead and use that to
+
+4
+00:00:12,240 --> 00:00:13,130
+our advantage.
+
+5
+00:00:13,140 --> 00:00:17,610
+First of all I'm going to have to watch my exceptions I'm a tree and I'm going to create a new custom
+
+6
+00:00:17,610 --> 00:00:18,500
+exception.
+
+7
+00:00:18,690 --> 00:00:23,330
+So like innocent we see logging field exception.
+
+8
+00:00:23,490 --> 00:00:26,080
+We or rather just change this to us.
+
+9
+00:00:26,190 --> 00:00:30,320
+Maybe we might want to use this exception also with arbitration.
+
+10
+00:00:30,480 --> 00:00:36,590
+So Orfield exception and right here we see we simply need to create a class and extend the base exception
+
+11
+00:00:36,600 --> 00:00:37,220
+right.
+
+12
+00:00:37,230 --> 00:00:40,750
+So who's Celan namespace two are exceptions.
+
+13
+00:00:40,800 --> 00:00:47,370
+And now that we hear something or like to do is actually change our application name so we Arisa an
+
+14
+00:00:47,460 --> 00:00:49,530
+app name and I'll change that too.
+
+15
+00:00:49,590 --> 00:00:50,280
+But cost.
+
+16
+00:00:50,310 --> 00:00:53,030
+OK so now that we've changed that we no longer have our.
+
+17
+00:00:53,080 --> 00:01:02,310
+But we have but cast's exceptions then we can now create a class called off field exception which extends
+
+18
+00:01:02,400 --> 00:01:04,180
+the exception class.
+
+19
+00:01:04,200 --> 00:01:08,880
+And what we could do is actually pulling the exception for sea level for rights Cross.
+
+20
+00:01:08,960 --> 00:01:15,540
+OK so now for Lavoe to be able to actually render exceptions in the carets we will need to provide two
+
+21
+00:01:15,540 --> 00:01:15,990
+methods.
+
+22
+00:01:15,990 --> 00:01:17,820
+One is a report method and the next.
+
+23
+00:01:17,820 --> 00:01:18,900
+So when the method.
+
+24
+00:01:18,930 --> 00:01:19,360
+Right.
+
+25
+00:01:19,440 --> 00:01:25,810
+And this report method is going to be taking care of maybe reporting our error also exceptions.
+
+26
+00:01:25,880 --> 00:01:30,410
+So services like custom logger when obvious in production or whenever we want.
+
+27
+00:01:30,480 --> 00:01:35,190
+But in this case what we just want to do is handle this exception in our application so we're just going
+
+28
+00:01:35,190 --> 00:01:38,350
+to say set up a public function render.
+
+29
+00:01:38,430 --> 00:01:44,220
+We're not interested in reporting obligation all the parts in the exception so this random thought is
+
+30
+00:01:44,220 --> 00:01:46,470
+simply going to return a response.
+
+31
+00:01:46,470 --> 00:01:53,640
+So each response Jason on what actually said the status school 2 4 2 2 and here we need to pass in an
+
+32
+00:01:53,640 --> 00:01:59,520
+army of data so we cannot dominie's are we by seeing what detail we can actually parse into this class
+
+33
+00:01:59,580 --> 00:02:01,170
+and when are as an error.
+
+34
+00:02:01,260 --> 00:02:06,750
+OK so let's try to see what we have let's head of about authenticates user and what level does this
+
+35
+00:02:06,750 --> 00:02:10,240
+actually uses the translation files to render that response.
+
+36
+00:02:10,350 --> 00:02:17,980
+So if we just head over to our resources long directory and head of that BHB This is the message that
+
+37
+00:02:18,270 --> 00:02:21,380
+actually sends this credentials to non-Markov records.
+
+38
+00:02:21,380 --> 00:02:23,430
+We cannot really use this by default.
+
+39
+00:02:23,430 --> 00:02:31,500
+So let's just head over to our field section and let's just see we set up a message key and this is
+
+40
+00:02:31,500 --> 00:02:35,280
+going to be called to these credentials do not march of Eckhardt.
+
+41
+00:02:35,310 --> 00:02:35,730
+Right.
+
+42
+00:02:35,730 --> 00:02:41,070
+Because remember this method is only going to be called in the case where either the use of password
+
+43
+00:02:41,070 --> 00:02:43,290
+is not correct or the email is not correct.
+
+44
+00:02:43,320 --> 00:02:43,740
+Right.
+
+45
+00:02:43,830 --> 00:02:49,140
+So we need to simply on our ideas mid-thought and call of our own custom exception.
+
+46
+00:02:49,230 --> 00:02:54,450
+So backing of a logging controller I'm going to base this right here and rather than to any radiation
+
+47
+00:02:54,450 --> 00:02:59,740
+exception I'm going out for a noon off field exception.
+
+48
+00:02:59,880 --> 00:03:03,590
+And for now we don't have any palmettos that we're passing into this method.
+
+49
+00:03:03,900 --> 00:03:04,410
+OK.
+
+50
+00:03:04,470 --> 00:03:06,680
+So at the top we need to pull that in.
+
+51
+00:03:06,840 --> 00:03:12,390
+So use but coarse exceptions of field exception are.
+
+52
+00:03:12,430 --> 00:03:13,450
+So let's try this out.
+
+53
+00:03:13,500 --> 00:03:19,260
+If everything works perfectly we should actually receive a response with this message on the status
+
+54
+00:03:19,410 --> 00:03:20,590
+of 4:22.
+
+55
+00:03:20,700 --> 00:03:21,920
+So let's try this.
+
+56
+00:03:21,930 --> 00:03:28,470
+So log in my row and I'll paste in that e-mail was a wrong password and see what we get.
+
+57
+00:03:28,470 --> 00:03:32,670
+Sure enough we have 42 like before but let's go to our Anette what's up and actually see the data that
+
+58
+00:03:32,670 --> 00:03:33,450
+we received.
+
+59
+00:03:33,570 --> 00:03:38,430
+So we received a message property which say these credentials to non-match are records.
+
+60
+00:03:38,430 --> 00:03:44,820
+So it means our custom exception is actually being called and since we can actually override all the
+
+61
+00:03:44,820 --> 00:03:47,820
+methods in a lot of things could use us traits.
+
+62
+00:03:47,970 --> 00:03:52,470
+This gives us a lot of flexibility to do whatever we want with our application.
+
+63
+00:03:52,580 --> 00:03:54,960
+OK so we are successfully getting this message.
+
+64
+00:03:54,960 --> 00:03:58,410
+What do we want to do when we receive that Carol.
+
+65
+00:03:58,410 --> 00:04:01,780
+For now we just console that log in but we need to give a little feedback.
+
+66
+00:04:01,810 --> 00:04:02,710
+All right.
+
+67
+00:04:02,820 --> 00:04:05,390
+Let's take care of these in the next video.
+

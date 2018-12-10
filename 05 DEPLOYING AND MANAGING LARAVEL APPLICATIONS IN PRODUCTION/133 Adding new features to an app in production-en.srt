@@ -1,0 +1,444 @@
+1
+00:00:01,620 --> 00:00:05,050
+OK guys Welcome back let's talk about something that's really important.
+
+2
+00:00:05,130 --> 00:00:10,630
+If we look at our website right now we still have these you know toxic stuff from my theme right there.
+
+3
+00:00:10,700 --> 00:00:15,410
+Burts what I want us to do in this video is actually should to better read the same stone.
+
+4
+00:00:15,420 --> 00:00:24,300
+I want us to integrate it into our application like setting dynamic headers so dynamic titles and descriptions
+
+5
+00:00:24,300 --> 00:00:29,550
+such that search engine optimization will be possible in our app and we've done that we are also going
+
+6
+00:00:29,550 --> 00:00:34,770
+to learn how to push new features in Java application while it's already in production.
+
+7
+00:00:34,830 --> 00:00:37,210
+OK so that is what we are going to be coding in this.
+
+8
+00:00:37,290 --> 00:00:40,480
+So first of all for us to do this we're going to be using a package.
+
+9
+00:00:40,500 --> 00:00:44,460
+So if you haven't installed it go ahead and install this package right here.
+
+10
+00:00:44,520 --> 00:00:47,510
+It's really good for setting up SU in a very simple way.
+
+11
+00:00:47,670 --> 00:00:52,150
+OK so once you do that the next thing is to publish the package.
+
+12
+00:00:52,260 --> 00:01:00,070
+So BHB Alasan vendor publish which is simply going to copy the configuration for this package into over
+
+13
+00:01:00,180 --> 00:01:03,820
+configuring tree and automatically this package is discovered.
+
+14
+00:01:03,830 --> 00:01:08,600
+So if you want to publish this one right here just going to select the number 6 and that copy that.
+
+15
+00:01:08,670 --> 00:01:15,840
+So if you had a lot of SEO tools but THP we have the conflagrations right here that we can set by default
+
+16
+00:01:15,840 --> 00:01:19,000
+so we can set the sites all by default to be broadcast.
+
+17
+00:01:19,060 --> 00:01:26,530
+We can set the description by default to be the best web development training ever.
+
+18
+00:01:26,690 --> 00:01:27,430
+OK.
+
+19
+00:01:27,480 --> 00:01:32,260
+And then right here canonic are all the stuff you can go ahead and suttee it however you want.
+
+20
+00:01:32,480 --> 00:01:39,180
+Right here for the open graph which means for Facebook we're going to set but cost and do exactly the
+
+21
+00:01:39,180 --> 00:01:45,050
+same thing right here for the euro or with some people a certain law right here that uses the current
+
+22
+00:01:45,080 --> 00:01:51,590
+trial and right here we want to change this to the Twitter handle for this Web site.
+
+23
+00:01:51,780 --> 00:01:52,260
+OK.
+
+24
+00:01:52,350 --> 00:01:53,630
+So make sense.
+
+25
+00:01:53,640 --> 00:01:55,500
+So we set about default configurations.
+
+26
+00:01:55,500 --> 00:02:00,020
+The next thing is to actually set up the settings in our controller.
+
+27
+00:02:00,090 --> 00:02:05,500
+So for example when we are truly about rended this home page we are going to copy the configurations
+
+28
+00:02:05,520 --> 00:02:06,070
+right here.
+
+29
+00:02:06,240 --> 00:02:12,770
+So this section I'm going to copy it and then I'm going to head over to my phone and call and right
+
+30
+00:02:12,780 --> 00:02:17,820
+here where we when that was completed I'm going to pass that in and I will get you use as your front
+
+31
+00:02:17,880 --> 00:02:19,240
+seat at the top.
+
+32
+00:02:19,290 --> 00:02:25,570
+And every time the speech is about we were in that we're going to set title all broadcast we're going
+
+33
+00:02:25,590 --> 00:02:31,180
+to set the description to maybe the best web development or churls.
+
+34
+00:02:31,320 --> 00:02:36,070
+And like I said all I'm going to set it you simply to create your own.
+
+35
+00:02:36,100 --> 00:02:42,340
+So when I said quest and I'll catch your eye and I'm going to do exactly the same thing for the can
+
+36
+00:02:42,340 --> 00:02:43,160
+only call you.
+
+37
+00:02:43,180 --> 00:02:44,420
+All right.
+
+38
+00:02:44,420 --> 00:02:51,090
+Here we can just replace this with screencast and the true Chando is going to be by our cost and after
+
+39
+00:02:51,090 --> 00:02:52,940
+we've said that we were the view.
+
+40
+00:02:52,980 --> 00:02:57,600
+Now the last thing we need to do is head over to our obdurately the PSP which is our layouts file and
+
+41
+00:02:57,600 --> 00:03:02,330
+pull out all of these massive tax rates here and would let our package do that.
+
+42
+00:03:02,430 --> 00:03:08,820
+So for us to let our package do that we just need to add costs as you generate right here and all of
+
+43
+00:03:08,820 --> 00:03:10,610
+this is in the documentation.
+
+44
+00:03:10,620 --> 00:03:15,750
+So once we generate that if we had about 12 a page refresh we can now see that the head is set to the
+
+45
+00:03:15,750 --> 00:03:21,810
+correct view page source that gives us all of the discussion that we set in our controller makes sense
+
+46
+00:03:21,900 --> 00:03:22,320
+right.
+
+47
+00:03:22,470 --> 00:03:28,790
+So in our control our what if you wanted to set something or the same thing for our show to see the
+
+48
+00:03:28,850 --> 00:03:29,600
+speech.
+
+49
+00:03:29,610 --> 00:03:35,610
+So if we want to see a particular service will just paste this in and would set the title to the series
+
+50
+00:03:35,610 --> 00:03:36,290
+title.
+
+51
+00:03:36,360 --> 00:03:41,290
+I would also set the description to the series description and I think everything can stay the same.
+
+52
+00:03:41,400 --> 00:03:49,950
+So lets go back refresh and visit this link and we see the title this article is set right here.
+
+53
+00:03:50,010 --> 00:03:50,310
+Okay.
+
+54
+00:03:50,310 --> 00:03:53,940
+So looks like our package is working its 10 legionary its in the title.
+
+55
+00:03:54,020 --> 00:03:55,270
+Of those is good stuff for us.
+
+56
+00:03:55,320 --> 00:03:58,410
+But one thing I want to do is keep duplicating all of these.
+
+57
+00:03:58,410 --> 00:04:00,010
+Its messing up our controller.
+
+58
+00:04:00,180 --> 00:04:06,000
+So what we're going to do is with headbutts over control of the PSP and I'm going to use CO2 right here
+
+59
+00:04:06,270 --> 00:04:09,710
+because remember all our controllers are using this particular controller.
+
+60
+00:04:09,810 --> 00:04:10,070
+OK.
+
+61
+00:04:10,080 --> 00:04:11,560
+So they're like extended it.
+
+62
+00:04:11,730 --> 00:04:17,040
+So I'm going to cut out this and things that many duplications I'm going to put the directions right
+
+63
+00:04:17,040 --> 00:04:17,340
+here.
+
+64
+00:04:17,400 --> 00:04:24,930
+So public function and I'll call this function set as you and I'll simply paste that right there.
+
+65
+00:04:25,020 --> 00:04:30,640
+And for now I'm going to see this function for taking the title and the description.
+
+66
+00:04:31,400 --> 00:04:31,950
+OK.
+
+67
+00:04:32,100 --> 00:04:38,530
+And when we take in the title we placed the title right here and we we take in the description we place
+
+68
+00:04:38,530 --> 00:04:40,520
+the description right here.
+
+69
+00:04:40,710 --> 00:04:41,230
+OK.
+
+70
+00:04:41,270 --> 00:04:46,420
+So we have this method we can use it in any of our control us wherever we want.
+
+71
+00:04:46,500 --> 00:04:52,770
+So right here we can just say this set as you and we need to pass in the title which is going to be
+
+72
+00:04:52,780 --> 00:05:00,700
+broadcast and we can pass the description which is going to be the best web development training OK
+
+73
+00:05:00,770 --> 00:05:05,700
+so that's done we can do exactly the same thing for the show series.
+
+74
+00:05:05,720 --> 00:05:11,450
+So pull out all of this and then the title is going to be the series title and the description is also
+
+75
+00:05:11,450 --> 00:05:13,120
+going to be the Sui's description.
+
+76
+00:05:13,280 --> 00:05:13,640
+OK.
+
+77
+00:05:13,640 --> 00:05:16,920
+So once you set that up you see that it really cleans up our controllers.
+
+78
+00:05:17,030 --> 00:05:21,910
+Then if I head back to this page and I refresh we see exactly the same thing.
+
+79
+00:05:21,980 --> 00:05:28,130
+If I visit the home page and I refresh which have exactly the same thing for viscid this one you see
+
+80
+00:05:28,130 --> 00:05:30,900
+the title is set so as you know it's working perfectly.
+
+81
+00:05:31,040 --> 00:05:33,970
+Ok so now onto the second parts of this detail.
+
+82
+00:05:34,010 --> 00:05:36,330
+How do you get this to production.
+
+83
+00:05:36,460 --> 00:05:36,930
+OK.
+
+84
+00:05:37,100 --> 00:05:39,340
+So that's now what I want us to talk about.
+
+85
+00:05:39,380 --> 00:05:42,870
+First of all our production server is deployed for Mastani.
+
+86
+00:05:42,920 --> 00:05:44,150
+But then look at where I'm walking.
+
+87
+00:05:44,150 --> 00:05:45,530
+I'm working on VELHO.
+
+88
+00:05:45,620 --> 00:05:46,050
+OK.
+
+89
+00:05:46,130 --> 00:05:52,480
+So first thing is when you walk in on a production application you never want to walk on the service
+
+90
+00:05:52,550 --> 00:05:57,470
+branch or the branch that is deployed to the server because you always want to be able to go back to
+
+91
+00:05:57,470 --> 00:05:58,310
+your changes.
+
+92
+00:05:58,310 --> 00:06:03,770
+For example right now when I wanted to stop the changes for the SU I automatically went out into the
+
+93
+00:06:03,770 --> 00:06:09,470
+developed branch and now that I'm happy with everything I've done I can now push to get help and then
+
+94
+00:06:09,470 --> 00:06:12,290
+make a request for my master brunch.
+
+95
+00:06:12,410 --> 00:06:16,420
+And automatically it's going to be deployed to my level for each server.
+
+96
+00:06:16,480 --> 00:06:16,880
+OK.
+
+97
+00:06:16,940 --> 00:06:23,240
+If I had something like maybe Travie see I've running all my test then then automatically gets up I'm
+
+98
+00:06:23,240 --> 00:06:27,130
+going to make sure all my test box with the CIA before I develop.
+
+99
+00:06:27,130 --> 00:06:27,590
+OK.
+
+100
+00:06:27,740 --> 00:06:32,780
+So right now I'm just going to open fotch And what does open mean.
+
+101
+00:06:32,840 --> 00:06:35,260
+I'm going to actually run all my tests.
+
+102
+00:06:35,420 --> 00:06:36,200
+OK.
+
+103
+00:06:36,590 --> 00:06:37,070
+OK.
+
+104
+00:06:37,070 --> 00:06:39,570
+So you can see after making some changes.
+
+105
+00:06:39,590 --> 00:06:41,520
+Looks like some of our tests are not passing.
+
+106
+00:06:41,630 --> 00:06:46,490
+So this is the advantage of actually working on its VELLAR branch because you can Wolbachia changes
+
+107
+00:06:46,660 --> 00:06:52,830
+or you can actually work on the failing tests before you merge into a monster and then push to production.
+
+108
+00:06:52,940 --> 00:06:57,170
+So right now I'm just going to hit pause and then I'm going to figure out why this I'm not feeling.
+
+109
+00:06:57,170 --> 00:06:59,010
+And then in the next video we're going to tackle it.
+
+110
+00:06:59,090 --> 00:06:59,580
+OK.
+
+111
+00:06:59,600 --> 00:07:01,530
+So thank you so much and see you then.
+

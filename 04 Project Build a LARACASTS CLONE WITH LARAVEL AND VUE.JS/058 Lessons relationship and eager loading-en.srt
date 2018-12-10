@@ -1,0 +1,252 @@
+1
+00:00:00,120 --> 00:00:01,550
+All right let's get into a fun part.
+
+2
+00:00:01,590 --> 00:00:05,040
+This speech is going to have a quick update and the lead for our lessons.
+
+3
+00:00:05,040 --> 00:00:07,760
+Why don't we start with the read so before we start with the read.
+
+4
+00:00:07,760 --> 00:00:13,280
+Obviously we need to have some sort of coalescence into our database before we proceed.
+
+5
+00:00:13,380 --> 00:00:20,120
+So let's go ahead and create a class for our lesson ph meet our son make factory less factory and would
+
+6
+00:00:20,160 --> 00:00:24,950
+pass in the mother and all of all we are doing that for the lesson class.
+
+7
+00:00:25,070 --> 00:00:25,550
+OK.
+
+8
+00:00:25,590 --> 00:00:29,490
+So we have a lesson factory and we can customize it the way we want.
+
+9
+00:00:29,490 --> 00:00:32,040
+So first of all we need a title for the lesson.
+
+10
+00:00:32,040 --> 00:00:33,580
+So it's fake our sentence.
+
+11
+00:00:33,600 --> 00:00:37,360
+We need a shut description Ficarra a paragraph and suicide.
+
+12
+00:00:37,360 --> 00:00:42,010
+He also writes for series Id shoot up a series.
+
+13
+00:00:42,020 --> 00:00:43,490
+So why don't we do this.
+
+14
+00:00:43,660 --> 00:00:47,280
+An anonymous function that returns a suicide.
+
+15
+00:00:47,280 --> 00:00:53,400
+So we're going to call our factory and it's going to create one for us and give us the idea.
+
+16
+00:00:53,460 --> 00:00:58,060
+So what is the question for us your cretinous Kurus series class.
+
+17
+00:00:58,130 --> 00:01:05,010
+OK so suicide is going to call this serious Jenna itto generate a fake ID and then give us the ID.
+
+18
+00:01:05,350 --> 00:01:07,550
+Ok then what else do we want.
+
+19
+00:01:07,700 --> 00:01:08,710
+Episode number.
+
+20
+00:01:08,730 --> 00:01:11,640
+I'm just going to what could these two hundred maybe.
+
+21
+00:01:11,790 --> 00:01:16,220
+OK finally we have the video I.D. So let me go ahead and put that in the video ID.
+
+22
+00:01:16,230 --> 00:01:19,840
+I'll just head over to Vimeo and grab whatever I see.
+
+23
+00:01:19,830 --> 00:01:20,710
+So get this one.
+
+24
+00:01:20,730 --> 00:01:22,310
+And here's the I.D. OK.
+
+25
+00:01:22,320 --> 00:01:28,600
+So we set that's used to generate some fake lessons on Peachtree areason tinker and factory.
+
+26
+00:01:28,660 --> 00:01:31,150
+But cost less and class create.
+
+27
+00:01:31,170 --> 00:01:33,460
+And why don't we quit like five of them.
+
+28
+00:01:33,600 --> 00:01:35,280
+We need to migrate to our database.
+
+29
+00:01:35,280 --> 00:01:35,570
+Right.
+
+30
+00:01:35,590 --> 00:01:38,510
+So we understand my grid fresh aasan.
+
+31
+00:01:38,550 --> 00:01:41,250
+So Team car again and we did that yeah.
+
+32
+00:01:41,310 --> 00:01:41,890
+There we go.
+
+33
+00:01:41,940 --> 00:01:47,070
+We have five lessons in our database that's go ahead and see that and I'm going to get a slot for this
+
+34
+00:01:47,070 --> 00:01:48,420
+series right here.
+
+35
+00:01:48,420 --> 00:01:49,330
+How about this one.
+
+36
+00:01:49,380 --> 00:01:51,890
+And I can go and visit that series in my browser.
+
+37
+00:01:51,990 --> 00:01:52,280
+OK.
+
+38
+00:01:52,290 --> 00:01:53,390
+So there we are.
+
+39
+00:01:53,400 --> 00:01:59,580
+Now what I want to do is load all the lessons of that associated with this series into this page and
+
+40
+00:01:59,580 --> 00:02:05,100
+then automatically a view component is going to seek the detail and then do its thing with it right.
+
+41
+00:02:05,220 --> 00:02:07,130
+So how do we also load that data.
+
+42
+00:02:07,320 --> 00:02:15,330
+Let's head over to our series The HP and simply see any time you want to load this model make sure you
+
+43
+00:02:15,330 --> 00:02:17,120
+load this relationships.
+
+44
+00:02:17,130 --> 00:02:19,980
+So we want to load with the lessons relationship.
+
+45
+00:02:20,070 --> 00:02:22,340
+Yeah but we don't have this relationship yet right.
+
+46
+00:02:22,470 --> 00:02:27,680
+So let's go ahead and Queechy lessons return this mini lesson class.
+
+47
+00:02:27,680 --> 00:02:35,670
+Let's go ahead or index that bleed ph be for the series and actually try to co-opt something like service
+
+48
+00:02:35,760 --> 00:02:38,110
+lessons first title.
+
+49
+00:02:38,400 --> 00:02:40,320
+So let's see this in action refresh.
+
+50
+00:02:40,370 --> 00:02:40,670
+OK.
+
+51
+00:02:40,680 --> 00:02:41,330
+So there we go.
+
+52
+00:02:41,320 --> 00:02:43,220
+We are actually having access to that relationship.
+
+53
+00:02:43,230 --> 00:02:49,080
+But let's make sure this details actually autoload that by going to our series controller and using
+
+54
+00:02:49,170 --> 00:02:56,070
+a die dump series and quick refresh and check out the relations we have lessons collection right here.
+
+55
+00:02:56,120 --> 00:02:58,620
+Looks like that detail so that for us also.
+
+56
+00:02:58,650 --> 00:03:01,620
+Now what do we want to do when we have this page.
+
+57
+00:03:01,710 --> 00:03:06,780
+What I want to do is actually have a list of lessons but this list of lessons is going to be displayed
+
+58
+00:03:06,780 --> 00:03:13,950
+by huge s right here like maybe having the name and having us a Butson that opens a model to edit or
+
+59
+00:03:13,950 --> 00:03:15,290
+create a new lesson.
+
+60
+00:03:15,300 --> 00:03:19,690
+This is going to be controlled by Fujairah therefore we're going to have a component here that maybe
+
+61
+00:03:19,950 --> 00:03:23,290
+view lessons and then veejays is going to take it from here.
+
+62
+00:03:23,340 --> 00:03:28,170
+All the speech is going to do is pass the lessons into the veejays component.
+
+63
+00:03:28,230 --> 00:03:31,350
+So let's go ahead and start working on that in the next lesson.
+

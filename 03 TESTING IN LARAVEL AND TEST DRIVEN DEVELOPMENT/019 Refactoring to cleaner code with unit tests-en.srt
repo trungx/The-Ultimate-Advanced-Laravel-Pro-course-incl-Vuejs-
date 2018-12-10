@@ -1,0 +1,304 @@
+1
+00:00:00,210 --> 00:00:06,300
+Now let's run our first unit test and I'll be able to view blog posts if he visits the Coreg route like
+
+2
+00:00:06,300 --> 00:00:06,990
+this.
+
+3
+00:00:06,990 --> 00:00:12,100
+But then imagine displaying the creator that field fodder for the particular post.
+
+4
+00:00:12,150 --> 00:00:17,070
+Every single time I'm using this long method so what are you going to do is write a unit test that is
+
+5
+00:00:17,070 --> 00:00:22,240
+going to abstract this to a method that we can just call Creator or something like that.
+
+6
+00:00:22,320 --> 00:00:27,650
+OK so we're going to have post created or we can call these creators art or whatever.
+
+7
+00:00:27,660 --> 00:00:34,550
+And this is going to actually give us a little bit of flexibility on this complex way of writing this.
+
+8
+00:00:34,560 --> 00:00:35,070
+OK.
+
+9
+00:00:35,100 --> 00:00:42,060
+So let's go ahead and create a unit test so ph we are sun make test and this is going to be post test.
+
+10
+00:00:42,090 --> 00:00:47,530
+And like we said if it's a unit test we need to pass in the unit floc And now we are quits in a unit
+
+11
+00:00:47,530 --> 00:00:53,020
+test because everything works well in our feature but we want to give ourselves an easier way to display
+
+12
+00:00:53,020 --> 00:00:55,980
+the dates rather than using such long my thoughts.
+
+13
+00:00:55,980 --> 00:00:57,580
+That's why I was in the test.
+
+14
+00:00:57,630 --> 00:01:03,150
+So we have our post-test and I'm just going to clean up this boiler plate and create mine public function
+
+15
+00:01:03,240 --> 00:01:07,470
+test and we're going to seek and get created formats formatted dates.
+
+16
+00:01:07,500 --> 00:01:10,370
+So what do we do for what sustain for us.
+
+17
+00:01:10,410 --> 00:01:14,330
+We need to arrange some stuff right and then act and then assert.
+
+18
+00:01:14,330 --> 00:01:15,340
+So what do we do.
+
+19
+00:01:15,500 --> 00:01:22,470
+Instead we just create a post and then for X or we get the value by calling the method and then for
+
+20
+00:01:22,510 --> 00:01:27,290
+assert we assert that returned value is us we expect.
+
+21
+00:01:27,320 --> 00:01:31,770
+A member of a unit to sell posters the functionality of a particular method or class.
+
+22
+00:01:31,800 --> 00:01:36,220
+So we are going to be calling them method and making sure that it returns what we wanted to return.
+
+23
+00:01:36,290 --> 00:01:38,480
+Let's create a post for creating a post.
+
+24
+00:01:38,490 --> 00:01:44,010
+I'm just going to head over to my view a blog post and copy what I have here based study.
+
+25
+00:01:44,010 --> 00:01:45,100
+Now I have a post.
+
+26
+00:01:45,200 --> 00:01:51,020
+Let me just use a post at the top and then after regional push we need to act right and our action is
+
+27
+00:01:51,030 --> 00:01:57,720
+get the value by calling a method and the value we want to get is from outside that is equal to post
+
+28
+00:01:57,900 --> 00:02:04,720
+and we call Creator that as a method an issue returns unto us formatted date and then we assert these
+
+29
+00:02:04,730 --> 00:02:06,360
+are Surt equals.
+
+30
+00:02:06,390 --> 00:02:12,150
+We're supposed to be unit Methot and we're going to assert that the date that was written from here
+
+31
+00:02:12,150 --> 00:02:14,480
+is actually as we expected.
+
+32
+00:02:14,490 --> 00:02:19,110
+So the date we expect is what we have in our view right now which is this.
+
+33
+00:02:19,140 --> 00:02:25,640
+So I'm just going to grab that copy and then head of our page study and then make sure that it's required
+
+34
+00:02:25,680 --> 00:02:27,370
+to format that date.
+
+35
+00:02:27,390 --> 00:02:31,900
+So we make sure that this value actually equals the formats that date method.
+
+36
+00:02:31,910 --> 00:02:38,370
+So we are trying to make sure that our formatted method actually returns exactly what we wanted to return.
+
+37
+00:02:38,520 --> 00:02:43,150
+So let's go ahead and give this method a group so we can run it individually.
+
+38
+00:02:43,170 --> 00:02:46,540
+So hope is going to be formatted dates.
+
+39
+00:02:46,590 --> 00:02:52,520
+That's how much I mean on one that four months date is going to be a group that's run that test.
+
+40
+00:02:52,710 --> 00:02:55,220
+And best of all you're not found posts.
+
+41
+00:02:55,230 --> 00:02:57,020
+That's because we don't use our migration.
+
+42
+00:02:57,120 --> 00:02:59,900
+Let's go ahead and use it.
+
+43
+00:03:01,110 --> 00:03:02,870
+Use database migrations.
+
+44
+00:03:02,880 --> 00:03:06,910
+Run the game and we have called on the find method creator.
+
+45
+00:03:06,960 --> 00:03:12,540
+And what happens is it's saying it can find it in the query builder class but we actually are calling
+
+46
+00:03:12,540 --> 00:03:18,990
+it on the post instance because the posting's stands extends the middle class and the model also extends
+
+47
+00:03:19,000 --> 00:03:19,850
+a class.
+
+48
+00:03:19,890 --> 00:03:22,880
+And so Lavoe checks if this methodes is on the post class.
+
+49
+00:03:22,890 --> 00:03:28,320
+If it's not it checks on the model and then if it's not also checks on the builder and they can find
+
+50
+00:03:28,320 --> 00:03:28,440
+it.
+
+51
+00:03:28,440 --> 00:03:30,670
+So he tells us that method does not exist.
+
+52
+00:03:30,810 --> 00:03:36,960
+So let's head over to a post that Ph.D. and create that thought public function creator that run it
+
+53
+00:03:36,960 --> 00:03:40,890
+again and right here we have field assets all marches expected.
+
+54
+00:03:40,920 --> 00:03:43,170
+June 30th 17.
+
+55
+00:03:43,320 --> 00:03:49,710
+So what are we going to do right here is simply return exactly the same thing we have in our view right.
+
+56
+00:03:49,800 --> 00:03:51,520
+Because this is what we want.
+
+57
+00:03:51,720 --> 00:03:52,860
+So return this.
+
+58
+00:03:53,130 --> 00:03:57,680
+And obviously we're going to be changing this to this and put in a coma right there.
+
+59
+00:03:57,750 --> 00:04:02,450
+And this mythology is going to help us return the pretty format's date.
+
+60
+00:04:02,610 --> 00:04:07,560
+Let's run that again and sure enough we have a successful test.
+
+61
+00:04:07,560 --> 00:04:15,420
+But now in our view we don't need to write all of this when we are trying to get the created a date.
+
+62
+00:04:15,420 --> 00:04:17,500
+We just need to write this method.
+
+63
+00:04:17,640 --> 00:04:19,210
+So it looks neater.
+
+64
+00:04:19,260 --> 00:04:20,860
+You call a creative method.
+
+65
+00:04:20,980 --> 00:04:25,240
+It formats that for you and returns you the result.
+
+66
+00:04:25,350 --> 00:04:25,790
+Right.
+
+67
+00:04:25,830 --> 00:04:30,360
+And we've been able to drive that functionality using a unit test.
+
+68
+00:04:30,450 --> 00:04:35,970
+So also now you're going to find a lot of use cases for actually writing unit tests for your models
+
+69
+00:04:36,210 --> 00:04:39,890
+because you don't want to have a lot of complicated stuff.
+
+70
+00:04:39,900 --> 00:04:44,160
+Let's say you want to have a method that returns the full name of a user by concatenating the first
+
+71
+00:04:44,160 --> 00:04:45,060
+name and the last name.
+
+72
+00:04:45,060 --> 00:04:50,060
+You don't want to concatenate the first name and the last name every time in your views.
+
+73
+00:04:50,070 --> 00:04:53,510
+But what you want to do is actually create a method on your model.
+
+74
+00:04:53,550 --> 00:05:00,750
+Or you can also create a level attribute on SSR which uses a little bit of labo magic make sure that
+
+75
+00:05:00,750 --> 00:05:06,710
+when you call that mid-thought or attribute or assets or it returns to you the expected value.
+
+76
+00:05:06,720 --> 00:05:11,460
+And then once your test passes on that class you can be able to use it any way you put it Puddock.
+

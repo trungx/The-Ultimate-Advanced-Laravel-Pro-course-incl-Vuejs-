@@ -1,0 +1,208 @@
+1
+00:00:00,510 --> 00:00:01,200
+All right guys.
+
+2
+00:00:01,200 --> 00:00:02,240
+Welcome back.
+
+3
+00:00:02,370 --> 00:00:08,730
+Let's talk about Lavoe cashier like we agreed we're going to try to set up subscription based payments
+
+4
+00:00:08,790 --> 00:00:11,610
+in our application so our SAS are working.
+
+5
+00:00:11,670 --> 00:00:17,520
+We can watch your videos we can watch courses because we want our users to be able to watch Pat's GLOBAL
+
+6
+00:00:17,510 --> 00:00:20,100
+LESSONS OF THE JEWS only when we permit.
+
+7
+00:00:20,130 --> 00:00:20,580
+OK.
+
+8
+00:00:20,670 --> 00:00:24,910
+So we're going to be integrating Lovelle cashier which uses Strype behind the scenes.
+
+9
+00:00:25,010 --> 00:00:25,780
+OK.
+
+10
+00:00:26,070 --> 00:00:28,220
+First steps we need to install because shit.
+
+11
+00:00:28,290 --> 00:00:35,970
+So the instructions on level 5 and 5 documentation says you should require a cache and then you need
+
+12
+00:00:35,970 --> 00:00:37,580
+to register the service provider.
+
+13
+00:00:37,710 --> 00:00:45,420
+But then if you are using Level 5:25 chromatically there composite that JSM file contains a string.
+
+14
+00:00:45,600 --> 00:00:47,520
+I'm going to go ahead.
+
+15
+00:00:47,520 --> 00:00:48,980
+I'm going to go ahead and show you that.
+
+16
+00:00:49,020 --> 00:00:51,430
+So I'm going to search with composer Jason.
+
+17
+00:00:51,470 --> 00:00:57,630
+And you see to my lover cashiered our tree and I will show you this law will provide us Jason Stream
+
+18
+00:00:57,630 --> 00:00:58,190
+right here.
+
+19
+00:00:58,290 --> 00:01:01,060
+So it's automatically going to register the provider.
+
+20
+00:01:01,320 --> 00:01:03,700
+The provider so you don't need to do any of that.
+
+21
+00:01:03,950 --> 00:01:04,450
+OK.
+
+22
+00:01:04,560 --> 00:01:07,880
+But what you need to do is update your migrations.
+
+23
+00:01:07,890 --> 00:01:13,140
+So for Lavoe cashiers who are perfectly Bennet's updates the feuds in all use are stable and we need
+
+24
+00:01:13,140 --> 00:01:15,750
+to have a new subscriptions table.
+
+25
+00:01:15,750 --> 00:01:24,450
+So for the use a stable copy these four columns and then ahead of us who create users and our peace.
+
+26
+00:01:24,690 --> 00:01:31,290
+And then for our subscriptions stable we need to set this now just for everything to be clean.
+
+27
+00:01:31,290 --> 00:01:40,790
+I'm going to create a new immigration EHRSSON make migration creates subscriptions table and I would
+
+28
+00:01:40,800 --> 00:01:48,090
+say to create Fluxion because two subscriptions great sunami have a success or subscriptions migration.
+
+29
+00:01:48,090 --> 00:01:49,890
+So create subscriptions to.
+
+30
+00:01:49,930 --> 00:01:55,010
+So it has to create for the subscriptions and we can also drop it.
+
+31
+00:01:55,020 --> 00:02:00,740
+So I'm going to copy the use and I'm going to paste them right in right there.
+
+32
+00:02:00,810 --> 00:02:01,150
+OK.
+
+33
+00:02:01,170 --> 00:02:05,340
+So now we have users on subscriptions updated like in the documentation.
+
+34
+00:02:05,340 --> 00:02:10,360
+Finally we just need to use billable Sashka will be able to view the user.
+
+35
+00:02:10,560 --> 00:02:21,690
+OK so I'm going to go to my user that BHB and then I'm going to use this trace and just notice how novel
+
+36
+00:02:21,750 --> 00:02:27,360
+is going to hide all the methods that have to do with building the user behind these traits just like
+
+37
+00:02:27,360 --> 00:02:28,620
+we're doing with our own.
+
+38
+00:02:28,710 --> 00:02:29,340
+OK.
+
+39
+00:02:29,460 --> 00:02:33,890
+Then remember to set up the type keys and the model.
+
+40
+00:02:33,960 --> 00:02:34,540
+OK.
+
+41
+00:02:34,650 --> 00:02:43,020
+So if you over to services that actually write down we should have Stryper and which we can simply send
+
+42
+00:02:43,020 --> 00:02:49,650
+those keys by setting and NVI key and secret and you can get that actually from your stripe dashboard.
+
+43
+00:02:49,650 --> 00:02:55,110
+So if you see your stripe dashboard you can head over to your API and then you're going to have your
+
+44
+00:02:55,110 --> 00:02:55,740
+keys.
+
+45
+00:02:55,770 --> 00:02:56,270
+Right.
+
+46
+00:02:56,340 --> 00:02:58,810
+OK so now we have to test keys.
+
+47
+00:02:58,890 --> 00:03:01,550
+You can get the publishable and the secret.
+
+48
+00:03:01,560 --> 00:03:02,160
+OK.
+
+49
+00:03:02,160 --> 00:03:07,500
+So that's what you need to set up for your configuration.
+
+50
+00:03:07,560 --> 00:03:08,240
+OK.
+
+51
+00:03:08,370 --> 00:03:12,630
+So that's basically all we need to set up Strype in our application.
+
+52
+00:03:12,660 --> 00:03:16,260
+We're going to continue our degree in Skype in the very next lesson.
+

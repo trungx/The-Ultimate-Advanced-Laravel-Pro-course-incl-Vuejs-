@@ -1,0 +1,352 @@
+1
+00:00:00,790 --> 00:00:02,260
+OK how about this.
+
+2
+00:00:02,260 --> 00:00:05,750
+We want to know the percentage complete for a particular series.
+
+3
+00:00:05,800 --> 00:00:06,270
+OK.
+
+4
+00:00:06,340 --> 00:00:12,280
+So we should be able to call our percentage completed on the series for a user and would know if this
+
+5
+00:00:12,280 --> 00:00:18,760
+use complete or 20 percent or 30 percent or 100 percent depending on the number of lessons that exist
+
+6
+00:00:18,790 --> 00:00:22,980
+in the series and a number of lessons that this user has already watched.
+
+7
+00:00:23,080 --> 00:00:23,550
+OK.
+
+8
+00:00:23,680 --> 00:00:35,070
+So let's start with a test test can get percentage complete for our series for our use Yeah crappy names
+
+9
+00:00:35,150 --> 00:00:37,030
+but they're going to work just fine.
+
+10
+00:00:37,180 --> 00:00:37,660
+OK.
+
+11
+00:00:37,750 --> 00:00:41,630
+So looks like we need a fresh ready States or maybe for this.
+
+12
+00:00:41,710 --> 00:00:43,270
+We need a new user.
+
+13
+00:00:43,330 --> 00:00:47,010
+We need some lessons like Lesson one lesson too.
+
+14
+00:00:47,110 --> 00:00:53,200
+We need to complete this on one complete lesson too and we might have a couple more lessons in that
+
+15
+00:00:53,200 --> 00:00:54,680
+particular series.
+
+16
+00:00:55,090 --> 00:00:59,470
+But we would only complete lesson 1 and 2 then we're going to make some our sessions.
+
+17
+00:00:59,560 --> 00:01:00,020
+OK.
+
+18
+00:01:00,160 --> 00:01:07,990
+So I'll just copy all of this paste and I will just create two more lessons and I'll make sure that
+
+19
+00:01:07,990 --> 00:01:15,020
+I specify that the series ID for these lessons should be serious ones so that they belong to each one.
+
+20
+00:01:15,040 --> 00:01:15,600
+OK.
+
+21
+00:01:15,710 --> 00:01:18,990
+So my lesson class for Archie right here.
+
+22
+00:01:19,080 --> 00:01:19,430
+OK.
+
+23
+00:01:19,450 --> 00:01:22,520
+So let me duplicate this so I have two lessons created.
+
+24
+00:01:22,720 --> 00:01:29,340
+So we have one two three four lessons belonging to this one series.
+
+25
+00:01:29,530 --> 00:01:32,490
+Now we complete only less than 1 and less than two.
+
+26
+00:01:32,500 --> 00:01:36,900
+Therefore the percentage completed should be 25 right.
+
+27
+00:01:36,910 --> 00:01:47,730
+So let's do this let's assert each course and would call use our percentage complete set for series.
+
+28
+00:01:47,740 --> 00:01:52,780
+So this is the name of the math thought and the past in the series.
+
+29
+00:01:52,930 --> 00:01:56,610
+And since we don't have the series in this case we'll just get lesson.
+
+30
+00:01:56,650 --> 00:01:59,090
+I will call serious.
+
+31
+00:01:59,100 --> 00:01:59,620
+OK.
+
+32
+00:01:59,620 --> 00:02:04,470
+So with puss in the series and we expect this math to return to us.
+
+33
+00:02:04,590 --> 00:02:06,130
+Twenty five right.
+
+34
+00:02:06,190 --> 00:02:07,680
+So that's good for a start.
+
+35
+00:02:07,750 --> 00:02:14,060
+Let's go ahead and run this one here.
+
+36
+00:02:14,070 --> 00:02:19,640
+So we have caught on defraying use our percentage computed for CBS mid-thought.
+
+37
+00:02:19,650 --> 00:02:21,150
+We don't have that.
+
+38
+00:02:21,180 --> 00:02:25,980
+So copy this to my User class and now we have that my.
+
+39
+00:02:26,250 --> 00:02:31,890
+And it's sticking in the suits run that.
+
+40
+00:02:31,900 --> 00:02:36,470
+So I said to not 25 machines expect that.
+
+41
+00:02:36,660 --> 00:02:37,510
+Right.
+
+42
+00:02:37,620 --> 00:02:43,130
+So now let's work on this my thoughts you see that it actually gives us 25.
+
+43
+00:02:43,160 --> 00:02:45,760
+The expected percentage completed.
+
+44
+00:02:45,900 --> 00:02:46,400
+OK.
+
+45
+00:02:46,470 --> 00:02:50,640
+So we've completed two lessons and two lessons in the series are left.
+
+46
+00:02:50,790 --> 00:02:51,710
+So what do we do.
+
+47
+00:02:51,820 --> 00:03:01,340
+That's a good number of lessons in series would be caught are you serious lessons.
+
+48
+00:03:01,650 --> 00:03:04,880
+I will call the count method because we have our collection.
+
+49
+00:03:04,980 --> 00:03:05,750
+Yes.
+
+50
+00:03:05,820 --> 00:03:11,850
+Then we'll get number of completed.
+
+51
+00:03:12,790 --> 00:03:15,710
+Lessons will be equal to.
+
+52
+00:03:15,930 --> 00:03:21,960
+And how do we get the number of completed lessons we just need to get as members and then get the number
+
+53
+00:03:21,960 --> 00:03:23,430
+of elements in there.
+
+54
+00:03:24,330 --> 00:03:25,710
+I read that we receive.
+
+55
+00:03:25,730 --> 00:03:26,850
+So why don't we do this.
+
+56
+00:03:26,850 --> 00:03:35,470
+We'll use our Get number of computer lessons for Sirius and we'll pass in the series right here.
+
+57
+00:03:35,600 --> 00:03:35,960
+OK.
+
+58
+00:03:35,960 --> 00:03:41,540
+So this we are in our User class we would call this so we have a method on this class that can actually
+
+59
+00:03:41,540 --> 00:03:45,170
+give us the number of computer lessons for our series.
+
+60
+00:03:45,280 --> 00:03:52,520
+Ok so now we have this what do we do we need to calculate a percentage therefore to do that we just
+
+61
+00:03:52,520 --> 00:04:03,110
+need to return a number of complete lessons divided by the number of lessons in the series and then
+
+62
+00:04:03,110 --> 00:04:04,960
+multiply that by 100.
+
+63
+00:04:05,100 --> 00:04:05,500
+OK.
+
+64
+00:04:05,510 --> 00:04:11,840
+So this is basic math and if I don't get it right we're going to search on the internet to have how
+
+65
+00:04:11,840 --> 00:04:13,000
+to do that with math OK.
+
+66
+00:04:13,010 --> 00:04:15,080
+But I think for us to get the percentage.
+
+67
+00:04:15,200 --> 00:04:20,810
+It's the Pashtun are divided by the total number and then much by about 100.
+
+68
+00:04:20,900 --> 00:04:27,610
+OK so in this case the number of completer lessons would be to the total number of lessons will be for.
+
+69
+00:04:27,650 --> 00:04:31,340
+So to do other by four should give us 0.5.
+
+70
+00:04:31,460 --> 00:04:36,050
+And then if we multiply by 100 It should give us 50 therefore that's what we should be expecting right
+
+71
+00:04:36,050 --> 00:04:36,750
+here right.
+
+72
+00:04:36,890 --> 00:04:38,540
+So we are having.
+
+73
+00:04:38,540 --> 00:04:42,100
+We are completing two lessons and then we are having four lessons.
+
+74
+00:04:42,110 --> 00:04:44,580
+Therefore the percentage computer should be 50 percent.
+
+75
+00:04:44,700 --> 00:04:45,130
+OK.
+
+76
+00:04:45,140 --> 00:04:51,320
+So in a lesson class we just get the number of lessons in the series get the number from teacher lessons
+
+77
+00:04:51,380 --> 00:04:52,670
+and we turn a percentage.
+
+78
+00:04:52,700 --> 00:04:53,240
+OK.
+
+79
+00:04:53,360 --> 00:04:55,990
+So let's run our test again.
+
+80
+00:04:56,060 --> 00:05:02,570
+And now we have this ever seen caught on to find mid-thought get number of completed lessons for series.
+
+81
+00:05:02,570 --> 00:05:10,220
+OK so we need to quit this method and this mathematics in the seeress that's run the test and he sees
+
+82
+00:05:10,220 --> 00:05:14,120
+fit asserting that 50 matches expect that zero.
+
+83
+00:05:14,200 --> 00:05:19,380
+OK because this mid-thought is returning obviously the wrong value.
+
+84
+00:05:19,400 --> 00:05:23,280
+So now to make sure that this method actually returns the correct value.
+
+85
+00:05:23,360 --> 00:05:28,100
+What are you going to do is therefore create a unit test to make sure that this method works correctly.
+
+86
+00:05:28,190 --> 00:05:33,530
+And then we're going to proceed to make sure that our existing tests that we are running right now succeeds.
+
+87
+00:05:33,560 --> 00:05:34,030
+OK.
+
+88
+00:05:34,140 --> 00:05:41,050
+So the next we do where we walk on the Get number of completed lessons for CBS test.
+

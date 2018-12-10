@@ -1,0 +1,148 @@
+1
+00:00:00,100 --> 00:00:01,400
+We don't waste any time.
+
+2
+00:00:01,510 --> 00:00:07,040
+We dice tweeting to seen how we can or should prepare a forum so we can create series.
+
+3
+00:00:07,070 --> 00:00:11,100
+So the demonstrators are going to be able to do this but we can all come out like lieto.
+
+4
+00:00:11,190 --> 00:00:15,930
+OK so I have my block on suggestion and I'm simply going to pull this one from there and then I'm going
+
+5
+00:00:15,930 --> 00:00:16,630
+to formatting.
+
+6
+00:00:16,830 --> 00:00:19,840
+So block inserts and looks like I'm looking for contact too.
+
+7
+00:00:19,890 --> 00:00:25,640
+So just copy of this section I want to create a new view so I can literally create my form in that.
+
+8
+00:00:25,650 --> 00:00:29,370
+So in my view Socius views are mean directory.
+
+9
+00:00:29,370 --> 00:00:33,280
+I'm going to have a tree and I'm going to create that bleep that Ph.D..
+
+10
+00:00:33,390 --> 00:00:37,640
+And this is where I'm actually going to be stopping everything the concerns on us.
+
+11
+00:00:37,770 --> 00:00:38,630
+So I create that.
+
+12
+00:00:38,640 --> 00:00:40,740
+So I mean she was under a tree.
+
+13
+00:00:40,780 --> 00:00:43,270
+I'm just going to Piscina my phone there.
+
+14
+00:00:43,290 --> 00:00:47,560
+Oh and by that we extend the then four section.
+
+15
+00:00:47,610 --> 00:00:49,250
+It's going to be the content section.
+
+16
+00:00:49,300 --> 00:00:54,070
+OK so looks like we also need a header section and I'm looking at this quote for you beach.
+
+17
+00:00:54,170 --> 00:00:57,710
+The beach would for you to assume and I'm going to copy the header that you have here.
+
+18
+00:00:57,810 --> 00:00:58,170
+OK.
+
+19
+00:00:58,170 --> 00:01:04,090
+So what I want to do is actually register some quotes that are going to be in charge of everything administrates
+
+20
+00:01:04,110 --> 00:01:06,140
+or everything creating series.
+
+21
+00:01:06,240 --> 00:01:12,780
+So while it's up and I'm going to preface this with an injury and I'm going to change this to a good
+
+22
+00:01:12,780 --> 00:01:14,640
+method that's going to create the group for us.
+
+23
+00:01:14,640 --> 00:01:18,420
+Crossing a cruel joke on the kind of carry on definitions.
+
+24
+00:01:18,540 --> 00:01:24,750
+So watch resource because I'm going to be Christian reading of the tenens elite in series with us Rojos
+
+25
+00:01:24,750 --> 00:01:26,290
+to find a resource.
+
+26
+00:01:26,460 --> 00:01:32,580
+And this is going to be our series and it's going up to a Swiss controller class.
+
+27
+00:01:32,610 --> 00:01:34,640
+So why don't I just create that class right now.
+
+28
+00:01:34,650 --> 00:01:40,670
+So Peachtree and sun make control of serious control and are told are able to create and so forth.
+
+29
+00:01:40,680 --> 00:01:42,300
+We saw such an awesome.
+
+30
+00:01:42,330 --> 00:01:48,090
+So if I had was my series controller for us to view the routes that it's going to display that page
+
+31
+00:01:48,120 --> 00:01:49,520
+let's just return of you.
+
+32
+00:01:49,560 --> 00:01:56,340
+So it's in the admin directory that is a tree that creates Marchi and I like when this Mithal matches
+
+33
+00:01:56,430 --> 00:01:57,230
+this thing.
+
+34
+00:01:57,390 --> 00:01:57,760
+OK.
+
+35
+00:01:57,780 --> 00:02:06,090
+So let's go ahead and see what we get from viscid slash series solution creates Chanoff.
+
+36
+00:02:06,090 --> 00:02:06,840
+We have that view.
+
+37
+00:02:06,860 --> 00:02:09,330
+But that winner has a pretty terrific Ani's.
+

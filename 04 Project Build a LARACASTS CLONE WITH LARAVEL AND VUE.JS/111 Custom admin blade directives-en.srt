@@ -1,0 +1,272 @@
+1
+00:00:00,360 --> 00:00:06,120
+I'm going to start off by sharing you and every page and I achieved this page by logging out and visiting
+
+2
+00:00:06,240 --> 00:00:11,740
+the route to watch a series I'll be receiving this as well because in that while we are trying to get
+
+3
+00:00:11,740 --> 00:00:13,290
+the authenticated user.
+
+4
+00:00:13,410 --> 00:00:17,110
+And he obviously is going to fail because like I told you and locked up.
+
+5
+00:00:17,280 --> 00:00:23,940
+So this brings us to deciding if we want to permit users to watch series without been authenticated
+
+6
+00:00:24,150 --> 00:00:24,910
+or not.
+
+7
+00:00:24,910 --> 00:00:30,420
+Now if you want to use words to see which with all be authenticated then what are you going to do is
+
+8
+00:00:30,510 --> 00:00:35,790
+everywhere for your to and authenticated user you need to wrap this in an IF statement to make sure
+
+9
+00:00:35,790 --> 00:00:39,960
+that the user is authenticated before your Trenche you use that feature.
+
+10
+00:00:40,140 --> 00:00:43,820
+But if the user is not authenticated then you can skip that feature.
+
+11
+00:00:43,950 --> 00:00:51,690
+OK so what I'm going to do is actually simply take care of this route by securing it with a meter where
+
+12
+00:00:52,020 --> 00:00:52,810
+we just off.
+
+13
+00:00:52,860 --> 00:00:53,300
+OK.
+
+14
+00:00:53,400 --> 00:01:00,680
+So I'm going to create a mirror work up and put this group with the osme the where.
+
+15
+00:01:01,470 --> 00:01:02,060
+OK.
+
+16
+00:01:02,220 --> 00:01:06,330
+And every single water they want to use to be authenticated before assessing.
+
+17
+00:01:06,350 --> 00:01:07,880
+I'm going to put it in there.
+
+18
+00:01:08,010 --> 00:01:08,530
+OK.
+
+19
+00:01:08,700 --> 00:01:15,090
+So I want to make sure that the result is authenticated before watching a series.
+
+20
+00:01:15,090 --> 00:01:22,200
+So the watch series on the complete lesson would require an authenticated user.
+
+21
+00:01:22,350 --> 00:01:29,710
+So a piece that in so also this where the user can watch a Sui's requires an authenticated user.
+
+22
+00:01:29,760 --> 00:01:32,000
+So also pasted in and.
+
+23
+00:01:32,100 --> 00:01:33,000
+I think that's it.
+
+24
+00:01:33,000 --> 00:01:38,560
+So if you come back and refresh this page we discover that we automatically redirect that to the beach
+
+25
+00:01:38,560 --> 00:01:39,910
+where we have to log in.
+
+26
+00:01:40,060 --> 00:01:44,260
+OK so we haven't customized this view yet but nothing to worry about.
+
+27
+00:01:44,260 --> 00:01:45,830
+We can take care of that later.
+
+28
+00:01:46,060 --> 00:01:52,420
+So right now we can go ahead and again and everything should return to normal.
+
+29
+00:01:53,230 --> 00:01:59,710
+OK so notice how our status is returned to us when we try to log in use are we using the traditional
+
+30
+00:01:59,710 --> 00:02:00,340
+method.
+
+31
+00:02:00,370 --> 00:02:05,490
+Because remember we have an AJAX logging functionality in place we don't actually have to tackle this.
+
+32
+00:02:05,490 --> 00:02:11,420
+And we can use our task to make sure that the user is using a traditional method of authentication is
+
+33
+00:02:11,440 --> 00:02:15,000
+actually returned to a view and not a stutterers OK.
+
+34
+00:02:15,140 --> 00:02:17,430
+OK so now the user is locked in.
+
+35
+00:02:17,550 --> 00:02:23,830
+I just visited the home page and I'll try to visit that route and I can visit the page to watch a series
+
+36
+00:02:23,960 --> 00:02:24,430
+again.
+
+37
+00:02:24,590 --> 00:02:25,010
+OK.
+
+38
+00:02:25,030 --> 00:02:27,610
+Last thing I want to talk about is this navigation bar.
+
+39
+00:02:27,790 --> 00:02:35,140
+So I want to make sure that the user isn't on the street or before he sees them creates his rounds right
+
+40
+00:02:35,140 --> 00:02:35,520
+here.
+
+41
+00:02:35,620 --> 00:02:37,810
+And they also receive out OK.
+
+42
+00:02:37,960 --> 00:02:44,050
+So we have this is I mean my thought in know I use a class and what we're going to do is head of water
+
+43
+00:02:44,310 --> 00:02:46,920
+up the bleed Ph be.
+
+44
+00:02:46,930 --> 00:02:51,110
+And we have these navigation elements right here which we're going to edit.
+
+45
+00:02:51,280 --> 00:02:58,540
+So why don't we have a costume bleach statement that will help us to check if we use ice at me or not
+
+46
+00:02:58,740 --> 00:03:07,100
+I'll head over to my service provider and we're going to registar the lead if I will call this up me
+
+47
+00:03:07,310 --> 00:03:12,260
+and plus in this close call and see return off you.
+
+48
+00:03:12,760 --> 00:03:18,070
+He's mean because you know I use the last we have these is like I mean my father could help us know
+
+49
+00:03:18,080 --> 00:03:19,850
+if they use ice on administrators.
+
+50
+00:03:20,080 --> 00:03:24,040
+So with this key right here we can head about all of that lead.
+
+51
+00:03:24,340 --> 00:03:29,190
+And when we have this off check we can also have an admin check.
+
+52
+00:03:29,200 --> 00:03:39,670
+So by say I mean house then and I mean OK that looks real convenience then we can take the all serious
+
+53
+00:03:39,670 --> 00:03:44,850
+route and create Saraswat and paste them right there.
+
+54
+00:03:45,130 --> 00:03:45,810
+OK.
+
+55
+00:03:46,120 --> 00:03:48,390
+So let's refresh this page.
+
+56
+00:03:48,460 --> 00:03:54,550
+We see those swabs because issues us on and street all but we're going to go out and then visit our
+
+57
+00:03:54,620 --> 00:04:01,530
+registar page registar our new accounts and click on we just stop and it takes us to the home page.
+
+58
+00:04:01,700 --> 00:04:04,890
+Now receipts are our home page.
+
+59
+00:04:05,020 --> 00:04:10,980
+We have just called and then hey the name of the user because this user is not an administrator.
+
+60
+00:04:11,080 --> 00:04:18,570
+He cannot access the creates Sui's page and other pages that are protected for administrators only.
+
+61
+00:04:18,700 --> 00:04:19,320
+OK.
+
+62
+00:04:19,480 --> 00:04:27,010
+So remember we have or I mean that we where all the routes that can only be accessed by administrators
+
+63
+00:04:27,040 --> 00:04:27,940
+are registered.
+
+64
+00:04:27,940 --> 00:04:32,200
+Therefore even if the user tries to navigate through that speech using the you are out he's not going
+
+65
+00:04:32,200 --> 00:04:32,740
+to get it.
+
+66
+00:04:32,860 --> 00:04:35,440
+OK so I think that's a little clean up.
+
+67
+00:04:35,440 --> 00:04:38,570
+We have a little bit of cleanup patches to do now.
+
+68
+00:04:38,730 --> 00:04:43,160
+We're going to take care of that before we actually go into the money part of our application.
+

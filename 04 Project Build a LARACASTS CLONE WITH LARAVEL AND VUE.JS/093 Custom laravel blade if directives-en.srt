@@ -1,0 +1,172 @@
+1
+00:00:01,040 --> 00:00:06,230
+Let's do a little bit of clean up interviews and what I'm talking about is revisit our sou'west the
+
+2
+00:00:06,230 --> 00:00:14,570
+blade that we we have eve our fuse or if our user has started a series on of these kind of statements.
+
+3
+00:00:14,570 --> 00:00:15,160
+OK.
+
+4
+00:00:15,320 --> 00:00:22,010
+Now what I want to do is I don't want to have such but then I want to use the custom blade directives
+
+5
+00:00:22,310 --> 00:00:23,830
+that apply to us.
+
+6
+00:00:23,870 --> 00:00:26,070
+So label this as a possibility of quitting.
+
+7
+00:00:26,100 --> 00:00:30,010
+What we constantly debate shifts and we use them however we want.
+
+8
+00:00:30,020 --> 00:00:34,120
+So first of all I'm going to clean this up and I'm going to use ief Earth.
+
+9
+00:00:34,810 --> 00:00:37,460
+And this is a big if that law applies to us.
+
+10
+00:00:37,550 --> 00:00:44,340
+So and us and if we go ahead or Voser we still have the same thing.
+
+11
+00:00:44,430 --> 00:00:46,910
+So this looks a little bit cleaner.
+
+12
+00:00:47,070 --> 00:00:49,080
+Then how about cleaning this up.
+
+13
+00:00:49,200 --> 00:00:56,340
+If the user has started a series now they're going to create a custom bleet if Sigmon or blade directive
+
+14
+00:00:56,580 --> 00:01:00,310
+and we're going to use it in our views.
+
+15
+00:01:00,320 --> 00:01:05,660
+So our head of much of my apps service provider and this is where we can actually register some of your
+
+16
+00:01:05,660 --> 00:01:06,150
+stuff.
+
+17
+00:01:06,260 --> 00:01:11,840
+So after our level has finished registering all the service providers it's going to call this boot method
+
+18
+00:01:11,900 --> 00:01:15,900
+so we can actually create our own custom bleet if Stedman Rakia.
+
+19
+00:01:15,950 --> 00:01:17,210
+So how do we create this.
+
+20
+00:01:17,270 --> 00:01:20,710
+We have the blade Fassett we have an IV method.
+
+21
+00:01:21,050 --> 00:01:23,730
+So I'm gonna use the blade Fosi right here.
+
+22
+00:01:23,840 --> 00:01:28,800
+So on this if mid-thought it's 6 in the name of the directory if we want to use.
+
+23
+00:01:28,820 --> 00:01:35,450
+So I'm going to call it has started this and the Prometa it takes in like here is a function occlusal.
+
+24
+00:01:35,450 --> 00:01:40,940
+So that's the second Parminter and the pomander that is passed into disclosure or is the parameter that
+
+25
+00:01:40,940 --> 00:01:44,580
+we can pass into this blate the next year.
+
+26
+00:01:44,630 --> 00:01:45,040
+OK.
+
+27
+00:01:45,050 --> 00:01:51,380
+So for example if we have it has started seaways then we can pass in upon it right here.
+
+28
+00:01:51,470 --> 00:01:55,290
+For example the series itself the instance of the series.
+
+29
+00:01:55,310 --> 00:02:01,550
+So if we pass in that parameter for our views it's automatically getting passed into disclosure so we
+
+30
+00:02:01,550 --> 00:02:08,420
+can receive the series right here and right here we just need to return a boolean so we can return our
+
+31
+00:02:08,480 --> 00:02:12,850
+use on and then we can call the house started series marathon.
+
+32
+00:02:13,100 --> 00:02:16,870
+And sure enough into this mid-thought we need to pass in the series.
+
+33
+00:02:17,060 --> 00:02:20,910
+So that's all we need to create our own custom bleet directive.
+
+34
+00:02:20,930 --> 00:02:23,240
+Now let's go ahead and learn how to use this.
+
+35
+00:02:23,270 --> 00:02:29,440
+So rather than seeing if all news has started this we are simply going to see how US US.
+
+36
+00:02:29,580 --> 00:02:34,040
+I will pass in the U.S. and then else.
+
+37
+00:02:34,070 --> 00:02:38,670
+And then we're going to see and start as soon as.
+
+38
+00:02:38,720 --> 00:02:39,280
+That's it.
+
+39
+00:02:39,400 --> 00:02:39,780
+Okay.
+
+40
+00:02:39,800 --> 00:02:48,290
+So we don't at least no more Hostetter series display continue learning else just start learning and
+
+41
+00:02:48,290 --> 00:02:51,070
+has started sou'west looks very clean.
+
+42
+00:02:51,140 --> 00:02:51,620
+Okay.
+
+43
+00:02:51,620 --> 00:02:58,110
+So let's refresh and we get the exact same thing which means obliterates is working perfectly.
+

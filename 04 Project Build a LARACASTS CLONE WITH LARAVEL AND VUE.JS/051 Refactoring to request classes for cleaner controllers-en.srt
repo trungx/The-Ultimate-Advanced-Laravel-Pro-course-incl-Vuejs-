@@ -1,0 +1,152 @@
+1
+00:00:00,300 --> 00:00:06,670
+Like I mentioned a couple of years ago I'm not really comfortable with having a lot of lines in my control.
+
+2
+00:00:06,720 --> 00:00:12,510
+Actually most of my projects actually make show my controller has a maximum of three or four lines that
+
+3
+00:00:12,510 --> 00:00:13,850
+do a paragraphing.
+
+4
+00:00:13,860 --> 00:00:20,990
+So what I'm going to do is actually extract these image load into my Create Sui's request so creates
+
+5
+00:00:21,010 --> 00:00:28,800
+a least request that BHB is going to have a public function which says upload Seeley's image and I'm
+
+6
+00:00:28,800 --> 00:00:36,150
+going to cut out the functionality from my control up and pasted right to sue GET request image is going
+
+7
+00:00:36,150 --> 00:00:43,690
+to be this image because we have to request this title so upload that image use this image file image.
+
+8
+00:00:43,710 --> 00:00:46,200
+Is this title with the extension.
+
+9
+00:00:46,200 --> 00:00:52,530
+And then we stop publicly as Seely's and repassing the finding then what we could do is simply return
+
+10
+00:00:52,650 --> 00:00:55,930
+this then we're going to be able to actually change this method.
+
+11
+00:00:55,950 --> 00:00:56,310
+Right.
+
+12
+00:00:56,330 --> 00:01:00,620
+Then what I want to do is create a public method that says so.
+
+13
+00:01:00,660 --> 00:01:02,000
+Sui's OK.
+
+14
+00:01:02,040 --> 00:01:04,520
+So we have to upload series image.
+
+15
+00:01:04,560 --> 00:01:09,740
+So I'm gonna copy this functionality out of my class and I'm going to paste this in.
+
+16
+00:01:09,780 --> 00:01:11,560
+So upload the image right here.
+
+17
+00:01:11,700 --> 00:01:13,710
+And looks like we need access to this finding.
+
+18
+00:01:13,710 --> 00:01:14,060
+Right.
+
+19
+00:01:14,070 --> 00:01:20,060
+So why don't we just call this it in this class so that we can actually use it in this other method.
+
+20
+00:01:20,080 --> 00:01:26,340
+This filename because of this and we're going to assess this filename and right here we're also going
+
+21
+00:01:26,340 --> 00:01:28,070
+to assess this finding.
+
+22
+00:01:28,170 --> 00:01:28,720
+OK.
+
+23
+00:01:28,750 --> 00:01:29,860
+So great.
+
+24
+00:01:29,880 --> 00:01:32,430
+And then we are assessing this Farney.
+
+25
+00:01:32,430 --> 00:01:39,150
+So now what are we going to have will control our ease request or built image or what was the name of
+
+26
+00:01:39,150 --> 00:01:45,280
+that thought of little CBC M.H. And once that's done we want to start Sui's right.
+
+27
+00:01:45,330 --> 00:01:50,620
+That's the methodically right sort of blog Seuss image and the start a series and then return to use
+
+28
+00:01:50,620 --> 00:01:53,210
+our back and now that we have access to it.
+
+29
+00:01:53,220 --> 00:01:56,460
+We can actually run a test to see if it's still successful.
+
+30
+00:01:56,460 --> 00:01:59,280
+So let's run that on to find three more requests.
+
+31
+00:01:59,280 --> 00:02:03,240
+And that should be coming from our Creasey which request let's check that out.
+
+32
+00:02:03,490 --> 00:02:03,740
+Yeah.
+
+33
+00:02:03,780 --> 00:02:09,040
+So everywhere we have requests we have to switch that out with this this and I think that looks very
+
+34
+00:02:09,040 --> 00:02:12,710
+tough that's one that says one more time and we have a successful test.
+
+35
+00:02:12,720 --> 00:02:19,530
+So we've actually be factored on the functionality of saving a series into our request class then in
+
+36
+00:02:19,530 --> 00:02:23,090
+our control we just have a bloats image and store series.
+
+37
+00:02:23,130 --> 00:02:24,000
+I think that's neat.
+
+38
+00:02:24,010 --> 00:02:24,460
+Quick Joe.
+

@@ -1,0 +1,400 @@
+1
+00:00:00,320 --> 00:00:02,820
+I'd like us to start working on fun and a little bit.
+
+2
+00:00:02,850 --> 00:00:07,520
+Now I have important played right here which I'm going to use to display the featured screen screencast
+
+3
+00:00:07,800 --> 00:00:10,810
+when it gets in the featured series.
+
+4
+00:00:10,850 --> 00:00:16,720
+Yes but we want to actually just display a series from a database to the front end users.
+
+5
+00:00:16,980 --> 00:00:18,710
+How are we going to be doing that.
+
+6
+00:00:18,720 --> 00:00:22,140
+I have a template right here so we're going to get that data from the database.
+
+7
+00:00:22,140 --> 00:00:23,390
+And that's really displayed.
+
+8
+00:00:23,460 --> 00:00:23,810
+OK.
+
+9
+00:00:23,830 --> 00:00:26,070
+Now we're going to be talking more about images.
+
+10
+00:00:26,130 --> 00:00:30,210
+I like to start by creating a new controller that I'm going to call it free of.
+
+11
+00:00:30,270 --> 00:00:33,360
+Make the phones and.
+
+12
+00:00:33,840 --> 00:00:39,410
+And all of those little vaults like the welcome page are going to be accessed from this controller.
+
+13
+00:00:39,480 --> 00:00:43,950
+So if I head over to my web browser we have this Clozaril right here and I'm going to switch on right
+
+14
+00:00:43,950 --> 00:00:51,690
+now and I'm going to tell them to use the funds and controller and we use the welcome massage.
+
+15
+00:00:51,900 --> 00:00:53,730
+Ok for the welcome page.
+
+16
+00:00:53,940 --> 00:01:04,370
+So LA and the welcome and this Welcomer thought simply returns the view welcome like before but now
+
+17
+00:01:04,400 --> 00:01:07,280
+we want to actually display some series right here.
+
+18
+00:01:07,400 --> 00:01:14,640
+So what I want to do is I want to get all the Swiss on the database for now and then I'm going to meet
+
+19
+00:01:14,700 --> 00:01:16,860
+all of them on the front page.
+
+20
+00:01:17,150 --> 00:01:22,960
+So we'll just see this view with see race.
+
+21
+00:01:23,070 --> 00:01:30,280
+I would get serious or OK then on this view would now have access.
+
+22
+00:01:30,310 --> 00:01:36,520
+So if I visit my welcome to the Ph.D. We can now have access to that collection.
+
+23
+00:01:36,580 --> 00:01:45,520
+Therefore I would look to all of the connection using of or else be favorably and would see Sui's as
+
+24
+00:01:45,910 --> 00:01:49,850
+maybe available less than what my friends are empty blog.
+
+25
+00:01:51,140 --> 00:01:52,950
+And and files.
+
+26
+00:01:53,360 --> 00:01:57,840
+So in this foil spots we can paste up templates.
+
+27
+00:01:58,370 --> 00:02:07,230
+And now let's just start by customizing the cost side so so get the series get the title and right.
+
+28
+00:02:07,250 --> 00:02:10,250
+Yeah we can actually just get the Sui's description.
+
+29
+00:02:10,450 --> 00:02:10,860
+OK.
+
+30
+00:02:10,910 --> 00:02:13,010
+So let's see how this looks.
+
+31
+00:02:13,240 --> 00:02:15,190
+Refresh OK.
+
+32
+00:02:15,210 --> 00:02:20,960
+So we have to see recent Abita is the best Lavoe costs and advanced with just beginners course.
+
+33
+00:02:21,090 --> 00:02:23,820
+So this is the description of Yousif to each of his.
+
+34
+00:02:23,820 --> 00:02:25,890
+Now let's talk about the images.
+
+35
+00:02:25,920 --> 00:02:27,620
+I'm going to show you something right here.
+
+36
+00:02:27,630 --> 00:02:32,500
+If I simply echo out the series you match your own.
+
+37
+00:02:32,550 --> 00:02:40,350
+Now we see with fresh you just that we actually saved the name of the fire without actually saving the
+
+38
+00:02:40,350 --> 00:02:40,680
+path.
+
+39
+00:02:40,680 --> 00:02:43,400
+Remember we agreed we can put it in the series.
+
+40
+00:02:43,680 --> 00:02:47,060
+But then that's a little like an obligation that I'm going to show you later.
+
+41
+00:02:47,100 --> 00:02:48,470
+But the right says to fix it.
+
+42
+00:02:48,630 --> 00:02:53,290
+And that is when we're updating the see which we don't actually concatenate the response.
+
+43
+00:02:53,460 --> 00:02:53,900
+Right.
+
+44
+00:02:54,090 --> 00:02:54,400
+OK.
+
+45
+00:02:54,420 --> 00:02:55,870
+We're going to take care of that later.
+
+46
+00:02:56,010 --> 00:02:56,620
+OK.
+
+47
+00:02:56,670 --> 00:03:00,690
+So how do we display this image from our storage.
+
+48
+00:03:00,750 --> 00:03:06,090
+Now first of all remember if you want to actually display an image from your storage directory then
+
+49
+00:03:06,090 --> 00:03:08,950
+that image has to be in a public disk.
+
+50
+00:03:09,230 --> 00:03:09,720
+OK.
+
+51
+00:03:09,780 --> 00:03:14,670
+So you have to make sure it's in the public debate tree in your store each directory.
+
+52
+00:03:14,670 --> 00:03:20,170
+So we have our story directory and we have app which is the default look disk.
+
+53
+00:03:20,190 --> 00:03:25,460
+And if you wanted to be visible to the public you have to put it in the public directory right here.
+
+54
+00:03:25,590 --> 00:03:26,030
+OK.
+
+55
+00:03:26,100 --> 00:03:31,440
+So the first thing that we're going to be doing is making sure that we actually save our images in the
+
+56
+00:03:31,440 --> 00:03:32,460
+public directory.
+
+57
+00:03:32,520 --> 00:03:34,800
+We are going to be taking care of in the next lesson.
+
+58
+00:03:34,920 --> 00:03:40,080
+And the second thing we want to make sure is we actually see if the correct path into our database which
+
+59
+00:03:40,080 --> 00:03:44,070
+we're also going to be doing that in the next lesson with our tests.
+
+60
+00:03:44,100 --> 00:03:48,930
+But for now we want to see how we can actually display the images that we have right now.
+
+61
+00:03:49,110 --> 00:03:54,210
+So the first thing you have to know display images from your store which it must be in the store is
+
+62
+00:03:54,540 --> 00:03:55,650
+public actually.
+
+63
+00:03:55,750 --> 00:04:01,230
+So I'll just move my series directory into the public directory just for now and the next thing I'm
+
+64
+00:04:01,230 --> 00:04:06,660
+going to do is I'm going to run a command the law will provide for us which is BHB artist and Stone
+
+65
+00:04:06,690 --> 00:04:07,940
+Age leg.
+
+66
+00:04:08,280 --> 00:04:08,870
+OK.
+
+67
+00:04:09,000 --> 00:04:15,040
+And if you look at what these commandos he creates are stylish in public public the right here.
+
+68
+00:04:15,180 --> 00:04:21,450
+And most everything in that public directory to the public directory up here.
+
+69
+00:04:21,450 --> 00:04:27,780
+Now what happens now gives us the permission to display all of the files from the public directory as
+
+70
+00:04:27,780 --> 00:04:28,600
+easy as that.
+
+71
+00:04:28,710 --> 00:04:34,770
+So if you want that to display this image right here would head of what's where we have these assets
+
+72
+00:04:35,550 --> 00:04:36,930
+and would reference that fire.
+
+73
+00:04:36,990 --> 00:04:37,440
+Right.
+
+74
+00:04:37,440 --> 00:04:38,890
+So let's just see it will out.
+
+75
+00:04:38,920 --> 00:04:44,210
+I said my thought because the acid mid-thought assesses the assets from this public directory.
+
+76
+00:04:44,220 --> 00:04:44,650
+Right.
+
+77
+00:04:44,820 --> 00:04:50,970
+And we need to get into our storage in a treat and then we have a serious directory and that's where
+
+78
+00:04:50,970 --> 00:04:53,090
+we have the fire that has been seized.
+
+79
+00:04:53,190 --> 00:04:58,740
+So right here this is where we're going to concatenates with the Stone Age series.
+
+80
+00:04:59,060 --> 00:05:01,160
+You make your own.
+
+81
+00:05:01,400 --> 00:05:02,010
+OK.
+
+82
+00:05:02,040 --> 00:05:06,100
+So store each tree series than the series image you're on.
+
+83
+00:05:06,210 --> 00:05:07,280
+That's what we're going to have.
+
+84
+00:05:07,410 --> 00:05:09,650
+So let's refresh the page to see what we have.
+
+85
+00:05:10,620 --> 00:05:12,410
+Yeah it doesn't display anything.
+
+86
+00:05:12,420 --> 00:05:14,240
+Let's inspect to see what's going on.
+
+87
+00:05:14,430 --> 00:05:20,040
+And we have a series but cause this means we need a slush right here.
+
+88
+00:05:20,490 --> 00:05:20,980
+OK.
+
+89
+00:05:21,060 --> 00:05:22,800
+So let's refresh one more time.
+
+90
+00:05:23,560 --> 00:05:28,900
+There we go we have images display but this image is not just mean obviously because we don't have that
+
+91
+00:05:28,930 --> 00:05:30,300
+image in our system.
+
+92
+00:05:30,370 --> 00:05:30,760
+Right.
+
+93
+00:05:30,880 --> 00:05:36,520
+So we can actually display the images from our Stone Age but our system does not walk as a spectator.
+
+94
+00:05:36,640 --> 00:05:40,060
+We're actually just learning how to display from us each time a tree.
+
+95
+00:05:40,090 --> 00:05:46,260
+But we have to make sure that when we're saving the image into our storage the way we receive it into
+
+96
+00:05:46,300 --> 00:05:51,320
+the public now we're actually also so that we can access it using Petchey Alasan Strobridge link.
+
+97
+00:05:51,400 --> 00:05:54,820
+And we also have to make sure that we're be updating our series.
+
+98
+00:05:54,940 --> 00:06:00,340
+The image is actually updated on the correct path it's saved into the database.
+
+99
+00:06:00,430 --> 00:06:00,890
+OK.
+
+100
+00:06:00,940 --> 00:06:03,750
+So let's take of that the very next video.
+

@@ -1,0 +1,412 @@
+1
+00:00:00,490 --> 00:00:06,270
+OK next step we want to be able to check if the Czar has a plan and then we won't be debating him to
+
+2
+00:00:06,270 --> 00:00:08,430
+the white page if he doesn't.
+
+3
+00:00:08,640 --> 00:00:11,270
+All we to permit him to watch here is if it's free.
+
+4
+00:00:11,340 --> 00:00:11,770
+OK.
+
+5
+00:00:11,880 --> 00:00:17,770
+So first of all we need to include the concept of having premium license therefore for this that will
+
+6
+00:00:17,790 --> 00:00:19,330
+not change to say something else.
+
+7
+00:00:19,380 --> 00:00:22,100
+So we'll be testing a use of we got a.
+
+8
+00:00:22,260 --> 00:00:25,400
+Cannot watch premium license.
+
+9
+00:00:25,420 --> 00:00:25,870
+OK.
+
+10
+00:00:25,890 --> 00:00:27,860
+So that's the test that we are going to be writing.
+
+11
+00:00:28,020 --> 00:00:30,180
+So first of all we need some lessons.
+
+12
+00:00:30,330 --> 00:00:36,050
+So what I'm going to do is I'm going to help you use our test to include the concept of premium lessons.
+
+13
+00:00:36,130 --> 00:00:43,930
+So create a treat for the lesson class on your Christmas thought.
+
+14
+00:00:44,010 --> 00:00:51,280
+And in this methode I'm going to pass in a key called premium and I've said this to one.
+
+15
+00:00:51,690 --> 00:00:52,140
+OK.
+
+16
+00:00:52,210 --> 00:00:54,700
+So we're going to have a database full call premium.
+
+17
+00:00:54,840 --> 00:00:57,980
+And then if this field is one then the lesson is premium.
+
+18
+00:00:58,140 --> 00:01:03,610
+So next I'm going to pull this out for the moment then we're going to make a GET request to the end
+
+19
+00:01:03,640 --> 00:01:07,350
+point for the user to actually watch the video.
+
+20
+00:01:07,520 --> 00:01:08,000
+OK.
+
+21
+00:01:08,040 --> 00:01:12,510
+So basically what we want is if the user does not subscribe to our plan we were directing him to the
+
+22
+00:01:12,510 --> 00:01:15,080
+SUBSCRIBE page so he can subscribe to one.
+
+23
+00:01:15,160 --> 00:01:20,650
+But evidence do you use I subscribe to plan then we simply allow him watch the lesson.
+
+24
+00:01:20,730 --> 00:01:21,270
+OK.
+
+25
+00:01:21,390 --> 00:01:28,340
+So future cop outs are we have this get speech where we want to use or to watch the series.
+
+26
+00:01:28,380 --> 00:01:34,470
+So what are we going to do is we're going to visit this route right here and we're going to pass in
+
+27
+00:01:34,590 --> 00:01:35,520
+this lesson.
+
+28
+00:01:35,600 --> 00:01:35,930
+OK.
+
+29
+00:01:35,940 --> 00:01:43,110
+So this should be a lesson right here for descriptive purposes and we need to pass in less lesson series
+
+30
+00:01:43,620 --> 00:01:50,450
+Boston to SLOC and then for the lesson right here in Lassan ID.
+
+31
+00:01:50,850 --> 00:01:57,000
+So when we make it get requests to this lesson which is a premium one would assert something.
+
+32
+00:01:57,000 --> 00:02:01,670
+So I would assert that the use always redirects at that so that you use ours.
+
+33
+00:02:01,680 --> 00:02:04,030
+Actually we don't take that to the source quite beach.
+
+34
+00:02:04,130 --> 00:02:04,590
+OK.
+
+35
+00:02:04,610 --> 00:02:10,950
+So the by page remember is on gets and points where we see the subscription form.
+
+36
+00:02:11,060 --> 00:02:11,410
+OK.
+
+37
+00:02:11,430 --> 00:02:13,360
+So subscribe to some sites.
+
+38
+00:02:13,380 --> 00:02:13,720
+OK.
+
+39
+00:02:13,740 --> 00:02:15,960
+So that's what we want to happen.
+
+40
+00:02:16,080 --> 00:02:19,940
+Let's just try this out to see what we have not so far.
+
+41
+00:02:20,280 --> 00:02:22,020
+So let's run this.
+
+42
+00:02:22,060 --> 00:02:27,240
+We need to add to that last OK.
+
+43
+00:02:27,240 --> 00:02:32,910
+We haven't that sees or lessons has no on premium.
+
+44
+00:02:33,000 --> 00:02:33,490
+OK.
+
+45
+00:02:33,540 --> 00:02:40,150
+Obviously so would have the much or create lessons to a bow and we're going to create a premium color
+
+46
+00:02:40,220 --> 00:02:41,870
+so say so.
+
+47
+00:02:42,210 --> 00:02:51,260
+And I want this to be a boolean and I'll call this preview and I'll just set this by default to be zero.
+
+48
+00:02:51,450 --> 00:02:52,050
+OK.
+
+49
+00:02:52,100 --> 00:02:56,550
+So run these again and half expect that there is.
+
+50
+00:02:56,550 --> 00:03:00,050
+And this is actually what we got so we read the log in page.
+
+51
+00:03:00,060 --> 00:03:03,960
+So we need to lock the user in before we try to recede.
+
+52
+00:03:04,110 --> 00:03:05,450
+Lesson for this.
+
+53
+00:03:05,460 --> 00:03:05,870
+Right.
+
+54
+00:03:05,910 --> 00:03:10,250
+So we're going to see this seen us use on.
+
+55
+00:03:10,260 --> 00:03:13,590
+So would love this user name for this testing session.
+
+56
+00:03:13,590 --> 00:03:15,260
+OK let's run that again.
+
+57
+00:03:15,460 --> 00:03:18,450
+Now we have a video response that's good to read it's not reader.
+
+58
+00:03:18,460 --> 00:03:19,430
+I started school.
+
+59
+00:03:19,590 --> 00:03:24,210
+So in our control we are not with damage and to use lots of the SUBSCRIBE page.
+
+60
+00:03:24,210 --> 00:03:32,280
+So let's go on with that B and right here this is what she was controul at the show less than I thought.
+
+61
+00:03:32,280 --> 00:03:36,810
+So watch series controller at the show lesson method.
+
+62
+00:03:37,310 --> 00:03:38,470
+Simply read debates.
+
+63
+00:03:38,560 --> 00:03:40,250
+It returns that view.
+
+64
+00:03:40,260 --> 00:03:45,020
+So what are you going to do is check if the authenticated user has our current plan.
+
+65
+00:03:45,120 --> 00:03:47,750
+So we'll see if you use.
+
+66
+00:03:47,870 --> 00:03:52,620
+And we haven't subscribed to non-menthol at that level because she gives to us.
+
+67
+00:03:52,650 --> 00:03:55,400
+That's actually just check the billable trade to make sure.
+
+68
+00:03:55,450 --> 00:03:58,790
+So if research subscribed.
+
+69
+00:03:59,160 --> 00:04:01,190
+So it's called subscribe to plan.
+
+70
+00:04:01,290 --> 00:04:01,820
+OK.
+
+71
+00:04:01,990 --> 00:04:09,950
+So what series if the US use or subscribe to plan then we can let him watch the series.
+
+72
+00:04:09,960 --> 00:04:10,300
+OK.
+
+73
+00:04:10,320 --> 00:04:17,420
+So we could check here if they got use or not subscribe to our plan then we need to redirect him so
+
+74
+00:04:17,420 --> 00:04:19,480
+we turn redirect.
+
+75
+00:04:19,650 --> 00:04:22,480
+And this would be to the SUBSCRIBE page.
+
+76
+00:04:22,680 --> 00:04:23,080
+OK.
+
+77
+00:04:23,100 --> 00:04:25,860
+So we're just checking if the user has a plan if he doesn't have a plan.
+
+78
+00:04:25,890 --> 00:04:31,220
+We will direct him to the beach and we can maybe add a flush procedure or something like that.
+
+79
+00:04:31,260 --> 00:04:32,690
+But tonight let's run that test.
+
+80
+00:04:32,820 --> 00:04:34,800
+OK we have a 500.
+
+81
+00:04:34,890 --> 00:04:40,420
+Looks like we're having an error or let's just about exception handling to see that error.
+
+82
+00:04:41,660 --> 00:04:42,140
+OK.
+
+83
+00:04:42,180 --> 00:04:43,650
+Run that again.
+
+84
+00:04:43,820 --> 00:04:49,750
+And we are having the last two few arguments passed to frosh and use us to plan.
+
+85
+00:04:49,800 --> 00:04:52,270
+OK let's check out what the method needs to seized.
+
+86
+00:04:52,310 --> 00:04:57,750
+I mean if those tribal areas if they subscribe to one of the given lines we need to pass in all the
+
+87
+00:04:57,750 --> 00:05:02,650
+plans that we want to use or do we want to check if the user is subscribed to.
+
+88
+00:05:02,880 --> 00:05:03,290
+OK.
+
+89
+00:05:03,330 --> 00:05:05,500
+So basically we passing on the plan.
+
+90
+00:05:05,490 --> 00:05:15,350
+So for example in the southeast or you a method way here we can pass in an array and stop monthly and
+
+91
+00:05:15,410 --> 00:05:16,540
+yearly.
+
+92
+00:05:17,040 --> 00:05:17,440
+OK.
+
+93
+00:05:17,450 --> 00:05:21,790
+So we want to check the use I subscribe to either monthly or yearly plan.
+
+94
+00:05:21,860 --> 00:05:22,270
+OK.
+
+95
+00:05:22,310 --> 00:05:24,070
+So let's run this again.
+
+96
+00:05:24,170 --> 00:05:29,040
+And now we have a successful test meaning that user is not subscribed to any plan.
+
+97
+00:05:29,060 --> 00:05:31,980
+And then he said automatically we make that to the subsequent beach.
+
+98
+00:05:32,060 --> 00:05:32,550
+OK.
+
+99
+00:05:32,570 --> 00:05:38,000
+So that is working in the very nature we what we're trying to do what we are going to do is we're going
+
+100
+00:05:38,000 --> 00:05:43,130
+to subscribe the user to our plan using Orphic subscribe method and then we going to assert that these
+
+101
+00:05:43,130 --> 00:05:47,120
+days actually go the speech and he can watch it.
+
+102
+00:05:47,250 --> 00:05:47,760
+OK.
+
+103
+00:05:47,810 --> 00:05:49,480
+So thank you so much and see you then.
+

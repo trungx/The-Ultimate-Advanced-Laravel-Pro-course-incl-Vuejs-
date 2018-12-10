@@ -1,0 +1,528 @@
+1
+00:00:00,350 --> 00:00:04,610
+OK next step once you get the possibility of the use or to actually change his plan.
+
+2
+00:00:04,620 --> 00:00:09,170
+Yeah it's going to be really crappy if the user cannot wait for monthly plans.
+
+3
+00:00:09,180 --> 00:00:12,120
+The yearly plan done great if it's not interested.
+
+4
+00:00:12,170 --> 00:00:12,660
+OK.
+
+5
+00:00:12,780 --> 00:00:15,060
+So that's what we're going to be taking care of in this lesson.
+
+6
+00:00:15,070 --> 00:00:18,660
+And as usual caution makes this a real priest.
+
+7
+00:00:18,720 --> 00:00:26,520
+OK so for this lesson I behind the scenes prepared this form and this form is simply a soulmates which
+
+8
+00:00:26,520 --> 00:00:31,860
+is our select right here and we can either select the monthly or the yearly plan and we just click on
+
+9
+00:00:31,860 --> 00:00:35,010
+change plan and then we are going to send it our controller.
+
+10
+00:00:35,010 --> 00:00:39,710
+So for now it doesn't do anything we can empower it to actually communicate with the controller.
+
+11
+00:00:39,860 --> 00:00:40,340
+OK.
+
+12
+00:00:40,410 --> 00:00:46,220
+So we can look at the user ask Koreans Blunt let me take you right into the code in my poor father lead
+
+13
+00:00:46,240 --> 00:00:49,240
+that Ph.D. inside one of the top beams.
+
+14
+00:00:49,400 --> 00:00:53,620
+I have a form for now it doesn't stop me to anywhere.
+
+15
+00:00:53,640 --> 00:00:58,400
+It actually has a few four sets off detection.
+
+16
+00:00:58,500 --> 00:01:02,210
+And then right here we need to ECOs to use US Poulin.
+
+17
+00:01:02,400 --> 00:01:02,870
+OK.
+
+18
+00:01:03,030 --> 00:01:08,840
+So first of all since I'm going to be agreeno these US plan something I knew to take off is I want to
+
+19
+00:01:08,850 --> 00:01:11,980
+autoload the use of subscriptions.
+
+20
+00:01:12,030 --> 00:01:12,500
+OK.
+
+21
+00:01:12,660 --> 00:01:19,860
+So right here I'm going to set up a protected with property and this is going to autoload the subscriptions
+
+22
+00:01:19,860 --> 00:01:20,750
+relationship.
+
+23
+00:01:20,760 --> 00:01:21,380
+OK.
+
+24
+00:01:21,530 --> 00:01:22,280
+Save that.
+
+25
+00:01:22,380 --> 00:01:26,820
+And in my profile I can do stuff like this.
+
+26
+00:01:26,910 --> 00:01:38,970
+I think I can just Ecorse the authenticated user and I'll get subscriptions and I'll get the first and
+
+27
+00:01:38,970 --> 00:01:40,850
+I'll get the name of the subscription.
+
+28
+00:01:40,860 --> 00:01:45,840
+Now you need to understand something Lavoe cashier provides the possibility for users to have more cheaper
+
+29
+00:01:45,840 --> 00:01:52,740
+subscriptions because you can have an application where a user can be subscribed to maybe vigils and
+
+30
+00:01:52,740 --> 00:01:57,810
+subscribe to maybe music in stand so you can have multiple subscription so you use.
+
+31
+00:01:57,810 --> 00:02:03,490
+So in this case we are up about around the fact that the user can have just one subscription at a time.
+
+32
+00:02:03,510 --> 00:02:08,910
+That's why we keep saying first such that we know or we make sure that the user can subscribe to just
+
+33
+00:02:08,910 --> 00:02:12,800
+one subscription and we always get the first right to our king.
+
+34
+00:02:12,840 --> 00:02:17,250
+So in this case we get the first subscription and we get the name of the subscription or we just plead
+
+35
+00:02:17,250 --> 00:02:18,070
+to the user.
+
+36
+00:02:18,180 --> 00:02:23,320
+OK then right here we need to submit this to somewhere.
+
+37
+00:02:23,520 --> 00:02:30,570
+So I'm going to just set up a route and I'm going to call these subscriptions to change.
+
+38
+00:02:30,990 --> 00:02:31,450
+OK.
+
+39
+00:02:31,920 --> 00:02:36,890
+Which is going to be a post and that when we click on this is going to submit the form value.
+
+40
+00:02:36,980 --> 00:02:37,470
+OK.
+
+41
+00:02:37,590 --> 00:02:42,620
+So I'm going to head over to my web ph be and I'm going to quit this route.
+
+42
+00:02:42,810 --> 00:02:48,900
+So I'm going to change this to a post and it's going to go to subscription change and subscriptions
+
+43
+00:02:48,900 --> 00:02:55,680
+control or change my thought and I'll give this a name which is going to be exactly what I coded in
+
+44
+00:02:55,680 --> 00:02:57,770
+my profile that made that pitch be.
+
+45
+00:02:57,780 --> 00:03:02,180
+So I'm going to copy this idea save it and I'll paste it right here.
+
+46
+00:03:02,340 --> 00:03:02,740
+OK.
+
+47
+00:03:02,760 --> 00:03:03,670
+So that's our world.
+
+48
+00:03:03,840 --> 00:03:06,890
+We need to create this change method in a subscription schedule.
+
+49
+00:03:07,050 --> 00:03:08,660
+So that's what I'm going to do.
+
+50
+00:03:08,700 --> 00:03:13,170
+Function change and it's going to be a pause right.
+
+51
+00:03:13,170 --> 00:03:18,620
+So first of all the first thing we want to check to make sure that we actually bodging a controller
+
+52
+00:03:18,660 --> 00:03:24,750
+is if the request parm that was passed in here is actually a different one.
+
+53
+00:03:24,810 --> 00:03:25,210
+OK.
+
+54
+00:03:25,230 --> 00:03:27,500
+So first of all we have to use on.
+
+55
+00:03:27,570 --> 00:03:39,750
+So let's just use our equals of user and let's just say use up plan course user will get his subscriptions
+
+56
+00:03:41,140 --> 00:03:46,630
+will get the first call and you get the plan name.
+
+57
+00:03:46,940 --> 00:03:55,110
+Ok then what you want to do here is check if request plan which is the new plan that you use wants to
+
+58
+00:03:55,110 --> 00:04:02,220
+change to right here the name of this selects plan and we want to check if the request line is equal
+
+59
+00:04:02,220 --> 00:04:03,920
+to the use of plan.
+
+60
+00:04:04,170 --> 00:04:04,610
+OK.
+
+61
+00:04:04,650 --> 00:04:14,260
+So the current plan or the use is of course a question and then we'll just return they use our back.
+
+62
+00:04:14,800 --> 00:04:15,120
+OK.
+
+63
+00:04:15,150 --> 00:04:17,630
+We don't want him to change anything if it's the same.
+
+64
+00:04:17,970 --> 00:04:18,470
+OK.
+
+65
+00:04:18,540 --> 00:04:23,490
+So the next step we need to call our subscription change process.
+
+66
+00:04:23,490 --> 00:04:30,650
+This method requires us to get a subscription and then it also requires us to call or swap method.
+
+67
+00:04:30,690 --> 00:04:32,370
+And we're going to explain what this means.
+
+68
+00:04:32,370 --> 00:04:38,360
+So first of all they want to do is actually strip out this implementation with Strype plan.
+
+69
+00:04:38,690 --> 00:04:39,120
+OK.
+
+70
+00:04:39,120 --> 00:04:42,900
+Even though the name of our plan is the same as the Strype plan.
+
+71
+00:04:42,960 --> 00:04:47,970
+I want to use a stripe plan so that we actually know this is exactly what we have in our strategy but
+
+72
+00:04:48,270 --> 00:04:54,060
+so is the plan that you use is on the same plan that we are getting from our view that we are going
+
+73
+00:04:54,060 --> 00:04:55,290
+to win on ideas of.
+
+74
+00:04:55,380 --> 00:04:58,270
+Okay then the subscription.
+
+75
+00:04:58,470 --> 00:05:01,240
+Right here it's 6 in the the plan.
+
+76
+00:05:01,460 --> 00:05:07,400
+So we're passing use our plan and then we're going to swap it for the new plan that we are getting from
+
+77
+00:05:07,580 --> 00:05:08,550
+the request.
+
+78
+00:05:08,720 --> 00:05:15,380
+So if they use our strengths upgrade for months later yearly loveall is going to pass this plan to allow
+
+79
+00:05:15,440 --> 00:05:21,700
+a cashier and automatically level cashier with calculates what is Judy use our or how much they use
+
+80
+00:05:21,700 --> 00:05:26,220
+on these to be charged for that are going to succeed and it's going to automatically do that.
+
+81
+00:05:26,300 --> 00:05:26,740
+OK.
+
+82
+00:05:26,870 --> 00:05:28,540
+So we use our subscription.
+
+83
+00:05:28,650 --> 00:05:30,330
+But in the current use up plan.
+
+84
+00:05:30,410 --> 00:05:36,650
+In this case maybe monthly or yearly and then it's going to swap it out for this plan that was passed
+
+85
+00:05:36,650 --> 00:05:38,480
+in the request makes sense.
+
+86
+00:05:38,480 --> 00:05:45,230
+So after this operation let's just return a redirect back ok for now.
+
+87
+00:05:45,410 --> 00:05:45,820
+OK.
+
+88
+00:05:45,830 --> 00:05:54,050
+So we get the plan and then we swap out the current plan right here with the new plan that we have for
+
+89
+00:05:54,230 --> 00:05:55,020
+our funds.
+
+90
+00:05:55,190 --> 00:05:59,790
+OK so let's go ahead and try this out in Abrazo to see what we get.
+
+91
+00:06:00,170 --> 00:06:06,000
+So right here we'll just select the Yelp plan because it's safe I said the monthly plan and recoup and
+
+92
+00:06:05,990 --> 00:06:10,860
+change plan and then sticking a little bit of time because he's communicating with us tripes serve our
+
+93
+00:06:11,150 --> 00:06:14,280
+change of plan and now we have a response.
+
+94
+00:06:14,300 --> 00:06:16,680
+So it refreshes and goes back to the speech.
+
+95
+00:06:16,730 --> 00:06:17,140
+OK.
+
+96
+00:06:17,150 --> 00:06:20,170
+So it seems your current plan is still monthly.
+
+97
+00:06:20,180 --> 00:06:24,040
+So let's go ahead to think I get this use on naturally see what is going on.
+
+98
+00:06:24,050 --> 00:06:29,380
+I'm going to show you right here and I'm just going to get all my users and I'm going to look for the
+
+99
+00:06:29,380 --> 00:06:31,800
+patch I use only walking the earth right now.
+
+100
+00:06:31,850 --> 00:06:35,180
+So they use all its name.
+
+101
+00:06:35,240 --> 00:06:40,130
+So what is happening is if you look at the first subscription for this user.
+
+102
+00:06:40,310 --> 00:06:42,200
+First of all the name is monthly.
+
+103
+00:06:42,200 --> 00:06:44,020
+That's why we are seeing monthly right here.
+
+104
+00:06:44,060 --> 00:06:45,810
+But the plan is yearly.
+
+105
+00:06:45,830 --> 00:06:51,190
+So this trapline is the name of the plan that we use I subscribe to on our Strype dashboard.
+
+106
+00:06:51,190 --> 00:06:53,230
+So this is the plan that Strype notes.
+
+107
+00:06:53,270 --> 00:06:58,180
+And this is simply a name that we give to identify the users plan on our own database.
+
+108
+00:06:58,190 --> 00:06:58,740
+OK.
+
+109
+00:06:58,760 --> 00:07:04,370
+So something of a level cache's if we swap out the plan it's going to change the strike plan name right
+
+110
+00:07:04,370 --> 00:07:04,760
+here.
+
+111
+00:07:04,910 --> 00:07:07,760
+But the name of the plant itself does not change.
+
+112
+00:07:07,760 --> 00:07:08,250
+Okay.
+
+113
+00:07:08,330 --> 00:07:14,690
+So it's a choice if we want to manually upgrade the name of the plan right here or what we can actually
+
+114
+00:07:14,690 --> 00:07:22,700
+do is change the the way we are to explain this to the user so we can actually display the strike plan
+
+115
+00:07:22,850 --> 00:07:29,570
+right here which actually makes the name kind of useless birched if you will automatically updates the
+
+116
+00:07:29,570 --> 00:07:32,450
+name of the plan when they use a subsidy out.
+
+117
+00:07:32,450 --> 00:07:34,310
+Then you can do that in your control.
+
+118
+00:07:34,420 --> 00:07:34,970
+Okay.
+
+119
+00:07:35,090 --> 00:07:40,600
+So if I come back refresh and we check out the plan we see that the Strype plan is yearly.
+
+120
+00:07:40,600 --> 00:07:41,190
+Okay.
+
+121
+00:07:41,210 --> 00:07:46,160
+And then we can switch back to the monthly and if I can change plan.
+
+122
+00:07:46,200 --> 00:07:50,990
+You say it's taking some time because it's complicated with the tripes service and then it comes back
+
+123
+00:07:50,990 --> 00:07:51,740
+with a response.
+
+124
+00:07:51,740 --> 00:07:54,470
+If you check that out it's switched to yearly.
+
+125
+00:07:54,560 --> 00:07:54,970
+Okay.
+
+126
+00:07:54,980 --> 00:08:00,920
+So just that simple math thought that actually helps us to actually switch the plan of the user whenever
+
+127
+00:08:00,920 --> 00:08:02,150
+they use our request.
+
+128
+00:08:02,180 --> 00:08:07,940
+And for one more thing let's just put a little bit of security for our service right here by saying
+
+129
+00:08:08,330 --> 00:08:11,210
+validates the request that is coming in.
+
+130
+00:08:11,540 --> 00:08:15,590
+And I would say the plan is required.
+
+131
+00:08:15,770 --> 00:08:16,060
+OK.
+
+132
+00:08:16,070 --> 00:08:19,270
+So that's it for this lesson in the very next one.
+

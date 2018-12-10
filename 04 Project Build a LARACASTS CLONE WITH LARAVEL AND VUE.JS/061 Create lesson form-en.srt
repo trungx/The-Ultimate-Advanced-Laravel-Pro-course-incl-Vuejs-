@@ -1,0 +1,108 @@
+1
+00:00:00,320 --> 00:00:06,300
+That so can I quit lesson form copy some from books like here and my crit lesson rather than having
+
+2
+00:00:06,490 --> 00:00:08,970
+this body I'm going to have grps right.
+
+3
+00:00:09,000 --> 00:00:12,110
+So the first one here is going to be for the title.
+
+4
+00:00:12,300 --> 00:00:18,480
+So the model title placeholder is going to be lessons I don't looks like we need a voodoo ID.
+
+5
+00:00:18,510 --> 00:00:21,090
+So this is going to be the new video ID.
+
+6
+00:00:21,130 --> 00:00:23,350
+The model is going to be the joy.
+
+7
+00:00:23,490 --> 00:00:30,200
+Nate Wong for the episode number and we can change S-type to number and see episode number and we can
+
+8
+00:00:30,200 --> 00:00:32,850
+actually see how to use this in our application.
+
+9
+00:00:32,850 --> 00:00:37,640
+Finally a group with a text area that form controlling it.
+
+10
+00:00:37,710 --> 00:00:41,110
+OK so we don't need the name neither do we need the ID.
+
+11
+00:00:41,130 --> 00:00:44,790
+All we need is the V model which is going to map to description.
+
+12
+00:00:44,790 --> 00:00:48,470
+So looks like we actually need all of these form fields on our class.
+
+13
+00:00:48,480 --> 00:00:53,610
+Therefore we're going to have our data property or data which returns an object.
+
+14
+00:00:53,640 --> 00:00:59,480
+And here we're going to have title assigned to an empty string description an empty string a piece of
+
+15
+00:00:59,490 --> 00:01:03,260
+Number two an empty string and video ID to an empty string.
+
+16
+00:01:03,300 --> 00:01:05,710
+So we should actually have that in a form.
+
+17
+00:01:05,790 --> 00:01:06,280
+OK.
+
+18
+00:01:06,330 --> 00:01:08,290
+So let's go ahead and check it out.
+
+19
+00:01:08,310 --> 00:01:15,190
+Quick refresh to conduct and then we have less than V.M. video on the edges of number on the description.
+
+20
+00:01:15,240 --> 00:01:18,240
+OK so what do we want to happen when we click on the safe changes.
+
+21
+00:01:18,250 --> 00:01:21,750
+MARTIN Or we can actually change it to Seife lesson.
+
+22
+00:01:21,900 --> 00:01:27,500
+Then she validate the data here and then make that E-Tecs request will serve us receive the lesson.
+
+23
+00:01:27,540 --> 00:01:34,380
+Therefore we are going to need to pull the exhaust making requests for import XOs from examples and
+
+24
+00:01:34,380 --> 00:01:37,610
+we can now use it the way we want in our class.
+
+25
+00:01:37,620 --> 00:01:43,280
+Ok so I'm going to put a pause right here and we're going to walk on the back end on level so that we'll
+
+26
+00:01:43,290 --> 00:01:48,350
+be able to handle the requests for these components before we go for the view.
+
+27
+00:01:48,400 --> 00:01:48,930
+Jess.
+

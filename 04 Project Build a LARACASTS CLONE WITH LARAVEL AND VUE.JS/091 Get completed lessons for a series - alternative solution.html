@@ -1,0 +1,35 @@
+<html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>091 Get completed lessons for a series - alternative solution</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><p>In the previous lesson, we used the map function to query our database and get all completed lessons for a series. I'll like to show you another approach to doing this, which might drastically reduce the number of queries we make to the database.</p>
+
+<p>Here is the new solution:</p>
+
+<pre class="prettyprint linenums">/**
+ * Get all completed lessons for a series
+ *
+ * @param [Bahdcasts\Series] $series
+ * @return \Illuminate\Support\Collection(Bahdcasts\Lesson)
+ */
+ public function getCompletedLessons($series) {
+ // 1, 2, 4
+     return Lesson::whereIn('id', 
+         $this-&gt;getCompletedLessonsForASeries($series)
+     )-&gt;get();
+ }</pre>
+
+<p><br></p>
+
+<p>Using a `whereIn` would make just one query to the database, thus fetching all the completed lessons, even if there are 100 of them. </p><p>This would greatly optimize our application performance.<br></p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>

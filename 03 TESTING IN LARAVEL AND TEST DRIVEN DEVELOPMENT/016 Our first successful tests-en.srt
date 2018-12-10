@@ -1,0 +1,244 @@
+1
+00:00:00,270 --> 00:00:01,920
+We ended up with having this not fun.
+
+2
+00:00:01,920 --> 00:00:03,550
+S2P exception error.
+
+3
+00:00:03,780 --> 00:00:06,790
+And that's because in our test rich range you get this right.
+
+4
+00:00:06,810 --> 00:00:08,460
+But then it doesn't exist.
+
+5
+00:00:08,460 --> 00:00:14,490
+So how do we fix a not fun Espey exception error simple right creating that Grotz right.
+
+6
+00:00:14,490 --> 00:00:16,190
+So in a way that Ph be.
+
+7
+00:00:16,260 --> 00:00:21,240
+We're going to create a new route down here and this is going to be a GET request because that's what
+
+8
+00:00:21,240 --> 00:00:30,150
+we want to assess and it's to the slush post slash idea and point where the ID is a parameter and we
+
+9
+00:00:30,150 --> 00:00:32,010
+have two choices right here.
+
+10
+00:00:32,010 --> 00:00:39,210
+We could actually use a clue just because we want the code to work or we could actually write the code
+
+11
+00:00:39,210 --> 00:00:43,890
+the way we want it to and by creating a controller and all of that but to keep it simple I'm just going
+
+12
+00:00:43,890 --> 00:00:47,330
+to pass in a closure right here and let's run that again.
+
+13
+00:00:47,490 --> 00:00:51,710
+And we have Phil our in an M G string contains a simple title.
+
+14
+00:00:51,750 --> 00:00:52,160
+Right.
+
+15
+00:00:52,260 --> 00:00:53,910
+Because we are creating the post.
+
+16
+00:00:53,910 --> 00:01:00,960
+Never get into that about with the ID of that post and expecting to see that try to see that body and
+
+17
+00:01:00,960 --> 00:01:03,690
+see that creates a feud right.
+
+18
+00:01:03,840 --> 00:01:05,570
+So how do we fix this.
+
+19
+00:01:05,580 --> 00:01:09,310
+We have the ID of the post that we are trying to assess right here right.
+
+20
+00:01:09,540 --> 00:01:14,740
+So what if we get that post and then return that data it's going to fix this error obviously.
+
+21
+00:01:14,820 --> 00:01:21,960
+So we're going to see a post equals Post find using the ID that was passed in as a parameter which we
+
+22
+00:01:21,960 --> 00:01:28,230
+obviously have to collect twice here and then return post title and see what we get.
+
+23
+00:01:28,230 --> 00:01:32,780
+So that's one that says again and we have an error seen plus post not found.
+
+24
+00:01:32,940 --> 00:01:38,050
+Let's go ahead and fix that by simply writing post right.
+
+25
+00:01:38,340 --> 00:01:42,410
+So specifying the namespace for that class run the test again.
+
+26
+00:01:42,540 --> 00:01:49,770
+And now we have a simple title contains a simple body so field searching that this text that we receive
+
+27
+00:01:49,770 --> 00:01:51,270
+contains this.
+
+28
+00:01:51,300 --> 00:01:51,900
+Right.
+
+29
+00:01:51,900 --> 00:01:58,440
+So the easiest way to fix that is to have a view and then that view is going to contains Konting all
+
+30
+00:01:58,440 --> 00:01:59,460
+of that data.
+
+31
+00:01:59,580 --> 00:01:59,950
+Right.
+
+32
+00:02:00,030 --> 00:02:03,750
+So let's go ahead and try to fix this by returning a view.
+
+33
+00:02:03,790 --> 00:02:05,960
+We're going to call this view post.
+
+34
+00:02:06,030 --> 00:02:10,310
+But blader BHB and we just need to pass in the post right.
+
+35
+00:02:10,380 --> 00:02:12,140
+So we boast boast.
+
+36
+00:02:12,180 --> 00:02:13,330
+Simple right.
+
+37
+00:02:13,350 --> 00:02:14,720
+So that's one test.
+
+38
+00:02:14,760 --> 00:02:18,020
+And then we haven't ever seen the view post cannot be found.
+
+39
+00:02:18,110 --> 00:02:25,120
+Let's head down and try to create that in our resource view newfound Bolstad blade that pitch be real
+
+40
+00:02:25,150 --> 00:02:31,500
+not just a game for a search engine and enter a string contains a simple title which is this spatial
+
+41
+00:02:31,550 --> 00:02:32,070
+IKYA.
+
+42
+00:02:32,220 --> 00:02:40,090
+So I'm just going to quote the post title I quote the post and run tests again Field asserting that
+
+43
+00:02:40,100 --> 00:02:42,530
+the post now contains a simple body.
+
+44
+00:02:42,540 --> 00:02:45,190
+So we just need to call the body.
+
+45
+00:02:45,210 --> 00:02:51,120
+That's not just a game and then we have this error that is being run by PH framework exception and it
+
+46
+00:02:51,120 --> 00:02:56,650
+says A certain things first permits or must be a string Bohdan.
+
+47
+00:02:56,730 --> 00:03:01,290
+It looks like we are passing in a string but we actually are not passing in the string like we are passing
+
+48
+00:03:01,290 --> 00:03:04,640
+in an instance of carbon which is scallawag a class.
+
+49
+00:03:04,650 --> 00:03:10,950
+So so for us to fix this we're just going to use two form outside dead string right here and this is
+
+50
+00:03:10,950 --> 00:03:17,280
+simply a method that is going to take this instance of carbon and convert it to a string in a better
+
+51
+00:03:17,290 --> 00:03:19,100
+or beautiful format right.
+
+52
+00:03:19,260 --> 00:03:20,940
+So that's one that says again.
+
+53
+00:03:20,990 --> 00:03:27,150
+And then we have filled a search in that the body actually contains this so we can see that this detail
+
+54
+00:03:27,150 --> 00:03:28,450
+is nicely formatted.
+
+55
+00:03:28,470 --> 00:03:36,450
+But then it's not in the view so let's go ahead of you and cole the final piece of data our post creates
+
+56
+00:03:36,960 --> 00:03:39,170
+and we convert these two formats.
+
+57
+00:03:39,300 --> 00:03:43,810
+Did string Arcel so hopefully our test should finally passed right now.
+
+58
+00:03:43,890 --> 00:03:48,800
+Because we've actually reached the last line and we have a successful test.
+
+59
+00:03:48,810 --> 00:03:50,100
+Finally right.
+
+60
+00:03:50,220 --> 00:03:56,370
+So using that idea of test driven development we've been able to test drive our first feature and that
+
+61
+00:03:56,370 --> 00:04:01,680
+feature is a user actually being able to create a post into the database.
+

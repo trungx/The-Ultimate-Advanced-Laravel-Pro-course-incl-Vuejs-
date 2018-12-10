@@ -1,0 +1,196 @@
+1
+00:00:00,630 --> 00:00:07,290
+At the moment we have a successful test suite like it's in C so we run tests and of them are successful
+
+2
+00:00:07,290 --> 00:00:08,820
+with successful sessions.
+
+3
+00:00:08,820 --> 00:00:12,810
+Now this is the advantage of having tests in your application.
+
+4
+00:00:12,810 --> 00:00:18,060
+For example you can use your test to make sure that everything is going fine in your application at
+
+5
+00:00:18,060 --> 00:00:19,040
+any point.
+
+6
+00:00:19,050 --> 00:00:24,960
+Now we want to do a little defacto and think of refactoring as making our code better writing better
+
+7
+00:00:24,960 --> 00:00:30,200
+code making things look better using the best of my thoughts on stuff like that.
+
+8
+00:00:30,240 --> 00:00:36,980
+OK so now that everything is successful at the end of every or everything should still be successful.
+
+9
+00:00:37,020 --> 00:00:41,330
+We didn't break anything we didn't write any new tests but everything too successful.
+
+10
+00:00:41,340 --> 00:00:47,230
+OK so I'll head over to my use of a patch and I'm going to show you something that Lavoe doors on lots
+
+11
+00:00:47,520 --> 00:00:50,290
+this use treats like here.
+
+12
+00:00:50,310 --> 00:00:56,370
+So what level D'Arcy's if it discovers that a lot of functionality can be hidden behind a tree it's
+
+13
+00:00:56,600 --> 00:01:01,110
+used to treat and it uses a concept of single trigger responsibilities.
+
+14
+00:01:01,110 --> 00:01:06,540
+For example right here we square that the notifiable tread Its responsibility is to contain my thoughts
+
+15
+00:01:06,540 --> 00:01:09,470
+that deal with notifications for users.
+
+16
+00:01:09,480 --> 00:01:16,740
+Therefore even though tweets can be used by multiple entities or multiple classes most of the time you're
+
+17
+00:01:16,740 --> 00:01:23,160
+going to see that Lavoe uses traits only in one class and it's a very Kooning way of compressing your
+
+18
+00:01:23,180 --> 00:01:25,350
+math thoughts behind classes.
+
+19
+00:01:25,350 --> 00:01:31,830
+So what we're going to be doing is move out all the functionality that has to do with completing lessons
+
+20
+00:01:31,830 --> 00:01:36,760
+getting lesson percentages and all of that stuff and with Heidi being a traitor.
+
+21
+00:01:36,840 --> 00:01:39,620
+And I'm going to call this creates a learning trait.
+
+22
+00:01:39,690 --> 00:01:40,600
+OK.
+
+23
+00:01:40,650 --> 00:01:47,560
+So in my Abdur tree I'm going to create an entity a tree and I'm gonna save that tree in there.
+
+24
+00:01:47,640 --> 00:01:50,870
+So I'm going to see learning the Ph be.
+
+25
+00:01:51,220 --> 00:01:51,950
+OK.
+
+26
+00:01:51,990 --> 00:01:53,800
+So this is going to be a Ph.
+
+27
+00:01:53,850 --> 00:02:01,320
+Before we did the namespace which is parked cars and teaches and this is going to be a trait called
+
+28
+00:02:01,740 --> 00:02:02,470
+learning.
+
+29
+00:02:02,520 --> 00:02:03,050
+OK.
+
+30
+00:02:03,090 --> 00:02:10,050
+So not only have these traits are the words my use of the B and I would use the stretch so use learning
+
+31
+00:02:10,170 --> 00:02:18,920
+and we need to import the streets at the top so use but broadcast entities and get into a PH BE GREAT.
+
+32
+00:02:18,930 --> 00:02:24,200
+But how does this help us all of this my thoughts that have to do with completing the lessons.
+
+33
+00:02:24,480 --> 00:02:31,260
+We're going to cut them out so from here Macken lesson completed for use are and right down to the bottom
+
+34
+00:02:31,490 --> 00:02:35,720
+we'll cut them out which will make our class look very clean.
+
+35
+00:02:35,790 --> 00:02:38,980
+And then in our reach we'll just paste them in right.
+
+36
+00:02:39,060 --> 00:02:39,500
+OK.
+
+37
+00:02:39,630 --> 00:02:45,890
+So this now is obviously going to be fed to the class or the stance that is using using this.
+
+38
+00:02:46,170 --> 00:02:49,630
+And for us to avoid having any errors.
+
+39
+00:02:49,650 --> 00:02:55,500
+We have to use the Ready's phosphate so that this treaty is going to have access to it.
+
+40
+00:02:55,610 --> 00:02:56,130
+OK.
+
+41
+00:02:56,220 --> 00:03:02,120
+Now that we've removed all the functionality from my User class and we've hidden behind attrit I want
+
+42
+00:03:02,130 --> 00:03:03,370
+use classes clean.
+
+43
+00:03:03,450 --> 00:03:07,990
+We need to run our test to make sure that we didn't break anything.
+
+44
+00:03:08,310 --> 00:03:09,600
+And great That's it.
+
+45
+00:03:09,720 --> 00:03:13,540
+We successfully created a trait put that functionality in it.
+
+46
+00:03:13,580 --> 00:03:15,580
+And our test is still passing.
+
+47
+00:03:15,690 --> 00:03:18,720
+So this is a really great advantage of having us.
+
+48
+00:03:18,750 --> 00:03:22,290
+You could change something in your application and check that everything still works.
+
+49
+00:03:22,290 --> 00:03:24,810
+I suspect that using your tests.
+

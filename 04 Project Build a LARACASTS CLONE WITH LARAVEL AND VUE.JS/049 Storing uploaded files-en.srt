@@ -1,0 +1,180 @@
+1
+00:00:00,120 --> 00:00:02,270
+OK let's work a little we don't follow us.
+
+2
+00:00:02,280 --> 00:00:09,630
+Now I want to get the class extension and make sure I Possy into this name concatenated so requests
+
+3
+00:00:09,720 --> 00:00:12,070
+M.H. get a regional extension.
+
+4
+00:00:12,090 --> 00:00:17,340
+Squeege give us an extension but rather than making two calls to our request last we can just naturally
+
+5
+00:00:17,340 --> 00:00:19,960
+see these into available.
+
+6
+00:00:20,040 --> 00:00:26,510
+So we're just going to see that image Igor's request M.H. then we can reference this right here and
+
+7
+00:00:26,680 --> 00:00:27,050
+do.
+
+8
+00:00:27,090 --> 00:00:27,420
+Right.
+
+9
+00:00:27,420 --> 00:00:30,670
+So we get to that image so it publicly.
+
+10
+00:00:30,930 --> 00:00:33,040
+Another option for us is to use us.
+
+11
+00:00:33,060 --> 00:00:38,580
+So my thought and Mitchellville story into the public disk but we'll look at this little one between
+
+12
+00:00:38,690 --> 00:00:40,350
+the just fleeting images.
+
+13
+00:00:40,380 --> 00:00:45,720
+And then it starts into a series directory on the name of the fire east the strings long for the title
+
+14
+00:00:45,840 --> 00:00:51,560
+and it attaches the click and regional extension rights and forms of PNU is going to such that if it's
+
+15
+00:00:51,630 --> 00:00:53,930
+GBG then you're going to touch that.
+
+16
+00:00:54,100 --> 00:00:58,080
+OK so once that is saved we now know the name of the file.
+
+17
+00:00:58,140 --> 00:01:00,930
+So this is the name of the father it's going to be saved for us.
+
+18
+00:01:00,930 --> 00:01:01,490
+Right.
+
+19
+00:01:01,500 --> 00:01:07,440
+So what we could do such really see a name right here because this and then pass in finding and rather
+
+20
+00:01:07,440 --> 00:01:12,900
+than saving the e-meter or a sergeant making a saving us service because we know that it's going to
+
+21
+00:01:12,900 --> 00:01:16,290
+be in the service directory then concatenates will probably.
+
+22
+00:01:16,380 --> 00:01:16,920
+OK.
+
+23
+00:01:16,980 --> 00:01:23,910
+So we have the file which is that far loaded in each instance we get the found him by attaching title
+
+24
+00:01:23,970 --> 00:01:28,110
+street SLOC version to the original Klann extension.
+
+25
+00:01:28,230 --> 00:01:34,770
+And then we loaded the file into a directory and passed the filename and then we created the series
+
+26
+00:01:34,860 --> 00:01:36,030
+and why quitting the series.
+
+27
+00:01:36,030 --> 00:01:42,150
+We make sure we specify the image or a series concatenated with defining and we redirect the user back.
+
+28
+00:01:42,180 --> 00:01:44,530
+So let's try this out in the browser and see what we get.
+
+29
+00:01:44,550 --> 00:01:50,370
+Another series below the file and I see another series description which you wish I were redirected
+
+30
+00:01:50,370 --> 00:01:50,790
+back.
+
+31
+00:01:50,790 --> 00:01:52,260
+Now let's talk about food.
+
+32
+00:01:52,410 --> 00:01:58,560
+So in our story each up there actually we have this and JP G which isn't.
+
+33
+00:01:58,620 --> 00:02:03,310
+So what we should make sure we do is actually have a full stop.
+
+34
+00:02:03,310 --> 00:02:10,430
+MITCHELL That's an extension and that's going to fix that error then let's use CT to check out our database.
+
+35
+00:02:10,510 --> 00:02:18,480
+We are Sun Shingo and we're going to get that cost series and I'm just going to get our Okay so it looks
+
+36
+00:02:18,480 --> 00:02:24,460
+like we're all actually was successfully possed but without the points right here that's as simple as
+
+37
+00:02:24,480 --> 00:02:26,520
+what we made or finding changes.
+
+38
+00:02:26,550 --> 00:02:31,340
+Right here we are in this extension and then looks like everything is going to work out.
+
+39
+00:02:31,440 --> 00:02:36,230
+So try this all more time and then they're going to write a feature to us to make sure it works.
+
+40
+00:02:36,270 --> 00:02:43,620
+So final series in our series description of the fire great series where we directed back checkouts
+
+41
+00:02:43,620 --> 00:02:48,810
+in car and looks like we have a Jeep that is Miss height for imagery.
+
+42
+00:02:49,290 --> 00:02:50,980
+Check out the file extension.
+
+43
+00:02:50,970 --> 00:02:54,520
+And sure enough we have an image that was on Lol that looks perfect.
+
+44
+00:02:54,550 --> 00:02:57,540
+So was actually quitting a series is walking.
+
+45
+00:02:57,540 --> 00:03:01,490
+Why don't we write some features as to make sure we never break anything in future.
+

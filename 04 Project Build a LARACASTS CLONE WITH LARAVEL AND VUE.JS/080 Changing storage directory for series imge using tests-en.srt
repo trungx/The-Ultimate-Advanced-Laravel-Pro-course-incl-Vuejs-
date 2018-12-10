@@ -1,0 +1,212 @@
+1
+00:00:00,670 --> 00:00:07,000
+One of the great advantages of having a message like we have is that when you want to be facts or life
+
+2
+00:00:07,000 --> 00:00:10,740
+gets very easy because all you need to do is write your test.
+
+3
+00:00:10,820 --> 00:00:15,020
+Keep running the test with factoring and making sure that the test to pass.
+
+4
+00:00:15,070 --> 00:00:15,610
+OK.
+
+5
+00:00:15,610 --> 00:00:18,810
+So right now we want to change the way we create series.
+
+6
+00:00:18,820 --> 00:00:22,870
+We want to test that the image such we receive in a particular direction.
+
+7
+00:00:22,960 --> 00:00:27,570
+Therefore we're going to update our test run the test and make the test pass.
+
+8
+00:00:27,670 --> 00:00:28,150
+OK.
+
+9
+00:00:28,240 --> 00:00:30,170
+So a user can create a series.
+
+10
+00:00:30,220 --> 00:00:31,280
+Let's start there.
+
+11
+00:00:31,330 --> 00:00:35,440
+What we want to do is make sure that it's received in the public directory.
+
+12
+00:00:35,470 --> 00:00:41,190
+So we are going to update our assertion and our storage facility here.
+
+13
+00:00:41,200 --> 00:00:47,530
+It's been asserted that exist in the public service directory and the file name is the same the way
+
+14
+00:00:47,530 --> 00:00:48,140
+we want.
+
+15
+00:00:48,240 --> 00:00:48,930
+OK.
+
+16
+00:00:49,150 --> 00:00:52,680
+And we can go ahead and run this to us now to see what we get.
+
+17
+00:00:54,640 --> 00:00:55,680
+So run this
+
+18
+00:00:58,880 --> 00:00:59,280
+yeah.
+
+19
+00:00:59,380 --> 00:01:06,680
+And we have a failure because it's unable to find a public series this right because it's not in the
+
+20
+00:01:06,680 --> 00:01:07,720
+public directory.
+
+21
+00:01:07,760 --> 00:01:14,340
+So remember we be factored into our series request the mid-thought that actually uploads the series
+
+22
+00:01:14,390 --> 00:01:15,020
+image.
+
+23
+00:01:15,020 --> 00:01:21,340
+So what we're going to do is come to this and stop publicly as thought within its early to see if in
+
+24
+00:01:21,350 --> 00:01:24,410
+the probably serious direction.
+
+25
+00:01:24,500 --> 00:01:25,180
+That's it.
+
+26
+00:01:25,340 --> 00:01:28,470
+Let's run our test right now and see if it changes anything.
+
+27
+00:01:30,230 --> 00:01:30,770
+And we're back.
+
+28
+00:01:30,850 --> 00:01:33,190
+GREENE So we have a successful test.
+
+29
+00:01:33,290 --> 00:01:39,330
+So we are successfully out of the team and serving our public directory so that every time we want Peachtree
+
+30
+00:01:39,330 --> 00:01:42,930
+or Sunstone which link is going to automatically link those fires.
+
+31
+00:01:42,980 --> 00:01:43,470
+OK.
+
+32
+00:01:43,520 --> 00:01:50,090
+And by default when we deposit or put out into the storage tree and the storage nature has been lying
+
+33
+00:01:50,380 --> 00:01:53,390
+labo is automatically going to sync with this each.
+
+34
+00:01:53,480 --> 00:01:54,980
+Probably no way to right.
+
+35
+00:01:55,110 --> 00:01:55,820
+OK.
+
+36
+00:01:55,850 --> 00:02:00,610
+So another thing we want to do is make sure that we are updating a series.
+
+37
+00:02:00,670 --> 00:02:05,610
+The fire is actually deposited in the correct tree after we update the Sui's.
+
+38
+00:02:05,630 --> 00:02:06,100
+OK.
+
+39
+00:02:06,170 --> 00:02:11,330
+So let's head over to our update series Test.
+
+40
+00:02:11,460 --> 00:02:14,980
+Right here we are checking to see if in the series a tree.
+
+41
+00:02:15,120 --> 00:02:19,220
+Let's make sure it's see in the public service directory.
+
+42
+00:02:19,410 --> 00:02:19,920
+OK.
+
+43
+00:02:20,040 --> 00:02:22,180
+Let's run that test loop.
+
+44
+00:02:22,200 --> 00:02:24,810
+So copy the name.
+
+45
+00:02:24,810 --> 00:02:27,690
+Run the test and now it passes.
+
+46
+00:02:27,720 --> 00:02:28,350
+OK.
+
+47
+00:02:28,350 --> 00:02:35,750
+Because remember how of series request is actually extend indescretion quest.
+
+48
+00:02:35,770 --> 00:02:39,220
+Therefore everything will change in this which of course also reflects on dishcloths.
+
+49
+00:02:39,340 --> 00:02:39,880
+OK.
+
+50
+00:02:40,090 --> 00:02:45,880
+So let's run our street now to check if we have anything successful.
+
+51
+00:02:45,980 --> 00:02:49,530
+We have it and we haven't broken anything.
+
+52
+00:02:49,530 --> 00:02:53,450
+Therefore every single wish we quits now since the killings are still reasonable.
+
+53
+00:02:53,460 --> 00:02:58,700
+We is going to automatically make it public so we can display it in our views.
+

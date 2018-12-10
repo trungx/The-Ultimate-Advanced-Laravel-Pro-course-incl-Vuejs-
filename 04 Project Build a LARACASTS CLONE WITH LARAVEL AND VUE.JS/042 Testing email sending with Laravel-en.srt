@@ -1,0 +1,388 @@
+1
+00:00:00,220 --> 00:00:04,040
+Are like this to go street you naturally start to make use of a vacation.
+
+2
+00:00:04,110 --> 00:00:09,480
+So I want to shoot an email to the user as soon as Chris and I count and we're not going to give him
+
+3
+00:00:09,540 --> 00:00:14,240
+access to anything until he actually confirms his e-mail address.
+
+4
+00:00:14,250 --> 00:00:19,080
+Now let's just go ahead and use a test to bring this functionality so we have to actually think about
+
+5
+00:00:19,080 --> 00:00:20,310
+what we want to implement.
+
+6
+00:00:20,310 --> 00:00:24,240
+So as an e-mail he sends to newly registered users.
+
+7
+00:00:24,320 --> 00:00:26,550
+OK so how would we want to know.
+
+8
+00:00:26,640 --> 00:00:28,800
+Let's just see which stuff you use.
+
+9
+00:00:28,880 --> 00:00:32,660
+And then we assert that a particular e-mail was sent.
+
+10
+00:00:32,670 --> 00:00:33,890
+That's all going to be doing.
+
+11
+00:00:33,900 --> 00:00:39,060
+So stop a question and use up or actually registering a user which means I'm going to be visiting my
+
+12
+00:00:39,060 --> 00:00:39,710
+endpoints.
+
+13
+00:00:39,750 --> 00:00:40,750
+So basically isn't.
+
+14
+00:00:40,800 --> 00:00:44,930
+So as soon as the user is I'm start to assert that mail was sent.
+
+15
+00:00:45,060 --> 00:00:49,580
+So looks like we're going to be meeting our middle seat from now on.
+
+16
+00:00:49,830 --> 00:00:55,070
+And what are we going to be doing is actually seeing Lovelle please switch out and Millward rival and
+
+17
+00:00:55,080 --> 00:00:56,230
+give us a fake.
+
+18
+00:00:56,370 --> 00:01:01,480
+And if we want to actually know what these feet methadose let's have much more with that PSP which is
+
+19
+00:01:01,700 --> 00:01:05,530
+lunette support for seats and actually see that we have this week met.
+
+20
+00:01:05,610 --> 00:01:08,830
+And most of the proceeds will actually have this fee method.
+
+21
+00:01:08,840 --> 00:01:16,530
+So it simply swapping the old regional mail handler with a fake We're getting it from support system
+
+22
+00:01:16,560 --> 00:01:16,990
+fix.
+
+23
+00:01:17,000 --> 00:01:19,960
+So what's more fake all the magic happens.
+
+24
+00:01:20,010 --> 00:01:23,930
+And what is simply going to do is send in messages.
+
+25
+00:01:23,940 --> 00:01:24,860
+It's not going to do that.
+
+26
+00:01:24,900 --> 00:01:31,740
+So for example if we check out a Senate vote on this morphic last what is up and NE's chasing the view
+
+27
+00:01:31,740 --> 00:01:34,880
+that we have to send data on a callback.
+
+28
+00:01:34,950 --> 00:01:39,700
+And then what it does is simply pushes the view that we passed into a millibars.
+
+29
+00:01:39,730 --> 00:01:40,440
+Are we right.
+
+30
+00:01:40,440 --> 00:01:42,540
+It's not sending emails at all.
+
+31
+00:01:42,540 --> 00:01:48,600
+So what is going to happen is if we call us sense mid-thought it's going to check if the view of the
+
+32
+00:01:48,600 --> 00:01:55,240
+millibar that we passed into the I said since mid-thought actually exists on the Malibu's are we right.
+
+33
+00:01:55,440 --> 00:01:56,040
+OK.
+
+34
+00:01:56,070 --> 00:02:00,540
+So let's go ahead and use this so much attrition we fiqh them a lot.
+
+35
+00:02:00,540 --> 00:02:03,750
+So it's going to swap out and the most of me.
+
+36
+00:02:03,900 --> 00:02:06,610
+And then right here we can call us at St..
+
+37
+00:02:06,630 --> 00:02:11,820
+So M. assert that a mail was sent and the name of this e-mail is going to be confirmed.
+
+38
+00:02:11,850 --> 00:02:13,390
+Your email last.
+
+39
+00:02:13,540 --> 00:02:17,530
+OK so for now let's just make sure that this e-mail is sent.
+
+40
+00:02:17,730 --> 00:02:23,710
+Now let's just run that test expected to confirm your e-mail mailable was not sent right so filled such
+
+41
+00:02:23,970 --> 00:02:25,290
+false is true.
+
+42
+00:02:25,350 --> 00:02:28,380
+Let's send this email on how are we going to do that.
+
+43
+00:02:28,440 --> 00:02:30,860
+That said to you John registration.
+
+44
+00:02:31,090 --> 00:02:35,820
+And we're going to take a look at what happens at this event new we saw saw history.
+
+45
+00:02:35,940 --> 00:02:38,040
+And that's also a registar method.
+
+46
+00:02:38,100 --> 00:02:41,180
+And these were just them or just like authenticates at mid-thought.
+
+47
+00:02:41,190 --> 00:02:46,810
+It's a simple gives us to do something once the registration is complete.
+
+48
+00:02:46,920 --> 00:02:50,610
+So let's head what's all rigid Stoss are going to override this method.
+
+49
+00:02:50,760 --> 00:02:52,890
+So right down here I'm going to paste nothing.
+
+50
+00:02:53,130 --> 00:02:59,390
+And what they want to actually do is make sure that I also redirect after I'm done with that method.
+
+51
+00:02:59,430 --> 00:03:03,810
+Right because now we're going to call this method and then it's going to be that way for us.
+
+52
+00:03:03,810 --> 00:03:11,030
+So you know register all of us for everything I need to do make sure I return this redirect path.
+
+53
+00:03:11,040 --> 00:03:14,870
+So this is where I'm going to be sending my e-mails so mail send.
+
+54
+00:03:14,940 --> 00:03:20,610
+And before we actually call to send mid-thought Let's call the two men thought to pass in this use object
+
+55
+00:03:20,820 --> 00:03:26,460
+and we're receiving to a user who just got we just got into this my thought so now to this user send
+
+56
+00:03:26,700 --> 00:03:29,240
+a new that's had much of what's asked.
+
+57
+00:03:29,240 --> 00:03:31,910
+And Michel we had the same e-mail.
+
+58
+00:03:31,950 --> 00:03:34,250
+So new you confirm your email mailable.
+
+59
+00:03:34,290 --> 00:03:36,190
+So you bought that.
+
+60
+00:03:36,260 --> 00:03:42,060
+And I know it's going to break because we don't yet have that loss but let's let access to us that.
+
+61
+00:03:42,170 --> 00:03:44,660
+But the BBC was actually not helpful.
+
+62
+00:03:44,670 --> 00:03:50,130
+So what are we going to do is simply attach and US-CERT redirects to this myth up right here and lovely's
+
+63
+00:03:50,150 --> 00:03:54,740
+of how much can actually fit with this test and then tell us what is going on.
+
+64
+00:03:54,780 --> 00:03:58,080
+So let's try that and see his response to US 500.
+
+65
+00:03:58,100 --> 00:04:00,560
+It's not a redux That's a school at 500.
+
+66
+00:04:00,570 --> 00:04:02,310
+So we need to just.
+
+67
+00:04:02,400 --> 00:04:06,200
+Exception handling so we can see what the 500 is all about.
+
+68
+00:04:06,600 --> 00:04:07,100
+OK.
+
+69
+00:04:07,140 --> 00:04:08,210
+Run that again.
+
+70
+00:04:08,370 --> 00:04:09,890
+And there we have our role.
+
+71
+00:04:09,930 --> 00:04:15,970
+It seems like women want us to there we just thought must be an instance of oh I'm sorry.
+
+72
+00:04:16,170 --> 00:04:19,390
+That should be because we haven't imported this at the top.
+
+73
+00:04:19,500 --> 00:04:21,300
+Let's go ahead and make sure we do so.
+
+74
+00:04:21,450 --> 00:04:26,280
+So use Lumi S2P request one that again.
+
+75
+00:04:26,460 --> 00:04:26,870
+OK.
+
+76
+00:04:26,880 --> 00:04:29,800
+Now it's also she can find that confirm email.
+
+77
+00:04:29,820 --> 00:04:35,950
+So let's go ahead and read that we are sent mail confirm your e-mail.
+
+78
+00:04:36,060 --> 00:04:39,950
+And while I'm here I'm just going to generate a map down you for that.
+
+79
+00:04:40,380 --> 00:04:44,940
+So it's going to be e-mails that confirm your e-mail but let that be.
+
+80
+00:04:44,970 --> 00:04:48,560
+And I like that convention where this actually matches your name.
+
+81
+00:04:48,690 --> 00:04:54,030
+OK so that's one that milkweeds that let's make sure we actually import the class at the top before
+
+82
+00:04:54,030 --> 00:04:56,180
+calling our test again.
+
+83
+00:04:56,460 --> 00:04:56,880
+OK.
+
+84
+00:04:56,940 --> 00:05:05,150
+So you know at M. tree sure enough we have this so use our mail actually but costs me to confirm your
+
+85
+00:05:05,150 --> 00:05:05,810
+e-mail.
+
+86
+00:05:05,990 --> 00:05:07,650
+Let's run that test again.
+
+87
+00:05:07,670 --> 00:05:11,950
+And now this is an error seen first feature confirm your e-mail was not sent.
+
+88
+00:05:12,080 --> 00:05:12,410
+OK.
+
+89
+00:05:12,410 --> 00:05:17,220
+So that's because we have also imported these in our test.
+
+90
+00:05:17,300 --> 00:05:17,540
+Right.
+
+91
+00:05:17,540 --> 00:05:19,620
+So let's go ahead and do that now.
+
+92
+00:05:19,670 --> 00:05:23,760
+Had a lot of my restrictions on us and used up at the top.
+
+93
+00:05:23,760 --> 00:05:28,490
+One that says it again and great looks like we have a successful test this time around.
+
+94
+00:05:28,610 --> 00:05:33,700
+So we are actually sending a user an e-mail every time he's registered right.
+
+95
+00:05:33,710 --> 00:05:36,790
+Do you use actually an e-mail to confirm his e-mail address.
+
+96
+00:05:36,860 --> 00:05:42,010
+But what about the underlying functionality that goes reconfirming e-mail addresses.
+
+97
+00:05:42,110 --> 00:05:43,890
+Let's tackle that in the next lesson.
+

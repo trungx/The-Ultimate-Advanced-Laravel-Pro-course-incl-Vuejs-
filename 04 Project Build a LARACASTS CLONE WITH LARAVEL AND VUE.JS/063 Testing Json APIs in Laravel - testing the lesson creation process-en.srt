@@ -1,0 +1,316 @@
+1
+00:00:00,240 --> 00:00:01,890
+OK let's pause for a second.
+
+2
+00:00:01,950 --> 00:00:04,740
+I think we've done a lot without writing any test.
+
+3
+00:00:04,830 --> 00:00:09,510
+Let's go ahead and actually make sure that application works do we want before we continue.
+
+4
+00:00:09,540 --> 00:00:13,490
+So I'm going to create a new test and this test is going to cover our quitting lessons.
+
+5
+00:00:13,530 --> 00:00:16,620
+So Peachtree arsenic test Crit. license test.
+
+6
+00:00:16,730 --> 00:00:22,980
+OK so create license test and what first do I want to test.
+
+7
+00:00:23,010 --> 00:00:27,380
+Let's just make sure when use of this is that in point you can create a lesson.
+
+8
+00:00:27,490 --> 00:00:30,210
+It's a public function.
+
+9
+00:00:30,360 --> 00:00:32,220
+A user can create lessons.
+
+10
+00:00:32,310 --> 00:00:34,400
+So how do we want to write our tests.
+
+11
+00:00:34,410 --> 00:00:41,190
+We want to make an Ajax request of an AJAX POST request to our endpoint that is in charge of creating
+
+12
+00:00:41,190 --> 00:00:47,970
+lessons and would assert that the database house where cards would also assert that the Jasen contains
+
+13
+00:00:47,970 --> 00:00:52,320
+the structure that we want and then would also US-CERT the start of school or something like that.
+
+14
+00:00:52,320 --> 00:00:53,790
+OK so what is the end point.
+
+15
+00:00:53,790 --> 00:00:59,710
+Remember we have admin then we pass in the ID of the series and then lesson's OK.
+
+16
+00:00:59,820 --> 00:01:01,680
+So looks like we need a series.
+
+17
+00:01:01,680 --> 00:01:02,770
+So lets create one.
+
+18
+00:01:02,880 --> 00:01:10,410
+So Sui's factory will persist that then looks like we need to make that post requests post Jason and
+
+19
+00:01:10,470 --> 00:01:16,170
+the End Point is I don't mean to post in the series Id like here and lessons.
+
+20
+00:01:16,450 --> 00:01:17,040
+OK.
+
+21
+00:01:17,100 --> 00:01:19,790
+So the data we are passing in is going to be on our way.
+
+22
+00:01:19,840 --> 00:01:23,200
+And I'm just going to see it in our lessons valuable.
+
+23
+00:01:23,310 --> 00:01:29,370
+OK so we won the title and wanted to be no less than we wanted that description and we wanted to be
+
+24
+00:01:29,370 --> 00:01:30,900
+near the description.
+
+25
+00:01:30,900 --> 00:01:38,650
+We wanted to episode number and we wanted to be maybe 2 and 5 or whatever and we wanted a Vimeo ID to
+
+26
+00:01:38,670 --> 00:01:40,630
+be maybe a your ID number.
+
+27
+00:01:40,740 --> 00:01:46,020
+OK so when we passed this thing as up we expect the lesson to be created.
+
+28
+00:01:46,170 --> 00:01:48,870
+And we also expect that it should be successful.
+
+29
+00:01:48,870 --> 00:01:50,880
+So let's check the status code.
+
+30
+00:01:51,030 --> 00:01:57,340
+First of all I said stutterers was 200 and then I searched the data that is returned to us right.
+
+31
+00:01:57,390 --> 00:02:03,000
+So I said Jason and what this method is going to do is it's going to take this lesson Parminter that
+
+32
+00:02:03,000 --> 00:02:09,440
+we pass in compared with the request or the response that we get from calling this post Jason methought.
+
+33
+00:02:09,630 --> 00:02:15,020
+And then the queen compared to make sure that this actually is a subset or actually matches the juice
+
+34
+00:02:15,090 --> 00:02:15,750
+that we received.
+
+35
+00:02:15,750 --> 00:02:16,250
+OK.
+
+36
+00:02:16,380 --> 00:02:18,850
+So we are certain strategy and we said Jason.
+
+37
+00:02:19,110 --> 00:02:23,250
+And one last thing we can also assert that the database has that lesson.
+
+38
+00:02:23,340 --> 00:02:23,830
+OK.
+
+39
+00:02:23,940 --> 00:02:32,760
+So I said database hahs and we can specify the less stable and passing and we can see the title should
+
+40
+00:02:32,760 --> 00:02:35,300
+be maybe the lesson title that we had.
+
+41
+00:02:35,480 --> 00:02:36,670
+Okay I think thats it.
+
+42
+00:02:36,690 --> 00:02:39,650
+We make that was request Michala status 200.
+
+43
+00:02:39,780 --> 00:02:44,010
+I said to Jason and I said that the database actually saved this record.
+
+44
+00:02:44,130 --> 00:02:46,130
+So let's run this test individually.
+
+45
+00:02:46,200 --> 00:02:46,580
+OK.
+
+46
+00:02:46,620 --> 00:02:50,420
+It is expected such as 200 but we see a three or two.
+
+47
+00:02:50,580 --> 00:02:55,630
+Now I think I know why we were seeing that we ought to is be direct and thats because we just locked
+
+48
+00:02:55,640 --> 00:02:56,820
+in our administration.
+
+49
+00:02:56,910 --> 00:03:00,430
+Methinks we have a helpful thoughts and logging that I mean the streets so.
+
+50
+00:03:00,510 --> 00:03:05,880
+So we simply have to see logging I mean I think thats how we caught the thought.
+
+51
+00:03:05,910 --> 00:03:07,590
+Let's check out our test case.
+
+52
+00:03:07,590 --> 00:03:09,120
+So so its luggin me.
+
+53
+00:03:09,210 --> 00:03:09,740
+Great.
+
+54
+00:03:09,780 --> 00:03:11,960
+We can just use it right here.
+
+55
+00:03:12,090 --> 00:03:12,570
+OK.
+
+56
+00:03:12,570 --> 00:03:14,680
+So let's run that test again.
+
+57
+00:03:14,720 --> 00:03:15,070
+OK.
+
+58
+00:03:15,060 --> 00:03:16,480
+We received the 500.
+
+59
+00:03:16,500 --> 00:03:17,770
+Let's just play ball.
+
+60
+00:03:17,790 --> 00:03:20,550
+Exception handling to see what that error was.
+
+61
+00:03:20,640 --> 00:03:23,680
+Days without exception handling.
+
+62
+00:03:23,720 --> 00:03:24,640
+OK.
+
+63
+00:03:26,620 --> 00:03:31,240
+And aerospace lesson has no call on ID.
+
+64
+00:03:31,360 --> 00:03:32,620
+So let's check that out.
+
+65
+00:03:32,620 --> 00:03:34,460
+Create less unstable.
+
+66
+00:03:35,070 --> 00:03:35,530
+OK.
+
+67
+00:03:35,560 --> 00:03:36,840
+It's called Video ID.
+
+68
+00:03:36,850 --> 00:03:37,720
+So sorry about that.
+
+69
+00:03:37,720 --> 00:03:40,230
+So Viaggio idea right here.
+
+70
+00:03:40,630 --> 00:03:42,580
+Run that one more time.
+
+71
+00:03:42,880 --> 00:03:43,260
+Yeah.
+
+72
+00:03:43,270 --> 00:03:48,210
+And you just posse's to actually have passed like that just the first time because we're locked in on
+
+73
+00:03:48,360 --> 00:03:51,620
+the street and we messed up this right here.
+
+74
+00:03:51,640 --> 00:03:55,090
+OK so it looks like it actually works the way we want it to work.
+
+75
+00:03:55,270 --> 00:04:01,040
+And you might actually have preferred to write this test before making the functionality.
+
+76
+00:04:01,180 --> 00:04:04,230
+But I think it's always a base to have this functionality.
+
+77
+00:04:04,360 --> 00:04:06,560
+And then we can go ahead and expand with our tests.
+
+78
+00:04:06,670 --> 00:04:12,520
+For example in the next lesson we are actually going to be trying to see how we can add value in most
+
+79
+00:04:12,860 --> 00:04:18,980
+to our one lesson creation process just by using a test driven development approach.
+

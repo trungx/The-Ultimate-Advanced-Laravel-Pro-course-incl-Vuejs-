@@ -1,0 +1,796 @@
+1
+00:00:00,580 --> 00:00:04,790
+Let's talk a little bit about the Register's controller and our password resets controller and then
+
+2
+00:00:04,790 --> 00:00:08,100
+you'll be done with default controller customization.
+
+3
+00:00:08,230 --> 00:00:13,360
+So if I want my poetry or Sun Radley's C'mon we have this roster when you start to go to the controller
+
+4
+00:00:13,600 --> 00:00:17,160
+like the show registration form and the registar thoughts.
+
+5
+00:00:17,160 --> 00:00:23,530
+But then if we visit that control just like we had with our logging if research for the show registration
+
+6
+00:00:23,530 --> 00:00:25,480
+for Mithal we don't have it.
+
+7
+00:00:25,480 --> 00:00:27,590
+Same thing with the registar method.
+
+8
+00:00:27,610 --> 00:00:28,460
+So same thing.
+
+9
+00:00:28,480 --> 00:00:30,370
+This Mithal Sahid and BNR traits.
+
+10
+00:00:30,370 --> 00:00:35,520
+So let's visit that Treach retry to visit our show registration for my thought.
+
+11
+00:00:35,530 --> 00:00:37,740
+Sure enough it returns the expected view.
+
+12
+00:00:37,780 --> 00:00:40,520
+The view that we see when we try to register a new user.
+
+13
+00:00:40,690 --> 00:00:46,600
+And then if we also check out the registar thought he actually does everything behind the scenes concerning
+
+14
+00:00:46,660 --> 00:00:47,500
+registration.
+
+15
+00:00:47,500 --> 00:00:50,030
+Let's go ahead and talk a little bit about Avijit stomach phone.
+
+16
+00:00:50,050 --> 00:00:56,040
+For us it also validated my thought and this method received the request as an array and then validated.
+
+17
+00:00:56,080 --> 00:01:00,220
+And this way they are Mithal the search really in our registar controller right down at the bottom.
+
+18
+00:01:00,220 --> 00:01:05,830
+Therefore if you want to customize what is validated when you're registering a new user maybe you want
+
+19
+00:01:05,830 --> 00:01:11,980
+to customize and make sure that the height is a number of the hightest required under each and all of
+
+20
+00:01:11,980 --> 00:01:12,440
+that.
+
+21
+00:01:12,460 --> 00:01:14,080
+This is where you're going to do that.
+
+22
+00:01:14,110 --> 00:01:14,600
+OK.
+
+23
+00:01:14,650 --> 00:01:20,800
+So just simply putting a new radiation field and automatically going to call that as we see in our registar
+
+24
+00:01:20,850 --> 00:01:21,290
+method.
+
+25
+00:01:21,310 --> 00:01:24,440
+Next thing Lavoe utterly rigid starts to use right here.
+
+26
+00:01:24,460 --> 00:01:28,210
+I'm just going to break this down to a simple line so you actually understand what is happening.
+
+27
+00:01:28,240 --> 00:01:34,270
+So Lovell's firing an event and that event is the really start event and that event is actually coming
+
+28
+00:01:34,270 --> 00:01:40,050
+form eliminate of events we just start and it's passing a user into that event.
+
+29
+00:01:40,060 --> 00:01:45,900
+And this user is coming from calling the Creator thought on this class on the streets and that create
+
+30
+00:01:46,060 --> 00:01:48,690
+these receiving all of the request data.
+
+31
+00:01:48,690 --> 00:01:52,030
+Now discreate My thought is actually from our control.
+
+32
+00:01:52,090 --> 00:01:57,880
+If we visited D'Errico receives an array of all the requests they are and then it creates a new user.
+
+33
+00:01:57,880 --> 00:02:03,130
+Therefore if you want to customize what is passed into the database when they use ice created this is
+
+34
+00:02:03,130 --> 00:02:04,210
+where you're going to go to.
+
+35
+00:02:04,210 --> 00:02:04,760
+Right.
+
+36
+00:02:04,920 --> 00:02:09,190
+So I should create mid-thought and Lavallee optical going to call that behind the scenes.
+
+37
+00:02:09,190 --> 00:02:15,030
+Next thing it saves the user isn't available and it passes to these new registar events.
+
+38
+00:02:15,040 --> 00:02:16,770
+Right so an event is fire.
+
+39
+00:02:16,810 --> 00:02:21,650
+That's the first hook that we have if we want to customize our system.
+
+40
+00:02:21,730 --> 00:02:26,770
+Therefore if you want to do something like send a welcome email which we're going to be doing very soon
+
+41
+00:02:27,010 --> 00:02:31,410
+then we simply need to listen to this particular event and that's it.
+
+42
+00:02:31,420 --> 00:02:33,360
+Lovely is automatically going to fire that event.
+
+43
+00:02:33,490 --> 00:02:35,980
+And all of that event is not going to take action.
+
+44
+00:02:35,980 --> 00:02:36,480
+OK.
+
+45
+00:02:36,550 --> 00:02:40,960
+And most of the time in the community we actually listen to people saying I don't want my users to be
+
+46
+00:02:41,110 --> 00:02:41,920
+locked in.
+
+47
+00:02:41,980 --> 00:02:43,630
+As soon as they are registered.
+
+48
+00:02:43,660 --> 00:02:47,760
+Therefore this is where you actually want to come to right because this is a line of code the lover
+
+49
+00:02:47,770 --> 00:02:49,610
+uses to logging the user.
+
+50
+00:02:49,690 --> 00:02:53,020
+So it locks in the newly created user right here.
+
+51
+00:02:53,020 --> 00:02:56,280
+So if you don't want to log in the user simply override this.
+
+52
+00:02:56,280 --> 00:03:01,450
+We just thought that in this line you might not even wanted to get the event therefore you're just going
+
+53
+00:03:01,450 --> 00:03:06,410
+to validate the data and then call the Creator mid-thought and then pull out this line completely.
+
+54
+00:03:06,400 --> 00:03:10,510
+Therefore the use I said I'm going to be authenticates that all locked in automatically.
+
+55
+00:03:10,540 --> 00:03:16,690
+And then finally what level dosshouse Is it cause of which you stop mid-thought just like the authenticated
+
+56
+00:03:16,690 --> 00:03:21,040
+method that without logging controller if it doesn't find anything in the way you start mid-thought
+
+57
+00:03:21,520 --> 00:03:27,970
+which is the case right now it's simply going to redirect the user to mid-thought redirect path.
+
+58
+00:03:28,120 --> 00:03:30,250
+So you try to visit that redirect path.
+
+59
+00:03:30,250 --> 00:03:36,160
+My thought is actually in a redirect such rates what is simply going to do is check if redirector method
+
+60
+00:03:36,190 --> 00:03:38,170
+exists and then it's going to call that.
+
+61
+00:03:38,180 --> 00:03:43,750
+OK so you can actually create a redirect to metho it right in your register control.
+
+62
+00:03:43,990 --> 00:03:48,450
+Or you can actually find a way to pour putty in your registers controller.
+
+63
+00:03:48,490 --> 00:03:49,060
+OK.
+
+64
+00:03:49,060 --> 00:03:51,700
+So I think Lovelle already comes with that.
+
+65
+00:03:51,700 --> 00:03:52,510
+There you go.
+
+66
+00:03:52,510 --> 00:03:57,110
+So we already have this redirector property and you can actually make sure that the users without access
+
+67
+00:03:57,110 --> 00:04:03,400
+to the home page if you want that's the flexibility that level gives to worse Burts if you want to completely
+
+68
+00:04:03,460 --> 00:04:06,430
+overwrite what happens when a user asked registar.
+
+69
+00:04:06,460 --> 00:04:09,700
+Then you need to simply define this when you start method.
+
+70
+00:04:09,730 --> 00:04:13,940
+So what I'm going to do is I'm going to copy this when you start my thought and I'm going to head over
+
+71
+00:04:13,960 --> 00:04:17,190
+to my registrar's controller and I'm going to override that method.
+
+72
+00:04:17,320 --> 00:04:23,100
+Therefore when the user is read you start what I want to do is decide on the use of data.
+
+73
+00:04:23,150 --> 00:04:28,590
+OK so this is what we are going to see when the user is registered and we need to import this request
+
+74
+00:04:28,590 --> 00:04:29,690
+last of the top.
+
+75
+00:04:29,700 --> 00:04:35,410
+Now another thing I want to do is actually listen to this event so you understand how it works.
+
+76
+00:04:35,410 --> 00:04:41,410
+So like I said loveall fires an event which is called a widget event and you can actually listen to
+
+77
+00:04:41,410 --> 00:04:44,260
+these events and send an e-mail when the user is registered.
+
+78
+00:04:44,260 --> 00:04:44,730
+Right.
+
+79
+00:04:44,740 --> 00:04:47,260
+So let's go ahead and just do that in our events.
+
+80
+00:04:47,260 --> 00:04:47,750
+All right.
+
+81
+00:04:47,830 --> 00:04:49,610
+We are going to listen to that event.
+
+82
+00:04:49,720 --> 00:04:51,190
+And how do we listen to that event.
+
+83
+00:04:51,190 --> 00:04:53,360
+We simply call the events right here.
+
+84
+00:04:53,560 --> 00:05:00,490
+Eliminate of events and this is the restart event and all we need to do is moppy to all of it's listeners
+
+85
+00:05:00,580 --> 00:05:06,330
+and we of all of its listeners maybe if you want to send an email and if you want to also upload the
+
+86
+00:05:06,780 --> 00:05:12,550
+user's avatar to Amazon then you can have different business for the same events.
+
+87
+00:05:12,550 --> 00:05:15,550
+So in this case we want to send an e-mail right.
+
+88
+00:05:15,550 --> 00:05:19,090
+So I'm going to set up listeners send welcome e-mail.
+
+89
+00:05:19,120 --> 00:05:19,550
+OK.
+
+90
+00:05:19,570 --> 00:05:24,730
+So we don't have this list in our class if we want to a recent event January is going to generate all
+
+91
+00:05:24,730 --> 00:05:27,200
+the listeners that do not exist yet.
+
+92
+00:05:27,220 --> 00:05:27,690
+OK.
+
+93
+00:05:27,760 --> 00:05:34,180
+So we are listening to illuminates of events we you start and I'm writing that because this registar
+
+94
+00:05:34,210 --> 00:05:40,120
+is coming from illuminate of events where you start and we are telling Lovell every time this event
+
+95
+00:05:40,180 --> 00:05:40,970
+is fired.
+
+96
+00:05:41,140 --> 00:05:43,440
+Make sure all of these listeners are caught.
+
+97
+00:05:43,550 --> 00:05:48,470
+OK so let's generate that in the Petri Aurizon events generate is what we need.
+
+98
+00:05:48,630 --> 00:05:54,920
+Ok I just one that if we check out our Abdur tree you should have little changes like this looseness
+
+99
+00:05:55,480 --> 00:05:58,400
+and we have a send welcome email listener.
+
+100
+00:05:58,540 --> 00:06:02,380
+So it has the Handleman 4.6 in the register event.
+
+101
+00:06:02,380 --> 00:06:08,410
+Now what we want to do in this which you start event like we said we want to send a mail to the user
+
+102
+00:06:08,580 --> 00:06:13,350
+who was just registered and we can get that from that event and we can call the send my thought.
+
+103
+00:06:13,420 --> 00:06:16,440
+And we simply need to know more about that.
+
+104
+00:06:16,440 --> 00:06:17,370
+We want to send.
+
+105
+00:06:17,380 --> 00:06:24,970
+We're going to see where you are SAS is going to be the mailable and we can also pass in the user into
+
+106
+00:06:24,970 --> 00:06:26,170
+this mailable class.
+
+107
+00:06:26,260 --> 00:06:32,290
+So send an e-mail to the newly created user and that mail should be welcome to our SAS application.
+
+108
+00:06:32,330 --> 00:06:37,930
+Now we need to use the mail for Slate and since we don't yet have that mailable Let's go ahead and created
+
+109
+00:06:37,990 --> 00:06:39,810
+Peachtree Arsen make mail.
+
+110
+00:06:39,850 --> 00:06:44,470
+Welcome to our source and we're going to make sure that we have a markdown view for this.
+
+111
+00:06:44,470 --> 00:06:46,240
+And it's going to be e-mails start.
+
+112
+00:06:46,270 --> 00:06:46,770
+Welcome.
+
+113
+00:06:46,840 --> 00:06:52,750
+OK so that minable husband creature for us therefore in our app directory we have this welcome to assassinate
+
+114
+00:06:52,810 --> 00:06:57,640
+B A B and it returns the emails that Welkom we Postino the user.
+
+115
+00:06:57,640 --> 00:07:02,290
+Therefore we can receive the user right here on our sign that are public property so we can have access
+
+116
+00:07:02,290 --> 00:07:03,550
+to that in our view.
+
+117
+00:07:03,610 --> 00:07:08,690
+So in our construct or we're going to set this user to the use of we received from our listener.
+
+118
+00:07:08,800 --> 00:07:09,180
+OK.
+
+119
+00:07:09,220 --> 00:07:12,360
+So let's viscid that you welcome that Bader Ph be.
+
+120
+00:07:12,550 --> 00:07:18,430
+And we can have welcome to our Soest up and we can get the user name to customize the e-mail.
+
+121
+00:07:18,460 --> 00:07:22,740
+And this is going to be the body of your message maybe whatever text welcome.
+
+122
+00:07:22,860 --> 00:07:23,440
+OK.
+
+123
+00:07:23,440 --> 00:07:25,260
+So what do we expect to happen.
+
+124
+00:07:25,390 --> 00:07:33,790
+We expect our registration to take place just as usual but then we expect these registar events to be
+
+125
+00:07:33,920 --> 00:07:40,420
+Fiat which is being fired right here and we expect all that smart for this event to be fired.
+
+126
+00:07:40,420 --> 00:07:48,310
+Also to be one note and the handling right here is going to send an e-mail to the newly registered user
+
+127
+00:07:48,520 --> 00:07:51,190
+which is the welcome to our SAS e-mail.
+
+128
+00:07:51,280 --> 00:07:54,100
+And we should receive that e-mail and see the contents.
+
+129
+00:07:54,100 --> 00:07:58,520
+Now if you have any it set up a trap I've set up my mail drop and I'm good to go.
+
+130
+00:07:58,600 --> 00:08:03,960
+So let's go ahead and we just a new user and see if everything works like we expect and obviously wants
+
+131
+00:08:03,960 --> 00:08:05,840
+to use naturally receives that e-mail.
+
+132
+00:08:05,860 --> 00:08:11,620
+This will just start mid-thought should be called in which the controller simply died on the user because
+
+133
+00:08:11,620 --> 00:08:12,840
+we are each and AMFA.
+
+134
+00:08:12,910 --> 00:08:20,710
+OK so visit our application visit the registar page registar news or click on the register button.
+
+135
+00:08:20,740 --> 00:08:21,760
+There we go.
+
+136
+00:08:21,760 --> 00:08:27,570
+We have we use our Didymos right here just like the specified number we just are on free checkout.
+
+137
+00:08:27,640 --> 00:08:33,400
+We see our Welcome to our SAS e-mail and if we check it out for an office customized exactly the same
+
+138
+00:08:33,400 --> 00:08:34,570
+way we wanted it.
+
+139
+00:08:34,570 --> 00:08:40,350
+Therefore we see how we can integrate completely into Lovell's default system.
+
+140
+00:08:40,390 --> 00:08:46,930
+Listening to the events calling the appropriate methods whenever we want to and level automatically
+
+141
+00:08:46,930 --> 00:08:50,350
+takes this takes care of this for us behind the scenes.
+
+142
+00:08:50,350 --> 00:08:57,850
+OK so before I actually stop this video I want to simply show you how you can also customize the password
+
+143
+00:08:57,850 --> 00:08:58,990
+resets process.
+
+144
+00:08:59,020 --> 00:09:06,130
+So if we had to asked to be control us we also have passwords resets control up and we also have up
+
+145
+00:09:06,130 --> 00:09:13,120
+forgot passwords control controller and we can see it also has a son passwords reset email traits and
+
+146
+00:09:13,120 --> 00:09:15,510
+we can visit that tree to see what is happening.
+
+147
+00:09:15,630 --> 00:09:21,970
+Shoaling request form is going to return off the passwords to email and we can customize the page that
+
+148
+00:09:21,970 --> 00:09:27,610
+they use of views when he wants to reset his password or put in his email by simply copying this my
+
+149
+00:09:27,610 --> 00:09:32,980
+thought and customizing it in this control or then send a link to the given user.
+
+150
+00:09:33,110 --> 00:09:39,130
+So send resending email is going to validate the e-mail and then send the reset e-mail.
+
+151
+00:09:39,130 --> 00:09:41,380
+Now Lavoe uses a book Behind the scenes.
+
+152
+00:09:41,470 --> 00:09:47,290
+But what this simply does is it has a send reset link and all of this is coming from password booka
+
+153
+00:09:47,400 --> 00:09:48,380
+that Ph be.
+
+154
+00:09:48,430 --> 00:09:50,920
+So it has a certain reset link meathook.
+
+155
+00:09:50,920 --> 00:09:57,040
+And if that option was successful the response we're going to get is a string and that string is equal
+
+156
+00:09:57,040 --> 00:09:58,630
+to this string right here.
+
+157
+00:09:58,780 --> 00:09:59,280
+OK.
+
+158
+00:09:59,390 --> 00:10:00,950
+So right here what level is doing this.
+
+159
+00:10:00,980 --> 00:10:06,830
+It's comparing the string that we received which is this response is equal to the string that is saved
+
+160
+00:10:06,860 --> 00:10:07,870
+in this constant.
+
+161
+00:10:07,940 --> 00:10:13,090
+And if that's true then it's going to call this methodes send reset link response.
+
+162
+00:10:13,100 --> 00:10:18,680
+And if that was not true it means it was failed then it's going to call the send we said Lingfield response.
+
+163
+00:10:18,680 --> 00:10:24,890
+Now this said said Link response just like any other method that we've been told that we we can customize
+
+164
+00:10:24,890 --> 00:10:29,360
+it however we want maybe you want to send an S M S or do whatever you want.
+
+165
+00:10:29,360 --> 00:10:33,670
+Once the reset link is send to the use of e-mail you can do that right here.
+
+166
+00:10:33,810 --> 00:10:40,370
+Burts if it's actually filled then this is the method you want to customize send resettling field response
+
+167
+00:10:40,460 --> 00:10:43,850
+and now by default Lavoe simply returns to use or back with the arrows.
+
+168
+00:10:43,850 --> 00:10:44,220
+OK.
+
+169
+00:10:44,240 --> 00:10:46,270
+But you can do whatever you want.
+
+170
+00:10:46,420 --> 00:10:47,720
+Use or anything.
+
+171
+00:10:47,720 --> 00:10:49,210
+This is why you can customize that.
+
+172
+00:10:49,250 --> 00:10:49,720
+OK.
+
+173
+00:10:49,820 --> 00:10:52,880
+And then lover also has this reset password controller.
+
+174
+00:10:52,910 --> 00:10:55,580
+And like you see it also uses a reset password.
+
+175
+00:10:55,580 --> 00:11:01,430
+Behind the scenes and you can customize this with like to property to redirect the user to maybe the
+
+176
+00:11:01,610 --> 00:11:05,300
+dashboard page as soon as the password was successfully reset.
+
+177
+00:11:05,330 --> 00:11:10,330
+And in this reset password street you can override whatever you need to reset.
+
+178
+00:11:10,370 --> 00:11:14,050
+So reset form is also going to return this view right.
+
+179
+00:11:14,050 --> 00:11:19,460
+You'll be the token and IMHO you can customize that if you want by simply copying it into the reset
+
+180
+00:11:19,460 --> 00:11:20,620
+password control lock.
+
+181
+00:11:20,660 --> 00:11:22,320
+And this is the reset process.
+
+182
+00:11:22,340 --> 00:11:27,890
+And the same thing Lovelle validates that we have the correct Ditto's to reset our password and then
+
+183
+00:11:27,890 --> 00:11:33,830
+he uses that verruca again cause the reset mid-thought which returns a string and is saved in a response.
+
+184
+00:11:33,860 --> 00:11:40,070
+So if that string is to password that resets if you receive discloser check it out passwords that reset
+
+185
+00:11:40,310 --> 00:11:42,560
+then this condition is going to be called.
+
+186
+00:11:42,610 --> 00:11:45,110
+Ok means we had a successful password reset.
+
+187
+00:11:45,290 --> 00:11:51,050
+Then we are going to call the send reset response my thought and if it was not successful then it's
+
+188
+00:11:51,050 --> 00:11:52,480
+going to call this field method.
+
+189
+00:11:52,580 --> 00:11:57,820
+And again if you want to customize this you can just copy this into your controller and that's it.
+
+190
+00:11:57,830 --> 00:11:58,290
+OK.
+
+191
+00:11:58,430 --> 00:11:59,820
+Very very easy.
+
+192
+00:11:59,840 --> 00:12:05,180
+And if you also want to customize what happens when they use or does it not correctly reset his password.
+
+193
+00:12:05,180 --> 00:12:06,850
+This is where you're going to do that.
+
+194
+00:12:06,860 --> 00:12:10,620
+So everything works very seamlessly with Flavell.
+
+195
+00:12:10,650 --> 00:12:11,090
+OK.
+
+196
+00:12:11,180 --> 00:12:15,690
+You can customize the system completely just like we have reviewed.
+
+197
+00:12:15,740 --> 00:12:20,910
+Thank you so much for watching this video up to this point I'm so grateful you did.
+
+198
+00:12:20,930 --> 00:12:22,160
+I hope you learned a lot.
+
+199
+00:12:22,160 --> 00:12:25,930
+Let's talk more about customization in Lavoe in the next video.
+

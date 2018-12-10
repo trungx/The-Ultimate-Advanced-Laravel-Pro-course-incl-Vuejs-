@@ -1,0 +1,296 @@
+1
+00:00:00,210 --> 00:00:04,200
+You might not know it but you're ready for me to actually put the big stuff at you.
+
+2
+00:00:04,200 --> 00:00:06,870
+For example a full blown application or something like that.
+
+3
+00:00:06,870 --> 00:00:08,990
+So let's go ahead and jump right into it.
+
+4
+00:00:09,000 --> 00:00:12,540
+I'm going to use a very basic example and that's going to be creating a block.
+
+5
+00:00:12,580 --> 00:00:16,470
+And I'm just using a blog because everybody knows what a blog is and how it works.
+
+6
+00:00:16,470 --> 00:00:18,310
+So it's just going to be very busy.
+
+7
+00:00:18,330 --> 00:00:24,300
+A user visits a page he sees some blog posts with the Dade's on the title and all of that and an administrator
+
+8
+00:00:24,300 --> 00:00:27,370
+can also create deletes or stuff like that.
+
+9
+00:00:27,420 --> 00:00:31,530
+OK so how do we work on this how do we make it come to life.
+
+10
+00:00:31,530 --> 00:00:37,190
+We're going to be using Jelf tester in development because we want to think about how our code works
+
+11
+00:00:37,200 --> 00:00:38,950
+before we write the code right.
+
+12
+00:00:39,210 --> 00:00:44,830
+So what is the first test or what is the first feature we want to build.
+
+13
+00:00:44,830 --> 00:00:45,770
+Do we start with nothing.
+
+14
+00:00:45,780 --> 00:00:52,290
+Occasion we start with creating posts do we start deleting post or do we start with returning views.
+
+15
+00:00:52,290 --> 00:00:54,360
+What do we actually start with now.
+
+16
+00:00:54,410 --> 00:00:59,370
+First of all from my experience that we have to take care of is actually making sure we start with a
+
+17
+00:00:59,370 --> 00:01:05,820
+simple feature test a feature test that is going to guide us to how our application wants to work for
+
+18
+00:01:05,970 --> 00:01:07,790
+the user rather than for us.
+
+19
+00:01:07,830 --> 00:01:08,310
+OK.
+
+20
+00:01:08,310 --> 00:01:13,560
+Because remember uniters is naturally for us because we want to check if our classes and methods work
+
+21
+00:01:13,560 --> 00:01:16,010
+perfectly but then feature its for us.
+
+22
+00:01:16,010 --> 00:01:20,410
+Yeah but then it somehow has to do with how the user interacts with application.
+
+23
+00:01:20,430 --> 00:01:26,880
+So the basic rule of thumb is write a feature test for us and then in writing the feature test in case
+
+24
+00:01:26,880 --> 00:01:31,010
+you have some methods to test write unit test to test those features right.
+
+25
+00:01:31,020 --> 00:01:37,760
+So for example for BLOCK What is the very first feature we would want to create in a blog post but then
+
+26
+00:01:37,760 --> 00:01:41,190
+that some of the essential of actually creating a block.
+
+27
+00:01:41,220 --> 00:01:48,610
+So if we check out a blog The main thing in a blog is viewing a post and thats the core of a block.
+
+28
+00:01:48,630 --> 00:01:52,630
+Now creating post we could do creates imposing any manner.
+
+29
+00:01:52,650 --> 00:01:57,660
+For example user can just goods of the deeds of his audience or the post or do whatever he likes a person
+
+30
+00:01:57,720 --> 00:02:00,110
+away from the controller just to display it.
+
+31
+00:02:00,120 --> 00:02:02,300
+So that's my obligation.
+
+32
+00:02:02,310 --> 00:02:06,620
+So the basic rule of thumb is the core of your application should be where you start.
+
+33
+00:02:06,750 --> 00:02:12,300
+So if you're building maybe a school learning management system and the first thing is for us to be
+
+34
+00:02:12,300 --> 00:02:18,420
+able to view students or that's the main post and quit that feature first authentication will come in
+
+35
+00:02:18,420 --> 00:02:19,110
+later.
+
+36
+00:02:19,110 --> 00:02:23,470
+That's because you once a week for people to be able to create post and it'll come in later.
+
+37
+00:02:23,490 --> 00:02:23,970
+Right.
+
+38
+00:02:24,000 --> 00:02:28,860
+So we're going to be using this idea of Desdunes of government to actually create a blog post.
+
+39
+00:02:28,860 --> 00:02:32,740
+So from what we've talked about what is the first that we are going to be creating We're going to be
+
+40
+00:02:32,740 --> 00:02:35,280
+making sure that a user can view a blog post.
+
+41
+00:02:35,370 --> 00:02:35,770
+Right.
+
+42
+00:02:35,880 --> 00:02:37,820
+So let's go ahead and create a test for that.
+
+43
+00:02:37,840 --> 00:02:42,960
+PH BE areason make test view a blackboard test just create it for us.
+
+44
+00:02:42,990 --> 00:02:47,730
+Therefore if we head over to our feature directory and if we have that test a cloud of boilerplate and
+
+45
+00:02:47,730 --> 00:02:54,090
+we're going to write our own function public function test can view a block post so our users should
+
+46
+00:02:54,090 --> 00:02:56,090
+be able to view a blog post right.
+
+47
+00:02:56,100 --> 00:03:01,690
+So it's just going to have literally exactly the same idea like we had with our about Bache.
+
+48
+00:03:01,740 --> 00:03:07,980
+So first of all we need to visit that route a route where we want our users to view our blog posts and
+
+49
+00:03:07,980 --> 00:03:13,470
+then begin to assert that we have a status of 200 and we're going to assert that the beats are on that
+
+50
+00:03:13,530 --> 00:03:16,470
+page is actually the data that we want to see.
+
+51
+00:03:16,650 --> 00:03:17,190
+OK.
+
+52
+00:03:17,220 --> 00:03:24,180
+There are actually steps involved in every test and some test might actually not have these steps but
+
+53
+00:03:24,180 --> 00:03:28,290
+then basically every test you're going to see is going to have these steps and the first one is going
+
+54
+00:03:28,290 --> 00:03:34,710
+to be arrangements step which is the step in which you prepare your data base stuff that has to be taken
+
+55
+00:03:34,710 --> 00:03:37,150
+care of before you run your test.
+
+56
+00:03:37,170 --> 00:03:42,340
+And then we also have the actual step which is going to be taking care of and that's just a reaction
+
+57
+00:03:42,390 --> 00:03:47,520
+that we are trying to perform dysfunctionality and then we're going to have to assert step.
+
+58
+00:03:47,520 --> 00:03:53,410
+So if you take a look at that about PH We actually didn't have any arrangements because we didn't win
+
+59
+00:03:53,460 --> 00:03:54,120
+anything.
+
+60
+00:03:54,120 --> 00:03:56,110
+We just went ahead and made an action.
+
+61
+00:03:56,340 --> 00:04:02,100
+And after that action we had our asserts and that is how I put a space right here just to demonstrate
+
+62
+00:04:02,100 --> 00:04:04,320
+that this is a different step from this one.
+
+63
+00:04:04,320 --> 00:04:07,670
+So this is the action step and this is the assertion step.
+
+64
+00:04:07,710 --> 00:04:12,060
+So for our test we're going to be having all three steps and we're going to start with the arrangements.
+
+65
+00:04:12,270 --> 00:04:16,460
+And then we're going to go to the actual stuff and then we're going to go to that assertion step.
+
+66
+00:04:16,470 --> 00:04:19,430
+So for the arrangements what do we want our age.
+
+67
+00:04:19,440 --> 00:04:25,530
+The first thing is we actually want to be able to have some post-white a user cannot view a post that
+
+68
+00:04:25,530 --> 00:04:26,410
+doesn't exist.
+
+69
+00:04:26,520 --> 00:04:32,580
+So in the rangemaster we are going to create a post savey to the database for what actions we are going
+
+70
+00:04:32,580 --> 00:04:38,620
+to navigate to a route that we want to view all the post on and then follow our search.
+
+71
+00:04:38,620 --> 00:04:42,970
+We're going to assert that the status 200 which means the page exists.
+
+72
+00:04:42,990 --> 00:04:49,890
+And also I said that the title or the body or the content or the creator for the particular post is
+
+73
+00:04:49,950 --> 00:04:51,920
+actually on that page.
+
+74
+00:04:51,930 --> 00:04:55,560
+So let's go ahead and take care of this in the very next video.
+

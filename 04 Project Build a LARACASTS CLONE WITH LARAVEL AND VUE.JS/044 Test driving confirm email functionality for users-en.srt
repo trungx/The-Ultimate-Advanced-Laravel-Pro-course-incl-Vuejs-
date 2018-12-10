@@ -1,0 +1,456 @@
+1
+00:00:00,090 --> 00:00:02,480
+Oh OK so I'll do the ones from the US.
+
+2
+00:00:02,560 --> 00:00:04,530
+We want to use that on this march on.
+
+3
+00:00:04,580 --> 00:00:08,800
+And we should actually take us to our results on our web application.
+
+4
+00:00:08,850 --> 00:00:10,750
+That's going to pick up the token.
+
+5
+00:00:10,890 --> 00:00:16,030
+So it might actually be a POST or GET request but probably get to work with.
+
+6
+00:00:16,050 --> 00:00:18,650
+So we're going to pass the token as a promise.
+
+7
+00:00:18,680 --> 00:00:24,800
+You know I get requests and then I pick it up with an obligation find to use that to come and make sure
+
+8
+00:00:24,870 --> 00:00:29,070
+we can from the use if we don't find and use then we're going to handle the kids.
+
+9
+00:00:29,100 --> 00:00:31,160
+So why don't we do this with some tests.
+
+10
+00:00:31,230 --> 00:00:33,180
+So let's just generate a new test.
+
+11
+00:00:33,180 --> 00:00:37,280
+So here are some quick tests confirm e-mail tests.
+
+12
+00:00:37,320 --> 00:00:44,860
+So let's head to whatsoe'er confound e-mail test and try another function on the superbly function sayst
+
+13
+00:00:44,990 --> 00:00:47,290
+a Yusof can confirm email.
+
+14
+00:00:47,370 --> 00:00:49,290
+Ok so how are we going to be doing this.
+
+15
+00:00:49,370 --> 00:00:49,670
+OK.
+
+16
+00:00:49,680 --> 00:00:57,550
+So how are we going to be good and then send that email of sending the e-mail whatever walks.
+
+17
+00:00:57,660 --> 00:01:05,100
+And then we'll make a get request to the confirm and then assert that they use all these confirm.
+
+18
+00:01:05,100 --> 00:01:06,580
+So let's go ahead and do that.
+
+19
+00:01:06,750 --> 00:01:12,460
+Create a use always Simplicio use or use for actually for own use or class Craigavon.
+
+20
+00:01:12,630 --> 00:01:19,940
+OK so right here let's just use but guess use of how we use or the next thing is to send that e-mail.
+
+21
+00:01:20,010 --> 00:01:23,260
+I don't think this is actually necessary in this test case.
+
+22
+00:01:23,280 --> 00:01:25,870
+So we just go ahead and make that Kate and Chris.
+
+23
+00:01:25,950 --> 00:01:29,450
+So we're going to see this gets.
+
+24
+00:01:29,490 --> 00:01:35,850
+And how do we want to you know we're just going to see registar confirm and remember like we agreed
+
+25
+00:01:35,850 --> 00:01:40,200
+we're going to be passing in the can into the get requests I support.
+
+26
+00:01:40,320 --> 00:01:45,930
+So what I'd like to do centrally use a better US and such right here so double Portes could simply on
+
+27
+00:01:45,930 --> 00:01:52,090
+sites where it's open he calls and hustling use are confirmed to come right here also.
+
+28
+00:01:52,210 --> 00:02:00,650
+So suspensory so rich you start confirm then pass in the can and for the response let's just assert
+
+29
+00:02:00,690 --> 00:02:06,040
+redirects and in this case we're going to be posting in the beach to make sure that you use such a newbie.
+
+30
+00:02:06,130 --> 00:02:07,110
+That's the home page.
+
+31
+00:02:07,170 --> 00:02:09,950
+We make that request so that essentially that makes it.
+
+32
+00:02:10,080 --> 00:02:17,680
+And we also have said that in USALS confirmed this a search through news or confront create a use or
+
+33
+00:02:18,000 --> 00:02:20,960
+make a request that in point person in the can.
+
+34
+00:02:21,020 --> 00:02:24,650
+And then I said that you use I should be directed to this point.
+
+35
+00:02:24,930 --> 00:02:27,620
+And then I said true that the user is confirmed.
+
+36
+00:02:27,720 --> 00:02:29,310
+So let's go ahead and do this.
+
+37
+00:02:29,330 --> 00:02:34,610
+I'm going to use Refresh database and I'm going to run this specific test only.
+
+38
+00:02:34,710 --> 00:02:35,790
+Ok that's funny.
+
+39
+00:02:35,950 --> 00:02:36,280
+OK.
+
+40
+00:02:36,300 --> 00:02:40,240
+So I was promised us I would fall for it's not that we don't make stuff to school.
+
+41
+00:02:40,260 --> 00:02:45,390
+Now if you want to have more information about it section those when you can actually disable exception
+
+42
+00:02:45,390 --> 00:02:46,000
+handling.
+
+43
+00:02:46,110 --> 00:02:49,980
+But now we know what's a full force which is squarehead Aquilius endpoint.
+
+44
+00:02:50,040 --> 00:02:50,660
+Right.
+
+45
+00:02:50,670 --> 00:02:57,490
+So you know what that BHB we want to create a routes gets which is a registar session for him.
+
+46
+00:02:57,640 --> 00:03:00,410
+And let's just say it maps to confirm.
+
+47
+00:03:00,450 --> 00:03:06,350
+Email construal Arts Index Mitha one on to gain share info.
+
+48
+00:03:06,360 --> 00:03:11,250
+We have a 500 but let's just go ahead and disable exception handling.
+
+49
+00:03:11,250 --> 00:03:15,480
+So this without exception mean that's funda.
+
+50
+00:03:15,600 --> 00:03:19,690
+Now we have more help for everyone that sees this control of us and they exists.
+
+51
+00:03:19,700 --> 00:03:24,380
+PH We Irish Sun Macon's long confirmed email.
+
+52
+00:03:24,460 --> 00:03:27,780
+Well now that that's created let's run the test again.
+
+53
+00:03:27,930 --> 00:03:31,040
+SUGI Sison all because we don't have the index misthought.
+
+54
+00:03:31,050 --> 00:03:32,860
+So let's just have to watch and confirm.
+
+55
+00:03:32,900 --> 00:03:38,890
+IMO controller and the next marathon run that one more time and we have 200.
+
+56
+00:03:38,910 --> 00:03:44,440
+It's not a direct at school because this is a skill we need to do because we have nothing here active.
+
+57
+00:03:44,510 --> 00:03:50,880
+So what do we want to do we need to get the token from the request to come and then we need to find
+
+58
+00:03:50,940 --> 00:03:53,950
+a use on where these two can lead.
+
+59
+00:03:53,970 --> 00:04:00,440
+So use on where I'm confused is equal to the token that we just got then.
+
+60
+00:04:00,570 --> 00:04:07,200
+Let's just check if we have a user then see user or confirm which is a helpful methadose and begin to
+
+61
+00:04:07,200 --> 00:04:09,040
+help us confirm the news.
+
+62
+00:04:09,420 --> 00:04:13,260
+And then we turn directs to the homepage.
+
+63
+00:04:13,520 --> 00:04:14,070
+OK.
+
+64
+00:04:14,130 --> 00:04:18,620
+So can they use a way that confirms or can exist or can that we get from the request.
+
+65
+00:04:18,840 --> 00:04:21,140
+And then we turn these up to the home page.
+
+66
+00:04:21,150 --> 00:04:24,120
+OK let's try out another area.
+
+67
+00:04:25,220 --> 00:04:28,410
+Colchicine you find coming from that's expected.
+
+68
+00:04:28,510 --> 00:04:30,700
+So it generally means know use.
+
+69
+00:04:30,790 --> 00:04:38,220
+So you know use all the Ph.D. there's just create that confirm with a public function for one audience
+
+70
+00:04:38,400 --> 00:04:44,070
+and we still have an interesting course on the Feynman fought on the ground you know confirm and that
+
+71
+00:04:44,070 --> 00:04:48,720
+should be my fault because these are which Strawson Kraybill that instance right.
+
+72
+00:04:48,720 --> 00:04:56,490
+So let's just get the first use of which is to the result from the query one that says we have green
+
+73
+00:04:56,520 --> 00:04:58,280
+that's so unexpected.
+
+74
+00:04:58,530 --> 00:05:00,900
+Let's DeBoer and see what we have.
+
+75
+00:05:00,930 --> 00:05:03,560
+First of all you know comes from email.
+
+76
+00:05:03,990 --> 00:05:10,000
+We are such an a redirects that's died on the use of right to see what it gets.
+
+77
+00:05:10,110 --> 00:05:12,660
+And the thing is we're actually essentially.
+
+78
+00:05:12,870 --> 00:05:18,840
+The thing is actually such actually on reaching the conference could say we forgot or did not.
+
+79
+00:05:18,900 --> 00:05:28,190
+So our factory needs to generate a confirmed token for the news stream pattern for us and less for not
+
+80
+00:05:28,190 --> 00:05:29,770
+just now and see what we get.
+
+81
+00:05:29,850 --> 00:05:33,190
+Our key expected LR feel a sense that false is true.
+
+82
+00:05:33,360 --> 00:05:38,780
+Because obviously right here on he's returning false because we are confirming the news.
+
+83
+00:05:39,120 --> 00:05:40,250
+And we are trained.
+
+84
+00:05:40,410 --> 00:05:40,940
+True.
+
+85
+00:05:41,070 --> 00:05:45,780
+So you know that we all we need to do is confirm the news right here.
+
+86
+00:05:45,870 --> 00:05:49,810
+So these confirm tokin equals.
+
+87
+00:05:49,990 --> 00:05:53,310
+And we just need to save those changes.
+
+88
+00:05:53,310 --> 00:05:53,780
+That's it.
+
+89
+00:05:53,910 --> 00:05:54,410
+OK.
+
+90
+00:05:54,450 --> 00:05:57,310
+So we pull out to confirm so can such an all.
+
+91
+00:05:57,420 --> 00:06:01,670
+And then we see if the user objects and hopefully notwork says should pass.
+
+92
+00:06:01,860 --> 00:06:07,440
+So let's run that test one more time and we still have a feel and I'm going to show you why we have
+
+93
+00:06:07,520 --> 00:06:13,620
+Freedia because when we get the use I'll just wait here even after we updated level does not refresh
+
+94
+00:06:13,680 --> 00:06:16,620
+its copy for the test rate so it's not like it's cost.
+
+95
+00:06:16,650 --> 00:06:22,440
+So what we're going to do is use law was Freshmeat thought to get a fresh copy from the database because
+
+96
+00:06:22,440 --> 00:06:25,080
+we the check and then would see what we get.
+
+97
+00:06:25,140 --> 00:06:26,150
+Let's run again.
+
+98
+00:06:26,160 --> 00:06:27,510
+And yeah we have green.
+
+99
+00:06:27,680 --> 00:06:28,060
+Okay.
+
+100
+00:06:28,080 --> 00:06:34,650
+So let's go through the system again to see what we have we have this new test can confirm email and
+
+101
+00:06:34,650 --> 00:06:41,440
+what this is doing such and making sure that the Zicam confirms even now we quit use up and after doing
+
+102
+00:06:41,680 --> 00:06:46,960
+that we make sure that we use are actually actually generates confronted for that.
+
+103
+00:06:47,020 --> 00:06:52,160
+So then we make a good question that points passing in the token to that Mithal.
+
+104
+00:06:52,230 --> 00:06:52,740
+Right.
+
+105
+00:06:52,980 --> 00:06:57,190
+As I said maybe that's a decent beach meaning that was successful.
+
+106
+00:06:57,330 --> 00:07:00,640
+And then also as such would not be Yousaf is confirmed.
+
+107
+00:07:00,810 --> 00:07:06,880
+And if we check over so our use of PH We we have that is confronted with all the checks from toucans
+
+108
+00:07:06,930 --> 00:07:11,190
+and all I know confirm mid-thought that actually sets that second to none.
+
+109
+00:07:11,190 --> 00:07:14,180
+Then we have all confirmed the smoke.
+
+110
+00:07:14,590 --> 00:07:21,660
+We simply gets the token finds a use of the token and then come from news use and we directly use the
+
+111
+00:07:21,660 --> 00:07:22,380
+home page.
+
+112
+00:07:22,470 --> 00:07:27,770
+So we could actually in line the so we don't create useless we will and it's going to work.
+
+113
+00:07:27,810 --> 00:07:31,110
+So let's want access one more time and that's good.
+
+114
+00:07:31,110 --> 00:07:31,680
+We're good to go.
+

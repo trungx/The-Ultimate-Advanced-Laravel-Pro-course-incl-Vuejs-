@@ -1,0 +1,328 @@
+1
+00:00:00,810 --> 00:00:04,890
+Let's straight into the reach of Zlitan a lesson from this dashboard.
+
+2
+00:00:04,940 --> 00:00:09,390
+Oh and by the way be on the scene I took the liberty of including an Edgerton's and Pazza.
+
+3
+00:00:09,530 --> 00:00:13,370
+OK so let's use the delete button to make this happen before we do that.
+
+4
+00:00:13,370 --> 00:00:18,780
+Let's just head to what some lessons can twirler and make sure that lateralis prepared to delete stuff.
+
+5
+00:00:19,040 --> 00:00:23,500
+So right here where have to destroy is expected on ID.
+
+6
+00:00:23,630 --> 00:00:27,240
+But we use an outmoded Banyon So we're going to get the lesson.
+
+7
+00:00:27,240 --> 00:00:33,870
+So lesson lesson remember we really just not a resource and automatically we can tap into these anomalies
+
+8
+00:00:33,890 --> 00:00:35,680
+can inject to us a lesson.
+
+9
+00:00:35,780 --> 00:00:37,190
+So that's important.
+
+10
+00:00:37,190 --> 00:00:38,130
+We just need to call.
+
+11
+00:00:38,250 --> 00:00:40,070
+Let's see.
+
+12
+00:00:40,250 --> 00:00:40,690
+OK.
+
+13
+00:00:40,730 --> 00:00:43,830
+So hopefully we don't run into any trouble.
+
+14
+00:00:43,910 --> 00:00:46,580
+Let's go ahead and make this happen with XOs.
+
+15
+00:00:46,700 --> 00:00:52,890
+So you know the lessons that you have this is the need boson therefore we cannot part an event is not
+
+16
+00:00:53,020 --> 00:00:56,520
+which is a clique which concedes you need that lesson.
+
+17
+00:00:57,090 --> 00:00:57,610
+OK.
+
+18
+00:00:57,650 --> 00:01:01,410
+So this and I thought we need to get right down in on my thoughts.
+
+19
+00:01:01,510 --> 00:01:03,260
+Object would create that thought.
+
+20
+00:01:03,370 --> 00:01:08,130
+And what we want to take up from today is that Mitchell he actually wants to debate so I'm simply going
+
+21
+00:01:08,130 --> 00:01:10,430
+to rubbish in a confirm.
+
+22
+00:01:10,490 --> 00:01:17,960
+So if confirmed Are you sure you want to do it and this is kind of using javascript's for API.
+
+23
+00:01:18,020 --> 00:01:20,010
+But I think it's going to stop the policies.
+
+24
+00:01:20,030 --> 00:01:21,300
+So you want it to lead.
+
+25
+00:01:21,330 --> 00:01:22,760
+And that's true.
+
+26
+00:01:22,770 --> 00:01:24,750
+This is a show he wants to delete.
+
+27
+00:01:24,900 --> 00:01:31,010
+Then we're going to make an egregious call so egregious that he needs which is a delete request.
+
+28
+00:01:31,040 --> 00:01:35,730
+Looks like we don't have access to use on this component yet so let's imported.
+
+29
+00:01:35,780 --> 00:01:41,020
+You bought yours is yours therefore exist to delete.
+
+30
+00:01:41,180 --> 00:01:47,480
+And we need to pass in the end point therefore with passing I mean this series ID slash them we need
+
+31
+00:01:47,480 --> 00:01:49,700
+to pass in the lesson ID right.
+
+32
+00:01:49,790 --> 00:01:52,430
+So why don't you get the ID from the loop.
+
+33
+00:01:52,460 --> 00:01:59,120
+So right here we can possi it as an argument therefore we have the lesson local variable and get the
+
+34
+00:01:59,120 --> 00:01:59,690
+ID.
+
+35
+00:01:59,860 --> 00:02:02,510
+OK so we passed a less than ideal to this method.
+
+36
+00:02:02,720 --> 00:02:06,970
+So once we get that we can in also as the Bonneton.
+
+37
+00:02:07,040 --> 00:02:09,140
+And this has to be fixed reconnoissance.
+
+38
+00:02:09,200 --> 00:02:14,770
+So I mean suicide the lessons lesson ID Justin's delete and point down we want to reach.
+
+39
+00:02:14,840 --> 00:02:16,010
+And if you're not sure about that.
+
+40
+00:02:16,010 --> 00:02:16,870
+Make sure you want.
+
+41
+00:02:16,970 --> 00:02:21,030
+We have seen Margolese and checkout zeolites routes we have.
+
+42
+00:02:21,050 --> 00:02:27,920
+So let me use my I.D. lessons and lesson and squinch go to destroy mid-thought of innocence.
+
+43
+00:02:28,120 --> 00:02:28,630
+OK.
+
+44
+00:02:28,820 --> 00:02:31,310
+So that's what we have done den.
+
+45
+00:02:31,550 --> 00:02:40,380
+If we have a successful response console that Lauck response just from now and Gutch it's also going
+
+46
+00:02:40,380 --> 00:02:41,010
+to do so.
+
+47
+00:02:41,250 --> 00:02:41,650
+OK.
+
+48
+00:02:41,670 --> 00:02:43,070
+So let's try this out.
+
+49
+00:02:43,080 --> 00:02:44,120
+Quick refresh.
+
+50
+00:02:44,370 --> 00:02:45,780
+Open up my console.
+
+51
+00:02:45,960 --> 00:02:48,120
+And that should delete this one.
+
+52
+00:02:48,120 --> 00:02:48,690
+So we have.
+
+53
+00:02:48,690 --> 00:02:49,850
+Are you sure you want to delete.
+
+54
+00:02:49,890 --> 00:02:56,540
+It's gone from and we have a good 500 Let's see what that is index a global is still not going to pass
+
+55
+00:02:56,570 --> 00:02:57,640
+to license.
+
+56
+00:02:57,700 --> 00:03:01,810
+That was supposed to be an instance of a lesson but received an instance of my class.
+
+57
+00:03:02,090 --> 00:03:02,450
+OK.
+
+58
+00:03:02,460 --> 00:03:04,410
+I thought that was going to be a problem.
+
+59
+00:03:04,440 --> 00:03:11,140
+That's headbutts NASA's controller and trying to see if the series.
+
+60
+00:03:11,210 --> 00:03:14,500
+And also we see them lesson then we do need the lesson.
+
+61
+00:03:14,680 --> 00:03:15,170
+OK.
+
+62
+00:03:15,330 --> 00:03:18,240
+I think this is going to fix it that Shrub did it again.
+
+63
+00:03:18,710 --> 00:03:20,880
+OK another error.
+
+64
+00:03:23,040 --> 00:03:26,280
+And Greg you actually deleted the response that must be a stream.
+
+65
+00:03:26,360 --> 00:03:26,780
+OK.
+
+66
+00:03:26,910 --> 00:03:30,600
+I knew this was also going about because we can't reach on the internet control us.
+
+67
+00:03:30,690 --> 00:03:36,840
+So what we can do is listen to meet and return a status of OK.
+
+68
+00:03:37,170 --> 00:03:38,440
+So response.
+
+69
+00:03:38,590 --> 00:03:42,620
+Jason sconces OK.
+
+70
+00:03:44,220 --> 00:03:47,120
+It's just a successful response.
+
+71
+00:03:47,820 --> 00:03:48,370
+OK.
+
+72
+00:03:48,430 --> 00:03:53,430
+So we found a series Find the lessons to lead the lesson and respond to this.
+
+73
+00:03:53,470 --> 00:03:58,870
+So I don't think a lot of long ago this was actually a problem we could actually typing this a novel
+
+74
+00:03:58,870 --> 00:04:05,050
+was automatically conject of the lesson acknowledging the series but that's how he wants to work now
+
+75
+00:04:05,050 --> 00:04:05,870
+then it's OK.
+
+76
+00:04:06,160 --> 00:04:08,470
+OK so let's delete this.
+
+77
+00:04:08,620 --> 00:04:09,750
+I think we already did.
+
+78
+00:04:09,760 --> 00:04:17,930
+Let's help refresh translate this one OK so it looks like we're successful and we have to delete a response
+
+79
+00:04:17,950 --> 00:04:18,640
+that.
+
+80
+00:04:18,970 --> 00:04:21,390
+OK so that was sucessful leagues in 18.
+
+81
+00:04:21,410 --> 00:04:23,020
+But what happens to.
+
+82
+00:04:23,210 --> 00:04:25,230
+When we actually have an elite where Spawn's.
+

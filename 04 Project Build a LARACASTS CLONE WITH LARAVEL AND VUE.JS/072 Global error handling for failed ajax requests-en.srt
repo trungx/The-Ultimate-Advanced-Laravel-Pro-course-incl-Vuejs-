@@ -1,0 +1,284 @@
+1
+00:00:00,210 --> 00:00:06,210
+Let's do a little bit something about our handling of our topic issue right now for example when we
+
+2
+00:00:06,210 --> 00:00:11,060
+make that exist request to delete a lesson right here we just cancel that lock.
+
+3
+00:00:11,190 --> 00:00:12,140
+Let's make that better.
+
+4
+00:00:12,150 --> 00:00:14,690
+Now we need to know the person we are building for.
+
+5
+00:00:14,730 --> 00:00:19,020
+We are building for an administrator that's going to be adding series to a dashboard.
+
+6
+00:00:19,020 --> 00:00:24,240
+So probably is going to be a developer so I'm not going to stress much about displaying some sort of
+
+7
+00:00:24,300 --> 00:00:28,020
+error or to make him know what to do because it's not going to be a regular user it's going to be a
+
+8
+00:00:28,020 --> 00:00:28,770
+developer.
+
+9
+00:00:28,870 --> 00:00:29,400
+Yes.
+
+10
+00:00:29,490 --> 00:00:31,250
+Probably the owner off the site.
+
+11
+00:00:31,290 --> 00:00:37,890
+So what we want to do is to correct the error code so we're going to check if the statute is a 42 means
+
+12
+00:00:37,890 --> 00:00:39,190
+it's a validation error.
+
+13
+00:00:39,330 --> 00:00:40,880
+And then we are going to show the user.
+
+14
+00:00:40,980 --> 00:00:47,340
+But then if it's another form to then it's probably a problem of Beaufoy zation or an ex-pat CSR we
+
+15
+00:00:47,360 --> 00:00:52,250
+have to kill or 500 so we're just going to tell the user please there was an error on the server.
+
+16
+00:00:52,260 --> 00:00:57,090
+Please refresh your page so that you get fresh data and then you start making the correct API calls.
+
+17
+00:00:57,180 --> 00:00:57,660
+OK.
+
+18
+00:00:57,810 --> 00:00:59,180
+So how do we handle this.
+
+19
+00:00:59,190 --> 00:01:07,220
+So here we'll just see if response does the response and maybe we should change this into error so our
+
+20
+00:01:07,270 --> 00:01:08,610
+a response.
+
+21
+00:01:08,640 --> 00:01:15,140
+For starters because 4:22 then we're simply going to notify the user or he's validation was off.
+
+22
+00:01:15,180 --> 00:01:21,750
+So we'd have a window that note the method we created and the type is going to be danger and the message
+
+23
+00:01:21,780 --> 00:01:25,090
+screen to be had for Ed..
+
+24
+00:01:25,310 --> 00:01:28,220
+It's frustrating frocking.
+
+25
+00:01:28,380 --> 00:01:35,400
+And we actually might never hit this point because we are making sure that our validation is valid from
+
+26
+00:01:35,460 --> 00:01:36,280
+our front end.
+
+27
+00:01:36,300 --> 00:01:43,800
+So we are not sending any data from VGX but it just helps to know that we can do that then we're going
+
+28
+00:01:43,800 --> 00:01:50,880
+to see if this actually does not notify then that means we have a 500 here or for one then what we are
+
+29
+00:01:50,880 --> 00:01:53,350
+going to do is simply notify the user.
+
+30
+00:01:54,340 --> 00:01:55,330
+Something when you are on.
+
+31
+00:01:55,390 --> 00:01:56,560
+Please refresh please.
+
+32
+00:01:56,620 --> 00:01:57,110
+OK.
+
+33
+00:01:57,160 --> 00:02:01,600
+So this is going to be type of danger and we're going to move this console a lot right here.
+
+34
+00:02:01,680 --> 00:02:02,020
+OK.
+
+35
+00:02:02,020 --> 00:02:06,770
+So if there is just a school of watching to then you should try the user search.
+
+36
+00:02:06,970 --> 00:02:11,000
+And then if it wasn't a fortune E-2 means not validation error.
+
+37
+00:02:11,170 --> 00:02:13,080
+This is what we're going to tell the user.
+
+38
+00:02:13,210 --> 00:02:13,840
+OK.
+
+39
+00:02:13,840 --> 00:02:19,450
+So this is how we're going to be handling the airforce and we can actually build veejays front end in
+
+40
+00:02:19,450 --> 00:02:23,360
+such a way that it's never going to send wrong data to the server.
+
+41
+00:02:23,410 --> 00:02:28,010
+And probably the only areas that we're going to be getting are 500 million or so.
+
+42
+00:02:28,230 --> 00:02:34,080
+We just had a request for some reason but it's always good to handle for us and we have that's called
+
+43
+00:02:34,090 --> 00:02:37,790
+Reach on the back end to make sure that it actually works perfectly.
+
+44
+00:02:37,960 --> 00:02:39,270
+So what do we do.
+
+45
+00:02:39,280 --> 00:02:41,590
+Do we copy this exact thing.
+
+46
+00:02:41,770 --> 00:02:49,540
+Everywhere we have a console that lock like in the create lesson the view right here and paste this
+
+47
+00:02:49,540 --> 00:02:51,690
+in because this is what we want right.
+
+48
+00:02:52,890 --> 00:02:54,350
+So this is going to be everywhere.
+
+49
+00:02:54,690 --> 00:02:59,990
+And we'll get those forms and statues and do exactly the same thing and same thing right here.
+
+50
+00:03:00,120 --> 00:03:01,080
+Right.
+
+51
+00:03:01,080 --> 00:03:06,100
+So it gets in the air or after the EPA request checking if it's unfortunate too.
+
+52
+00:03:06,120 --> 00:03:09,770
+And if it's not performing to then we simply tell the user to refresh the speech.
+
+53
+00:03:09,780 --> 00:03:11,430
+So is this what we're going to be doing.
+
+54
+00:03:11,550 --> 00:03:15,840
+I think we should actually hide this functionality behind a blue bar method.
+
+55
+00:03:15,930 --> 00:03:16,490
+OK.
+
+56
+00:03:16,590 --> 00:03:23,190
+So ahead of what's in my app that jazz and I'm simply going to create a global error handler so window
+
+57
+00:03:23,430 --> 00:03:26,050
+door handle all the because function.
+
+58
+00:03:26,190 --> 00:03:28,200
+And this is what we want to do.
+
+59
+00:03:28,200 --> 00:03:32,370
+Therefore we want to parse into this My thought is the error that it's trying to handle.
+
+60
+00:03:32,430 --> 00:03:32,820
+OK.
+
+61
+00:03:32,870 --> 00:03:37,000
+So in the Arrow and then the method is going to take care of the rest.
+
+62
+00:03:37,000 --> 00:03:43,050
+Therefore now that we have this eval we can headbutts or quick lessons and rather than doing this we
+
+63
+00:03:43,050 --> 00:03:50,070
+can pool all of this out and right we know the tendu error us on passing the error and sure enough we
+
+64
+00:03:50,070 --> 00:03:51,690
+have to catch the roll right here.
+
+65
+00:03:51,840 --> 00:03:52,300
+OK.
+
+66
+00:03:52,470 --> 00:03:56,490
+So we simply handled or using that like Lubo error handler.
+
+67
+00:03:56,550 --> 00:04:00,940
+So pull all this and paste that handle or mid-thought right there.
+
+68
+00:04:01,050 --> 00:04:05,970
+But we should probably do exactly the same thing in our lessons to see if we catch an error or simply
+
+69
+00:04:05,970 --> 00:04:08,740
+call for her to undo the error.
+
+70
+00:04:08,880 --> 00:04:13,590
+So I think that safer error handling in the next video we're going to start actually doing a complete
+
+71
+00:04:13,830 --> 00:04:19,320
+refracts or cleaning up features before we actually move on to our next step.
+

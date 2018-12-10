@@ -1,0 +1,340 @@
+1
+00:00:01,420 --> 00:00:06,550
+Welcome back I like us to going to a service or truly understand what fortune is doing for us behind
+
+2
+00:00:06,550 --> 00:00:07,260
+the scenes.
+
+3
+00:00:07,420 --> 00:00:13,450
+So when you quit to new sites on FOX on your server is going to send you the logging credentials for
+
+4
+00:00:13,450 --> 00:00:14,020
+that server.
+
+5
+00:00:14,050 --> 00:00:19,790
+For example it's going to tell you about the use of all sorts of metrically Cretans and for each of
+
+6
+00:00:19,790 --> 00:00:22,310
+you get into the server you need to use a search.
+
+7
+00:00:22,420 --> 00:00:22,900
+OK.
+
+8
+00:00:23,050 --> 00:00:27,490
+So this is a show on how to set up S-sh for the Mac OS.
+
+9
+00:00:27,550 --> 00:00:29,170
+You don't need to read all of this stuff.
+
+10
+00:00:29,170 --> 00:00:30,700
+All you need to do is run this command.
+
+11
+00:00:30,820 --> 00:00:38,380
+And this is simply saying generates a new S-sh key and then you can set up a passphrase if you want.
+
+12
+00:00:38,440 --> 00:00:41,730
+And it's good to see that to that directory is a try.
+
+13
+00:00:41,740 --> 00:00:43,640
+And finally all you need to do is copy it.
+
+14
+00:00:43,720 --> 00:00:44,180
+OK.
+
+15
+00:00:44,260 --> 00:00:46,710
+So this generates on these copies.
+
+16
+00:00:46,870 --> 00:00:47,530
+That's it.
+
+17
+00:00:47,530 --> 00:00:50,890
+So once you copy that key you cannot hide your faults.
+
+18
+00:00:51,430 --> 00:00:55,690
+And on the keys you can add a new key just like I did.
+
+19
+00:00:55,840 --> 00:00:56,220
+OK.
+
+20
+00:00:56,230 --> 00:01:01,970
+So when you copy you just need to do a control V or command V and that's going to be the key right there.
+
+21
+00:01:01,990 --> 00:01:03,190
+And you can give it any name.
+
+22
+00:01:03,340 --> 00:01:03,770
+OK.
+
+23
+00:01:03,880 --> 00:01:08,950
+So if you don't challenge keep doing that every time you create a news server you can head over to my
+
+24
+00:01:09,010 --> 00:01:12,700
+accounts and and the key is you can add the SS key right here.
+
+25
+00:01:12,730 --> 00:01:17,520
+Which means every time you create a new server which automatically add that to that server.
+
+26
+00:01:17,520 --> 00:01:22,060
+Now if you own a Windows computer what you need to do is such an awful lot show like here it's just
+
+27
+00:01:22,060 --> 00:01:23,590
+sets off the SS key.
+
+28
+00:01:23,590 --> 00:01:28,360
+So it's a rather lengthy process but all you need to do is download this Puchi application which is
+
+29
+00:01:28,360 --> 00:01:31,010
+going to generate an SS key for your local machine.
+
+30
+00:01:31,060 --> 00:01:33,340
+Once that's generated You can not copy it.
+
+31
+00:01:33,400 --> 00:01:37,740
+And also do exactly the same thing in your forte dashboard.
+
+32
+00:01:37,900 --> 00:01:38,350
+OK.
+
+33
+00:01:38,410 --> 00:01:42,550
+So let's head over to my costs and see what's going on inside.
+
+34
+00:01:42,760 --> 00:01:50,740
+So I'm going to open my terminal and I'm going to see S-sh and the fortunes of Ott's but broadcast the
+
+35
+00:01:50,740 --> 00:01:54,550
+column or I can actually use to save our IP address.
+
+36
+00:01:54,730 --> 00:01:55,130
+OK.
+
+37
+00:01:55,180 --> 00:01:56,950
+So I mean so as easy as that.
+
+38
+00:01:56,950 --> 00:02:00,170
+Once I set up this message key I can get into my server.
+
+39
+00:02:00,400 --> 00:02:00,700
+OK.
+
+40
+00:02:00,700 --> 00:02:06,970
+So let's see what's going on here unless we see that we have a list of Dubay trees and these trees actually
+
+41
+00:02:06,970 --> 00:02:11,270
+look at the videos on different sites that they have on the server.
+
+42
+00:02:11,410 --> 00:02:15,430
+If I was locked in I would then I'm going to actually be in the woods.
+
+43
+00:02:15,450 --> 00:02:19,030
+But then the Fauchery has permissions right in this direction right here.
+
+44
+00:02:19,110 --> 00:02:19,850
+OK.
+
+45
+00:02:20,050 --> 00:02:21,990
+So this is the art we are working with.
+
+46
+00:02:22,000 --> 00:02:29,110
+So I'm just going to see into you then move that back cause a comb and I'm going to glass right there
+
+47
+00:02:29,380 --> 00:02:36,700
+and you see inside this debate you have an exact replica of our occupation just like it is in our local
+
+48
+00:02:36,700 --> 00:02:42,590
+machines because we are pushing to get tall and then automatically double front simply Puli from here.
+
+49
+00:02:42,690 --> 00:02:43,150
+OK.
+
+50
+00:02:43,240 --> 00:02:45,940
+So this is how the application looks behind the scenes.
+
+51
+00:02:45,940 --> 00:02:50,810
+Nothing too complicated he just pours into this tree every time we deploy.
+
+52
+00:02:50,860 --> 00:02:51,270
+OK.
+
+53
+00:02:51,340 --> 00:02:56,230
+And of course this contributions for genetics and all of that good stuff going on on the server too.
+
+54
+00:02:56,230 --> 00:02:59,490
+But what I want to show you right now is I will told each direction.
+
+55
+00:02:59,590 --> 00:03:07,120
+So if I sit in a each and and that's when they say into my office and unless you discover that we have
+
+56
+00:03:07,120 --> 00:03:08,470
+a label does not follow.
+
+57
+00:03:08,620 --> 00:03:13,630
+So when you want to debunk the application or your application hasn't ever in production what you can
+
+58
+00:03:13,630 --> 00:03:15,380
+do is simply Nundle.
+
+59
+00:03:15,480 --> 00:03:21,000
+Now will that lock and the system going to print out the results or the contents of this law will that
+
+60
+00:03:21,070 --> 00:03:24,550
+not fall because knobbly still going to keep logging into this file.
+
+61
+00:03:24,670 --> 00:03:25,210
+OK.
+
+62
+00:03:25,300 --> 00:03:28,370
+So for example this is the latest that I have.
+
+63
+00:03:28,600 --> 00:03:33,110
+It says based on your log file you need that but Cazotte whatever.
+
+64
+00:03:33,280 --> 00:03:33,700
+OK.
+
+65
+00:03:33,820 --> 00:03:37,600
+So on production is simply going to tell you something went wrong.
+
+66
+00:03:37,690 --> 00:03:41,990
+But then when you come to your server you can actually see what that was.
+
+67
+00:03:42,090 --> 00:03:42,520
+OK.
+
+68
+00:03:42,640 --> 00:03:47,740
+So this is because I tried to visit the site without the plain meaning without my greeting in my database
+
+69
+00:03:48,270 --> 00:03:49,390
+migrations.
+
+70
+00:03:49,420 --> 00:03:55,420
+So if you want to debug the application you can actually Kongji are liable to lock fire in your production
+
+71
+00:03:55,420 --> 00:03:56,680
+server and then check it out.
+
+72
+00:03:56,800 --> 00:03:57,300
+OK.
+
+73
+00:03:57,400 --> 00:04:02,350
+So we're going to talk about how to set up better error handling in a future.
+
+74
+00:04:02,500 --> 00:04:06,820
+But for now you just need to understand how to get to your server and sometimes you might need to get
+
+75
+00:04:06,820 --> 00:04:07,060
+in.
+
+76
+00:04:07,080 --> 00:04:12,830
+So what's a fix much conflicts or to fix get problems on stuff like that.
+
+77
+00:04:12,850 --> 00:04:15,240
+This is how you get into your server.
+
+78
+00:04:15,360 --> 00:04:15,690
+OK.
+
+79
+00:04:15,730 --> 00:04:19,000
+So to exit the server I just need to exit.
+
+80
+00:04:19,240 --> 00:04:19,540
+OK.
+
+81
+00:04:19,540 --> 00:04:21,030
+So that's how we get into our server.
+
+82
+00:04:21,070 --> 00:04:22,430
+That's how it looks inside.
+
+83
+00:04:22,540 --> 00:04:27,990
+Pretty much exactly the same thing but now we know almost Phuoc that she's doing for us behind the scenes.
+
+84
+00:04:28,120 --> 00:04:30,390
+OK so I'm going to hit pause right now.
+
+85
+00:04:30,400 --> 00:04:33,230
+We're going to keep talking about watching the very next video.
+

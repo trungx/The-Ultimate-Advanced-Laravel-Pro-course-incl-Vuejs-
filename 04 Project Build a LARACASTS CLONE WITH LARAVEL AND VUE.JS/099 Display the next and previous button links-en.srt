@@ -1,0 +1,280 @@
+1
+00:00:00,540 --> 00:00:07,050
+In the last couple of lessons who creates a next and previous lessons math thought and then we also
+
+2
+00:00:07,050 --> 00:00:15,520
+quit a get or lessons method so we can get next boobish can also get all the lessons so let's go ahead
+
+3
+00:00:15,520 --> 00:00:23,080
+and use them on this page or head over to my watch that played the PH B and B can now have some buttons.
+
+4
+00:00:23,110 --> 00:00:24,610
+Awesome 8 arcs.
+
+5
+00:00:25,030 --> 00:00:34,150
+So I'll just give aid and box on the bottom in full and this is going to link to a page where we can
+
+6
+00:00:34,150 --> 00:00:36,330
+watch the next lesson.
+
+7
+00:00:36,340 --> 00:00:39,880
+So I'm going to see next lesson right here.
+
+8
+00:00:40,000 --> 00:00:40,730
+OK.
+
+9
+00:00:40,750 --> 00:00:50,380
+And we are also going to have a button that button in full and this is also going to link to where we
+
+10
+00:00:50,380 --> 00:00:52,660
+can watch the previous lesson.
+
+11
+00:00:52,690 --> 00:01:00,290
+So remember we can actually get the next lesson and previous lesson and also put the titles like here.
+
+12
+00:01:00,420 --> 00:01:00,780
+OK.
+
+13
+00:01:00,800 --> 00:01:02,830
+But we're not going to worry much about that.
+
+14
+00:01:02,830 --> 00:01:05,360
+Now let's have a watch on whether be.
+
+15
+00:01:05,770 --> 00:01:13,490
+And we have this watch Sui's show less and more thought and the name a series that watch which is expected
+
+16
+00:01:13,490 --> 00:01:15,940
+in the series and accepts in the lesson.
+
+17
+00:01:15,940 --> 00:01:24,850
+Therefore we can use that right here so we can see how it's a serious watch and would pass in the series
+
+18
+00:01:25,080 --> 00:01:29,110
+which should be lesson series snark.
+
+19
+00:01:29,280 --> 00:01:35,260
+Oh I think we actually passed a series from the controller must check the watch was controller.
+
+20
+00:01:35,470 --> 00:01:38,560
+And we actually passing passing the series and this is really going to help us.
+
+21
+00:01:38,590 --> 00:01:46,320
+So we don't have to make this query right here so we'll just have serious should be serious SLOC.
+
+22
+00:01:46,390 --> 00:01:55,100
+And the lesson should be lesson get the next lesson and get the idea.
+
+23
+00:01:55,330 --> 00:02:01,690
+Right now we only want to display these Matsen if we actually have a next lesson.
+
+24
+00:02:01,840 --> 00:02:02,570
+Right.
+
+25
+00:02:02,590 --> 00:02:07,280
+So I would say if lesson get next lesson.
+
+26
+00:02:07,420 --> 00:02:10,410
+And if they're all based in the method.
+
+27
+00:02:10,570 --> 00:02:11,160
+OK.
+
+28
+00:02:11,260 --> 00:02:18,850
+So if we have a good next lesson then place make sure you displayed the link so that user can view the
+
+29
+00:02:18,850 --> 00:02:19,800
+next lesson.
+
+30
+00:02:19,810 --> 00:02:25,720
+So we have like let's get next lesson that we pass the ID and the squinch automatically take us to the
+
+31
+00:02:25,720 --> 00:02:28,330
+same page but we can watch the next lesson.
+
+32
+00:02:28,420 --> 00:02:31,420
+So we're going to do exactly the same thing for the previous lesson.
+
+33
+00:02:31,630 --> 00:02:40,000
+So just copy this and paste it right here and read it and get next lesson we'll use GET previous lesson.
+
+34
+00:02:40,510 --> 00:02:48,890
+And this would point to get previous lesson would see previous lesson and I think it's all set to try
+
+35
+00:02:49,040 --> 00:02:50,200
+this out.
+
+36
+00:02:50,330 --> 00:02:58,100
+So at the moment let's visit that page refresh and there's aspects that we don't have in the next and
+
+37
+00:02:58,100 --> 00:03:01,830
+few years because we don't have any other lessons for the series.
+
+38
+00:03:02,030 --> 00:03:09,830
+So it's on my service visit this one and I'm going to add a new lesson the lessons Aitu is going to
+
+39
+00:03:09,830 --> 00:03:15,310
+be what this course called Vohs the lesson VDU idea.
+
+40
+00:03:15,530 --> 00:03:20,380
+I'm going to get from V.M. any one on video.
+
+41
+00:03:20,420 --> 00:03:22,200
+The EPS number would be 200.
+
+42
+00:03:22,220 --> 00:03:30,940
+Because I want this to be done next and the description of course description something like that.
+
+43
+00:03:31,090 --> 00:03:31,650
+OK.
+
+44
+00:03:31,820 --> 00:03:34,030
+Then on Vimeo that's just fine.
+
+45
+00:03:34,040 --> 00:03:35,160
+We do.
+
+46
+00:03:35,450 --> 00:03:36,630
+And looks like an embed.
+
+47
+00:03:36,620 --> 00:03:40,000
+It's all just copied I.D. basic right there.
+
+48
+00:03:40,160 --> 00:03:40,640
+And great.
+
+49
+00:03:40,640 --> 00:03:43,490
+We have a new lesson.
+
+50
+00:03:43,490 --> 00:03:48,410
+So I just quick lesson so that we can actually see this in action.
+
+51
+00:03:48,620 --> 00:03:54,320
+And I'm just going to get another video and then I'm going to paste it in right there on the screen
+
+52
+00:03:54,320 --> 00:03:59,830
+TV be view out or introduction or whatever.
+
+53
+00:04:00,320 --> 00:04:02,680
+And this is going to be a piece at 300.
+
+54
+00:04:02,750 --> 00:04:07,610
+And he's going to be using Virata are in your applications.
+
+55
+00:04:07,760 --> 00:04:08,350
+OK.
+
+56
+00:04:08,420 --> 00:04:12,970
+So create lesson and we have that creature for us.
+
+57
+00:04:12,990 --> 00:04:20,760
+Now let's reset our visit our course consignor learning and we have our next lesson button right because
+
+58
+00:04:20,760 --> 00:04:27,510
+this is the first lesson if you click on this it takes us to lessons you and we have our next and previous
+
+59
+00:04:27,510 --> 00:04:28,850
+lesson buttons.
+
+60
+00:04:28,950 --> 00:04:29,640
+OK.
+
+61
+00:04:29,640 --> 00:04:31,290
+Because this is the second lesson.
+
+62
+00:04:31,440 --> 00:04:37,920
+But if you go to the next lesson we have only the previous lesson button because we are on Lesson three
+
+63
+00:04:38,190 --> 00:04:45,320
+and we can go to the previous and using this button and we can go to the previous and it works as expected.
+
+64
+00:04:45,410 --> 00:04:45,930
+OK.
+
+65
+00:04:45,960 --> 00:04:51,760
+And notice that once we actually visit those lessons we have the correct video monitored.
+
+66
+00:04:51,840 --> 00:04:52,300
+OK.
+
+67
+00:04:52,380 --> 00:04:57,150
+So if I this next lesson we have automatically the video that we just embedded.
+
+68
+00:04:57,210 --> 00:04:57,620
+OK.
+
+69
+00:04:57,750 --> 00:05:00,050
+So looks like everything is working great.
+
+70
+00:05:00,060 --> 00:05:01,960
+See the very next episode.
+

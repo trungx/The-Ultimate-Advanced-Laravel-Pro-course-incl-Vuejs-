@@ -1,0 +1,148 @@
+1
+00:00:00,180 --> 00:00:03,590
+Why don't we find some requests to see what we get.
+
+2
+00:00:03,600 --> 00:00:08,940
+Now we have a couple of toys this year either extracts or methods that have to do with authentication.
+
+3
+00:00:08,940 --> 00:00:11,800
+It's one of integrations or something like that.
+
+4
+00:00:11,930 --> 00:00:15,600
+Oh we just make the sequence right here in our component.
+
+5
+00:00:15,600 --> 00:00:21,650
+Now I'm going to actually make it right here in a component but in case we see that it's overloading
+
+6
+00:00:21,710 --> 00:00:25,680
+complains we are going to move it future to one of service.
+
+7
+00:00:25,830 --> 00:00:29,960
+OK so let's go ahead and set that up for us to make an Ajax request.
+
+8
+00:00:30,010 --> 00:00:31,960
+Import Agnew's from yours.
+
+9
+00:00:32,010 --> 00:00:33,650
+Because this is what we're going to be using.
+
+10
+00:00:33,780 --> 00:00:39,070
+Now we just need to find a click event to this Matsen which is a logging button.
+
+11
+00:00:39,150 --> 00:00:42,160
+So a click equals attempts logging.
+
+12
+00:00:42,250 --> 00:00:43,900
+OK so let's create that thought.
+
+13
+00:00:43,950 --> 00:00:49,860
+No MFX object attempts logging is going to be one of the thoughts and this mid-thought First of all
+
+14
+00:00:49,860 --> 00:00:56,190
+making a call to use that post and simply of the slash logging routes and the object that repassing
+
+15
+00:00:56,190 --> 00:01:01,230
+into exiles is an e-mail which is this email password.
+
+16
+00:01:01,280 --> 00:01:07,170
+This is distant password and remember a key just so clarity and can show that we're actually passing
+
+17
+00:01:07,620 --> 00:01:14,550
+in the correct attributes that are the ones who are logging control and also into our authenticates
+
+18
+00:01:14,550 --> 00:01:19,030
+use US creates to see what our End Point is actually expecting.
+
+19
+00:01:19,140 --> 00:01:26,670
+So validate logging method is expecting also to pass in an e-mail because that's what this username
+
+20
+00:01:26,850 --> 00:01:32,270
+which turns on a password and an optional Parminter is used in logging.
+
+21
+00:01:32,340 --> 00:01:34,980
+Mid-thought right here which is called member.
+
+22
+00:01:35,100 --> 00:01:41,190
+So e-mail password and remember are passed to the server and then simply listen to what we have as a
+
+23
+00:01:41,190 --> 00:01:42,410
+response.
+
+24
+00:01:42,420 --> 00:01:46,920
+So for now we're simply going to see console that lock the response that you have on the server.
+
+25
+00:01:46,990 --> 00:01:51,260
+And in case you catch any errors just speed them to the console for now.
+
+26
+00:01:51,420 --> 00:01:52,000
+OK.
+
+27
+00:01:52,050 --> 00:01:56,560
+So let's go ahead and try this out and we're going to be trying this out with a valid user.
+
+28
+00:01:56,850 --> 00:02:02,100
+So let's just go up and use our pitch we are Sun sync our app user.
+
+29
+00:02:02,370 --> 00:02:06,230
+And I'm going to grab his e-mail and I'm to open up my phone.
+
+30
+00:02:06,240 --> 00:02:11,820
+He's studying us in secret us the password watch out for my console.
+
+31
+00:02:11,820 --> 00:02:13,380
+Click on the log in my thought.
+
+32
+00:02:13,380 --> 00:02:18,870
+Looks like we have a successor who responds because of the 200 stodginess but the dates are that we
+
+33
+00:02:18,870 --> 00:02:20,750
+receive is not really expected.
+
+34
+00:02:20,850 --> 00:02:24,640
+Let's go ahead and check up on networks to see what we have.
+
+35
+00:02:24,750 --> 00:02:27,770
+OK so we have dashboard you are locked in.
+
+36
+00:02:27,780 --> 00:02:30,390
+So it's actually the return of you to us.
+
+37
+00:02:30,480 --> 00:02:33,570
+Let's go ahead and fix this in the very next video.
+

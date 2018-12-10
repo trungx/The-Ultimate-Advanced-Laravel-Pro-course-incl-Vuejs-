@@ -1,0 +1,372 @@
+1
+00:00:00,240 --> 00:00:04,950
+I want to modify it a little bit and then we're going to write some new tests to introduce the concept
+
+2
+00:00:04,950 --> 00:00:08,760
+of validation into our series creation.
+
+3
+00:00:08,790 --> 00:00:14,350
+Therefore in my Cretu is test right here I want to assert that this session has something.
+
+4
+00:00:14,400 --> 00:00:22,660
+So I said session hahs are successfully and this should be equal to series creature successfully.
+
+5
+00:00:22,710 --> 00:00:24,060
+OK so let's run that test.
+
+6
+00:00:24,060 --> 00:00:26,180
+And I think you should feel right now.
+
+7
+00:00:26,460 --> 00:00:29,690
+OK so there's no sessions set for series.
+
+8
+00:00:29,850 --> 00:00:35,040
+So let's have a robot or a controller and we could actually set up the Session right here.
+
+9
+00:00:35,070 --> 00:00:40,920
+So session called a flush mid-thought on the session class and this is going to see success key should
+
+10
+00:00:40,920 --> 00:00:44,680
+be quarter exactly the same stream that we have right here.
+
+11
+00:00:44,760 --> 00:00:45,990
+Let's run that again.
+
+12
+00:00:46,080 --> 00:00:47,740
+And sure enough we have gui.
+
+13
+00:00:47,770 --> 00:00:53,260
+Now one thing I want to point out in our test is we're simply testing a strategy that makes right here.
+
+14
+00:00:53,550 --> 00:00:58,370
+You remember if that's what you feel you are still going to be debated of.
+
+15
+00:00:58,410 --> 00:01:01,860
+We have a mistake on error we'd might still be redirected.
+
+16
+00:01:01,860 --> 00:01:08,060
+So to make sure that you have a successful test or a successful test that actually makes sense.
+
+17
+00:01:08,070 --> 00:01:10,070
+Make sure you specify a direct path.
+
+18
+00:01:10,200 --> 00:01:17,210
+So for example if you want to make sure that they use that to mean slushed series after the farly successfully
+
+19
+00:01:17,230 --> 00:01:22,900
+upload it or after the series is successfully created then make sure you specify a path and then in
+
+20
+00:01:22,910 --> 00:01:27,540
+your control to make sure when you're redirecting to use or you specify that we debate path.
+
+21
+00:01:27,610 --> 00:01:28,220
+Right.
+
+22
+00:01:28,240 --> 00:01:33,110
+So that for now I'm not going to worry about that because I want to write test for the validation.
+
+23
+00:01:33,210 --> 00:01:35,100
+OK so let's jump straight into it.
+
+24
+00:01:35,120 --> 00:01:37,050
+It's a public function test.
+
+25
+00:01:37,170 --> 00:01:40,460
+A series must be created with Title.
+
+26
+00:01:40,560 --> 00:01:40,980
+OK.
+
+27
+00:01:41,010 --> 00:01:44,430
+So how do we want to test this validation.
+
+28
+00:01:44,490 --> 00:01:46,570
+We want to make a post request.
+
+29
+00:01:46,620 --> 00:01:52,930
+We doubt the title field and then see if we are actually going to be redirected back with some errors.
+
+30
+00:01:53,000 --> 00:01:53,620
+OK.
+
+31
+00:01:53,640 --> 00:01:59,580
+So let's just copy this and I'm going to plug the title meaning we didn't pass in the title in the inquest
+
+32
+00:01:59,580 --> 00:02:06,540
+we simply passed in description and found and then we're going to assert we direct and a pathway such
+
+33
+00:02:06,690 --> 00:02:08,130
+that it was redirected to.
+
+34
+00:02:08,200 --> 00:02:15,530
+I mean Sui's create and we actually can test if the session has errors by using the US-CERT session.
+
+35
+00:02:15,560 --> 00:02:20,290
+It was my thought and we can specify that we want to check if there's an ever fall title.
+
+36
+00:02:20,390 --> 00:02:20,810
+OK.
+
+37
+00:02:20,820 --> 00:02:22,390
+So I said if we were invited.
+
+38
+00:02:22,510 --> 00:02:24,870
+So I said that the session has errors.
+
+39
+00:02:24,930 --> 00:02:28,760
+So let's go ahead and try this out with one specific test.
+
+40
+00:02:28,830 --> 00:02:31,860
+Yeah we have a 500 Let's go ahead and see what we have.
+
+41
+00:02:32,190 --> 00:02:38,180
+We just able exception handling to have a better eval so based that in wonder again.
+
+42
+00:02:38,220 --> 00:02:42,960
+Ever see since integrity constraint violation for the field title.
+
+43
+00:02:42,960 --> 00:02:49,350
+So it means we're actually trying to create the series We the title meaning our foundation was are not
+
+44
+00:02:49,390 --> 00:02:50,200
+evil.
+
+45
+00:02:50,490 --> 00:02:56,280
+So let's head over to our controller and we see right here we are actually referencing a custom object
+
+46
+00:02:56,310 --> 00:03:00,300
+therefore we can reference some additional moves in our Carstone object.
+
+47
+00:03:00,300 --> 00:03:06,810
+So create serious request and what we could do is right here we have our wars array so we can see title
+
+48
+00:03:06,990 --> 00:03:07,860
+should be required.
+
+49
+00:03:07,930 --> 00:03:10,900
+OK let's run that test one more time.
+
+50
+00:03:10,950 --> 00:03:13,270
+And the arrow that given the time was involved.
+
+51
+00:03:13,290 --> 00:03:16,200
+So it was a validation exception.
+
+52
+00:03:16,200 --> 00:03:21,920
+Now what we can to do is head of about two hours SEST and plug this method.
+
+53
+00:03:22,020 --> 00:03:28,290
+And I think our tests actually succeed our Southern US field as such in lots of streams much and it's
+
+54
+00:03:28,290 --> 00:03:29,840
+telling us this is what we expected.
+
+55
+00:03:29,850 --> 00:03:31,060
+But this is what we have.
+
+56
+00:03:31,080 --> 00:03:37,260
+Can explain why he does that later but for now let's just pull out this assertion for redirects and
+
+57
+00:03:37,260 --> 00:03:40,680
+simply assert that the session house was run at.
+
+58
+00:03:40,730 --> 00:03:42,140
+Yeah and of course we get green.
+
+59
+00:03:42,230 --> 00:03:46,060
+Let's wait another test to make sure that it's created with a description.
+
+60
+00:03:46,110 --> 00:03:52,230
+So I'm just going to duplicate this on the Test series be created with a description and rather than
+
+61
+00:03:52,230 --> 00:03:58,380
+passing in a description here will pass in a title and make sure that the session has a process for
+
+62
+00:03:58,500 --> 00:03:59,280
+description.
+
+63
+00:03:59,340 --> 00:04:00,010
+OK.
+
+64
+00:04:00,090 --> 00:04:08,370
+So that's one that it fails but let's try to put you in addition for description so description must
+
+65
+00:04:08,370 --> 00:04:09,500
+be required.
+
+66
+00:04:09,610 --> 00:04:12,100
+If that run the test again.
+
+67
+00:04:12,420 --> 00:04:13,770
+And of course it passes.
+
+68
+00:04:13,770 --> 00:04:16,570
+Now let's just do one more for our image.
+
+69
+00:04:16,590 --> 00:04:22,260
+But I think the image is going to have to but let's just do one more duplicate dart and we're going
+
+70
+00:04:22,260 --> 00:04:29,370
+to pull out that image in this case I'm passing the description and show you see it's isoceles was created
+
+71
+00:04:29,370 --> 00:04:31,020
+with an image.
+
+72
+00:04:31,170 --> 00:04:31,650
+OK.
+
+73
+00:04:31,680 --> 00:04:38,050
+So I said assertion house was for image that's run a test it fails.
+
+74
+00:04:38,130 --> 00:04:43,510
+Let's make sure we have a variation we'll for image should be required to run that test.
+
+75
+00:04:43,860 --> 00:04:44,340
+Yeah.
+
+76
+00:04:44,400 --> 00:04:45,800
+And it is.
+
+77
+00:04:46,050 --> 00:04:53,200
+Now why don't we make sure that the image must be an image so let's duplicate this test and actually
+
+78
+00:04:53,220 --> 00:04:55,330
+pass in the image in this case.
+
+79
+00:04:55,350 --> 00:04:57,930
+So I'm going to copy this of that file.
+
+80
+00:04:57,990 --> 00:05:02,660
+But we're going to pass in streams stream in a valley.
+
+81
+00:05:02,670 --> 00:05:09,320
+MH OK then we're going to assert that you have arrows for image and you can also assert that the error
+
+82
+00:05:09,320 --> 00:05:15,750
+is actually of a particular type but we're just going to leave it as such then require is the only foundation.
+
+83
+00:05:15,760 --> 00:05:18,100
+So let's run that fast.
+
+84
+00:05:18,180 --> 00:05:20,330
+I'm sorry I didn't change the name.
+
+85
+00:05:20,450 --> 00:05:26,550
+So with an image which is actually an image run it fails.
+
+86
+00:05:26,660 --> 00:05:31,740
+But let's just try to put in an image validation to see what we get.
+
+87
+00:05:31,770 --> 00:05:34,560
+Run it one more time and we pass.
+
+88
+00:05:35,130 --> 00:05:41,210
+Now law also provides us with a way to test for the dimensions of the image but we're not going to worry
+
+89
+00:05:41,210 --> 00:05:42,050
+about that now.
+
+90
+00:05:42,170 --> 00:05:47,720
+I think this test would actually make sure that we upload a correct image and the user can create a
+
+91
+00:05:47,740 --> 00:05:52,720
+series with a title description and an image with a valid image also.
+
+92
+00:05:52,880 --> 00:05:54,670
+So great job in this video.
+
+93
+00:05:54,670 --> 00:05:56,890
+Let's make some progress in the next one.
+

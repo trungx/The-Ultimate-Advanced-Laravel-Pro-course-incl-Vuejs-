@@ -1,0 +1,552 @@
+1
+00:00:00,260 --> 00:00:02,480
+Let's begin with our ministration.
+
+2
+00:00:02,490 --> 00:00:06,290
+So first of all I'm going to go to my theme and I have the space register.
+
+3
+00:00:06,310 --> 00:00:13,110
+Accion all I'm going to copy it at what's on my registar the late the PH We are going to pull everything
+
+4
+00:00:13,100 --> 00:00:14,390
+right there in space.
+
+5
+00:00:14,490 --> 00:00:21,360
+Now I don't really have any problem actually duplicating this because it's seemingly complicated to
+
+6
+00:00:21,360 --> 00:00:26,670
+actually use exactly the same layout for now because we're going to have to use a bunch of your Stedman's
+
+7
+00:00:26,670 --> 00:00:31,470
+to actually check if this is the registration page because this is such a little thing doesn't really
+
+8
+00:00:31,470 --> 00:00:32,130
+matter.
+
+9
+00:00:32,130 --> 00:00:34,250
+I'm going to go ahead and do it this week.
+
+10
+00:00:34,460 --> 00:00:34,790
+OK.
+
+11
+00:00:34,800 --> 00:00:36,710
+So we have just register page.
+
+12
+00:00:36,760 --> 00:00:40,070
+Richard Travis this the box and see what we have registar.
+
+13
+00:00:40,230 --> 00:00:44,990
+And we have this recession page with this beautiful background image and shake it off.
+
+14
+00:00:45,000 --> 00:00:49,620
+We could actually use this registration page to copy or get the user's credentials.
+
+15
+00:00:49,640 --> 00:00:51,960
+He's caught to subscribing to a planet.
+
+16
+00:00:51,970 --> 00:00:53,110
+But that's going to be needed.
+
+17
+00:00:53,220 --> 00:00:55,260
+So for now let's focus on what we want.
+
+18
+00:00:55,260 --> 00:01:00,600
+We want to get to use this e-mail address and the password right so that we get the user name and then
+
+19
+00:01:00,600 --> 00:01:05,450
+we're going to automatically urging them to use US username behind the scenes which means we're still
+
+20
+00:01:05,460 --> 00:01:07,290
+going to write a little bit.
+
+21
+00:01:07,290 --> 00:01:09,020
+The default for Lovelle.
+
+22
+00:01:09,030 --> 00:01:11,170
+So first of all let's set up this form.
+
+23
+00:01:11,290 --> 00:01:13,270
+You walk like Lovelle expects it to.
+
+24
+00:01:13,530 --> 00:01:15,260
+So head will form.
+
+25
+00:01:15,360 --> 00:01:18,110
+Make sure that we have a CSR field.
+
+26
+00:01:18,330 --> 00:01:25,440
+We have our action attributes and issue a truly VC slush registar and the name of this should be name.
+
+27
+00:01:25,440 --> 00:01:29,890
+So this is actually going to be full name if that's what we want.
+
+28
+00:01:30,150 --> 00:01:35,540
+And for us treacly exactly what Lavallee suspecting from last letter are the words or just stuck on.
+
+29
+00:01:35,730 --> 00:01:37,950
+And we're going to check out of conditionals.
+
+30
+00:01:38,010 --> 00:01:44,760
+So loverly suspect in a name field an email which must be unique to the table and the password.
+
+31
+00:01:44,850 --> 00:01:46,530
+So we need to pass in the e-mail.
+
+32
+00:01:46,530 --> 00:01:54,850
+So a name for this field should be e-mail changes to type e-mail just voice unified validation crossword.
+
+33
+00:01:54,900 --> 00:02:01,530
+And I don't want to do a password confirmation so I'm going to make sure I placed the name because password
+
+34
+00:02:01,740 --> 00:02:05,000
+and just range Arista control.
+
+35
+00:02:05,010 --> 00:02:07,320
+Let's just go ahead and see how it walks.
+
+36
+00:02:07,320 --> 00:02:10,370
+First of all we make a request to register and point.
+
+37
+00:02:10,470 --> 00:02:13,450
+And let's actually check out what the default is called.
+
+38
+00:02:13,470 --> 00:02:18,330
+So we are Sun Rock at least and it looks like largely calling a registar method.
+
+39
+00:02:18,330 --> 00:02:23,940
+So let's go ahead to this class and we can't find any reached effort here so we should be in a trade.
+
+40
+00:02:23,970 --> 00:02:24,820
+And then we go.
+
+41
+00:02:24,930 --> 00:02:26,720
+So let's get over it soon.
+
+42
+00:02:26,730 --> 00:02:32,320
+This tread is so registar use OSS and should actually find a register method.
+
+43
+00:02:32,330 --> 00:02:33,320
+There we go.
+
+44
+00:02:33,540 --> 00:02:41,910
+So first of all calls and this validates or validates that and maybe returns Barkworth any of us for
+
+45
+00:02:41,930 --> 00:02:48,260
+us any ventures see to use or successfully we just start and actually embedded in that event.
+
+46
+00:02:48,480 --> 00:02:51,380
+It's actually going automatically creates the user.
+
+47
+00:02:51,420 --> 00:02:53,500
+So user this creates.
+
+48
+00:02:53,500 --> 00:02:55,730
+So this is it's actually creating the user.
+
+49
+00:02:55,830 --> 00:03:01,790
+So it's going to create mid-thought on our register control right down here on the bottom and then it
+
+50
+00:03:01,810 --> 00:03:05,650
+lsen the use of romantically and then calls this Williston method.
+
+51
+00:03:05,670 --> 00:03:09,780
+All if this were just a method it's not defined just like authenticated.
+
+52
+00:03:09,960 --> 00:03:14,110
+It's automatically going with redirects the user to redirect path.
+
+53
+00:03:14,310 --> 00:03:17,290
+And with Derek puffa methode comes from these we Daryn.
+
+54
+00:03:17,300 --> 00:03:18,200
+Suzanne.
+
+55
+00:03:18,210 --> 00:03:18,640
+OK.
+
+56
+00:03:18,660 --> 00:03:20,900
+So what are we going to be doing.
+
+57
+00:03:20,910 --> 00:03:24,380
+Let's just stop writing from our on.
+
+58
+00:03:24,690 --> 00:03:26,690
+And then we're going to move forward.
+
+59
+00:03:26,740 --> 00:03:32,670
+So like we said we don't want a password confirmation so we just need to move the confirmed validation.
+
+60
+00:03:33,030 --> 00:03:34,140
+That's the first thing.
+
+61
+00:03:34,440 --> 00:03:38,000
+And we just need a name with an e-mail with us and a password.
+
+62
+00:03:38,160 --> 00:03:41,450
+I think that validation is actually good enough.
+
+63
+00:03:41,640 --> 00:03:45,710
+So we just need to submit the correct data to a post and point.
+
+64
+00:03:45,810 --> 00:03:46,110
+OK.
+
+65
+00:03:46,140 --> 00:03:47,410
+So let's try this out.
+
+66
+00:03:47,490 --> 00:03:51,730
+Registar new use off I'm just going to try to register them for myself.
+
+67
+00:03:52,020 --> 00:03:56,780
+So seems like it was actually passing the correct data on.
+
+68
+00:03:56,790 --> 00:03:57,380
+Right.
+
+69
+00:03:57,390 --> 00:04:02,420
+So what are we going to do such really generate a new username for the user.
+
+70
+00:04:02,670 --> 00:04:07,740
+So I want my user to have a user name and the main reason why we're doing all of this is so that you
+
+71
+00:04:07,740 --> 00:04:13,410
+see how you can actually override the system and customize it to your needs.
+
+72
+00:04:13,410 --> 00:04:19,220
+OK so I want a user name for my field but I want automatically generated from the Forni.
+
+73
+00:04:19,240 --> 00:04:26,690
+So why would you still control to make sure that when I'm creating a user I also actually create a user
+
+74
+00:04:26,690 --> 00:04:34,440
+name field so username and automatically generate the username from the name.
+
+75
+00:04:34,590 --> 00:04:38,030
+So strange SLOC dates on name.
+
+76
+00:04:38,100 --> 00:04:43,960
+And obviously this is not really feel right because we don't yet have this field in our database so
+
+77
+00:04:43,960 --> 00:04:46,370
+why don't we actually drive this with a test.
+
+78
+00:04:46,380 --> 00:04:50,940
+So I'm just going to credit this out and I'm going to create a new test.
+
+79
+00:04:50,940 --> 00:04:54,650
+So we have to son make test registration test.
+
+80
+00:04:54,720 --> 00:04:55,010
+OK.
+
+81
+00:04:55,020 --> 00:05:02,490
+So you know a registration test and write a test run up public function it or use has a default user
+
+82
+00:05:02,530 --> 00:05:04,260
+name after registration.
+
+83
+00:05:04,260 --> 00:05:09,570
+So we actually tested this functionality because it's not provided to us by Lavoe by default.
+
+84
+00:05:09,570 --> 00:05:12,570
+And once Michel we had actually you know making an errors.
+
+85
+00:05:12,660 --> 00:05:18,160
+So how is this squinch look we're going to create a new user or actually make a post request to our
+
+86
+00:05:18,160 --> 00:05:22,980
+register controller and points and I said that the database actually has a use or with a particular
+
+87
+00:05:23,130 --> 00:05:23,810
+username.
+
+88
+00:05:23,820 --> 00:05:25,190
+Let's see how this is going to look.
+
+89
+00:05:25,230 --> 00:05:27,590
+This post to slash registar.
+
+90
+00:05:27,690 --> 00:05:28,650
+I mean it'll pass you know.
+
+91
+00:05:28,710 --> 00:05:34,980
+And we were getting passed in name is going to be my name and we're going to post in an email.
+
+92
+00:05:35,130 --> 00:05:37,120
+And we need to pass a password.
+
+93
+00:05:37,200 --> 00:05:41,350
+And at the end of that request that's just a search statues of 200.
+
+94
+00:05:41,520 --> 00:05:48,480
+And the assertion augment a session we won't so actually do is assert that the database has a particular
+
+95
+00:05:48,480 --> 00:05:48,990
+user.
+
+96
+00:05:49,050 --> 00:05:54,630
+So we're going to be finding in the use oste more on the really passing in is going to see find the
+
+97
+00:05:54,630 --> 00:06:01,380
+user using the username and we can pass in the streets location of my name because that's what we want
+
+98
+00:06:01,380 --> 00:06:01,790
+right.
+
+99
+00:06:01,920 --> 00:06:07,590
+So we are not passing in any username here but what we just Rhaetian we want to make sure that there
+
+100
+00:06:07,620 --> 00:06:13,680
+is a username field and there exists a user whose username is actually this username.
+
+101
+00:06:13,770 --> 00:06:18,870
+And I think that's going to make sure that the registration process takes care of this username.
+
+102
+00:06:18,990 --> 00:06:21,110
+OK so let's go ahead and try to run this.
+
+103
+00:06:21,120 --> 00:06:24,060
+So be in it for this coming up.
+
+104
+00:06:24,090 --> 00:06:29,780
+And sure enough it feels better since we received a tweet or two rather than 200 because you read a
+
+105
+00:06:29,800 --> 00:06:32,170
+letter or we just use the controller.
+
+106
+00:06:32,250 --> 00:06:34,950
+We actually are retreating to use us to this path.
+
+107
+00:06:35,130 --> 00:06:41,960
+If the registration is successful so follow assertions we really shouldn't be searching for 200 which
+
+108
+00:06:41,960 --> 00:06:47,320
+we are searching for three or two or we should actually Corda said redirect method.
+
+109
+00:06:47,340 --> 00:06:48,430
+So that's wrong.
+
+110
+00:06:48,600 --> 00:06:51,270
+And now we achieve half what we expect.
+
+111
+00:06:51,270 --> 00:06:51,540
+Right.
+
+112
+00:06:51,540 --> 00:06:56,500
+So it's study knows that filled assorting that you wrote in the table we use as much as to attribute
+
+113
+00:06:56,800 --> 00:06:58,340
+username is this.
+
+114
+00:06:58,410 --> 00:06:58,830
+Right.
+
+115
+00:06:58,920 --> 00:07:05,450
+So let's go ahead and start by actually making sure we yes a user name for the user on the fly.
+
+116
+00:07:05,550 --> 00:07:09,430
+So strange lock and he's going to taking data on me.
+
+117
+00:07:09,570 --> 00:07:10,020
+OK.
+
+118
+00:07:10,050 --> 00:07:16,340
+So we are actually passing the username and just so we don't have to go through the cycle of violence.
+
+119
+00:07:16,350 --> 00:07:20,020
+We know we need to actually provide this you know create these.
+
+120
+00:07:20,040 --> 00:07:22,570
+So let's go ahead and take care of that immediately.
+
+121
+00:07:22,590 --> 00:07:25,640
+So let's quickly use field table.
+
+122
+00:07:25,830 --> 00:07:31,760
+It's going to be a simple stream and I'm going to make that unique one last stop or use a factory.
+
+123
+00:07:31,770 --> 00:07:35,900
+We have to make sure the dosage and who eats the username on the fly.
+
+124
+00:07:35,940 --> 00:07:38,010
+So we don't have to figure.
+
+125
+00:07:38,040 --> 00:07:41,440
+So there should be strings long and you're taking names.
+
+126
+00:07:41,670 --> 00:07:47,410
+So what I can actually do is create a name to be able to be close to a fake name and we're going to
+
+127
+00:07:47,410 --> 00:07:49,060
+reference it here.
+
+128
+00:07:49,610 --> 00:07:50,050
+OK.
+
+129
+00:07:50,130 --> 00:07:51,510
+That's all it's asked.
+
+130
+00:07:51,510 --> 00:07:53,690
+That's one of the tests and see what we get.
+
+131
+00:07:53,760 --> 00:07:59,610
+Looks like we haven't ever chickened out and it seems that's giving us an Taguchi country in violation
+
+132
+00:07:59,670 --> 00:08:04,920
+because this username is actually not seeped into the database and that should be coming from our users
+
+133
+00:08:04,930 --> 00:08:09,600
+or the PSP which does not permit the Masao Simon exception.
+
+134
+00:08:09,600 --> 00:08:14,440
+So what we should do is show each other love will flock flat as an arrow.
+
+135
+00:08:14,660 --> 00:08:15,220
+OK.
+
+136
+00:08:15,270 --> 00:08:16,310
+Run that again.
+
+137
+00:08:16,470 --> 00:08:17,720
+And sure enough we are back.
+
+138
+00:08:17,750 --> 00:08:23,260
+GREENE So looks like everything successful with Telecom customization after registration.
+

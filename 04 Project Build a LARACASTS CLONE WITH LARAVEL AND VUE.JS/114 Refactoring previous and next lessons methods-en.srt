@@ -1,0 +1,188 @@
+1
+00:00:00,820 --> 00:00:07,020
+Like something imagine a situation where you're already enrolled into the series and you want to continue
+
+2
+00:00:07,020 --> 00:00:12,130
+learning but then the next lesson or the previous lesson you were you watched was last.
+
+3
+00:00:12,210 --> 00:00:16,350
+And then you're trying to get the next lesson after the last squinched if you know.
+
+4
+00:00:16,350 --> 00:00:16,890
+Right.
+
+5
+00:00:16,950 --> 00:00:18,300
+But then you redirect to that beach.
+
+6
+00:00:18,370 --> 00:00:20,720
+It's just pop up on occasion.
+
+7
+00:00:20,730 --> 00:00:26,730
+So what I want to do is customize our next and previous lesson mythos and we're going to be using our
+
+8
+00:00:26,730 --> 00:00:27,720
+test to do this.
+
+9
+00:00:27,720 --> 00:00:33,060
+So remember when we were running the assertions Check out this I thought I mean just walking you remember
+
+10
+00:00:33,300 --> 00:00:39,930
+who created a lesson and created a second creature the third and then this one was the first one to
+
+11
+00:00:39,930 --> 00:00:41,440
+play in the play list.
+
+12
+00:00:41,460 --> 00:00:43,640
+This is the second and this is the last one to play.
+
+13
+00:00:43,800 --> 00:00:50,700
+But at the end we actually asserted that if we are trying to get the previous lesson for the first series
+
+14
+00:00:50,820 --> 00:00:51,750
+it should give us more.
+
+15
+00:00:51,810 --> 00:00:57,940
+And if we are trying to get the next lesson for the last series give us all but I want to change this.
+
+16
+00:00:58,020 --> 00:01:05,920
+I want to say we should actually check our search equals ID and we get less too easy.
+
+17
+00:01:06,000 --> 00:01:11,430
+So if we are trying to get the previous lesson of the first series it doesn't give us the first series.
+
+18
+00:01:11,580 --> 00:01:20,210
+And if we are trying to get to the next lesson of the last series then you should naturally give us
+
+19
+00:01:20,210 --> 00:01:21,510
+the last lesson.
+
+20
+00:01:21,640 --> 00:01:22,100
+OK.
+
+21
+00:01:22,250 --> 00:01:26,870
+So the last lesson of this series then this year was the last lesson.
+
+22
+00:01:26,870 --> 00:01:31,440
+The first lesson of the submission was the first lesson because we don't want more.
+
+23
+00:01:31,550 --> 00:01:32,030
+OK.
+
+24
+00:01:32,180 --> 00:01:37,480
+And that's one test to see what happens at this point.
+
+25
+00:01:37,670 --> 00:01:39,810
+You know it's futile.
+
+26
+00:01:39,910 --> 00:01:46,210
+I started in and sure enough we ever feel the French get property of object because right here we're
+
+27
+00:01:46,210 --> 00:01:48,490
+trying to get idea of law at the moment.
+
+28
+00:01:48,550 --> 00:01:54,610
+So we're at the crux of this mid-thought and whether we do this is I'm going to see if next lesson available
+
+29
+00:01:55,630 --> 00:02:01,620
+for this query and then I'm going to check Wike here if the next lesson is no.
+
+30
+00:02:01,840 --> 00:02:03,280
+So if next lesson
+
+31
+00:02:07,180 --> 00:02:13,960
+so if we have a positive or two see value then simply return next lesson.
+
+32
+00:02:14,160 --> 00:02:20,100
+OK but then if we don't have a truly value Nietzsche was known then we would return this.
+
+33
+00:02:20,320 --> 00:02:26,710
+OK so when we send the lesson that we have to do exactly the same thing with our previous lesson method.
+
+34
+00:02:26,780 --> 00:02:37,340
+So previous lesson because this then what we do is we check if we have a previous lesson.
+
+35
+00:02:37,340 --> 00:02:42,300
+If we do then we simply return to this lesson.
+
+36
+00:02:42,920 --> 00:02:51,600
+And then if we don't we simply return this then let's run our test right now to see if it passes and
+
+37
+00:02:51,620 --> 00:02:52,520
+it does.
+
+38
+00:02:52,550 --> 00:02:56,770
+Therefore when we get the previous or next lesson we would never have know.
+
+39
+00:02:56,780 --> 00:02:58,430
+Now why do we do this.
+
+40
+00:02:58,430 --> 00:03:01,250
+I'll take to my learning controller.
+
+41
+00:03:01,290 --> 00:03:06,980
+I'm learning the PH BE traits and I'm going to show you that there are some that actually depend on
+
+42
+00:03:07,220 --> 00:03:12,980
+the next AMPAS less than my thoughts for example the last one at the bottom which is the get the next
+
+43
+00:03:12,980 --> 00:03:14,270
+lesson to watch.
+
+44
+00:03:14,270 --> 00:03:16,550
+See right here we get the next lesson.
+
+45
+00:03:16,580 --> 00:03:23,810
+So if this actually returns more and the way it gets in next lesson of now or this method actually returns
+
+46
+00:03:23,840 --> 00:03:28,520
+now and we're returning to the view it's really going to mess up our.
+
+47
+00:03:28,520 --> 00:03:32,000
+Therefore we always want to make sure we have something for the usal.
+

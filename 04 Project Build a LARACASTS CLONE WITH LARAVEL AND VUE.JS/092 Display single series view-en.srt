@@ -1,0 +1,268 @@
+1
+00:00:01,490 --> 00:00:04,440
+Come back we have a landing page we have a series on each.
+
+2
+00:00:04,540 --> 00:00:08,500
+But what about a single page to view our CBEST independency.
+
+3
+00:00:08,680 --> 00:00:10,650
+Let's go ahead and take care of this.
+
+4
+00:00:10,780 --> 00:00:14,230
+In my Front-End and control actually actually studied the for.
+
+5
+00:00:14,350 --> 00:00:18,650
+We're going to really start a new world where we can view a single series alone.
+
+6
+00:00:18,810 --> 00:00:19,480
+OK.
+
+7
+00:00:19,540 --> 00:00:21,080
+So watch.
+
+8
+00:00:21,910 --> 00:00:28,310
+It's going to be a gets and it's going to be serious and we're taking the series.
+
+9
+00:00:28,570 --> 00:00:34,780
+I remember I'm using series right here because I want to make use of Slavoj route model by then and
+
+10
+00:00:34,810 --> 00:00:43,770
+I'm going to see get to the front and control law and will get the series method.
+
+11
+00:00:44,130 --> 00:00:44,830
+OK.
+
+12
+00:00:44,890 --> 00:00:52,960
+So in our front end control would create a serious thought and to receive the series we're just going
+
+13
+00:00:52,960 --> 00:01:00,130
+to typings series and love automatically inject that into this method for us then we can just focus
+
+14
+00:01:00,130 --> 00:01:01,860
+on returning a view.
+
+15
+00:01:01,900 --> 00:01:08,850
+And in this case we tend to view quite serious and go past in the series that we just got is
+
+16
+00:01:11,500 --> 00:01:12,110
+awesome.
+
+17
+00:01:12,130 --> 00:01:18,020
+So now that we have that mid-thought in our resources views that actually we need a series that they
+
+18
+00:01:18,070 --> 00:01:22,510
+appear to be right and they just created want to save us a lot of time.
+
+19
+00:01:22,540 --> 00:01:27,730
+So I don't want us to go through the process of creating some ex-chairman and stuff like that.
+
+20
+00:01:27,840 --> 00:01:28,340
+OK.
+
+21
+00:01:28,420 --> 00:01:35,860
+So here it's simply a header and then some content very minimal and we're going to go for it.
+
+22
+00:01:35,860 --> 00:01:42,550
+So for the header I want to change the background styling that we have here to the Sui's image.
+
+23
+00:01:42,670 --> 00:01:52,940
+So rather than having these I'm going to call out series image path and I'm actually using the attribute
+
+24
+00:01:53,400 --> 00:01:54,190
+set.
+
+25
+00:01:54,220 --> 00:01:57,780
+So right down here I think we have an image path for me.
+
+26
+00:01:57,880 --> 00:01:58,560
+There we go.
+
+27
+00:01:58,690 --> 00:01:59,180
+OK.
+
+28
+00:01:59,230 --> 00:02:03,040
+So serious image is going to give us the background image.
+
+29
+00:02:03,100 --> 00:02:05,150
+The next thing we want is the title.
+
+30
+00:02:05,320 --> 00:02:16,060
+So with a quote Series title and we also do that here then now we have a start learning button.
+
+31
+00:02:16,240 --> 00:02:18,940
+So what we can do is check if
+
+32
+00:02:21,850 --> 00:02:22,520
+you zone.
+
+33
+00:02:22,870 --> 00:02:31,810
+So if the user has authenticated then we're going to check if the user has started that series so we
+
+34
+00:02:31,810 --> 00:02:47,250
+can see if the user has started serious on passing Sui's then we see House and with half and Eve.
+
+35
+00:02:47,530 --> 00:02:48,060
+OK.
+
+36
+00:02:48,070 --> 00:02:54,970
+So we checked if they use us authenticated and if it's authenticated then we can have the check for
+
+37
+00:02:55,000 --> 00:02:56,350
+if he has started the series.
+
+38
+00:02:56,350 --> 00:03:00,880
+So if he has started the series then we're going to have a continual engine box.
+
+39
+00:03:00,880 --> 00:03:02,400
+And rather than start nothing.
+
+40
+00:03:02,500 --> 00:03:03,080
+OK.
+
+41
+00:03:03,160 --> 00:03:07,600
+So continue on your learning and we can actually make this link two different pages.
+
+42
+00:03:07,600 --> 00:03:09,100
+We cannot talk about that later.
+
+43
+00:03:09,220 --> 00:03:15,100
+Then we're going to have start learning if he has not completed or he has not started the service.
+
+44
+00:03:15,580 --> 00:03:22,230
+OK then if the user is not authentic he said then we're simply going to see.
+
+45
+00:03:22,480 --> 00:03:23,960
+Show us start learning bottom.
+
+46
+00:03:24,100 --> 00:03:26,460
+OK so the use authenticated.
+
+47
+00:03:26,570 --> 00:03:31,060
+We're going to check if he has suffered the series and if they use it as another indicator we're simply
+
+48
+00:03:31,060 --> 00:03:32,790
+going it's me a start learning button.
+
+49
+00:03:32,980 --> 00:03:39,940
+Ok then finally we have the cause description which we can quote here.
+
+50
+00:03:40,060 --> 00:03:48,370
+And for the video lessons we are simply going to have an on that list which switching committee carefully
+
+51
+00:03:48,370 --> 00:03:48,630
+Tom.
+
+52
+00:03:48,700 --> 00:03:49,090
+OK.
+
+53
+00:03:49,120 --> 00:03:51,220
+So let's just squarehead and see what we get.
+
+54
+00:03:51,220 --> 00:04:00,940
+Now in our home page we want to link to that route so I'll head over to my Welkom that blade and right
+
+55
+00:04:00,940 --> 00:04:03,500
+down where we have I will read more.
+
+56
+00:04:03,640 --> 00:04:12,490
+I'm going to link this to all routes and this is going to be series I will pass in the series SLOC.
+
+57
+00:04:12,730 --> 00:04:13,180
+OK.
+
+58
+00:04:13,180 --> 00:04:19,490
+So in my web ph be I mean just give this a name of serious.
+
+59
+00:04:20,020 --> 00:04:25,890
+OK so looks like we get to go refresh rigmarole.
+
+60
+00:04:26,440 --> 00:04:33,860
+Undefined variable cost description that should be in our series that blate So in our description series.
+
+61
+00:04:33,900 --> 00:04:35,180
+I'm so sorry about that.
+
+62
+00:04:35,280 --> 00:04:36,150
+OK.
+
+63
+00:04:36,150 --> 00:04:37,440
+So refresh.
+
+64
+00:04:37,440 --> 00:04:37,740
+Great.
+
+65
+00:04:37,740 --> 00:04:44,490
+So we have the background image the title of the series and then Sing's This user has actually started
+
+66
+00:04:44,490 --> 00:04:46,500
+learning how behalf continual learning.
+
+67
+00:04:46,500 --> 00:04:55,990
+Barton now we have the series description OK great so we have a single page for a single service.
+

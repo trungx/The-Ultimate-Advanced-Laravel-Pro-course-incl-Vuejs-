@@ -1,0 +1,624 @@
+1
+00:00:00,090 --> 00:00:01,450
+Let's make the switch to live.
+
+2
+00:00:01,510 --> 00:00:03,490
+Now I will nobbled lessons controller.
+
+3
+00:00:03,540 --> 00:00:05,360
+And this is also going to be a resource.
+
+4
+00:00:05,430 --> 00:00:10,190
+Let's just go ahead and register our resource lessons control our route resource.
+
+5
+00:00:10,200 --> 00:00:15,270
+Looks like we want to receive the series and we want to receive lessons.
+
+6
+00:00:15,300 --> 00:00:15,570
+Right.
+
+7
+00:00:15,570 --> 00:00:20,990
+So we received a series of lessons then levels are too much going to attach the white cards right here.
+
+8
+00:00:21,030 --> 00:00:24,100
+And we wanted to map to license control.
+
+9
+00:00:24,120 --> 00:00:26,720
+Now look at this in our view component.
+
+10
+00:00:26,730 --> 00:00:34,050
+If we try to inspect a component actually has access only to the Swiss ID birds.
+
+11
+00:00:34,080 --> 00:00:40,800
+We had to find that if we typings series level automatically when we use dependency injection and vog
+
+12
+00:00:40,800 --> 00:00:43,540
+more then binding to past in the series.
+
+13
+00:00:43,680 --> 00:00:46,270
+But it's going to try to find that using the SLOC.
+
+14
+00:00:46,290 --> 00:00:46,800
+Right.
+
+15
+00:00:47,100 --> 00:00:48,110
+But we have the idea.
+
+16
+00:00:48,120 --> 00:00:49,140
+So what do we do.
+
+17
+00:00:49,140 --> 00:00:55,230
+We can actually load the slot into this class or while we are loading these we pass it as a probe into
+
+18
+00:00:55,230 --> 00:00:59,280
+the view components so that anytime we are making that request we simply pass it.
+
+19
+00:00:59,430 --> 00:01:01,500
+But why don't we do something more fun.
+
+20
+00:01:01,500 --> 00:01:01,760
+Right.
+
+21
+00:01:01,760 --> 00:01:04,960
+So we're going to review experts in modern banking.
+
+22
+00:01:05,010 --> 00:01:07,850
+We've seen implicit well takes care of everything.
+
+23
+00:01:07,950 --> 00:01:10,170
+But why don't we do explicit.
+
+24
+00:01:10,170 --> 00:01:16,440
+So what I mean by explicit we're going to define our own key or our own wild card and we are novel every
+
+25
+00:01:16,440 --> 00:01:19,920
+time you see CBS by buying something.
+
+26
+00:01:19,920 --> 00:01:24,990
+Therefore we're going to head over to a valet service provider and this is where we can actually define
+
+27
+00:01:25,020 --> 00:01:27,270
+our own vald model bindings.
+
+28
+00:01:27,350 --> 00:01:27,880
+OK.
+
+29
+00:01:27,960 --> 00:01:29,290
+So what do we want.
+
+30
+00:01:29,370 --> 00:01:35,490
+We once Lavoe to bind series by ID to the series class.
+
+31
+00:01:35,490 --> 00:01:37,650
+OK so let's import a switch class.
+
+32
+00:01:37,650 --> 00:01:38,120
+OK.
+
+33
+00:01:38,130 --> 00:01:40,120
+So bind this to this.
+
+34
+00:01:40,350 --> 00:01:43,860
+And what we wanted to obligate is how to resolve it.
+
+35
+00:01:43,860 --> 00:01:48,720
+Right because we're told this it seems like when you use the default get Radtke name that was specified
+
+36
+00:01:48,720 --> 00:01:50,260
+in this class which is the SLOC.
+
+37
+00:01:50,340 --> 00:01:52,410
+But then we have only the idea here.
+
+38
+00:01:52,410 --> 00:01:58,100
+So we want it all Lavoe when you see this white card reader find using the ID rather than the slot.
+
+39
+00:01:58,230 --> 00:02:03,870
+So what we can do is use the bind thought and we're going to be binding to see with my ID wildcat and
+
+40
+00:02:03,870 --> 00:02:09,990
+we're taking a closer right here and disclosure automatically receives the value of these work in the
+
+41
+00:02:10,000 --> 00:02:16,020
+route and what we do right here is how Lavoe how to resolve this.
+
+42
+00:02:16,030 --> 00:02:22,830
+OK so we're going to tol'able return series Find the value because we know when we see by you we are
+
+43
+00:02:22,830 --> 00:02:24,720
+going to be passing the ID.
+
+44
+00:02:24,750 --> 00:02:25,140
+OK.
+
+45
+00:02:25,140 --> 00:02:32,120
+So what we can do is really define or find of also the law which automatically rejects this using a
+
+46
+00:02:32,130 --> 00:02:33,990
+model not an exception.
+
+47
+00:02:34,020 --> 00:02:37,150
+And then we can catch that it or maybe handle it differently.
+
+48
+00:02:37,210 --> 00:02:40,230
+OK so first we define a new word credit.
+
+49
+00:02:40,230 --> 00:02:41,720
+We want to use an approach one.
+
+50
+00:02:41,800 --> 00:02:47,600
+And second we told her how to resolve this if we don't do this then it's automatically going to use
+
+51
+00:02:47,610 --> 00:02:50,800
+to get Waukee name to inject the superclass.
+
+52
+00:02:50,880 --> 00:02:56,080
+But then if we told her how to resolve it Guinta call these call back rather than doing the default.
+
+53
+00:02:56,220 --> 00:02:57,360
+Ok let's try this out.
+
+54
+00:02:57,420 --> 00:03:02,560
+You know what that BHB what we can do is before we actually start running out here let's just define
+
+55
+00:03:02,700 --> 00:03:03,480
+a get route.
+
+56
+00:03:03,600 --> 00:03:10,050
+And the wildcard is going to be this and we should actually wrap it disallowed on those parameter and
+
+57
+00:03:10,050 --> 00:03:12,440
+then we can pass you closure.
+
+58
+00:03:12,480 --> 00:03:17,300
+But if we want to automatically inject the Swiss class we need to type it right.
+
+59
+00:03:17,340 --> 00:03:24,700
+So vodcast series and will take in the instance right here then what we can do is just died on the series.
+
+60
+00:03:24,720 --> 00:03:25,150
+Okay.
+
+61
+00:03:25,170 --> 00:03:31,810
+So we are typing in a wildcat loveall is automatically going to search if we have a binding for this.
+
+62
+00:03:31,890 --> 00:03:33,610
+And that's exactly what what we saw.
+
+63
+00:03:33,630 --> 00:03:38,810
+It creates a bounding binding for series and in this case it's also going to create a body for lessons
+
+64
+00:03:38,820 --> 00:03:43,950
+but we have automatically created our own Fosi which my ideal level is going to check this out if we
+
+65
+00:03:43,950 --> 00:03:50,310
+haven't a in for that check if there's a resolution then you use the obligation to get us the series.
+
+66
+00:03:50,310 --> 00:03:52,930
+So let's go ahead and try this out in the browser.
+
+67
+00:03:53,010 --> 00:03:59,540
+So if we try to visit the route ampacity one receipt automatically Lovelle just gives us the series
+
+68
+00:03:59,540 --> 00:04:01,710
+last and Marci's with the ID of one.
+
+69
+00:04:01,860 --> 00:04:08,740
+If you try to have just does that mean the scene to see of Route 1 the bottom being my lover.
+
+70
+00:04:08,860 --> 00:04:14,220
+OK so now that we've done that every time we want to actually use the lessons what you know have to
+
+71
+00:04:14,220 --> 00:04:16,490
+pass in the series then.
+
+72
+00:04:16,580 --> 00:04:21,040
+Lessons control how we can actually get the service that matches my this idea.
+
+73
+00:04:21,090 --> 00:04:23,400
+So let's head over to our lessons Wauchula.
+
+74
+00:04:23,490 --> 00:04:28,290
+OK looks like we haven't created that let's go ahead and generate one which we understand make controller
+
+75
+00:04:28,380 --> 00:04:30,980
+lessons controller and we want this to be a resource.
+
+76
+00:04:30,980 --> 00:04:32,320
+OK that's generator.
+
+77
+00:04:32,520 --> 00:04:32,940
+OK.
+
+78
+00:04:32,940 --> 00:04:37,180
+So now we have this told me I thought and this is where we actually want to receive the series.
+
+79
+00:04:37,350 --> 00:04:40,060
+And then we want to start a new lesson.
+
+80
+00:04:40,080 --> 00:04:46,470
+So we're going to see a series and get that instance variable and then leverage systematically going
+
+81
+00:04:46,520 --> 00:04:49,600
+to inject that if we have the service by the wildcat.
+
+82
+00:04:49,620 --> 00:04:52,010
+Now what do we want to do in our method.
+
+83
+00:04:52,050 --> 00:04:54,220
+We just want to see if you're serious right.
+
+84
+00:04:54,360 --> 00:05:00,590
+And we actually might switch this out for a custom request but for now I think let's go ahead and see
+
+85
+00:05:00,590 --> 00:05:02,190
+how it works with this one.
+
+86
+00:05:02,240 --> 00:05:05,220
+And then if this is before we dropped all we might create a new request.
+
+87
+00:05:05,420 --> 00:05:07,950
+OK so what do we want to do.
+
+88
+00:05:07,980 --> 00:05:12,090
+Yes we're going to have some foundation and we're going to use testing to drive this out.
+
+89
+00:05:12,110 --> 00:05:15,220
+But for now let's just wait and see how this is going to work.
+
+90
+00:05:15,290 --> 00:05:17,910
+We can just get a lesson for the series.
+
+91
+00:05:17,930 --> 00:05:20,800
+So serious lessons relationship.
+
+92
+00:05:20,800 --> 00:05:26,890
+And we called yet mid-thought and we could actually pass in request or as a parameter.
+
+93
+00:05:27,020 --> 00:05:27,440
+OK.
+
+94
+00:05:27,470 --> 00:05:28,540
+So we have to.
+
+95
+00:05:28,790 --> 00:05:35,190
+And we have the lessons relationship defined in the series class and then we simply assess the yet met
+
+96
+00:05:35,290 --> 00:05:37,890
+and parsing the request or as a parameter.
+
+97
+00:05:37,970 --> 00:05:40,970
+OK so it's automatically going to fuel the series ID field.
+
+98
+00:05:41,120 --> 00:05:45,880
+And then since we have this form lots of data it's gonna up into that.
+
+99
+00:05:45,950 --> 00:05:46,500
+OK.
+
+100
+00:05:46,700 --> 00:05:48,890
+So let's go ahead and try this out.
+
+101
+00:05:49,040 --> 00:05:56,000
+But for that we need to take care of the Create lesson that view post request there for what we want
+
+102
+00:05:56,000 --> 00:05:56,820
+to do.
+
+103
+00:05:56,890 --> 00:05:58,400
+And eventually snorters.
+
+104
+00:05:58,470 --> 00:06:00,330
+Listen it's a safe lesson.
+
+105
+00:06:00,530 --> 00:06:05,870
+So CLIQ is going to call create lesson on this class and create Leser.
+
+106
+00:06:05,900 --> 00:06:09,920
+It's going to be a math facts and methods and we only have using it.
+
+107
+00:06:09,950 --> 00:06:16,460
+Therefore we want to see examples opposed to an endpoint and we need to make sure we pass the correct
+
+108
+00:06:16,490 --> 00:06:22,460
+end points let's go to a war where we have serious lessons and to quit we just need to revisit this
+
+109
+00:06:22,640 --> 00:06:23,510
+point right.
+
+110
+00:06:23,720 --> 00:06:25,540
+So what can we do.
+
+111
+00:06:25,540 --> 00:06:27,440
+We need the ID of the suits.
+
+112
+00:06:27,530 --> 00:06:30,480
+Why don't we pass that idea as a payload into this.
+
+113
+00:06:30,510 --> 00:06:38,290
+So we're going to see serious ID and then we're going to see this that serious ID requires serious ID.
+
+114
+00:06:38,380 --> 00:06:39,020
+OK.
+
+115
+00:06:39,080 --> 00:06:44,930
+And we can have a detail right here that is Sui's ID and it falls to an empty string.
+
+116
+00:06:44,930 --> 00:06:51,650
+Now what am I doing this is not eventually snow it's going to listen for events from the parent and
+
+117
+00:06:51,740 --> 00:06:54,400
+the parent has the possibility of passing a payload.
+
+118
+00:06:54,500 --> 00:06:58,010
+But we have the suicide available on the parents but not on the child.
+
+119
+00:06:58,010 --> 00:07:02,110
+So we're going to pass it as a pillow to this child let's head over to our parents.
+
+120
+00:07:02,110 --> 00:07:03,560
+What's the lesson that you.
+
+121
+00:07:03,650 --> 00:07:04,060
+Yeah.
+
+122
+00:07:04,130 --> 00:07:10,860
+And why we are triggering that image we can actually trigger or send this dog serious ID.
+
+123
+00:07:11,030 --> 00:07:11,580
+OK.
+
+124
+00:07:11,720 --> 00:07:13,130
+Now what am I doing this.
+
+125
+00:07:13,220 --> 00:07:16,820
+I'm going to be passing a series I.D. I.
+
+126
+00:07:17,230 --> 00:07:20,230
+And I'm going to be getting this from my index that blade Ph be.
+
+127
+00:07:20,300 --> 00:07:26,240
+And then I can pass it into the Create lesson that view component to use it to make post request.
+
+128
+00:07:26,240 --> 00:07:30,050
+I actually got some this from our lessons that we have right here.
+
+129
+00:07:30,110 --> 00:07:33,920
+But imagine a situation where we have no lessons that's going to break down really fast.
+
+130
+00:07:34,040 --> 00:07:39,590
+So let's just add a new prayer that is going to give us that therefore you know index that blade to
+
+131
+00:07:39,780 --> 00:07:45,030
+be we need to pass a serious ID which is going to be serious ID.
+
+132
+00:07:45,200 --> 00:07:45,770
+OK.
+
+133
+00:07:45,920 --> 00:07:48,750
+So we have a problem suicides.
+
+134
+00:07:48,830 --> 00:07:54,650
+We receive it then when we are getting a new lesson and we are imaging that event so our child component
+
+135
+00:07:54,650 --> 00:07:56,590
+we know Oh it's my turn to act.
+
+136
+00:07:56,720 --> 00:07:59,100
+It's going to see this as a parameter.
+
+137
+00:07:59,320 --> 00:08:06,830
+Then in our creedalism we can actually reference this when we want to define the you are all for exists
+
+138
+00:08:07,020 --> 00:08:13,230
+therefore we are going to use the tactics in Turks so that we can reference days a series ID lessons.
+
+139
+00:08:13,400 --> 00:08:13,860
+Right.
+
+140
+00:08:13,880 --> 00:08:19,120
+So if you check out our Web PH BE IT SUITS ID socialism's bird.
+
+141
+00:08:19,130 --> 00:08:21,330
+We also need to prefix dates with mean right.
+
+142
+00:08:21,440 --> 00:08:24,940
+So I mean slash Sui's ID slash lessons.
+
+143
+00:08:25,130 --> 00:08:31,370
+OK so let's try that so that they can get the response console that response to catch.
+
+144
+00:08:31,400 --> 00:08:34,750
+So you can so that not the error that we get from the seller or my god.
+
+145
+00:08:34,760 --> 00:08:38,960
+I just notice we actually didn't pass this data to our post requests.
+
+146
+00:08:38,990 --> 00:08:44,150
+So let's just parse this in as a second prompt or real fast and rather than empty strings we're going
+
+147
+00:08:44,150 --> 00:08:45,270
+to be friends.
+
+148
+00:08:45,410 --> 00:08:48,270
+This the title and days on description.
+
+149
+00:08:48,310 --> 00:08:50,080
+This is the opposite number.
+
+150
+00:08:50,090 --> 00:08:52,470
+Finally they say that video ID.
+
+151
+00:08:52,550 --> 00:08:59,370
+OK so now we are actually passing that detail like let's try this out in a browser and see what we get.
+
+152
+00:09:10,520 --> 00:09:13,480
+Ok looks like we actually successfully created that.
+
+153
+00:09:13,490 --> 00:09:15,940
+Now would look at the detail we received from the server.
+
+154
+00:09:16,070 --> 00:09:19,990
+It's the lesson object lesson object that we just created.
+
+155
+00:09:20,000 --> 00:09:24,290
+I'm just going to pause right here and there we're going to continue to find these in the very next
+
+156
+00:09:24,560 --> 00:09:25,080
+video.
+

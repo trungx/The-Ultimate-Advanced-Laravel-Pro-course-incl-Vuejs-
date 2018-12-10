@@ -1,0 +1,560 @@
+1
+00:00:00,180 --> 00:00:05,090
+We ended up having to speak up and we agreed that we're going to be creating a book post right here.
+
+2
+00:00:05,220 --> 00:00:11,040
+And then from our actions we are going to be visiting a route and then for our search step we're going
+
+3
+00:00:11,040 --> 00:00:20,520
+to assert stutterers code 200 which means we actually found that beach and also assert that we see post-Idol
+
+4
+00:00:20,700 --> 00:00:26,040
+because that's what we actually have to see on the page that is viewing the post and then assert that
+
+5
+00:00:26,040 --> 00:00:27,990
+we see Post body.
+
+6
+00:00:28,110 --> 00:00:30,370
+And let's just so that we see published data.
+
+7
+00:00:30,390 --> 00:00:33,000
+So let's take care of this for arrangements.
+
+8
+00:00:33,020 --> 00:00:34,600
+We need to create a post right.
+
+9
+00:00:34,620 --> 00:00:37,560
+This is what does driven development comes exciting right.
+
+10
+00:00:37,650 --> 00:00:41,010
+So how are we going to write create a blog post.
+
+11
+00:00:41,030 --> 00:00:42,540
+We don't have any migrations.
+
+12
+00:00:42,540 --> 00:00:43,900
+We don't have any post table.
+
+13
+00:00:43,920 --> 00:00:45,210
+We don't have anything.
+
+14
+00:00:45,210 --> 00:00:48,830
+How do we create a blog post in Lavo if you want to create a blog post.
+
+15
+00:00:48,840 --> 00:00:54,450
+So we're going to have maybe a post tomorrow and you're going to call or create a thought on that tomorrow
+
+16
+00:00:54,540 --> 00:00:58,260
+and discrete mathematics and an array of the data that we want to create.
+
+17
+00:00:58,260 --> 00:00:58,770
+Right.
+
+18
+00:00:58,830 --> 00:01:04,280
+So this is where we have to really have to decide what is going to have to be on a report table.
+
+19
+00:01:04,290 --> 00:01:10,660
+Notice how it has to make us think we have no other option member actually creating a migration.
+
+20
+00:01:10,660 --> 00:01:16,230
+I think what tables after the migration and all of that but right now we have to think about what feuds
+
+21
+00:01:16,260 --> 00:01:18,360
+are going to be in our database table.
+
+22
+00:01:18,360 --> 00:01:22,560
+So for us we we're going to have a title and I'm just going to see a simple title.
+
+23
+00:01:22,980 --> 00:01:27,900
+It's going to be the title we're passing in and we must have a body and we're going to see a simple
+
+24
+00:01:27,900 --> 00:01:28,550
+body.
+
+25
+00:01:28,680 --> 00:01:30,210
+And we're just going to leave it at that.
+
+26
+00:01:30,210 --> 00:01:34,860
+We have a title we have a body a simple title a simple body for our post.
+
+27
+00:01:34,890 --> 00:01:37,520
+So the auction is actually visiting a route right.
+
+28
+00:01:37,530 --> 00:01:44,360
+So let's visit a route we're going to see a response like we always see if the response this.
+
+29
+00:01:44,880 --> 00:01:47,480
+And we tried to visit a beach using a get.
+
+30
+00:01:47,610 --> 00:01:52,750
+And I'm just going to say visit Borst and we want to view a particular post right.
+
+31
+00:01:52,830 --> 00:01:56,200
+So we are going to pass in the idea of this post right here.
+
+32
+00:01:56,310 --> 00:02:02,910
+So I'm just going to add a dot right here and just say post I.D. or if you not be more flexible we can
+
+33
+00:02:02,910 --> 00:02:07,460
+pass this in double quotes post and slash post ID right here.
+
+34
+00:02:07,580 --> 00:02:07,960
+OK.
+
+35
+00:02:08,010 --> 00:02:13,340
+So we're just in an end point which takes in a parameter and that parameter is the idea of the post
+
+36
+00:02:13,340 --> 00:02:14,640
+that we're trying to view.
+
+37
+00:02:14,640 --> 00:02:18,570
+And then we need to make some assertions on what we expect.
+
+38
+00:02:18,570 --> 00:02:18,990
+Right.
+
+39
+00:02:19,110 --> 00:02:21,540
+So I assert that we have a squad of 200.
+
+40
+00:02:21,560 --> 00:02:23,010
+We're going to see response.
+
+41
+00:02:23,020 --> 00:02:25,240
+So it's that's years of 200.
+
+42
+00:02:25,280 --> 00:02:29,750
+No I say that we see the post title response assert.
+
+43
+00:02:29,760 --> 00:02:31,630
+See the post title right.
+
+44
+00:02:31,740 --> 00:02:35,680
+So we can just call post title like your supposed title.
+
+45
+00:02:35,730 --> 00:02:39,820
+I assert that we see the post-Bali it's going to be exactly something like this.
+
+46
+00:02:39,900 --> 00:02:41,730
+And this is going to be Buddy.
+
+47
+00:02:41,820 --> 00:02:43,940
+And then I said that we see published date.
+
+48
+00:02:43,980 --> 00:02:49,380
+Now obviously when we automatically create a post we have created a timestamp for this which is going
+
+49
+00:02:49,380 --> 00:02:51,060
+to give us the date that it was created.
+
+50
+00:02:51,060 --> 00:02:51,590
+Right.
+
+51
+00:02:51,630 --> 00:02:55,990
+So right here at the bottom we're going to assert that we actually see that time.
+
+52
+00:02:55,980 --> 00:03:01,610
+So asserts C and we're just going to pass in a post created just for now.
+
+53
+00:03:01,650 --> 00:03:03,690
+OK so that is our test.
+
+54
+00:03:03,720 --> 00:03:06,990
+We are saying create a post visit aroud.
+
+55
+00:03:07,080 --> 00:03:08,880
+I said that we have that word.
+
+56
+00:03:08,910 --> 00:03:10,560
+I said that we see that title.
+
+57
+00:03:10,580 --> 00:03:11,870
+So now we see that body.
+
+58
+00:03:11,870 --> 00:03:15,330
+And so we see that created the timestamp on that page.
+
+59
+00:03:15,390 --> 00:03:15,880
+OK.
+
+60
+00:03:16,020 --> 00:03:17,240
+So let's run this.
+
+61
+00:03:17,280 --> 00:03:19,690
+And we haven't ever seen feature post.
+
+62
+00:03:19,740 --> 00:03:20,550
+Not fun.
+
+63
+00:03:20,550 --> 00:03:22,620
+Now this is where it gets exciting.
+
+64
+00:03:22,620 --> 00:03:29,670
+We have a test and we need to fix each and every one of these arrows down to the last beat where everything
+
+65
+00:03:29,670 --> 00:03:31,170
+works perfectly right.
+
+66
+00:03:31,290 --> 00:03:33,960
+So how are we going to fix this feature.
+
+67
+00:03:34,050 --> 00:03:36,850
+It's not fun it's saying this glass does not exist.
+
+68
+00:03:36,870 --> 00:03:40,740
+So let's put that last and we didn't know we are using this as a model.
+
+69
+00:03:40,740 --> 00:03:42,240
+So we're going to use Lovells.
+
+70
+00:03:42,420 --> 00:03:49,560
+PH We asked Uncle man to help us see our son make model and it's going to be post model created successfully.
+
+71
+00:03:49,560 --> 00:03:56,220
+So after taking a little action we were not digging and we still have that we're seeing says future
+
+72
+00:03:56,370 --> 00:03:57,770
+post not found.
+
+73
+00:03:57,900 --> 00:04:00,800
+But then we know that the Adari tree exists.
+
+74
+00:04:00,840 --> 00:04:04,980
+But then why is it still telling us it's not fun obviously because we haven't imported it.
+
+75
+00:04:04,980 --> 00:04:05,370
+Right.
+
+76
+00:04:05,490 --> 00:04:08,820
+So let's just use our post right here.
+
+77
+00:04:08,820 --> 00:04:12,240
+Let's run our test again after taking that action to fix.
+
+78
+00:04:12,510 --> 00:04:17,290
+And we have a different error seen mass assignment exception for title.
+
+79
+00:04:17,310 --> 00:04:23,400
+So we are much assigning these data into our model and level automatically protects the database from
+
+80
+00:04:23,400 --> 00:04:23,800
+that.
+
+81
+00:04:23,880 --> 00:04:25,360
+So how do we fix this.
+
+82
+00:04:25,380 --> 00:04:31,350
+We can create a protected fillable property to specify the database entries that should be must assignable
+
+83
+00:04:31,620 --> 00:04:39,360
+or we could just tell Lovelle that we don't want any more assignment for any field by passing in an
+
+84
+00:04:39,360 --> 00:04:41,460
+empty array to the godat property.
+
+85
+00:04:41,620 --> 00:04:44,060
+OK so this has no risk at all.
+
+86
+00:04:44,070 --> 00:04:46,490
+You cannot do this in your production applications.
+
+87
+00:04:46,530 --> 00:04:49,710
+Most of the time you're not going to face the risk of mass assignment.
+
+88
+00:04:49,890 --> 00:04:51,650
+So let's run this again.
+
+89
+00:04:51,720 --> 00:04:58,090
+Now we have another arrow saying eliminate database quivery exception access denied for home at Lucar
+
+90
+00:04:58,470 --> 00:05:01,150
+host the com password Yes.
+
+91
+00:05:01,180 --> 00:05:02,680
+Now what is happening.
+
+92
+00:05:02,710 --> 00:05:07,000
+Remember the creative method actually Tresor safe or post into a database.
+
+93
+00:05:07,000 --> 00:05:13,120
+We don't have a database set up we haven't set up any databases so it receives that error that we cannot
+
+94
+00:05:13,330 --> 00:05:14,780
+assess homestead.
+
+95
+00:05:14,890 --> 00:05:21,790
+So that is a way to save this or to fix this is to head over the energy file and set up our database
+
+96
+00:05:21,790 --> 00:05:22,780
+configurations.
+
+97
+00:05:22,780 --> 00:05:30,780
+So right here for a database I have a database set up for testing and Lavoe and my user name is rude.
+
+98
+00:05:30,850 --> 00:05:32,660
+And my password is nothing.
+
+99
+00:05:32,970 --> 00:05:34,470
+So Setubal your database.
+
+100
+00:05:34,570 --> 00:05:35,970
+Let's run this test again.
+
+101
+00:05:36,010 --> 00:05:41,710
+And now we have an ever saying base table of view not Faolan testing Lavo that post.
+
+102
+00:05:41,710 --> 00:05:49,420
+So it was successfully able to access that database but then we tried to save this to the post-IPO but
+
+103
+00:05:49,420 --> 00:05:51,880
+it didn't find the post table.
+
+104
+00:05:51,880 --> 00:05:53,240
+So how do we fix this.
+
+105
+00:05:53,320 --> 00:05:56,580
+Let's simply use BHB arrest and make migration.
+
+106
+00:05:56,620 --> 00:06:03,940
+And this is going to be create more stable and just help or we can pass and create equal post to that
+
+107
+00:06:03,940 --> 00:06:04,470
+command.
+
+108
+00:06:04,480 --> 00:06:06,410
+So we've created our migration.
+
+109
+00:06:06,490 --> 00:06:07,770
+Let's run that test again.
+
+110
+00:06:07,930 --> 00:06:11,900
+And then we still have that it was seen the best of all of you not found.
+
+111
+00:06:12,010 --> 00:06:15,300
+And that's because we haven't migrated to a data base right now.
+
+112
+00:06:15,310 --> 00:06:21,740
+We can migrate our database right here by calling access on call and we can call the migrate common
+
+113
+00:06:21,760 --> 00:06:26,640
+right Lavoe gives us the possibility of migrating using the axon command right here.
+
+114
+00:06:26,820 --> 00:06:33,800
+But level always gives us a very easy way of wanting our migrations before our tests.
+
+115
+00:06:33,880 --> 00:06:40,350
+And that is simply by using this database migrations test so use database migration.
+
+116
+00:06:40,360 --> 00:06:47,230
+So if we try to get the database migrations file which is in our interest in that BHB we'll see what
+
+117
+00:06:47,230 --> 00:06:47,740
+it does.
+
+118
+00:06:47,770 --> 00:06:53,860
+It causes one database migrations my thought and what this method does is it made with a database and
+
+119
+00:06:53,930 --> 00:06:57,070
+after everything is destroyed before the application is destroyed.
+
+120
+00:06:57,150 --> 00:06:58,640
+I was setting up Kishan.
+
+121
+00:06:58,660 --> 00:07:01,570
+It was about the migration as simple as that.
+
+122
+00:07:01,570 --> 00:07:06,220
+So you see it does exactly the same thing but just by using this trait level he's going to do everything
+
+123
+00:07:06,220 --> 00:07:06,880
+for us.
+
+124
+00:07:07,000 --> 00:07:07,450
+OK.
+
+125
+00:07:07,540 --> 00:07:14,120
+So that run the command again and then we have unknown column title field list.
+
+126
+00:07:14,200 --> 00:07:21,300
+So it's trying to create a post using the title and the body but then it's seen the column is known.
+
+127
+00:07:21,340 --> 00:07:28,000
+So let's head over to a quick post to my question and obviously we are migrating to the data base but
+
+128
+00:07:28,000 --> 00:07:29,190
+we don't have a title.
+
+129
+00:07:29,230 --> 00:07:36,560
+So let's see if it's right or I see a string field and name is going to be title I save that remember
+
+130
+00:07:36,610 --> 00:07:39,080
+I'm trying to fix just the error I just got.
+
+131
+00:07:39,340 --> 00:07:47,190
+I wonder again and then we haven't seen a column buddy so let's fix that by creating a text field.
+
+132
+00:07:47,230 --> 00:07:48,750
+And this is going to be buddy.
+
+133
+00:07:48,820 --> 00:07:50,320
+So let's run that again.
+
+134
+00:07:50,410 --> 00:07:53,180
+And here we have not found S2P exception.
+
+135
+00:07:53,230 --> 00:07:59,520
+That's because if we had a all our best we have title we have buddy and then we're trying to make a
+
+136
+00:07:59,520 --> 00:08:02,430
+get request a route that does not exist.
+
+137
+00:08:02,440 --> 00:08:08,170
+So we've successfully taken care of this part of our application and at the end of one in this test
+
+138
+00:08:08,260 --> 00:08:12,120
+and gets into this step we have a model for positive role.
+
+139
+00:08:12,220 --> 00:08:18,060
+We have a migration for our post-IPO knifing is giving us a lot of structure in our application.
+
+140
+00:08:18,070 --> 00:08:22,060
+So let's go ahead and continue doing this in the next episode.
+

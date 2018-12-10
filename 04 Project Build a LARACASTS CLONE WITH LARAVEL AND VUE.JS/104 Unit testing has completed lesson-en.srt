@@ -1,0 +1,252 @@
+1
+00:00:00,500 --> 00:00:05,200
+Guys let's have done with this we need to unit test the highest completed lesson method.
+
+2
+00:00:05,340 --> 00:00:06,390
+And then we're going to create it.
+
+3
+00:00:06,480 --> 00:00:06,940
+OK.
+
+4
+00:00:07,080 --> 00:00:08,990
+So head over to my user test.
+
+5
+00:00:09,090 --> 00:00:14,460
+So test can check if user has completed the lesson.
+
+6
+00:00:14,460 --> 00:00:20,210
+So we want to pass a lesson to the complete lesson thought and that should be done to us true or false.
+
+7
+00:00:20,280 --> 00:00:21,930
+If the US computer the lesson.
+
+8
+00:00:21,930 --> 00:00:24,940
+True if the user has not completed the lesson false.
+
+9
+00:00:24,960 --> 00:00:26,660
+So how are we going to make this test.
+
+10
+00:00:26,700 --> 00:00:37,800
+We need to use up and then we need a series which has lessons and then for action we're going to complete
+
+11
+00:00:37,830 --> 00:00:39,240
+a lesson.
+
+12
+00:00:40,560 --> 00:00:47,430
+And then for sessions would assert that they had completed lesson method returns true for the complete
+
+13
+00:00:47,460 --> 00:00:50,500
+lesson and maybe falls for an uncompleted lesson.
+
+14
+00:00:50,580 --> 00:00:51,100
+OK.
+
+15
+00:00:51,270 --> 00:00:54,900
+So quite a user we can copy that from here.
+
+16
+00:00:55,140 --> 00:00:58,350
+And by the way raising red is right so we're going to flush with these.
+
+17
+00:00:58,500 --> 00:01:02,850
+So this flush Radice create a user quit or less than quit.
+
+18
+00:01:02,860 --> 00:01:05,070
+Another lesson in that series.
+
+19
+00:01:05,100 --> 00:01:08,440
+So copy that and this will take care of this both steps.
+
+20
+00:01:08,640 --> 00:01:14,470
+So we flush this quit use our quit or less and create another lesson in that series which is lesson
+
+21
+00:01:14,520 --> 00:01:15,070
+two.
+
+22
+00:01:15,210 --> 00:01:22,740
+And then for us to complete that lesson we'll just call use our complete lesson and we're only going
+
+23
+00:01:22,740 --> 00:01:32,110
+to be in less than one then four assertions would see this as search that user has completed lesson.
+
+24
+00:01:32,330 --> 00:01:38,610
+I will pass in Lesson one and would say this should be true right and then we'll do exactly the same
+
+25
+00:01:38,670 --> 00:01:40,700
+assertion but false.
+
+26
+00:01:40,710 --> 00:01:45,350
+So for Lesson Two would say assert false.
+
+27
+00:01:45,360 --> 00:01:48,010
+So this research and return true or false.
+
+28
+00:01:48,030 --> 00:01:53,760
+If this user has not completed the lesson and we turn to the use ask completely OK that's our test let's
+
+29
+00:01:53,760 --> 00:01:58,150
+run it ph be in it and filtered through to this test.
+
+30
+00:01:58,540 --> 00:02:02,170
+OK we have our Eyrecourt on the fight has completed lesson Mithal.
+
+31
+00:02:02,310 --> 00:02:06,040
+We have our learning traits or Anstee and we are going to work with it.
+
+32
+00:02:06,150 --> 00:02:13,610
+So our create public function has completed lesson and this method is expecting lesson run it again
+
+33
+00:02:13,620 --> 00:02:19,500
+game and we have a search that know it's true because this is expecting that we return a boolean but
+
+34
+00:02:19,500 --> 00:02:20,810
+now it will turn in lower.
+
+35
+00:02:20,940 --> 00:02:24,670
+So how do we want to check if a user has completed a lesson.
+
+36
+00:02:24,690 --> 00:02:27,630
+We have a list of all the lessons that have been completed.
+
+37
+00:02:27,720 --> 00:02:34,070
+For our particular series right here there's a method that does that for us right here get completed
+
+38
+00:02:34,080 --> 00:02:35,030
+lessons for us.
+
+39
+00:02:35,100 --> 00:02:38,840
+So we have the computer lessons for series and we have that lesson.
+
+40
+00:02:39,030 --> 00:02:40,400
+That we are trying to construct.
+
+41
+00:02:40,410 --> 00:02:45,010
+So what are we going to do is return Inari.
+
+42
+00:02:45,450 --> 00:02:50,650
+Because the method that gives us all the computer lessons actually we just source on how we write.
+
+43
+00:02:50,700 --> 00:02:56,970
+So return in three and the first thing we pass is the lesson ID which is the door and then we need to
+
+44
+00:02:56,970 --> 00:03:03,090
+pass the haystack we just days get complete adolescence for a series.
+
+45
+00:03:03,180 --> 00:03:03,620
+OK.
+
+46
+00:03:03,630 --> 00:03:04,930
+And we need to pass in the series.
+
+47
+00:03:04,980 --> 00:03:10,150
+So what's the lesson I would call series right here to get the series that that lesson belongs to.
+
+48
+00:03:10,290 --> 00:03:10,780
+OK.
+
+49
+00:03:10,830 --> 00:03:13,980
+So that's how we check if a user has completed a lesson.
+
+50
+00:03:13,980 --> 00:03:19,940
+So remember this method is returning to us on our way of adolescence and it's actually holding the IDs
+
+51
+00:03:19,950 --> 00:03:27,080
+of those lessons and we can now check if the idea of the lesson that we would pass is in that area.
+
+52
+00:03:27,200 --> 00:03:27,710
+OK.
+
+53
+00:03:27,780 --> 00:03:30,430
+So let's run not just get going.
+
+54
+00:03:30,510 --> 00:03:31,620
+So it's successful.
+
+55
+00:03:31,650 --> 00:03:38,280
+But now remember that we are truly creating this test right here because we were testing our watch serious
+
+56
+00:03:39,200 --> 00:03:45,990
+thought and we're trying to make sure that when we automatically receive a response from the server
+
+57
+00:03:46,170 --> 00:03:48,530
+they should return true and they should return false.
+
+58
+00:03:48,540 --> 00:03:49,040
+OK.
+
+59
+00:03:49,170 --> 00:03:53,400
+So let's run this test right now to see if anything changes.
+
+60
+00:03:53,580 --> 00:03:57,210
+PH be unique I will filter to that test.
+
+61
+00:03:57,210 --> 00:03:57,570
+Great.
+
+62
+00:03:57,570 --> 00:03:59,020
+Now we have a successful test.
+
+63
+00:03:59,040 --> 00:04:01,920
+Everything seems to be working OK.
+

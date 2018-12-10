@@ -1,0 +1,180 @@
+1
+00:00:00,930 --> 00:00:03,060
+We also had our get out lessons.
+
+2
+00:00:03,150 --> 00:00:10,280
+So we're going to use that method now to display all the lessons and display them in the correct order.
+
+3
+00:00:10,440 --> 00:00:11,040
+OK.
+
+4
+00:00:11,190 --> 00:00:15,120
+So I'm just going to create a column two of them.
+
+5
+00:00:16,080 --> 00:00:26,250
+And this really bootstrapped for stylings and I'll create an on that list with list book class and I'm
+
+6
+00:00:26,250 --> 00:00:28,470
+going to use my four each right here.
+
+7
+00:00:28,620 --> 00:00:37,210
+So for each and for each remember we passed in the series into this view.
+
+8
+00:00:37,320 --> 00:00:45,350
+So for each series get all the adolescents this current lesson.
+
+9
+00:00:45,790 --> 00:00:46,230
+OK.
+
+10
+00:00:46,290 --> 00:00:51,060
+So we're just going to use a different variable names such that we don't have any conflicts that will
+
+11
+00:00:51,060 --> 00:01:01,460
+create a list item with the ID of list group item and for each of this would simply first of all call
+
+12
+00:01:01,510 --> 00:01:02,800
+it the name.
+
+13
+00:01:02,870 --> 00:01:03,280
+OK.
+
+14
+00:01:03,330 --> 00:01:07,830
+So what's the current lesson title.
+
+15
+00:01:08,030 --> 00:01:08,490
+OK.
+
+16
+00:01:08,520 --> 00:01:09,930
+So that sounds strange.
+
+17
+00:01:09,930 --> 00:01:12,390
+I'm just going to use how to present.
+
+18
+00:01:12,480 --> 00:01:13,840
+So arrow title.
+
+19
+00:01:13,910 --> 00:01:14,450
+Great.
+
+20
+00:01:14,640 --> 00:01:16,510
+So let's go ahead and check this out.
+
+21
+00:01:16,550 --> 00:01:17,670
+I refresh.
+
+22
+00:01:17,670 --> 00:01:19,650
+We have the introduction to VGX.
+
+23
+00:01:19,680 --> 00:01:23,720
+What is Kostikov us view into view out the introduction.
+
+24
+00:01:23,730 --> 00:01:32,880
+Now if I were to head over to all my civis and added This is my maybe since I WANT MY seen.
+
+25
+00:01:32,910 --> 00:01:35,290
+I want to talk about this first.
+
+26
+00:01:35,460 --> 00:01:38,160
+So maybe I did this to 200.
+
+27
+00:01:38,490 --> 00:01:47,760
+So that this place first and then added this to 300 so that this place next and I read trash automatically
+
+28
+00:01:47,760 --> 00:01:50,530
+You see we have that order right here.
+
+29
+00:01:51,810 --> 00:01:52,440
+OK.
+
+30
+00:01:52,490 --> 00:02:00,170
+One more thing I want to talk about is we can also check which one is plain and display and I can here
+
+31
+00:02:00,190 --> 00:02:06,350
+as you see this is the current And we can also have links right here so we can actually change all of
+
+32
+00:02:06,350 --> 00:02:10,490
+these two links.
+
+33
+00:02:10,760 --> 00:02:15,540
+And the title is actually going to be able to visit that particular course lesson.
+
+34
+00:02:15,620 --> 00:02:16,110
+OK.
+
+35
+00:02:16,130 --> 00:02:23,750
+So we can Ecorse the page or the route to watch this particular lesson which is going to be this route.
+
+36
+00:02:23,750 --> 00:02:33,760
+So while it's serious that watch remember repassing passing in the series which is serious
+
+37
+00:02:36,170 --> 00:02:45,110
+SLOC repassing in lesson which is now ID.
+
+38
+00:02:45,640 --> 00:02:46,140
+OK.
+
+39
+00:02:46,160 --> 00:02:51,790
+So when the user clicks on that you should actually visit that page to watch that lesson.
+
+40
+00:02:51,800 --> 00:02:55,830
+Refresh and have those links.
+
+41
+00:02:55,850 --> 00:03:03,470
+So if I click on this it takes me to and three click on this it takes me to lesson too.
+
+42
+00:03:03,490 --> 00:03:06,680
+And this one also takes me to Lesson one.
+
+43
+00:03:06,890 --> 00:03:08,520
+So everything seems to be working.
+
+44
+00:03:08,540 --> 00:03:09,530
+Thank you so much.
+
+45
+00:03:09,530 --> 00:03:12,360
+See you in the very next episode.
+

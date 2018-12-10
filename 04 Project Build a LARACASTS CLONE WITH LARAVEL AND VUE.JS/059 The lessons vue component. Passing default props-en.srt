@@ -1,0 +1,208 @@
+1
+00:00:00,290 --> 00:00:03,590
+Let's go to VGX component that's going to be in charge of lessons.
+
+2
+00:00:03,600 --> 00:00:09,240
+So right in my companions tree we're going to create a new lessons that you and best for it's going
+
+3
+00:00:09,240 --> 00:00:12,290
+to have a template and just to see what's in that.
+
+4
+00:00:12,330 --> 00:00:18,130
+I'm gonna have a Lessons header and I'm going to export an empty object down in my Abda.
+
+5
+00:00:18,480 --> 00:00:20,170
+I just need to pull in this component.
+
+6
+00:00:20,160 --> 00:00:22,220
+Now we just started this view.
+
+7
+00:00:22,240 --> 00:00:29,640
+Lessons are required now in our template index that need to be collaterally past this lessons into this
+
+8
+00:00:29,640 --> 00:00:30,690
+view component.
+
+9
+00:00:30,690 --> 00:00:34,430
+So that would be able to give the management of our lessons to view from there.
+
+10
+00:00:34,530 --> 00:00:34,830
+OK.
+
+11
+00:00:34,830 --> 00:00:39,840
+So let's first of all Mundus your lessons and looks like we need to pass a default lessons into this
+
+12
+00:00:39,840 --> 00:00:45,420
+component as soon as the component is mounted Austin has refreshed the page so we can see default lesson's
+
+13
+00:00:45,470 --> 00:00:51,750
+is the name of the product that we want to pass and we're going to sign these two serious lessons.
+
+14
+00:00:51,750 --> 00:00:57,320
+So this is automatically going to pass or the lessons for this series into the default lessons.
+
+15
+00:00:57,660 --> 00:00:59,760
+Then we need to set up that part right.
+
+16
+00:00:59,760 --> 00:01:02,250
+So props and we'd have a day for lessons.
+
+17
+00:01:02,400 --> 00:01:07,710
+But then this is actually going to be received in Jason format because remember we are trying to echo
+
+18
+00:01:07,800 --> 00:01:12,660
+objects right here because we have a collection of objects which equil them is automatically going to
+
+19
+00:01:12,710 --> 00:01:16,260
+cast that string or Jason and Parsee right here.
+
+20
+00:01:16,410 --> 00:01:18,810
+So what we're going to do is we're going to have a.
+
+21
+00:01:18,930 --> 00:01:25,710
+And one of them is going to be a lesson's property and it's going to be this dog for lessons.
+
+22
+00:01:25,740 --> 00:01:26,130
+OK.
+
+23
+00:01:26,130 --> 00:01:31,250
+So by default as soon as we receive the props we're going to have a property lessons that house these.
+
+24
+00:01:31,260 --> 00:01:36,470
+But then what about formatting that back into the proper object notation.
+
+25
+00:01:36,470 --> 00:01:38,220
+We're going to have a completed property for that.
+
+26
+00:01:38,220 --> 00:01:41,490
+So let's just see for months that in essence it's simply going to return.
+
+27
+00:01:41,490 --> 00:01:44,760
+Jason don't parse this that lessons.
+
+28
+00:01:44,790 --> 00:01:50,460
+So that's what we can actually use in our Simply And that's why I have a naturally equity's out of before
+
+29
+00:01:50,460 --> 00:01:56,020
+we do that let's make sure that we are truly passing that data and everything is working in our tools.
+
+30
+00:01:56,040 --> 00:01:59,410
+So we have a view that stores open to fresh and D'Errico.
+
+31
+00:01:59,430 --> 00:02:02,340
+We have our lessons and we check out a few lessons.
+
+32
+00:02:02,340 --> 00:02:07,120
+We have the pool up which is the default which is an for format like expected.
+
+33
+00:02:07,290 --> 00:02:12,150
+Then we have the data that is exactly this Propp But then we have this formatted license which is an
+
+34
+00:02:12,270 --> 00:02:15,260
+array of all the lessons for this series.
+
+35
+00:02:15,330 --> 00:02:19,830
+OK so we can actually look at these and display the lessons.
+
+36
+00:02:19,980 --> 00:02:21,040
+So what are we going to do.
+
+37
+00:02:21,060 --> 00:02:26,670
+We will pull out this title that we use for testing and in our lessons to the view we want to wrap this
+
+38
+00:02:26,670 --> 00:02:29,840
+in a container and then have at least.
+
+39
+00:02:29,880 --> 00:02:32,100
+And we're going to have less good items.
+
+40
+00:02:32,130 --> 00:02:34,680
+And each of this is going to represent a lesson.
+
+41
+00:02:34,680 --> 00:02:35,100
+Right.
+
+42
+00:02:35,130 --> 00:02:40,350
+So we have to simply say we fall and we have to decide what we are looping through and we really have
+
+43
+00:02:40,350 --> 00:02:47,150
+to formatted lessons here so we can see the lesson in adolescence and right here is we're going to acquire
+
+44
+00:02:47,160 --> 00:02:48,860
+that lesson title.
+
+45
+00:02:48,990 --> 00:02:50,790
+So let's see if that works.
+
+46
+00:02:50,790 --> 00:02:51,570
+Quick refresh.
+
+47
+00:02:51,570 --> 00:02:53,030
+And looks like it works right.
+
+48
+00:02:53,040 --> 00:02:54,100
+But there's no styling.
+
+49
+00:02:54,110 --> 00:03:00,210
+And I think that's because of this as why I'm going to pull it out quick refresh again are working exactly
+
+50
+00:03:00,210 --> 00:03:00,930
+as we expect.
+
+51
+00:03:00,930 --> 00:03:05,620
+So we have our lease items were displayed from our fermata lessons.
+
+52
+00:03:05,650 --> 00:03:10,350
+What about commuting lessons and automatically updating this least.
+

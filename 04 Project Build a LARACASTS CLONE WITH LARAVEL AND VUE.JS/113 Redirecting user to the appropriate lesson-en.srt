@@ -1,0 +1,400 @@
+1
+00:00:00,560 --> 00:00:02,010
+OK guys welcome back.
+
+2
+00:00:02,010 --> 00:00:08,560
+This is where we left off in our projects and we are able to VCDs of course and be able to check if
+
+3
+00:00:08,580 --> 00:00:10,200
+to use ice cream.
+
+4
+00:00:10,260 --> 00:00:15,970
+Now what I want to focus on is actually when we redirect the user when he clicks on this button.
+
+5
+00:00:16,080 --> 00:00:20,250
+So remember if these users really started this series then we are going to see a continual learning
+
+6
+00:00:20,320 --> 00:00:22,950
+Butson the user has started this ritual.
+
+7
+00:00:22,970 --> 00:00:28,250
+When you see a startling Motson like we see right now remember this new reason we created.
+
+8
+00:00:28,320 --> 00:00:36,240
+So before we jumped into that I'm going to go to my lesson test and I did my test a little right here
+
+9
+00:00:36,240 --> 00:00:40,310
+that says that 6 sense can get next and lessons from a lesson.
+
+10
+00:00:40,350 --> 00:00:46,740
+One we to do is when this is such that the next lesson and previous lesson method should actually never
+
+11
+00:00:46,860 --> 00:00:48,000
+give us no.
+
+12
+00:00:48,090 --> 00:00:49,580
+So does it always give us a lesson.
+
+13
+00:00:49,680 --> 00:00:54,360
+So in case we are trying to get the next lesson for the last lesson in that series it should just give
+
+14
+00:00:54,360 --> 00:00:59,580
+us the lesson and this we are trying to get the lesson for the first lesson in that series.
+
+15
+00:00:59,580 --> 00:01:02,090
+It should also just give us that same lesson.
+
+16
+00:01:02,100 --> 00:01:05,430
+So how are they going to edit my assertions.
+
+17
+00:01:05,430 --> 00:01:13,750
+Right here in a certain or answer or more but I'm going to change this to a certain equals and lesson
+
+18
+00:01:13,750 --> 00:01:18,120
+to right here just to get you to ease naturally the first series.
+
+19
+00:01:18,300 --> 00:01:22,660
+The first lesson in that is lesson one is the second and this is the last.
+
+20
+00:01:22,680 --> 00:01:24,230
+Therefore get previous lessons.
+
+21
+00:01:24,280 --> 00:01:30,560
+Really was more like it was doing but nobody which updated by saying listen to which is this first.
+
+22
+00:01:30,660 --> 00:01:36,580
+When we tried to get when we tried to get the previous lesson you should actually give us a lesson too.
+
+23
+00:01:36,750 --> 00:01:39,320
+I'm going to show you what way I'm doing this right here.
+
+24
+00:01:39,420 --> 00:01:39,990
+OK.
+
+25
+00:01:40,020 --> 00:01:42,610
+So the same thing for the next.
+
+26
+00:01:42,630 --> 00:01:45,130
+So we're going to see it equals lesson.
+
+27
+00:01:45,150 --> 00:01:49,980
+We will get the I.D. and then we'll get Lesson 3 and get the idea.
+
+28
+00:01:50,130 --> 00:01:50,630
+OK.
+
+29
+00:01:50,760 --> 00:01:58,840
+So if one does test right now it's going to feel so good to be in the field so to this test and he try
+
+30
+00:01:58,840 --> 00:02:06,000
+to get property of object because obviously it's not so much a one lesson the PH be forced to actually
+
+31
+00:02:06,000 --> 00:02:09,000
+check if this isn't all we're simply going to see available.
+
+32
+00:02:09,150 --> 00:02:17,850
+So the next lesson equals this and right here what we'll do is simply have a check if next lesson return
+
+33
+00:02:18,840 --> 00:02:19,940
+next lesson.
+
+34
+00:02:20,070 --> 00:02:20,610
+OK.
+
+35
+00:02:20,820 --> 00:02:25,210
+But if that checks feels then we turn this OK.
+
+36
+00:02:25,250 --> 00:02:30,810
+So if there's no next lesson then simply return the correct lesson then we're to go exactly the same
+
+37
+00:02:30,810 --> 00:02:36,090
+thing like your previous lesson so previous lesson in all this.
+
+38
+00:02:36,330 --> 00:02:43,020
+And if we have a previous lesson which means it's not all fault you value will return.
+
+39
+00:02:43,020 --> 00:02:51,210
+Previous lesson OK else would simply return this which means this lesson.
+
+40
+00:02:51,380 --> 00:02:52,650
+That's more access.
+
+41
+00:02:52,740 --> 00:02:55,550
+And now we're back going now why am I doing this.
+
+42
+00:02:55,620 --> 00:03:02,450
+If we had the virtue of 30 that we we have some methods that are dependent on the next lesson.
+
+43
+00:03:02,780 --> 00:03:03,260
+OK.
+
+44
+00:03:03,300 --> 00:03:05,030
+For example this get the next lesson.
+
+45
+00:03:05,040 --> 00:03:05,820
+Watch.
+
+46
+00:03:05,820 --> 00:03:10,280
+Remember if we're trying to get the next lessons what a loser really completed that series.
+
+47
+00:03:10,380 --> 00:03:17,430
+We don't want our website to break and say OK we can find this lesson or we can get a bunch of them
+
+48
+00:03:17,430 --> 00:03:21,190
+all but we really wanted to give us the last lesson of that series.
+
+49
+00:03:21,330 --> 00:03:21,900
+OK.
+
+50
+00:03:21,960 --> 00:03:24,910
+So that said now how do we use this method.
+
+51
+00:03:25,140 --> 00:03:29,200
+Remember we agreed if we had to watch or watch series.
+
+52
+00:03:29,260 --> 00:03:30,190
+All right.
+
+53
+00:03:30,260 --> 00:03:33,810
+We're not index mid-thought when you use at least watch a series.
+
+54
+00:03:33,900 --> 00:03:37,060
+He certainly didn't make that to the first lesson of that Suze.
+
+55
+00:03:37,140 --> 00:03:38,100
+But we do want that.
+
+56
+00:03:38,190 --> 00:03:40,630
+We want to check if the user has started the series.
+
+57
+00:03:40,700 --> 00:03:45,700
+And if the user has started the series will redirect him to the next lesson that he has to watch.
+
+58
+00:03:45,720 --> 00:03:50,130
+For example even if he's watched less than one and listen to the lecture he should be watching this
+
+59
+00:03:50,140 --> 00:03:50,780
+lesson.
+
+60
+00:03:50,930 --> 00:03:51,480
+OK.
+
+61
+00:03:51,600 --> 00:03:54,970
+Therefore we'll just see if the authenticated user right here.
+
+62
+00:03:55,230 --> 00:04:02,940
+And what we're going to do is check if you are hostile to series or puzzling to see us then we're going
+
+63
+00:04:02,940 --> 00:04:04,840
+to redirect the user somewhere else.
+
+64
+00:04:04,840 --> 00:04:11,540
+And when we directly use our Mott's dyslexic which is the first lesson but we are going to get used
+
+65
+00:04:12,320 --> 00:04:18,960
+and the name of the method we can get it from are learning to be which is getting a license watch and
+
+66
+00:04:19,020 --> 00:04:19,500
+back.
+
+67
+00:04:19,500 --> 00:04:26,230
+Enjoy or watch SHOWBIZ on call or see next lesson watch on passing the series.
+
+68
+00:04:26,370 --> 00:04:26,870
+OK.
+
+69
+00:04:26,940 --> 00:04:31,570
+So the USALS really started the series will redirect the user to this lesson.
+
+70
+00:04:31,680 --> 00:04:34,490
+Alice is going to read the letter the first lesson.
+
+71
+00:04:34,590 --> 00:04:35,130
+OK.
+
+72
+00:04:35,220 --> 00:04:38,230
+So let's go ahead and check if this is working.
+
+73
+00:04:38,280 --> 00:04:40,230
+So refresh.
+
+74
+00:04:40,230 --> 00:04:42,500
+And by the way let me share my view right here.
+
+75
+00:04:42,660 --> 00:04:49,430
+So we have our series The beat the beat and right here we have a continual learning check.
+
+76
+00:04:49,470 --> 00:04:50,640
+I start learning.
+
+77
+00:04:50,770 --> 00:04:52,660
+So these are start at the series.
+
+78
+00:04:52,770 --> 00:04:56,310
+We have continual learning and neither has or has not yet started.
+
+79
+00:04:56,310 --> 00:04:57,780
+We have stopped learning.
+
+80
+00:04:57,870 --> 00:04:59,110
+So we are locked in.
+
+81
+00:04:59,190 --> 00:05:04,710
+That's why we see the Lenny freckly can start learning it redirects me to the first lesson.
+
+82
+00:05:04,740 --> 00:05:07,780
+So you see the currents in this and now is the first lesson.
+
+83
+00:05:07,840 --> 00:05:11,420
+I'm going to do is complete the series by simply playing that video.
+
+84
+00:05:11,730 --> 00:05:13,190
+And now it's at the end.
+
+85
+00:05:13,200 --> 00:05:19,410
+We're going to click OK you direct me to the second one but now I want to head back to that series and
+
+86
+00:05:19,410 --> 00:05:20,940
+we have Cancian you're learning.
+
+87
+00:05:20,980 --> 00:05:27,160
+But now click on this and you see that automatically redirects me to Lesson 2 and that I think my friend.
+
+88
+00:05:27,180 --> 00:05:29,040
+It's really really PERFEITO.
+
+89
+00:05:29,100 --> 00:05:29,400
+OK.
+
+90
+00:05:29,400 --> 00:05:34,860
+You don't always go and select the next lesson that you stopped the next time you log into our website.
+
+91
+00:05:34,970 --> 00:05:35,530
+OK.
+
+92
+00:05:35,580 --> 00:05:37,340
+So I think that's very convenient.
+
+93
+00:05:37,470 --> 00:05:40,340
+Let's just go ahead and complete this one for fun.
+
+94
+00:05:40,490 --> 00:05:40,950
+OK.
+
+95
+00:05:40,980 --> 00:05:45,620
+We've completed this series then the next one is this entry we haven't wasted.
+
+96
+00:05:45,630 --> 00:05:52,020
+Let's head back to that series and then we can continue learning automatically we are redirected to
+
+97
+00:05:52,020 --> 00:05:57,110
+the last lesson of the series because we've completed this one and this is all we have to watch next.
+
+98
+00:05:57,200 --> 00:05:57,680
+OK.
+
+99
+00:05:57,780 --> 00:05:58,620
+So great.
+
+100
+00:05:58,620 --> 00:06:01,670
+I think this works perfectly just like we expected to.
+

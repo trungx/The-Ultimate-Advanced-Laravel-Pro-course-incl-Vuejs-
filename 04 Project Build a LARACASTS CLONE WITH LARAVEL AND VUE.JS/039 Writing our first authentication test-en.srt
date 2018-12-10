@@ -1,0 +1,240 @@
+1
+00:00:00,240 --> 00:00:05,370
+90 percent of the time when you're in love or you might never need to actually test your authentication
+
+2
+00:00:05,370 --> 00:00:09,110
+API because you might never actually need to customize it.
+
+3
+00:00:09,210 --> 00:00:13,950
+But then in cases where you've created classes which are different my thoughts and I truly customize
+
+4
+00:00:13,950 --> 00:00:16,940
+the logging it's really helpful to write some test.
+
+5
+00:00:16,950 --> 00:00:21,550
+So let's go ahead and create a helpful test that is going to help us solve logging functionality.
+
+6
+00:00:21,660 --> 00:00:25,280
+So ph we Arissa latest logging tests are good.
+
+7
+00:00:25,300 --> 00:00:30,630
+So in my test directory sure enough in the future we have these logging test then I clean this up and
+
+8
+00:00:30,630 --> 00:00:32,210
+I'm going to create public function.
+
+9
+00:00:32,220 --> 00:00:38,010
+So as a user and actually the first thing I want to does it's actually the message that we receive when
+
+10
+00:00:38,010 --> 00:00:40,380
+they use others not pass in the correct credentials.
+
+11
+00:00:40,410 --> 00:00:40,930
+OK.
+
+12
+00:00:41,010 --> 00:00:47,000
+So tasks are user receives correct message when parsing in want credentials.
+
+13
+00:00:47,070 --> 00:00:51,480
+OK so that's a really crappy name but it is descriptive of what we want to do.
+
+14
+00:00:51,480 --> 00:00:53,270
+How is this desk going to look.
+
+15
+00:00:53,280 --> 00:00:54,770
+We just need to get a user.
+
+16
+00:00:54,840 --> 00:01:02,280
+And then maybe call that logging and point passing in the wrong password and then make some assertions
+
+17
+00:01:02,580 --> 00:01:03,900
+on the response.
+
+18
+00:01:03,930 --> 00:01:04,460
+Right.
+
+19
+00:01:04,470 --> 00:01:06,330
+So let's go ahead and take care of this.
+
+20
+00:01:06,330 --> 00:01:13,470
+First of all our use our squatch in our factory for the broadcast use Archelaus and adequate methods
+
+21
+00:01:13,470 --> 00:01:14,620
+of persistent aasan.
+
+22
+00:01:14,670 --> 00:01:21,060
+So we just need to see this post Jason because that's the kind of request we are making and the End
+
+23
+00:01:21,060 --> 00:01:27,170
+Point is slash logging and we need to pass the data that we send into the server right here in an array.
+
+24
+00:01:27,300 --> 00:01:33,640
+So we are parsing the e-mail and would pass in the user last e-mail that was generated and would pass
+
+25
+00:01:33,660 --> 00:01:35,650
+in a fake password right.
+
+26
+00:01:35,700 --> 00:01:42,800
+So let's just see one last word and then write another response we can actually call assertions.
+
+27
+00:01:42,870 --> 00:01:47,620
+So our search statutes for this response would be 4:22.
+
+28
+00:01:47,640 --> 00:01:50,360
+So we are asserting that the status must be a 4:22.
+
+29
+00:01:50,460 --> 00:01:57,990
+And let's also assert that the adjacent contains a message the message that we are passing in and and
+
+30
+00:01:57,990 --> 00:02:01,850
+we'll get this message from our off field exception class.
+
+31
+00:02:01,860 --> 00:02:02,330
+Right.
+
+32
+00:02:02,340 --> 00:02:08,730
+So I think for now we could actually work with this and this is what we can to make sure that everything
+
+33
+00:02:08,730 --> 00:02:10,510
+we're doing is working right.
+
+34
+00:02:10,530 --> 00:02:17,010
+So clearly use up make a post request to that end point crossing the Emoto password and then assert
+
+35
+00:02:17,010 --> 00:02:18,590
+that the status is forcing you to.
+
+36
+00:02:18,600 --> 00:02:25,310
+And also I said that the Jessen response that we receive contains a message key with this exact stream.
+
+37
+00:02:25,350 --> 00:02:27,860
+OK so how do we run our tests.
+
+38
+00:02:27,900 --> 00:02:30,790
+We can use Lovell's refresh database straight.
+
+39
+00:02:30,900 --> 00:02:37,800
+And when it just sets up the little bit of PH be unique configuration for our application during testing.
+
+40
+00:02:37,800 --> 00:02:41,920
+So so I'm going to pass in an environment database right here.
+
+41
+00:02:41,940 --> 00:02:48,030
+So the connection should be as secure writes testing which I'm going to set up so I'm going to set up
+
+42
+00:02:48,030 --> 00:02:53,750
+a testing connection and I'm going to actually make sure I tell people we need to run our tests in memory.
+
+43
+00:02:53,790 --> 00:02:58,320
+So dbd to me is not going to pass in a memory flag right here.
+
+44
+00:02:58,470 --> 00:03:05,170
+So let me set up this testing database connection in my database that the PSP configuration file.
+
+45
+00:03:05,220 --> 00:03:10,730
+So we have a secure like connection my scope connection or setup testing connection.
+
+46
+00:03:10,770 --> 00:03:15,790
+This receives an array and the driver is also going to be asking on lights.
+
+47
+00:03:15,790 --> 00:03:22,690
+They me this is going to be from the database and would get testing that Esco light.
+
+48
+00:03:22,770 --> 00:03:25,520
+OK so let's generate that test in the Esco light fire.
+
+49
+00:03:25,560 --> 00:03:30,510
+So torche in our database there's a tree slash there in the rescue all light.
+
+50
+00:03:30,570 --> 00:03:34,550
+And sure enough we actually want to check in our database directory.
+
+51
+00:03:34,590 --> 00:03:36,850
+We have our test in the let's go right.
+
+52
+00:03:36,960 --> 00:03:37,230
+OK.
+
+53
+00:03:37,230 --> 00:03:39,580
+So I think we're ready to run our test.
+
+54
+00:03:39,870 --> 00:03:41,560
+Let's try to see what we get.
+
+55
+00:03:41,670 --> 00:03:50,070
+So in my friend or a tree in my brain I have my Ph.D. unit executer on and I'm going to filter this
+
+56
+00:03:50,640 --> 00:03:52,390
+to logging dust's.
+
+57
+00:03:52,410 --> 00:03:55,470
+So let's run that and sure enough we have a successful test.
+
+58
+00:03:55,530 --> 00:03:55,830
+Right.
+
+59
+00:03:55,830 --> 00:04:00,870
+So because we really are with the right because we actually really what the production code for that
+
+60
+00:04:00,970 --> 00:04:01,440
+test.
+

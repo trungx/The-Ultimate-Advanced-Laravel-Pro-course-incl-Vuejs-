@@ -1,0 +1,292 @@
+1
+00:00:01,000 --> 00:00:03,690
+Stuff by introducing new lover Guscott the last lesson.
+
+2
+00:00:03,870 --> 00:00:10,500
+Let's go ahead and take a look at that with us by driving a simple logging functionality in our application
+
+3
+00:00:10,800 --> 00:00:16,590
+to Crinan dusk test by 1 mph be our center does make logging test.
+
+4
+00:00:16,800 --> 00:00:17,910
+That's created for us.
+
+5
+00:00:17,910 --> 00:00:21,670
+Therefore you know a browser to have you logging tests.
+
+6
+00:00:21,690 --> 00:00:25,830
+So I'm just going to clean this off and we're going to walk step by step to the process of creating
+
+7
+00:00:25,830 --> 00:00:30,410
+this public function test a user can log in.
+
+8
+00:00:30,420 --> 00:00:33,060
+So then there is a use off or instead.
+
+9
+00:00:33,240 --> 00:00:40,200
+This is simply going to be factory for the user class creates and obviously we need to import that User
+
+10
+00:00:40,200 --> 00:00:48,960
+class at the top and then on that does this case class we have a method that is available to us so we
+
+11
+00:00:48,960 --> 00:00:57,690
+can see this browse and this method takes in a callback that gives us an instance of Vassall that we
+
+12
+00:00:57,690 --> 00:00:59,110
+can use to run our tests.
+
+13
+00:00:59,130 --> 00:01:04,510
+So the browser class that isn't what I I here we receive an instance of this callback automatically.
+
+14
+00:01:04,770 --> 00:01:06,330
+That's what I would ask.
+
+15
+00:01:06,410 --> 00:01:10,720
+And then right Kubik we can do a little bit of things that we want to happen in the application.
+
+16
+00:01:10,830 --> 00:01:17,000
+So first of all using Windows is simply following the process that you're going to use to test job allocation.
+
+17
+00:01:17,010 --> 00:01:17,360
+Right.
+
+18
+00:01:17,400 --> 00:01:20,210
+So just like I noticed in this is what we're going to be doing.
+
+19
+00:01:20,230 --> 00:01:22,670
+But automap but automating it.
+
+20
+00:01:22,740 --> 00:01:26,040
+So first of all what do we do we navigate to the loggin page right.
+
+21
+00:01:26,040 --> 00:01:28,800
+If we want to plug in the user if you want logging.
+
+22
+00:01:28,830 --> 00:01:32,840
+So we're going to see also visit the log in page.
+
+23
+00:01:32,910 --> 00:01:34,280
+So visit slash logging.
+
+24
+00:01:34,530 --> 00:01:38,610
+And once we are on the log in page what's the next step we need to type in our e-mails right.
+
+25
+00:01:38,640 --> 00:01:44,100
+So I'm just going to see type and we're passing e-mail here which is the name of the input field we
+
+26
+00:01:44,100 --> 00:01:45,310
+want to typing.
+
+27
+00:01:45,450 --> 00:01:51,410
+And then we can type in the user e-mail and this user has a user generated here.
+
+28
+00:01:51,420 --> 00:01:56,010
+Therefore we need to proceed into this construct all so use user.
+
+29
+00:01:56,040 --> 00:01:59,910
+And then after you've typed or email we need to type our password.
+
+30
+00:01:59,940 --> 00:02:00,520
+Right.
+
+31
+00:02:00,540 --> 00:02:06,990
+So we'll just type use our password right here and we can't use the possible because these are passwords
+
+32
+00:02:06,990 --> 00:02:08,100
+are really encrypted.
+
+33
+00:02:08,100 --> 00:02:14,580
+What we can do is passing an encrypted version the unencrypted version which we can find in our model
+
+34
+00:02:14,580 --> 00:02:16,300
+factory right here.
+
+35
+00:02:16,530 --> 00:02:17,070
+OK.
+
+36
+00:02:17,220 --> 00:02:23,080
+So after typing the password we just need to press the log in button right.
+
+37
+00:02:23,160 --> 00:02:31,910
+So we're going to press the button that has Aztec's logging and then we're going to see a search path.
+
+38
+00:02:32,120 --> 00:02:38,490
+Yes this is our search step and we're going to assert that the path is whole meaning after we Prezza
+
+39
+00:02:38,520 --> 00:02:39,320
+log in Butsu.
+
+40
+00:02:39,390 --> 00:02:45,240
+We provided a code red credentials aspect that this user should be directed to the actual route.
+
+41
+00:02:45,360 --> 00:02:45,840
+OK.
+
+42
+00:02:45,960 --> 00:02:49,630
+So this is our basic test or we just need to do is run this test.
+
+43
+00:02:49,680 --> 00:02:50,640
+Now how do we run it.
+
+44
+00:02:50,640 --> 00:02:56,220
+We can run it exactly the same way we've been running our test by simply passing a group right here
+
+45
+00:02:56,340 --> 00:02:58,850
+and we're just going to see the name of this group is luggin.
+
+46
+00:02:59,250 --> 00:03:04,700
+And I'm just going to use this migration right here so that Lavoe can migrate and we're back at least
+
+47
+00:03:04,770 --> 00:03:07,680
+to the database after it's done in the test.
+
+48
+00:03:07,680 --> 00:03:10,140
+So let's run our test.
+
+49
+00:03:10,210 --> 00:03:15,840
+PH We are excited DAs and the group is luggin
+
+50
+00:03:26,550 --> 00:03:32,600
+and we receive a failure saying that unable to locate the Elliman this because like we saw it navigate
+
+51
+00:03:32,700 --> 00:03:36,790
+to the 4 0 4 page because it didn't find this out.
+
+52
+00:03:36,900 --> 00:03:38,910
+Now how are we going to fix this.
+
+53
+00:03:38,910 --> 00:03:44,760
+We could go ahead and create a logging route and create a page where there's email and password and
+
+54
+00:03:44,760 --> 00:03:49,680
+then also where there's a button and then make sure that once he clicks on this on this button it takes
+
+55
+00:03:49,680 --> 00:03:54,400
+that e-mail is the password lofting the user that makes the whole bird Lavo really does it for us so
+
+56
+00:03:54,400 --> 00:04:03,080
+we're just going to want to be areason make off now that we've created off PreCheck and always be Socius
+
+57
+00:04:03,090 --> 00:04:05,240
+views that we have an off topic tree.
+
+58
+00:04:05,340 --> 00:04:11,190
+We password log in and register our views and also in our web ph.
+
+59
+00:04:11,270 --> 00:04:18,920
+B We also have an off routes that as registered for us which registers a slash logging slash redstart
+
+60
+00:04:18,930 --> 00:04:21,830
+and all of that and also which starts to slash homework.
+
+61
+00:04:21,990 --> 00:04:22,430
+OK.
+
+62
+00:04:22,500 --> 00:04:24,650
+So let's run our test again.
+
+63
+00:04:40,020 --> 00:04:42,480
+Our show we have a successful test.
+
+64
+00:04:42,490 --> 00:04:47,950
+So we've been able to test that the user actually can logging into the application.
+
+65
+00:04:47,950 --> 00:04:52,950
+Now whether we're functionality can we test with Lavoe dusk.
+
+66
+00:04:53,080 --> 00:04:59,290
+Remember we have a web page and we just start the post route and when we visit this post route we see
+
+67
+00:04:59,290 --> 00:05:05,050
+all the post on the page right and or when we visit when we when we visit the slush post ID road we
+
+68
+00:05:05,050 --> 00:05:08,710
+also see a particular post with the ID that was posted.
+
+69
+00:05:08,830 --> 00:05:15,850
+Right now let's write a simple test to make sure that if we navigate to this page and we find a particular
+
+70
+00:05:15,850 --> 00:05:23,820
+link with a particular button and we click it it's going to navigate us to the particular page for that
+
+71
+00:05:23,830 --> 00:05:24,480
+post.
+
+72
+00:05:24,520 --> 00:05:25,090
+Right.
+
+73
+00:05:25,180 --> 00:05:27,890
+So we're going to take care of this in the next episode.
+

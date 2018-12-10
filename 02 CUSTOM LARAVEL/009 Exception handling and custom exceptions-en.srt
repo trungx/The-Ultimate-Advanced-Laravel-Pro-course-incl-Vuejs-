@@ -1,0 +1,528 @@
+1
+00:00:00,330 --> 00:00:05,790
+Let's talk about custom exception handling in Lovelle Lovelle gives us an extensive possibility of handling
+
+2
+00:00:05,790 --> 00:00:08,890
+different Arolsen application in any way we want.
+
+3
+00:00:09,000 --> 00:00:11,650
+OK so let's go ahead and see how this works.
+
+4
+00:00:11,770 --> 00:00:18,120
+We're going to be working on a very very simple basic idea and that's the idea of maybe passing an idea
+
+5
+00:00:18,120 --> 00:00:21,970
+into your own finding to use or without ID and are putting the Jason.
+
+6
+00:00:22,050 --> 00:00:22,490
+OK.
+
+7
+00:00:22,530 --> 00:00:27,650
+And if we don't find an ID we're going to handle the custom arrows that will give us.
+
+8
+00:00:27,720 --> 00:00:29,620
+So let's go ahead and do this.
+
+9
+00:00:29,640 --> 00:00:33,870
+First of all I'm going to simply set up a database connection and I'm going to use Esco like in this
+
+10
+00:00:33,870 --> 00:00:40,630
+case and in my directory database I'm going to create a new database that obscure like fire.
+
+11
+00:00:40,920 --> 00:00:41,350
+That's it.
+
+12
+00:00:41,370 --> 00:00:46,040
+I'm set therefore I can run Peachtree and my great and they have tables.
+
+13
+00:00:46,230 --> 00:00:53,100
+And we think I'm going to simply generate some dummy users factory and I'll get 50 use us on our basis
+
+14
+00:00:53,100 --> 00:00:55,040
+that my data is OK.
+
+15
+00:00:55,260 --> 00:00:57,250
+So we have used us now in our database.
+
+16
+00:00:57,360 --> 00:01:02,190
+Let's have a watch or web that we found and modified this a little.
+
+17
+00:01:02,190 --> 00:01:09,990
+So when the use of the home page what we want to return is an instance of user and would find that using
+
+18
+00:01:10,050 --> 00:01:13,220
+an ID parameter that passed in the request.
+
+19
+00:01:13,290 --> 00:01:18,510
+So right here let's get illuminated at CTP request.
+
+20
+00:01:19,080 --> 00:01:24,300
+And what I think that sort of levels Konting I would automatically inject it in and would also get the
+
+21
+00:01:24,300 --> 00:01:26,270
+ID Parminter from the request.
+
+22
+00:01:26,280 --> 00:01:28,410
+So we need to accept that in.
+
+23
+00:01:29,230 --> 00:01:33,600
+OK so viscid the home while passing on ID and would return to you the use of that ID.
+
+24
+00:01:33,690 --> 00:01:34,580
+Pretty simple.
+
+25
+00:01:34,770 --> 00:01:39,710
+OK so let's get the idea of one we have the sun.
+
+26
+00:01:39,900 --> 00:01:42,120
+So it works as expected.
+
+27
+00:01:42,120 --> 00:01:45,260
+What about an idea that does not exist in the database.
+
+28
+00:01:45,660 --> 00:01:46,000
+OK.
+
+29
+00:01:46,020 --> 00:01:50,440
+We have nothing right because clearly we didnt find any use us.
+
+30
+00:01:50,440 --> 00:01:52,840
+Now we'll switch this to a kind of feel.
+
+31
+00:01:52,950 --> 00:01:58,770
+And this my thought behind the scenes basically is going to try to find a user because you see cause
+
+32
+00:01:58,830 --> 00:01:59,950
+to find fault here.
+
+33
+00:02:00,090 --> 00:02:06,310
+And if it doesn't find a user it's going to try a new model not not found exception and passing some
+
+34
+00:02:06,310 --> 00:02:08,830
+veto into that exception.
+
+35
+00:02:08,910 --> 00:02:09,410
+OK.
+
+36
+00:02:09,450 --> 00:02:11,310
+So let's try this again.
+
+37
+00:02:11,370 --> 00:02:15,920
+And in this case love automatically gives us the four or four Not Found page.
+
+38
+00:02:16,050 --> 00:02:17,960
+But what if you wanted to do something different.
+
+39
+00:02:18,000 --> 00:02:23,880
+What if you wanted to handle this section differently without necessarily seeing a full page one if
+
+40
+00:02:23,880 --> 00:02:30,130
+you wanted to give a custom Jason response to the user or any different kind of customization you want.
+
+41
+00:02:30,240 --> 00:02:32,200
+Let's look at how we are going to do that.
+
+42
+00:02:32,220 --> 00:02:38,370
+First of all all exceptions in our application passed through the hand-luggage ph which is in the up
+
+43
+00:02:38,370 --> 00:02:39,590
+sections namespace.
+
+44
+00:02:39,840 --> 00:02:44,370
+And what happens is when we have an exception we can decide to report it.
+
+45
+00:02:44,370 --> 00:02:49,440
+Maybe loggy send an email or whatever and we can decide to render it into one.
+
+46
+00:02:49,440 --> 00:02:50,520
+As to the response.
+
+47
+00:02:50,520 --> 00:02:50,940
+OK.
+
+48
+00:02:51,000 --> 00:02:55,810
+So every single exception that is strewn like the modern Afon exception goes through here.
+
+49
+00:02:55,830 --> 00:02:57,880
+Now we can hijack that.
+
+50
+00:02:57,900 --> 00:03:00,210
+Now we can hijack that exception.
+
+51
+00:03:00,240 --> 00:03:06,400
+So if we try to phone model my phone exception that's imported from its namespace.
+
+52
+00:03:06,630 --> 00:03:08,470
+So you eliminate the.
+
+53
+00:03:08,570 --> 00:03:11,840
+Cohen Mardale not found exception.
+
+54
+00:03:11,880 --> 00:03:16,770
+And what we can do is Lovell's giving us an instance of the exception here.
+
+55
+00:03:16,770 --> 00:03:26,040
+So we can say ief exception is an instance of model not found exception then would handle it differently.
+
+56
+00:03:26,160 --> 00:03:33,110
+Let's just say we return a response Jason and the message hey we couldn't find that user.
+
+57
+00:03:33,300 --> 00:03:39,930
+So in this random thought every exception is going to be rendered using this parents window but then
+
+58
+00:03:39,960 --> 00:03:44,190
+we want to check if the exception is of type M'Donald phone exception.
+
+59
+00:03:44,190 --> 00:03:47,420
+And what we're going to do is send a custom message to the user.
+
+60
+00:03:47,490 --> 00:03:49,650
+So let's try this out refresh.
+
+61
+00:03:49,650 --> 00:03:50,340
+There we go.
+
+62
+00:03:50,340 --> 00:03:52,110
+We have our castanet Jason.
+
+63
+00:03:52,110 --> 00:03:58,060
+And just like that we are automatically able to handle whatever exception that is strong in lover.
+
+64
+00:03:58,140 --> 00:04:05,540
+Now you can also do this read not for to be exceptions to render custom for all for page and whatever.
+
+65
+00:04:05,700 --> 00:04:10,080
+OK so next thing we don't want to always handle everything like this right.
+
+66
+00:04:10,080 --> 00:04:15,760
+What about the situation where we create our own custom exceptions and told Lavo how to render it.
+
+67
+00:04:15,930 --> 00:04:17,190
+That's going to be fun right.
+
+68
+00:04:17,200 --> 00:04:17,860
+That's it.
+
+69
+00:04:17,880 --> 00:04:24,870
+It's one of the newest features we love 5:25 we can create a new exception and at any instant in application
+
+70
+00:04:25,050 --> 00:04:31,680
+for example if we use our voices and that main page and you know that page is not available to the public
+
+71
+00:04:31,740 --> 00:04:33,100
+then you can throw an exception.
+
+72
+00:04:33,270 --> 00:04:40,440
+Let's create a new exception and to created in my app exceptions class exceptions directory and it's
+
+73
+00:04:40,440 --> 00:04:43,240
+going to be called Hacker alert exception.
+
+74
+00:04:43,380 --> 00:04:43,830
+OK.
+
+75
+00:04:43,830 --> 00:04:46,560
+So hacker alert exception.
+
+76
+00:04:46,610 --> 00:04:52,840
+So Bluhm ph referral would define the namespace and the name of the class is hacker alert.
+
+77
+00:04:52,890 --> 00:04:59,190
+Now every custom exception must extend the exception clause and we need to use that right here.
+
+78
+00:04:59,190 --> 00:05:03,060
+That's basically all we need to define our own custom exceptions.
+
+79
+00:05:03,060 --> 00:05:08,040
+Now we need to tol'able what you do with this exception and there are two methods that we need to reference
+
+80
+00:05:08,190 --> 00:05:15,930
+just like in the 130th which references a report Meffert and or when the men thought the report mid-thought
+
+81
+00:05:15,930 --> 00:05:23,670
+sales Lavo whether it should lock this exception or send an e-mail or or inform the administrator that
+
+82
+00:05:23,670 --> 00:05:30,780
+this exception was thrown and the render method like ricin tells Lavo how to handle this exception in
+
+83
+00:05:30,780 --> 00:05:31,960
+the application itself.
+
+84
+00:05:32,010 --> 00:05:37,850
+So if you're defining a custom exception you need to declare or report mid-thought and the render method
+
+85
+00:05:38,100 --> 00:05:39,180
+if there is no report.
+
+86
+00:05:39,180 --> 00:05:42,380
+Or when may fall in love we will not be able to handle these requests.
+
+87
+00:05:42,390 --> 00:05:49,740
+So let's talk with a random thought and what we are going to be doing is returning a response any time
+
+88
+00:05:49,740 --> 00:05:53,530
+this session is drawn and we can maybe pass a message.
+
+89
+00:05:53,530 --> 00:05:55,340
+We have seen hacker.
+
+90
+00:05:55,470 --> 00:05:57,070
+You've got no luck today.
+
+91
+00:05:57,270 --> 00:05:57,920
+OK.
+
+92
+00:05:58,100 --> 00:06:04,950
+Dan anywhere in application like the web that PH BE Let's see you have an admin route and you know this
+
+93
+00:06:04,950 --> 00:06:10,860
+route is not public and someone tries to assess this right without being authenticated if not check
+
+94
+00:06:11,010 --> 00:06:14,040
+means the user is not authenticate at all.
+
+95
+00:06:14,070 --> 00:06:15,420
+No exception.
+
+96
+00:06:15,870 --> 00:06:21,070
+So this is going to be up exceptions Hocker alert exception.
+
+97
+00:06:21,740 --> 00:06:22,900
+OK that's it.
+
+98
+00:06:22,900 --> 00:06:28,320
+So if the user has not authenticated and he's trying to assess this and meanwhile from the you are l
+
+99
+00:06:28,460 --> 00:06:30,010
+then for this exception.
+
+100
+00:06:30,130 --> 00:06:31,260
+So let's check this out.
+
+101
+00:06:31,270 --> 00:06:34,420
+I'm going to try to visit that you know and thinks i'm not logging.
+
+102
+00:06:34,450 --> 00:06:37,360
+There we have our message and things I'm not locked in.
+
+103
+00:06:37,390 --> 00:06:39,020
+There we have our message hacker.
+
+104
+00:06:39,070 --> 00:06:40,210
+You got no luck today.
+
+105
+00:06:40,330 --> 00:06:43,390
+But what about reporting these airports themselves.
+
+106
+00:06:43,420 --> 00:06:49,720
+So let's say somebody tried to hack application and we want to automatically Those something or receive
+
+107
+00:06:49,720 --> 00:06:55,370
+an e-mail or whatever when this exception is thrown when we notice there's a hacker alert.
+
+108
+00:06:55,450 --> 00:07:00,810
+We simply define our public reports mid-thought and we'll do what ever we want to do.
+
+109
+00:07:00,810 --> 00:07:04,670
+In this method knowing that level is going to call this method behind the scenes.
+
+110
+00:07:04,720 --> 00:07:05,230
+OK.
+
+111
+00:07:05,320 --> 00:07:12,400
+So I'm just going to use my lockless right here and I'm going to lock our Critch call alerts and in
+
+112
+00:07:12,400 --> 00:07:17,850
+case you want to see the methods that we have available for this log you can head over to logging Lobert
+
+113
+00:07:17,860 --> 00:07:18,690
+Ph be.
+
+114
+00:07:18,710 --> 00:07:26,260
+And we have an alert Kriti call that takes a message and an optional array warning naughties info and
+
+115
+00:07:26,260 --> 00:07:34,320
+all of that some in critical and the message is how car tried to hack us today.
+
+116
+00:07:34,360 --> 00:07:41,330
+So quick refresh and obviously we have our window method caught by vote but what about the report method.
+
+117
+00:07:41,420 --> 00:07:44,790
+Let's check out our Lavoe the log file in our storage directory.
+
+118
+00:07:44,830 --> 00:07:50,370
+And there we have the critical lock hacker tried to hack us today as easy as that.
+
+119
+00:07:50,380 --> 00:07:56,230
+So if you want to send yourself an e-mail any time this exception is thrown as such then you can go
+
+120
+00:07:56,230 --> 00:08:00,080
+ahead and do that in your hacker exception alert.
+
+121
+00:08:00,130 --> 00:08:00,540
+Right.
+
+122
+00:08:00,550 --> 00:08:07,390
+So this gives us a very extensible possibility of handling errors whether they are not phone to be exceptions
+
+123
+00:08:07,600 --> 00:08:14,440
+or for arrows or five what we or what ever exception we try to handle we can handle it by either using
+
+124
+00:08:14,440 --> 00:08:21,060
+a custom exceptions or hijacking the Air Force in our to the pitch.
+
+125
+00:08:21,190 --> 00:08:26,300
+So same thing goes if you want to send yourself an e-mail any time a user is not phone.
+
+126
+00:08:26,320 --> 00:08:32,220
+Then right here would be a good place to do it so you can see if the exception is an instance of an
+
+127
+00:08:32,290 --> 00:08:33,070
+exception.
+
+128
+00:08:33,100 --> 00:08:36,850
+Send me an e-mail with the idea that was passing or whatever.
+
+129
+00:08:36,930 --> 00:08:37,250
+OK.
+
+130
+00:08:37,270 --> 00:08:38,660
+So that was a great job.
+
+131
+00:08:38,710 --> 00:08:39,820
+Hope you enjoyed it.
+
+132
+00:08:39,820 --> 00:08:41,800
+See you in the very next lesson.
+

@@ -1,0 +1,380 @@
+1
+00:00:00,590 --> 00:00:04,500
+Work on bad guys I want to see us drive to things real quick.
+
+2
+00:00:04,500 --> 00:00:08,680
+And the first thing is how to get the art that lessons.
+
+3
+00:00:08,730 --> 00:00:09,130
+OK.
+
+4
+00:00:09,150 --> 00:00:11,180
+Because he was joking or serious.
+
+5
+00:00:11,420 --> 00:00:16,920
+That we we don't have any thoughts to get the other lessons right here we just agin the lessons by the
+
+6
+00:00:17,000 --> 00:00:22,840
+ideas but we need a lot more thought that this other than by the episode numbers just like we precise
+
+7
+00:00:22,920 --> 00:00:24,140
+when we were creating them.
+
+8
+00:00:24,270 --> 00:00:24,840
+OK.
+
+9
+00:00:24,930 --> 00:00:27,730
+So let's go ahead to assist us.
+
+10
+00:00:27,990 --> 00:00:34,950
+Are we going to create a new test and get all that lessons for our series.
+
+11
+00:00:34,980 --> 00:00:36,510
+So how is this going to look.
+
+12
+00:00:36,510 --> 00:00:43,620
+First of all let's create a series and then create some lessons for that series about three of them
+
+13
+00:00:44,100 --> 00:00:48,980
+and then we are going to call the get or that lesson my thought.
+
+14
+00:00:49,170 --> 00:00:56,880
+And then we are going to run some assertions to make sure that the lessons are in the correct order.
+
+15
+00:00:57,260 --> 00:00:57,910
+OK.
+
+16
+00:00:58,110 --> 00:00:59,710
+So let's get to it.
+
+17
+00:00:59,730 --> 00:01:02,820
+First of all we need to create the series right.
+
+18
+00:01:02,820 --> 00:01:07,560
+So what I would do is just like what we've been doing or just create a lesson and then automatically
+
+19
+00:01:07,560 --> 00:01:16,110
+it's going to generate a new series so factory creates and I'll specify for the lesson class and not
+
+20
+00:01:16,110 --> 00:01:24,060
+forget your import less on the top so that we have no errors but class lesson and work here let's just
+
+21
+00:01:24,120 --> 00:01:30,420
+import civies so used by Sui's and I'm going to just pull out this right here.
+
+22
+00:01:30,570 --> 00:01:30,880
+OK.
+
+23
+00:01:30,900 --> 00:01:36,670
+So we have our first lesson what they want to do is take control of the episode number.
+
+24
+00:01:36,840 --> 00:01:37,320
+OK.
+
+25
+00:01:37,500 --> 00:01:43,940
+So I want to specify this opposite number in exactly the way I wanted to show up to my viewers.
+
+26
+00:01:43,980 --> 00:01:51,690
+So I want this to be the second lesson in my playlist so I'm going to use 200 and I'm going to create
+
+27
+00:01:51,750 --> 00:01:52,760
+another lesson.
+
+28
+00:01:52,860 --> 00:01:54,700
+So lesson two.
+
+29
+00:01:54,780 --> 00:02:00,240
+It cost exactly the same thing right here.
+
+30
+00:02:01,560 --> 00:02:08,160
+And rather than passing in 200 I'm going to pass in 100 which means this is going to be the first lesson
+
+31
+00:02:08,160 --> 00:02:14,190
+in my playlist because remember we are trying to test how it's going to be in real life in real life
+
+32
+00:02:14,190 --> 00:02:19,950
+we can create a lesson and then assigned a video idea and everything and then discover that that lesson
+
+33
+00:02:19,950 --> 00:02:21,300
+is supposed to come later.
+
+34
+00:02:21,420 --> 00:02:24,870
+So you added the episode number and you put it before the other one.
+
+35
+00:02:24,930 --> 00:02:25,440
+Right.
+
+36
+00:02:25,440 --> 00:02:28,580
+So if you do this everything might blow up.
+
+37
+00:02:28,590 --> 00:02:32,350
+OK so we have to test so much at this at the time.
+
+38
+00:02:32,430 --> 00:02:37,860
+So we're creating a second lesson but it's going to play before the first one because we are going to
+
+39
+00:02:37,860 --> 00:02:42,710
+be using the EPS number to know which one comes first and which one comes last.
+
+40
+00:02:42,780 --> 00:02:43,210
+OK.
+
+41
+00:02:43,320 --> 00:02:49,160
+So right here we need to specify our series ID to make sure that it's also for service one.
+
+42
+00:02:49,380 --> 00:02:56,630
+And finally we're going to have a search and I'm going to specify that this is place number three and
+
+43
+00:02:56,640 --> 00:02:58,460
+this is going to be lesson.
+
+44
+00:02:58,770 --> 00:03:01,860
+And that's what we need for our series on our lessons.
+
+45
+00:03:01,920 --> 00:03:02,400
+Okay.
+
+46
+00:03:02,490 --> 00:03:04,430
+So call to get that lessons.
+
+47
+00:03:04,440 --> 00:03:07,090
+My thought we're going to see lessons.
+
+48
+00:03:07,170 --> 00:03:14,180
+It's going to be courtroom lesson series because remember this should be on the series class then would
+
+49
+00:03:14,190 --> 00:03:17,920
+call get all that lessons.
+
+50
+00:03:18,480 --> 00:03:19,110
+OK.
+
+51
+00:03:19,170 --> 00:03:20,730
+Now for our sessions.
+
+52
+00:03:20,730 --> 00:03:28,050
+First of all let's just make sure that any random element from this result that we have which is a collection
+
+53
+00:03:28,440 --> 00:03:30,680
+should be an instance of the lesson class.
+
+54
+00:03:30,690 --> 00:03:38,390
+So we're going to see days assert Einstein's awful lesson class and we'll get the lessons and we'll
+
+55
+00:03:38,400 --> 00:03:39,730
+get around them.
+
+56
+00:03:39,910 --> 00:03:46,910
+OK then let's US-CERT equals and let's think about this if we have the lessons.
+
+57
+00:03:47,040 --> 00:03:53,950
+If we if other the lessons then the first lesson in this collection should actually be listened to.
+
+58
+00:03:54,150 --> 00:03:54,480
+Right.
+
+59
+00:03:54,480 --> 00:04:01,110
+Because if either A by episode number but this should come first and then the last lesson in this collection
+
+60
+00:04:01,290 --> 00:04:02,910
+should actually be lesson.
+
+61
+00:04:03,080 --> 00:04:03,650
+Right.
+
+62
+00:04:03,670 --> 00:04:06,390
+And listen listen one right here should be in the middle.
+
+63
+00:04:06,480 --> 00:04:06,940
+OK.
+
+64
+00:04:07,050 --> 00:04:17,690
+So let's assert that lessons first and we can just check across the ID is equal to lesson to ID.
+
+65
+00:04:17,970 --> 00:04:18,620
+OK.
+
+66
+00:04:18,750 --> 00:04:27,210
+And let's also US-CERT equals that lessons lasts we can get the last use in the last mid-thought and
+
+67
+00:04:27,210 --> 00:04:30,830
+then I said that it's lesson to be ID.
+
+68
+00:04:30,900 --> 00:04:31,430
+OK.
+
+69
+00:04:31,470 --> 00:04:33,860
+So those are the questions we're going to be running.
+
+70
+00:04:33,930 --> 00:04:38,340
+Now let's run this test individually to see what we get.
+
+71
+00:04:38,540 --> 00:04:42,990
+PH BE YOU filter by this test.
+
+72
+00:04:45,710 --> 00:04:48,080
+OK so on only get that lesson.
+
+73
+00:04:48,090 --> 00:04:54,660
+My thought yes we would have to watch or see which that BHP and right down here we going to create a
+
+74
+00:04:54,660 --> 00:04:57,750
+get that license method.
+
+75
+00:04:58,010 --> 00:04:58,840
+OK.
+
+76
+00:04:59,220 --> 00:05:01,290
+Run that test again.
+
+77
+00:05:01,470 --> 00:05:04,240
+And now each of us culture a member function or.
+
+78
+00:05:04,710 --> 00:05:08,480
+Because we're trying to get one done for our collection but we need not.
+
+79
+00:05:08,580 --> 00:05:15,300
+So what do we do to get the other lessons we just need to Aadhar all the lessons by the opposite number
+
+80
+00:05:15,300 --> 00:05:17,830
+field in ascending order.
+
+81
+00:05:17,850 --> 00:05:18,400
+Right.
+
+82
+00:05:18,420 --> 00:05:26,500
+So we just see if we turn this license or that by oh let's see something where here.
+
+83
+00:05:26,610 --> 00:05:28,810
+If I caught a guy like this he's going to give me an error.
+
+84
+00:05:28,810 --> 00:05:29,240
+Why.
+
+85
+00:05:29,280 --> 00:05:35,310
+Because this lessens colony as a property is going to return to us a collection of all the lessons.
+
+86
+00:05:35,370 --> 00:05:41,250
+But calling it as a method is going to return to us an instead of the query builder such that we can
+
+87
+00:05:41,250 --> 00:05:47,820
+call Marco Rubio the Methos like all the by and would order by the number few.
+
+88
+00:05:48,240 --> 00:05:54,340
+And then we're going to make sure that we specify that it isn't are sending other such that the smallest
+
+89
+00:05:54,360 --> 00:06:01,800
+is at the bottom is at the top and then it'll keep it keeps going down and then OK and then we're going
+
+90
+00:06:01,800 --> 00:06:06,970
+to use that gets mid-thought so that it returns to us a collection.
+
+91
+00:06:07,080 --> 00:06:07,490
+OK.
+
+92
+00:06:07,620 --> 00:06:15,090
+So we turn this lesson's order by a piece of Namok in ascending order and then get the collection working.
+
+93
+00:06:15,090 --> 00:06:16,490
+So let's run this again.
+
+94
+00:06:17,970 --> 00:06:19,770
+And that's great I test passes.
+
+95
+00:06:19,790 --> 00:06:23,390
+So we are successfully getting all the other lessons for the CBS.
+

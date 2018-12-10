@@ -1,0 +1,452 @@
+1
+00:00:01,150 --> 00:00:07,240
+Get sick of this continue learning Motson first starts us we are going to have a page where you can
+
+2
+00:00:07,240 --> 00:00:11,070
+watch the lessons the page is going to take in the series.
+
+3
+00:00:11,410 --> 00:00:13,050
+SLOC lesson number.
+
+4
+00:00:13,060 --> 00:00:16,940
+And then when we read the use of that page the Coreg the Jews know that.
+
+5
+00:00:16,960 --> 00:00:17,480
+OK.
+
+6
+00:00:17,530 --> 00:00:23,020
+So I don't watch my web that BHB and I'm going to define a new routes.
+
+7
+00:00:23,380 --> 00:00:29,770
+This watch is going to be a get on it with good to watch series.
+
+8
+00:00:30,200 --> 00:00:33,250
+And we're taking the series SLOC.
+
+9
+00:00:33,400 --> 00:00:34,040
+OK.
+
+10
+00:00:34,150 --> 00:00:38,810
+And he's going to use or control or watch series controller.
+
+11
+00:00:39,370 --> 00:00:42,290
+And I'll just make it to the index Martha.
+
+12
+00:00:42,710 --> 00:00:43,260
+OK.
+
+13
+00:00:43,330 --> 00:00:45,480
+Let me create a controller.
+
+14
+00:00:45,720 --> 00:00:49,900
+He had assigned me control or watch series controller.
+
+15
+00:00:50,130 --> 00:00:50,640
+OK.
+
+16
+00:00:50,650 --> 00:00:58,090
+So our watch series controller should have an index method and the six in the series so type in series
+
+17
+00:00:58,090 --> 00:01:02,960
+right here for Lavell to automatically reject that instance.
+
+18
+00:01:03,260 --> 00:01:06,610
+So huge but costs squeeze.
+
+19
+00:01:06,850 --> 00:01:13,990
+And then once we have this my thought and the series and that's what we want to do is post starts us
+
+20
+00:01:14,050 --> 00:01:17,890
+redirect the user to the first lesson of the series.
+
+21
+00:01:17,960 --> 00:01:23,320
+OK but we're going to actually be setting up a way so that we can read the way they use us to the latest
+
+22
+00:01:23,330 --> 00:01:24,500
+computer lesson.
+
+23
+00:01:24,550 --> 00:01:24,910
+OK.
+
+24
+00:01:24,940 --> 00:01:30,520
+So like if you completed lesson two we don't seem to listen to the computer lesson five the last time
+
+25
+00:01:30,580 --> 00:01:33,490
+we do it in two lesson eight to Lesson 6.
+
+26
+00:01:33,520 --> 00:01:34,140
+Sorry.
+
+27
+00:01:34,150 --> 00:01:36,680
+So we're going to be setting up the system.
+
+28
+00:01:36,730 --> 00:01:39,710
+But for now let's just we like to use after the first lesson.
+
+29
+00:01:39,770 --> 00:01:49,640
+So return redirects and wait until we create our routes and we're going to call these routes series
+
+30
+00:01:49,670 --> 00:02:00,010
+that watch and this route is going to take keen to bomb us to see I will passing serious so.
+
+31
+00:02:00,270 --> 00:02:00,740
+OK.
+
+32
+00:02:00,770 --> 00:02:03,610
+Because Rob Mondo Bandi we need to pass this along.
+
+33
+00:02:03,700 --> 00:02:06,440
+And it's going to take a lesson.
+
+34
+00:02:06,580 --> 00:02:15,660
+Remember our old model mining permit so I will pass in serious lessons.
+
+35
+00:02:16,300 --> 00:02:18,960
+Chris I will get the idea.
+
+36
+00:02:19,110 --> 00:02:19,670
+OK.
+
+37
+00:02:19,780 --> 00:02:22,200
+So let me break this down for you.
+
+38
+00:02:23,250 --> 00:02:28,110
+It's just an array of departments that are going to be passed to this routes that we're going to create.
+
+39
+00:02:28,150 --> 00:02:28,730
+OK.
+
+40
+00:02:28,870 --> 00:02:34,560
+So these vultures expecting a serious lesson.
+
+41
+00:02:34,660 --> 00:02:40,930
+So the series we have easily but the lesson we have to make a query and what we do is we simply get
+
+42
+00:02:40,990 --> 00:02:44,640
+the first lesson from the relationship right.
+
+43
+00:02:44,710 --> 00:02:45,040
+OK.
+
+44
+00:02:45,040 --> 00:02:50,440
+So this relationship gives us the first lesson and then we can get the ID we pass each of our comments
+
+45
+00:02:50,440 --> 00:02:50,700
+on.
+
+46
+00:02:50,790 --> 00:02:51,140
+OK.
+
+47
+00:02:51,160 --> 00:02:53,320
+So we turn to redirect to this Ralph Byrd.
+
+48
+00:02:53,320 --> 00:02:59,560
+In future we're going to have to actually find the final find the latest lesson lessen the use a wash
+
+49
+00:02:59,590 --> 00:03:01,180
+and then return to the beach OK.
+
+50
+00:03:01,210 --> 00:03:04,190
+But for us this is good enough OK.
+
+51
+00:03:04,270 --> 00:03:08,900
+So what we need to do is create that vault that we just specified.
+
+52
+00:03:08,980 --> 00:03:20,100
+So we create a route and this will be Seabreeze permits us series then lesson on permits our lesson.
+
+53
+00:03:20,200 --> 00:03:20,750
+OK.
+
+54
+00:03:20,830 --> 00:03:26,870
+And this is also when you watch series control I'm sure lesson.
+
+55
+00:03:27,160 --> 00:03:35,300
+OK then we'll have to give it the name we specified so name is going to be serious that watch.
+
+56
+00:03:35,350 --> 00:03:35,910
+OK.
+
+57
+00:03:35,950 --> 00:03:42,710
+So like be precise repassing in the suit is the lesson and the name of the route and you see we and
+
+58
+00:03:42,730 --> 00:03:44,160
+watch like right here.
+
+59
+00:03:44,260 --> 00:03:45,620
+So serious lesson.
+
+60
+00:03:45,730 --> 00:03:46,340
+OK.
+
+61
+00:03:46,420 --> 00:03:50,210
+So let's go ahead and customize that button so it leads to this vault.
+
+62
+00:03:50,290 --> 00:03:58,540
+So would head of ops who are serious that laid the BHB and Querrey half hour consignor learning Motson
+
+63
+00:03:58,740 --> 00:04:03,530
+we're going to have to increase to include an aircraft.
+
+64
+00:04:04,260 --> 00:04:04,860
+OK.
+
+65
+00:04:04,870 --> 00:04:08,540
+So why don't we give the other vowels a name also.
+
+66
+00:04:08,560 --> 00:04:09,960
+So this Vought.
+
+67
+00:04:10,180 --> 00:04:23,560
+So let's just calling serious are and then OK then in this vault we could pass in all routes to Ceres
+
+68
+00:04:23,560 --> 00:04:30,320
+that learning will pass in the series slaughter house departments such that route.
+
+69
+00:04:30,430 --> 00:04:30,940
+OK.
+
+70
+00:04:31,000 --> 00:04:36,400
+So when the user clicks on to continue learning Motson it's going to invoke the index of my thumb and
+
+71
+00:04:36,400 --> 00:04:42,490
+index mid-thought is simply going to redirect the user to the first lesson of that series.
+
+72
+00:04:42,550 --> 00:04:43,060
+OK.
+
+73
+00:04:43,150 --> 00:04:52,900
+So let's go ahead and click on that button and see what we can refresh click on the Barzun OK it's a
+
+74
+00:04:52,980 --> 00:04:56,800
+strange property of known objects and online searching.
+
+75
+00:04:56,800 --> 00:04:57,550
+This line right here.
+
+76
+00:04:57,550 --> 00:05:00,100
+So maybe this lessons.
+
+77
+00:05:00,100 --> 00:05:03,160
+Let's check if we have adolescent's relationship.
+
+78
+00:05:03,520 --> 00:05:05,330
+So right.
+
+79
+00:05:05,400 --> 00:05:06,870
+So yes we do.
+
+80
+00:05:07,000 --> 00:05:12,360
+So the next thing should be this first mid-thought the first A thought is written in or and they we
+
+81
+00:05:12,370 --> 00:05:16,960
+are trying to get the IGY Parliament's off which means we are trying to get a property from a known
+
+82
+00:05:16,990 --> 00:05:17,580
+object.
+
+83
+00:05:17,680 --> 00:05:19,440
+So looks like we need to go over.
+
+84
+00:05:19,450 --> 00:05:24,900
+I mean and actually save a new lesson to this series.
+
+85
+00:05:25,230 --> 00:05:29,010
+Parcak like I thought this has no lessons so let's create a new lesson.
+
+86
+00:05:29,140 --> 00:05:40,890
+And this would be introduction to view just 2.0 or 2.5 and then we just pass in a fake video ID and
+
+87
+00:05:40,980 --> 00:05:43,230
+the episode number is going to be 100.
+
+88
+00:05:43,340 --> 00:05:51,040
+Dozens of asked in five V.M. ID this and then we're going to see that's true Jussieu.
+
+89
+00:05:51,570 --> 00:05:54,880
+So this awesome framework.
+
+90
+00:05:55,220 --> 00:05:56,140
+OK.
+
+91
+00:05:56,290 --> 00:06:00,690
+Then create a lesson and you have lesson created successfully.
+
+92
+00:06:00,690 --> 00:06:01,350
+There you go.
+
+93
+00:06:01,350 --> 00:06:03,820
+We have our first lesson Ladd's receipt.
+
+94
+00:06:03,870 --> 00:06:12,870
+Our home viscid dot series and click on the consonant learning Motson.
+
+95
+00:06:13,040 --> 00:06:20,150
+And now we have redirect that to series VGX lesson 1 and then we don't have the short lesson method.
+
+96
+00:06:20,210 --> 00:06:26,770
+So that's created now what series we're going to create a public function.
+
+97
+00:06:26,810 --> 00:06:34,620
+Sure lesson my thought and we need to receive the C race and we also need to receive the lesson now
+
+98
+00:06:34,640 --> 00:06:35,160
+or less.
+
+99
+00:06:35,170 --> 00:06:40,600
+And we just need to avoid that so we don't have any worse than what we do right here.
+
+100
+00:06:40,650 --> 00:06:51,780
+We turn of view so return view we should be watch and will pass in to permits us a civics lesson.
+
+101
+00:06:52,280 --> 00:06:57,920
+OK so we may not need to pass in the series lesson because the lesson we can get the series but we're
+
+102
+00:06:57,920 --> 00:07:00,000
+going to come back and be shocked in a little while.
+
+103
+00:07:00,050 --> 00:07:00,590
+OK.
+
+104
+00:07:00,650 --> 00:07:07,610
+So just to save us a lot of time I actually created a watch that made the Peachtree already in my home
+
+105
+00:07:07,760 --> 00:07:09,570
+my view woodstove tree.
+
+106
+00:07:09,650 --> 00:07:12,500
+And then right here we just have the stand that simply.
+
+107
+00:07:12,500 --> 00:07:15,590
+So here we need to equal the lessons itl.
+
+108
+00:07:16,010 --> 00:07:20,540
+So I'm just going to say lesson time to home.
+
+109
+00:07:20,750 --> 00:07:27,450
+And then here we have serious title SCMS and the speech arts of his title and right on the button.
+
+110
+00:07:27,530 --> 00:07:30,610
+This is where we're going to be putting our play and all that good stuff.
+
+111
+00:07:30,710 --> 00:07:31,280
+OK.
+
+112
+00:07:31,370 --> 00:07:34,900
+So let's refresh this link once again and grade.
+
+113
+00:07:34,910 --> 00:07:40,580
+We have these page introduction to you just 2.5 VGX beginner costs.
+

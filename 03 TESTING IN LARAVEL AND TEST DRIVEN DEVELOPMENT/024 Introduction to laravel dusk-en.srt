@@ -1,0 +1,272 @@
+1
+00:00:00,330 --> 00:00:06,840
+Let's introduce love a dusk into application and this is simply a test now when there's a test.
+
+2
+00:00:06,850 --> 00:00:12,420
+Are they going to help us test some functionality in the application which is going to be a little more
+
+3
+00:00:12,420 --> 00:00:15,980
+complicated if we're using a traditional BHB unit for test.
+
+4
+00:00:15,990 --> 00:00:18,020
+So what lever does is going to do for us.
+
+5
+00:00:18,030 --> 00:00:24,360
+For example let's see if we want to test that when the use of the home route he actually says this button
+
+6
+00:00:24,390 --> 00:00:27,370
+that he can click and visit like has the cup.
+
+7
+00:00:27,630 --> 00:00:33,840
+Well if we actually try to run that with our traditional test obviously we going to actually be able
+
+8
+00:00:33,840 --> 00:00:34,590
+to do that.
+
+9
+00:00:34,710 --> 00:00:41,580
+But then Lavoe gives us a very cool way to run that in a browser in a very simple manner.
+
+10
+00:00:41,580 --> 00:00:48,590
+So first of all we need to install does great and the installation as usual with novel is really easy.
+
+11
+00:00:48,630 --> 00:00:54,410
+So let's just require that the composer require Lavo that's awesome.
+
+12
+00:00:54,550 --> 00:00:59,210
+We have to live with those and start the next game for the complete installation.
+
+13
+00:00:59,290 --> 00:01:06,000
+Structurally registar that does service provider but then we don't ones really state for it to be available
+
+14
+00:01:06,000 --> 00:01:08,730
+in production and also available in testing.
+
+15
+00:01:08,730 --> 00:01:14,280
+So we are going to try to put it in a service provider who probably the service provider or we can also
+
+16
+00:01:14,280 --> 00:01:15,750
+create a provider for those.
+
+17
+00:01:15,900 --> 00:01:20,220
+But for now let's head over to the social media and just place that in it.
+
+18
+00:01:20,430 --> 00:01:24,300
+So in register metho to register it with our application.
+
+19
+00:01:24,330 --> 00:01:31,300
+So first we have to import that so use level service provider and then we need to register it.
+
+20
+00:01:31,350 --> 00:01:38,460
+So love is going to check if the level is going to check if the app environment is testing all new called
+
+21
+00:01:38,520 --> 00:01:41,850
+meaning on your local machine that is going to register the dosage.
+
+22
+00:01:41,940 --> 00:01:45,990
+So will either meaning my time change and Romainville go to production.
+
+23
+00:01:46,000 --> 00:01:50,680
+Dusk is not going to be available for you to use next you just need to run dusk stores.
+
+24
+00:01:50,700 --> 00:01:56,380
+So HP our site DOS install does scaffolding successfully.
+
+25
+00:01:56,490 --> 00:01:59,440
+And that's a red dotted with such an Daskal.
+
+26
+00:01:59,490 --> 00:02:06,810
+Now if you check in out there we will see that we have a new browser directory and it contains Konsole
+
+27
+00:02:06,870 --> 00:02:10,240
+pages screenshots and an example test.
+
+28
+00:02:10,350 --> 00:02:13,730
+This is surely a lot but we're going to go into all of this.
+
+29
+00:02:13,740 --> 00:02:18,350
+So first of all we have for example test which extends does this case.
+
+30
+00:02:18,510 --> 00:02:23,620
+And if we check out our dust test case which is in that test just ask is dashi right here.
+
+31
+00:02:23,640 --> 00:02:29,520
+We'll just go right Chris the application just like for a Peachtree test and then it starts the clum
+
+32
+00:02:29,520 --> 00:02:33,810
+driver and you can specify the parts to which is going to navigate.
+
+33
+00:02:33,810 --> 00:02:34,600
+Right.
+
+34
+00:02:34,650 --> 00:02:35,020
+OK.
+
+35
+00:02:35,040 --> 00:02:38,790
+So let's head over to the example test and see what it does.
+
+36
+00:02:38,790 --> 00:02:44,430
+First of all we have a Brown-Smith thought which is going to help us to navigate the Brasa So he takes
+
+37
+00:02:44,690 --> 00:02:49,510
+a closure on land for the slows or we can pass different commands.
+
+38
+00:02:49,620 --> 00:02:53,670
+So first of all we can see browser visit the slash lounge.
+
+39
+00:02:53,940 --> 00:02:57,100
+And then I said that you actually see Lavo on the page.
+
+40
+00:02:57,180 --> 00:02:59,690
+So how do we run those commands.
+
+41
+00:02:59,700 --> 00:03:00,550
+We just run.
+
+42
+00:03:00,570 --> 00:03:09,660
+We are assigned the dusk and then we enter so it opens the browser navigates that endpoint and gives
+
+43
+00:03:09,660 --> 00:03:13,190
+us a feel that it did not see Lovelle readings.
+
+44
+00:03:13,210 --> 00:03:20,270
+The Elliman body but let's check up our welcome that Bladud PH BE we have an room right there.
+
+45
+00:03:20,370 --> 00:03:25,530
+So dust was not actually able to access the beach right.
+
+46
+00:03:25,530 --> 00:03:30,420
+And that's because we need to settle our application roots right here.
+
+47
+00:03:30,540 --> 00:03:31,090
+OK.
+
+48
+00:03:31,110 --> 00:03:36,270
+So I'm just going to change this to testing lab with that death because that's what I'm using for my
+
+49
+00:03:36,270 --> 00:03:37,240
+application.
+
+50
+00:03:37,470 --> 00:03:40,570
+And then run ph be honest and ask again
+
+51
+00:03:43,940 --> 00:03:47,370
+never gets to that.
+
+52
+00:03:47,510 --> 00:03:49,190
+And we have a successful test.
+
+53
+00:03:49,220 --> 00:03:50,720
+He was able to assess it.
+
+54
+00:03:50,730 --> 00:03:54,380
+So if you have localhost and you're running on ph me Alasan surfing's.
+
+55
+00:03:54,620 --> 00:03:55,780
+Exactly the same thing.
+
+56
+00:03:55,850 --> 00:04:01,580
+But if you have such domain's make sure you actually configured the arm you are in your ear because
+
+57
+00:04:01,580 --> 00:04:03,280
+that's what those he's going to use.
+
+58
+00:04:03,490 --> 00:04:08,140
+OK so what if we change days to something like this and run.
+
+59
+00:04:08,210 --> 00:04:09,930
+That's common again.
+
+60
+00:04:14,320 --> 00:04:20,630
+We have Ophelia and we have feel expected to like but it was not in the body.
+
+61
+00:04:20,770 --> 00:04:26,350
+So that's before all of those works gives us the possibility to actually test some stuff.
+
+62
+00:04:26,350 --> 00:04:33,660
+For example if you want to test the luggin ph or even once or to test that a user can create a post.
+
+63
+00:04:33,670 --> 00:04:41,530
+We just need to write a test saying visit the endpoint create posts type in some data into this field
+
+64
+00:04:41,950 --> 00:04:49,290
+type data into this other field click this button and then assert that your redirect to this page assert
+
+65
+00:04:49,300 --> 00:04:50,840
+that the database has these.
+
+66
+00:04:50,910 --> 00:04:52,630
+I said that this and that and this.
+
+67
+00:04:52,780 --> 00:04:53,370
+Awesome.
+
+68
+00:04:53,380 --> 00:04:58,350
+So it's kind of give us a lot of flexibility and fun stuff to take care of in our test.
+

@@ -1,0 +1,216 @@
+1
+00:00:00,620 --> 00:00:02,890
+Our current subscription process is working.
+
+2
+00:00:02,910 --> 00:00:08,330
+But this is not the best because our user has to wait and we don't even inform him that he's waiting.
+
+3
+00:00:08,350 --> 00:00:13,840
+Meanwhile there's a complete It's a long process of API calls going on behind the scenes.
+
+4
+00:00:13,860 --> 00:00:17,600
+So what we're going to do is we're going to change this implementation a little bit.
+
+5
+00:00:17,700 --> 00:00:20,910
+So that's the use of with no what he's waiting for.
+
+6
+00:00:20,970 --> 00:00:26,100
+And the user would naturally receive an indication that what he's waiting for was successful or something
+
+7
+00:00:26,100 --> 00:00:26,690
+like that.
+
+8
+00:00:26,820 --> 00:00:27,210
+OK.
+
+9
+00:00:27,330 --> 00:00:28,880
+So let's go ahead and poorly.
+
+10
+00:00:28,920 --> 00:00:29,280
+ST.
+
+11
+00:00:29,310 --> 00:00:30,540
+OLPHERTS.
+
+12
+00:00:30,870 --> 00:00:37,860
+From sweet arm hurt and right here where we are actually making the EPA request before the EPA request
+
+13
+00:00:37,950 --> 00:00:47,610
+would allow the use of something and the alert would simply have sex off police we weren't we subscribe
+
+14
+00:00:47,610 --> 00:00:49,810
+you to our plan.
+
+15
+00:00:50,230 --> 00:00:51,020
+OK.
+
+16
+00:00:51,030 --> 00:00:55,100
+And another option I want to ask here is Bateson's false.
+
+17
+00:00:55,110 --> 00:01:02,430
+So the usual no we don't expect him to perform any actions and immediately this is displayed the Jews
+
+18
+00:01:02,520 --> 00:01:08,910
+request is going to fire to complete the subscription process with our level back end and as soon as
+
+19
+00:01:08,910 --> 00:01:13,120
+that is complete I also want to notify the user of something.
+
+20
+00:01:13,230 --> 00:01:20,160
+So right here you're going to have this and the text is going to be successful not quite and I'm going
+
+21
+00:01:20,160 --> 00:01:27,180
+to move this Bateson's false option and I'm going to put in an icon which is going to be success.
+
+22
+00:01:27,420 --> 00:01:28,040
+OK.
+
+23
+00:01:28,110 --> 00:01:32,530
+And since our street looks like Regis we promise this we can see that then.
+
+24
+00:01:32,580 --> 00:01:36,640
+Meaning when the user clicks on the Confirm But so then we can do something.
+
+25
+00:01:36,750 --> 00:01:41,640
+So for example we want to refresh the page or maybe redirect the user to the less who was trying to
+
+26
+00:01:41,640 --> 00:01:44,460
+watch before he was redirected to this page.
+
+27
+00:01:44,520 --> 00:01:44,960
+OK.
+
+28
+00:01:45,060 --> 00:01:50,500
+So let's just start by saying window location equals here.
+
+29
+00:01:50,730 --> 00:01:51,310
+OK.
+
+30
+00:01:51,450 --> 00:01:53,100
+So basically how this is going to walk.
+
+31
+00:01:53,100 --> 00:01:53,760
+Yes.
+
+32
+00:01:53,820 --> 00:01:59,610
+When the user receives the token from Strype it's magically going to display this message to the user.
+
+33
+00:01:59,670 --> 00:02:04,390
+And it's going to be like a mood altering the user to wait and then it's going to fire the existing
+
+34
+00:02:04,590 --> 00:02:10,370
+requests and wants us to post request we're going to have this success this displayed.
+
+35
+00:02:10,470 --> 00:02:13,800
+And as soon as the user clicks on the button it refresh the page for him.
+
+36
+00:02:13,820 --> 00:02:15,540
+And while it's refreshing the page.
+
+37
+00:02:15,660 --> 00:02:16,130
+OK.
+
+38
+00:02:16,200 --> 00:02:22,230
+So the mirror on my end came on watch that we watched a genius next stop to subscribe and point in our
+
+39
+00:02:22,230 --> 00:02:22,860
+browser.
+
+40
+00:02:22,920 --> 00:02:30,870
+So I'm going to visit the luggin and then I'm going to subscribe putting cards e-tolls month of expiration
+
+41
+00:02:30,990 --> 00:02:38,390
+CBC number and click on the button and like we defined once that API requests or strike client is done
+
+42
+00:02:38,400 --> 00:02:39,240
+we have a token.
+
+43
+00:02:39,240 --> 00:02:44,460
+And we see this notification message and it actually tells the user to wait and now that the request
+
+44
+00:02:44,460 --> 00:02:50,140
+was successfully made to our server we have this successfully subscribed message back from our server.
+
+45
+00:02:50,160 --> 00:02:55,200
+And we can click on the OK button and automatically it refreshes the page.
+
+46
+00:02:55,230 --> 00:02:55,720
+OK.
+
+47
+00:02:55,830 --> 00:02:58,760
+So it looks like everything is working like we expect it to.
+
+48
+00:02:58,770 --> 00:03:01,020
+And this makes a lot more sense.
+
+49
+00:03:01,020 --> 00:03:01,380
+OK.
+
+50
+00:03:01,500 --> 00:03:06,870
+So why don't we do this when there is a is the page you should actually change that the other is shown
+
+51
+00:03:06,860 --> 00:03:07,430
+by here.
+
+52
+00:03:07,470 --> 00:03:11,460
+So why don't we use this page to show the subscription of the user.
+
+53
+00:03:11,580 --> 00:03:15,150
+And maybe he can change his subscription or cancel your subscription.
+
+54
+00:03:15,150 --> 00:03:17,100
+In case he wants to.
+

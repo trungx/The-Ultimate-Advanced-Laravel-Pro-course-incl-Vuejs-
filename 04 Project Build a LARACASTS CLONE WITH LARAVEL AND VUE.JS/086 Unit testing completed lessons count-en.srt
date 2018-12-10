@@ -1,0 +1,172 @@
+1
+00:00:00,300 --> 00:00:05,150
+We already have an existing test to see that we can we can actually complete a lesson.
+
+2
+00:00:05,160 --> 00:00:05,600
+Right.
+
+3
+00:00:05,730 --> 00:00:11,580
+So rather than creating a unique test for our Get number of completed lessons we are going to really
+
+4
+00:00:11,700 --> 00:00:14,150
+test that functionality right here.
+
+5
+00:00:14,220 --> 00:00:14,720
+OK.
+
+6
+00:00:14,790 --> 00:00:19,880
+So we are asserting that this is an investment thought for this particular key is going to return this
+
+7
+00:00:19,910 --> 00:00:20,290
+array.
+
+8
+00:00:20,310 --> 00:00:20,740
+Right.
+
+9
+00:00:20,850 --> 00:00:27,540
+So we're going to do is create another assertion and this will be our search equals and would call our
+
+10
+00:00:27,540 --> 00:00:28,240
+method.
+
+11
+00:00:28,290 --> 00:00:34,980
+So I would say they use or let me copy the method name get them off computer lessons for series or pay
+
+12
+00:00:34,980 --> 00:00:35,900
+study.
+
+13
+00:00:36,030 --> 00:00:41,230
+And we need to pass in the series so we'll just get less on CBS.
+
+14
+00:00:41,430 --> 00:00:46,830
+And we want to make sure that this method returns true because these are it contains two lessons that
+
+15
+00:00:46,830 --> 00:00:47,610
+we completed.
+
+16
+00:00:47,670 --> 00:00:48,170
+OK.
+
+17
+00:00:48,240 --> 00:00:51,390
+So we want to said that this method returns too.
+
+18
+00:00:51,600 --> 00:00:56,370
+I think this is going to help us actually make sure that this method works as expected.
+
+19
+00:00:56,400 --> 00:00:59,140
+So we are back to running this test
+
+20
+00:01:02,190 --> 00:01:06,200
+and if we want it of course now it feels because too much is expected.
+
+21
+00:01:06,200 --> 00:01:07,330
+All.
+
+22
+00:01:07,590 --> 00:01:09,500
+So let's make that pass.
+
+23
+00:01:09,510 --> 00:01:16,870
+We're going to see this menthol should simply return this and will get as members.
+
+24
+00:01:17,010 --> 00:01:25,970
+And the key we are searching for is use our call on this ID card on Sirius.
+
+25
+00:01:26,130 --> 00:01:29,960
+CARLSON And Sirius ID.
+
+26
+00:01:30,170 --> 00:01:30,740
+OK.
+
+27
+00:01:30,780 --> 00:01:39,040
+So we get this Ari and we can now call Cowen's to get the counts of the elements in this area.
+
+28
+00:01:39,060 --> 00:01:45,000
+So if everything goes well this should actually pass right now because we are using Ready's automatically
+
+29
+00:01:45,000 --> 00:01:47,790
+to get that and then return the cons.
+
+30
+00:01:47,910 --> 00:01:48,420
+OK.
+
+31
+00:01:48,600 --> 00:01:51,250
+So let's run that are angry.
+
+32
+00:01:51,290 --> 00:01:56,370
+Meaning that this test actually successfully passes not we've actually verified that we can actually
+
+33
+00:01:56,370 --> 00:02:00,610
+get the number of completer lessons for series for a particular user.
+
+34
+00:02:00,810 --> 00:02:04,030
+Now we're going to continue on with this test.
+
+35
+00:02:04,800 --> 00:02:13,470
+So let's run it and see the next arrow we have and we're successful right because this method now successfully
+
+36
+00:02:13,530 --> 00:02:16,950
+calculates the percentage right here just like we doing.
+
+37
+00:02:17,040 --> 00:02:17,550
+Okay.
+
+38
+00:02:17,670 --> 00:02:24,150
+So for us to make sure that we're actually really successful why don't we place 10 right here to make
+
+39
+00:02:24,150 --> 00:02:28,170
+sure that this is not just passing for some reason behind the scenes.
+
+40
+00:02:28,200 --> 00:02:33,750
+So we have a figure now so we have 50 but it feels expected 5 1 0.
+
+41
+00:02:34,080 --> 00:02:39,950
+So we should have and if we run that we are green again.
+
+42
+00:02:40,040 --> 00:02:41,400
+So thanks so much for watching.
+
+43
+00:02:41,480 --> 00:02:45,430
+Let's continue in the very next video with some riffraff all.
+

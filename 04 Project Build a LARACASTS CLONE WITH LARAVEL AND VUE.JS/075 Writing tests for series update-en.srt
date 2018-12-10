@@ -1,0 +1,356 @@
+1
+00:00:00,220 --> 00:00:02,680
+As East let's start having some fun week test.
+
+2
+00:00:02,760 --> 00:00:08,580
+But before we do that let's just make sure our whole process should is such really successful at this
+
+3
+00:00:08,580 --> 00:00:09,200
+point.
+
+4
+00:00:09,450 --> 00:00:09,940
+Yeah.
+
+5
+00:00:10,020 --> 00:00:11,560
+Looks like everything's walking.
+
+6
+00:00:11,670 --> 00:00:15,860
+So we're going to create a new test BHB percent make test.
+
+7
+00:00:15,930 --> 00:00:18,480
+And this is going to be update Sui's test.
+
+8
+00:00:18,630 --> 00:00:19,570
+OK.
+
+9
+00:00:20,190 --> 00:00:24,210
+So our first method we want to test is that the Beat actually works right.
+
+10
+00:00:24,210 --> 00:00:26,710
+So we can test a lot of different thoughts.
+
+11
+00:00:26,760 --> 00:00:29,870
+CAN I HELP US Reducto and help us clean up a little bit.
+
+12
+00:00:30,010 --> 00:00:32,130
+So public functions.
+
+13
+00:00:32,560 --> 00:00:35,930
+I use Arcanum beats a series.
+
+14
+00:00:36,190 --> 00:00:36,770
+OK.
+
+15
+00:00:36,780 --> 00:00:39,890
+So first of all we must love again.
+
+16
+00:00:40,030 --> 00:00:41,000
+I mean the story.
+
+17
+00:00:41,000 --> 00:00:51,720
+So before we go to see this Sekhon we would make pooch request to the specified endpoint and then we're
+
+18
+00:00:51,720 --> 00:00:53,800
+going to make some assertions.
+
+19
+00:00:53,940 --> 00:01:04,630
+So search storage has EMH for example also assert that the Tabby's hahs a particular view all of that.
+
+20
+00:01:04,710 --> 00:01:07,650
+OK so let's talk we want to log in as admin.
+
+21
+00:01:07,710 --> 00:01:11,770
+So we have our helpful this logging admin.
+
+22
+00:01:11,820 --> 00:01:15,700
+Thought OK this is actually going to look exactly like.
+
+23
+00:01:15,720 --> 00:01:17,720
+OK great series.
+
+24
+00:01:17,770 --> 00:01:21,490
+It says we have this logging at.
+
+25
+00:01:21,810 --> 00:01:25,260
+Or we can actually disable exception handling.
+
+26
+00:01:25,290 --> 00:01:31,210
+Why are we here so that we have clear us so we logging that into the streets or make a request.
+
+27
+00:01:31,320 --> 00:01:38,560
+So this is what we need it so we change this from post to boot's novel provides this for us.
+
+28
+00:01:38,760 --> 00:01:40,100
+So another being locked in us.
+
+29
+00:01:40,110 --> 00:01:46,140
+I mean what are we going to do is create a series so that we can update it.
+
+30
+00:01:46,410 --> 00:01:50,910
+So we create for the Sui's class.
+
+31
+00:01:50,910 --> 00:01:53,350
+So I'm just going to import this resource right here.
+
+32
+00:01:53,600 --> 00:01:54,080
+OK.
+
+33
+00:01:54,120 --> 00:01:59,840
+So now we have a series we can make a to quest to serve up to this series.
+
+34
+00:01:59,880 --> 00:02:09,690
+So I'm going to see this pooch request and end points that we used to or this series is Rauch's series
+
+35
+00:02:09,710 --> 00:02:13,770
+that dates and we Pasquin the series.
+
+36
+00:02:13,770 --> 00:02:18,820
+SLOC and then we need to passing on our way of the top.
+
+37
+00:02:19,010 --> 00:02:24,510
+We have a title and we'll just update each new series title.
+
+38
+00:02:24,510 --> 00:02:31,880
+We have a description just updated to new series description and we need a lot of fire because now we
+
+39
+00:02:31,880 --> 00:02:38,290
+are testing the complete update process so we are also doing this update.
+
+40
+00:02:38,370 --> 00:02:43,500
+So we have an image view which would be an instance of blue that fire.
+
+41
+00:02:43,740 --> 00:02:50,160
+But since we want to fix it we'll call our fake mid-thought and call the image metho up on the fake
+
+42
+00:02:50,290 --> 00:02:52,270
+below that fight and sunset behalf.
+
+43
+00:02:52,300 --> 00:02:56,250
+I we'll just call the EMH series the P and G.
+
+44
+00:02:56,420 --> 00:02:56,800
+OK.
+
+45
+00:02:56,850 --> 00:02:58,380
+So that's what we are applauding.
+
+46
+00:02:58,380 --> 00:03:07,310
+So our just imports of blue that are on the top so we don't have any horse then we'll make some assertions.
+
+47
+00:03:07,410 --> 00:03:14,400
+So let's just assert that the use ice redirects that after successful and let's assume that the session
+
+48
+00:03:14,400 --> 00:03:15,670
+costs something.
+
+49
+00:03:15,690 --> 00:03:23,700
+So I suspect that the session hahs session and this should be success really a beta series.
+
+50
+00:03:23,780 --> 00:03:27,150
+Now to make our test more reliable.
+
+51
+00:03:27,210 --> 00:03:30,570
+We can make sure that we are actually redirected to a particular route.
+
+52
+00:03:30,640 --> 00:03:33,190
+In this case see restudy index.
+
+53
+00:03:33,470 --> 00:03:38,670
+OK so we've asserts that that we have a redirect and we have a session.
+
+54
+00:03:38,820 --> 00:03:41,180
+Next we want to assert that the meet you saw.
+
+55
+00:03:41,280 --> 00:03:44,460
+So we have to fake the start h.
+
+56
+00:03:44,790 --> 00:03:49,040
+So with fixed all of each just like we did when we were creating a service.
+
+57
+00:03:49,080 --> 00:03:54,400
+So we used our h and then we can run an assertion for the storage.
+
+58
+00:03:54,510 --> 00:04:03,070
+So storage does this what's this be faked and then assert that you exist a serious image that peon G.
+
+59
+00:04:03,210 --> 00:04:06,720
+But the two should be this right here.
+
+60
+00:04:06,900 --> 00:04:07,240
+OK.
+
+61
+00:04:07,260 --> 00:04:13,540
+Because we are automatically gets into a string slot of the title and then we attach the end G.
+
+62
+00:04:13,620 --> 00:04:16,050
+And we're putting it in a series directory.
+
+63
+00:04:16,170 --> 00:04:21,690
+Then finally we want to assert that these are these Hosam what's called a value which is going to be
+
+64
+00:04:21,750 --> 00:04:23,610
+exactly the same like this.
+
+65
+00:04:23,610 --> 00:04:30,890
+So I said they are serious and the slots should actually be the string slot of the new title this.
+
+66
+00:04:31,170 --> 00:04:31,720
+OK.
+
+67
+00:04:31,750 --> 00:04:32,210
+Awesome.
+
+68
+00:04:32,370 --> 00:04:41,010
+So first we log in on the street so then we create a new series we fake the store which the config default
+
+69
+00:04:41,010 --> 00:04:44,290
+store each then we make a request on the server.
+
+70
+00:04:44,340 --> 00:04:50,670
+To this end point in a series slots lulav automatically knows what service we are of the end of the
+
+71
+00:04:50,670 --> 00:04:53,260
+title or description of late in the series.
+
+72
+00:04:53,380 --> 00:05:01,860
+Vaughan our assertions that we will glove Route 1 was a session that we have a session flash and then
+
+73
+00:05:01,860 --> 00:05:04,370
+we make sure that we have that story.
+
+74
+00:05:04,390 --> 00:05:07,610
+Then we finally make sure that we have that story in the database.
+
+75
+00:05:07,770 --> 00:05:13,310
+Ok so thats our test that's run that test individually and see what we get.
+
+76
+00:05:13,890 --> 00:05:22,290
+So picky in it with the fields of flock and trying with Futuna this test on the greats so we have our
+
+77
+00:05:22,290 --> 00:05:28,710
+first video for our search and not much is expected successfully of the Test series.
+
+78
+00:05:28,710 --> 00:05:31,350
+So it means this request was successful.
+
+79
+00:05:31,410 --> 00:05:39,320
+We successfully directed the use of the VCR and we have not saved this to the session so let's fix that.
+
+80
+00:05:39,900 --> 00:05:41,750
+And this is actually an obsession.
+
+81
+00:05:41,790 --> 00:05:43,300
+Let's give it a success.
+
+82
+00:05:43,360 --> 00:05:43,820
+OK.
+
+83
+00:05:43,950 --> 00:05:48,900
+Let me just run that test one more time oking gives us exactly the same.
+
+84
+00:05:49,080 --> 00:05:58,820
+Not what head of Butsu update series meathook right here at the box just fix this last session flourish
+
+85
+00:05:59,370 --> 00:06:05,210
+success and they should be equal to exactly the same string that we have here.
+
+86
+00:06:05,450 --> 00:06:10,410
+OK so successfully of detat series that's why not just one more time.
+
+87
+00:06:11,520 --> 00:06:15,810
+And now it's successful which means everything wharfs are specter.
+
+88
+00:06:15,940 --> 00:06:23,020
+But there's a little book in application that we didn't figure out a way in which we are going to actually
+
+89
+00:06:23,020 --> 00:06:25,310
+find out the very next Viji.
+
